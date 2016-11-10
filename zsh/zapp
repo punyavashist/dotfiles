@@ -14,7 +14,7 @@ alias wr="open -a Marked\ 2"
 
 # _web
 alias kk="open -a \"Google Chrome\""
-alias ks="open -a Safari"
+alias qq="open -a Safari"
 
 # _other
 alias pdf='open -a PDF\ Expert'

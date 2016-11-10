@@ -57,6 +57,7 @@ alias de='cd ~/Desktop'
 alias dq='cd ~/Downloads'
 alias dcl='cd /usr/local/Cellar'
 alias drp='cd ~/Dropbox'
+alias dbl='cd ~/oss/nikivi/hugo/content/post'
 
 # _config
 alias d..='cd ~/.config'
