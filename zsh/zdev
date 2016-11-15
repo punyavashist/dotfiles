@@ -5,7 +5,8 @@ alias w='code'
 alias w.='code .'
 
 # _web
-alias wk='open -a Google/ Chrome index.html'
+alias li='open -a Google\ Chrome\ Canary index.html'
+alias bss='browser-sync'
 
 # _node 
 alias n='node'

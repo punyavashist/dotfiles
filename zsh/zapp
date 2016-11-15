@@ -13,7 +13,7 @@ alias wr="open -a Marked\ 2"
 #alias jp='open_intellij_folder'
 
 # _web
-alias kk="open -a \"Google Chrome\""
+alias l="open -a Google\ Chrome\ Canary"
 alias qq="open -a Safari"
 
 # _other
