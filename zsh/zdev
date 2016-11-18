@@ -3,6 +3,7 @@
 # _dev
 alias w='code'
 alias w.='code .'
+alias hh='python -m SimpleHTTPServer'
 
 # _web
 alias li='open -a Google\ Chrome\ Canary index.html'
