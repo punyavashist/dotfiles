@@ -13,6 +13,10 @@ export PATH=$PATH:~/.dotfiles/bin/mine
 export GOPATH=/Users/nikivi/go/
 export PATH=$PATH:$GOPATH/bin:$GOPATH/bin
 
+# _sql
+export PATH=/usr/local/mysql/bin:$PATH
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
+
 
 # exported variables get passed on to child processes, not-exported variables do not
 # can call it like so $ZPLUG_HOME

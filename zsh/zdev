@@ -4,6 +4,7 @@
 alias w='code'
 alias w.='code .'
 alias hh='python -m SimpleHTTPServer'
+alias fr='flask run'
 
 # _web
 alias li='open -a Google\ Chrome\ Canary index.html'
@@ -22,13 +23,13 @@ alias yr='yarn remove'
 alias yg='yarn global add'
 
 # _npm 
-alias zi='npm install'
-alias zs='npm start'
-alias zl='npm ls'
-alias zu='npm update'
-alias zo='npm init'
-alias zg='npm install -g'
-alias zb='npm run build'
+alias ii='npm install'
+alias is='npm start'
+alias il='npm ls'
+alias iu='npm update'
+alias io='npm init'
+alias ig='npm install -g'
+alias ib='npm run build'
 
 # _go
 alias o='go run'

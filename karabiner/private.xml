@@ -752,6 +752,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::S,
     </autogen>
 
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::BACKQUOTE,
+               KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+               </autogen>
+
                <!-- send command-tab by m -->
                <autogen>
                  __KeyToKey__
@@ -869,7 +875,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                <autogen>
                  __KeyToKey__
                  KeyCode::I,
-                 KeyCode::V, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+                 KeyCode::3, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L
                </autogen>
 
                <autogen>
@@ -1106,7 +1112,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::R,
-       KeyCode::R, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+       KeyCode::F9, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
         </autogen>
 
        <autogen>
@@ -1160,7 +1166,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::E,
-       KeyCode::F3, ModifierFlag::OPTION_L
+       KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
        </autogen>
 
        <autogen>
@@ -1196,7 +1202,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::V,
-       KeyCode::M, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+       KeyCode::F3, ModifierFlag::OPTION_L
         </autogen>
 
        <autogen>
@@ -1419,6 +1425,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::K,
       KeyCode::F9, ModifierFlag::OPTION_L
 		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::G,
+      KeyCode::F5, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+		</autogen>
+
   </item>
 
 
@@ -2094,6 +2107,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::Z,
+      KeyCode::6, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::BRACKET_LEFT,
       KeyCode::F12, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 		</autogen>
@@ -2119,7 +2138,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::P,
-      KeyCode::F9, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L
+      KeyCode::4, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L
 		</autogen>
 
         <autogen>
@@ -2302,6 +2321,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::G,
         KeyCode::F2, ModifierFlag::COMMAND_L
     </autogen>
+
 
     <autogen>
         __KeyToKey__
@@ -2507,6 +2527,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::L,
       KeyCode::SEMICOLON, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::SPACE,
+      KeyCode::5, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
 		</autogen>
 
         <autogen>
@@ -2824,8 +2850,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   <autogen>
     __KeyToKey__
     KeyCode::F19,
-    KeyCode::EQUAL,
-    KeyCode::SPACE
+    KeyCode::F2, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
 </autogen>
 
         <autogen>
@@ -3297,7 +3322,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::B,
+       KeyCode::SPACE,
        KeyCode::RETURN, ModifierFlag::FN
        </autogen>
 
@@ -3363,6 +3388,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __BlockUntilKeyUp__ KeyCode::E,
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::SPACE,
+      KeyCode::SPACE, ModifierFlag::COMMAND_L
     </autogen>
 
     <autogen>
@@ -3664,6 +3695,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __BlockUntilKeyUp__ KeyCode::Q,
     </autogen>
+    
+    <autogen>
+        __KeyToKey__
+        KeyCode::SPACE,
+        KeyCode::SPACE, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+    </autogen>
 
     <autogen>
       __KeyToKey__
@@ -3877,6 +3914,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::SPACE,
       KeyCode::SPACE, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::SEMICOLON,
+      KeyCode::SEMICOLON, ModifierFlag::CONTROL_L
     </autogen>
 
     <autogen>
@@ -5017,8 +5060,6 @@ KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::C
 </item>
 
 
-
-
 <!-- I haven't found any use for my fn key on os x so I decided to make it useful -->
 <!-- this makes my fn key act as a 'superkey' ie all modifiers pressed together (alt, opt, command, shift) -->
 <!-- this allows for insane freedom in keybindings -->
@@ -5044,7 +5085,6 @@ KeyCode::FN,
 KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
 </autogen>
 </item>
-
 
 
 </root>

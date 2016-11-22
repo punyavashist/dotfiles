@@ -1,12 +1,13 @@
 # _general
 alias tl='tmux'
+alias ua='unalias'
 alias sudo='sudo '
 alias ma='mkdir -p'
 alias tk='killall tmux'
 alias loc='count_number_of_lines'
 alias mm='tldr'
 alias ss='borg'
-alias m='man'
+alias m='man -f'
 alias aw='k -h'
 alias k='ack'
 alias c='ccat'
@@ -39,16 +40,19 @@ alias v='mv'
 alias os='osascript'
 alias lt='ls -lart'
 alias aa='ls -lah'
-alias srp='ssh pi@192.168.1.17'
 alias tp='type'
 alias cl='/usr/local/bin/m'
+
+# _piping
+alias h2='head -n 2'
+alias h10='head -n 10'
+alias t10='tail -n 10'
 
 # _delete things
 alias rrpdf='rm -rf *.pdf'
 
 # _source things
 alias sz='source ~/.dotfiles/zsh/zshrc'
-
 
 # _better ls
 alias la="ls -aF"
@@ -58,6 +62,22 @@ alias lsn='ls -Art1 && echo "------Newest--"'
 
 # _hugo
 alias hse='hugo server'
+
+# _ruby
+alias bx='bundle exec'
+
+# _nginx
+alias ngup='sudo nginx'
+alias ngdown='sudo nginx -s stop'
+alias ngre='sudo nginx -s stop && sudo nginx'
+alias nglog='tail -f /usr/local/var/log/nginx/access.log' # TODO: maybe wrong location
+alias ngerr='tail -f /usr/local/var/log/nginx/error.log'
+
+
+# _utility
+# check connection
+alias net="ping ya.ru | grep -E --only-match --color=never '[0-9\.]+ ms'"
+alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r | head"
 
 # _brew 
 alias br='brew'
@@ -93,6 +113,9 @@ alias kb='/Applications/Karabiner.app/Contents/Library/bin/karabiner'
 # _top
 alias cpu='top -o cpu'   # cpu
 alias mem='top -o rsize' # memory
+
+# _macos
+alias c='pbcopy'
 
 # _move file locations 
 # TODO: add move files to hazel alias / function
