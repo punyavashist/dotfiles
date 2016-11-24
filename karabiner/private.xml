@@ -1822,8 +1822,20 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::A,
+        KeyCode::F8, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::N,
         KeyCode::F10
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::R,
+        KeyCode::F3, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
 
   </item>
@@ -2113,6 +2125,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::C,
+      KeyCode::5, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::BRACKET_LEFT,
       KeyCode::F12, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 		</autogen>
@@ -2137,7 +2155,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::P,
+      KeyCode::X,
       KeyCode::4, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L
 		</autogen>
 
@@ -2274,7 +2292,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>sticky quote for tooling</name>
+    <name>sticky quote for scripts</name>
     <identifier>private.launcher_mode_open_apps_v32</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -2335,11 +2353,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::VK_OPEN_URL_APP_Hazel
     </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::A,
-        KeyCode::DOT, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-    </autogen>
 
     <autogen>
         __KeyToKey__
@@ -2630,6 +2643,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::QUOTE, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
 		</autogen>
 
+        <autogen>
+      __KeyToKey__
+      KeyCode::N,
+      KeyCode::MINUS, ModifierFlag::OPTION_L
+		</autogen>
+
 
   </item>
 
@@ -2777,6 +2796,18 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
+    KeyCode::Q,
+    KeyCode::BRACKET_LEFT
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::O,
+    KeyCode::3, ModifierFlag::SHIFT_L
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
     KeyCode::L,
     KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
     KeyCode::EQUAL,
@@ -2800,10 +2831,9 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   <autogen>
     __KeyToKey__
     KeyCode::H,
-    KeyCode::MINUS,
-    KeyCode::DOT, ModifierFlag::SHIFT_L,
-    KeyCode::SPACE
+    KeyCode::4, ModifierFlag::SHIFT_L
   </autogen>
+
 
   <autogen>
     __KeyToKey__
@@ -2813,7 +2843,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
-    KeyCode::TAB,
+    KeyCode::E,
     KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L
   </autogen>
 
@@ -2861,19 +2891,19 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::Q,
+      KeyCode::TAB,
       KeyCode::4, ModifierFlag::SHIFT_L
 		</autogen>
 
         <autogen>
       __KeyToKey__
-      KeyCode::V,
+      KeyCode::B,
       KeyCode::8, ModifierFlag::SHIFT_L
 		</autogen>
 
         <autogen>
       __KeyToKey__
-      KeyCode::E,
+      KeyCode::SHIFT_L,
       KeyCode::3, ModifierFlag::SHIFT_L
 		</autogen>
 
@@ -2952,7 +2982,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::B,
+      KeyCode::N,
       KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L,
       KeyCode::6, ModifierFlag::SHIFT_L,
       KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L
@@ -2960,8 +2990,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::N,
-      KeyCode::N, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+      KeyCode::V,
+      KeyCode::COMMA, ModifierFlag::SHIFT_L
 		</autogen>
 
         <autogen>
@@ -3243,10 +3273,17 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::F,
     </autogen>
 
+
        <autogen>
        __KeyToKey__
        KeyCode::L,
        KeyCode::SPACE, ModifierFlag::CONTROL_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::E,
+       KeyCode::RETURN, ModifierFlag::SHIFT_L
         </autogen>
 
     <autogen>
@@ -3286,7 +3323,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::W,
-       KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+       KeyCode::CURSOR_DOWN, ModifierFlag::COMMAND_L
        </autogen>
 
 
@@ -3388,6 +3425,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __BlockUntilKeyUp__ KeyCode::E,
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::QUOTE,
+      KeyCode::QUOTE, ModifierFlag::COMMAND_L
     </autogen>
 
     <autogen>

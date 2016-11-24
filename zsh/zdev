@@ -4,6 +4,7 @@
 alias w='code'
 alias w.='code .'
 alias hh='python -m SimpleHTTPServer'
+alias se='serve'
 alias fr='flask run'
 
 # _web
@@ -23,6 +24,7 @@ alias yr='yarn remove'
 alias yg='yarn global add'
 
 # _npm 
+alias i='npm'
 alias ii='npm install'
 alias is='npm start'
 alias il='npm ls'
@@ -30,6 +32,7 @@ alias iu='npm update'
 alias io='npm init'
 alias ig='npm install -g'
 alias ib='npm run build'
+alias ir='npm run'
 
 # _go
 alias o='go run'
