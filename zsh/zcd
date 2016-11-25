@@ -1,7 +1,6 @@
 # _projects 
-alias dpq='cd ~/code/xcode/projects/macos/quoter'
-alias dps='cd ~/code/projects/personal_site'
 alias dk='cd ~/projects'
+alias daq='cd ~/code/xcode/projects/macos/quoter'
 
 # _documents
 alias dap='cd ~/Documents/d.\ app'
@@ -13,48 +12,67 @@ alias dF='cd ~/Documents/app/unclutter/Unclutter\ Files'
 alias ddes='cd ~/Documents/design'
 
 # _code
-alias dxm='cd ~/code/xcode/projects/macos'
+alias dl='cd ~/play'
 alias dp='cd ~/code/python'
-alias djr='cd ~/code/java/research'
-alias dgr='cd ~/code/go/research'
 alias dgp='cd ~/code/go/projects'
 alias dgl='cd ~/code/go/play'
-alias dxi='cd ~/code/xcode/projects/ios'
 alias drb='cd ~/code/ruby'
 alias dpp='cd ~/code/python'
 alias dn='cd ~/code/node'
 alias dlove='cd ~/code/lua/love'
-alias dwp='cd ~/web/projects'
-alias dpr="cd ~/code/python/research"
 alias djs='cd ~/code/js'
-alias dw='cd ~/web'
-alias dwr='cd ~/web/research'
 alias da='cd ~/code'
-alias dweb='cd ~/web'
-alias dl='cd ~/play'
 alias dj='cd ~/code/java'
-alias dx='cd ~/code/xcode'
-alias dxr='cd ~/code/xcode/research'
 alias dpl='cd ~/code/xcode/playgrounds'
 alias dgo='cd ~/code/go'
 alias dsj='cd ~/code/solutions/java'
 alias dios='cd ~/code/xcode/projects/ios'
 alias dss='cd ~/code/solutions'
 
+# _xcode - swift
+alias dx='cd ~/xcode'
+alias dxi='cd ~/xcode/projects/ios'
+alias dxm='cd ~/xcode/projects/macos'
+
+# _web
+alias dwp='cd ~/web/projects'
+alias dw='cd ~/web'
+
+# _research
+alias dr='cd ~/research'
+alias dai='cd ~/research/ai'
+alias dapp='cd ~/research/apps'
+alias dcr='cd ~/research/crypto'
+alias ddot='cd ~/research/dots'
+alias drg='cd ~/research/general'
+alias drl='cd ~/research/learning'
+alias dreact='cd ~/research/react'
+alias dxr='cd ~/xcode/research'
+alias dres='cd ~/research/resources'
+
+# _research code
+alias dbr='cd ~/code/bash/research'
+alias dcr='cd ~/code/c/research'
+alias djr='cd ~/code/java/research'
+alias dpr="cd ~/code/python/research"
+alias dgr='cd ~/code/go/research'
+alias djsr='cd ~/code/js/research'
+alias docr='cd ~code/objc/research'
+alias dwr='cd ~/web/research'
+
 # _oss
 alias ds='cd ~/oss/'
 alias dsn='cd ~/oss/nikivi'
 alias dsr='cd ~/oss/research'
 alias dsf='cd ~/oss/forks'
-alias dr='cd ~/research'
 alias di='cd ~/inspiration'
 
 # _macos
+alias de='cd ~/Desktop'
+alias dq='cd ~/Downloads'
 alias dls='cd ~/Library/Services'
 alias dnm='cd /usr/local/lib/node_modules'
 alias dbb='cd /usr/local/bin'
-alias de='cd ~/Desktop'
-alias dq='cd ~/Downloads'
 alias dcl='cd /usr/local/Cellar'
 alias drp='cd ~/Dropbox'
 alias dbl='cd ~/oss/nikivi/hugo/content/post'
