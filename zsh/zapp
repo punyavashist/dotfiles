@@ -1,5 +1,3 @@
-# aliases for apps
-
 # _text editors
 alias cr='open -a CodeRunner'
 alias jj='open -a IntelliJ\ IDEA'
@@ -8,9 +6,6 @@ alias we='open -a MacDown'
 alias wt='open -a Atom'
 alias st='open -a Sublime\ Text'
 alias wr="open -a Marked\ 2"
-
-# _scripts for apps
-#alias jp='open_intellij_folder'
 
 # _web
 alias l="open -a Google\ Chrome\ Canary"

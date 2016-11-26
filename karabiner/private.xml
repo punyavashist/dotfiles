@@ -935,13 +935,19 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                <autogen>
                  __KeyToKey__
                  KeyCode::U,
-                 KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_screen_center_0,
+                 KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_screen_center_1,
                </autogen>
 
                <autogen>
                  __KeyToKey__
                  KeyCode::G,
                  KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_front_window_center
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::SPACE,
+                 KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
                </autogen>
 
                <autogen>
@@ -1166,7 +1172,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::E,
-       KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+       KeyCode::E, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
        </autogen>
 
        <autogen>
@@ -2125,6 +2131,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::D,
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::C,
       KeyCode::5, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
 		</autogen>
@@ -2786,6 +2797,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     __KeyToKey__
     KeyCode::SHIFT_L,
     KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::6,
+    KeyCode::6, ModifierFlag::SHIFT_L
   </autogen>
 
   <autogen>
@@ -3952,12 +3969,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __BlockUntilKeyUp__ KeyCode::A,
     </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::SPACE,
-      KeyCode::SPACE, ModifierFlag::CONTROL_L
-    </autogen>
+    
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::SPACE,
+                 KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+               </autogen>
 
     <autogen>
       __KeyToKey__

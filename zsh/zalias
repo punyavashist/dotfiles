@@ -75,8 +75,7 @@ alias ngerr='tail -f /usr/local/var/log/nginx/error.log'
 
 
 # _utility
-# check connection
-alias net="ping ya.ru | grep -E --only-match --color=never '[0-9\.]+ ms'"
+alias net="ping ya.ru | grep -E --only-match --color=never '[0-9\.]+ ms'"                # check connection
 alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r | head"
 
 # _brew 

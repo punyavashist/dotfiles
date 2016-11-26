@@ -1,6 +1,7 @@
 # _projects 
 alias dk='cd ~/projects'
 alias daq='cd ~/code/xcode/projects/macos/quoter'
+alias dll='cd ~/learning'
 
 # _documents
 alias dap='cd ~/Documents/d.\ app'
@@ -45,7 +46,6 @@ alias dapp='cd ~/research/apps'
 alias dcr='cd ~/research/crypto'
 alias ddot='cd ~/research/dots'
 alias drg='cd ~/research/general'
-alias drl='cd ~/research/learning'
 alias dreact='cd ~/research/react'
 alias dxr='cd ~/xcode/research'
 alias dres='cd ~/research/resources'

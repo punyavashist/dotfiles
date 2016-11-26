@@ -23,6 +23,9 @@ alias ya='yarn add'
 alias yr='yarn remove'
 alias yg='yarn global add'
 
+# _docker
+alias kc='docker compose' 
+
 # _npm 
 alias i='npm'
 alias ii='npm install'
