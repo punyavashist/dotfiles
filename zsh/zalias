@@ -61,7 +61,11 @@ alias lso='ls -At1 && echo "------Oldest--"'
 alias lsn='ls -Art1 && echo "------Newest--"'
 
 # _hugo
-alias hse='hugo server'
+alias hser='hugo server'
+
+# _jekyll
+alias js='bundle exec jekyll serve'
+alias jb='jekyll build'
 
 # _ruby
 alias bx='bundle exec'

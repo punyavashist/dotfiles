@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
--- -constants
+-- _constants
 --------------------------------------------------------------------------------
 local cmd_alt = {"cmd", "alt"}
 local caps = {"alt", "ctrl"}
@@ -12,8 +12,10 @@ local second_monitor = "DELL U2515H"
 local mouseCircle = nil
 local mouseCircleTimer = nil
 
+local urlencode = require("urlencode")
+
 --------------------------------------------------------------------------------
--- -functions
+-- _functions
 --------------------------------------------------------------------------------
 function mouseHighlight()
     -- delete an existing highlight if it exists
@@ -37,7 +39,7 @@ function mouseHighlight()
 end
 
 --------------------------------------------------------------------------------
--- -utils
+-- _utils
 --------------------------------------------------------------------------------
 -- show my todo task in a neat window briefly
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "I", function()
@@ -48,19 +50,55 @@ end)
 hs.hotkey.bind({"cmd", "shift"}, "F12", mouseHighlight) 
 
 --------------------------------------------------------------------------------
--- -window management
+-- _window management
 --------------------------------------------------------------------------------
 hs.window.animationDuration = 0 
 
 --------------------------------------------------------------------------------
--- -testing
+-- _testing
 --------------------------------------------------------------------------------
 hs.urlevent.bind("someAlert", function(eventName, params)
     hs.alert.show("hey there alert")
 end)
 
+-- anycomplete
+hs.hotkey.bind(cmd_alt_ctrl, "W", function()
+    local GOOGLE_ENDPOINT = 'https://suggestqueries.google.com/complete/search?client=firefox&q=%s'
+    local current = hs.application.frontmostApplication()
+
+    local chooser = hs.chooser.new(function(choosen)
+        current:activate()
+        hs.eventtap.keyStrokes(choosen.text)
+    end)
+
+    chooser:queryChangedCallback(function(string)
+        local query = urlencode.string(string)
+
+        hs.http.asyncGet(string.format(GOOGLE_ENDPOINT, query), nil, function(status, data)
+            if not data then return end
+
+            local results = hs.json.decode(data)
+
+            if not results then return end
+
+            choices = hs.fnutils.imap(results[2], function(result)
+                return {
+                    ["text"] = result,
+                }
+            end)
+
+            chooser:choices(choices)
+        end)
+    end)
+
+    chooser:searchSubText(false)
+
+    chooser:show()
+end)
+
+
 --------------------------------------------------------------------------------
--- -meta
+-- _meta
 --------------------------------------------------------------------------------
 
 -- needed for cli utility I use to reload config
