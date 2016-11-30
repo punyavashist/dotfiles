@@ -1,26 +1,24 @@
-# this is what zsh sources first on bootup
-
 # source prezto
-if [[ -s "${ZDOTDIR:-$HOME}/.dotfiles/zsh/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.dotfiles/zsh/init.zsh"
+if [[ -s "${ZDOTDIR:-$HOME}/.dotfiles/zsh/prezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.dotfiles/zsh/prezto/init.zsh"
 fi
-
 
 # vi movement in iTerm
 set -o vi
 
 #bindkey -v
 
-# _source
-source ~/.dotfiles/zsh/zenv
-source ~/.dotfiles/zsh/zcd
-source ~/.dotfiles/vim/zvim
-source ~/.dotfiles/zsh/zfunctions
-source ~/.dotfiles/zsh/zdev
-source ~/.dotfiles/git/zgit
-source ~/.dotfiles/zsh/zalias
-source ~/.dotfiles/zsh/zapp
-source ~/.dotfiles/zsh/zscripts
+# _source 
+source ~/.dotfiles/zsh/dev/zenv
+source ~/.dotfiles/zsh/aliases/zgit
+source ~/.dotfiles/zsh/aliases/zvim
+source ~/.dotfiles/zsh/aliases/zcd
+source ~/.dotfiles/zsh/functions/zfunctions
+source ~/.dotfiles/zsh/aliases/zdev
+source ~/.dotfiles/zsh/aliases/zalias
+source ~/.dotfiles/zsh/aliases/zapp
+source ~/.dotfiles/zsh/aliases/zscripts
+source ~/.dotfiles/zsh/aliases/zdocker
 
 # autojump > cd
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
@@ -28,8 +26,7 @@ source ~/.dotfiles/zsh/zscripts
 # 'thefuck' command correction 
 eval "$(thefuck --alias)"
 
-# _zplug package manager
-# TODO: set it up, and have vim autocompletion working (didn't work before)
+# _zplug package manager TODO: set it up
 
 # neat colour schemes to use
 BASE16_SHELL=$HOME/.config/base16-shell/
@@ -41,3 +38,4 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 
 
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

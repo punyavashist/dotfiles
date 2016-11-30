@@ -3,7 +3,6 @@
 #
 # version check
 #
-
 # check for the minimum supported version.
 min_zsh_version='4.3.17'
 if ! autoload -Uz is-at-least || ! is-at-least "$min_zsh_version"; then

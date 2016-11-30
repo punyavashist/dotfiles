@@ -1,0 +1,28 @@
+# _aliases for opening files with vim
+
+# _main
+alias ee='nvim .'
+alias ep='nvim package.json'
+alias er='nvim readme.md'
+alias ei='nvim index.js'
+alias egi='nvim .gitignore'
+
+# _dotfiles
+alias ea='nvim ~/.dotfiles/zsh/aliases/zalias'
+alias ez='nvim ~/.dotfiles/zsh/zshrc'
+alias eze='nvim ~/.dotfiles/zsh/aliases/zvim'
+alias ezp='nvim ~/.dotfiles/zsh/aliases/zcd'
+alias ek='nvim ~/Library/Application\ Support/Karabiner/private.xml'
+alias ezz='nvim ~/.zprofile'
+alias ew='nvim ~/.dotfiles/vim/nvim/nvimrc'
+alias ezf='nvim ~/.dotfiles/zsh/functions/zfunctions'
+alias ezv='nvim ~/.dotfiles/vim/vim/zvim'
+alias ehs='nvim ~/.dotfiles/hammerspoon/init.lua'
+alias ezd='nvim ~/.dotfiles/zsh/aliases/zdev'
+alias ezg='nvim ~/.dotfiles/zsh/aliases/zgit'
+alias eza='nvim ~/.dotfiles/zsh/aliases/zapp'
+alias ezs='nvim ~/.dotfiles/zsh/aliases/zscripts'
+alias ezn='nvim ~/.dotfiles/zsh/dev/zenv'
+alias ezo='nvim ~/.dotfiles/zsh/aliases/zdocker'
+alias et='nvim ~/.dotfiles/tmux/tmux.conf.local'
+

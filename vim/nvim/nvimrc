@@ -26,6 +26,7 @@
 " --------------------------------------
 "  _testing
 " --------------------------------------
+
 noremap Q @q
 set showcmd                                       " show me what I'm typing
 set autowrite                                     " automatically save before :next, :make etc
@@ -83,6 +84,7 @@ function! DoRemote(arg)
 endfunction
 
 Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'danro/rename.vim'                             " allow to :Rename files
 Plug 'rking/ag.vim'                                 " lightining fast :Ag searcher
 Plug 'sheerun/vim-polyglot'
