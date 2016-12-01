@@ -1340,6 +1340,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::U,
+      KeyCode::F5, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+		</autogen>
+
+
+        <autogen>
+      __KeyToKey__
       KeyCode::E,
       KeyCode::RETURN, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
 		</autogen>
@@ -1842,6 +1849,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::SPACE,
+        KeyCode::G, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::A,
         KeyCode::F8, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
@@ -1907,6 +1920,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::L,
       ConsumerKeyCode::MUSIC_NEXT
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::SPACE,
+      KeyCode::A, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
     <autogen>
@@ -2405,6 +2424,108 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   </item>
 
+<item>
+		<name>sticky c for more actions</name>
+		<identifier>private.launcher_mode_open_apps_v41</identifier>
+
+    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::C,
+
+      <!--
+          Use notsave.launcher_mode_v2 in order to be higher priority.
+          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
+      -->
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v41, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::C,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v41</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::C,
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::SPACE,
+        KeyCode::D, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+  </item>
+
+<item>
+		<name>sticky backquote for more actions</name>
+		<identifier>private.launcher_mode_open_apps_v40</identifier>
+
+    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::BACKQUOTE,
+
+      <!--
+          Use notsave.launcher_mode_v2 in order to be higher priority.
+          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
+      -->
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v40, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::BACKQUOTE,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v40</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::BACKQUOTE,
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::SPACE,
+        KeyCode::S, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+  </item>
+
 
 <item>
 		<name>sticky g for symbols</name>
@@ -2454,6 +2575,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         __KeyToKey__
         KeyCode::W,
         KeyCode::F19
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::SPACE,
+        KeyCode::O, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
     <autogen>
@@ -2597,10 +2724,15 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::F8, ModifierFlag::COMMAND_L
     </autogen>
 
-
         <autogen>
       __KeyToKey__
       KeyCode::I,
+      KeyCode::2, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::W,
       KeyCode::2, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 		</autogen>
 
@@ -3131,8 +3263,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::F5
     </autogen>
 
-
-
+    <autogen>
+        __KeyToKey__
+        KeyCode::SPACE,
+        KeyCode::F, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
 
   </item>
 
@@ -3184,6 +3319,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::K,
       KeyCode::SEMICOLON, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::SPACE,
+      KeyCode::P, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 		</autogen>
 
         <autogen>
@@ -3403,7 +3544,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::SPACE,
-       KeyCode::Y, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+       KeyCode::F1, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
         </autogen>
 
     <autogen>
@@ -5128,7 +5269,7 @@ KeyCode::DELETE, ModifierFlag::COMMAND_L
 <!-- this allows me to toggle Alfred prompt with one right command key press -->
 <!-- I then bind this combination in Alfred itself and I have a fully working command key which acts as Alfred prompt when pressed alone -->
 <item>
-<name>right shift to alfred</name>
+<name>left shift to alfred</name>
 <identifier>private.right_shift_to_alfred</identifier>
 <autogen>
 __KeyOverlaidModifier__
