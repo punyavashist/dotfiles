@@ -2,7 +2,12 @@
 # _personal config
 # ------------------------------------------------------
 
-# this sits on top of a framework that is like magic to me right now - will need to understand it
+# TODO: go through the tmux framework and remove the bits I overwrite or don't need
+
+set-option -g default-shell /bin/zsh
+
+# use vi mode
+setw -g mode-keys vi
 
 set-option -g prefix C-f
 

@@ -1,4 +1,6 @@
-# source prezto
+if [ -z "$TMUX" ]; STARTTMUX; fi
+
+# prezto config
 if [[ -s "${ZDOTDIR:-$HOME}/.dotfiles/zsh/prezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.dotfiles/zsh/prezto/init.zsh"
 fi
@@ -6,9 +8,7 @@ fi
 # vi movement in iTerm
 set -o vi
 
-#bindkey -v
-
-# _source 
+# _source my own aliases
 source ~/.dotfiles/zsh/dev/zenv
 source ~/.dotfiles/zsh/aliases/zgit
 source ~/.dotfiles/zsh/aliases/zvim
@@ -26,8 +26,6 @@ source ~/.dotfiles/zsh/aliases/zdocker
 # 'thefuck' command correction 
 eval "$(thefuck --alias)"
 
-# _zplug package manager TODO: set it up
-
 # neat colour schemes to use
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
@@ -37,5 +35,8 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 [[ -f /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh ]] && . /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh
 
 
-
+# need it
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# _zplug package manager : TODO: set it up
+
