@@ -1,0 +1,11 @@
+# vi movement in iTerm
+set -o vi
+
+
+# _bindings
+bindkey -M viins "^j" beginning-of-line
+bindkey -M viins "^k" end-of-line
+bindkey -M viins "^i" up-history
+bindkey -M vicmd "^[" vi-insert
+
+

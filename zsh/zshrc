@@ -3,10 +3,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.dotfiles/zsh/prezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.dotfiles/zsh/prezto/init.zsh"
 fi
 
-# vi movement in iTerm
-set -o vi
-
 # _source my own aliases
+source ~/.dotfiles/zsh/zsh/zbindings
 source ~/.dotfiles/zsh/dev/zenv
 source ~/.dotfiles/zsh/aliases/zgit
 source ~/.dotfiles/zsh/aliases/zvim
