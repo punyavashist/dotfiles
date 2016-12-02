@@ -1,5 +1,3 @@
-if [ -z "$TMUX" ]; STARTTMUX; fi
-
 # prezto config
 if [[ -s "${ZDOTDIR:-$HOME}/.dotfiles/zsh/prezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.dotfiles/zsh/prezto/init.zsh"
