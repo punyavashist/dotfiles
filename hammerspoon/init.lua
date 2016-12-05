@@ -12,8 +12,6 @@ local second_monitor = "DELL U2515H"
 local mouseCircle = nil
 local mouseCircleTimer = nil
 
-local urlencode = require("urlencode")
-
 --------------------------------------------------------------------------------
 -- _functions
 --------------------------------------------------------------------------------
@@ -61,6 +59,8 @@ hs.urlevent.bind("someAlert", function(eventName, params)
     hs.alert.show("hey there alert")
 end)
 
+local anycomplete = require "anycomplete/anycomplete"
+anycomplete.registerDefaultBindings(cmd_alt_ctrl, "W")
 
 --------------------------------------------------------------------------------
 -- _meta

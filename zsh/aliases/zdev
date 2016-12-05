@@ -21,6 +21,9 @@ alias ya='yarn add'
 alias yr='yarn remove'
 alias yg='yarn global add'
 
+# _pip
+alias pi='pip install'
+
 
 # _npm 
 alias i='npm'

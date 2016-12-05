@@ -1,5 +1,7 @@
 # _general
 alias tl='tmux'
+alias sfuck='eval $(thefuck $(fc -ln -1)); history -r' # TODO: check it out - not sure if better
+alias how='howdoi'
 alias ua='unalias'
 alias sudo='sudo '
 alias ma='mkdir -p'
@@ -119,7 +121,7 @@ alias cpu='top -o cpu'   # cpu
 alias mem='top -o rsize' # memory
 
 # _macos
-alias c='pbcopy'
+alias bb='pbcopy'
 
 # _move file locations 
 # TODO: add move files to hazel alias / function
