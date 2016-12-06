@@ -6,6 +6,7 @@ alias ep='nvim package.json'
 alias er='nvim readme.md'
 alias ei='nvim index.js'
 alias egi='nvim .gitignore'
+alias ej='nvim package.json'
 
 # _dotfiles
 alias ea='nvim ~/.dotfiles/zsh/aliases/zalias'

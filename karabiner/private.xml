@@ -49,7 +49,8 @@
    </autogen>
     </item>
 
-<!-- todo: clean it up, add comments, make things easily searchable  -->
+<!-- TODO: clean it up, add comments, make things easily searchable  -->
+
 <!-- -language definitions -->
 <inputsourcedef>
 <name>US</name>
@@ -61,13 +62,10 @@
 <inputsourceid_prefix>com.apple.keylayout.RussianWin</inputsourceid_prefix>
 </inputsourcedef>
 
-<!-- I use round brackets more often then square brackets -->
-<!-- I also use colon more often then semi colon -->
-<!-- this is just a personal preference of me changing brackets around to make my typing workflow much faster -->
-<!-- I might add and change things later but right now this is really nice -->
 <item>
 <name>put {} () [] to a better place</name>
 <identifier>private.brackets_around</identifier>
+<inputsource_not>RU</inputsource_not>
 <autogen>
 __KeyToKey__
 KeyCode::BACKSLASH, ModifierFlag::NONE,
@@ -113,7 +111,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 <item>
   <name>change colon to semicolon</name>
   <identifier>private.colon_to_semicolon</identifier>
-<inputsource_only>US</inputsource_only>
+<inputsource_not>RU</inputsource_not>
     <autogen>
     __KeyToKey__
     KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
@@ -443,6 +441,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 <item>
   <name>hyper function semicolon key</name>
     <identifier>private.hyper.function.SEMICOLON.key</identifier>
+    <inputsource_not>RU</inputsource_not>
 
     <autogen>
     __KeyToKey__
@@ -1488,8 +1487,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::G,
+      KeyCode::D,
       KeyCode::F5, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::G,
+      KeyCode::F5, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
 		</autogen>
 
   </item>
@@ -3475,6 +3480,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::F,
+      KeyCode::F4, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::I,
       KeyCode::F4, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 		</autogen>
@@ -3724,6 +3735,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::0,
       KeyCode::0, ModifierFlag::COMMAND_L
     </autogen>
+
 
     <autogen>
       __KeyToKey__
