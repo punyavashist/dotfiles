@@ -1,9 +1,16 @@
 --------------------------------------------------------------------------------
+-- _require
+--------------------------------------------------------------------------------
+require("hs.ipc") -- for hammerspoon cli TODO: see if I use it
+
+
+--------------------------------------------------------------------------------
 -- _constants
 --------------------------------------------------------------------------------
-local cmd_alt = {"cmd", "alt"}
 local caps = {"alt", "ctrl"}
+local cmd_alt = {"cmd", "alt"}
 local cmd_alt_ctrl = {"cmd", "alt", "ctrl"}
+local cmd_alt_shift = {"cmd", "alt", "shift"}
 local cmd_alt_ctrl_shift = {"cmd", "alt", "ctrl", "shift"}
 
 local main_monitor = "Color LCD"
@@ -11,6 +18,8 @@ local second_monitor = "DELL U2515H"
 
 local mouseCircle = nil
 local mouseCircleTimer = nil
+
+
 
 --------------------------------------------------------------------------------
 -- _functions
@@ -47,6 +56,20 @@ end)
 -- visually circle my mouse pointer
 hs.hotkey.bind({"cmd", "shift"}, "F12", mouseHighlight) 
 
+-- _wifi watcher
+wifiwatcher = hs.wifi.watcher.new(function ()
+    net = hs.wifi.currentNetwork()
+    if net==nil then
+        hs.notify.show("wifi disconnected","","","")
+    else
+        hs.notify.show("wifi connected","",net,"")
+    end
+end)
+wifiwatcher:start()
+
+local anycomplete = require "anycomplete/anycomplete"
+anycomplete.registerDefaultBindings(cmd_alt_ctrl, "W")
+
 --------------------------------------------------------------------------------
 -- _window management
 --------------------------------------------------------------------------------
@@ -59,12 +82,15 @@ hs.urlevent.bind("someAlert", function(eventName, params)
     hs.alert.show("hey there alert")
 end)
 
-local anycomplete = require "anycomplete/anycomplete"
-anycomplete.registerDefaultBindings(cmd_alt_ctrl, "W")
+
+
+
 
 --------------------------------------------------------------------------------
--- _meta
+-- _meta 
 --------------------------------------------------------------------------------
+hs.hotkey.bind(cmd_alt_shift, "M", hs.toggleConsole)
+
 
 -- needed for cli utility I use to reload config
 require("hs.ipc")
@@ -76,4 +102,5 @@ end)
 
 -- called on every config reload to notify if it was reloaded
 hs.alert.show("config loaded")
+
 

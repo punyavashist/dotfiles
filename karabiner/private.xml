@@ -37,6 +37,8 @@
 <equal>com.guidedways.TodoMac</equal>
 </appdef>
 
+
+
   <item>
   <name>space after comma</name>
   <appendix>space after comma</appendix>
@@ -3348,7 +3350,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::N, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
         </autogen>
 
-
        <autogen>
        __KeyToKey__
        KeyCode::P,
@@ -3362,11 +3363,10 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         </autogen>
 
 
-    <!-- quick bindable tester for alfred  -->
     <autogen>
         __KeyToKey__
         KeyCode::K,
-        KeyCode::F19
+        KeyCode::U, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
     <!-- screenflow start / stop  -->
@@ -3380,6 +3380,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         __KeyToKey__
         KeyCode::SPACE,
         KeyCode::F, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::J,
+        KeyCode::M, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
     </autogen>
 
   </item>
