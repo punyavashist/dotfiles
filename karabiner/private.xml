@@ -954,12 +954,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
                <autogen>
                  __KeyToKey__
-                 KeyCode::F19,
-                 KeyCode::F19
-               </autogen>
-
-               <autogen>
-                 __KeyToKey__
                  KeyCode::SEMICOLON,
                  KeyCode::F11, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
                </autogen>
@@ -1495,7 +1489,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::G,
+      KeyCode::F,
       KeyCode::F5, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
 		</autogen>
 
@@ -2683,12 +2677,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::G,
     </autogen>
 
-    <!-- quick bindable tester for alfred  -->
-    <autogen>
-        __KeyToKey__
-        KeyCode::W,
-        KeyCode::F19
-    </autogen>
 
     <autogen>
         __KeyToKey__
@@ -2725,8 +2713,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::SEMICOLON,
+       KeyCode::QUOTE,
        KeyCode::F10, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::SEMICOLON,
+       KeyCode::K, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
         </autogen>
 
     <autogen>
@@ -3089,8 +3083,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   <autogen>
     __KeyToKey__
     KeyCode::L,
-    KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
     KeyCode::EQUAL,
+    KeyCode::DOT, ModifierFlag::SHIFT_L,
     KeyCode::SPACE
   </autogen>
 

@@ -3,6 +3,7 @@
 	email = nikita.voloboev@gmail.com
 [core]
 	editor = nvim
+	excludesfile = /Users/nikivi/.gitignore_global
 [github]
     user = nikitavoloboev
 [alias]

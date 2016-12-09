@@ -21,8 +21,10 @@ export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
 # exported variables get passed on to child processes, not-exported variables do not
 # can call it like so $ZPLUG_HOME
 export NODE_PATH='/usr/local/lib/node_modules'
-export ZPLUG_HOME=/usr/local/opt/zplug 
-source $ZPLUG_HOME/init.zsh
+
+# TODO: throws error - fix it - something deprecated
+#export ZPLUG_HOME=/usr/local/opt/zplug 
+#source $ZPLUG_HOME/init.zsh
 
 
 

@@ -15,26 +15,27 @@ alias ndi='node install'
 alias n.='node .'
 
 # _yarn
-alias y='yarn'
-alias yi='yarn init'
-alias ya='yarn add'
-alias yr='yarn remove'
-alias yg='yarn global add'
+alias i='yarn'
+alias it='yarn init'
+alias ia='yarn add'
+alias is='yarn install'
+alias ir='yarn remove'
+alias ig='yarn global add'
 
 # _pip
 alias pi='pip install'
 
 
-# _npm 
-alias i='npm'
-alias ii='npm install'
-alias is='npm start'
-alias il='npm ls'
-alias iu='npm update'
-alias io='npm init'
-alias ig='npm install -g'
-alias ib='npm run build'
-alias ir='npm run'
+# _npm - depracated
+alias nn='npm'
+alias ni='npm install'
+alias ns='npm start'
+alias nls='npm ls'
+alias nu='npm update'
+alias nt='npm init'
+alias nig='npm install -g'
+alias nb='npm run build'
+alias nr='npm run'
 
 # _go
 alias o='go run'

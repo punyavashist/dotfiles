@@ -20,6 +20,10 @@ local mouseCircle = nil
 local mouseCircleTimer = nil
 
 
+--------------------------------------------------------------------------------
+-- _variables
+--------------------------------------------------------------------------------
+
 
 --------------------------------------------------------------------------------
 -- _functions
@@ -53,6 +57,14 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "I", function()
 hs.alert.show( ( hs.execute("~/Documents/d.\\ app/bitbar/todo") ) )
 end)
 
+
+-- display clipboard contents
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "K", function()
+	clipboard = hs.pasteboard.getContents()
+	hs.alert.show(clipboard)
+end)
+
+
 -- visually circle my mouse pointer
 hs.hotkey.bind({"cmd", "shift"}, "F12", mouseHighlight) 
 
@@ -81,8 +93,6 @@ hs.window.animationDuration = 0
 hs.urlevent.bind("someAlert", function(eventName, params)
     hs.alert.show("hey there alert")
 end)
-
-
 
 
 
