@@ -10,6 +10,24 @@ function finder {
 EOF
 }
 
+# open xcode workspace
+xo(){ 
+  if test -n "$(find . -maxdepth 1 -name '*.xcworkspace' -print -quit)"
+  then
+    echo "Opening workspace"
+    open *.xcworkspace
+    return
+  else
+    if test -n "$(find . -maxdepth 1 -name '*.xcodeproj' -print -quit)"
+    then
+      echo "Opening project"
+      open *.xcodeproj
+      return  
+    else
+      echo "Nothing found"
+    fi
+  fi
+}
 
 
 # execute commands for each file in current directory.

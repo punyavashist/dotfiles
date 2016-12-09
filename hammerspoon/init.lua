@@ -89,7 +89,7 @@ end)
 --------------------------------------------------------------------------------
 -- _meta 
 --------------------------------------------------------------------------------
-hs.hotkey.bind(cmd_alt_shift, "M", hs.toggleConsole)
+hs.hotkey.bind(cmd_alt_shift, "U", hs.toggleConsole)
 
 
 -- needed for cli utility I use to reload config

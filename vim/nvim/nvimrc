@@ -28,6 +28,7 @@
 " --------------------------------------
 
 noremap Q @q
+vnoremap <D-c> y
 set timeout timeoutlen=1000 ttimeoutlen=10        " faster esc - maybe :|
 set showcmd                                       " show me what I'm typing
 set autowrite                                     " automatically save before :next, :make etc

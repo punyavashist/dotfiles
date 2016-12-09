@@ -1,5 +1,6 @@
 # _general
 alias tl='tmux'
+alias rl='curl'
 alias sfuck='eval $(thefuck $(fc -ln -1)); history -r' # TODO: check it out - not sure if better
 alias how='howdoi'
 alias ua='unalias'
@@ -18,7 +19,7 @@ alias b='bd'
 alias s='fuck'
 alias dus='du -s'
 alias t='touch'
-alias z='open'
+alias zo='open'
 alias kt='killall tmux'
 alias ff='awk'
 alias ki='kill'

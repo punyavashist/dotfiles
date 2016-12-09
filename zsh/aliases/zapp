@@ -4,7 +4,7 @@ alias jj='open -a IntelliJ\ IDEA'
 alias xx='open -a Xcode'
 alias we='open -a MacDown'
 alias wt='open -a Atom'
-alias st='open -a Sublime\ Text'
+alias ww='subl'
 alias wr="open -a Marked\ 2"
 
 # _web

@@ -954,6 +954,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
                <autogen>
                  __KeyToKey__
+                 KeyCode::F19,
+                 KeyCode::F19
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
                  KeyCode::SEMICOLON,
                  KeyCode::F11, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
                </autogen>
@@ -1003,12 +1009,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  KeyCode::4, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
                </autogen>
 
-
-               <autogen>
-                 __KeyToKey__
-                 KeyCode::F19,
-                 KeyCode::1, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-               </autogen>
 
                <autogen>
                  __KeyToKey__
@@ -2807,6 +2807,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::R,
     </autogen>
 
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::B,
+        KeyCode::I, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+    </autogen>
+
 		<!-- day one -->
         <autogen>
       __KeyToKey__
@@ -2881,11 +2888,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::F1, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
     </autogen>
 
-    <autogen>
-      __KeyToKey__
-      KeyCode::B,
-      KeyCode::O, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
-    </autogen>
 
     <autogen>
       __KeyToKey__
@@ -3337,13 +3339,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     </autogen>
 
 
-    <!-- reload karabiner xml  -->
-    <autogen>
-        __KeyToKey__
-        KeyCode::L,
-        KeyCode::M, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
-    </autogen>
-
        <autogen>
        __KeyToKey__
        KeyCode::W,
@@ -3363,11 +3358,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         </autogen>
 
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::K,
-        KeyCode::U, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-    </autogen>
 
     <!-- screenflow start / stop  -->
     <autogen>
@@ -3382,11 +3372,23 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::F, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
-
     <autogen>
         __KeyToKey__
         KeyCode::J,
-        KeyCode::M, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+        KeyCode::U, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::K,
+        KeyCode::U, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <!-- reload karabiner xml  -->
+    <autogen>
+        __KeyToKey__
+        KeyCode::L,
+        KeyCode::M, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
 
   </item>
