@@ -1356,6 +1356,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::Z,
+      KeyCode::O, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::H,
       KeyCode::F5, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
 		</autogen>
@@ -3083,8 +3089,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   <autogen>
     __KeyToKey__
     KeyCode::L,
+    KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
     KeyCode::EQUAL,
-    KeyCode::DOT, ModifierFlag::SHIFT_L,
     KeyCode::SPACE
   </autogen>
 
@@ -3489,7 +3495,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::I,
+      KeyCode::V,
       KeyCode::F4, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 		</autogen>
 
@@ -3499,6 +3505,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::J,
       KeyCode::K, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 		</autogen>
+
 
   </item>
 
