@@ -971,8 +971,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_front_window_center
                </autogen>
 
-
-
                <autogen>
                  __KeyToKey__
                  KeyCode::SPACE,
@@ -1034,6 +1032,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  KeyCode::Z,
                  KeyCode::F11, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
                </autogen>
+
 
 
                ]]>
@@ -1409,11 +1408,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::I, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
-        <autogen>
-      __KeyToKey__
-      KeyCode::N,
-      KeyCode::F8, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
-		</autogen>
 
         <autogen>
       __KeyToKey__
@@ -1467,6 +1461,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::J,
       KeyCode::E, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::N,
+      KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 		</autogen>
 
         <autogen>
@@ -1591,7 +1591,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>sticky dot option modifier</name>
+    <name>sticky dot for more tricky symbols and maybe emojis</name>
     <identifier>private.launcher_mode_open_apps_v20</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -1641,159 +1641,9 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __KeyToKey__
-      KeyCode::Q,
-      KeyCode::Q, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::W,
-      KeyCode::W, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::E,
-      KeyCode::E, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::R,
-      KeyCode::R, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::T,
-      KeyCode::T, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::Y,
-      KeyCode::Y, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::U,
-      KeyCode::U, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::I,
-      KeyCode::I, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::O,
-      KeyCode::O, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::P,
-      KeyCode::P, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::A,
-      KeyCode::A, ModifierFlag::OPTION_R
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::S,
-      KeyCode::S, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::D,
-      KeyCode::D, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::F,
-      KeyCode::F, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::G,
-      KeyCode::G, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::H,
-      KeyCode::H, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::J,
-      KeyCode::J, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::K,
-      KeyCode::K, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::L,
-      KeyCode::L, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::Z,
-      KeyCode::Z, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::X,
-      KeyCode::X, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::C,
-      KeyCode::C, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
       KeyCode::V,
-      KeyCode::V, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::B,
-      KeyCode::B, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::N,
-      KeyCode::N, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::M,
-      KeyCode::M, ModifierFlag::OPTION_L
-    </autogen>
+      KeyCode::DOT, ModifierFlag::SHIFT_L
+ </autogen>
 
   </item>
 
@@ -1892,6 +1742,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __BlockUntilKeyUp__ KeyCode::M,
     </autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::G,
+      KeyCode::F1, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L
+		</autogen>
 
 
     <autogen>
@@ -2239,11 +2095,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::F12, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 		</autogen>
 
-        <autogen>
-      __KeyToKey__
-      KeyCode::COMMA,
-      KeyCode::F1, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L
-		</autogen>
 
         <autogen>
       __KeyToKey__
@@ -3495,7 +3346,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::V,
+      KeyCode::I,
       KeyCode::F4, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 		</autogen>
 
@@ -3745,7 +3596,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::0,
       KeyCode::0, ModifierFlag::COMMAND_L
     </autogen>
-
 
     <autogen>
       __KeyToKey__

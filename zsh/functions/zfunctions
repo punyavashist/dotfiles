@@ -1,6 +1,10 @@
 # _test
 le() {ccat "$@" | less}
 
+# _edit readme with macdown
+# TODO: check if readme exists, if not create it, then edit
+
+
 # show current Finder directory.
 function finder {
   osascript 2>/dev/null <<EOF

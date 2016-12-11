@@ -2,10 +2,13 @@
 alias cr='open -a CodeRunner'
 alias jj='open -a IntelliJ\ IDEA'
 alias xx='open -a Xcode'
-alias we='open -a MacDown'
+alias ae='open -a MacDown'
 alias wt='open -a Atom'
 alias ww='subl'
 alias wr="open -a Marked\ 2"
+
+
+# _use apps
 
 # _web
 alias l="open -a Google\ Chrome\ Canary"
