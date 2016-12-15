@@ -22,8 +22,10 @@ The following is a list of all these awesome **sticky keys** that I personally u
 - e - [alfred search bookmarks]()
 - r - [alfred archive currently read article on safari](https://github.com/fniephaus/alfred-pocket)
 - t - [alfred search stack overflow](https://github.com/xhinking/Alfred)
+
 - u - alfred file filter to search for [numbers](http://www.apple.com/lae/numbers/) files
 - i - [alfred search google images](https://github.com/deanishe/alfred-searchio)
+
 - o - alfred file filter to search [iBook](http://www.apple.com/lae/ibooks/) files
 - a - [alfred search for alfred workflows I have](https://github.com/jmjeong/alfred-extension/tree/master/managealfredextension)
 - s - [alfred filter for ssh connections](https://github.com/deanishe/alfred-ssh) 
