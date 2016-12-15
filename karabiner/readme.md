@@ -21,7 +21,7 @@ The following is a list of all these awesome **sticky keys** that I personally u
 ##sticky caps lock (⇪)
 - q - [alfred search through safari bookmarks](https://gogs.deanishe.net/deanishe/alfred-safari-assistant)
 - w - [alfred search wiki](https://github.com/deanishe/alfred-searchio)
-- e - [alfred search bookmarks]()
+- e - [alfred search bookmarks](https://github.com/nikitavoloboev/my-mac-os/blob/master/alfred-workflows/other-people/search%20safari.alfredworkflow)
 - r - [alfred archive currently read article on safari](https://github.com/fniephaus/alfred-pocket)
 - t - [alfred search stack overflow](https://github.com/xhinking/Alfred)
 - u - alfred file filter to search for [numbers](http://www.apple.com/lae/numbers/) files
