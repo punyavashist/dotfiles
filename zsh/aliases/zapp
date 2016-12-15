@@ -2,11 +2,13 @@
 alias cr='open -a CodeRunner'
 alias jj='open -a IntelliJ\ IDEA'
 alias xx='open -a Xcode'
-alias ae='open -a MacDown'
+#alias ae='open -a MacDown'
+alias ae='open -a MacDown readme.md'
 alias wt='open -a Atom'
-alias ww='subl'
+alias wa='subl'
+alias w='code'
+alias w.='code .'
 alias wr="open -a Marked\ 2"
-
 
 # _use apps
 

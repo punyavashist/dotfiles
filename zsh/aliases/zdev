@@ -1,6 +1,4 @@
 # _dev
-alias w='code'
-alias w.='code .'
 alias hh='python -m SimpleHTTPServer'
 alias sv='python3 -m http.server'
 alias fr='flask run'

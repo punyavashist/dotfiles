@@ -1,3 +1,15 @@
+# TODO: sort it into appropriate sections
+
+
+# _folder with a. prefix
+function mda() {
+    mkdir a.\ $1
+}
+
+# taken folder as input, prefix it
+
+
+
 # _test
 le() {ccat "$@" | less}
 
