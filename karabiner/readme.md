@@ -5,12 +5,14 @@ Karabiner has fundamentally changed the way I interact with my computer. I am no
 For reference I specify symbols as their unicode equivalents, so : 
 
 - ␣ = space 
+- ⇪ = caps lock
 - ⌃ = control
 - ⌘ = command
 - ⌥ = option
 - ⇥ = tab
 - ⇧ = shift
 - ~ = tilda
+- ↩ = return
 
 
 The following is a list of all these awesome **sticky keys** that I personally use and love :
@@ -22,21 +24,19 @@ The following is a list of all these awesome **sticky keys** that I personally u
 - e - [alfred search bookmarks]()
 - r - [alfred archive currently read article on safari](https://github.com/fniephaus/alfred-pocket)
 - t - [alfred search stack overflow](https://github.com/xhinking/Alfred)
-
-- u - alfred file filter to search for [numbers](http://www.apple.com/lae/numbers/) files
+- u - alfred file filter to search for [numbers](http://www.apple.com/lae/numbers/) files
 - i - [alfred search google images](https://github.com/deanishe/alfred-searchio)
-
 - o - alfred file filter to search [iBook](http://www.apple.com/lae/ibooks/) files
-- a - [alfred search for alfred workflows I have](https://github.com/jmjeong/alfred-extension/tree/master/managealfredextension)
+- a - [alfred search for alfred workflows I have](https://github.com/jmjeong/alfred-extension/tree/master/managealfredextension)
 - s - [alfred filter for ssh connections](https://github.com/deanishe/alfred-ssh) 
-- f - alfred file filter for [soulver](http://acqualia.com/soulver/) files
+- f - alfred file filter for [soulver](http://acqualia.com/soulver/) files
 - g - [alfred search for gifs in giphy](https://github.com/kejadlen/giphy.alfredworkflow)
-- j - [alfred search for intellij projects](https://github.com/bchatard/jetbrains-alfred-workflow)
+- j - [alfred search for intellij projects](https://github.com/bchatard/jetbrains-alfred-workflow)
 - k - alfred file filter for [paw](https://paw.cloud/) files
 - l - alfred file filter for [xcode](https://developer.apple.com/xcode/) files
 - : - [alfred unit conversion](http://units.dnsu.ch/)
 - ' - [alfred flat colour picker](https://github.com/mi-ca/alfredapp_flatuicolors_workflow)
-- x - alfred file filter to search for [texpad](https://www.texpad.com) files
+- x - alfred file filter to search for [texpad](https://www.texpad.com) files
 - c - [alfred view spotify playlists](http://alfred-spotify-mini-player.com)
 - v - [alfred add song to spotify playlist](http://alfred-spotify-mini-player.com)
 - b - [alfred remove current track from spotify playlist](http://alfred-spotify-mini-player.com)
@@ -258,7 +258,7 @@ The following is a list of all these awesome **sticky keys** that I personally u
 - v + l - next track
 - v + n - sound down
 - v + m - sound up
-- v + ␣ - search selected text on imgur
+- v + ␣ - search selected text on google images
 
 ##sticky b - window management
 - b + i - move to left desktop
