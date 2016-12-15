@@ -2,6 +2,7 @@
 <root>
 
 <modifierdef>MY_CAPSLOCK</modifierdef>
+
 <modifierdef>MY_OPTION_L</modifierdef>
 <modifierdef>MY_CONTROL_L</modifierdef>
 
@@ -10,7 +11,6 @@
     <name>KeyCode::VK_OPEN_URL_APP_IntelliJ</name>
     <url type="file">/Applications/IntelliJ IDEA.app</url>
   </vkopenurldef>
-
 
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_Hazel</name>
@@ -968,11 +968,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_front_window_center
                </autogen>
 
-               <autogen>
-                 __KeyToKey__
-                 KeyCode::SPACE,
-                 KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-               </autogen>
+           <autogen>
+           __KeyToKey__
+           KeyCode::SPACE,
+           KeyCode::F1, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+            </autogen>
 
                <autogen>
                  __KeyToKey__
@@ -2640,6 +2640,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::G,
     </autogen>
 
+    <autogen>
+        __KeyToKey__
+        KeyCode::F19,
+        KeyCode::6, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
 
     <autogen>
         __KeyToKey__
@@ -2766,8 +2771,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __KeyToKey__
-      KeyCode::F19,
-      KeyCode::6, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+      KeyCode::SPACE,
+      KeyCode::G, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
     </autogen>
 
     <autogen>
@@ -2785,7 +2790,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::SPACE,
+      KeyCode::F19,
       KeyCode::5, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
 		</autogen>
 
@@ -3632,11 +3637,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::RETURN, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
        </autogen>
 
-       <autogen>
-       __KeyToKey__
-       KeyCode::SPACE,
-       KeyCode::F1, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
-        </autogen>
 
     <autogen>
       __KeyToKey__
@@ -3662,6 +3662,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::S,
       KeyCode::T, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::SPACE,
+       KeyCode::V, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+        </autogen>
+
 
   </item>
 
@@ -4318,11 +4325,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::A,
     </autogen>
     
-               <autogen>
-                 __KeyToKey__
-                 KeyCode::SPACE,
-                 KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-               </autogen>
+       <autogen>
+         __KeyToKey__
+         KeyCode::SPACE,
+         KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+       </autogen>
 
     <autogen>
       __KeyToKey__
