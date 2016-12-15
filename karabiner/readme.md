@@ -210,6 +210,7 @@ The following is a list of all these awesome **sticky keys** that I personally u
 - f + e - [put hastebin link of selected text into clipboard](https://github.com/jvandyke/alfred-hastebin)
 - f + i - ⌃ + ↩
 - f + o - [cut word before cursor](https://github.com/nikitavoloboev/my-mac-os/blob/master/km-macros/cut%20word%20before%20cursor.kmmacros)
+- f + p - cut to end of line
 - f + a - [alfred file selection](http://i.imgur.com/PSsIcJ4.png)
 - f + s - [alfred previous file selection](http://i.imgur.com/zUycr48.png)
 - f + d - activate [search](http://brettterpstra.com/projects/searchlink/) link on selected text
@@ -220,8 +221,6 @@ The following is a list of all these awesome **sticky keys** that I personally u
 - f + : - [alfred search unicode symbols](https://github.com/bevesce/unicode-symbols-search)
 - f + n - ⌘ + ↩
 - f + m - ⌘ + ⇧ + ↩
-- f + o - cut one word back
-- f + p - cut to end of line
 - f + n - ⌘ + n
 - f + m - ⌘ + ⇧ + ↩
 - f + ␣ - [make snippetslab snippet from selected text](http://i.imgur.com/UkQToQf.png)
