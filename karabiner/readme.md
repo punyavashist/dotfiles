@@ -28,7 +28,7 @@ The following is a list of all these awesome **sticky keys** that I personally u
 - i - [alfred search google images](https://github.com/deanishe/alfred-searchio)
 - o - alfred file filter to search [iBook](http://www.apple.com/lae/ibooks/) files
 - a - [alfred search for alfred workflows I have](https://github.com/jmjeong/alfred-extension/tree/master/managealfredextension)
-- s - [alfred filter for ssh connections](https://github.com/deanishe/alfred-ssh) 
+- s - [alfred filter ssh connections](https://github.com/deanishe/alfred-ssh) 
 - f - alfred file filter for [soulver](http://acqualia.com/soulver/) files
 - g - [alfred search for gifs in giphy](https://github.com/kejadlen/giphy.alfredworkflow)
 - j - [alfred search for intellij projects](https://github.com/bchatard/jetbrains-alfred-workflow)
@@ -69,7 +69,7 @@ The following is a list of all these awesome **sticky keys** that I personally u
 - z - create new tweet from[Tweetbot](http://tapbots.com/tweetbot/mac/)
 - b - create new bit.ly link from current active safari tab and put it in clipboard
 - n - [alfred archive current article I am reading to Pocket with tags](https://github.com/fniephaus/alfred-pocket)
-- m - create new[fantastical](https://flexibits.com/fantastical) event
+- m - create new [fantastical](https://flexibits.com/fantastical) event
 - . - put macOS to sleep
 - ⇪ - open [unclutter](https://unclutterapp.com) app
 
@@ -232,7 +232,7 @@ The following is a list of all these awesome **sticky keys** that I personally u
 - g + k - quick action I use for testing hotkey scripts to prototype faster
 - g + : - show clipboard content in hammerspoon window
 - g + n - show notification pane
-- g + m - show[bartender](https://www.macbartender.com) menu bar
+- g + m - show [bartender](https://www.macbartender.com) menu bar
 - g + ␣ - search selected text on github
 
 ##sticky z - open communication apps 
@@ -331,3 +331,4 @@ Other settings I have remapped with this amazing tool are :
 2. mapping my right command to a combination for a single press so I can then use it as my [Alfred](https://www.alfredapp.com/) prompt
 3. changing my left shift key to act as another alfred prompt, in the times I am reading something and my right hand is not close to right command.
 4. remapping left command key to enter **vim mode**, in this mode I no longer need to hold s to move with hjkl as arrows
+5. remapping my ; to : has been amazing, I use semicolon as my prefix to everything and generally use semilon **a lot** more often than ;
