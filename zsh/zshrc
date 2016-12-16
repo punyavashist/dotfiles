@@ -34,6 +34,9 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 # need it
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# _zplug package manager : TODO: set it up
+
+# _zplug
+source $ZPLUG_HOME/init.zsh
+
 
 

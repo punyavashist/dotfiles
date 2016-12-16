@@ -950,6 +950,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_screen_center_0,
                </autogen>
 
+
                <autogen>
                  __KeyToKey__
                  KeyCode::SEMICOLON,
@@ -1754,6 +1755,18 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::N,
     </autogen>
 
+    <autogen>
+        __KeyToKey__
+        KeyCode::V,
+        KeyCode::8, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::G,
+        KeyCode::9, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
 
     <autogen>
         __KeyToKey__
@@ -2329,7 +2342,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __KeyToKey__
       KeyCode::SEMICOLON,
-      KeyCode::F6, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L
+      KeyCode::L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
     </autogen>
 
     <autogen>
@@ -3549,9 +3562,16 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
+       KeyCode::BACKQUOTE,
+       KeyCode::4, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
        KeyCode::F19,
        KeyCode::3, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
         </autogen>
+
 
        <autogen>
        __KeyToKey__

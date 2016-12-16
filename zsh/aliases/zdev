@@ -16,7 +16,7 @@ alias n.='node .'
 alias i='yarn'
 alias it='yarn init'
 alias ia='yarn add'
-alias is='yarn install'
+alias ii='yarn install'
 alias ir='yarn remove'
 alias ig='yarn global add'
 

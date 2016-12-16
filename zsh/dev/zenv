@@ -22,9 +22,7 @@ export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
 # can call it like so $ZPLUG_HOME
 export NODE_PATH='/usr/local/lib/node_modules'
 
-# TODO: throws error - fix it - something deprecated
-#export ZPLUG_HOME=/usr/local/opt/zplug 
-#source $ZPLUG_HOME/init.zsh
+export ZPLUG_HOME=/usr/local/opt/zplug
 
 
 
