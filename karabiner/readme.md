@@ -89,9 +89,10 @@ The following is a list of all these awesome **sticky keys** that I personally u
 - w + j - [iterm](https://www.iterm2.com)
 - w + k - safari
 - w + l - [google chrome canary](https://www.google.com/chrome/browser/canary.html)
-- w + : - [xcode](https://developer.apple.com/xcode/)
+- w + : - switch to desktop 2
 - w + v - [fantastical](https://flexibits.com/fantastical)
 - w + b - [paw](https://paw.cloud)
+- w + n - [xcode](https://developer.apple.com/xcode/)
 - w + m - [intellij](https://www.jetbrains.com/idea/)
 - w + . - [switch to desktop 1](http://i.imgur.com/J38buwR.png)
 - w + ⇪ - finder
@@ -322,6 +323,7 @@ The following is a list of all these awesome **sticky keys** that I personally u
 - r - restart wifi
 - n - open a preset number of websites (news)
 
+##sticky ~ - ⌥
 
 
 Other settings I have remapped with this amazing tool are : 

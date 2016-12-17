@@ -520,6 +520,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  KeyCode::COMMAND_L,
              </autogen>
 
+
                <autogen>
                __KeyToKey__
                KeyCode::SLASH,
@@ -652,11 +653,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
               </autogen>
 
-               <autogen>
-               __KeyToKey__
-               KeyCode::COMMA,
-               KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
-               </autogen>
 
                <autogen>
                  __KeyToKey__
@@ -1710,6 +1706,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::DOT, ModifierFlag::SHIFT_L
  </autogen>
 
+       <autogen>
+       __KeyToKey__
+       KeyCode::N,
+    KeyCode::V, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+       </autogen>
+
   </item>
 
 <item>
@@ -1763,7 +1765,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::G,
+        KeyCode::D,
+        KeyCode::0, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::F,
         KeyCode::9, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
@@ -1812,7 +1820,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::F,
+        KeyCode::K,
         KeyCode::7, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
@@ -1861,7 +1869,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __BlockUntilKeyUp__ KeyCode::M,
     </autogen>
-
 
         <autogen>
       __KeyToKey__
@@ -2558,7 +2565,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-		<name>sticky backquote for more actions</name>
+		<name>sticky backquote as option key</name>
 		<identifier>private.launcher_mode_open_apps_v40</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -2598,6 +2605,24 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __BlockUntilKeyUp__ KeyCode::BACKQUOTE,
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::Q,
+        KeyCode::Q, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::W,
+        KeyCode::W, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::E,
+        KeyCode::E, ModifierFlag::OPTION_L
     </autogen>
 
     <autogen>
@@ -3370,6 +3395,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::L,
         KeyCode::M, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
+
 
   </item>
 
