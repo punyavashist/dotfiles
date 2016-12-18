@@ -7,7 +7,7 @@ alias we='open -a MacDown readme.md'
 alias wt='open -a Atom'
 alias wa='subl'
 alias w='code'
-alias w.='code .'
+alias w:='code .'
 alias wr="open -a Marked\ 2"
 
 # _use apps

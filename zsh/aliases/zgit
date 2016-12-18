@@ -12,7 +12,7 @@ alias gf='git fetch'
 alias glp='git pull && git push'
 alias gao='git remote add origin'
 alias gz='git discard'
-alias ge='git checkout'
+alias gk='git checkout'
 
 # _diff
 alias gd='git diff'

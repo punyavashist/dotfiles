@@ -6,9 +6,18 @@ function mda() {
     mkdir a.\ $1
 }
 
-# taken folder as input, prefix it
+# _folder with k. prefix
+function mdk() {
+    mkdir k.\ $1
+}
 
+# taken folder as input, prefix it with a.
+function va() {
+    mv $1 a.\ $1
+}
 
+# remove prefixes from folder
+rk() { [[ -z "$1" ]] && return; mv "$1" "${1##*. }"};
 
 # _test
 le() {ccat "$@" | less}
