@@ -1,11 +1,17 @@
 # _dev
-alias hh='python -m SimpleHTTPServer'
+alias ss='python -m SimpleHTTPServer'
 alias sv='python3 -m http.server'
+
+# _flask
 alias fr='flask run'
 
 # _web
 alias li='open -a Google\ Chrome\ Canary index.html'
-alias bss='browser-sync'
+alias brs='browser-sync'
+
+# _python
+alias r='python3'
+alias r2='python'
 
 # _node 
 alias n='node'
@@ -16,8 +22,9 @@ alias n.='node .'
 alias i='yarn'
 alias it='yarn init'
 alias ia='yarn add'
+alias ir='yarn run'
 alias ii='yarn install'
-alias ir='yarn remove'
+alias ie='yarn remove'
 alias ig='yarn global add'
 
 # _pip
@@ -47,5 +54,5 @@ alias mt='meteor'
 alias sw='swift'
 
 # _ruby
-alias r='ruby'
+#alias r='ruby'
 

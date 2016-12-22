@@ -25,5 +25,12 @@ export NODE_PATH='/usr/local/lib/node_modules'
 export ZPLUG_HOME=/usr/local/opt/zplug
 
 
+# _flask
+export FLASK_APP=app.py
+
+
+
+
+
 
 
