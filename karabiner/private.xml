@@ -78,11 +78,6 @@ KeyCode::BACKQUOTE, ModifierFlag::NONE,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::9, ModifierFlag::SHIFT_L,
-KeyCode::6, ModifierFlag::SHIFT_L
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::MINUS, ModifierFlag::SHIFT_L,
 KeyCode::BACKSLASH, ModifierFlag::SHIFT_L
 </autogen>
@@ -711,7 +706,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                <autogen>
                  __KeyToKey__
                  KeyCode::BACKQUOTE,
-               KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+                  KeyCode::F12, ModifierFlag::COMMAND_L
                </autogen>
 
   </item>
@@ -940,12 +935,18 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <replacementname>MOUSE_KEYS_MODE_2_EXTRA</replacementname>
     <replacementvalue>
       <![CDATA[
+
                <autogen>
                  __KeyToKey__
                  KeyCode::U,
                  KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_screen_center_0,
                </autogen>
 
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::F19,
+                 KeyCode::ESCAPE
+               </autogen>
 
                <autogen>
                  __KeyToKey__
@@ -1652,7 +1653,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>sticky dot for more tricky symbols and maybe emojis</name>
+    <name>sticky dot for emoji</name>
     <identifier>private.launcher_mode_open_apps_v20</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3598,6 +3599,18 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
+       KeyCode::B,
+       KeyCode::RETURN, ModifierFlag::SHIFT_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::DOT,
+       KeyCode::RETURN, ModifierFlag::FN
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
        KeyCode::BACKQUOTE,
        KeyCode::4, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
         </autogen>
@@ -5223,7 +5236,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
       @end
 
       @begin
-      KeyCode::BACKQUOTE,
+      KeyCode::VK_LOCK_ALL_FORCE_OFF, KeyCode::VK_CONFIG_TOGGLE_notsave_ubiq_vimnormal, KeyCode::VK_CONFIG_FORCE_OFF_notsave_g_operator_pending, KeyCode::VK_CONFIG_FORCE_OFF_notsave_c_w_operator_pending
       @end
     </autogen>
   </item>
