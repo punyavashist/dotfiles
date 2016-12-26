@@ -37,6 +37,758 @@
 <equal>com.guidedways.TodoMac</equal>
 </appdef>
 
+<!-- _km macros -->
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_LOWERCASE_SELECTED_TEXT</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "g: lowercase selected text"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_CUT_WORD_BEFORE_CURSOR</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "g: cut word before cursor"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_HIGHLIGHT_CURRENT_LINE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "g: highlight current line"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_MAKE_MARKDOWN_LINK_FROM_SELECTION</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "g: make markdown link from selection"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_CUT_CURRENT_WORD</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "g: cut current word"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_MATCH_SYMBOLS</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "g: match symbols"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<!-- _emoji def -->
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_SEND_DOG_EMOJI</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "g: insert dog emoji"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_SEND_HAPPY_CAT_EMOJI</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "g: insert happy cat emoji"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_SEND_BLUE_HEART_EMOJI</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "g: insert blue heart emoji"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+
+<!-- _app def -->
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMISSION</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: transmission"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_TIMING</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: timing"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_FOCUS</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: focus"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_GITTER</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: gitter"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_1PASSWORD</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: 1password"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_AIRTABLE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: airtable"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_LITTLE_SNITCH_CONFIGURATION</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: little snitch configuration"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_ANKI</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: anki"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_TOGGL</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: toggl"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_NOTES</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: notes"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_SIMULATOR</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: simulator"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_POCKET</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: pocket"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_PATTERNS</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: patterns"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_YNAB</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: ynab"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_IBOOKS</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: ibooks"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_KARABINER_PREFERENCES</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: karabiner preferences"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_LICECAP</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: licecap"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_DISCORD</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: discord"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: sketch"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_CODERUNNER</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: coderunner"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_XCCELLO</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: xccello"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_TOWER</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: tower"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_PAW</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: paw"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_SOULVER</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: soulver"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_REEDER</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: reeder"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_FINDER</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: finder"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_CONTACTS</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: contacts"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_TEXPAD</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: texpad"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_SPOTIFY</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: spotify"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_FANTASTICAL</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: fantastical"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_BETTERTOUCHTOOL</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: bettertouchtool"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_AIRMAIL</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: airmail"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: safari"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_ULYSSES</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: ulysses"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_MINDNODE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: mindnode"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_XCODE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: xcode"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_ITERM</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: iterm"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_VS_CODE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: vs code"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_CANARY</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: chrome canary"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_ITERM</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: iterm"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_TELEGRAM</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: telegram"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_2DO</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: 2do"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_SLACK</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: slack"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_PDF_EXPERT</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: pdf expert"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_TEXTUAL</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: textual"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_SNIPPETSLAB</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: snippetslab"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_KEYBOARD_MAESTRO</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: keyboard maestro"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_ALFRED_PREFERENCES</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: alfred preferences"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_AIRMAIL</name>
+  <url type="shell">
+  osascript -e '
+  tell application "Keyboard Maestro Engine"
+  do script "open: airmail"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_ULYSSES</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: ulysses"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_DAY_ONE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: day one"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_TWEETBOT</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: tweetbot"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_INTELLIJ</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: intellij"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_CHATTY</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: chatty"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_PIXAVE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: pixave"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_PIXAVE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: pixave"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_PIXAVE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: pixave"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_PIXAVE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: pixave"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_PIXAVE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: pixave"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
   <item>
   <name>space after comma</name>
   <appendix>space after comma</appendix>
@@ -200,7 +952,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   <autogen>
     __KeyToKey__
     KeyCode::QUOTE,
-    KeyCode::QUOTE, ModifierFlag::SHIFT_L
+    KeyCode::VK_OPEN_URL_KM_HIGHLIGHT_CURRENT_LINE
   </autogen>
 
   <autogen>
@@ -539,7 +1291,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                <autogen>
                __KeyToKey__
                KeyCode::T,
-               KeyCode::S, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+               KeyCode::VK_OPEN_URL_KM_CUT_CURRENT_WORD
                </autogen>
 
                 <autogen>
@@ -1713,6 +2465,24 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     KeyCode::V, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
        </autogen>
 
+    <autogen>
+      __KeyToKey__
+      KeyCode::A,
+      KeyCode::VK_OPEN_URL_KM_SEND_DOG_EMOJI
+ </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::S,
+      KeyCode::VK_OPEN_URL_KM_SEND_BLUE_HEART_EMOJI
+ </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::D,
+      KeyCode::VK_OPEN_URL_KM_SEND_HAPPY_CAT_EMOJI
+ </autogen>
+
   </item>
 
 <item>
@@ -1880,6 +2650,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::G,
       KeyCode::F1, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::S,
+      KeyCode::2, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 		</autogen>
 
 
@@ -2228,102 +3004,64 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::BRACKET_LEFT,
-      KeyCode::F12, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-		</autogen>
-
-
-        <autogen>
-      __KeyToKey__
       KeyCode::N,
-      KeyCode::U, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_INTELLIJ
 		</autogen>
 
         <autogen>
       __KeyToKey__
       KeyCode::F19,
-      KeyCode::F10, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
-		</autogen>
-
-            <autogen>
-              __KeyToKey__
-              KeyCode::SPACE,
-              KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L
-            </autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::X,
-      KeyCode::4, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_FINDER
 		</autogen>
 
         <autogen>
-      __KeyToKey__
-      KeyCode::U,
-      KeyCode::F4, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
-		</autogen>
-
+          __KeyToKey__
+          KeyCode::SPACE,
+          KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L
+        </autogen>
 
     <autogen>
       __KeyToKey__
       KeyCode::K,
-      KeyCode::RETURN, ModifierFlag::OPTION_R
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::U,
-      KeyCode::F9, ModifierFlag::COMMAND_L
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::H,
-        KeyCode::F3
+      KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI
     </autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::T,
-        KeyCode::EQUAL, ModifierFlag::OPTION_L
+        KeyCode::VK_OPEN_URL_KM_OPEN_TOWER
     </autogen>
 
 
     <autogen>
         __KeyToKey__
         KeyCode::R,
-        KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_L
+        KeyCode::VK_OPEN_URL_KM_OPEN_TOGGL
     </autogen>
 
         <autogen>
       __KeyToKey__
       KeyCode::V,
-      KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_FANTASTICAL
 		</autogen>
 
     <autogen>
       __KeyToKey__
       KeyCode::E,
-      KeyCode::Q, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_MINDNODE
     </autogen>
 
     <autogen>
       __KeyToKey__
       KeyCode::G,
-      KeyCode::BACKQUOTE, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_SNIPPETSLAB
     </autogen>
 
 
     <autogen>
       __KeyToKey__
       KeyCode::F,
-      KeyCode::BACKSLASH, ModifierFlag::OPTION_R
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::D,
-      KeyCode::Z, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_2DO
     </autogen>
 
     <autogen>
@@ -2332,11 +3070,10 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::SLASH, ModifierFlag::OPTION_R
     </autogen>
 
-    <!-- iTerm  -->
     <autogen>
-      __KeyDownUpToKey__
+      __KeyToKey__
       KeyCode::J,
-      KeyCode::W, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_ITERM
     </autogen>
 
     <autogen>
@@ -2345,18 +3082,16 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::1, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
     </autogen>
 
-
     <autogen>
-      __KeyDownUpToKey__
+    __KeyToKey__
       KeyCode::B,
-      KeyCode::8, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_PAW
     </autogen>
 
-    <!-- xCode  -->
     <autogen>
       __KeyToKey__
       KeyCode::L,
-      KeyCode::K, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_XCODE
     </autogen>
 
     <autogen>
@@ -2368,19 +3103,19 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __KeyToKey__
       KeyCode::M,
-      KeyCode::TAB, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_CANARY
     </autogen>
 
     <autogen>
       __KeyToKey__
       KeyCode::O,
-      KeyCode::W, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_KEYBOARD_MAESTRO
     </autogen>
 
     <autogen>
       __KeyToKey__
       KeyCode::I,
-      KeyCode::P, ModifierFlag::OPTION_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_VS_CODE
     </autogen>
   </item>
 
@@ -2805,7 +3540,19 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::Q,
-        KeyCode::F4, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+        KeyCode::VK_OPEN_URL_KM_OPEN_PIXAVE
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::DOT,
+        KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMISSION
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::V,
+        KeyCode::VK_OPEN_URL_KM_OPEN_YNAB
     </autogen>
 
     <autogen>
@@ -2817,20 +3564,19 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::B,
-        KeyCode::I, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+        KeyCode::VK_OPEN_URL_KM_OPEN_PATTERNS
     </autogen>
 
-		<!-- day one -->
         <autogen>
       __KeyToKey__
       KeyCode::L,
-      KeyCode::SEMICOLON, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_DAY_ONE
 		</autogen>
 
         <autogen>
       __KeyToKey__
       KeyCode::F19,
-      KeyCode::5, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_SOULVER
 		</autogen>
 
         <autogen>
@@ -2842,31 +3588,31 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::Z,
-      KeyCode::COMMA, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_BETTERTOUCHTOOL
 		</autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::S,
-        KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+        KeyCode::VK_OPEN_URL_KM_OPEN_CONTACTS
     </autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::A,
-        KeyCode::F8, ModifierFlag::COMMAND_L
+        KeyCode::VK_OPEN_URL_KM_OPEN_ALFRED_PREFERENCES
     </autogen>
 
         <autogen>
       __KeyToKey__
       KeyCode::I,
-      KeyCode::2, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_PIXAVE
 		</autogen>
 
         <autogen>
       __KeyToKey__
       KeyCode::W,
-      KeyCode::2, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_PIXAVE
 		</autogen>
 
     <autogen>
@@ -2875,63 +3621,47 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::F10, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
-        <!-- pdf expert  -->
         <autogen>
       __KeyToKey__
       KeyCode::K,
-      KeyCode::QUOTE, ModifierFlag::OPTION_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_PDF_EXPERT
 		</autogen>
 
     <autogen>
       __KeyToKey__
      KeyCode::G,
-      KeyCode::O, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_REEDER
     </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::T,
-      KeyCode::F1, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
-    </autogen>
-
 
     <autogen>
       __KeyToKey__
       KeyCode::SEMICOLON,
-      KeyCode::DOT, ModifierFlag::OPTION_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_SPOTIFY
     </autogen>
 
        <autogen>
        __KeyToKey__
        KeyCode::M,
-       KeyCode::9, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+       KeyCode::VK_OPEN_URL_KM_OPEN_TEXPAD
         </autogen>
 
         <autogen>
       __KeyToKey__
       KeyCode::J,
-      KeyCode::RETURN, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_ULYSSES
 		</autogen>
 
-        <autogen>
-      __KeyToKey__
-      KeyCode::COMMA,
-      KeyCode::DOT, ModifierFlag::OPTION_L
-		</autogen>
-
-        <!-- iBooks  -->
         <autogen>
       __KeyToKey__
       KeyCode::SLASH,
-      KeyCode::QUOTE, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_IBOOKS
 		</autogen>
 
         <autogen>
       __KeyToKey__
       KeyCode::N,
-      KeyCode::MINUS, ModifierFlag::OPTION_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_TIMING
 		</autogen>
-
 
   </item>
 
@@ -3170,7 +3900,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   <autogen>
     __KeyToKey__
     KeyCode::F19,
-    KeyCode::F2, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+    KeyCode::VK_OPEN_URL_KM_MATCH_SYMBOLS
 </autogen>
 
         <autogen>
@@ -3453,11 +4183,10 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::Z,
     </autogen>
 
-		<!-- telegram -->
         <autogen>
       __KeyToKey__
       KeyCode::K,
-      KeyCode::SEMICOLON, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_TELEGRAM
 		</autogen>
 
         <autogen>
@@ -3469,52 +4198,43 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::O,
-      KeyCode::A, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_SLACK
 		</autogen>
 
         <autogen>
       __KeyToKey__
       KeyCode::SEMICOLON,
-      KeyCode::7, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_GITTER
 		</autogen>
 
         <autogen>
-      __KeyToKey__
-      KeyCode::N,
-      KeyCode::F11, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-		</autogen>
-
-        <!-- airmail  -->
-        <autogen>
-      __KeyDownUpToKey__
+    __KeyToKey__
       KeyCode::L,
-      KeyCode::0, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_AIRMAIL
 		</autogen>
 
-        <!-- chatty  -->
         <autogen>
-      __KeyDownUpToKey__
+       __KeyToKey__     
       KeyCode::M,
-      KeyCode::M, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_CHATTY
 		</autogen>
 
         <autogen>
       __KeyToKey__
       KeyCode::F,
-      KeyCode::F4, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_DISCORD
 		</autogen>
 
         <autogen>
       __KeyToKey__
       KeyCode::I,
-      KeyCode::F4, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_TWEETBOT
 		</autogen>
 
-        <!-- textual  -->
         <autogen>
-      __KeyDownUpToKey__
+        __KeyToKey__
       KeyCode::J,
-      KeyCode::K, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_TEXTUAL
 		</autogen>
 
 
@@ -3606,7 +4326,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::DOT,
-       KeyCode::RETURN, ModifierFlag::FN
+       KeyCode::VK_OPEN_URL_KM_MAKE_MARKDOWN_LINK_FROM_SELECTION
         </autogen>
 
        <autogen>
@@ -3665,7 +4385,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::W,
-       KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+       KeyCode::VK_OPEN_URL_KM_LOWERCASE_SELECTED_TEXT
        </autogen>
 
 
@@ -5452,6 +6172,16 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
         KeyCode::S, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
+  </item>
+  
+  <item>
+      <name>opt + return = safari</name>
+      <identifier>private.open_safari_opt_return</identifier>
+      <autogen>
+          __KeyToKey__
+          KeyCode::RETURN, ModifierFlag::OPTION_R,
+          KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI
+      </autogen>
   </item>
 
 </root>
