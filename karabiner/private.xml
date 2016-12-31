@@ -32,10 +32,6 @@
 <equal>com.kapeli.dashdoc</equal>
 </appdef>
 
-<appdef>
-<appname>TODO</appname>
-<equal>com.guidedways.TodoMac</equal>
-</appdef>
 
 <!-- _km macros -->
 <vkopenurldef>
@@ -267,6 +263,17 @@
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "open: transmission"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_FLUME</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: flume"
     end tell
     '
   </url>
@@ -949,6 +956,24 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.workflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_FORCE_EMPTY_TRASH</name>
+  <url type="shell">
+  osascript -e '
+  tell application "Alfred 3" to run trigger "forceEmptyTrash" in workflow "com.renegaed.force-empty-trash" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_QUORA_SEARCH</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchQuora" in workflow "nikivi.search-the-web" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -3043,6 +3068,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::Q,
+        KeyCode::VK_OPEN_URL_ALFRED_QUORA_SEARCH
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::F,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KM_FORUM
     </autogen>
@@ -3156,10 +3187,15 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::E,
+      KeyCode::VK_OPEN_URL_ALFRED_FORCE_EMPTY_TRASH
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::S,
       KeyCode::VK_OPEN_URL_ALFRED_TOGGLE_WIFI
 		</autogen>
-
 
     <autogen>
         __KeyToKey__
@@ -3922,11 +3958,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::O, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::A,
-        KeyCode::N, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
-    </autogen>
 
     <autogen>
         __KeyToKey__
@@ -4047,6 +4078,18 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::F,
+        KeyCode::VK_OPEN_URL_KM_OPEN_IBOOKS
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::U,
+        KeyCode::VK_OPEN_URL_KM_OPEN_FLUME
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::Q,
         KeyCode::VK_OPEN_URL_KM_OPEN_PIXAVE
     </autogen>
@@ -4125,8 +4168,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::W,
+      KeyCode::E,
       KeyCode::VK_OPEN_URL_KM_OPEN_PIXAVE
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::W,
+      KeyCode::VK_OPEN_URL_KM_OPEN_1PASSWORD
 		</autogen>
 
     <autogen>
@@ -4153,16 +4202,16 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::VK_OPEN_URL_KM_OPEN_SPOTIFY
     </autogen>
 
-       <autogen>
-       __KeyToKey__
-       KeyCode::M,
-       KeyCode::VK_OPEN_URL_KM_OPEN_TEXPAD
-        </autogen>
-
         <autogen>
       __KeyToKey__
       KeyCode::J,
       KeyCode::VK_OPEN_URL_KM_OPEN_ULYSSES
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::M,
+      KeyCode::VK_OPEN_URL_KM_OPEN_TEXPAD
 		</autogen>
 
         <autogen>
@@ -4940,11 +4989,10 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::RETURN, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
        </autogen>
 
-
     <autogen>
-      __KeyToKey__
-      KeyCode::E,
-      KeyCode::F6, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L
+        __KeyToKey__
+        KeyCode::E,
+        KeyCode::F2, ModifierFlag::COMMAND_L
     </autogen>
 
     <autogen>
