@@ -6,15 +6,31 @@
 <modifierdef>MY_OPTION_L</modifierdef>
 <modifierdef>MY_CONTROL_L</modifierdef>
 
+<vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_general</name>
+    <url type="shell">
+        <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name general    ]]>
+    </url>
+</vkopenurldef>
+
+<vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_gaming</name>
+    <url type="shell">
+        <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name gaming    ]]>
+    </url>
+</vkopenurldef>
+
+<vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller</name>
+    <url type="shell">
+        <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name scroller    ]]>
+    </url>
+</vkopenurldef>
+
 <!-- _app def  -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_APP_IntelliJ</name>
 <url type="file">/Applications/IntelliJ IDEA.app</url>
-</vkopenurldef>
-
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_APP_Hazel</name>
-<url type="file">/Users/nikivi/Library/PreferencePanes/Hazel.prefPane</url>
 </vkopenurldef>
 
 <appdef>
@@ -26,12 +42,6 @@
 <appname>ITERM</appname>
 <equal>com.googlecode.iterm2</equal>
 </appdef>
-
-<appdef>
-<appname>DASH</appname>
-<equal>com.kapeli.dashdoc</equal>
-</appdef>
-
 
 <!-- _km macros -->
 <vkopenurldef>
@@ -263,6 +273,17 @@
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "open: transmission"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_ACTIVITY_MONITOR</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: activity monitor"
     end tell
     '
   </url>
@@ -1334,20 +1355,17 @@ tell application "Alfred 3" to run trigger "googleSearch" in workflow "net.deani
 
 
   <item>
-  <name>space after comma</name>
+  <name>test: space after comma</name>
   <appendix>space after comma</appendix>
   <identifier>space_after_comma</identifier>
   <autogen>__KeyToKey__
   KeyCode::COMMA, ModifierFlag::NONE,
-
   KeyCode::COMMA, ModifierFlag::NONE,
   KeyCode::SPACE, ModifierFlag::NONE
    </autogen>
     </item>
 
-<!-- TODO: clean it up, add comments, make things easily searchable  -->
-
-<!-- -language definitions -->
+<!-- _language definitions -->
 <inputsourcedef>
 <name>US</name>
 <inputsourceid_prefix>com.apple.keylayout.US</inputsourceid_prefix>
@@ -1359,7 +1377,7 @@ tell application "Alfred 3" to run trigger "googleSearch" in workflow "net.deani
 </inputsourcedef>
 
 <item>
-<name>put {} () [] to a better place</name>
+<name>general: put {} () [] to a better place</name>
 <identifier>private.brackets_around</identifier>
 <inputsource_not>RU</inputsource_not>
 <autogen>
@@ -1400,7 +1418,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 </item>
 
 <item>
-  <name>change colon to semicolon</name>
+  <name>general: change colon to semicolon</name>
   <identifier>private.colon_to_semicolon</identifier>
 <inputsource_not>RU</inputsource_not>
     <autogen>
@@ -1411,7 +1429,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 </item>
 
 <item>
-  <name>sticky semicolon as shift key</name>
+  <name>general: sticky semicolon as shift key</name>
   <!-- Don't change the line below, will break not sure why. Have to do with the prifix of the name. But if you want to have more launcher mode in the future for other key you can change the number 21 to 22 ...etc -->
 <identifier>private.launcher_mode_open_apps_v30</identifier>
 <inputsource_only>US</inputsource_only>
@@ -1661,23 +1679,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     KeyCode::M, ModifierFlag::SHIFT_L
   </autogen>
 
-  <autogen>
-    __KeyToKey__
-    KeyCode::1,
-    KeyCode::1, ModifierFlag::SHIFT_L
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::2,
-    KeyCode::2, ModifierFlag::SHIFT_L
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::3,
-    KeyCode::3, ModifierFlag::SHIFT_L
-  </autogen>
 
   <autogen>
     __KeyToKey__
@@ -1730,7 +1731,121 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 </item>
 
 <item>
-  <name>hyper function semicolon key</name>
+    <name>scroller: sticky colon</name>
+    <identifier>private.launcher_mode_open_apps_v71</identifier>
+
+    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::SEMICOLON,
+
+      <!--
+          Use notsave.launcher_mode_v2 in order to be higher priority.
+          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
+      -->
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v71, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::TAB, ModifierFlag::COMMAND_L,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v71</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::SEMICOLON,
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::A,
+        KeyCode::B
+    </autogen>
+
+  </item>
+
+<item>
+    <name>scroller: main</name>
+    <identifier>private.scroller_main remap</identifier>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::A,
+    KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::M,
+    KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::H,
+        KeyCode::VK_MOUSEKEY_SCROLL_LEFT,
+    </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::K,
+        KeyCode::VK_MOUSEKEY_SCROLL_UP,
+    </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::J,
+        KeyCode::VK_MOUSEKEY_SCROLL_DOWN,
+    </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::L,
+        KeyCode::VK_MOUSEKEY_SCROLL_RIGHT,
+    </autogen>
+
+   <autogen>
+     __KeyToKey__
+     KeyCode::I,
+     KeyCode::MINUS, ModifierFlag::COMMAND_L
+   </autogen>
+
+   <autogen>
+     __KeyToKey__
+     KeyCode::O,
+     KeyCode::EQUAL, ModifierFlag::COMMAND_L
+   </autogen>
+
+   <autogen>
+     __KeyToKey__
+     KeyCode::V,
+     KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI
+   </autogen>
+
+   <autogen>
+     __KeyToKey__
+     KeyCode::D,
+     KeyCode::VK_OPEN_URL_KM_OPEN_PDF_EXPERT
+   </autogen>
+
+</item>
+
+<item>
+  <name>general: hyper function semicolon key</name>
     <identifier>private.hyper.function.SEMICOLON.key</identifier>
     <inputsource_not>RU</inputsource_not>
 
@@ -1759,7 +1874,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 </item>
 
 <item>
-    <name>sticky s for essential things not in iTerm</name>
+    <name>general: sticky s for essential things not in iTerm</name>
     <identifier>private.launcher_mode_open_apps_v23</identifier>
     <not>ITERM</not>
 
@@ -2008,7 +2123,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>sticky s for essential things in iTerm</name>
+    <name>general: sticky s for essential things in iTerm</name>
     <identifier>private.launcher_mode_open_apps_v25</identifier>
     <only>ITERM</only>
 
@@ -3074,7 +3189,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::F,
+        KeyCode::M,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KM_FORUM
     </autogen>
 
@@ -3116,20 +3231,20 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::A,
+        KeyCode::F,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_FORUM
     </autogen>
 
     <autogen>
         __KeyToKey__
-        KeyCode::M,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_REDDIT_MATH
-    </autogen>
-    
-    <autogen>
-        __KeyToKey__
         KeyCode::K,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KICKASS_TORRENTS
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::A,
+        KeyCode::B, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
     </autogen>
 
 
@@ -3181,12 +3296,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::G,
-      KeyCode::F1, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
       KeyCode::E,
       KeyCode::VK_OPEN_URL_ALFRED_FORCE_EMPTY_TRASH
 		</autogen>
@@ -3205,9 +3314,21 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::A,
+        KeyCode::C,
         KeyCode::VK_OPEN_URL_ALFRED_WIFI_CHECK
     </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::A,
+    KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::G,
+    KeyCode::VK_OPEN_URL_SHELL_switchprofile_gaming
+  </autogen>
 
     <autogen>
         __KeyToKey__
@@ -3231,6 +3352,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         __KeyToKey__
         KeyCode::G,
         KeyCode::DOT, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::F,
+        KeyCode::P, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
     </autogen>
 
   </item>
@@ -3714,13 +3841,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::Z,
-        KeyCode::VK_OPEN_URL_APP_Hazel
-    </autogen>
-
-
-    <autogen>
-        __KeyToKey__
         KeyCode::S,
         KeyCode::COMMA, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
@@ -3746,7 +3866,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-		<name>sticky x for more awesomeness</name>
+		<name>general: sticky x for more awesomeness</name>
 		<identifier>private.launcher_mode_open_apps_v43</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3799,7 +3919,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
 
 <item>
-		<name>sticky c for actions</name>
+		<name>general: sticky c for actions</name>
 		<identifier>private.launcher_mode_open_apps_v41</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3851,7 +3971,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-		<name>sticky 3 for something</name>
+		<name>general: sticky 3 for something</name>
 		<identifier>private.launcher_mode_open_apps_v51</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3904,7 +4024,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
 
 <item>
-		<name>sticky g for symbols</name>
+		<name>general: sticky g for symbols</name>
 		<identifier>private.launcher_mode_open_apps_v11</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4017,7 +4137,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::SLASH
 		</autogen>
 
-    <!-- quick bindable tester for alfred  -->
     <autogen>
         __KeyToKey__
         KeyCode::K,
@@ -4028,7 +4147,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
 
 <item>
-    <name>sticky r modifier open other apps</name>
+    <name>general: sticky r modifier open other apps</name>
     <identifier>private.launcher_mode_open_apps_v8</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4074,6 +4193,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         __KeyToKey__
         KeyCode::COMMA,
         KeyCode::VK_OPEN_URL_KM_OPEN_SYSTEM_PREFERENCES
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::SLASH,
+        KeyCode::VK_OPEN_URL_KM_OPEN_ACTIVITY_MONITOR
     </autogen>
 
     <autogen>
@@ -4229,7 +4354,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>sticky u modifier for alfred and km macros</name>
+    <name>general: sticky u modifier for alfred and km macros</name>
     <identifier>private.launcher_mode_open_apps_v33</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4316,7 +4441,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>sticky i for inserting symbols</name>
+    <name>general: sticky i for inserting symbols</name>
     <identifier>private.launcher_mode_open_apps_v15</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4508,7 +4633,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::Y, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 		</autogen>
 
-
         <autogen>
       __KeyToKey__
       KeyCode::R,
@@ -4599,7 +4723,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>sticky t for handy actions</name>
+    <name>general: sticky t for handy actions</name>
     <identifier>private.launcher_mode_open_apps_v14</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4666,15 +4790,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::V, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
         </autogen>
 
-
-
-    <!-- screenflow start / stop  -->
     <autogen>
         __KeyToKey__
         KeyCode::M,
         KeyCode::F5
     </autogen>
-
 
     <autogen>
         __KeyToKey__
@@ -4688,7 +4808,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::U, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
-    <!-- reload karabiner xml  -->
     <autogen>
         __KeyToKey__
         KeyCode::L,
@@ -4704,7 +4823,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>sticky z modifier open chat apps</name>
+    <name>general: sticky z modifier open chat apps</name>
     <identifier>private.launcher_mode_open_apps_v9</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4800,7 +4919,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::VK_OPEN_URL_KM_OPEN_TEXTUAL
 		</autogen>
 
-
   </item>
 
   <item hidden="true">
@@ -4830,9 +4948,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   </item>
 
-
 <item>
-    <name>sticky f modifier custom</name>
+    <name>general: sticky f modifier custom</name>
     <identifier>private.launcher_mode_open_apps_v2</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4886,7 +5003,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::VK_OPEN_URL_KM_UPPERCASE_SELECTED_TEXT
         </autogen>
 
-
        <autogen>
        __KeyToKey__
        KeyCode::B,
@@ -4910,7 +5026,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::F19,
        KeyCode::3, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
         </autogen>
-
 
        <autogen>
        __KeyToKey__
@@ -5001,7 +5116,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::DELETE
     </autogen>
 
-
     <autogen>
       __KeyToKey__
       KeyCode::D,
@@ -5020,12 +5134,10 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::V, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
         </autogen>
 
-
   </item>
 
-
 <item>
-    <name>sticky e modifier</name>
+    <name>general: sticky e modifier</name>
     <identifier>private.launcher_mode_open_apps_v4</identifier>
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
@@ -5299,37 +5411,37 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </autogen>
 
     <autogen>
-      __KeyDownUpToKey__
+    __KeyToKey__
       KeyCode::X,
       KeyCode::X, ModifierFlag::COMMAND_L
   </autogen>
 
     <autogen>
-      __KeyDownUpToKey__
+      __KeyToKey__
       KeyCode::C,
       KeyCode::C, ModifierFlag::COMMAND_L
   </autogen>
 
     <autogen>
-      __KeyDownUpToKey__
+        __KeyToKey__
       KeyCode::V,
       KeyCode::V, ModifierFlag::COMMAND_L
   </autogen>
 
     <autogen>
-      __KeyDownUpToKey__
+        __KeyToKey__
       KeyCode::B,
       KeyCode::B, ModifierFlag::COMMAND_L
   </autogen>
 
     <autogen>
-      __KeyDownUpToKey__
+        __KeyToKey__
       KeyCode::N,
       KeyCode::N, ModifierFlag::COMMAND_L
   </autogen>
 
     <autogen>
-      __KeyDownUpToKey__
+        __KeyToKey__
       KeyCode::M,
       KeyCode::M, ModifierFlag::COMMAND_L
   </autogen>
@@ -5342,13 +5454,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   </item>
 
-
-
-
-
-
 <item>
-    <name>sticky q modifier as command shift</name>
+    <name>general: sticky q modifier as command shift</name>
     <identifier>private.launcher_mode_open_apps_v6</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -5633,9 +5740,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   </item>
 
-
   <item>
-    <name>sticky a control modifier</name>
+    <name>general: sticky a control modifier</name>
     <identifier>private.launcher_mode_example</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -5884,8 +5990,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::N, ModifierFlag::CONTROL_L
   </autogen>
 
-
-
     <autogen>
       __KeyDownUpToKey__
       KeyCode::M,
@@ -5904,7 +6008,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::J, ModifierFlag::CONTROL_L
     </autogen>
 
-
     <autogen>
       __KeyDownUpToKey__
       KeyCode::L,
@@ -5912,8 +6015,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     </autogen>
 
   </item>
-
-
 
 <!-- added so that I can use vim emulation in iTerm too -->
 <replacementdef>
@@ -5926,7 +6027,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 </replacementdef>
 
 <item>
-<name>caps lock and a, two different hotkeys for quick and long press</name>
+<name>general: caps lock and a, two different hotkeys for quick and long press</name>
 <identifier>private.caps_a_long_press</identifier>
 <not>ITERM</not>
 <autogen>
@@ -5949,7 +6050,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
 
 <item>
-<name>right shift and return, two different hotkeys on long and short</name>
+<name>general: right shift and return, two different hotkeys on long and short</name>
 <identifier>private.right_shift_return_two_diff_actions</identifier>
 <autogen>
   __HoldingKeyToKey__
@@ -5971,7 +6072,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
 
 <item>
-<name>left option and a, two different hotkeys when held and when quickly pressed</name>
+<name>general: left option and a, two different hotkeys when held and when quickly pressed</name>
 <identifier>private.left_opt_a_two_diff_actions</identifier>
 <autogen>
   __HoldingKeyToKey__
@@ -5994,7 +6095,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
 <!-- -simple rebinds  -->
 <item>
-<name>left option plus left shift to search documentation for selected text</name>
+<name>general: left option plus left shift to search documentation for selected text</name>
 <identifier>private.left_option_plus_left_shift_to_hotkey</identifier>
 <autogen>
 __KeyOverlaidModifier__
@@ -6005,7 +6106,7 @@ KeyCode::8, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 </item>
 
 <item>
-<name>control plus left shift to search wiki with selection</name>
+<name>general: control plus left shift to search wiki with selection</name>
 <identifier>private.control_shift_for_wiki_selection</identifier>
 <autogen>
 __KeyOverlaidModifier__
@@ -6016,7 +6117,7 @@ KeyCode::7, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 </item>
 
 <item>
-<name>command plus left shift to google selected text</name>
+<name>general: command plus left shift to google selected text</name>
 <identifier>private.command_plus_left_shift_to_hotkey</identifier>
 <autogen>
 __KeyOverlaidModifier__
@@ -6027,7 +6128,7 @@ KeyCode::9, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 </item>
 
 <item>
-<name>caps lock, shift two times</name>
+<name>general: caps lock, shift two times</name>
 <identifier>private.caps_shift_two_times</identifier>
 <autogen>
 __DoublePressModifier__
@@ -6039,7 +6140,7 @@ KeyCode::CAPSLOCK,
 
 
 <item>
-<name>left control to left control and command</name>
+<name>general: left control to left control and command</name>
 <identifier>private.left_control_to_left_control_and_command</identifier>
 <autogen>
 __KeyToKey__
@@ -6048,9 +6149,8 @@ KeyCode::CONTROL_L, ModifierFlag::COMMAND_L,
 </autogen>
 </item>
 
-
 <item>
-<name>left option to control and command</name>
+<name>general: left option to control and command</name>
 <identifier>private.left_option_to_control_and_command</identifier>
 <autogen>
 __KeyToKey__
@@ -6059,10 +6159,8 @@ KeyCode::OPTION_L,ModifierFlag::COMMAND_L,
 </autogen>
 </item>
 
-
-
 <item>
-<name>left control to control and command not in xcode</name>
+<name>general: left control to control and command - NOT: xcode</name>
 <identifier>private.left_control_to_control_and_command</identifier>
 <not>XCODE</not>
 <autogen>
@@ -6073,12 +6171,8 @@ KeyCode::CONTROL_L, ModifierFlag::COMMAND_L,
 </item>
 
 
-<!-- a big life changer -->
-<!-- makes  caps lock act as a combination of ⌥⌃ keys when pressed together with something, and acts as ⎋ key when pressed alone-->
-<!-- allows for caps lock + the entire keyboard of bindings that you can then use + the esc key is invaluable -->
-<!-- my caps lock + keys bindings are global hotkeys and not app specific -->
 <item>
-<name>caps lock as control + option and escape when alone not in iTerm</name>
+<name>general: caps lock as control + option and escape when alone not in iTerm</name>
 <identifier>private.left_alt_caps_tab_search_snippets</identifier>
 <autogen>
 __KeyToKey__
@@ -6110,7 +6204,7 @@ KeyCode::ESCAPE,
 
 
 <item>
-<name>right option on single press as app switcher</name>
+<name>general: right option on single press as app switcher</name>
 <identifier>private.right_opt_as_app_switch</identifier>
 <autogen>
 __KeyOverlaidModifier__
@@ -6120,9 +6214,8 @@ KeyCode::TAB, ModifierFlag::COMMAND_L
 </autogen>
 </item>
 
-
 <item>
-<name>iTerm adjustments for better productivity</name>
+<name>general: iTerm adjustments for better productivity</name>
 <identifier>private.iterm_as_ide</identifier>
 <only>ITERM</only>
 <autogen>
@@ -6160,9 +6253,6 @@ KeyCode::TAB, ModifierFlag::COMMAND_L
   Option::NOREPEAT,
 </autogen>
 
-
-
-
 <autogen>
   __HoldingKeyToKey__
   KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
@@ -6179,12 +6269,6 @@ KeyCode::TAB, ModifierFlag::COMMAND_L
 
   Option::NOREPEAT,
 </autogen>
-
-
-
-
-
-
 
 <autogen>
   __HoldingKeyToKey__
@@ -6259,13 +6343,8 @@ KeyCode::TAB, ModifierFlag::COMMAND_L
 
 </item>
 
-
-
-
-
-
 <item>
-<name>caps + left command + top delete to open Fantastical Calendar Input</name>
+<name>general: caps + left command + top delete to open Fantastical Calendar Input</name>
 <identifier>private.caps_left_command_delete_open_fantastical_input</identifier>
 <autogen>
 __KeyToKey__
@@ -6274,11 +6353,9 @@ KeyCode::E, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 </autogen>
 </item>
 
-
-
 <!-- one more really nicely located app specific hotkey -->
 <item>
-<name>right shift and right command to app specific</name>
+<name>general: right shift and right command to app specific</name>
 <identifier>private.right_shit_and_right_command_to_app_specific</identifier>
 <autogen>
 __KeyToKey__
@@ -6290,7 +6367,7 @@ KeyCode::O, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
 <!-- really useful as I use colon more often then semicolon except when coding javascript or java -->
 <item>
-<name>change colon to semicolon alone</name>
+<name>general: change colon to semicolon alone</name>
 <identifier>private.colon_to_semicolon_alone</identifier>
 <inputsource_only>US</inputsource_only>
 <autogen>
@@ -6301,7 +6378,7 @@ KeyCode::SEMICOLON
 </item>
 
 <item>
-<name>change semicolon to colon</name>
+<name>general: change semicolon to colon</name>
 <identifier>private.semicolon_to_colon_alone</identifier>
 <inputsource_only>US</inputsource_only>
 <autogen>
@@ -6311,21 +6388,8 @@ KeyCode::SEMICOLON, ModifierFlag::SHIFT_L
 </autogen>
 </item>
 
-
-<!-- open applications with karabiner physical key presses -->
 <item>
-<name>caps + top delete to open magic number</name>
-<identifier>private.caps_to_delete_to_magic_number</identifier>
-<autogen>
-__KeyToKey__
-KeyCode::DELETE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L,
-KeyCode::U, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
-</autogen>
-</item>
-
-
-<item>
-<name>caps + right shift to a hotkey</name>
+<name>test: caps + right shift to a hotkey</name>
 <identifier>private.caps_right_shift_hotkey</identifier>
 <autogen>
 __KeyToKey__
@@ -6334,88 +6398,9 @@ KeyCode::W, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
 </autogen>
 </item>
 
-<item>
-<name>right option key + delete to MindNode</name>
-<identifier>private.right_opt_plus_delete_to_mindnode</identifier>
-<autogen>
-__KeyToKey__
-KeyCode::DELETE, ModifierFlag::OPTION_R,
-KeyCode::Q, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
-</autogen>
-</item>
-
-
-<!-- make left shift + delete write \  -->
-<item>
-<name>left shift + delete to enter backslash</name>
-<identifier>private.left_shift_to_delete_enter_backslash</identifier>
-<autogen>
- __KeyToKey__
-KeyCode::DELETE, ModifierFlag::SHIFT_L,
-KeyCode::BACKSLASH, ModifierFlag::NONE,
-</autogen>
-</item>
-
-
-<!-- make left shift + left command + return cut line before cursor  -->
-<item>
-<name>left shift + left command + return to cut line before cursor</name>
-<identifier>private.left_shift_and_left_command_and_return_to_cut_line_before_cursor</identifier>
-<autogen>
-__KeyToKey__
-KeyCode::RETURN, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L,
-KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
-KeyCode::X, ModifierFlag::COMMAND_L,
-Option::NOREPEAT,
-</autogen>
-</item>
-
-<!-- make left shift + left command + right shift to cut line after cursor -->
-<item>
-<name>left shift + left command + right shift to cut line after cursor</name>
-<identifier>private.left_shift_and_left_command_and_right_shift_to_cut_line_after_cursor</identifier>
-<autogen>
-__KeyToKey__
-KeyCode::SHIFT_R, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L,
-KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
-KeyCode::X, ModifierFlag::COMMAND_L,
-Option::NOREPEAT,
-</autogen>
-</item>
 
 <item>
-<name>left shift + return to cut word before cursor</name>
-<identifier>private.left_shift_and_return_to_cut_line_before_cursor</identifier>
-<autogen>
-__KeyToKey__
-KeyCode::RETURN, ModifierFlag::SHIFT_L,
-KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L,
-KeyCode::X, ModifierFlag::COMMAND_L,
-Option::NOREPEAT,
-</autogen>
-</item>
-
-
-<!-- make left shift + right shift cut word after cursor -->
-<item>
-<name>left shift + right shift to cut line after cursor</name>
-<identifier>private.left_shift_and_right_shift__to_cut_word_after_cursor</identifier>
-<autogen>
- __KeyToKey__
-KeyCode::SHIFT_R, ModifierFlag::SHIFT_L,
-KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L,
-KeyCode::X, ModifierFlag::COMMAND_L,
-Option::NOREPEAT,
-</autogen>
-</item>
-
-
-<!-- another big life changer -->
-<!-- allows me to use right shift as a normal delete button when pressed alone -->
-<!-- when pressed together makes command + shift combination which allows me to use varous neat bindings -->
-<!-- I personally use right shift + bindings as app specific bindings unlike my caps bindings which are global -->
-<item>
-<name>right shift to command and shift when together, delete when alone</name>
+<name>general: right shift to command and shift when together, delete when alone</name>
 <identifier>private.right_shift_to_command_and_shift</identifier>
 <autogen>
 --KeyOverlaidModifier--
@@ -6427,10 +6412,8 @@ Option::KEYOVERLAIDMODIFIER_REPEAT,
 </item>
 
 
-
-
 <item>
-<name>right shift and right command to option and command</name>
+<name>general: right shift and right command to option and command</name>
 <identifier>private.right_shift_and_command_to_option_command</identifier>
 <autogen>
 --KeyOverlaidModifier--
@@ -6440,13 +6423,8 @@ KeyCode::DELETE, ModifierFlag::COMMAND_L
 </autogen>
 </item>
 
-
-
-<!-- I use Alfred everyday as a replacement for spotlight -->
-<!-- this allows me to toggle Alfred prompt with one right command key press -->
-<!-- I then bind this combination in Alfred itself and I have a fully working command key which acts as Alfred prompt when pressed alone -->
 <item>
-<name>left shift to alfred</name>
+<name>general left shift to alfred</name>
 <identifier>private.right_shift_to_alfred</identifier>
 <autogen>
 __KeyOverlaidModifier__
@@ -6457,7 +6435,7 @@ KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::C
 </item>
 
 <item>
-<name>right command to something</name>
+<name>general: right command to something</name>
 <identifier>private.right_command_to_something</identifier>
 <autogen>
 __KeyOverlaidModifier__
@@ -6467,13 +6445,8 @@ KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::C
 </autogen>
 </item>
 
-
-<!-- I haven't found any use for my fn key on os x so I decided to make it useful -->
-<!-- this makes my fn key act as a 'superkey' ie all modifiers pressed together (alt, opt, command, shift) -->
-<!-- this allows for insane freedom in keybindings -->
-<!-- I also have fn + shift binding to a combination, I use it to lookup highlighted text in the dictionary -->
 <item>
-<name>fn shift to combination plus fn superkey</name>
+<name>test: fn shift to combination plus fn superkey</name>
 <identifier>private.fn_shift_to_combination</identifier>
 <autogen>
 __KeyOverlaidModifier__
@@ -6495,7 +6468,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 </item>
 
 <item>
-		<name>sticky backquote as option key</name>
+		<name>general: sticky backquote option key</name>
 		<identifier>private.launcher_mode_open_apps_v40</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -6525,7 +6498,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
       @end
 
       @begin
-      KeyCode::VK_LOCK_ALL_FORCE_OFF, KeyCode::VK_CONFIG_TOGGLE_notsave_ubiq_vimnormal, KeyCode::VK_CONFIG_FORCE_OFF_notsave_g_operator_pending, KeyCode::VK_CONFIG_FORCE_OFF_notsave_c_w_operator_pending
+      KeyCode::V, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
       @end
     </autogen>
   </item>
@@ -6744,7 +6717,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
   
   <item>
-      <name>opt + return = safari</name>
+      <name>general: opt + return = safari</name>
       <identifier>private.open_safari_opt_return</identifier>
       <autogen>
           __KeyToKey__

@@ -6,6 +6,11 @@ function mda() {
     mkdir a.\ $1
 }
 
+# _find where is text searched is contained
+function fl() {
+    grep -rnw . -e "$*"
+}
+
 # _folder with k. prefix
 function mdk() {
     mkdir k.\ $1

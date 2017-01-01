@@ -221,7 +221,7 @@ function modal_stat(modal, color)
     modal_bg:setFillColor(color)
     modal_show:show()
     modal_text = string.upper(modal .. ' mode')
-    modal_show:setText(modal_text)
+    modal_show:setText(" ")
 end
 
 function exit_others(except)
@@ -318,12 +318,10 @@ end
 
 if #modal_list > 0 then require("modalmgr") end
 
-
-
 --------------------------------------------------------------------------------
 -- _meta 
 --------------------------------------------------------------------------------
-hs.hotkey.bind(cmd_alt_shift, "U", hs.toggleConsole)
+hs.hotkey.bind("alt", "M", hs.toggleConsole)
 
 
 -- needed for cli utility I use to reload config
