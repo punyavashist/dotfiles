@@ -1,5 +1,6 @@
 # _general
 alias tl='tmux'
+alias top="vtop"
 alias ka='echo'
 alias rl='curl'
 alias sfuck='eval $(thefuck $(fc -ln -1)); history -r' # TODO: check it out - not sure if better

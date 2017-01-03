@@ -43,7 +43,118 @@
 <equal>com.googlecode.iterm2</equal>
 </appdef>
 
-<!-- _km macros -->
+<!-- _km urls -->
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: github"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_SOUNDCLOUD</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: soundcloud"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_FACEBOOK</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: facebook"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_HCKR_NEWS</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: hckr news"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_KHAN_ACADEMY</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: khan academy"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_ALFRED_FORUM</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: alfred forum"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_KM_FORUM</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: km forum"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_ASSIGNED_ISSUES</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: github - assigned issues"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: reddit"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_NOTIFICATIONS</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: github - notifications"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<!-- _km def-->
 <vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_LOWERCASE_SELECTED_TEXT</name>
   <url type="shell">
@@ -982,6 +1093,42 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "cleanFolders" in workflow "nikivi.clean.folders" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SUBREDDITS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchRedditSubreddits" in workflow "net.deanishe.alfred-reddit" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_DICTIONARY_SEARCH</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "dictionarySearch" in workflow "nikivi.dictionary.lookup" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_DISMISS_NOTIFICATIONS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "dismissNotifications" in workflow "shh" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_FORCE_EMPTY_TRASH</name>
   <url type="shell">
   osascript -e '
@@ -1793,6 +1940,20 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::N,
+        KeyCode::TAB, ModifierFlag::COMMAND_L,
+        KeyCode::COMMAND_L,
+    KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::DOT,
+        KeyCode::P, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::M,
     KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
     </autogen>
@@ -1812,6 +1973,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::J,
         KeyCode::VK_MOUSEKEY_SCROLL_DOWN,
     </autogen>
+
       <autogen>
         __KeyToKey__
         KeyCode::L,
@@ -1838,8 +2000,24 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
    <autogen>
      __KeyToKey__
-     KeyCode::D,
+     KeyCode::S,
      KeyCode::VK_OPEN_URL_KM_OPEN_PDF_EXPERT
+   </autogen>
+
+   <autogen>
+     __KeyToKey__
+     KeyCode::W,
+     KeyCode::F, ModifierFlag::CONTROL_L
+   </autogen>
+
+   <autogen>
+     __KeyToKey__
+     KeyCode::F,
+     KeyCode::C, ModifierFlag::COMMAND_L, 
+     KeyCode::F, ModifierFlag::CONTROL_L,
+     KeyCode::RETURN, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+     KeyCode::V, ModifierFlag::COMMAND_L,
+     KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
    </autogen>
 
 </item>
@@ -1874,7 +2052,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 </item>
 
 <item>
-    <name>general: sticky s for essential things not in iTerm</name>
+    <name>general: sticky s - essential things - NOT: iTerm</name>
     <identifier>private.launcher_mode_open_apps_v23</identifier>
     <not>ITERM</not>
 
@@ -2123,7 +2301,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>general: sticky s for essential things in iTerm</name>
+    <name>general: sticky s - essential things - NOT: iTerm</name>
     <identifier>private.launcher_mode_open_apps_v25</identifier>
     <only>ITERM</only>
 
@@ -2724,7 +2902,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
 
 <item>
-    <name>sticky slash for option modifier</name>
+    <name>general: sticky slash - option modifier</name>
     <identifier>private.launcher_mode_open_apps_v19</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -2770,7 +2948,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>sticky space essentials</name>
+    <name>general: sticky space - essentials</name>
     <identifier>private.launcher_mode_open_apps_v34</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -2849,7 +3027,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::F5, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
 		</autogen>
 
-
         <autogen>
       __KeyToKey__
       KeyCode::E,
@@ -2874,7 +3051,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::I, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
-
         <autogen>
       __KeyToKey__
       KeyCode::R,
@@ -2884,7 +3060,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::F19,
-      KeyCode::2, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+      KeyCode::RETURN, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 		</autogen>
 
         <autogen>
@@ -2981,7 +3157,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
 
 <item>
-    <name>sticky p for new prompts</name>
+    <name>general: sticky p - new prompts</name>
     <identifier>private.launcher_mode_open_apps_v12</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3023,7 +3199,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::P,
     </autogen>
 
-
    <autogen>
       __KeyToKey__
       KeyCode::SPACE,
@@ -3041,7 +3216,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::S,
        KeyCode::F3, ModifierFlag::OPTION_L
 		</autogen>
-
 
         <autogen>
       __KeyToKey__
@@ -3064,7 +3238,58 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>sticky dot for emoji</name>
+    <name>general: sticky comma - one off scripts</name>
+    <identifier>private.launcher_mode_open_apps_v72</identifier>
+
+    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::COMMA,
+
+      <!--
+          Use notsave.launcher_mode_v2 in order to be higher priority.
+          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
+      -->
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v72, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::COMMA,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v72</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::COMMA,
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::D,
+      KeyCode::VK_OPEN_URL_KM_SEND_CAT_FACE_EMOJI
+ </autogen>
+
+  </item>
+
+<item>
+    <name>general: sticky dot - emoji</name>
     <identifier>private.launcher_mode_open_apps_v20</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3112,12 +3337,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::U, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
  </autogen>
 
-       <autogen>
-       __KeyToKey__
-       KeyCode::N,
-    KeyCode::V, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
-       </autogen>
-
     <autogen>
       __KeyToKey__
       KeyCode::A,
@@ -3139,7 +3358,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>sticky n modifier for web searches</name>
+    <name>general: sticky n - web searches</name>
     <identifier>private.launcher_mode_open_apps_v35</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3231,7 +3450,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::F,
+        KeyCode::L,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_FORUM
     </autogen>
 
@@ -3243,16 +3462,20 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::A,
-        KeyCode::B, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+        KeyCode::F,
+        KeyCode::VK_OPEN_URL_ALFRED_DICTIONARY_SEARCH
     </autogen>
 
+    <autogen>
+        __KeyToKey__
+        KeyCode::F19,
+        KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
+    </autogen>
 
   </item>
 
-
 <item>
-    <name>sticky m modifier for handy utils</name>
+    <name>general: sticky m modifier - handy utils</name>
     <identifier>private.launcher_mode_open_apps_v17</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3302,15 +3525,22 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::F19,
+      KeyCode::F3, ModifierFlag::COMMAND_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::S,
       KeyCode::VK_OPEN_URL_ALFRED_TOGGLE_WIFI
 		</autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::SPACE,
-        KeyCode::G, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-    </autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::SPACE,
+      KeyCode::2, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+		</autogen>
 
     <autogen>
         __KeyToKey__
@@ -3363,7 +3593,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>sticky v media controls</name>
+    <name>general: sticky v - media controls</name>
     <identifier>private.launcher_mode_open_apps_v16</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3492,7 +3722,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>sticky b for window control</name>
+    <name>general: sticky b - window control</name>
     <identifier>private.launcher_mode_open_apps_v13</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3608,11 +3838,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   </item>
 
-
-
-
 <item>
-    <name>sticky w modifier open top apps</name>
+    <name>general: sticky w - open top apps</name>
     <identifier>private.launcher_mode_open_apps_v3</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3721,7 +3948,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::VK_OPEN_URL_KM_OPEN_SNIPPETSLAB
     </autogen>
 
-
     <autogen>
       __KeyToKey__
       KeyCode::F,
@@ -3784,7 +4010,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>sticky quote for scripts</name>
+    <name>general: sticky quote - scripts</name>
     <identifier>private.launcher_mode_open_apps_v32</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3832,7 +4058,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::F2, ModifierFlag::COMMAND_L
     </autogen>
 
-
     <autogen>
         __KeyToKey__
         KeyCode::SPACE,
@@ -3857,16 +4082,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::F7, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
     </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::R,
-        KeyCode::F1, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
-    </autogen>
 
   </item>
 
 <item>
-		<name>general: sticky x for more awesomeness</name>
+		<name>general: sticky x - more awesomeness</name>
 		<identifier>private.launcher_mode_open_apps_v43</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3915,11 +4135,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     </autogen>
 
   </item>
-
-
-
 <item>
-		<name>general: sticky c for actions</name>
+		<name>general: sticky c - websites</name>
 		<identifier>private.launcher_mode_open_apps_v41</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3961,17 +4178,64 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::C,
     </autogen>
 
-
     <autogen>
         __KeyToKey__
         KeyCode::SPACE,
         KeyCode::D, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
+    <autogen>
+        __KeyToKey__
+        KeyCode::DOT,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_SOUNDCLOUD
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::SEMICOLON,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_HCKR_NEWS
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::B,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_FACEBOOK
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::L,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::Z,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::N,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_NOTIFICATIONS
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::K,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_KHAN_ACADEMY
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::M,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_ASSIGNED_ISSUES
+    </autogen>
+
   </item>
 
 <item>
-		<name>general: sticky 3 for something</name>
+		<name>general: sticky 3 - something</name>
 		<identifier>private.launcher_mode_open_apps_v51</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4024,7 +4288,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
 
 <item>
-		<name>general: sticky g for symbols</name>
+		<name>general: sticky g - symbols</name>
 		<identifier>private.launcher_mode_open_apps_v11</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4143,11 +4407,17 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::F19
     </autogen>
 
+    <autogen>
+        __KeyToKey__
+        KeyCode::A,
+        KeyCode::VK_OPEN_URL_ALFRED_DISMISS_NOTIFICATIONS
+    </autogen>
+
   </item>
 
 
 <item>
-    <name>general: sticky r modifier open other apps</name>
+    <name>general: sticky r - open other apps</name>
     <identifier>private.launcher_mode_open_apps_v8</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4245,7 +4515,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::B,
+        KeyCode::COMMA,
         KeyCode::VK_OPEN_URL_KM_OPEN_PATTERNS
     </autogen>
 
@@ -4299,7 +4569,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::W,
+      KeyCode::M,
       KeyCode::VK_OPEN_URL_KM_OPEN_1PASSWORD
 		</autogen>
 
@@ -4335,7 +4605,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::M,
+      KeyCode::B,
       KeyCode::VK_OPEN_URL_KM_OPEN_TEXPAD
 		</autogen>
 
@@ -4354,7 +4624,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>general: sticky u modifier for alfred and km macros</name>
+    <name>general: sticky u - alfred and km macros</name>
     <identifier>private.launcher_mode_open_apps_v33</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4422,12 +4692,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::R,
-       KeyCode::F8, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
       KeyCode::I,
        KeyCode::F1, ModifierFlag::OPTION_L
 		</autogen>
@@ -4438,10 +4702,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::F2, ModifierFlag::OPTION_L
 		</autogen>
 
+
   </item>
 
 <item>
-    <name>general: sticky i for inserting symbols</name>
+    <name>general: sticky i - inserting symbols</name>
     <identifier>private.launcher_mode_open_apps_v15</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4723,7 +4988,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>general: sticky t for handy actions</name>
+    <name>general: sticky t - handy actions</name>
     <identifier>private.launcher_mode_open_apps_v14</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4820,10 +5085,16 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
 
+        <autogen>
+      __KeyToKey__
+      KeyCode::Z,
+       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SUBREDDITS
+		</autogen>
+
   </item>
 
 <item>
-    <name>general: sticky z modifier open chat apps</name>
+    <name>general: sticky z - open chat apps</name>
     <identifier>private.launcher_mode_open_apps_v9</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4949,7 +5220,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>general: sticky f modifier custom</name>
+    <name>general: sticky f - essential keybinds</name>
     <identifier>private.launcher_mode_open_apps_v2</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -5011,12 +5282,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::DOT,
-       KeyCode::VK_OPEN_URL_KM_MAKE_MARKDOWN_LINK_FROM_SELECTION
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
        KeyCode::BACKQUOTE,
        KeyCode::4, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
         </autogen>
@@ -5041,13 +5306,19 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __KeyToKey__
+      KeyCode::DOT,
+      KeyCode::RETURN, ModifierFlag::FN
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
       KeyCode::A,
       KeyCode::F7
     </autogen>
 
     <autogen>
       __KeyToKey__
-      KeyCode::DOT,
+      KeyCode::QUOTE,
       KeyCode::F6, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
     </autogen>
 
@@ -5072,7 +5343,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::W,
        KeyCode::VK_OPEN_URL_KM_LOWERCASE_SELECTED_TEXT
        </autogen>
-
 
        <autogen>
        __KeyToKey__
@@ -5137,7 +5407,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>general: sticky e modifier</name>
+    <name>general: sticky e</name>
     <identifier>private.launcher_mode_open_apps_v4</identifier>
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
@@ -5455,7 +5725,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>general: sticky q modifier as command shift</name>
+    <name>general: sticky q - command shift</name>
     <identifier>private.launcher_mode_open_apps_v6</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -5741,7 +6011,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
   <item>
-    <name>general: sticky a control modifier</name>
+    <name>general: sticky a - control modifier</name>
     <identifier>private.launcher_mode_example</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -6027,7 +6297,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 </replacementdef>
 
 <item>
-<name>general: caps lock and a, two different hotkeys for quick and long press</name>
+<name>test: caps lock and a - two different hotkeys for quick and long press</name>
 <identifier>private.caps_a_long_press</identifier>
 <not>ITERM</not>
 <autogen>
@@ -6128,7 +6398,7 @@ KeyCode::9, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 </item>
 
 <item>
-<name>general: caps lock, shift two times</name>
+<name>test: caps lock, shift two times</name>
 <identifier>private.caps_shift_two_times</identifier>
 <autogen>
 __DoublePressModifier__
@@ -6140,7 +6410,7 @@ KeyCode::CAPSLOCK,
 
 
 <item>
-<name>general: left control to left control and command</name>
+<name>test: left control - left control and command</name>
 <identifier>private.left_control_to_left_control_and_command</identifier>
 <autogen>
 __KeyToKey__
@@ -6150,7 +6420,7 @@ KeyCode::CONTROL_L, ModifierFlag::COMMAND_L,
 </item>
 
 <item>
-<name>general: left option to control and command</name>
+<name>test: left option - control and command</name>
 <identifier>private.left_option_to_control_and_command</identifier>
 <autogen>
 __KeyToKey__
@@ -6160,7 +6430,7 @@ KeyCode::OPTION_L,ModifierFlag::COMMAND_L,
 </item>
 
 <item>
-<name>general: left control to control and command - NOT: xcode</name>
+<name>general: left control - control and command - NOT: xcode</name>
 <identifier>private.left_control_to_control_and_command</identifier>
 <not>XCODE</not>
 <autogen>

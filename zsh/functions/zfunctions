@@ -6,6 +6,11 @@ function mda() {
     mkdir a.\ $1
 }
 
+# _see what aliases for key I have 
+function fa() {
+    alias | grep "^$1"
+}
+
 # _find where is text searched is contained
 function fl() {
     grep -rnw . -e "$*"
