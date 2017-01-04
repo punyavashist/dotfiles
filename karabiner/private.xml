@@ -1117,18 +1117,33 @@
   </vkopenurldef>
 
   <vkopenurldef>
+      <background/>
     <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME</name>
     <url>hammerspoon://showTime</url>
   </vkopenurldef>
 
   <vkopenurldef>
+      <background/>
     <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_RELOAD_CONFIG</name>
     <url>hammerspoon://reloadConfig</url>
   </vkopenurldef>
 
   <vkopenurldef>
+      <background/>
     <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_TESTER</name>
     <url>hammerspoon://tester</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+      <background/>
+    <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_CYCLE_WINDOWS_NEXT</name>
+    <url>hammerspoon://cycleWindowsNext</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+      <background/>
+    <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_CYCLE_WINDOWS_PREVIOUS</name>
+    <url>hammerspoon://cycleWindowsPrevious</url>
   </vkopenurldef>
 
 
@@ -1143,6 +1158,7 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+      <background/>
   <name>KeyCode::VK_OPEN_URL_ALFRED_RELOAD_KARABINER_XML</name>
   <url type="shell">
   osascript -e '
@@ -3364,7 +3380,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>general: sticky dot - emoji</name>
+    <name>general: sticky dot - wm </name>
     <identifier>private.launcher_mode_open_apps_v20</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3406,17 +3422,18 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::DOT,
     </autogen>
 
-    <autogen>
-      __KeyToKey__
-      KeyCode::SPACE,
-      KeyCode::U, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
- </autogen>
+       <autogen>
+         __KeyToKey__
+         KeyCode::F,
+         KeyCode::TAB, ModifierFlag::COMMAND_L,
+         KeyCode::COMMAND_L,
+     </autogen>
 
     <autogen>
       __KeyToKey__
       KeyCode::A,
       KeyCode::VK_OPEN_URL_KM_SEND_DOG_FACE_EMOJI
- </autogen>
+     </autogen>
 
     <autogen>
       __KeyToKey__
@@ -3428,6 +3445,24 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::D,
       KeyCode::VK_OPEN_URL_KM_SEND_CAT_FACE_EMOJI
+ </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::F19,
+      KeyCode::VK_OPEN_URL_HAMMERSPOON_CYCLE_WINDOWS_NEXT
+ </autogen>
+
+    <autogen>
+        __KeyToKey__
+      KeyCode::K,
+      KeyCode::CURSOR_RIGHT
+ </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::J,
+      KeyCode::CURSOR_LEFT
  </autogen>
 
   </item>

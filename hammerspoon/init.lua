@@ -114,61 +114,42 @@ end
 hs.urlevent.bind("showTime", showTime) 
 
 --------------------------------------------------------------------------------
--- _window management
+-- _wm = window management
 --------------------------------------------------------------------------------
 hs.window.animationDuration = 0 
 hs.hotkey.alertDuration=0
+
+resize_current_winnum = 1
+resize_win_list = hs.window.visibleWindows()
+
+function cycle_wins_next()
+    resize_win_list[resize_current_winnum]:focus()
+    resize_current_winnum = resize_current_winnum + 1
+    if resize_current_winnum > #resize_win_list then resize_current_winnum = 1 end
+end
+hs.urlevent.bind("cycleWindowsNext", cycle_wins_next)
+
+function cycle_wins_pre()
+    resize_win_list[resize_current_winnum]:focus()
+    resize_current_winnum = resize_current_winnum - 1
+    if resize_current_winnum < 1 then resize_current_winnum = #resize_win_list end
+end
+hs.urlevent.bind("cycleWindowsPrevious", cycle_wins_pre)
+
+-- doesn't work
+function showWindowHints() 
+   hs.hints.windowHints() 
+end
+hs.urlevent.bind("showWindowHints", showWindowHints)
 
 
 --------------------------------------------------------------------------------
 -- _testing
 --------------------------------------------------------------------------------
-hs.urlevent.bind("someAlert", function(eventName, params)
-    hs.alert.show("hey there alert")
-end)
 
 local anycomplete = require "anycomplete/anycomplete"
 anycomplete.registerDefaultBindings(cmd_alt_ctrl, "W")
 
-function resize_win(direction)
-    local win = hs.window.focusedWindow()
-    if win then
-        local f = win:frame()
-        local screen = win:screen()
-        local max = screen:fullFrame()
-        local stepw = max.w/30
-        local steph = max.h/30
-        if direction == "right" then f.w = f.w+stepw end
-        if direction == "left" then f.w = f.w-stepw end
-        if direction == "up" then f.h = f.h-steph end
-        if direction == "down" then f.h = f.h+steph end
-        if direction == "halfright" then f.x = max.w/2 f.y = 0 f.w = max.w/2 f.h = max.h end
-        if direction == "halfleft" then f.x = 0 f.y = 0 f.w = max.w/2 f.h = max.h end
-        if direction == "halfup" then f.x = 0 f.y = 0 f.w = max.w f.h = max.h/2 end
-        if direction == "halfdown" then f.x = 0 f.y = max.h/2 f.w = max.w f.h = max.h/2 end
-        if direction == "cornerNE" then f.x = max.w/2 f.y = 0 f.w = max.w/2 f.h = max.h/2 end
-        if direction == "cornerSE" then f.x = max.w/2 f.y = max.h/2 f.w = max.w/2 f.h = max.h/2 end
-        if direction == "cornerNW" then f.x = 0 f.y = 0 f.w = max.w/2 f.h = max.h/2 end
-        if direction == "cornerSW" then f.x = 0 f.y = max.h/2 f.w = max.w/2 f.h = max.h/2 end
-        if direction == "center" then f.x = (max.w-f.w)/2 f.y = (max.h-f.h)/2 end
-        if direction == "fcenter" then f.x = stepw*5 f.y = steph*5 f.w = stepw*20 f.h = steph*20 end
-        if direction == "fullscreen" then f = max end
-        if direction == "shrink" then f.x = f.x+stepw f.y = f.y+steph f.w = f.w-(stepw*2) f.h = f.h-(steph*2) end
-        if direction == "expand" then f.x = f.x-stepw f.y = f.y-steph f.w = f.w+(stepw*2) f.h = f.h+(steph*2) end
-        if direction == "mright" then f.x = f.x+stepw end
-        if direction == "mleft" then f.x = f.x-stepw end
-        if direction == "mup" then f.y = f.y-steph end
-        if direction == "mdown" then f.y = f.y+steph end
-        win:setFrame(f)
-    else
-        hs.alert.show("no focused window!")
-    end
-end
-
-function test () 
-    resize_win('left')
-end
-hs.urlevent.bind("tester", test)
 
 --------------------------------------------------------------------------------
 -- _meta 
