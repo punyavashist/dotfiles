@@ -14,6 +14,13 @@
 </vkopenurldef>
 
 <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_wm</name>
+    <url type="shell">
+        <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name wm    ]]>
+    </url>
+</vkopenurldef>
+
+<vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_gaming</name>
     <url type="shell">
         <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name gaming    ]]>
@@ -161,6 +168,17 @@
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "g: lowercase selected text"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_ITERM_SNIPPET_FROM_SELECTION</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "iterm: snippet from selection"
     end tell
     '
   </url>
@@ -1082,12 +1100,53 @@
   </url>
 </vkopenurldef>
 
+<!-- _hammerspon def -->
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TODO_TASK</name>
+    <url>hammerspoon://showTodoTask</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_CLIPBOARD_CONTENT</name>
+    <url>hammerspoon://showClipBoardContent</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_VISUALLY_CIRCLE_MOUSE</name>
+    <url>hammerspoon://visuallyCircleMouse</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME</name>
+    <url>hammerspoon://showTime</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_RELOAD_CONFIG</name>
+    <url>hammerspoon://reloadConfig</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_TESTER</name>
+    <url>hammerspoon://tester</url>
+  </vkopenurldef>
+
+
 <!-- _alfred def -->
 <vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_WIFI_CHECK</name>
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.workflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_RELOAD_KARABINER_XML</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "reloadKarabinerXML" in workflow "com.nikivi.karabiner" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -1929,6 +1988,18 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
+    <name>wm: main</name>
+    <identifier>private.wm_main remap</identifier>
+
+   <autogen>
+     __KeyToKey__
+     KeyCode::M,
+     KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
+   </autogen>
+
+</item>
+
+<item>
     <name>scroller: main</name>
     <identifier>private.scroller_main remap</identifier>
 
@@ -1943,7 +2014,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::N,
         KeyCode::TAB, ModifierFlag::COMMAND_L,
         KeyCode::COMMAND_L,
-    KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
+        KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
     </autogen>
 
     <autogen>
@@ -2008,6 +2079,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
      __KeyToKey__
      KeyCode::W,
      KeyCode::F, ModifierFlag::CONTROL_L
+   </autogen>
+
+   <autogen>
+     __KeyToKey__
+     KeyCode::G,
+     KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_front_window_center
    </autogen>
 
    <autogen>
@@ -2301,7 +2378,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>general: sticky s - essential things - NOT: iTerm</name>
+    <name>general: sticky s - essential things - ONLY: iTerm</name>
     <identifier>private.launcher_mode_open_apps_v25</identifier>
     <only>ITERM</only>
 
@@ -2347,7 +2424,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                <autogen>
                  __KeyToKey__
                  KeyCode::BACKQUOTE,
-               KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+                 KeyCode::VK_OPEN_URL_KM_ITERM_SNIPPET_FROM_SELECTION
                </autogen>
 
                <!-- send command-tab by m -->
@@ -2600,7 +2677,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                <autogen>
                  __KeyToKey__
                  KeyCode::P,
-                 KeyCode::F12, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+                 KeyCode::VK_OPEN_URL_HAMMERSPOON_VISUALLY_CIRCLE_MOUSE
                </autogen>
 
                <autogen>
@@ -2609,13 +2686,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  KeyCode::MINUS, ModifierFlag::COMMAND_L
                </autogen>
 
-
                <autogen>
                  __KeyToKey__
                  KeyCode::Z,
                  KeyCode::F11, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
                </autogen>
-
 
 
                ]]>
@@ -3048,7 +3123,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::SEMICOLON,
-        KeyCode::I, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+        KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TODO_TASK
     </autogen>
 
         <autogen>
@@ -3406,6 +3481,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::VK_OPEN_URL_ALFRED_QUORA_SEARCH
     </autogen>
 
+        <autogen>
+      __KeyToKey__
+      KeyCode::SEMICOLON,
+      KeyCode::F2, ModifierFlag::COMMAND_L
+		</autogen>
+
     <autogen>
         __KeyToKey__
         KeyCode::M,
@@ -3475,7 +3556,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>general: sticky m modifier - handy utils</name>
+    <name>general: sticky m - handy utils</name>
     <identifier>private.launcher_mode_open_apps_v17</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3525,6 +3606,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::Z,
+       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SUBREDDITS
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::F19,
       KeyCode::F3, ModifierFlag::COMMAND_L
 		</autogen>
@@ -3534,7 +3621,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::S,
       KeyCode::VK_OPEN_URL_ALFRED_TOGGLE_WIFI
 		</autogen>
-
 
         <autogen>
       __KeyToKey__
@@ -3558,6 +3644,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     __KeyToKey__
     KeyCode::G,
     KeyCode::VK_OPEN_URL_SHELL_switchprofile_gaming
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::V,
+    KeyCode::VK_OPEN_URL_SHELL_switchprofile_wm
   </autogen>
 
     <autogen>
@@ -3587,7 +3679,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::F,
-        KeyCode::P, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+        KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME
     </autogen>
 
   </item>
@@ -4342,7 +4434,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::O, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
-
     <autogen>
         __KeyToKey__
         KeyCode::DOT,
@@ -4353,9 +4444,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::L,
-        KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
-        KeyCode::EQUAL,
-        KeyCode::SPACE
+        KeyCode::VK_OPEN_URL_HAMMERSPOON_TESTER
     </autogen>
 
        <autogen>
@@ -4373,7 +4462,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::SEMICOLON,
-       KeyCode::K, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+       KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_CLIPBOARD_CONTENT
         </autogen>
 
     <autogen>
@@ -5036,7 +5125,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::F, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
-
        <autogen>
        __KeyToKey__
        KeyCode::W,
@@ -5070,13 +5158,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::K,
-        KeyCode::U, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+        KeyCode::VK_OPEN_URL_HAMMERSPOON_RELOAD_CONFIG
     </autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::L,
-        KeyCode::M, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+        KeyCode::VK_OPEN_URL_ALFRED_RELOAD_KARABINER_XML
     </autogen>
 
     <autogen>
@@ -5085,11 +5173,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
 
-        <autogen>
-      __KeyToKey__
-      KeyCode::Z,
-       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SUBREDDITS
-		</autogen>
 
   </item>
 
@@ -5943,7 +6026,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     </autogen>
 
     <autogen>
-      __KeyDownUpToKey__
+        __KeyToKey__
       KeyCode::H,
       KeyCode::H, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
     </autogen>
@@ -5961,7 +6044,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     </autogen>
 
     <autogen>
-      __KeyDownUpToKey__
+      __KeyToKey__
       KeyCode::L,
       KeyCode::L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
     </autogen>

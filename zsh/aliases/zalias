@@ -1,5 +1,6 @@
 # _general
 alias tl='tmux'
+alias lg='ls | grep'
 alias top="vtop"
 alias ka='echo'
 alias rl='curl'

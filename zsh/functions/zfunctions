@@ -6,6 +6,7 @@ function mda() {
     mkdir a.\ $1
 }
 
+
 # _see what aliases for key I have 
 function fa() {
     alias | grep "^$1"
