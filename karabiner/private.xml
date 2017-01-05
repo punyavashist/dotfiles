@@ -1100,7 +1100,7 @@
   </url>
 </vkopenurldef>
 
-<!-- _hammerspon def -->
+<!-- _hammerspoon def -->
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TODO_TASK</name>
     <url>hammerspoon://showTodoTask</url>
@@ -1153,6 +1153,15 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.workflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_UNINSTALL_WITH_CLEANMYMAC</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "uninstallWithCleanMyMac" in workflow "fradser.uninstall.cleanmymac3" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -1651,7 +1660,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 </item>
 
 <item>
-  <name>general: sticky semicolon as shift key</name>
+  <name>general: sticky semicolon - shift key</name>
   <!-- Don't change the line below, will break not sure why. Have to do with the prifix of the name. But if you want to have more launcher mode in the future for other key you can change the number 21 to 22 ...etc -->
 <identifier>private.launcher_mode_open_apps_v30</identifier>
 <inputsource_only>US</inputsource_only>
@@ -1711,7 +1720,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   <autogen>
     __KeyToKey__
     KeyCode::BACKQUOTE,
-    KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L
+    KeyCode::CAPSLOCK
     </autogen>
 
         <autogen>
@@ -2010,7 +2019,26 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
    <autogen>
      __KeyToKey__
      KeyCode::M,
+     KeyCode::F8, ModifierFlag::COMMAND_L,
      KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
+   </autogen>
+
+   <autogen>
+     __KeyToKey__
+     KeyCode::F,
+     KeyCode::K, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L
+   </autogen>
+
+   <autogen>
+     __KeyToKey__
+     KeyCode::A,
+     KeyCode::H, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+   </autogen>
+
+   <autogen>
+     __KeyToKey__
+     KeyCode::S,
+     KeyCode::L, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
    </autogen>
 
 </item>
@@ -2626,6 +2654,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
                <autogen>
                  __KeyToKey__
+                 KeyCode::M,
+                 KeyCode::F2, ModifierFlag::COMMAND_L
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
                  KeyCode::F19,
                  KeyCode::ESCAPE
                </autogen>
@@ -2706,6 +2740,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  __KeyToKey__
                  KeyCode::Z,
                  KeyCode::F11, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::DOT,
+                 KeyCode::F1, ModifierFlag::COMMAND_L
                </autogen>
 
 
@@ -2832,12 +2872,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::A,
-       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
        KeyCode::C,
        KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
         </autogen>
@@ -2868,7 +2902,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::R,
+       KeyCode::A,
        KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
         </autogen>
 
@@ -3151,7 +3185,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::F19,
-      KeyCode::RETURN, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+      KeyCode::2, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
 		</autogen>
 
         <autogen>
@@ -3380,7 +3414,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>general: sticky dot - wm </name>
+    <name>general: sticky dot - emoji</name>
     <identifier>private.launcher_mode_open_apps_v20</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3455,13 +3489,19 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-      KeyCode::K,
+      KeyCode::M,
       KeyCode::CURSOR_RIGHT
  </autogen>
 
     <autogen>
+        __KeyToKey__
+      KeyCode::V,
+      KeyCode::VK_OPEN_URL_HAMMERSPOON_TESTER
+ </autogen>
+
+    <autogen>
       __KeyToKey__
-      KeyCode::J,
+      KeyCode::N,
       KeyCode::CURSOR_LEFT
  </autogen>
 
@@ -3677,6 +3717,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
+    KeyCode::SEMICOLON,
+    KeyCode::VK_OPEN_URL_ALFRED_UNINSTALL_WITH_CLEANMYMAC
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
     KeyCode::G,
     KeyCode::VK_OPEN_URL_SHELL_switchprofile_gaming
   </autogen>
@@ -3684,6 +3730,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   <autogen>
     __KeyToKey__
     KeyCode::V,
+    KeyCode::F8, ModifierFlag::COMMAND_L,
     KeyCode::VK_OPEN_URL_SHELL_switchprofile_wm
   </autogen>
 
@@ -3905,7 +3952,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __KeyToKey__
-      KeyCode::SEMICOLON,
+      KeyCode::C,
       KeyCode::F11, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
     </autogen>
 
@@ -3959,7 +4006,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __KeyToKey__
-      KeyCode::C,
+      KeyCode::SEMICOLON,
       KeyCode::F9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
 
@@ -6812,15 +6859,29 @@ KeyCode::DELETE, ModifierFlag::COMMAND_L
 </item>
 
 <item>
-<name>general left shift to alfred</name>
-<identifier>private.right_shift_to_alfred</identifier>
+<name>general: left shift - switch to wm mode</name>
+<identifier>private.right_shift_to_wm_mode</identifier>
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::SHIFT_L,
 KeyCode::SHIFT_L,
-KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+KeyCode::F8, ModifierFlag::COMMAND_L,
+KeyCode::VK_OPEN_URL_SHELL_switchprofile_wm
 </autogen>
 </item>
+
+<item>
+<name>general: left shift - switch to general mode</name>
+<identifier>private.right_shift_to_general_mode</identifier>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::SHIFT_L,
+KeyCode::SHIFT_L,
+KeyCode::F8, ModifierFlag::COMMAND_L,
+KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
+</autogen>
+</item>
+
 
 <item>
 <name>general: right command to something</name>
@@ -6856,7 +6917,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 </item>
 
 <item>
-		<name>general: sticky backquote option key</name>
+		<name>general: sticky backquote - option key</name>
 		<identifier>private.launcher_mode_open_apps_v40</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -6886,7 +6947,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
       @end
 
       @begin
-      KeyCode::V, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+      KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE
       @end
     </autogen>
   </item>
