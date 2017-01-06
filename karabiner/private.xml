@@ -6,6 +6,7 @@
 <modifierdef>MY_OPTION_L</modifierdef>
 <modifierdef>MY_CONTROL_L</modifierdef>
 
+<!-- _profile def  -->
 <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_general</name>
     <url type="shell">
@@ -34,6 +35,13 @@
     </url>
 </vkopenurldef>
 
+<vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_capslock</name>
+    <url type="shell">
+        <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name capslock    ]]>
+    </url>
+</vkopenurldef>
+
 <!-- _app def  -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_APP_IntelliJ</name>
@@ -57,6 +65,17 @@
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "w: github"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEETCODE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: leetcode"
     end tell
     '
   </url>
@@ -274,6 +293,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_SEND_NEUTRAL_FACE_EMOJI</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "g: insert 😐"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_SEND_HAPPY_CAT_EMOJI</name>
   <url type="shell">
   osascript -e '
@@ -285,22 +315,22 @@
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_SEND_BLUE_HEART_EMOJI</name>
+  <name>KeyCode::VK_OPEN_URL_KM_SEND_SPARKLES_EMOJI</name>
   <url type="shell">
   osascript -e '
     tell application "Keyboard Maestro Engine"
-    do script "g: insert 💙"
+    do script "g: insert ✨"
     end tell
     '
   </url>
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_SEND_SPARKLES_EMOJI</name>
+  <name>KeyCode::VK_OPEN_URL_KM_SEND_WALKING_CAT_EMOJI</name>
   <url type="shell">
   osascript -e '
     tell application "Keyboard Maestro Engine"
-    do script "g: insert ✨"
+    do script "g: insert 🐈"
     end tell
     '
   </url>
@@ -340,18 +370,7 @@
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_SEND_WALKING_CAT_EMOJI</name>
-  <url type="shell">
-  osascript -e '
-    tell application "Keyboard Maestro Engine"
-    do script "g: insert 🐈"
-    end tell
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_SEND_WEARY_CAT_EMOJI</name>
+  <name>KeyCode::VK_OPEN_URL_KM_SEND_AMAZED_CAT_EMOJI</name>
   <url type="shell">
   osascript -e '
     tell application "Keyboard Maestro Engine"
@@ -384,16 +403,15 @@
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_SEND_BLACK_HEART_EMOJI</name>
+  <name>KeyCode::VK_OPEN_URL_KM_SEND_WALKING_DOG_EMOJI</name>
   <url type="shell">
   osascript -e '
     tell application "Keyboard Maestro Engine"
-    do script "g: insert ♥"
+    do script "g: insert 🐕"
     end tell
     '
   </url>
 </vkopenurldef>
-
 
 <!-- _km app def -->
 <vkopenurldef>
@@ -402,6 +420,17 @@
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "open: transmission"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_MACDOWN</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: macdown"
     end tell
     '
   </url>
@@ -1158,6 +1187,24 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SYMBOLS_SEARCH</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "symbolsSearch" in workflow "pw.symbols-search" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_ALFRED_STACK_OVERFLOW_SEARCH</name> 
+    <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "stackOverflowSearch" in workflow "stackoverflow.7h2o.com" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_UNINSTALL_WITH_CLEANMYMAC</name>
   <url type="shell">
   osascript -e '
@@ -1741,7 +1788,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     KeyCode::9, ModifierFlag::SHIFT_L
   </autogen>
 
-
   <autogen>
     __KeyToKey__
     KeyCode::QUOTE,
@@ -1962,7 +2008,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 </item>
 
 <item>
-    <name>scroller: sticky colon</name>
+    <name>scroller: sticky semicolon</name>
     <identifier>private.launcher_mode_open_apps_v71</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -2224,7 +2270,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  <!-- release command key to commit command-tab -->
                  KeyCode::COMMAND_L,
              </autogen>
-
 
                <autogen>
                __KeyToKey__
@@ -3020,6 +3065,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
         </autogen>
 
+       <autogen>
+       __KeyToKey__
+       KeyCode::R,
+       KeyCode::VK_OPEN_URL_ALFRED_STACK_OVERFLOW_SEARCH
+        </autogen>
 
       ]]>
     </replacementvalue>
@@ -3482,12 +3532,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
  </autogen>
 
     <autogen>
-      __KeyToKey__
-      KeyCode::F19,
-      KeyCode::VK_OPEN_URL_HAMMERSPOON_CYCLE_WINDOWS_NEXT
- </autogen>
-
-    <autogen>
         __KeyToKey__
       KeyCode::M,
       KeyCode::CURSOR_RIGHT
@@ -3552,7 +3596,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::Q,
+        KeyCode::V,
         KeyCode::VK_OPEN_URL_ALFRED_QUORA_SEARCH
     </autogen>
 
@@ -3618,14 +3662,27 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::F,
+        KeyCode::S,
         KeyCode::VK_OPEN_URL_ALFRED_DICTIONARY_SEARCH
     </autogen>
+
+   <autogen>
+     __KeyToKey__
+     KeyCode::A,
+     KeyCode::TAB, ModifierFlag::COMMAND_L,
+     KeyCode::COMMAND_L,
+ </autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::F19,
         KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::F,
+       KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
     </autogen>
 
   </item>
@@ -3763,6 +3820,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::F,
         KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME
     </autogen>
+    
 
   </item>
 
@@ -4166,7 +4224,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __KeyToKey__
-      KeyCode::M,
+      KeyCode::I,
       KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_CANARY
     </autogen>
 
@@ -4178,7 +4236,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __KeyToKey__
-      KeyCode::I,
+      KeyCode::M,
       KeyCode::VK_OPEN_URL_KM_OPEN_VS_CODE
     </autogen>
   </item>
@@ -4403,7 +4461,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::M,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_ASSIGNED_ISSUES
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEETCODE
     </autogen>
 
   </item>
@@ -4741,7 +4799,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::M,
-      KeyCode::VK_OPEN_URL_KM_OPEN_1PASSWORD
+      KeyCode::VK_OPEN_URL_KM_OPEN_MACDOWN
 		</autogen>
 
     <autogen>
@@ -5435,6 +5493,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
+       KeyCode::Z,
+       KeyCode::VK_OPEN_URL_KM_MAKE_MARKDOWN_LINK_FROM_SELECTION
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
        KeyCode::2,
        KeyCode::VK_OPEN_URL_KM_UPPERCASE_SELECTED_TEXT
         </autogen>
@@ -5518,7 +5582,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::SEMICOLON,
-       KeyCode::F10, ModifierFlag::OPTION_L
+       KeyCode::VK_OPEN_URL_ALFRED_SYMBOLS_SEARCH
        </autogen>
 
        <autogen>
@@ -7172,6 +7236,16 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __KeyToKey__
           KeyCode::RETURN, ModifierFlag::OPTION_R,
           KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI
+      </autogen>
+  </item>
+
+  <item>
+      <name>capslock: semicolon to turn off caps lock and go to general</name>
+      <identifier>private.semi_turn_off_caps</identifier>
+      <autogen>
+          __KeyToKey__
+          KeyCode::SEMICOLON,
+          KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
       </autogen>
   </item>
 

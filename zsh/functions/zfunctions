@@ -2,8 +2,17 @@
 
 
 # _folder with a. prefix
-function mda() {
-    mkdir a.\ $1
+#function mda() {
+ #   mkdir a.\ $1
+#}
+
+function ma() {
+    mkdir "$1" && cd "$1"
+}
+
+
+function ogg() {
+    go get github.com/$@
 }
 
 

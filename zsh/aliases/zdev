@@ -12,6 +12,7 @@ alias brs='browser-sync'
 # _python
 alias r='python3'
 alias r2='python'
+alias rv='virtualenv -p /usr/local/bin/python3'
 
 # _node 
 alias n='node'
@@ -28,7 +29,7 @@ alias ie='yarn remove'
 alias ig='yarn global add'
 
 # _pip
-alias pi='pip install'
+alias ra='pip install'
 
 
 # _npm - depracated
