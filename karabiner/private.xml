@@ -1187,6 +1187,15 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_HASTEBIN</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "hastebinFromClipboard" in workflow "co.jmes.hastebin" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SYMBOLS_SEARCH</name>
   <url type="shell">
   osascript -e '
@@ -2274,7 +2283,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                <autogen>
                __KeyToKey__
                KeyCode::SLASH,
-               KeyCode::6, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+               KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L
+               </autogen>
+
+               <autogen>
+               __KeyToKey__
+               KeyCode::COMMA,
+               KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L
                </autogen>
 
                <autogen>
@@ -2290,6 +2305,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                KeyCode::MINUS,
                KeyCode::SPACE
                </autogen>
+
 
                <autogen>
                __KeyToKey__
@@ -2699,6 +2715,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
                <autogen>
                  __KeyToKey__
+                 KeyCode::C,
+                 KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
                  KeyCode::M,
                  KeyCode::F2, ModifierFlag::COMMAND_L
                </autogen>
@@ -2748,7 +2770,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                <autogen>
                  __KeyToKey__
                  KeyCode::BACKQUOTE,
-                 KeyCode::1, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+                 KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
                </autogen>
 
                <autogen>
@@ -2881,7 +2903,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::U,
+       KeyCode::M,
        KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_GROUPS
         </autogen>
 
@@ -3031,7 +3053,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::M,
+       KeyCode::U,
        KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_MAPS_SEARCH
         </autogen>
 
@@ -3596,7 +3618,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::V,
+        KeyCode::Q,
         KeyCode::VK_OPEN_URL_ALFRED_QUORA_SEARCH
     </autogen>
 
@@ -3608,8 +3630,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::M,
+        KeyCode::U,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KM_FORUM
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::M,
+        KeyCode::CURSOR_LEFT
     </autogen>
 
     <autogen>
@@ -3651,13 +3679,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::L,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_FORUM
+        KeyCode::CURSOR_RIGHT
     </autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::K,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KICKASS_TORRENTS
+        KeyCode::CURSOR_LEFT
     </autogen>
 
     <autogen>
@@ -3677,6 +3705,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         __KeyToKey__
         KeyCode::F19,
         KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::DOT,
+        KeyCode::CURSOR_RIGHT
     </autogen>
 
     <autogen>
@@ -5606,7 +5640,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::E,
-        KeyCode::F2, ModifierFlag::COMMAND_L
+        KeyCode::F6, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
     </autogen>
 
     <autogen>
@@ -6923,14 +6957,14 @@ KeyCode::DELETE, ModifierFlag::COMMAND_L
 </item>
 
 <item>
-<name>general: left shift - switch to wm mode</name>
+<name>general: left shift - switch app</name>
 <identifier>private.right_shift_to_wm_mode</identifier>
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::SHIFT_L,
 KeyCode::SHIFT_L,
-KeyCode::F8, ModifierFlag::COMMAND_L,
-KeyCode::VK_OPEN_URL_SHELL_switchprofile_wm
+ KeyCode::TAB, ModifierFlag::COMMAND_L,
+ KeyCode::COMMAND_L
 </autogen>
 </item>
 
