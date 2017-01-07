@@ -86,6 +86,7 @@ function! DoRemote(arg)
 endfunction
 
 Plug 'jiangmiao/auto-pairs'
+Plug 'sbdchd/neoformat'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'danro/rename.vim'                             " allow to :Rename files
 Plug 'rking/ag.vim'                                 " lightining fast :Ag searcher
@@ -179,8 +180,8 @@ nmap <Leader>vq   :wqall<CR>
 nmap <Leader>vQ   :qa<CR>
 nmap <Leader>ee   :e ~/.dotfiles/vim/nvim/nvimrc<CR>
 nmap <Leader>se   :source ~/.dotfiles/vim/nvim/nvimrc<CR>
-nmap <Leader>pi   :PlugInstall<CR>
-nmap <Leader>pu   :PlugUpdate<CR>
+nmap <Leader>ii   :PlugInstall<CR>
+nmap <Leader>ia   :PlugUpdate<CR>
 nmap <Leader>vm   :make<CR>
 nmap <Leader>o    :!go run %<CR>
 nnoremap <leader>l :%d<cr>

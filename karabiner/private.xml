@@ -71,6 +71,28 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK_OVERFLOW</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: stack overflow"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_YOUTUBE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: youtube"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEETCODE</name>
   <url type="shell">
   osascript -e '
@@ -187,6 +209,17 @@
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "g: lowercase selected text"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "g: new mindnode file"
     end tell
     '
   </url>
@@ -1187,6 +1220,15 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchGoogleImages" in workflow "net.deanishe.alfred-searchio" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_HASTEBIN</name>
   <url type="shell">
   osascript -e '
@@ -2110,6 +2152,25 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::Z,
+        PointingButton::MIDDLE
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::BACKQUOTE,
+        KeyCode::VK_OPEN_URL_SHELL_switchprofile_general,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::C,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::N,
         KeyCode::TAB, ModifierFlag::COMMAND_L,
         KeyCode::COMMAND_L,
@@ -2165,7 +2226,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
    <autogen>
      __KeyToKey__
      KeyCode::V,
-     KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI
+     PointingButton::LEFT
    </autogen>
 
    <autogen>
@@ -2178,6 +2239,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
      __KeyToKey__
      KeyCode::W,
      KeyCode::F, ModifierFlag::CONTROL_L
+   </autogen>
+
+   <autogen>
+     __KeyToKey__
+     KeyCode::SPACE,
+     KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
    </autogen>
 
    <autogen>
@@ -3622,6 +3689,30 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::VK_OPEN_URL_ALFRED_QUORA_SEARCH
     </autogen>
 
+    <autogen>
+        __KeyToKey__
+        KeyCode::Z,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::W,
+        KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::V,
+        KeyCode::VK_OPEN_URL_ALFRED_STACK_OVERFLOW_SEARCH
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::BACKQUOTE,
+        KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+    </autogen>
+
         <autogen>
       __KeyToKey__
       KeyCode::SEMICOLON,
@@ -3673,7 +3764,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::E,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MEDIUM
+        KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
     <autogen>
@@ -3766,8 +3857,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::E,
+      KeyCode::T,
       KeyCode::VK_OPEN_URL_ALFRED_FORCE_EMPTY_TRASH
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::E,
+      KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE
 		</autogen>
 
         <autogen>
@@ -3933,12 +4030,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::Z,
-        KeyCode::F8, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
         KeyCode::J,
         ConsumerKeyCode::VOLUME_MUTE
     </autogen>
@@ -3976,7 +4067,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
      <autogen>
         __KeyToKey__
         KeyCode::A,
-        ConsumerKeyCode::KEYBOARDLIGHT_LOW
+        KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller
+    </autogen>
+
+     <autogen>
+        __KeyToKey__
+        KeyCode::Z,
+        ConsumerKeyCode::KEYBOARDLIGHT_LOW,
     </autogen>
 
     <autogen>
@@ -4453,7 +4550,19 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::DOT,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_SOUNDCLOUD
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_YOUTUBE
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::J,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::O,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEETCODE
     </autogen>
 
     <autogen>
@@ -4476,12 +4585,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::Z,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
         KeyCode::N,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_NOTIFICATIONS
     </autogen>
@@ -4495,7 +4598,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::M,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEETCODE
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK_OVERFLOW
     </autogen>
 
   </item>

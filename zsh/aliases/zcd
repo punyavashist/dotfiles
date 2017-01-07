@@ -1,7 +1,7 @@
 # _projects 
 alias dk='cd ~/projects'
 alias daq='cd ~/code/xcode/projects/macos/quoter'
-alias dll='cd ~/learning'
+alias d:='cd ~/learning'
 
 # _documents
 alias dap='cd ~/Documents/d.\ app'
