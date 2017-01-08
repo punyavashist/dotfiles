@@ -1162,10 +1162,16 @@
   </url>
 </vkopenurldef>
 
-<!-- _hammerspoon def -->
+<!-- _hs def -->
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TODO_TASK</name>
     <url>hammerspoon://showTodoTask</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+      <background/>
+    <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_ACTIVE_WINDOWS</name>
+    <url>hammerspoon://showActiveWindows</url>
   </vkopenurldef>
 
   <vkopenurldef>
@@ -1215,6 +1221,96 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.workflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_INDEXED_GITHUB</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "jumpToGithubRepo" in workflow "me.lachlan.githubjump" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SHOW_CALENDAR</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "showCalendar" in workflow "zmin.calendar" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_FIND_SPOTIFY_SONG_LYRICS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "findLyricsOfCurrentSpotifySong" in workflow "com.rudzitis.lyrics" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_CONTACTS_TEXT</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchContactsText" in workflow "com.alfredapp.vero.contactnotes" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TIMEZONES</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "timezonesSearch" in workflow "carlosnz.timezones" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_CAN_I_USE</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "canIUse" in workflow "com.farrell.caniuse.alfredworkflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_TRANSLATE_EN_RU</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "translateEnglishRussian" in workflow "dmitry.traslate.ru.en" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_WORKFLOWS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchThroughAlfredExtensions" in workflow "com.jmjeong.alfredv2.mae" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchPawFIles" in workflow "nikivi.search.files" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchXcodeProjects" in workflow "nikivi.search.files" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -2782,7 +2878,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
                <autogen>
                  __KeyToKey__
-                 KeyCode::C,
+                 KeyCode::Z,
                  KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
                </autogen>
 
@@ -2872,7 +2968,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
                <autogen>
                  __KeyToKey__
-                 KeyCode::Z,
+                 KeyCode::C,
                  KeyCode::F11, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
                </autogen>
 
@@ -2965,7 +3061,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __KeyToKey__
       KeyCode::BACKQUOTE,
-      KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+      KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
     </autogen>
 
        <autogen>
@@ -3019,7 +3115,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::K,
-       KeyCode::F5, ModifierFlag::OPTION_L
+       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_WORKFLOWS
         </autogen>
 
        <autogen>
@@ -3067,7 +3163,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::T,
-       KeyCode::F4, ModifierFlag::OPTION_L
+       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TIMEZONES
         </autogen>
 
        <autogen>
@@ -3103,7 +3199,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::S,
-       KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
+       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE
         </autogen>
 
        <autogen>
@@ -3157,7 +3253,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::R,
-       KeyCode::VK_OPEN_URL_ALFRED_STACK_OVERFLOW_SEARCH
+       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SUBREDDITS
         </autogen>
 
       ]]>
@@ -3166,7 +3262,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
 
 <item>
-    <name>general: sticky slash - option modifier</name>
+    <name>general: sticky slash - something</name>
     <identifier>private.launcher_mode_open_apps_v19</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -3691,6 +3787,42 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::DOT,
+        KeyCode::VK_OPEN_URL_ALFRED_SHOW_CALENDAR
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::O,
+        KeyCode::VK_OPEN_URL_ALFRED_QUORA_SEARCH
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::T,
+        KeyCode::VK_OPEN_URL_ALFRED_TRANSLATE_EN_RU
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::C,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MEDIUM
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::X,
+        KeyCode::VK_OPEN_URL_ALFRED_AMAZON_SEARCH
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::3,
+        KeyCode::VK_OPEN_URL_ALFRED_CAN_I_USE
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::Z,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
     </autogen>
@@ -3716,13 +3848,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::SEMICOLON,
-      KeyCode::F2, ModifierFlag::COMMAND_L
+      KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SUBREDDITS
 		</autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::U,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KM_FORUM
+        KeyCode::VK_OPEN_URL_ALFRED_CAN_I_USE
     </autogen>
 
     <autogen>
@@ -3734,13 +3866,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::D,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_IDOPE
+        KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_ACTIVE_WINDOWS
     </autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::G,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOODREADS
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_INDEXED_GITHUB
     </autogen>
 
     <autogen>
@@ -3796,12 +3928,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         __KeyToKey__
         KeyCode::F19,
         KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::DOT,
-        KeyCode::CURSOR_RIGHT
     </autogen>
 
     <autogen>
@@ -3863,14 +3989,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::E,
-      KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE
+      KeyCode::L,
+      KeyCode::VK_OPEN_URL_ALFRED_FIND_SPOTIFY_SONG_LYRICS
 		</autogen>
 
         <autogen>
       __KeyToKey__
-      KeyCode::Z,
-       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SUBREDDITS
+      KeyCode::E,
+      KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE
 		</autogen>
 
         <autogen>
@@ -3951,7 +4077,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::F,
         KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME
     </autogen>
-    
 
   </item>
 
@@ -4494,7 +4619,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::SPACE,
-        KeyCode::Z, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+        KeyCode::G, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
   </item>
@@ -5743,7 +5868,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::E,
-        KeyCode::F6, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+        KeyCode::VK_OPEN_URL_ALFRED_HASTEBIN
     </autogen>
 
     <autogen>
@@ -5830,6 +5955,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::QUOTE,
       KeyCode::QUOTE, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::DOT,
+      KeyCode::DOT, ModifierFlag::COMMAND_L
     </autogen>
 
     <autogen>
@@ -7061,7 +7192,7 @@ KeyCode::DELETE, ModifierFlag::COMMAND_L
 
 <item>
 <name>general: left shift - switch app</name>
-<identifier>private.right_shift_to_wm_mode</identifier>
+<identifier>private.left_shift_to_wm_mode</identifier>
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::SHIFT_L,
@@ -7072,8 +7203,19 @@ KeyCode::SHIFT_L,
 </item>
 
 <item>
+    <name>general: right shift - play / stop music</name>
+<identifier>private.right_shift_play_music</identifier>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::SHIFT_R,
+KeyCode::SHIFT_R,
+ConsumerKeyCode::MUSIC_PLAY
+</autogen>
+</item>
+
+<item>
 <name>general: left shift - switch to general mode</name>
-<identifier>private.right_shift_to_general_mode</identifier>
+<identifier>private.left_shift_to_general_mode</identifier>
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::SHIFT_L,

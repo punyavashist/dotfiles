@@ -157,14 +157,11 @@ let g:ctrlp_cmd = 'CtrlP'
 " --------------------------------------
 "  _space mapping
 " --------------------------------------
-"  TODO: structure it better
 
-"  TODO: find out what this does
 nnoremap <SPACE> <Nop>
 
 let mapleader="\<Space>"
 
-"  TODO: find out what this does
 nnoremap <leader>= yypVr=  
 
 " TODO: tabe seems rather interesting
@@ -185,6 +182,13 @@ nmap <Leader>ia   :PlugUpdate<CR>
 nmap <Leader>vm   :make<CR>
 nmap <Leader>o    :!go run %<CR>
 nnoremap <leader>l :%d<cr>
+
+
+" run commands in new splits
+nnoremap <Leader>tt :tabedit <Bar> term.
+nnoremap <Leader>ts :split <Bar> term.
+nnoremap <Leader>tv :vsplit <Bar> term.
+
 nnoremap <silent><expr> <C-L> winnr()==g:NERDTree.GetWinNum() ? ":NERDTreeClose\<CR>" : ":NERDTreeFocus\<CR>"
 nmap <C-s> :w<cr>
 

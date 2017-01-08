@@ -3,6 +3,11 @@
 --------------------------------------------------------------------------------
 require("hs.ipc") -- hammerpoon cli
 
+print("-- "..os.date()) -- know when it gets sourced
+
+hs.logger = require("hs.logger")
+hs.logger.historySize(200)
+
 
 --------------------------------------------------------------------------------
 -- _constants
@@ -140,8 +145,12 @@ hs.urlevent.bind("cycleWindowsPrevious", cycle_wins_pre)
 function showWindowHints() 
    hs.hints.windowHints() 
 end
-hs.urlevent.bind("showWindowHints", showWindowHints)
+hs.urlevent.bind("showActiveWindows", showWindowHints)
 
+function test() 
+   hs.alert.show("hello") 
+end
+hs.urlevent.bind("tester", test)
 
 --------------------------------------------------------------------------------
 -- _testing

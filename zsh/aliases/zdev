@@ -28,6 +28,9 @@ alias ii='yarn install'
 alias ie='yarn remove'
 alias ig='yarn global add'
 
+# _heroku
+alias he='heroku'
+
 # _pip
 alias ra='pip install'
 
