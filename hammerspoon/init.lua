@@ -8,6 +8,8 @@ print("-- "..os.date()) -- know when it gets sourced
 hs.logger = require("hs.logger")
 hs.logger.historySize(200)
 
+hs.hints.showTitleThresh = 9
+
 
 --------------------------------------------------------------------------------
 -- _constants
