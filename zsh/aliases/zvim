@@ -7,7 +7,7 @@ alias ei='nvim index.js'
 alias egi='nvim .gitignore'
 alias ej='nvim package.json'
 
-# _dotfiles
+# _config
 alias ea='nvim ~/.dotfiles/zsh/aliases/zalias'
 alias ez='nvim ~/.dotfiles/zsh/zshrc'
 alias eze='nvim ~/.dotfiles/zsh/aliases/zvim'
@@ -26,3 +26,4 @@ alias ezo='nvim ~/.dotfiles/zsh/aliases/zdocker'
 alias et='nvim ~/.dotfiles/tmux/tmux.conf.local'
 alias ezb='nvim ~/.dotfiles/zsh/zsh/zbindings'
 alias ehsa='nvim ~/.hammerspoon/private/awesomeconfig.lua'
+alias evs='nvim ~/Library/Application\ Support/Code/User/settings.json'

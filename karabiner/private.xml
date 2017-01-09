@@ -215,6 +215,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "g: new snippetslab snippet"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE</name>
   <url type="shell">
   osascript -e '
@@ -1221,6 +1232,15 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.workflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_SEARCH_TWITTER</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchTwitter" in workflow "nikivi.search-the-web" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -3250,12 +3270,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
         </autogen>
 
-       <autogen>
-       __KeyToKey__
-       KeyCode::R,
-       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SUBREDDITS
-        </autogen>
-
       ]]>
     </replacementvalue>
   </replacementdef>
@@ -3793,6 +3807,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::O,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_IDOPE
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::O,
         KeyCode::VK_OPEN_URL_ALFRED_QUORA_SEARCH
     </autogen>
 
@@ -3856,11 +3876,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::VK_OPEN_URL_ALFRED_CAN_I_USE
     </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::M,
-        KeyCode::CURSOR_LEFT
-    </autogen>
 
     <autogen>
         __KeyToKey__
@@ -3876,8 +3891,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::B,
+        KeyCode::I,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LETTERBOXD
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::B,
+        KeyCode::VK_OPEN_URL_SEARCH_TWITTER
     </autogen>
 
     <autogen>
@@ -4062,7 +4083,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::W,
-        KeyCode::VK_OPEN_URL_ALFRED_WEATHER_TODAY
+        KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
     </autogen>
 
     <autogen>
@@ -4075,6 +4096,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         __KeyToKey__
         KeyCode::F,
         KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::Q,
+        KeyCode::VK_OPEN_URL_ALFRED_WEATHER_TODAY
     </autogen>
 
   </item>
@@ -5769,7 +5796,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::Z,
+       KeyCode::SLASH,
        KeyCode::VK_OPEN_URL_KM_MAKE_MARKDOWN_LINK_FROM_SELECTION
         </autogen>
 
@@ -6427,6 +6454,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyDownUpToKey__
       KeyCode::A,
       KeyCode::A, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+    __KeyToKey__
+      KeyCode::DOT,
+      KeyCode::DOT, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
     </autogen>
 
     <autogen>

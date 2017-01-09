@@ -1,9 +1,10 @@
 # _general
+alias g:='git push -u origin master'
 alias g="git"
 alias gi='git init'
 alias gl='git pull'
 alias gcl='git clone'
-alias ga.='git add .'
+alias g.='git add .'
 alias ga='git add'
 alias gb='git branch'
 alias gg='git push'

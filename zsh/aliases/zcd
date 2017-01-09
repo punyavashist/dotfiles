@@ -83,7 +83,7 @@ alias dv='cd ~/.dotfiles/vim'
 alias d.='cd ~/.dotfiles'
 alias dsk='cd ~/Library/Application\ Support/Karabiner'
 alias db='cd ~/.dotfiles/bin'
-alias dbm='cd ~/.dotfiles/bin/mine'
+alias dm='cd ~/.dotfiles/bin/mine'
 alias dh='cd ~/.hammerspoon'
 
 
