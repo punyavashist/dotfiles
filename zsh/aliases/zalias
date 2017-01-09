@@ -3,6 +3,7 @@ alias tl='tmux'
 alias s='sudo'
 # TODO: fk alias to run last cmd as sudo instantly
 alias lg='ls | grep'
+alias gj='open `git config remote.origin.url`'
 alias so='source'
 alias top="vtop"
 alias ka='echo'

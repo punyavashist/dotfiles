@@ -1,5 +1,6 @@
 # _dev
-alias ss='python -m SimpleHTTPServer'
+#alias ss='python -m SimpleHTTPServer'
+alias ss='serve'
 alias sv='python3 -m http.server'
 
 # _flask

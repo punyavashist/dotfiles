@@ -10,3 +10,4 @@
 	cim = !git commit -m \"$*\" && :
 	s = status
 	d = diff
+    open = !open `git config remote.origin.url`
