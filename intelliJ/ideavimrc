@@ -1,0 +1,6 @@
+let mapleader="\<Space>"
+
+nmap <Leader>w    :w<CR>
+
+set relativenumber                    " relative to current posion line numbers
+

@@ -9,6 +9,7 @@ alias ej='nvim package.json'
 
 # _config
 alias ea='nvim ~/.dotfiles/zsh/aliases/zalias'
+alias ejj='nvim ~/.dotfiles/intellij/ideavimrc'
 alias ez='nvim ~/.dotfiles/zsh/zshrc'
 alias eze='nvim ~/.dotfiles/zsh/aliases/zvim'
 alias ezk='nvim ~/.dotfiles/zsh/aliases/zcd'

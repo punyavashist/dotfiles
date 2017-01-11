@@ -214,6 +214,7 @@
   </url>
 </vkopenurldef>
 
+
 <vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_RESET_BITBAR_TODO</name>
   <url type="shell">
@@ -381,7 +382,7 @@
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_SCREENSHOT_TO_MINDNODE</name>
+  <name>KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_MINDNODE</name>
   <url type="shell">
   osascript -e '
     tell application "Keyboard Maestro Engine"
@@ -1359,6 +1360,133 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_GITHUB_GIST_SEARCH</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchGists" in workflow "nikivi.search-the-web" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_BATTERY</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "battery" in workflow "com.benzi.a2w.battery" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_GITHUB_GISTS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "gists" in workflow "com.danielecook.gist" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_EXPLAIN_SHELL</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "explainShell" in workflow "com.ryanparman.workflow.manpages" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_LOREM_IPSUM</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "loremIpsum" in workflow "jeremy.lorem" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_IMDB_SEARCH</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "imdbSearch" in workflow "alfredimdbsuggest" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GIPHY</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "giphySearch" in workflow "com.arbitrarydefinitions.giphy" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_GEOLOCATION</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "geoLocation" in workflow "com.ryanparman.workflow.geo" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_DATE_CALCULATOR</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "dateCalculator" in workflow "de.leenno.datecalculator" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_FONT_AWESOME</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "fontAwesome" in workflow "com.ruedap.font-awesome" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchGoogleDrive" in workflow "com.drive.azai91" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_DISPLAY_BRIGHTNESS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "displayBrightness" in workflow "com.fniephaus.brightness" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_PLAYLISTS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "spotifyPlaylists" in workflow "com.vdesabou.spotify.mini.player" with argument "✧Playlist▹"
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_TOGGL</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "startToggl" in workflow "com.jason0x43.alfred-toggl" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_MAILTO</name>
   <url type="shell">
   osascript -e '
@@ -1506,7 +1634,7 @@ tell application "Alfred 3" to run trigger "symbolsSearch" in workflow "pw.symbo
     <name>KeyCode::VK_OPEN_URL_ALFRED_STACK_OVERFLOW_SEARCH</name> 
     <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "stackOverflowSearch" in workflow "stackoverflow.7h2o.com" with argument ""
+tell application "Alfred 3" to run trigger "searchStack" in workflow "nikivi.search-the-web" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -3157,6 +3285,18 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::F,
        KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
         </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::X,
+       KeyCode::VK_OPEN_URL_ALFRED_GITHUB_GISTS
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::Z,
+       KeyCode::VK_OPEN_URL_ALFRED_EXPLAIN_SHELL
+        </autogen>
         
        <autogen>
        __KeyToKey__
@@ -3308,11 +3448,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
        </autogen>
 
-       <autogen>
-       __KeyToKey__
-       KeyCode::X,
-       KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
-        </autogen>
 
     <autogen>
     __KeyToKey__
@@ -3366,12 +3501,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        __KeyToKey__
        KeyCode::D,
        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PDF
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::Z,
-       KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
         </autogen>
 
        <autogen>
@@ -3556,7 +3685,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::QUOTE,
-      KeyCode::F3, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+      KeyCode::VK_OPEN_URL_ALFRED_TOGGL
 		</autogen>
 
     <autogen>
@@ -3941,19 +4070,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::DOT,
-        KeyCode::VK_OPEN_URL_ALFRED_SHOW_CALENDAR
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
     </autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::O,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_IDOPE
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::O,
-        KeyCode::VK_OPEN_URL_ALFRED_QUORA_SEARCH
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LETTERBOXD
     </autogen>
 
     <autogen>
@@ -4037,7 +4160,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::I,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LETTERBOXD
+        KeyCode::VK_OPEN_URL_ALFRED_IMDB_SEARCH
     </autogen>
 
     <autogen>
@@ -4098,7 +4221,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
    <autogen>
      __KeyToKey__
      KeyCode::COMMAND_R,
-     KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LETTERBOXD
+     KeyCode::VK_OPEN_URL_ALFRED_SEARCH_IDOPE
+ </autogen>
+
+   <autogen>
+     __KeyToKey__
+     KeyCode::J,
+     KeyCode::VK_OPEN_URL_ALFRED_GITHUB_GIST_SEARCH
  </autogen>
 
     <autogen>
@@ -4160,6 +4289,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::B,
+      KeyCode::VK_OPEN_URL_ALFRED_BATTERY
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::T,
       KeyCode::VK_OPEN_URL_ALFRED_FORCE_EMPTY_TRASH
 		</autogen>
@@ -4214,6 +4349,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
+    KeyCode::COMMAND_L,
+    KeyCode::VK_OPEN_URL_ALFRED_WEATHER_TODAY
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
     KeyCode::A,
     KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller
   </autogen>
@@ -4222,12 +4363,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     __KeyToKey__
     KeyCode::SEMICOLON,
     KeyCode::VK_OPEN_URL_ALFRED_UNINSTALL_WITH_CLEANMYMAC
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::G,
-    KeyCode::VK_OPEN_URL_SHELL_switchprofile_gaming
   </autogen>
 
   <autogen>
@@ -4321,8 +4456,20 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __KeyToKey__
       KeyCode::F19,
-      KeyCode::VK_OPEN_URL_SCREENSHOT_TO_MINDNODE
+      KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_MINDNODE
     </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::COMMAND_L,
+       KeyCode::VK_OPEN_URL_ALFRED_DISPLAY_BRIGHTNESS
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::COMMAND_R,
+       KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
+        </autogen>
 
     <autogen>
       __KeyToKey__
@@ -4341,6 +4488,18 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::K,
         ConsumerKeyCode::MUSIC_PLAY
     </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::SEMICOLON,
+       KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::DOT,
+       KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_PLAYLISTS
+        </autogen>
 
     <autogen>
         __KeyToKey__
@@ -4768,7 +4927,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-		<name>general: sticky x - symbols</name>
+		<name>general: sticky x - alfred</name>
 		<identifier>private.launcher_mode_open_apps_v43</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4810,6 +4969,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::X,
     </autogen>
 
+
     <autogen>
         __KeyToKey__
         KeyCode::SPACE,
@@ -4824,11 +4984,35 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::S,
         KeyCode::SLASH
     </autogen>
-    
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::O,
+        KeyCode::VK_OPEN_URL_ALFRED_DATE_CALCULATOR
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::L,
+        KeyCode::VK_OPEN_URL_ALFRED_GEOLOCATION
+    </autogen>
+
     <autogen>
         __KeyToKey__
         KeyCode::M,
-        KeyCode::VK_OPEN_URL_ALFRED_WEATHER_TODAY
+        KeyCode::VK_OPEN_URL_ALFRED_LOREM_IPSUM
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::K,
+        KeyCode::VK_OPEN_URL_ALFRED_FONT_AWESOME
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::DOT,
+        KeyCode::VK_OPEN_URL_ALFRED_SHOW_CALENDAR
     </autogen>
 
   </item>
@@ -5047,6 +5231,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::J,
+        KeyCode::VK_OPEN_URL_KM_TEST
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::SPACE,
         KeyCode::O, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
@@ -5110,7 +5300,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::K,
-        KeyCode::F19
+        KeyCode::F18
     </autogen>
 
     <autogen>
@@ -5769,12 +5959,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::J,
-        KeyCode::U, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
         KeyCode::K,
         KeyCode::VK_OPEN_URL_HAMMERSPOON_RELOAD_CONFIG
     </autogen>
@@ -5989,14 +6173,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::BACKQUOTE,
-       KeyCode::4, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+       KeyCode::F19,
+       KeyCode::3, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
         </autogen>
 
        <autogen>
        __KeyToKey__
-       KeyCode::F19,
-       KeyCode::3, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+       KeyCode::BACKQUOTE,
+       KeyCode::1, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
         </autogen>
 
        <autogen>
@@ -6905,7 +7089,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::P, ModifierFlag::CONTROL_L
     </autogen>
 
-
     <autogen>
       __KeyDownUpToKey__
       KeyCode::S,
@@ -6918,6 +7101,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::D, ModifierFlag::CONTROL_L
     </autogen>
 
+    <autogen>
+        __KeyToKey__
+      KeyCode::COMMAND_L,
+      KeyCode::F2, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+    </autogen>
 
     <autogen>
         __KeyToKey__
@@ -6930,7 +7118,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::COMMAND_L,
       KeyCode::A, ModifierFlag::CONTROL_L
     </autogen>
-
 
     <autogen>
       __KeyDownUpToKey__
