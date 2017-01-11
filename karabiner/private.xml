@@ -1360,6 +1360,69 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_CHROME_CANARY_SEARCH</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchChromeCanaryBookmarks" in workflow "com.mdreizin.chrome.bookmarks" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_LAYOUT_MANAGER</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "layoutManager" in workflow "de.leanovate.alfred.layout" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_KILL_PROCESS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "killProcess" in workflow "com.ngreenstein.alfred-process-killer" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_CSS_COOKBOOK</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "cssCookbook" in workflow "com.bitbazar.lcc" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_HTTP_CODES</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "httpStatusCodes" in workflow "fred.liang.status.codes" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_ABOUT_THIS_MAC</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "aboutThisMac" in workflow "yeraze.AboutThisMac.v1.3" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_OPEN_MAN_PAGE_IN_PDF</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "manInPDFSearch" in workflow "net.isometry.alfred.man" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_GITHUB_GIST_SEARCH</name>
   <url type="shell">
   osascript -e '
@@ -3285,11 +3348,17 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::F,
        KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
         </autogen>
+        
+       <autogen>
+       __KeyToKey__
+       KeyCode::SHIFT_L,
+       KeyCode::VK_OPEN_URL_ALFRED_KILL_PROCESS
+        </autogen>
 
        <autogen>
        __KeyToKey__
        KeyCode::X,
-       KeyCode::VK_OPEN_URL_ALFRED_GITHUB_GISTS
+       KeyCode::VK_OPEN_URL_ALFRED_OPEN_MAN_PAGE_IN_PDF
         </autogen>
 
        <autogen>
@@ -3379,7 +3448,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::SPACE,
-       KeyCode::0, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+       KeyCode::VK_OPEN_URL_ALFRED_CHROME_CANARY_SEARCH
         </autogen>
 
         <autogen>
@@ -3501,6 +3570,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        __KeyToKey__
        KeyCode::D,
        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PDF
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::R,
+       KeyCode::VK_OPEN_URL_ALFRED_GITHUB_GISTS
         </autogen>
 
        <autogen>
@@ -4221,13 +4296,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
    <autogen>
      __KeyToKey__
      KeyCode::COMMAND_R,
-     KeyCode::VK_OPEN_URL_ALFRED_SEARCH_IDOPE
+     KeyCode::VK_OPEN_URL_ALFRED_GITHUB_GIST_SEARCH
  </autogen>
 
    <autogen>
      __KeyToKey__
      KeyCode::J,
-     KeyCode::VK_OPEN_URL_ALFRED_GITHUB_GIST_SEARCH
+     KeyCode::VK_OPEN_URL_ALFRED_SEARCH_IDOPE
  </autogen>
 
     <autogen>
@@ -4657,7 +4732,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __KeyToKey__
       KeyCode::N,
-      KeyCode::F10, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+      KeyCode::VK_OPEN_URL_ALFRED_LAYOUT_MANAGER
     </autogen>
 
     <autogen>
@@ -4969,6 +5044,23 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::X,
     </autogen>
 
+    <autogen>
+        __KeyToKey__
+        KeyCode::C,
+        KeyCode::VK_OPEN_URL_ALFRED_CSS_COOKBOOK
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::O,
+        KeyCode::VK_OPEN_URL_ALFRED_ABOUT_THIS_MAC
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::H,
+        KeyCode::VK_OPEN_URL_ALFRED_HTTP_CODES
+    </autogen>
 
     <autogen>
         __KeyToKey__
