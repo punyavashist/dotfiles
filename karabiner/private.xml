@@ -560,11 +560,22 @@
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_OPEN_NETBEANS</name>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_PYCHARM</name>
   <url type="shell">
   osascript -e '
     tell application "Keyboard Maestro Engine"
-    do script "open: netbeans"
+    do script "open: pycharm"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_GOGLAND</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: gogland"
     end tell
     '
   </url>
@@ -1355,6 +1366,15 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.workflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_YANDEX_SEARCH</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchYandex" in workflow "net.deanishe.alfred-searchio" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -3714,6 +3734,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::O, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
 		</autogen>
 
+        <autogen>
+      __KeyToKey__
+      KeyCode::COMMAND_R,
+      KeyCode::SPACE, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+		</autogen>
 
         <autogen>
       __KeyToKey__
@@ -4158,6 +4183,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         __KeyToKey__
         KeyCode::T,
         KeyCode::VK_OPEN_URL_ALFRED_TRANSLATE_EN_RU
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::Y,
+        KeyCode::VK_OPEN_URL_ALFRED_YANDEX_SEARCH
     </autogen>
 
     <autogen>
@@ -4822,12 +4853,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
           KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L
         </autogen>
 
-        <autogen>
-          __KeyToKey__
-          KeyCode::COMMAND_R,
-          KeyCode::VK_OPEN_URL_KM_OPEN_NETBEANS
-        </autogen>
-
     <autogen>
       __KeyToKey__
       KeyCode::K,
@@ -4890,8 +4915,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
     __KeyToKey__
+      KeyCode::COMMAND_R,
+      KeyCode::VK_OPEN_URL_KM_OPEN_GOGLAND
+    </autogen>
+
+    <autogen>
+    __KeyToKey__
       KeyCode::COMMAND_L,
-      KeyCode::VK_OPEN_URL_KM_OPEN_TOWER
+      KeyCode::VK_OPEN_URL_KM_OPEN_PAW
     </autogen>
 
     <autogen>
@@ -5923,6 +5954,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::F11, ModifierFlag::OPTION_L
 		</autogen>
 
+
         <autogen>
       __KeyToKey__
       KeyCode::Z,
@@ -6354,7 +6386,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::M,
-       KeyCode::RETURN, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+       KeyCode::RETURN, ModifierFlag::OPTION_L
        </autogen>
 
     <autogen>
