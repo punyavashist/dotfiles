@@ -1443,10 +1443,10 @@ tell application "Alfred 3" to run trigger "manInPDFSearch" in workflow "net.iso
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_GITHUB_GIST_SEARCH</name>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_GITHUB_CODE_ISSUES_SEARCH</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "searchGists" in workflow "nikivi.search-the-web" with argument ""
+tell application "Alfred 3" to run trigger "searchGithubCodeIssues" in workflow "nikivi.search-the-web" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4327,7 +4327,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
    <autogen>
      __KeyToKey__
      KeyCode::COMMAND_R,
-     KeyCode::VK_OPEN_URL_ALFRED_GITHUB_GIST_SEARCH
+     KeyCode::VK_OPEN_URL_ALFRED_GITHUB_CODE_ISSUES_SEARCH
  </autogen>
 
    <autogen>
@@ -4825,12 +4825,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::D,
-      KeyCode::8, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
       KeyCode::C,
       KeyCode::VK_OPEN_URL_KM_OPEN_SUBLIME_TEXT
 		</autogen>
@@ -4862,7 +4856,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::R,
-        KeyCode::VK_OPEN_URL_KM_OPEN_TOGGL
+        KeyCode::VK_OPEN_URL_KM_OPEN_XCCELLO
     </autogen>
 
         <autogen>
@@ -4881,6 +4875,18 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::G,
       KeyCode::VK_OPEN_URL_KM_OPEN_SNIPPETSLAB
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::T,
+      KeyCode::VK_OPEN_URL_KM_OPEN_TOWER
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::D,
+      KeyCode::VK_OPEN_URL_KM_OPEN_XCCELLO
     </autogen>
 
     <autogen>
@@ -5139,6 +5145,59 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     </autogen>
 
   </item>
+  
+<item>
+		<name>general: sticky 1 - something</name>
+		<identifier>private.launcher_mode_open_apps_v80</identifier>
+
+    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::1,
+
+      <!--
+          Use notsave.launcher_mode_v2 in order to be higher priority.
+          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
+      -->
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v80, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::1,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v80</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::1,
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::SPACE,
+        KeyCode::F1, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+  </item>
+
 <item>
 		<name>general: sticky c - websites</name>
 		<identifier>private.launcher_mode_open_apps_v41</identifier>
@@ -5954,7 +6013,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::F11, ModifierFlag::OPTION_L
 		</autogen>
 
-
         <autogen>
       __KeyToKey__
       KeyCode::Z,
@@ -6333,8 +6391,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __KeyToKey__
-      KeyCode::QUOTE,
-      KeyCode::F6, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+      KeyCode::COMMAND_R,
+      KeyCode::RETURN, ModifierFlag::SHIFT_L
     </autogen>
 
     <autogen>
@@ -6363,6 +6421,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        __KeyToKey__
        KeyCode::N,
        KeyCode::RETURN, ModifierFlag::COMMAND_L
+       </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::COMMAND_R,
+       KeyCode::RETURN, ModifierFlag::SHIFT_L
        </autogen>
 
        <autogen>
