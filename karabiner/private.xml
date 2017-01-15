@@ -1371,6 +1371,61 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchDash" in workflow "com.nikivi.own.dash" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_HACKER_NEWS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchHackerNews" in workflow "nikivi.search-the-web" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_FORUM</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchAlfredForum" in workflow "nikivi.search-the-web" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KEYBOARD_FORUM</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchKMForum" in workflow "nikivi.search-the-web" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DRIBBLE</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchDribble" in workflow "nikivi.search-the-web" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PRODUCT_HUNT</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchProductHunt" in workflow "nikivi.search-the-web" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_YANDEX_SEARCH</name>
   <url type="shell">
   osascript -e '
@@ -1823,15 +1878,6 @@ tell application "Alfred 3" to run trigger "searchQuora" in workflow "nikivi.sea
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_REDDIT_MATH</name>
-  <url type="shell">
-  osascript -e '
-tell application "Alfred 3" to run trigger "searchRedditMath" in workflow "nikivi.search-the-web" with argument ""
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KM_FORUM</name>
   <url type="shell">
   osascript -e '
@@ -1844,7 +1890,7 @@ tell application "Alfred 3" to run trigger "searchRedditMath" in workflow "nikiv
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KICKASS_TORRENTS</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "searchKickassTorrents" in workflow "nikivi.search-the-web" with argument ""
+tell application "Alfred 3" to run trigger "searchKickassTorrents" in workflow "nikivi.search-the-web" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4181,6 +4227,36 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::2,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DRIBBLE
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::3,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KM_FORUM
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::5,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KICKASS_TORRENTS
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::4,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_FORUM
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::1,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PRODUCT_HUNT
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::T,
         KeyCode::VK_OPEN_URL_ALFRED_TRANSLATE_EN_RU
     </autogen>
@@ -4203,11 +4279,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::VK_OPEN_URL_ALFRED_AMAZON_SEARCH
     </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::3,
-        KeyCode::VK_OPEN_URL_ALFRED_CAN_I_USE
-    </autogen>
 
     <autogen>
         __KeyToKey__
@@ -4241,8 +4312,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::U,
-        KeyCode::VK_OPEN_URL_ALFRED_CAN_I_USE
+        KeyCode::I,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_HACKER_NEWS
     </autogen>
 
     <autogen>
@@ -4261,12 +4332,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         __KeyToKey__
         KeyCode::COMMAND_L,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::I,
-        KeyCode::VK_OPEN_URL_ALFRED_IMDB_SEARCH
     </autogen>
 
     <autogen>
@@ -4425,7 +4490,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::E,
+      KeyCode::D,
       KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE
 		</autogen>
 
@@ -4437,7 +4502,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::S,
+      KeyCode::W,
       KeyCode::VK_OPEN_URL_ALFRED_TOGGLE_WIFI
 		</autogen>
 
@@ -4492,7 +4557,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::W,
+        KeyCode::S,
         KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
     </autogen>
 
@@ -7828,9 +7893,19 @@ KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
 </autogen>
 </item>
 
+<item>
+<name>general: left command = dash</name>
+<identifier>private.left_command_to_dash</identifier>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::COMMAND_L,
+KeyCode::COMMAND_L,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
+</autogen>
+</item>
 
 <item>
-<name>general: right command to something</name>
+<name>general: right command = alfred</name>
 <identifier>private.right_command_to_something</identifier>
 <autogen>
 __KeyOverlaidModifier__
