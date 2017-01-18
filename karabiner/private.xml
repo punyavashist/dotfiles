@@ -214,6 +214,49 @@
   </url>
 </vkopenurldef>
 
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_SHOW_LEARNING_MINDNODE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: open mindnode learning file"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_SHOW_FOCUS_MINDNODE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: open mindnode focus file"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_SHOW_READING_MINDNODE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: open mindnode reading file"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_CREATE_NEW_CONTACT</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: create new contact"
+    end tell
+    '
+  </url>
+</vkopenurldef>
 
 <vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_RESET_BITBAR_TODO</name>
@@ -304,16 +347,6 @@
   </url>
 </vkopenurldef>
 
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE</name>
-  <url type="shell">
-  osascript -e '
-    tell application "Keyboard Maestro Engine"
-    do script "a: new mindnode file"
-    end tell
-    '
-  </url>
-</vkopenurldef>
 
 <vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_ITERM_SNIPPET_FROM_SELECTION</name>
@@ -1366,6 +1399,15 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.workflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SKYTORRENT</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "skyTorrents" in workflow "nikivi.search-the-web" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -2927,8 +2969,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
                 <autogen>
               __KeyToKey__
+              KeyCode::Y,
+              KeyCode::CURSOR_UP, ModifierFlag::COMMAND_L
+                </autogen>
+
+                <autogen>
+              __KeyToKey__
               KeyCode::U,
-              KeyCode::F1, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+              KeyCode::CURSOR_DOWN, ModifierFlag::COMMAND_L
                 </autogen>
 
                 <autogen>
@@ -3514,7 +3562,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::SPACE,
-       KeyCode::VK_OPEN_URL_ALFRED_CHROME_CANARY_SEARCH
+       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
         </autogen>
 
         <autogen>
@@ -3728,6 +3776,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::SLASH,
     </autogen>
 
+      <autogen>
+          __KeyToKey__
+          KeyCode::A,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SKYTORRENT
+      </autogen>
 
   </item>
 
@@ -4069,11 +4122,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::COMMA,
     </autogen>
 
-    <autogen>
-      __KeyToKey__
-      KeyCode::D,
-      KeyCode::VK_OPEN_URL_KM_SEND_CAT_FACE_EMOJI
- </autogen>
+      <autogen>
+          __KeyToKey__
+          KeyCode::A,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SKYTORRENT
+      </autogen>
 
   </item>
 
@@ -4248,6 +4301,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::4,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_FORUM
     </autogen>
+
+      <autogen>
+          __KeyToKey__
+          KeyCode::0,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SKYTORRENT
+      </autogen>
 
     <autogen>
         __KeyToKey__
@@ -4490,12 +4549,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::D,
-      KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
       KeyCode::F19,
       KeyCode::F3, ModifierFlag::COMMAND_L
 		</autogen>
@@ -4522,6 +4575,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     __KeyToKey__
     KeyCode::COMMAND_L,
     KeyCode::VK_OPEN_URL_ALFRED_WEATHER_TODAY
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::COMMAND_R,
+    KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller
   </autogen>
 
   <autogen>
@@ -4564,14 +4623,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::G,
-        KeyCode::DOT, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+        KeyCode::VK_OPEN_URL_KM_CREATE_NEW_CONTACT
     </autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::F,
         KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME
-    </autogen>
+    </autogenVK>
 
   </item>
 
@@ -4843,6 +4902,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::F9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
 
+
   </item>
 
 <item>
@@ -4897,7 +4957,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::N,
-      KeyCode::VK_OPEN_URL_KM_OPEN_INTELLIJ
+      KeyCode::VK_OPEN_URL_KM_OPEN_GOGLAND
 		</autogen>
 
         <autogen>
@@ -4950,12 +5010,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __KeyToKey__
-      KeyCode::D,
-      KeyCode::VK_OPEN_URL_KM_OPEN_XCCELLO
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
       KeyCode::F,
       KeyCode::VK_OPEN_URL_KM_OPEN_2DO
     </autogen>
@@ -4987,7 +5041,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
     __KeyToKey__
       KeyCode::COMMAND_R,
-      KeyCode::VK_OPEN_URL_KM_OPEN_GOGLAND
+      KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH
     </autogen>
 
     <autogen>
@@ -7900,7 +7954,8 @@ KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
 __KeyOverlaidModifier__
 KeyCode::COMMAND_L,
 KeyCode::COMMAND_L,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
+ KeyCode::TAB, ModifierFlag::COMMAND_L,
+ KeyCode::COMMAND_L
 </autogen>
 </item>
 
@@ -7910,7 +7965,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::COMMAND_R,
-KeyCode::CONTROL_L,
+KeyCode::CONTROL_R,
 KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
 </autogen>
 </item>
@@ -8194,6 +8249,30 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           KeyCode::RETURN, ModifierFlag::OPTION_R,
           KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI
       </autogen>
+  </item>
+
+  <item>
+      <name>general: sticky right command - control - mindnode</name>
+      <identifier>private.right_command_control_and_things</identifier>
+
+      <autogen>
+          __KeyToKey__
+          KeyCode::A, ModifierFlag::CONTROL_R,
+          KeyCode::VK_OPEN_URL_KM_SHOW_LEARNING_MINDNODE
+      </autogen>
+
+      <autogen>
+          __KeyToKey__
+          KeyCode::S, ModifierFlag::CONTROL_R,
+          KeyCode::VK_OPEN_URL_KM_SHOW_FOCUS_MINDNODE
+      </autogen>
+
+      <autogen>
+          __KeyToKey__
+          KeyCode::R, ModifierFlag::CONTROL_R,
+          KeyCode::VK_OPEN_URL_KM_SHOW_READING_MINDNODE
+      </autogen>
+
   </item>
 
   <item>

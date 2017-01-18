@@ -149,10 +149,6 @@ function showWindowHints()
 end
 hs.urlevent.bind("showActiveWindows", showWindowHints)
 
-function test() 
-   hs.alert.show("hello") 
-end
-hs.urlevent.bind("tester", test)
 
 --------------------------------------------------------------------------------
 -- _testing
@@ -161,6 +157,11 @@ hs.urlevent.bind("tester", test)
 local anycomplete = require "anycomplete/anycomplete"
 anycomplete.registerDefaultBindings(cmd_alt_ctrl, "W")
 
+
+function test() 
+   hs.alert.show(math.pi) 
+end
+hs.urlevent.bind("tester", test)
 
 --------------------------------------------------------------------------------
 -- _meta 
