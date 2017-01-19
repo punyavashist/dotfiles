@@ -166,7 +166,12 @@ hs.urlevent.bind("tester", test)
 --------------------------------------------------------------------------------
 -- _meta 
 --------------------------------------------------------------------------------
-hs.hotkey.bind("alt", "M", hs.toggleConsole)
+
+function openConsole()
+    hs.toggleConsole()
+end
+
+hs.urlevent.bind("openConsole", openConsole)
 
 hs.urlevent.bind("reloadConfig", hs.reload)
 

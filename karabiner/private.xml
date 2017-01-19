@@ -215,6 +215,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE_FILE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: new mindnode file"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_SHOW_LEARNING_MINDNODE</name>
   <url type="shell">
   osascript -e '
@@ -225,27 +236,6 @@
   </url>
 </vkopenurldef>
 
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_SHOW_FOCUS_MINDNODE</name>
-  <url type="shell">
-  osascript -e '
-    tell application "Keyboard Maestro Engine"
-    do script "a: open mindnode focus file"
-    end tell
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_SHOW_READING_MINDNODE</name>
-  <url type="shell">
-  osascript -e '
-    tell application "Keyboard Maestro Engine"
-    do script "a: open mindnode reading file"
-    end tell
-    '
-  </url>
-</vkopenurldef>
 
 <vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_CREATE_NEW_CONTACT</name>
@@ -587,6 +577,17 @@
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "open: transmission"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_HAZEL</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: hazel"
     end tell
     '
   </url>
@@ -1344,6 +1345,11 @@
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TODO_TASK</name>
     <url>hammerspoon://showTodoTask</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_OPEN_CONSOLE</name>
+    <url>hammerspoon://openConsole</url>
   </vkopenurldef>
 
   <vkopenurldef>
@@ -3456,12 +3462,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <replacementname>LAUNCHER_MODE_V2_EXTRA</replacementname>
     <replacementvalue>
       <![CDATA[
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::F,
-       KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
-        </autogen>
         
        <autogen>
        __KeyToKey__
@@ -3718,7 +3718,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::Q,
+       KeyCode::F,
        KeyCode::VK_OPEN_URL_ALFRED_RECENT_DOWNLOADS
         </autogen>
 
@@ -3999,7 +3999,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
 
 <item>
-    <name>general: sticky p - new prompts</name>
+    <name>general: sticky p - mindnode</name>
     <identifier>private.launcher_mode_open_apps_v12</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4040,42 +4040,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __BlockUntilKeyUp__ KeyCode::P,
     </autogen>
-
-   <autogen>
-      __KeyToKey__
-      KeyCode::SPACE,
-      KeyCode::F10, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L
-    </autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::A,
-      KeyCode::X, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::S,
-       KeyCode::F3, ModifierFlag::OPTION_L
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::R,
-       KeyCode::F8, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::I,
-       KeyCode::F1, ModifierFlag::OPTION_L
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::Z,
-       KeyCode::F2, ModifierFlag::OPTION_L
-		</autogen>
 
   </item>
 
@@ -4585,6 +4549,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
+    KeyCode::K,
+    KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
     KeyCode::A,
     KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller
   </autogen>
@@ -4620,6 +4590,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
     </autogen>
 
+    <autogen>
+        __KeyToKey__
+        KeyCode::D,
+        KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE_FILE
+    </autogen>
+    
     <autogen>
         __KeyToKey__
         KeyCode::G,
@@ -4957,7 +4933,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::N,
-      KeyCode::VK_OPEN_URL_KM_OPEN_GOGLAND
+      KeyCode::VK_OPEN_URL_KM_OPEN_PYCHARM
 		</autogen>
 
         <autogen>
@@ -5906,7 +5882,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::F2, ModifierFlag::OPTION_L
 		</autogen>
 
-
   </item>
 
 <item>
@@ -5999,7 +5974,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::G,
+      KeyCode::F,
       KeyCode::SLASH,
       KeyCode::SLASH,
       KeyCode::SPACE
@@ -6128,12 +6103,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::F,
-      KeyCode::F11, ModifierFlag::OPTION_L
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
       KeyCode::Z,
       KeyCode::SLASH, ModifierFlag::SHIFT_L
 		</autogen>
@@ -6254,6 +6223,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::DOT,
+        KeyCode::VK_OPEN_URL_KM_OPEN_HAZEL
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::M,
         KeyCode::F5
     </autogen>
@@ -6273,7 +6248,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::SEMICOLON,
-        KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+        KeyCode::VK_OPEN_URL_HAMMERSPOON_OPEN_CONSOLE
     </autogen>
 
 
@@ -8252,27 +8227,65 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
   <item>
-      <name>general: sticky right command - control - mindnode</name>
+      <name>general: sticky right command - control - something</name>
       <identifier>private.right_command_control_and_things</identifier>
 
       <autogen>
           __KeyToKey__
           KeyCode::A, ModifierFlag::CONTROL_R,
-          KeyCode::VK_OPEN_URL_KM_SHOW_LEARNING_MINDNODE
+          KeyCode::T, ModifierFlag::COMMAND_R
       </autogen>
 
-      <autogen>
-          __KeyToKey__
-          KeyCode::S, ModifierFlag::CONTROL_R,
-          KeyCode::VK_OPEN_URL_KM_SHOW_FOCUS_MINDNODE
-      </autogen>
 
-      <autogen>
-          __KeyToKey__
-          KeyCode::R, ModifierFlag::CONTROL_R,
-          KeyCode::VK_OPEN_URL_KM_SHOW_READING_MINDNODE
-      </autogen>
+  </item>
 
+  <item>
+      <name>general: simultaneous jl = alfred</name>
+      <identifier>private.sim_jl_typinator</identifier>
+
+ <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::J, KeyCode::L,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+    </autogen>
+  </item>
+
+  <item>
+      <name>scroller: simultaneous jk = google</name>
+      <identifier>private.sim_jk_google_scroller</identifier>
+
+ <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::J, KeyCode::K,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_SHELL_switchprofile_general,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE
+    </autogen>
+  </item>
+
+  <item>
+      <name>general: simultaneous jk = google</name>
+      <identifier>private.sim_jk_google</identifier>
+
+ <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::J, KeyCode::K,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE
+    </autogen>
+  </item>
+
+  <item>
+      <name>general: simultaneous kl = typinator</name>
+      <identifier>private.sim_kl_typinator</identifier>
+
+ <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::K, KeyCode::L,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::F11, ModifierFlag::OPTION_L
+    </autogen>
   </item>
 
   <item>
