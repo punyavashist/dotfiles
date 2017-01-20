@@ -6,6 +6,7 @@ set -o vi
 bindkey -M viins "^j" beginning-of-line
 bindkey -M viins "^k" end-of-line
 bindkey -M vicmd "^[" vi-insert
+bindkey -sM viins "^v" ./
 bindkey '^N' forward-word
 bindkey '^B' backward-word
 bindkey "^F" history-incremental-search-backward

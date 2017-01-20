@@ -14,6 +14,7 @@ alias ddes='cd ~/Documents/design'
 
 # _code
 alias dl='cd ~/play'
+alias dg='cd ~/go/src/github.com/nikitavoloboev'
 alias dp='cd ~/code/python'
 alias dgp='cd ~/code/go/projects'
 alias dgl='cd ~/code/go/play'

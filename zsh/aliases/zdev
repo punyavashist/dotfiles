@@ -51,6 +51,7 @@ alias nr='npm run'
 alias o='go run'
 alias og='go get'
 alias oo='go build'
+alias oa='go build -o main'
 
 # _meteor
 alias mt='meteor'

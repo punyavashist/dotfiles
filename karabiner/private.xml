@@ -226,18 +226,6 @@
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_SHOW_LEARNING_MINDNODE</name>
-  <url type="shell">
-  osascript -e '
-    tell application "Keyboard Maestro Engine"
-    do script "a: open mindnode learning file"
-    end tell
-    '
-  </url>
-</vkopenurldef>
-
-
-<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_CREATE_NEW_CONTACT</name>
   <url type="shell">
   osascript -e '
@@ -581,6 +569,7 @@
     '
   </url>
 </vkopenurldef>
+
 
 <vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_HAZEL</name>
@@ -1405,6 +1394,15 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.workflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PODS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "podSearch" in workflow "ben.pod" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -2363,6 +2361,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     __BlockUntilKeyUp__
     KeyCode::SEMICOLON,
   </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::COMMAND_R,
+              KeyCode::VK_CONFIG_TOGGLE_notsave_ubiq_vimnormal,
+          {{ UBIQUITOUS_VIM_BINDINGS_CANCEL_OPERATOR_PENDING }}
+    </autogen>
 
   <autogen>
     __KeyToKey__
@@ -3634,7 +3639,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
     __KeyToKey__
-    KeyCode::B,
+    KeyCode::R,
       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_POCKET
     </autogen>
 
@@ -3688,12 +3693,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::R,
-       KeyCode::VK_OPEN_URL_ALFRED_GITHUB_GISTS
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
        KeyCode::COMMAND_R,
        KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_MAPS_SEARCH
         </autogen>
@@ -3718,7 +3717,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::F,
+       KeyCode::Q,
        KeyCode::VK_OPEN_URL_ALFRED_RECENT_DOWNLOADS
         </autogen>
 
@@ -3727,6 +3726,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::H,
        KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
         </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::F,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
+    </autogen>
 
       ]]>
     </replacementvalue>
@@ -4143,6 +4148,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
          KeyCode::VK_OPEN_URL_KM_SEND_SPARKLES_EMOJI
      </autogen>
 
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::K,
+                 KeyCode::TAB, ModifierFlag::COMMAND_L,
+                 KeyCode::COMMAND_L,
+             </autogen>
+
     <autogen>
       __KeyToKey__
       KeyCode::A,
@@ -4305,12 +4317,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::Z,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
         KeyCode::W,
         KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
     </autogen>
@@ -4324,7 +4330,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::BACKQUOTE,
-        KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
     </autogen>
 
         <autogen>
@@ -4348,6 +4354,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::G,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PODS
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::F,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_INDEXED_GITHUB
     </autogen>
 
@@ -4428,12 +4440,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         __KeyToKey__
         KeyCode::F19,
         KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::F,
-       KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
     </autogen>
 
   </item>
@@ -4581,7 +4587,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::R,
-        KeyCode::VK_OPEN_URL_ALFRED_RESTART_WIFI
+      KeyCode::VK_OPEN_URL_ALFRED_ADD_AND_ARCHIVE_POCKET
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::1,
+       KeyCode::VK_OPEN_URL_ALFRED_RESTART_WIFI
     </autogen>
 
     <autogen>
@@ -6202,6 +6214,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::SPACE,
         KeyCode::F, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::O,
+       KeyCode::VK_OPEN_URL_KM_OPEN_KARABINER_PREFERENCES
+        </autogen>
 
        <autogen>
        __KeyToKey__
@@ -7998,7 +8016,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
       @end
 
       @begin
-      KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE
+      KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
       @end
     </autogen>
   </item>
@@ -8295,6 +8313,95 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __KeyToKey__
           KeyCode::SEMICOLON,
           KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: simultaneous hk = duckduckgo search</name>
+      <identifier>private.sim_hk_duck_search</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::H, KeyCode::K,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+      </autogen>
+  </item>
+  
+      <item>
+          <name>general: simultaneous lm = safari bookmarks</name>
+      <identifier>private.sim_lm_bookmarks</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::L, KeyCode::M,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: simultaneous hl = wiki</name>
+      <identifier>private.sim_hl_wiki</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::H, KeyCode::L,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: simultaneous oj = mindnode</name>
+      <identifier>private.sim_oj_mindnode</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::J, KeyCode::O,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: simultaneous km = dash</name>
+      <identifier>private.sim_km_dash</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::K, KeyCode::M,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: simultaneous ln = youtube</name>
+      <identifier>private.sim_ln_youtube</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::L, KeyCode::N,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: simultaneous hj = google images</name>
+      <identifier>private.sim_hj_google_images</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::H, KeyCode::J,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: simultaneous kn = normal mode</name>
+      <identifier>private.sim_kn_normal</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::K, KeyCode::N,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_CONFIG_TOGGLE_notsave_ubiq_vimnormal,
+          {{ UBIQUITOUS_VIM_BINDINGS_CANCEL_OPERATOR_PENDING }}
       </autogen>
   </item>
 
