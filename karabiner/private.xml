@@ -215,6 +215,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_MINDNODE_LIFE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: open mindnode - life"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE_FILE</name>
   <url type="shell">
   osascript -e '
@@ -2377,6 +2388,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
+    KeyCode::COMMAND_L,
+    KeyCode::CAPSLOCK
+    </autogen>
+
+  <autogen>
+    __KeyToKey__
     KeyCode::F19,
     KeyCode::CAPSLOCK
     </autogen>
@@ -3976,6 +3993,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::F9, ModifierFlag::OPTION_L
 		</autogen>
 
+ <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::J, KeyCode::K,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+    </autogen>
+
         <autogen>
       __KeyToKey__
       KeyCode::D,
@@ -4592,7 +4616,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::1,
+        KeyCode::Q,
        KeyCode::VK_OPEN_URL_ALFRED_RESTART_WIFI
     </autogen>
 
@@ -7255,6 +7279,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __BlockUntilKeyUp__ KeyCode::A,
     </autogen>
+
+ <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::J, KeyCode::K,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
+    </autogen>
     
        <autogen>
          __KeyToKey__
@@ -8032,6 +8063,12 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
         __KeyToKey__
         KeyCode::Q,
         KeyCode::Q, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::COMMAND_R,
+        KeyCode::VK_OPEN_URL_KM_OPEN_MINDNODE_LIFE
     </autogen>
 
     <autogen>
