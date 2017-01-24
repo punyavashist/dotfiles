@@ -215,6 +215,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_KM_ITERM_START_NEXT_LINE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "iterm: next line"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_MINDNODE_LIFE</name>
   <url type="shell">
   osascript -e '
@@ -3257,7 +3268,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                 <autogen>
                   __KeyToKey__
                   KeyCode::DOT,
-                  KeyCode::F9
+                  KeyCode::D,
+                  KeyCode::D
                 </autogen>
 
                <autogen>
@@ -3287,7 +3299,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                <autogen>
                  __KeyToKey__
                  KeyCode::O,
-                 KeyCode::ESCAPE,
+                 KeyCode::VK_OPEN_URL_KM_ITERM_START_NEXT_LINE
                </autogen>
 
                <autogen>
@@ -3977,12 +3989,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::L,
-      KeyCode::F6
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
       KeyCode::Z,
       KeyCode::1, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
 		</autogen>
@@ -4354,7 +4360,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::BACKQUOTE,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_IDOPE
     </autogen>
 
         <autogen>
@@ -4969,7 +4975,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::N,
-      KeyCode::VK_OPEN_URL_KM_OPEN_PYCHARM
+      KeyCode::VK_OPEN_URL_KM_OPEN_INTELLIJ
 		</autogen>
 
         <autogen>
@@ -5035,7 +5041,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __KeyToKey__
       KeyCode::DOT,
-      KeyCode::SLASH, ModifierFlag::OPTION_R
+      KeyCode::7, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
     </autogen>
 
     <autogen>
@@ -8047,7 +8053,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
       @end
 
       @begin
-      KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+      KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
       @end
     </autogen>
   </item>
@@ -8139,6 +8145,18 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 
     <autogen>
         __KeyToKey__
+        KeyCode::COMMAND_L,
+        KeyCode::9, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::SHIFT_R,
+        KeyCode::0, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::A,
         KeyCode::A, ModifierFlag::OPTION_L
     </autogen>
@@ -8163,6 +8181,30 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 
     <autogen>
         __KeyToKey__
+        KeyCode::OPTION_R,
+        KeyCode::7, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::9,
+        KeyCode::9, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::3,
+        KeyCode::3, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::2,
+        KeyCode::2, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::G,
         KeyCode::G, ModifierFlag::OPTION_L
     </autogen>
@@ -8177,6 +8219,24 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
         __KeyToKey__
         KeyCode::J,
         KeyCode::J, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::BACKSLASH,
+        KeyCode::BACKSLASH, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::MINUS,
+        KeyCode::MINUS, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::0,
+        KeyCode::0, ModifierFlag::OPTION_L
     </autogen>
 
     <autogen>
@@ -8420,13 +8480,57 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: simultaneous hj = google images</name>
-      <identifier>private.sim_hj_google_images</identifier>
+          <name>general: simultaneous jn = yandex</name>
+      <identifier>private.sim_jn_yandex</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::J, KeyCode::N,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_YANDEX_SEARCH
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: simultaneous ij = equals</name>
+      <identifier>private.sim_ij_equals</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::J, KeyCode::I,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::EQUAL
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: simultaneous nm = goodreads</name>
+      <identifier>private.sim_nm_goodreads</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::M, KeyCode::N,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOODREADS
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: simultaneous oi = iterm sessions</name>
+      <identifier>private.sim_oi_iterm_profiles</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::O, KeyCode::I,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_ITERM_SESSIONS
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: simultaneous hj = amazon</name>
+      <identifier>private.sim_hj_amazon</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::J,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
+          KeyCode::VK_OPEN_URL_ALFRED_AMAZON_SEARCH
       </autogen>
   </item>
 
