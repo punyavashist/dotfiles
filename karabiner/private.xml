@@ -49,6 +49,11 @@
 </vkopenurldef>
 
 <appdef>
+<appname>MINDNODE</appname>
+<equal>com.ideasoncanvas.MindNodeMac</equal>
+</appdef>
+
+<appdef>
 <appname>XCODE</appname>
 <equal>com.apple.dt.Xcode</equal>
 </appdef>
@@ -1421,6 +1426,24 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_NEW_IOS_PLAYGROUND</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "newiOSPlayground" in workflow "com.chrisbuchholz.new-xcode-playground" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB_REPOS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "githubRepoSearch" in workflow "com.pawelgrzybek.github" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PODS</name>
   <url type="shell">
   osascript -e '
@@ -2761,6 +2784,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         __KeyToKey__
         KeyCode::C,
         KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::DOT,
+        KeyCode::TAB, ModifierFlag::COMMAND_L,
+        KeyCode::COMMAND_L,
     </autogen>
 
     <autogen>
@@ -4292,6 +4322,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::W,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB_REPOS
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::3,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KM_FORUM
     </autogen>
@@ -4336,19 +4372,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         __KeyToKey__
         KeyCode::C,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MEDIUM
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::X,
-        KeyCode::VK_OPEN_URL_ALFRED_AMAZON_SEARCH
-    </autogen>
-
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::W,
-        KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
     </autogen>
 
     <autogen>
@@ -4415,12 +4438,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         __KeyToKey__
         KeyCode::R,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_REDDIT
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::E,
-        KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
     <autogen>
@@ -4601,17 +4618,10 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     KeyCode::VK_OPEN_URL_ALFRED_UNINSTALL_WITH_CLEANMYMAC
   </autogen>
 
-  <autogen>
-    __KeyToKey__
-    KeyCode::V,
-    KeyCode::F8, ModifierFlag::COMMAND_L,
-    KeyCode::VK_OPEN_URL_SHELL_switchprofile_wm
-  </autogen>
-
     <autogen>
         __KeyToKey__
         KeyCode::N,
-        KeyCode::VK_OPEN_URL_KM_OPEN_PRIMARY_NEWS_PRESET
+        KeyCode::VK_OPEN_URL_ALFRED_NEW_IOS_PLAYGROUND
     </autogen>
 
     <autogen>
@@ -8067,6 +8077,24 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 
     <autogen>
         __KeyToKey__
+        KeyCode::EQUAL,
+        KeyCode::EQUAL, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::OPTION_R,
+        KeyCode::3, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::OPTION_L,
+        KeyCode::4, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::Q,
         KeyCode::Q, ModifierFlag::OPTION_L
     </autogen>
@@ -8380,6 +8408,18 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
   <item>
+      <name>general: simultaneous m, = some</name>
+      <identifier>private.sim_mcomma_some</identifier>
+
+ <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::COMMA, KeyCode::M,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE
+    </autogen>
+  </item>
+
+  <item>
       <name>general: simultaneous jk = google</name>
       <identifier>private.sim_jk_google</identifier>
 
@@ -8458,24 +8498,24 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: simultaneous km = dash</name>
-      <identifier>private.sim_km_dash</identifier>
+          <name>general: simultaneous km = youtube</name>
+      <identifier>private.sim_km_youtube</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::K, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
+          KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
       </autogen>
   </item>
 
       <item>
-          <name>general: simultaneous ln = youtube</name>
-      <identifier>private.sim_ln_youtube</identifier>
+          <name>general: simultaneous ln = dash</name>
+      <identifier>private.sim_ln_dash</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::N,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
       </autogen>
   </item>
 
@@ -8524,6 +8564,17 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
+          <name>general: simultaneous li = github search</name>
+      <identifier>private.sim_li_github_search</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::L, KeyCode::I,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB_REPOS
+      </autogen>
+  </item>
+
+      <item>
           <name>general: simultaneous hj = amazon</name>
       <identifier>private.sim_hj_amazon</identifier>
         <autogen>
@@ -8543,6 +8594,16 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
           KeyCode::VK_CONFIG_TOGGLE_notsave_ubiq_vimnormal,
           {{ UBIQUITOUS_VIM_BINDINGS_CANCEL_OPERATOR_PENDING }}
+      </autogen>
+  </item>
+  <item>
+      <only>MINDNODE</only>
+      <name>mindnode: left command to option</name>
+      <identifier>private.mindnode_left_cmd_to_opt</identifier>
+      <autogen>
+          __KeyToKey__
+          KeyCode::COMMAND_L,
+          KeyCode::OPTION_L
       </autogen>
   </item>
 

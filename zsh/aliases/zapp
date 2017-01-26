@@ -2,6 +2,7 @@
 alias cr='open -a CodeRunner'
 alias jj='open -a IntelliJ\ IDEA'
 alias xx='open -a Xcode'
+alias x.='open -a Xcode .'
 #alias ae='open -a MacDown'
 alias ae='open -a MacDown readme.md'
 alias wt='open -a Atom'
