@@ -220,6 +220,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_SELECTED_TEXT_TO_MINDNODE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: selected text to mindnode"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_KM_ITERM_START_NEXT_LINE</name>
   <url type="shell">
   osascript -e '
@@ -1421,6 +1432,15 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.workflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE_CONTENT</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchMindNodeContent" in workflow "nikivi." with argument ""
     '
   </url>
 </vkopenurldef>
@@ -6705,8 +6725,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::SPACE,
+        KeyCode::COMMAND_L,
         KeyCode::SPACE, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::SPACE,
+        KeyCode::VK_OPEN_URL_KM_SELECTED_TEXT_TO_MINDNODE
     </autogen>
 
     <autogen>
@@ -8487,6 +8513,17 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
+          <name>general: simultaneous ok = mindnode content search</name>
+      <identifier>private.sim_ok_mindnode_content_search</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::K, KeyCode::O,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE_CONTENT
+      </autogen>
+  </item>
+
+      <item>
           <name>general: simultaneous oj = mindnode</name>
       <identifier>private.sim_oj_mindnode</identifier>
         <autogen>
@@ -8531,8 +8568,8 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: simultaneous ij = equals</name>
-      <identifier>private.sim_ij_equals</identifier>
+          <name>general: simultaneous ij = equal</name>
+      <identifier>private.sim_ij_equal_sign</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::J, KeyCode::I,
