@@ -1437,6 +1437,24 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_POCKET_TAGS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "openPocketTags" in workflow "com.fniephaus.pocket" with argument "in:mytags "
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ARXIV</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "arxiv" in workflow "nikivi.search-the-web" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE_CONTENT</name>
   <url type="shell">
   osascript -e '
@@ -2094,15 +2112,6 @@ tell application "Alfred 3" to run trigger "npmSearch" in workflow "com.sindreso
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "addLinkToPocket" in workflow "com.fniephaus.pocket" with argument ""
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_ADD_AND_ARCHIVE_POCKET</name>
-  <url type="shell">
-  osascript -e '
-tell application "Alfred 3" to run trigger "addAndArchivePocketLink" in workflow "com.fniephaus.pocket" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -3555,6 +3564,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
+       KeyCode::E,
+       KeyCode::R, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
        KeyCode::X,
        KeyCode::VK_OPEN_URL_ALFRED_OPEN_MAN_PAGE_IN_PDF
         </autogen>
@@ -3725,7 +3740,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::T,
-       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TIMEZONES
+       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_POCKET_TAGS
         </autogen>
 
        <autogen>
@@ -3745,12 +3760,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::3,
        KeyCode::3, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
         </autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::E,
-       KeyCode::E, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
-       </autogen>
 
        <autogen>
        __KeyToKey__
@@ -3809,7 +3818,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::F,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_POCKET_TAGS
     </autogen>
 
       ]]>
@@ -3921,12 +3930,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::COMMAND_R,
       KeyCode::SPACE, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::N,
-      KeyCode::VK_OPEN_URL_ALFRED_ADD_AND_ARCHIVE_POCKET
 		</autogen>
 
         <autogen>
@@ -4318,6 +4321,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::E,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ARXIV
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::Q,
         KeyCode::VK_OPEN_URL_ALFRED_QUORA_SEARCH
     </autogen>
@@ -4646,8 +4655,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::R,
-      KeyCode::VK_OPEN_URL_ALFRED_ADD_AND_ARCHIVE_POCKET
+        KeyCode::E,
+       KeyCode::VK_OPEN_URL_ALFRED_RESTART_WIFI
     </autogen>
 
     <autogen>
@@ -4670,15 +4679,10 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     
     <autogen>
         __KeyToKey__
-        KeyCode::G,
+        KeyCode::F,
         KeyCode::VK_OPEN_URL_KM_CREATE_NEW_CONTACT
     </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::F,
-        KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME
-    </autogenVK>
 
   </item>
 
@@ -4723,6 +4727,18 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __BlockUntilKeyUp__ KeyCode::V,
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::COMMA,
+      KeyCode::V, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::SLASH,
+      KeyCode::V, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
     <autogen>
@@ -5583,6 +5599,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::J,
         KeyCode::VK_OPEN_URL_KM_TEST
     </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::DOT,
+        KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME
+    </autogenVK>
 
     <autogen>
         __KeyToKey__
@@ -8612,6 +8634,39 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
+          <name>general: simultaneous :k = duck duck go</name>
+      <identifier>private.sim_:k_duck</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::SEMICOLON, KeyCode::K,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: simultaneous :m = safari tabs</name>
+      <identifier>private.sim_:m_safari_tabs</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::SEMICOLON, KeyCode::M,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: simultaneous :j = wiki</name>
+      <identifier>private.sim_:j_wiki</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::SEMICOLON, KeyCode::J,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
+      </autogen>
+  </item>
+
+      <item>
           <name>general: simultaneous hj = amazon</name>
       <identifier>private.sim_hj_amazon</identifier>
         <autogen>
@@ -8633,14 +8688,15 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           {{ UBIQUITOUS_VIM_BINDINGS_CANCEL_OPERATOR_PENDING }}
       </autogen>
   </item>
+
   <item>
       <only>MINDNODE</only>
       <name>mindnode: left command to option</name>
       <identifier>private.mindnode_left_cmd_to_opt</identifier>
       <autogen>
           __KeyToKey__
-          KeyCode::COMMAND_L,
-          KeyCode::OPTION_L
+          PointingButton::LEFT, ModifierFlag::COMMAND_L,
+          PointingButton::LEFT, ModifierFlag::OPTION_L
       </autogen>
   </item>
 
