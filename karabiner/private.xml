@@ -3973,6 +3973,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::COMMA,
+      KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::T,
       KeyCode::F2, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
 		</autogen>
@@ -4360,12 +4366,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::W,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB_REPOS
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
         KeyCode::3,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KM_FORUM
     </autogen>
@@ -4408,7 +4408,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::C,
+        KeyCode::W,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MEDIUM
     </autogen>
 
@@ -8986,13 +8986,13 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: simultaneous :k = dictionary</name>
-      <identifier>private.sim_:k_dic</identifier>
+          <name>general: simultaneous :k = amazon</name>
+      <identifier>private.sim_:k_amazon</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::SEMICOLON, KeyCode::K,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_DICTIONARY_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_AMAZON_SEARCH
       </autogen>
   </item>
 
@@ -9019,7 +9019,18 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: simultaneous hj = amazon</name>
+          <name>general: sim :n = dictionary</name>
+      <identifier>private.sim_:n_dic</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::SEMICOLON, KeyCode::N,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_DICTIONARY_SEARCH
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: sim hj = amazon</name>
       <identifier>private.sim_hj_amazon</identifier>
         <autogen>
           __SimultaneousKeyPresses__

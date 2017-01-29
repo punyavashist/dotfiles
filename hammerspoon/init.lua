@@ -120,6 +120,7 @@ function showTime()
 end
 hs.urlevent.bind("showTime", showTime) 
 
+
 --------------------------------------------------------------------------------
 -- _wm = window management
 --------------------------------------------------------------------------------
@@ -157,11 +158,11 @@ hs.urlevent.bind("showActiveWindows", showWindowHints)
 local anycomplete = require "anycomplete/anycomplete"
 anycomplete.registerDefaultBindings(cmd_alt_ctrl, "W")
 
-
-function test() 
-   hs.alert.show(math.pi) 
+-- TODO: finish it
+function focus()
+    hs.drawing.text("focus")
 end
-hs.urlevent.bind("tester", test)
+hs.urlevent.bind("tester", focus)
 
 --------------------------------------------------------------------------------
 -- _meta 
