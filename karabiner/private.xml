@@ -4831,7 +4831,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::COMMAND_L,
+       KeyCode::BACKQUOTE,
        KeyCode::VK_OPEN_URL_ALFRED_DISPLAY_BRIGHTNESS
         </autogen>
 
@@ -4855,8 +4855,20 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::Z,
+        KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::COMMAND_L,
+        KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::K,
-        ConsumerKeyCode::MUSIC_PLAY
+        KeyCode::5, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
     </autogen>
 
        <autogen>
@@ -4915,7 +4927,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
      <autogen>
         __KeyToKey__
-        KeyCode::Z,
+        KeyCode::E,
         ConsumerKeyCode::KEYBOARDLIGHT_LOW,
     </autogen>
 
@@ -9647,7 +9659,6 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           PointingButton::LEFT, ModifierFlag::COMMAND_L,
           PointingButton::LEFT, ModifierFlag::OPTION_L
       </autogen>
-
   </item>
 
 </root>
