@@ -14,9 +14,9 @@ For reference I specify symbols as their unicode equivalents, so :
 - ~ = tilda
 - ↩ = return
 
-Here is a mind map of th key layout that I use and each key's purpose.
+[Here](https://my.mindnode.com/VvyDG2X6u54FMSC5EExRGzozqyHqUG5gVM45QP9p) is the mind map of the key layout that I use and each key's purpose.
 
-![](http://i.imgur.com/2Rx8332.png)
+![](http://i.imgur.com/KdFkm5F.png)
 
 The following is a list of all these awesome **sticky keys** that I personally use and love :
 
