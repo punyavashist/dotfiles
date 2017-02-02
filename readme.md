@@ -2,17 +2,21 @@
 
 ##karabiner
 
-Probably the most excited thing in here is my [Karabiner](https://pqrs.org/osx/karabiner/) config file as I actually took some time to set it up and it has boosted my productivity a lot. 
+The most exciting thing in here is probably how I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now. Here is the layout that I currently use for my keyboard.
 
-All of what and how I use karabiner to work for me can be found [here](https://github.com/nikitavoloboev/dotfiles/tree/master/karabiner).
+![](http://i.imgur.com/hDqUOBj.png)
+
+More details of how I use it can be found [here](https://github.com/nikitavoloboev/dotfiles/tree/master/karabiner).
 
 ##neovim
 
-[Neovim](https://github.com/neovim/neovim) is a fork of vim that adds onto vim and that is what I use as my editor of choice for pretty much anything I code. Other editors I use are [IntelliJ](https://www.jetbrains.com/idea/) for java and xCode for Swift and iOS development.
+[Neovim](https://github.com/neovim/neovim) is a fork of vim that adds onto vim and that is what I use as my editor of choice for pretty much anything I code. I am still [learning](https://my.mindnode.com/dsyhczzfLsBAG4EpFt5TZnBYWAD9mfc9ms7nPMCz) but the this journey has been very rewarding.
+
 
 ##hammerspoon
 
-I don't use [hammerspoon](http://www.hammerspoon.org/) as extensively and right now only use it show my current task I am working on briefly in my screen but it does have quite a lot of really nice things especially when it comes to window management.
+I don't use [hammerspoon](http://www.hammerspoon.org/) as extensively however I am looking into implementing more of its features into my workflow.
+
 
 ##zsh
 
