@@ -14,9 +14,11 @@ For reference I specify symbols as their unicode equivalents, so :
 - ~ = tilda
 - ↩ = return
 
+Here is a mind map of th key layout that I use and each key's purpose.
+
+![](http://i.imgur.com/2Rx8332.png)
 
 The following is a list of all these awesome **sticky keys** that I personally use and love :
-
 
 ##sticky caps lock (⇪)
 - q - [alfred search through safari bookmarks](https://gogs.deanishe.net/deanishe/alfred-safari-assistant)

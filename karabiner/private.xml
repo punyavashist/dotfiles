@@ -4807,12 +4807,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __KeyToKey__
-      KeyCode::COMMA,
-      KeyCode::V, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
       KeyCode::SLASH,
       KeyCode::V, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
@@ -4855,7 +4849,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::Z,
+        KeyCode::DOT,
         KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
     </autogen>
 
@@ -4879,7 +4873,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::DOT,
+       KeyCode::COMMA,
        KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_PLAYLISTS
         </autogen>
 
@@ -6316,9 +6310,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::F,
-      KeyCode::SLASH,
-      KeyCode::SLASH,
-      KeyCode::SPACE
+      KeyCode::MINUS
 		</autogen>
         
   <autogen>
