@@ -8259,12 +8259,19 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
           KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
     </autogen>
+
     
        <autogen>
          __KeyToKey__
          KeyCode::SPACE,
          KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
        </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::4,
+      KeyCode::4, ModifierFlag::CONTROL_L
+    </autogen>
 
     <autogen>
       __KeyToKey__
