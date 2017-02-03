@@ -19,6 +19,9 @@ I don't use [hammerspoon](http://www.hammerspoon.org/) as extensively however I 
 
 
 ##[zsh](https://github.com/nikitavoloboev/dotfiles/tree/master/zsh#aliases-and-zsh-functions)
+###aliases
+![](http://i.imgur.com/ihqQC5D.png)
+
 
 I also am using [zsh](http://www.zsh.org) as my shell with [prezto](https://github.com/sorin-ionescu/prezto) configuration. Here is how my prompt looks currently : 
 

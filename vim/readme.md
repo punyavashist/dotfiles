@@ -1,7 +1,6 @@
 #[modal editing is ✨](https://my.mindnode.com/dsyhczzfLsBAG4EpFt5TZnBYWAD9mfc9ms7nPMCz)
 
-![](http://i.imgur.com/QPlDeRi.jpg)
-
+![](http://i.imgur.com/73ko1QL.jpg)
 
 ##mindmap index
 

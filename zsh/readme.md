@@ -1,6 +1,6 @@
 #[aliases](https://my.mindnode.com/bN8QkZKsxsiqSvpWzccjX2A4qZfy14bTkKgYix6i) and zsh functions
 
-![](http://i.imgur.com/btV7wWy.png)
+![](http://i.imgur.com/ldMyAIL.png)
 
 #mindmap index
 # q
