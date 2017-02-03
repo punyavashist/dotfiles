@@ -1,6 +1,6 @@
 #my configuration files for macOS
 
-##[karabiner](https://github.com/nikitavoloboev/dotfiles/tree/master/karabiner#karabiner-set-up)
+##[karabiner](https://github.com/nikitavoloboev/dotfiles/tree/master/karabiner)
 
 The most exciting thing in here is probably [how](https://my.mindnode.com/VvyDG2X6u54FMSC5EExRGzozqyHqUG5gVM45QP9p) I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now. Here is the layout that I currently use for my keyboard.
 
@@ -18,7 +18,7 @@ More details of how I use it can be found [here](https://github.com/nikitavolobo
 I don't use [hammerspoon](http://www.hammerspoon.org/) as extensively however I am looking into implementing more of its features into my workflow.
 
 
-##[zsh](https://github.com/nikitavoloboev/dotfiles/tree/master/zsh#aliases-and-zsh-functions)
+##[zsh](https://github.com/nikitavoloboev/dotfiles/tree/master/zsh)
 ###aliases
 ![](http://i.imgur.com/ihqQC5D.png)
 
