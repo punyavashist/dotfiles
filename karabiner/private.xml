@@ -6,6 +6,7 @@
 <modifierdef>MY_OPTION_L</modifierdef>
 <modifierdef>MY_CONTROL_L</modifierdef>
 
+
 <!-- _profile def  -->
 <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_general</name>
@@ -2196,7 +2197,7 @@ tell application "Alfred 3" to run trigger "addLinkToPocket" in workflow "com.fn
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_POCKET</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "openPocket" in workflow "com.fniephaus.pocket" with argument ""
+tell application "Alfred 3" to run trigger "openPocket" in workflow "com.fniephaus.pocket" with argument "in:mylist "
     '
   </url>
 </vkopenurldef>
@@ -3779,7 +3780,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::I,
-       KeyCode::VK_OPEN_URL_ALFRED_ITERM_SESSIONS
+       KeyCode::VK_OPEN_URL_ALFRED_EXPLAIN_SHELL
         </autogen>
 
        <autogen>
@@ -4313,12 +4314,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
          KeyCode::VK_OPEN_URL_KM_SEND_SPARKLES_EMOJI
      </autogen>
 
-               <autogen>
-                 __KeyToKey__
-                 KeyCode::K,
-                 KeyCode::TAB, ModifierFlag::COMMAND_L,
-                 KeyCode::COMMAND_L,
-             </autogen>
+       <autogen>
+         __KeyToKey__
+         KeyCode::K,
+         KeyCode::TAB, ModifierFlag::COMMAND_L,
+         KeyCode::COMMAND_L,
+     </autogen>
 
     <autogen>
       __KeyToKey__
@@ -6959,6 +6960,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::E,
       @end
     </autogen>
+
+
   </item>
 
 <item>
@@ -9636,6 +9639,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           KeyCode::VK_OPEN_URL_ALFRED_AMAZON_SEARCH
       </autogen>
   </item>
+
 
       <item>
           <name>general: simultaneous kn = normal mode</name>

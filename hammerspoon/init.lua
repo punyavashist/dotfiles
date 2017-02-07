@@ -160,7 +160,7 @@ anycomplete.registerDefaultBindings(cmd_alt_ctrl, "W")
 
 -- TODO: finish it
 function focus()
-    hs.drawing.text("focus")
+
 end
 hs.urlevent.bind("tester", focus)
 
