@@ -1487,6 +1487,24 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_METACADEMY</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "metacademySearch" in workflow "nikivi.search-the-web" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_TRENDS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "googleTrends" in workflow "nikivi.search-the-web" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_ACTIVE_WINDOWS</name>
   <url type="shell">
   osascript -e '
@@ -2512,13 +2530,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     __BlockUntilKeyUp__
     KeyCode::SEMICOLON,
   </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::COMMAND_R,
-              KeyCode::VK_CONFIG_TOGGLE_notsave_ubiq_vimnormal,
-          {{ UBIQUITOUS_VIM_BINDINGS_CANCEL_OPERATOR_PENDING }}
-    </autogen>
 
   <autogen>
     __KeyToKey__
@@ -3871,7 +3882,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::J,
-       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE
+          KeyCode::VK_OPEN_URL_ALFRED_ACTIVE_WINDOWS
         </autogen>
 
        <autogen>
@@ -4404,6 +4415,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::Z,
+        KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_TRENDS
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::E,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ARXIV
     </autogen>
@@ -4567,7 +4584,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::S,
-        KeyCode::VK_OPEN_URL_ALFRED_DICTIONARY_SEARCH
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_METACADEMY
     </autogen>
 
    <autogen>
