@@ -504,6 +504,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_SEND_SEARCH_EMOJI</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "e: insert 🔎"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_SEND_NEUTRAL_FACE_EMOJI</name>
   <url type="shell">
   osascript -e '
@@ -1840,10 +1851,28 @@ tell application "Alfred 3" to run trigger "spotifyPlaylists" in workflow "com.v
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_TOGGL_REPORTS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "reports" in workflow "com.jason0x43.alfred-toggl" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_TOGGL_PROJECTS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "projects" in workflow "com.jason0x43.alfred-toggl" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_TOGGL</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "startToggl" in workflow "com.jason0x43.alfred-toggl" with argument ""
+tell application "Alfred 3" to run trigger "start" in workflow "com.jason0x43.alfred-toggl" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4022,6 +4051,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::L,
+      KeyCode::VK_OPEN_URL_ALFRED_TOGGL_PROJECTS
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::H,
       KeyCode::F5, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
 		</autogen>
@@ -4174,7 +4209,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __KeyToKey__
       KeyCode::N,
-      KeyCode::B, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+      KeyCode::VK_OPEN_URL_ALFRED_TOGGL_REPORTS
     </autogen>
 
   </item>
@@ -4318,6 +4353,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __BlockUntilKeyUp__ KeyCode::DOT,
     </autogen>
+
+       <autogen>
+         __KeyToKey__
+         KeyCode::G,
+         KeyCode::VK_OPEN_URL_KM_SEND_SEARCH_EMOJI
+     </autogen>
 
        <autogen>
          __KeyToKey__
