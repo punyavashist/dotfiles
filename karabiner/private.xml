@@ -4083,7 +4083,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::S,
+      KeyCode::F19,
       KeyCode::M, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 		</autogen>
 
@@ -4137,12 +4137,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::F19,
-      KeyCode::2, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
       KeyCode::I,
       KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 		</autogen>
@@ -4155,7 +4149,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::A,
+      KeyCode::BACKQUOTE,
       KeyCode::D, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 		</autogen>
 
@@ -4590,13 +4584,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::D,
+        KeyCode::S,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GODOC
     </autogen>
 
     <autogen>
         __KeyToKey__
-        KeyCode::G,
+        KeyCode::D,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PODS
     </autogen>
 
@@ -4650,7 +4644,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::S,
+        KeyCode::G,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_METACADEMY
     </autogen>
 
@@ -6368,6 +6362,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
+    KeyCode::L,
+    KeyCode::MINUS,
+    KeyCode::DOT, ModifierFlag::SHIFT_L,
+    KeyCode::SPACE
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
     KeyCode::Q,
     KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L
   </autogen>
@@ -6380,7 +6382,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
-    KeyCode::L,
+    KeyCode::J,
+    KeyCode::EQUAL
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::H,
     KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
     KeyCode::EQUAL,
     KeyCode::SPACE
