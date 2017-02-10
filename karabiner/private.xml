@@ -504,6 +504,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_SEND_YELLOW_STAR_EMOJI</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "e: insert ⭐"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_SEND_SEARCH_EMOJI</name>
   <url type="shell">
   osascript -e '
@@ -1493,6 +1504,15 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.workflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GODOC</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "goDocSearch" in workflow "nikivi.search-the-web" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4356,6 +4376,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
          __KeyToKey__
+         KeyCode::V,
+         KeyCode::VK_OPEN_URL_KM_SEND_YELLOW_STAR_EMOJI
+     </autogen>
+
+       <autogen>
+         __KeyToKey__
          KeyCode::G,
          KeyCode::VK_OPEN_URL_KM_SEND_SEARCH_EMOJI
      </autogen>
@@ -4565,7 +4591,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::D,
-        KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_ACTIVE_WINDOWS
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GODOC
     </autogen>
 
     <autogen>
@@ -8327,6 +8353,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
          KeyCode::SPACE,
          KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
        </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::5,
+      KeyCode::5, ModifierFlag::CONTROL_L
+    </autogen>
 
     <autogen>
       __KeyToKey__
