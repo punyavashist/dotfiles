@@ -1509,6 +1509,24 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_POCKET_ARCHIVED</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "openArchive" in workflow "com.fniephaus.pocket" with argument "in:archive "
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SUBREDDIT_SEARCHES</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "subredditSearches" in workflow "nikivi.search-the-web" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GODOC</name>
   <url type="shell">
   osascript -e '
@@ -2155,15 +2173,6 @@ tell application "Alfred 3" to run trigger "searchQuora" in workflow "nikivi.sea
   <url type="shell">
   osascript -e '
   tell application "Alfred 3" to run trigger "searchKMForum" in workflow "nikivi.search-the-web" with argument ""
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KICKASS_TORRENTS</name>
-  <url type="shell">
-  osascript -e '
-tell application "Alfred 3" to run trigger "searchKickassTorrents" in workflow "nikivi.search-the-web" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -3701,20 +3710,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::E,
-       KeyCode::R, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::X,
-       KeyCode::VK_OPEN_URL_ALFRED_OPEN_MAN_PAGE_IN_PDF
+       KeyCode::R,
+       KeyCode::VK_OPEN_URL_ALFRED_POCKET_MYTOREADLIST
         </autogen>
 
        <autogen>
        __KeyToKey__
        KeyCode::Z,
-       KeyCode::VK_OPEN_URL_ALFRED_EXPLAIN_SHELL
+       KeyCode::VK_OPEN_URL_ALFRED_OPEN_MAN_PAGE_IN_PDF
         </autogen>
         
        <autogen>
@@ -3821,7 +3824,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::C,
+       KeyCode::F,
        KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
         </autogen>
 
@@ -3867,17 +3870,16 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
        </autogen>
 
-
     <autogen>
     __KeyToKey__
-    KeyCode::R,
-      KeyCode::VK_OPEN_URL_ALFRED_SEARCH_POCKET
+    KeyCode::E,
+    KeyCode::VK_OPEN_URL_ALFRED_CHROME_CANARY_SEARCH
     </autogen>
 
        <autogen>
        __KeyToKey__
        KeyCode::T,
-       KeyCode::VK_OPEN_URL_ALFRED_POCKET_MYTOREADLIST
+       KeyCode::VK_OPEN_URL_ALFRED_POCKET_ARCHIVED
         </autogen>
 
        <autogen>
@@ -3924,12 +3926,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::V,
-       KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
        KeyCode::J,
           KeyCode::VK_OPEN_URL_ALFRED_ACTIVE_WINDOWS
         </autogen>
@@ -3951,12 +3947,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::H,
        KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
         </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::F,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_POCKET_TAGS
-    </autogen>
 
       ]]>
     </replacementvalue>
@@ -4131,12 +4121,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::R,
-      KeyCode::VK_OPEN_URL_ALFRED_ADD_LINK_TO_POCKET
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
       KeyCode::I,
       KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 		</autogen>
@@ -4145,6 +4129,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::M,
       KeyCode::E, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::A,
+      KeyCode::D, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 		</autogen>
 
         <autogen>
@@ -4175,6 +4165,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::J,
       KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::R,
+      KeyCode::VK_OPEN_URL_ALFRED_ADD_LINK_TO_POCKET
 		</autogen>
 
         <autogen>
@@ -4476,13 +4472,19 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::C,
+        KeyCode::VK_OPEN_URL_ALFRED_SUBREDDIT_SEARCHES
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::Z,
         KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_TRENDS
     </autogen>
 
     <autogen>
         __KeyToKey__
-        KeyCode::E,
+        KeyCode::4,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ARXIV
     </autogen>
 
@@ -4512,19 +4514,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::3,
+        KeyCode::V,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KM_FORUM
     </autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::5,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KICKASS_TORRENTS
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::4,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_FORUM
     </autogen>
 
@@ -4560,7 +4556,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::V,
+        KeyCode::D,
         KeyCode::VK_OPEN_URL_ALFRED_STACK_OVERFLOW_SEARCH
     </autogen>
 
@@ -4584,13 +4580,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::S,
+        KeyCode::E,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GODOC
     </autogen>
 
     <autogen>
         __KeyToKey__
-        KeyCode::D,
+        KeyCode::S,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PODS
     </autogen>
 
@@ -4626,7 +4622,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::M,
+        KeyCode::G,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOODREADS
     </autogen>
 
@@ -4644,7 +4640,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::G,
+        KeyCode::3,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_METACADEMY
     </autogen>
 
@@ -6297,7 +6293,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 		</autogen>
 
   </item>
-
+  
 <item>
     <name>general: sticky i - inserting symbols</name>
     <identifier>private.launcher_mode_open_apps_v15</identifier>
@@ -6362,7 +6358,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
-    KeyCode::L,
+    KeyCode::H,
     KeyCode::MINUS,
     KeyCode::DOT, ModifierFlag::SHIFT_L,
     KeyCode::SPACE
@@ -6388,7 +6384,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
-    KeyCode::H,
+    KeyCode::L,
     KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
     KeyCode::EQUAL,
     KeyCode::SPACE
@@ -9558,7 +9554,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::L,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_DICTIONARY_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
       </autogen>
   </item>
 
@@ -9596,7 +9592,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: simultaneous ln = dash</name>
+          <name>general: sim ln = dash</name>
       <identifier>private.sim_ln_dash</identifier>
         <autogen>
           __SimultaneousKeyPresses__
@@ -9607,7 +9603,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: simultaneous jn = yandex</name>
+          <name>general: sim jn = yandex</name>
       <identifier>private.sim_jn_yandex</identifier>
         <autogen>
           __SimultaneousKeyPresses__
@@ -9618,7 +9614,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: simultaneous ij = equal</name>
+          <name>general: sim ij = equal</name>
       <identifier>private.sim_ij_equal_sign</identifier>
         <autogen>
           __SimultaneousKeyPresses__
@@ -9717,13 +9713,13 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim om = amazon</name>
-      <identifier>private.sim_om_amazon</identifier>
+          <name>general: sim om = wm</name>
+      <identifier>private.sim_om_wm</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::M, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_AMAZON_SEARCH
+      KeyCode::VK_OPEN_URL_ALFRED_LAYOUT_MANAGER
       </autogen>
   </item>
 
@@ -9738,9 +9734,19 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
       </autogen>
   </item>
 
+      <item>
+          <name>general: sim oh = keyclue</name>
+      <identifier>private.sim_oh_keyclue</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::H, KeyCode::O,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
+      </autogen>
+  </item>
 
       <item>
-          <name>general: simultaneous kn = normal mode</name>
+          <name>general: sim kn = normal mode</name>
       <identifier>private.sim_kn_normal</identifier>
         <autogen>
           __SimultaneousKeyPresses__
