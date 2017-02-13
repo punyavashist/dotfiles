@@ -1509,6 +1509,33 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PLAYGROUNDS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchPlaygrounds" in workflow "nikivi.search.files" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW</name>
+  <url type="shell">
+  osascript -e '
+  tell application "Alfred 3" to run trigger "eggTimerView" in workflow "carlosnz.eggtimer2" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_TIMER_START</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "eggTimerStart" in workflow "carlosnz.eggtimer2" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_POCKET_ARCHIVED</name>
   <url type="shell">
   osascript -e '
@@ -3710,6 +3737,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
+       KeyCode::F,
+       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PLAYGROUNDS
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
        KeyCode::R,
        KeyCode::VK_OPEN_URL_ALFRED_POCKET_MYTOREADLIST
         </autogen>
@@ -3824,7 +3857,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::F,
+       KeyCode::C,
        KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
         </autogen>
 
@@ -4140,7 +4173,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::BACKQUOTE,
-      KeyCode::D, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+      KeyCode::VK_OPEN_URL_ALFRED_TIMER_START
 		</autogen>
 
         <autogen>
@@ -9742,6 +9775,61 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           KeyCode::H, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
           KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: sim orcmd = timer view</name>
+      <identifier>private.sim_orcmd_timer_view</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::COMMAND_R, KeyCode::O,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: sim oe = timer view</name>
+      <identifier>private.sim_oe_timer_view</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::E, KeyCode::O,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: sim of = timer</name>
+      <identifier>private.sim_of_timer</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::F, KeyCode::O,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_TIMER_START
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: sim ou = spotify</name>
+      <identifier>private.sim_ou_spotify</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::U, KeyCode::O,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: sim olcmd = timer</name>
+      <identifier>private.sim_olcmd_timer</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::COMMAND_L, KeyCode::O,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_TIMER_START
       </autogen>
   </item>
 
