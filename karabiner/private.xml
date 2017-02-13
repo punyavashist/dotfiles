@@ -9790,24 +9790,13 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim oe = timer view</name>
-      <identifier>private.sim_oe_timer_view</identifier>
+          <name>general: sim jlcmd = timer view</name>
+      <identifier>private.sim_jlcmd_timer_view</identifier>
         <autogen>
           __SimultaneousKeyPresses__
-          KeyCode::E, KeyCode::O,
+          KeyCode::COMMAND_L, KeyCode::J,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
           KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW
-      </autogen>
-  </item>
-
-      <item>
-          <name>general: sim of = timer</name>
-      <identifier>private.sim_of_timer</identifier>
-        <autogen>
-          __SimultaneousKeyPresses__
-          KeyCode::F, KeyCode::O,
-          KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_TIMER_START
       </autogen>
   </item>
 
@@ -9819,6 +9808,17 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           KeyCode::U, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
           KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: sim klcd = timer</name>
+      <identifier>private.sim_klcmd_timer</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::COMMAND_L, KeyCode::K,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_TIMER_START
       </autogen>
   </item>
 
