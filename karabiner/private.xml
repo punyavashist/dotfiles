@@ -9581,13 +9581,13 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim hl = dictionary</name>
-      <identifier>private.sim_hl_dic</identifier>
+          <name>general: sim hl = lab</name>
+      <identifier>private.sim_hl_lab</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::L,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
+          KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
       </autogen>
   </item>
 
@@ -9615,7 +9615,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 
       <item>
           <name>general: sim km = youtube</name>
-      <identifier>private.sim_km_youtube</identifier>
+      <identifier>private.sim_km_lab</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::K, KeyCode::M,
@@ -9724,13 +9724,24 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim :n = dictionary</name>
+          <name>general: sim : + rcmd = dic</name>
+      <identifier>private.sim_:rcmd_dic</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::COMMAND_R, KeyCode::SEMICOLON,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_DICTIONARY_SEARCH
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: sim :n = lab</name>
       <identifier>private.sim_:n_dic</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::SEMICOLON, KeyCode::N,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_DICTIONARY_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
       </autogen>
   </item>
 
@@ -9779,17 +9790,6 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim orcmd = timer view</name>
-      <identifier>private.sim_orcmd_timer_view</identifier>
-        <autogen>
-          __SimultaneousKeyPresses__
-          KeyCode::COMMAND_R, KeyCode::O,
-          KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW
-      </autogen>
-  </item>
-
-      <item>
           <name>general: sim jlcmd = timer view</name>
       <identifier>private.sim_jlcmd_timer_view</identifier>
         <autogen>
@@ -9812,7 +9812,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim klcd = timer</name>
+          <name>general: sim k + lcd = timer</name>
       <identifier>private.sim_klcmd_timer</identifier>
         <autogen>
           __SimultaneousKeyPresses__
@@ -9823,27 +9823,38 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim olcmd = timer</name>
-      <identifier>private.sim_olcmd_timer</identifier>
+          <name>general: sim o + rcmd = spotify current track</name>
+      <identifier>private.sim_rcmd_spotify</identifier>
         <autogen>
           __SimultaneousKeyPresses__
-          KeyCode::COMMAND_L, KeyCode::O,
+          KeyCode::COMMAND_R, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_TIMER_START
+           KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
       </autogen>
   </item>
 
       <item>
-          <name>general: sim kn = normal mode</name>
-      <identifier>private.sim_kn_normal</identifier>
+          <name>general: sim o + lcmd = spotify main</name>
+      <identifier>private.sim_olcmd_spoti</identifier>
         <autogen>
           __SimultaneousKeyPresses__
-          KeyCode::K, KeyCode::N,
+          KeyCode::COMMAND_L, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_CONFIG_TOGGLE_notsave_ubiq_vimnormal,
-          {{ UBIQUITOUS_VIM_BINDINGS_CANCEL_OPERATOR_PENDING }}
+       KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
       </autogen>
   </item>
+
+<item>
+<name>general: sim kn = normal mode</name>
+<identifier>private.sim_kn_normal</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::K, KeyCode::N,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_CONFIG_TOGGLE_notsave_ubiq_vimnormal,
+{{ UBIQUITOUS_VIM_BINDINGS_CANCEL_OPERATOR_PENDING }}
+</autogen>
+</item>
 
   <item>
       <only>MINDNODE</only>
