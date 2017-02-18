@@ -226,6 +226,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_PASTE_SELECTED_TEXT</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: paste selected text in previous application"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_DICTIONARY_SELECTED_TEXT_TO_MINDNODE</name>
   <url type="shell">
   osascript -e '
@@ -1442,6 +1453,7 @@
 
 <!-- _hs def -->
   <vkopenurldef>
+      <background/>
     <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TODO_TASK</name>
     <url>hammerspoon://showTodoTask</url>
   </vkopenurldef>
@@ -1504,6 +1516,15 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.workflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LECTURES</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "findLectures" in workflow "nikivi.web-search" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -3652,7 +3673,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
            <autogen>
            __KeyToKey__
            KeyCode::SPACE,
-           KeyCode::F1, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+       KeyCode::BACKQUOTE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
             </autogen>
 
                <autogen>
@@ -3728,6 +3749,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <replacementname>LAUNCHER_MODE_V2_EXTRA</replacementname>
     <replacementvalue>
       <![CDATA[
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::B,
+       KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
+        </autogen>
         
        <autogen>
        __KeyToKey__
@@ -3887,12 +3914,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::A,
-       KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
        KeyCode::P,
        KeyCode::F2, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
        </autogen>
@@ -3941,7 +3962,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::S,
+       KeyCode::A,
        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE
         </autogen>
 
@@ -3960,7 +3981,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::J,
-          KeyCode::VK_OPEN_URL_ALFRED_ACTIVE_WINDOWS
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PDF
         </autogen>
 
        <autogen>
@@ -4517,6 +4538,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::J,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LECTURES
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::4,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ARXIV
     </autogen>
@@ -4688,12 +4715,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
      __KeyToKey__
      KeyCode::COMMAND_R,
      KeyCode::VK_OPEN_URL_ALFRED_GITHUB_CODE_ISSUES_SEARCH
- </autogen>
-
-   <autogen>
-     __KeyToKey__
-     KeyCode::J,
-     KeyCode::VK_OPEN_URL_ALFRED_SEARCH_IDOPE
  </autogen>
 
     <autogen>
@@ -5370,6 +5391,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::T,
+      KeyCode::VK_OPEN_URL_KM_OPEN_SIMULATOR
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::C,
       KeyCode::VK_OPEN_URL_KM_OPEN_SUBLIME_TEXT
 		</autogen>
@@ -5386,11 +5413,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::VK_OPEN_URL_KM_OPEN_FINDER
 		</autogen>
 
-        <autogen>
-          __KeyToKey__
-          KeyCode::SPACE,
-          KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L
-        </autogen>
+    <autogen>
+        __KeyToKey__
+        KeyCode::SPACE,
+        KeyCode::VK_OPEN_URL_KM_PASTE_SELECTED_TEXT
+    </autogen>
 
     <autogen>
       __KeyToKey__
@@ -5420,12 +5447,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::G,
       KeyCode::VK_OPEN_URL_KM_OPEN_SNIPPETSLAB
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::T,
-      KeyCode::VK_OPEN_URL_KM_OPEN_TOWER
     </autogen>
 
     <autogen>
@@ -5849,6 +5870,57 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
+		<name>general: sticky 2 - something</name>
+		<identifier>private.launcher_mode_open_apps_v93</identifier>
+
+    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::2,
+
+      <!--
+          Use notsave.launcher_mode_v2 in order to be higher priority.
+          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
+      -->
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v93, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::2,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v93</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::2,
+    </autogen>
+
+        <autogen>
+          __KeyToKey__
+          KeyCode::SPACE,
+          KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+        </autogen>
+
+  </item>
+
+<item>
 		<name>general: sticky 3 - something</name>
 		<identifier>private.launcher_mode_open_apps_v51</identifier>
 
@@ -5891,11 +5963,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::3,
     </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::SPACE,
-        KeyCode::1, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-    </autogen>
+        <autogen>
+          __KeyToKey__
+          KeyCode::SPACE,
+          KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L
+        </autogen>
 
   </item>
 
@@ -6391,7 +6463,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
-    KeyCode::H,
+    KeyCode::L,
     KeyCode::MINUS,
     KeyCode::DOT, ModifierFlag::SHIFT_L,
     KeyCode::SPACE
@@ -6417,7 +6489,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
-    KeyCode::L,
+    KeyCode::H,
     KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
     KeyCode::EQUAL,
     KeyCode::SPACE
@@ -7041,7 +7113,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::SPACE,
-       KeyCode::V, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+           KeyCode::F1, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
         </autogen>
 
   </item>
@@ -9746,19 +9818,19 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim on = windows</name>
-      <identifier>private.sim_on_windows</identifier>
+          <name>general: sim on = lab</name>
+      <identifier>private.sim_on_lab</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::N, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_ACTIVE_WINDOWS
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PDF
       </autogen>
   </item>
 
       <item>
-          <name>general: sim om = wm</name>
-      <identifier>private.sim_om_wm</identifier>
+          <name>general: sim om = keyclue</name>
+      <identifier>private.sim_om_wind</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::M, KeyCode::O,
@@ -9779,7 +9851,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim oh = keyclue</name>
+          <name>general: sim oh = windows</name>
       <identifier>private.sim_oh_keyclue</identifier>
         <autogen>
           __SimultaneousKeyPresses__
@@ -9845,14 +9917,35 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
 <item>
-<name>general: sim kn = normal mode</name>
+<name>general: sim kn = lab</name>
 <identifier>private.sim_kn_normal</identifier>
 <autogen>
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_CONFIG_TOGGLE_notsave_ubiq_vimnormal,
-{{ UBIQUITOUS_VIM_BINDINGS_CANCEL_OPERATOR_PENDING }}
+KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
+</autogen>
+</item>
+
+<item>
+<name>general: sim l + rcmd = spotify current track</name>
+<identifier>private.sim_rcmd_current_track</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::L, KeyCode::COMMAND_R,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
+</autogen>
+</item>
+
+<item>
+<name>general: sim l + lcmd = spotify main</name>
+<identifier>private.sim_lcmd_spoti</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::L, KeyCode::COMMAND_L,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_NEW_BITBAR_TASK
 </autogen>
 </item>
 

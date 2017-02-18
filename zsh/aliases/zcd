@@ -11,7 +11,7 @@ alias doc='cd ~/Documents'
 alias dbit='cd ~/Documents/d. \app/bitbar'
 alias dF='cd ~/Documents/app/unclutter/Unclutter\ Files'
 alias ddes='cd ~/Documents/design'
-alias dn='cd ~/oss/nikivi/g. notes'
+alias dn='cd ~/oss/nikivi/'
 
 # _code
 alias dl='cd ~/play'
