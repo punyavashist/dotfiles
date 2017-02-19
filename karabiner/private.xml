@@ -1521,6 +1521,25 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchSecureShell" in workflow "net.deanishe.alfred-ssh" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_ADD_SONG_TO_PLAYLIST</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "addSongToPlaylist" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LECTURES</name>
   <url type="shell">
   osascript -e '
@@ -3752,6 +3771,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
+       KeyCode::A,
+       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
        KeyCode::B,
        KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
         </autogen>
@@ -3766,12 +3791,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        __KeyToKey__
        KeyCode::F,
        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PLAYGROUNDS
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::R,
-       KeyCode::VK_OPEN_URL_ALFRED_POCKET_MYTOREADLIST
         </autogen>
 
        <autogen>
@@ -3879,7 +3898,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::F19,
-      KeyCode::VK_OPEN_URL_ALFRED_SEARCH_FOLDERS
+      KeyCode::VK_OPEN_URL_ALFRED_ADD_SONG_TO_PLAYLIST
 		</autogen>
 
        <autogen>
@@ -3924,12 +3943,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
        </autogen>
 
-    <autogen>
-    __KeyToKey__
-    KeyCode::E,
-    KeyCode::VK_OPEN_URL_ALFRED_CHROME_CANARY_SEARCH
-    </autogen>
-
        <autogen>
        __KeyToKey__
        KeyCode::T,
@@ -3962,12 +3975,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::A,
-       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
        KeyCode::D,
        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PDF
         </autogen>
@@ -3988,12 +3995,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        __KeyToKey__
        KeyCode::P,
        KeyCode::F7, ModifierFlag::OPTION_L
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::Q,
-       KeyCode::VK_OPEN_URL_ALFRED_RECENT_DOWNLOADS
         </autogen>
 
        <autogen>
@@ -9154,14 +9155,13 @@ KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
 </item>
 
 <item>
-<name>general: left command = dash</name>
+<name>general: left command = snippetslab</name>
 <identifier>private.left_command_to_dash</identifier>
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::COMMAND_L,
 KeyCode::COMMAND_L,
- KeyCode::TAB, ModifierFlag::COMMAND_L,
- KeyCode::COMMAND_L
+KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
 </autogen>
 </item>
 
@@ -9796,13 +9796,24 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim : + rcmd = dic</name>
+          <name>general: sim :rcmd = dic</name>
       <identifier>private.sim_:rcmd_dic</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::COMMAND_R, KeyCode::SEMICOLON,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_DICTIONARY_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: sim :lcmd = downloads</name>
+      <identifier>private.sim_lcmd_downloads</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::SEMICOLON, KeyCode::COMMAND_L,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_RECENT_DOWNLOADS
       </autogen>
   </item>
 
@@ -9813,7 +9824,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::SEMICOLON, KeyCode::N,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_DICTIONARY_SEARCH
       </autogen>
   </item>
 
@@ -9862,13 +9873,24 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim jlcmd = timer view</name>
+          <name>general: sim jrcmd = xcode</name>
+      <identifier>private.sim_xcode_search_cmd</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::COMMAND_R, KeyCode::J,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: sim jlcmd = folders</name>
       <identifier>private.sim_jlcmd_timer_view</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::COMMAND_L, KeyCode::J,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_FOLDERS
       </autogen>
   </item>
 
@@ -9895,24 +9917,24 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim o + rcmd = spotify current track</name>
+          <name>general: sim orcmd = archive</name>
       <identifier>private.sim_rcmd_spotify</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::COMMAND_R, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-           KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
+           KeyCode::VK_OPEN_URL_ALFRED_POCKET_ARCHIVED
       </autogen>
   </item>
 
       <item>
-          <name>general: sim o + lcmd = spotify main</name>
+          <name>general: sim olcmd = pocket</name>
       <identifier>private.sim_olcmd_spoti</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::COMMAND_L, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-       KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
+       KeyCode::VK_OPEN_URL_ALFRED_POCKET_MYTOREADLIST
       </autogen>
   </item>
 
@@ -9938,6 +9960,18 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
 </autogen>
 </item>
 
+
+<item>
+<name>general: sim k + rcmd = timer stop</name>
+<identifier>private.sim_stop_timer</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::K, KeyCode::COMMAND_R,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW
+</autogen>
+</item>
+
 <item>
 <name>general: sim l + lcmd = spotify main</name>
 <identifier>private.sim_lcmd_spoti</identifier>
@@ -9945,7 +9979,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
 __SimultaneousKeyPresses__
 KeyCode::L, KeyCode::COMMAND_L,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_NEW_BITBAR_TASK
+KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
 </autogen>
 </item>
 
