@@ -9709,7 +9709,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::N,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
+          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
       </autogen>
   </item>
 
@@ -9896,7 +9896,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE_CONTENT
       </autogen>
   </item>
 
@@ -10001,13 +10001,24 @@ KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW
 </item>
 
 <item>
-<name>general: sim arcmd = control a</name>
+<name>general: sim arcmd = xcode</name>
 <identifier>private.sim_alcmd_play</identifier>
 <autogen>
 __SimultaneousKeyPresses__
 KeyCode::A, KeyCode::COMMAND_R,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PLAYGROUNDS
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE
+</autogen>
+</item>
+
+<item>
+<name>general: sim ercmd = duck</name>
+<identifier>private.sim_rcmd_spoti</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::E, KeyCode::COMMAND_R,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 </autogen>
 </item>
 
