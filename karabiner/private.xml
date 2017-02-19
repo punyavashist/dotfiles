@@ -8457,6 +8457,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
           KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
     </autogen>
 
+       <autogen>
+         __KeyToKey__
+         KeyCode::COMMAND_R,
+         KeyCode::A, ModifierFlag::CONTROL_L
+       </autogen>
+
     
        <autogen>
          __KeyToKey__
@@ -9155,13 +9161,13 @@ KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
 </item>
 
 <item>
-<name>general: left command = snippetslab</name>
+<name>general: lcmd = google</name>
 <identifier>private.left_command_to_dash</identifier>
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::COMMAND_L,
 KeyCode::COMMAND_L,
-KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE
 </autogen>
 </item>
 
@@ -9794,6 +9800,28 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
       </autogen>
   </item>
+  
+      <item>
+          <name>general: sim nlcmd = github</name>
+      <identifier>private.sim_nlcmd_down</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::COMMAND_L, KeyCode::N,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: sim wrcmd = downloads</name>
+      <identifier>private.sim_wrcmd_down</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::COMMAND_R, KeyCode::W,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_RECENT_DOWNLOADS
+      </autogen>
+  </item>
 
       <item>
           <name>general: sim :rcmd = dic</name>
@@ -9807,13 +9835,13 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim :lcmd = downloads</name>
+          <name>general: sim :lcmd = dash</name>
       <identifier>private.sim_lcmd_downloads</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::SEMICOLON, KeyCode::COMMAND_L,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_RECENT_DOWNLOADS
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
       </autogen>
   </item>
 
@@ -9906,7 +9934,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim k + lcd = timer</name>
+          <name>general: sim k + lcmd = timer</name>
       <identifier>private.sim_klcmd_timer</identifier>
         <autogen>
           __SimultaneousKeyPresses__
@@ -9923,7 +9951,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::COMMAND_R, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-           KeyCode::VK_OPEN_URL_ALFRED_POCKET_ARCHIVED
+           KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
       </autogen>
   </item>
 
@@ -9945,7 +9973,8 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
+KeyCode::VK_CONFIG_TOGGLE_notsave_ubiq_vimnormal,
+{{ UBIQUITOUS_VIM_BINDINGS_CANCEL_OPERATOR_PENDING }}
 </autogen>
 </item>
 
@@ -9960,7 +9989,6 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
 </autogen>
 </item>
 
-
 <item>
 <name>general: sim k + rcmd = timer stop</name>
 <identifier>private.sim_stop_timer</identifier>
@@ -9973,7 +10001,18 @@ KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW
 </item>
 
 <item>
-<name>general: sim l + lcmd = spotify main</name>
+<name>general: sim arcmd = control a</name>
+<identifier>private.sim_alcmd_play</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::A, KeyCode::COMMAND_R,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PLAYGROUNDS
+</autogen>
+</item>
+
+<item>
+<name>general: sim llcmd = spotify main</name>
 <identifier>private.sim_lcmd_spoti</identifier>
 <autogen>
 __SimultaneousKeyPresses__
