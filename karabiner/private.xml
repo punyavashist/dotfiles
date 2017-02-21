@@ -3777,7 +3777,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::B,
+       KeyCode::R,
        KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
         </autogen>
         

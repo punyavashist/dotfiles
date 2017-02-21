@@ -10,6 +10,11 @@ function ma() {
     mkdir "$1" && cd "$1"
 }
 
+function fw() {
+    git add .
+    git commit -m $1
+}
+
 
 function ogg() {
     go get github.com/$@
