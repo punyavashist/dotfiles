@@ -1,20 +1,33 @@
 #[aliases](https://my.mindnode.com/bN8QkZKsxsiqSvpWzccjX2A4qZfy14bTkKgYix6i) and zsh functions
 
-![](http://i.imgur.com/ldMyAIL.png)
+![](http://i.imgur.com/B4S3LlO.png)
 
-#mindmap index
+#mindmap index 🗄️
+
+# l
+
+
+## = open google chrome canary
+
+## lg
+
+### ls | grep
+
+## l.
+
+
 # q
 
 
 ## quit
 
+## qq
 
-# w
+### open -a Safari
 
+- open safari
 
-## code
-
-- open dir/file in vs code
+- or open some file with safari
 
 
 # e
@@ -22,7 +35,13 @@
 
 ## nvim
 
-- activate nvim text editor
+### activate nvim text editor
+
+## ee
+
+### nvim .
+
+- open current dir in nvim
 
 
 # t
@@ -30,73 +49,91 @@
 
 ## touch
 
-- create a file
+### create a file
 
+## tt
 
-# qq
-
-
-## open -a Safari
-
-- open safari
-
-- or open some file with safari
-
-
-# tt
-
-
-## type
+### type
 
 - print description of argumented command
 
+## tl
 
-# ee
+### tmux
+
+## ta
+
+### touch readme.md
+
+## top
+
+### vtop
 
 
-## nvim .
-
-- open current dir in nvim
+# k
 
 
-# ww
+## ka
+
+### echo
 
 
-## code .
+# w
+
+
+## = code
+
+### open dir/file in vs code
+
+## ww
+
+### code .
 
 - open current dir in vs code
-
-
-# s
-
-
-## sudo
-
-- run next command with admin privilege
 
 
 # a
 
 
-## [ls](http://www.explainshell.com/explain/ls)
+## = [ls](http://www.explainshell.com/explain/ls)
 
-- print current working dir
+### print current working dir
 
+## aa
 
-# aa
-
-
-## [ls -lah](http://www.explainshell.com/explain?cmd=ls+-lah)
+### [ls -lah](http://www.explainshell.com/explain?cmd=ls+-lah)
 
 - print current working dir with hidden files shown
 
+## af
 
-# ss
+### alfred
 
 
-## serve
+# s
+
+
+## = sudo
+
+### run next command with admin privilege
+
+## ss
+
+### serve
 
 - run http server in current dir
+
+## so
+
+### source
+
+
+# r
+
+
+## rl
+
+### curl
 
 
 # v
@@ -104,11 +141,93 @@
 
 ## mv
 
-- move file / folder
+### move file / folder
 
 
-# gj
+# m
 
 
-## go to github repository of current local repo
+## = man
+
+## mem
+
+### show memory usage
+
+
+# b
+
+
+## bb
+
+### pbcopy
+
+
+# h
+
+
+## = history
+
+
+# c
+
+
+## cpu
+
+### show cpu usage
+
+
+# j
+
+
+## = jobs
+
+
+# g
+
+
+## = git
+
+## gi
+
+### git init
+
+## gw
+
+### commit all files from current dir with a commit message
+
+## gj
+
+### go to github repository of current local repo
+
+## gg
+
+### git push
+
+## gj
+
+### open github repo as specified in git remote origin
+
+
+# .
+
+
+## ..
+
+### go back a dir
+
+## …
+
+### go back two dirs
+
+## ….
+
+### go back three dirs
+
+
+# b
+
+
+## br
+
+### brew
 
