@@ -1,5 +1,6 @@
 # _general
 alias tl='tmux'
+alias af='alfred'
 alias ta='touch readme.md'
 alias s='sudo'
 # TODO: fk alias to run last cmd as sudo instantly

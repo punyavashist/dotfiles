@@ -31,6 +31,8 @@ alias gdf='git commit . -m ':tada: initial commit''
 alias gpm="git push origin master"
 alias gpd="git push origin develop"
 
+# _git all add commits
+alias ggm='git_commit_update'
 
 # _utilities
 
