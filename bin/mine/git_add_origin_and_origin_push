@@ -1,0 +1,7 @@
+#!/bin/bash
+
+clipboard="$(pbpaste)"
+
+git clone $clipboard 
+
+'git push -u origin master
