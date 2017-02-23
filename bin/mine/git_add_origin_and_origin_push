@@ -2,6 +2,6 @@
 
 clipboard="$(pbpaste)"
 
-git clone $clipboard 
+git remote add origin $clipboard.git
 
-'git push -u origin master
+git push -u origin master

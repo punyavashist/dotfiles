@@ -226,6 +226,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_MINDNODE_SCREENSHOT_TABBED</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: screenshot to mindnode tabbed"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_PASTE_SELECTED_TEXT</name>
   <url type="shell">
   osascript -e '
@@ -664,6 +675,17 @@
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "open: transmission"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_LAST_TIME</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: last time"
     end tell
     '
   </url>
@@ -1505,6 +1527,25 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.workflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_COLOUR_PICKER</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "colourPicker" in workflow "tylereich.colors" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_ACTIVATE_FOCUS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "activateFocus" in workflow "nikivi.block.websites" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -3778,7 +3819,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::R,
-       KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
+       KeyCode::VK_OPEN_URL_ALFRED_POCKET_MYTOREADLIST
         </autogen>
         
        <autogen>
@@ -3790,7 +3831,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::F,
-       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PLAYGROUNDS
+       KeyCode::VK_OPEN_URL_ALFRED_COLOUR_PICKER
         </autogen>
 
        <autogen>
@@ -3939,7 +3980,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::T,
+       KeyCode::E,
        KeyCode::VK_OPEN_URL_ALFRED_POCKET_ARCHIVED
         </autogen>
 
@@ -3964,7 +4005,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::G,
-       KeyCode::VK_OPEN_URL_ALFRED_GITHUB
+       KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
         </autogen>
 
        <autogen>
@@ -3982,7 +4023,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::J,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PDF
+       KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
         </autogen>
 
        <autogen>
@@ -4678,7 +4719,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::G,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOODREADS
+        KeyCode::VK_OPEN_URL_ALFRED_GITHUB
     </autogen>
 
     <autogen>
@@ -5334,10 +5375,15 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __KeyToKey__
-      KeyCode::SEMICOLON,
-      KeyCode::F9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+      KeyCode::DOT,
+      KeyCode::F2, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
 
+    <autogen>
+      __KeyToKey__
+      KeyCode::SEMICOLON,
+      KeyCode::F3, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+    </autogen>
 
   </item>
 
@@ -5803,6 +5849,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     </autogen>
 
     <autogen>
+      __KeyToKey__
+      KeyCode::F19,
+      KeyCode::VK_OPEN_URL_KM_MINDNODE_SCREENSHOT_TABBED
+    </autogen>
+
+    <autogen>
         __KeyToKey__
         KeyCode::O,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEETCODE
@@ -6175,8 +6227,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::W,
-      KeyCode::VK_OPEN_URL_KM_OPEN_DICTIONARY
+      KeyCode::G,
+      KeyCode::VK_OPEN_URL_KM_LAST_TIME
 		</autogen>
 
         <autogen>
@@ -6277,7 +6329,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __KeyToKey__
-     KeyCode::G,
+     KeyCode::W,
       KeyCode::VK_OPEN_URL_KM_OPEN_REEDER
     </autogen>
 
@@ -9906,13 +9958,13 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim jlcmd = folders</name>
+          <name>general: sim jlcmd = focus</name>
       <identifier>private.sim_jlcmd_timer_view</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::COMMAND_L, KeyCode::J,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_FOLDERS
+          KeyCode::VK_OPEN_URL_ALFRED_ACTIVATE_FOCUS
       </autogen>
   </item>
 
@@ -9956,7 +10008,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::COMMAND_L, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-       KeyCode::VK_OPEN_URL_ALFRED_POCKET_MYTOREADLIST
+       KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
       </autogen>
   </item>
 
@@ -10024,6 +10076,50 @@ __SimultaneousKeyPresses__
 KeyCode::E, KeyCode::COMMAND_R,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
 KeyCode::VK_OPEN_URL_ALFRED_JAVA_PROJECTS_SEARCH
+</autogen>
+</item>
+
+<item>
+<name>general: sim :h = docs</name>
+<identifier>private.sim_semh_docs</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::SEMICOLON, KeyCode::H,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
+</autogen>
+</item>
+
+<item>
+<name>general: sim pk = git</name>
+<identifier>private.pk_git'</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::K, KeyCode::P,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_GITHUB
+</autogen>
+</item>
+
+<item>
+<name>general: sim mrcmd = km macros</name>
+<identifier>private.mrcmd_macros</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::M, KeyCode::COMMAND_R,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
+</autogen>
+</item>
+
+<item>
+<name>general: sim pj = docs</name>
+<identifier>private.pj_docs'</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::J, KeyCode::P,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
 </autogen>
 </item>
 

@@ -25,10 +25,8 @@ alias dpp='cd ~/code/python'
 alias dlove='cd ~/code/lua/love'
 alias djs='cd ~/code/js'
 alias da='cd ~/code'
-alias dpl='cd ~/code/xcode/playgrounds'
 alias dgo='cd ~/code/go'
 alias dsj='cd ~/code/solutions/java'
-alias dios='cd ~/code/xcode/projects/ios'
 alias dss='cd ~/oss/nikivi/solutions'
 
 # _xcode - swift

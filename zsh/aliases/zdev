@@ -3,6 +3,9 @@
 alias ss='serve'
 alias sv='python3 -m http.server'
 
+alias nra='create-react-app'
+
+
 # _flask
 alias fr='flask run'
 
