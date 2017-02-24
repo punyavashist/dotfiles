@@ -226,6 +226,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_INSERT_TODO</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: insert // TODO:"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_MINDNODE_SCREENSHOT_TABBED</name>
   <url type="shell">
   osascript -e '
@@ -6498,16 +6509,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
-    KeyCode::H,
-    KeyCode::SLASH,
-    KeyCode::SLASH,
-    KeyCode::SPACE,
-    KeyCode::T, ModifierFlag::SHIFT_L,
-    KeyCode::O, ModifierFlag::SHIFT_L,
-    KeyCode::D, ModifierFlag::SHIFT_L,
-    KeyCode::O, ModifierFlag::SHIFT_L,
-    KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
-    KeyCode::SPACE
+    KeyCode::B,
+    KeyCode::VK_OPEN_URL_KM_INSERT_TODO
   </autogen>
 
   <autogen>
@@ -6607,12 +6610,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::4,
-      KeyCode::MINUS
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
       KeyCode::S,
       KeyCode::MINUS, ModifierFlag::SHIFT_L
 		</autogen>
@@ -6637,7 +6634,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::B,
+      KeyCode::4,
       KeyCode::8, ModifierFlag::SHIFT_L
 		</autogen>
 
@@ -7150,7 +7147,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::E,
-        KeyCode::VK_OPEN_URL_ALFRED_HASTEBIN
+        KeyCode::EQUAL, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
     </autogen>
 
     <autogen>
