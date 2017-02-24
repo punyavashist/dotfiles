@@ -5376,7 +5376,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __KeyToKey__
       KeyCode::DOT,
-      KeyCode::F2, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+      KeyCode::F3, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
 
     <autogen>
@@ -5962,7 +5962,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
           __KeyToKey__
           KeyCode::SPACE,
-          KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+          KeyCode::0, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
         </autogen>
 
   </item>
@@ -6239,7 +6239,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::COMMAND_L,
+        KeyCode::COMMAND_R,
         KeyCode::VK_OPEN_URL_KM_OPEN_YNAB
     </autogen>
 
@@ -6293,7 +6293,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::COMMAND_R,
+        KeyCode::COMMAND_L,
         KeyCode::VK_OPEN_URL_KM_OPEN_ANKI
     </autogen>
 
@@ -6498,6 +6498,20 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
+    KeyCode::H,
+    KeyCode::SLASH,
+    KeyCode::SLASH,
+    KeyCode::SPACE,
+    KeyCode::T, ModifierFlag::SHIFT_L,
+    KeyCode::O, ModifierFlag::SHIFT_L,
+    KeyCode::D, ModifierFlag::SHIFT_L,
+    KeyCode::O, ModifierFlag::SHIFT_L,
+    KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
+    KeyCode::SPACE
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
     KeyCode::6,
     KeyCode::6, ModifierFlag::SHIFT_L
   </autogen>
@@ -6510,7 +6524,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
-    KeyCode::H,
+    KeyCode::N,
     KeyCode::MINUS,
     KeyCode::DOT, ModifierFlag::SHIFT_L,
     KeyCode::SPACE

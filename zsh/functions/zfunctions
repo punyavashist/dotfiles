@@ -10,6 +10,12 @@ function ma() {
     mkdir "$1" && cd "$1"
 }
 
+function tc() {
+    touch Cartfile
+    chmod +x Cartfile
+    nvim Cartfile
+}
+
 function fw() {
     git add .
     git commit -m $1

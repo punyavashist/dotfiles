@@ -1,5 +1,7 @@
 # _general
 alias tl='tmux'
+alias ca='carthage'
+alias cad='carthage update'
 alias af='alfred'
 alias ta='touch readme.md'
 alias s='sudo'
