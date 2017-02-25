@@ -4150,6 +4150,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::O,
+      KeyCode::2, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::Z,
       KeyCode::O, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
 		</autogen>
@@ -4242,12 +4248,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::BACKQUOTE,
       KeyCode::VK_OPEN_URL_ALFRED_TIMER_START
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::O,
-      KeyCode::S, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 		</autogen>
 
         <autogen>
@@ -6787,6 +6787,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::SPACE,
         KeyCode::F, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
+    
+       <autogen>
+       __KeyToKey__
+       KeyCode::SEMICOLON,
+       KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L
+        </autogen>
 
        <autogen>
        __KeyToKey__
@@ -9587,6 +9593,8 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
     </autogen>
 
   </item>
+
+  <!-- _one to one mappings  TODO: add -->
   
   <item>
       <name>general: opt + return = safari</name>
@@ -10076,6 +10084,17 @@ __SimultaneousKeyPresses__
 KeyCode::R, KeyCode::COMMAND_R,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PODS
+</autogen>
+</item>
+
+<item>
+<name>general: sim prcmd = intellij</name>
+<identifier>private.sim_prcmd_spoti</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::P, KeyCode::COMMAND_R,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_JAVA_PROJECTS_SEARCH
 </autogen>
 </item>
 
