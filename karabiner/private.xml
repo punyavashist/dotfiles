@@ -1551,6 +1551,14 @@ tell application "Alfred 3" to run trigger "colourPicker" in workflow "tylereich
   </url>
 </vkopenurldef>
 
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_RESEARCH_WEB_LINKS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "researchWebLinks" in workflow "nikivi.research" with argument ""
+    '
+  </url>
+</vkopenurldef>
 
 <vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_ACTIVATE_FOCUS</name>
@@ -5979,6 +5987,57 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
+		<name>general: sticky 4 - something</name>
+		<identifier>private.launcher_mode_open_apps_v53</identifier>
+
+    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::4,
+
+      <!--
+          Use notsave.launcher_mode_v2 in order to be higher priority.
+          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
+      -->
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v53, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::4,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v53</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::4,
+    </autogen>
+
+        <autogen>
+          __KeyToKey__
+          KeyCode::SPACE,
+        KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L
+        </autogen>
+
+  </item>
+
+<item>
 		<name>general: sticky 3 - something</name>
 		<identifier>private.launcher_mode_open_apps_v51</identifier>
 
@@ -6024,7 +6083,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
           __KeyToKey__
           KeyCode::SPACE,
-          KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L
+          KeyCode::8, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
         </autogen>
 
   </item>
@@ -9955,13 +10014,13 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim oh = windows</name>
+          <name>general: sim oh = research</name>
       <identifier>private.sim_oh_keyclue</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE_CONTENT
+          KeyCode::VK_OPEN_URL_ALFRED_RESEARCH_WEB_LINKS
       </autogen>
   </item>
 

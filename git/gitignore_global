@@ -5,6 +5,8 @@ node_modules/
 
 # _java
 .idea
+*.iml
+out
 
 *.class
 
