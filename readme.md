@@ -9,9 +9,11 @@ The most exciting thing in here is probably [how](https://my.mindnode.com/VvyDG2
 ![](http://i.imgur.com/Z29bOef.jpg)
 
 
-##[neovim 🌻](https://github.com/nikitavoloboev/dotfiles/tree/master/vim#modal-editing-is-)
+##[neovim 🌻](https://my.mindnode.com/QKK41ixhzhCk64Bss2xsvAssL7j79HDKdY1TsNd5)
 
-[Neovim](https://github.com/neovim/neovim) is a fork of vim that adds onto vim and that is what I use as my editor of choice for pretty much anything I code. I am still [learning](https://my.mindnode.com/dsyhczzfLsBAG4EpFt5TZnBYWAD9mfc9ms7nPMCz) but the this journey has been very rewarding.
+![](http://i.imgur.com/NV4d8B9.png)
+
+I am still learning vim but the this journey has been very rewarding. Modal editing is pretty amazing. I also very often use VS Code since it also has very well built [vim mode](https://github.com/VSCodeVim/Vim).
 
 
 ##[hammerspoon 🔨](https://github.com/nikitavoloboev/dotfiles/tree/master/hammerspoon)
