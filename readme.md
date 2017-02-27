@@ -2,7 +2,7 @@
 
 ![](http://i.imgur.com/4AmT98a.png)
 
-##[karabiner](https://github.com/nikitavoloboev/dotfiles/tree/master/karabiner)
+##[karabiner](https://my.mindnode.com/aGPrpzjuxth5dqytYpTzts9PZWKMFydgGt1Sjddz)
 
 The most exciting thing in here is probably [how](https://my.mindnode.com/VvyDG2X6u54FMSC5EExRGzozqyHqUG5gVM45QP9p) I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now. Here is the layout that I currently use for my keyboard.
 
