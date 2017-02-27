@@ -13,7 +13,7 @@ The most exciting thing in here is probably [how](https://my.mindnode.com/VvyDG2
 
 ![](http://i.imgur.com/NV4d8B9.png)
 
-I am still learning vim but the this journey has been very rewarding. Modal editing is pretty amazing. I also very often use VS Code since it also has very well built [vim mode](https://github.com/VSCodeVim/Vim).
+I am [still learning vim](https://my.mindnode.com/dsyhczzfLsBAG4EpFt5TZnBYWAD9mfc9ms7nPMCz) but the this journey has been very rewarding. Modal editing is pretty amazing. I also very often use VS Code since it also has very well built [vim mode](https://github.com/VSCodeVim/Vim).
 
 
 ##[hammerspoon 🔨](https://github.com/nikitavoloboev/dotfiles/tree/master/hammerspoon)
