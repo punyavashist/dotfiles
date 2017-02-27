@@ -1,6 +1,6 @@
 #[karabiner set-up](https://my.mindnode.com/VvyDG2X6u54FMSC5EExRGzozqyHqUG5gVM45QP9p)
 
-![](http://i.imgur.com/hDqUOBj.png) 
+![](http://i.imgur.com/Z29bOef.jpg)
 
 Karabiner has fundamentally changed the way I interact with my computer. I am no longer bounded by various shortcuts that you have to memorsie, instead every key on my keyboard is a modifier key. I have called these modifer keys **sticky keys**. Essentially I can make a key like 'a' that inserts a symbol a into a modifier key that can do whatever I want this key to do. This gives me a tremendous amount of power and freedom. 
 

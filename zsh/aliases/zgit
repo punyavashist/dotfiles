@@ -1,5 +1,7 @@
 # _general
 alias g:='git push -u origin master'
+alias gu='git commit --amend'
+alias ggf='git push -f'
 alias g::='git_remote_add_origin_from_active_link'
 alias g="git"
 alias gi='git init'
