@@ -51,7 +51,9 @@ alias nb='npm run build'
 alias nr='npm run'
 
 # _go
-alias o='go run'
+alias o='go'
+alias or='go run'
+alias ov='go vet'
 alias og='go get'
 alias oo='go build'
 alias oa='go build -o main'
