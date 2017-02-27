@@ -21,9 +21,9 @@ I am [still learning vim](https://my.mindnode.com/dsyhczzfLsBAG4EpFt5TZnBYWAD9mf
 I don't use [hammerspoon](http://www.hammerspoon.org/) as extensively however I am looking into implementing more of its features into my workflow.
 
 
-##[zsh 🐚](https://github.com/nikitavoloboev/dotfiles/tree/master/zsh)
-![](http://i.imgur.com/ZK8kKFJ.jpg)
+##[zsh 🐚](https://my.mindnode.com/jGwmewTqeqrXyRkupzgqqVD2zC7yTczxwgw5QTCq)
 
+![](http://i.imgur.com/ZK8kKFJ.jpg)
 
 I also am using [zsh](http://www.zsh.org) as my shell with [prezto](https://github.com/sorin-ionescu/prezto) configuration. Here is how my prompt looks currently : 
 
