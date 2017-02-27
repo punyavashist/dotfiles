@@ -9,7 +9,7 @@ The most exciting thing in here is probably [how](https://my.mindnode.com/VvyDG2
 ![](http://i.imgur.com/Z29bOef.jpg)
 
 
-##[neovim](https://github.com/nikitavoloboev/dotfiles/tree/master/vim#modal-editing-is-)
+##[neovim 🌻](https://github.com/nikitavoloboev/dotfiles/tree/master/vim#modal-editing-is-)
 
 [Neovim](https://github.com/neovim/neovim) is a fork of vim that adds onto vim and that is what I use as my editor of choice for pretty much anything I code. I am still [learning](https://my.mindnode.com/dsyhczzfLsBAG4EpFt5TZnBYWAD9mfc9ms7nPMCz) but the this journey has been very rewarding.
 
