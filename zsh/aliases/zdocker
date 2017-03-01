@@ -1,7 +1,0 @@
-alias kc='docker compose' 
-alias kl='docker logs'
-alias klt='docker logs --tail 100'
-alias ks='docker ps'
-alias ksq='docker ps -q'
-alias kk='docker kill'
-

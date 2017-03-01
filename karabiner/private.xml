@@ -237,6 +237,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_DAYONE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: screenshot to day one"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_PASTE_SELECTED_TEXT_IN_ITERM</name>
   <url type="shell">
   osascript -e '
@@ -3841,6 +3852,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
+       KeyCode::T,
+          KeyCode::VK_OPEN_URL_ALFRED_WEATHER_TODAY
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
        KeyCode::F19,
           KeyCode::VK_OPEN_URL_ALFRED_SEARCH_FOLDERS
         </autogen>
@@ -3853,7 +3870,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::A,
+       KeyCode::S,
        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
         </autogen>
 
@@ -3991,7 +4008,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::K,
+       KeyCode::A,
        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_WORKFLOWS
         </autogen>
 
@@ -4898,12 +4915,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::C,
         KeyCode::VK_OPEN_URL_ALFRED_WIFI_CHECK
     </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::COMMAND_L,
-    KeyCode::VK_OPEN_URL_ALFRED_WEATHER_TODAY
-  </autogen>
 
   <autogen>
     __KeyToKey__
@@ -6203,6 +6214,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __BlockUntilKeyUp__ KeyCode::3,
     </autogen>
+
+        <autogen>
+          __KeyToKey__
+          KeyCode::F19,
+          KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_DAYONE
+        </autogen>
 
         <autogen>
           __KeyToKey__
@@ -9874,13 +9891,13 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: simultaneous hk = duckduckgo search</name>
+          <name>general: simultaneous hk = yandex</name>
       <identifier>private.sim_hk_duck_search</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::K,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_YANDEX_SEARCH
       </autogen>
   </item>
 

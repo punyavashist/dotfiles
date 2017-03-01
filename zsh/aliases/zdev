@@ -18,6 +18,14 @@ alias brs='browser-sync'
 #alias r2='python'
 alias rv='virtualenv -p /usr/local/bin/python3'
 
+# _docker
+alias kc='docker compose' 
+alias kl='docker logs'
+alias klt='docker logs --tail 100'
+alias ks='docker ps'
+alias ksq='docker ps -q'
+alias kk='docker kill'
+
 # _node 
 alias n='node'
 alias ndi='node install'

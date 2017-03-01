@@ -1,10 +1,11 @@
 # TODO: sort it into appropriate sections
 
 
-# _folder with a. prefix
-#function mda() {
- #   mkdir a.\ $1
-#}
+# _dev
+functin afl() {
+    alfred build
+    alfred link
+}
 
 function ma() {
     mkdir "$1" && cd "$1"

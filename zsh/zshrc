@@ -14,7 +14,6 @@ source ~/.dotfiles/zsh/aliases/zdev
 source ~/.dotfiles/zsh/aliases/zalias
 source ~/.dotfiles/zsh/aliases/zapp
 source ~/.dotfiles/zsh/aliases/zscripts
-source ~/.dotfiles/zsh/aliases/zdocker
 
 # autojump > cd
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh

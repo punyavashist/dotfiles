@@ -92,7 +92,7 @@ alias net="ping ya.ru | grep -E --only-match --color=never '[0-9\.]+ ms'"       
 alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r | head"
 
 # _brew 
-alias br='brew'
+alias b='brew'
 alias bl='brew list'
 alias bs='brew search'
 alias bi='brew install'
