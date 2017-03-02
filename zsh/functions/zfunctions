@@ -7,7 +7,7 @@ functin afl() {
     alfred link
 }
 
-function ma() {
+function md() {
     mkdir "$1" && cd "$1"
 }
 
@@ -22,18 +22,17 @@ function fw() {
     git commit -m $1
 }
 
-
 function ogg() {
     go get github.com/$@
 }
 
 
-# _see what aliases for key I have 
+# see what aliases for key I have 
 function fa() {
     alias | grep "^$1"
 }
 
-# _find where is text searched is contained
+# find where is text searched is contained
 function fl() {
     grep -rnw . -e "$*"
 }

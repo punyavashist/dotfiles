@@ -78,6 +78,7 @@ alias dbl='cd ~/oss/nikivi/hugo/content/post'
 
 # _config
 alias d..='cd ~/.config'
+alias dbi='cd ~/.dotfiles/bin/internets'
 alias dv='cd ~/.dotfiles/vim'
 alias d.='cd ~/.dotfiles'
 alias dsk='cd ~/Library/Application\ Support/Karabiner'

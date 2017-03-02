@@ -1,9 +1,16 @@
 # _dev
+
+# _general
+alias co='coala'
+alias jd='jid'
+
 #alias ss='python -m SimpleHTTPServer'
 alias ss='serve'
 alias sv='python3 -m http.server'
 
 alias nra='create-react-app'
+
+alias lic='legit'
 
 
 # _flask
@@ -19,6 +26,7 @@ alias brs='browser-sync'
 alias rv='virtualenv -p /usr/local/bin/python3'
 
 # _docker
+alias k='docker'
 alias kc='docker compose' 
 alias kl='docker logs'
 alias klt='docker logs --tail 100'
@@ -60,6 +68,7 @@ alias nr='npm run'
 
 # _go
 alias o='go'
+alias ot='playgo'
 alias or='go run'
 alias ov='go vet'
 alias og='go get'
@@ -73,5 +82,5 @@ alias mt='meteor'
 alias sw='swift'
 
 # _ruby
-alias r='ruby'
+alias rb='ruby'
 

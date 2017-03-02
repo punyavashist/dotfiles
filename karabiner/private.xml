@@ -1576,6 +1576,15 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_SEARCH_TEX_FILES</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "SearchTexFiles" in workflow "nikivi.search.files" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_COLOUR_PICKER</name>
   <url type="shell">
   osascript -e '
@@ -3852,6 +3861,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
+       KeyCode::F,
+          KeyCode::VK_OPEN_URL_SEARCH_TEX_FILES
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
        KeyCode::T,
           KeyCode::VK_OPEN_URL_ALFRED_WEATHER_TODAY
         </autogen>
@@ -3888,7 +3903,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::F,
+       KeyCode::C,
        KeyCode::VK_OPEN_URL_ALFRED_COLOUR_PICKER
         </autogen>
 
@@ -4197,7 +4212,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::O,
+      KeyCode::A,
       KeyCode::2, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
 		</autogen>
 
@@ -4283,12 +4298,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::M,
       KeyCode::E, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::A,
-      KeyCode::D, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 		</autogen>
 
         <autogen>
@@ -6411,6 +6420,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __BlockUntilKeyUp__ KeyCode::R,
     </autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::T,
+      KeyCode::VK_OPEN_URL_KM_OPEN_YNAB
+		</autogen>
 
         <autogen>
       __KeyToKey__

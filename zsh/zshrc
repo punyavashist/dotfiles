@@ -33,7 +33,3 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 # need it
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
-
-
-
