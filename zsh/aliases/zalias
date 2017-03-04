@@ -49,7 +49,7 @@ alias os='osascript'
 alias lt='ls -lart'
 alias aa='ls -lah'
 alias tp='type'
-alias cl='/usr/local/bin/m'
+#alias cl='/usr/local/bin/m'
 
 # _piping
 alias h2='head -n 2'

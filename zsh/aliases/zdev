@@ -3,6 +3,8 @@
 # _general
 alias co='coala'
 alias jd='jid'
+alias tm='task'
+alias rf='reflex'
 
 #alias ss='python -m SimpleHTTPServer'
 alias ss='serve'

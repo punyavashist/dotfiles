@@ -1,14 +1,13 @@
 # TODO: sort it into appropriate sections
 
-
 # _dev
 functin afl() {
     alfred build
     alfred link
 }
 
-function md() {
-    mkdir "$1" && cd "$1"
+function rfw() {
+    rf -g '*.go' alfred build
 }
 
 function tc() {
@@ -17,7 +16,7 @@ function tc() {
     nvim Cartfile
 }
 
-function fw() {
+function gw() {
     git add .
     git commit -m $1
 }
@@ -27,7 +26,6 @@ function ogg() {
 }
 
 
-# see what aliases for key I have 
 function fa() {
     alias | grep "^$1"
 }
@@ -37,11 +35,6 @@ function fl() {
     grep -rnw . -e "$*"
 }
 
-# _folder with k. prefix
-function mdk() {
-    mkdir k.\ $1
-}
-
 # taken folder as input, prefix it with a.
 function va() {
     mv $1 a.\ $1
@@ -49,12 +42,6 @@ function va() {
 
 # remove prefixes from folder
 rk() { [[ -z "$1" ]] && return; mv "$1" "${1##*. }"};
-
-# _test
-le() {ccat "$@" | less}
-
-# _edit readme with macdown
-# TODO: check if readme exists, if not create it, then edit
 
 
 # show current Finder directory.
@@ -66,7 +53,6 @@ function finder {
 EOF
 }
 
-# open xcode workspace
 xo(){ 
   if test -n "$(find . -maxdepth 1 -name '*.xcworkspace' -print -quit)"
   then
@@ -86,7 +72,6 @@ xo(){
 }
 
 
-# execute commands for each file in current directory.
 function each() {
   for dir in *; do
     # echo "${dir}:"
@@ -97,11 +82,8 @@ function each() {
 }
 
 
-# (f)ind by (n)ame
-# find all files containing given user's input in their name
 function fn() { ls **/*$1* }
 
-# ban npm if project uses yarn
 npm() {
 	if [ -f "yarn.lock" ]; then
 		echo "$(tput sgr 0 1)$(tput setaf 1)You should use Yarn for this project.$(tput sgr0)"
@@ -112,7 +94,6 @@ npm() {
 
 function fnd() { ls **/*$1*(/) }
 
-# download 
 function download(){
 curl -O "$1"
 }
@@ -121,30 +102,22 @@ function highlight(){
   highlight -O rtf $1 --font-size 25 --style solarized-dark -W -J 50 -j 3 --src-lang $2 | pbcopy
 }
 
-# copy to clipboard current working dir
 cwd() { printf %s "$PWD" | pbcopy; }
 
-# make a directory and go to it.
-function mD {
+function md {
   [[ -n "$1" ]] && mkdir -p "$1" && builtin cd "$1"
 }
 
 # change to a directory and list its contents
-function D {
+function da {
   builtin cd "$argv[-1]" && ls "${(@)argv[1,-2]}"
 }
 
-# finds files and executes a command on them
 function fex {
   find . -type f -iname "*${1:-}*" -exec "${2:-file}" '{}' \;
 }
 
-# create a new directory and enter it
-mde() {
-	mkdir -p "$@" && cd "$@"
-}
 
-# determine size of a file or total size of a directory
 fs() {
 	if du -b /dev/null > /dev/null 2>&1; then
 		local arg=-sbh
@@ -158,7 +131,6 @@ fs() {
 	fi
 }
 
-# start an http server from a directory, optionally specifying the port
 server() {
 	local port="${1:-8000}"
 	sleep 1 && open "http://localhost:${port}/" &
@@ -167,15 +139,10 @@ server() {
 	python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
 }
 
-# `te` is a shorthand for `tree` with hidden files and color enabled, ignoring
-# the `.git` directory, listing directories first, the output gets piped into
-# `less` with options to preserve color and line numbers, unless the output is
-# small enough for one screen.
 te() {
 	tree -aC -I '.git' --dirsfirst "$@" | less -FRNX
 }
 
-# call from a local repo to open the repository on github/bitbucket in browser
 repo() {
 	local giturl=$(git config --get remote.origin.url | sed 's/git@/\/\//g' | sed 's/.git$//' | sed 's/https://g' | sed 's/:/\//g')
 	if [[ $giturl == "" ]]; then
@@ -197,21 +164,6 @@ repo() {
 	fi
 }
 
-
-# get colors in manual pages
-man() {
-	env \
-		LESS_TERMCAP_mb=$(printf "\e[1;31m") \
-		LESS_TERMCAP_md=$(printf "\e[1;31m") \
-		LESS_TERMCAP_me=$(printf "\e[0m") \
-		LESS_TERMCAP_se=$(printf "\e[0m") \
-		LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
-		LESS_TERMCAP_ue=$(printf "\e[0m") \
-		LESS_TERMCAP_us=$(printf "\e[1;32m") \
-		man "$@"
-}
-
-# archive file or folder
   function compress()
   {
     dirPriorToExe=`pwd`
@@ -279,7 +231,6 @@ man() {
     echo "###########################################"
   }
 
-# extract archives - use: extract <file>
 function extract() {
   local remove_archive
   local success
@@ -348,9 +299,6 @@ shift
   done
 }
 
-# show how much RAM application uses.
-# $ ram safari
-# # => safari uses 154.69 MBs of RAM.
 function ram() {
   local sum
   local items

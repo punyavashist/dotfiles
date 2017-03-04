@@ -237,6 +237,28 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_DECREASE_YOUTUBE_PLAYBACK</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: decrease playback on youtube"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_INCREASE_YOUTUBE_PLAYBACK</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: increase playback on youtube"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_DAYONE</name>
   <url type="shell">
   osascript -e '
@@ -2184,7 +2206,7 @@ tell application "Alfred 3" to run trigger "searchPawFIles" in workflow "nikivi.
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "searchXcodeProjects" in workflow "nikivi.search.files" with argument ""
+tell application "Alfred 3" to run trigger "searchXcodeProjects" in workflow "com.sindresorhus.xcode" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4078,7 +4100,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::G,
-       KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
+       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE
         </autogen>
 
        <autogen>
@@ -6232,6 +6254,18 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
           __KeyToKey__
+          KeyCode::J,
+          KeyCode::VK_OPEN_URL_KM_DECREASE_YOUTUBE_PLAYBACK
+        </autogen>
+        
+        <autogen>
+          __KeyToKey__
+          KeyCode::K,
+          KeyCode::VK_OPEN_URL_KM_INCREASE_YOUTUBE_PLAYBACK
+        </autogen>
+
+        <autogen>
+          __KeyToKey__
           KeyCode::SPACE,
           KeyCode::8, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
         </autogen>
@@ -7240,6 +7274,24 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __BlockUntilKeyUp__ KeyCode::F,
     </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::1,
+       KeyCode::1, ModifierFlag::CONTROL_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::2,
+       KeyCode::2, ModifierFlag::CONTROL_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::3,
+       KeyCode::3, ModifierFlag::CONTROL_L
+        </autogen>
 
        <autogen>
        __KeyToKey__
