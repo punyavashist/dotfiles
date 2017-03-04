@@ -5516,7 +5516,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::T,
-      KeyCode::VK_OPEN_URL_KM_OPEN_SIMULATOR
+      KeyCode::VK_OPEN_URL_KM_OPEN_XCCELLO
 		</autogen>
 
         <autogen>
