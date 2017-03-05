@@ -1,7 +1,7 @@
 #[karabiner set-up](https://my.mindnode.com/VvyDG2X6u54FMSC5EExRGzozqyHqUG5gVM45QP9p)
 
-
 Karabiner has fundamentally changed the way I interact with my computer. I am no longer bounded by various shortcuts that you have to memorsie, instead every key on my keyboard is a modifier key. I have called these modifer keys **sticky keys**. Essentially I can make a key like 'a' that inserts a symbol a into a modifier key that can do whatever I want this key to do. This gives me a tremendous amount of power and freedom. 
+
 
 For reference I specify symbols as their unicode equivalents, so : 
 
@@ -16,7 +16,9 @@ For reference I specify symbols as their unicode equivalents, so :
 - ↩ = return
 
 
-The following is a list of all these awesome **sticky keys** that I personally use and love :
+The following is a list of all these awesome **sticky keys** that I personally use and love 
+
+- this is outdated, [updated documentation is a mind map](https://my.mindnode.com/aGPrpzjuxth5dqytYpTzts9PZWKMFydgGt1Sjddz)
 
 ##sticky caps lock (⇪)
 - q - [alfred search through safari bookmarks](https://gogs.deanishe.net/deanishe/alfred-safari-assistant)
