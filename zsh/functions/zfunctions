@@ -6,7 +6,7 @@ functin afl() {
     alfred link
 }
 
-function rfw() {
+function rfg() {
     rf -g '*.go' alfred build
 }
 

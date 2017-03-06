@@ -82,6 +82,61 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: reddit"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_MIT_COURSES</name>
+  <url type="shell">
+  osascript -e '
+  tell application "Keyboard Maestro Engine"
+  do script "w: mit opencourseware"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_FREECODECAMP</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: freecodecamp"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: quora"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_WAKATIME</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: wakatime"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_ALL_NOTIFICATIONS</name>
   <url type="shell">
   osascript -e '
@@ -5924,6 +5979,30 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __BlockUntilKeyUp__ KeyCode::C,
     </autogen>
+    
+    <autogen>
+        __KeyToKey__
+        KeyCode::U,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_SOUNDCLOUD
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::SLASH,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::E,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_MIT_COURSES
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::I,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_FREECODECAMP
+    </autogen>
 
     <autogen>
         __KeyToKey__
@@ -5935,6 +6014,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::F19,
       KeyCode::VK_OPEN_URL_KM_MINDNODE_SCREENSHOT_TABBED
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::W,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_WAKATIME
     </autogen>
 
     <autogen>
@@ -5952,7 +6037,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::J,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA
     </autogen>
 
     <autogen>
@@ -5963,13 +6048,19 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::SEMICOLON,
+        KeyCode::H,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_HCKR_NEWS
     </autogen>
 
     <autogen>
         __KeyToKey__
-        KeyCode::B,
+        KeyCode::SEMICOLON,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK_OVERFLOW
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::COMMA,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_FACEBOOK
     </autogen>
 
@@ -6381,7 +6472,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::I,
-      KeyCode::COMMA, ModifierFlag::SHIFT_L
+      KeyCode::F17
 		</autogen>
 
         <autogen>
