@@ -1653,6 +1653,15 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_UPDATE_GITHUB_INDEX</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "updateGitRepos" in workflow "me.lachlan.githubjump" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_SEARCH_TEX_FILES</name>
   <url type="shell">
   osascript -e '
@@ -2822,6 +2831,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     __BlockUntilKeyUp__
     KeyCode::SEMICOLON,
   </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::COMMAND_R,
+    KeyCode::ESCAPE,
+    KeyCode::W, ModifierFlag::COMMAND_L
+    </autogen>
 
   <autogen>
     __KeyToKey__
@@ -5988,7 +6004,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::SLASH,
+        KeyCode::COMMAND_R,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT
     </autogen>
 
@@ -7120,6 +7136,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         __KeyToKey__
         KeyCode::SPACE,
         KeyCode::F, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::M,
+        KeyCode::VK_OPEN_URL_ALFRED_UPDATE_GITHUB_INDEX
     </autogen>
 
        <autogen>
@@ -10049,7 +10071,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: simultaneous hk = yandex</name>
+          <name>general: sim hk = yandex</name>
       <identifier>private.sim_hk_duck_search</identifier>
         <autogen>
           __SimultaneousKeyPresses__
@@ -10060,13 +10082,13 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: simultaneous lm = safari bookmarks</name>
+          <name>general: sim lm = safari bookmarks</name>
       <identifier>private.sim_lm_bookmarks</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+          KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
       </autogen>
   </item>
 
@@ -10214,13 +10236,13 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: simultaneous :j = wiki</name>
+          <name>general: sim :j = wiki</name>
       <identifier>private.sim_:j_wiki</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::SEMICOLON, KeyCode::J,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
+          KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
       </autogen>
   </item>
 
@@ -10508,6 +10530,61 @@ __SimultaneousKeyPresses__
 KeyCode::J, KeyCode::P,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
+</autogen>
+</item>
+
+<item>
+<name>general: sim :space = dash</name>
+<identifier>private.sim_sem__dash</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::SEMICOLON, KeyCode::SPACE,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
+</autogen>
+</item>
+
+<item>
+<name>general: sim space j = dash</name>
+<identifier>private.sim_space_j_dash</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::J, KeyCode::SPACE,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
+</autogen>
+</item>
+
+<item>
+<name>general: sim space l = current tabs</name>
+<identifier>private.sim_space_l_curr_tabs</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::L, KeyCode::SPACE,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS
+</autogen>
+</item>
+
+<item>
+<name>general: sim space k = safari</name>
+<identifier>private.sim_space_k_saf</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::K, KeyCode::SPACE,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::E, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+</autogen>
+</item>
+
+<item>
+<name>general: sim space o = xcode</name>
+<identifier>private.sim_space_o_xcode</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::O, KeyCode::COMMAND_L,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE
 </autogen>
 </item>
 
