@@ -5,6 +5,7 @@ alias co='coala'
 alias jd='jid'
 alias tm='task'
 alias rf='reflex'
+alias kn='kubectl'
 
 #alias ss='python -m SimpleHTTPServer'
 alias ss='serve'

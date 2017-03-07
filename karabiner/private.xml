@@ -82,6 +82,72 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_HABRAHABR</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: habrahabr"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODEPEN</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: codepen"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_HACKERRANK</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: hackerrank"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_MEDIUM</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: medium"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_WIKI</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: wiki"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_PRODUCT_HUNT</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: product hunt"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES</name>
   <url type="shell">
   osascript -e '
@@ -5929,8 +5995,44 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::S,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_HABRAHABR
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::COMMAND_L,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::Z,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODEPEN
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::D,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_MEDIUM
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::QUOTE,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_HACKERRANK
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::A,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_WIKI
+    </autogen>
+    
+    <autogen>
+        __KeyToKey__
+        KeyCode::P,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_PRODUCT_HUNT
     </autogen>
 
     <autogen>
@@ -10538,7 +10640,18 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
 __SimultaneousKeyPresses__
 KeyCode::M, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
+</autogen>
+</item>
+
+<item>
+<name>general: sim space n = xcode</name>
+<identifier>private.sim_space_n_xcode</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::N, KeyCode::SPACE,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE
 </autogen>
 </item>
 
