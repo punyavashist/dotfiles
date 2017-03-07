@@ -6,7 +6,16 @@ functin afl() {
     alfred link
 }
 
-function rfg() {
+functon wa() {
+    cd "$1"
+    code .
+}
+
+function rfb() {
+    rf -g '*.rb' ruby main.rb
+}
+
+function rfw() {
     rf -g '*.go' alfred build
 }
 

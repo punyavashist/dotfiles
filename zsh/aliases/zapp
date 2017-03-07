@@ -6,7 +6,6 @@ alias x.='open -a Xcode .'
 #alias ae='open -a MacDown'
 alias ae='open -a MacDown readme.md'
 alias wt='open -a Atom'
-alias wa='subl'
 alias w='code'
 alias ww='code .'
 alias wr="open -a Marked\ 2"

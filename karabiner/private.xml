@@ -82,6 +82,28 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: reddit unread"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_HACKER_NEWS_NEW</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: hacker news new"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT</name>
   <url type="shell">
   osascript -e '
@@ -1648,6 +1670,60 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.workflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_CREATE_ARTIST_RADIO</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "createArtistRadio" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_CREATE_SONG_RADIO</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "createSongRadio" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_PLAY_ARTIST_OF_SONG</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "playArtistOfSong" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_PLAY_ALBUM_OF_CURRENT_SONG</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "playAlbumOfSong" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_PLAY_MY_LIKES_PLAYLIST</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "play_alfred_playlist" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_ADD_SONG_TO_PLAYLIST</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "addSongToPlaylist" in workflow "com.vdesabou.spotify.mini.player" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -5078,183 +5154,10 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::VK_OPEN_URL_KM_CREATE_NEW_CONTACT
     </autogen>
 
-
   </item>
 
 <item>
-    <name>mindnode: sticky v</name>
-    <identifier>private.launcher_mode_open_apps_v26</identifier>
-
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
-    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
-    <modifier_not>
-      ModifierFlag::COMMAND_L,
-      ModifierFlag::COMMAND_R,
-      ModifierFlag::CONTROL_L,
-      ModifierFlag::CONTROL_R,
-      ModifierFlag::FN,
-      ModifierFlag::OPTION_L,
-      ModifierFlag::OPTION_R,
-      ModifierFlag::SHIFT_L,
-      ModifierFlag::SHIFT_R,
-    </modifier_not>
-
-    <autogen>
-      __KeyOverlaidModifier__
-      KeyCode::V,
-
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
-      @begin
-      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v26, ModifierFlag::MY_LAUNCHER_MODE,
-      @end
-
-      @begin
-      KeyCode::V,
-      @end
-    </autogen>
-  </item>
-
-  <item hidden="true">
-    <identifier vk_config="true">notsave.private_launcher_mode_v26</identifier>
-
-    <autogen>
-      __BlockUntilKeyUp__ KeyCode::V,
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::SLASH,
-      KeyCode::V, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::L,
-      ConsumerKeyCode::MUSIC_NEXT
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::F19,
-      KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_MINDNODE
-    </autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::BACKQUOTE,
-       KeyCode::VK_OPEN_URL_ALFRED_DISPLAY_BRIGHTNESS
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::COMMAND_R,
-       KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
-        </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::SPACE,
-      KeyCode::A, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::H,
-      ConsumerKeyCode::MUSIC_PREV
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::DOT,
-        KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::COMMAND_L,
-        KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::K,
-        KeyCode::5, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
-    </autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::SEMICOLON,
-       KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::COMMA,
-       KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_PLAYLISTS
-        </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::J,
-        ConsumerKeyCode::VOLUME_MUTE
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::O,
-        ConsumerKeyCode::BRIGHTNESS_UP
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::I,
-        ConsumerKeyCode::BRIGHTNESS_DOWN
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::M,
-        ConsumerKeyCode::VOLUME_UP
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::N,
-        ConsumerKeyCode::VOLUME_DOWN
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::D,
-        ConsumerKeyCode::KEYBOARDLIGHT_OFF
-    </autogen>
-
-     <autogen>
-        __KeyToKey__
-        KeyCode::A,
-        KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller
-    </autogen>
-
-     <autogen>
-        __KeyToKey__
-        KeyCode::E,
-        ConsumerKeyCode::KEYBOARDLIGHT_LOW,
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::S,
-        ConsumerKeyCode::KEYBOARDLIGHT_HIGH
-    </autogen>
-
-  </item>
-
-<item>
-    <name>general: sticky v - media controls - NOT: MindNode</name>
-    <not>MINDNODE</not>
+    <name>general: sticky v - media controls</name>
     <identifier>private.launcher_mode_open_apps_v16</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -5295,17 +5198,41 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __BlockUntilKeyUp__ KeyCode::V,
     </autogen>
+    
+    <autogen>
+      __KeyToKey__
+      KeyCode::COMMAND_R,
+      KeyCode::VK_OPEN_URL_ALFRED_CREATE_SONG_RADIO
+    </autogen>
 
     <autogen>
       __KeyToKey__
       KeyCode::COMMA,
       KeyCode::V, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
+    
+    <autogen>
+      __KeyToKey__
+      KeyCode::B,
+      KeyCode::VK_OPEN_URL_ALFRED_PLAY_ALBUM_OF_CURRENT_SONG
+    </autogen>
 
     <autogen>
       __KeyToKey__
       KeyCode::SLASH,
-      KeyCode::V, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+      KeyCode::VK_OPEN_URL_ALFRED_PLAY_MY_LIKES_PLAYLIST
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::QUOTE,
+      KeyCode::VK_OPEN_URL_ALFRED_PLAY_MY_LIKES_PLAYLIST
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::SEMICOLON,
+      KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_ADD_SONG_TO_PLAYLIST
     </autogen>
 
     <autogen>
@@ -5322,14 +5249,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::COMMAND_L,
-       KeyCode::VK_OPEN_URL_ALFRED_DISPLAY_BRIGHTNESS
+       KeyCode::W,
+       KeyCode::VK_OPEN_URL_ALFRED_PLAY_ARTIST_OF_SONG
         </autogen>
 
        <autogen>
        __KeyToKey__
-       KeyCode::COMMAND_R,
-       KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
+       KeyCode::COMMAND_L,
+       KeyCode::VK_OPEN_URL_ALFRED_CREATE_ARTIST_RADIO
         </autogen>
 
     <autogen>
@@ -5352,8 +5279,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::SEMICOLON,
-       KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
+       KeyCode::1,
+       KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_ADD_SONG_TO_PLAYLIST
         </autogen>
 
        <autogen>
@@ -5406,7 +5333,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
      <autogen>
         __KeyToKey__
-        KeyCode::Z,
+        KeyCode::BACKQUOTE,
         ConsumerKeyCode::KEYBOARDLIGHT_LOW,
     </autogen>
 
@@ -5429,6 +5356,10 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       ModifierFlag::COMMAND_R,
       ModifierFlag::CONTROL_L,
       ModifierFlag::CONTROL_R,
+    <autogen>
+        __KeyToKey__
+        KeyCode::S,
+    </autogen>
       ModifierFlag::FN,
       ModifierFlag::OPTION_L,
       ModifierFlag::OPTION_R,
@@ -5994,6 +5925,18 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __BlockUntilKeyUp__ KeyCode::C,
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::COMMAND_L,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::B,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_HACKER_NEWS_NEW
     </autogen>
     
     <autogen>
@@ -10540,7 +10483,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
+KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
 </autogen>
 </item>
 
@@ -10582,9 +10525,20 @@ KeyCode::E, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
 <identifier>private.sim_space_o_xcode</identifier>
 <autogen>
 __SimultaneousKeyPresses__
-KeyCode::O, KeyCode::COMMAND_L,
+KeyCode::O, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
+</autogen>
+</item>
+
+<item>
+<name>general: sim space m = wiki</name>
+<identifier>private.sim_space_wiki</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::M, KeyCode::SPACE,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
 </autogen>
 </item>
 
