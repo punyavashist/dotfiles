@@ -82,6 +82,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_ALL</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: all reddit"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_HABRAHABR</name>
   <url type="shell">
   osascript -e '
@@ -4447,6 +4458,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::O,
+      KeyCode::2, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::A,
       KeyCode::2, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
 		</autogen>
@@ -5995,7 +6012,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::S,
+        KeyCode::OPTION_R,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_ALL
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::D,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_HABRAHABR
     </autogen>
 
@@ -6013,7 +6036,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::D,
+        KeyCode::S,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_MEDIUM
     </autogen>
 
@@ -10640,7 +10663,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
 __SimultaneousKeyPresses__
 KeyCode::M, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
 </autogen>
 </item>
 
@@ -10652,6 +10675,17 @@ __SimultaneousKeyPresses__
 KeyCode::N, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE
+</autogen>
+</item>
+
+<item>
+<name>general: sim space h = youtube</name>
+<identifier>private.sim_space_h_youtube</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::H, KeyCode::SPACE,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
 </autogen>
 </item>
 

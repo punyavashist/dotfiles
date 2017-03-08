@@ -7,7 +7,6 @@ alias tm='task'
 alias rf='reflex'
 alias kn='kubectl'
 
-#alias ss='python -m SimpleHTTPServer'
 alias ss='serve'
 alias sv='python3 -m http.server'
 
