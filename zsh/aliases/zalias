@@ -1,5 +1,7 @@
 # _general
 alias tl='tmux'
+alias pd='pandoc'
+alias yt='yotube-dl'
 alias r='trash'
 alias ca='carthage'
 alias cad='carthage update'
@@ -123,7 +125,7 @@ alias h="history"
 alias j="jobs"
 
 # _cli tools
-alias kb='/Applications/Karabiner.app/Contents/Library/bin/karabiner'
+alias kn='/Applications/Karabiner.app/Contents/Library/bin/karabiner'
 
 # _top
 alias cpu='top -o cpu'   # cpu

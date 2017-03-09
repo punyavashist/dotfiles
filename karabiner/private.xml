@@ -82,6 +82,28 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_JSFIDDLE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: jsfiddle"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_KAGGLE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: kaggle"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_ALL</name>
   <url type="shell">
   osascript -e '
@@ -1747,6 +1769,33 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.workflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SYNONYMS_SEARCH</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "synonymsSearch" in workflow "me.clarencecastillo.alfred-powerthesaurus" with argument "test"
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_WOLFRAM_ALPHA</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchWolframAlpha" in workflow "nikivi.search-the-web" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_AMINER</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "aminer" in workflow "nikivi.web-search" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4252,7 +4301,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::N,
-      KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
+      KeyCode::VK_OPEN_URL_ALFRED_SYNONYMS_SEARCH
 		</autogen>
 
        <autogen>
@@ -4324,7 +4373,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::G,
-       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE
+       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_WOLFRAM_ALPHA
         </autogen>
 
        <autogen>
@@ -4881,6 +4930,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::4,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_AMINER
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::C,
         KeyCode::VK_OPEN_URL_ALFRED_SUBREDDIT_SEARCHES
     </autogen>
@@ -4899,7 +4954,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::4,
+        KeyCode::S,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ARXIV
     </autogen>
 
@@ -5168,7 +5223,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::SPACE,
-      KeyCode::2, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+      KeyCode::U, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
 		</autogen>
 
     <autogen>
@@ -5475,11 +5530,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::B,
     </autogen>
 
-    <autogen>
-      __KeyToKey__
-      KeyCode::SPACE,
-      KeyCode::C, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-    </autogen>
+        <autogen>
+          __KeyToKey__
+          KeyCode::SPACE,
+        KeyCode::VK_OPEN_URL_KM_PASTE_SELECTED_TEXT_IN_ITERM
+        </autogen>
 
     <autogen>
       __KeyToKey__
@@ -6012,6 +6067,18 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::BACKQUOTE,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_JSFIDDLE
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::Q,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_KAGGLE
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::OPTION_R,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_ALL
     </autogen>
@@ -6268,11 +6335,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::TAB,
     </autogen>
 
-        <autogen>
-          __KeyToKey__
-          KeyCode::SPACE,
-        KeyCode::VK_OPEN_URL_KM_PASTE_SELECTED_TEXT_IN_ITERM
-        </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::SPACE,
+      KeyCode::C, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
 
   </item>
 
@@ -7326,6 +7395,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::F,
+      KeyCode::VK_OPEN_URL_KM_OPEN_SLACK
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::K,
       KeyCode::VK_OPEN_URL_KM_OPEN_TELEGRAM
 		</autogen>
@@ -7351,7 +7426,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::SEMICOLON,
-      KeyCode::VK_OPEN_URL_KM_OPEN_GITTER
+      KeyCode::VK_OPEN_URL_KM_OPEN_SLACK
 		</autogen>
 
         <autogen>
@@ -7368,7 +7443,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::F,
+      KeyCode::V,
       KeyCode::VK_OPEN_URL_KM_OPEN_DISCORD
 		</autogen>
 
@@ -9637,6 +9712,17 @@ KeyCode::DELETE, ModifierFlag::COMMAND_L
 </item>
 
 <item>
+<name>general: left cmd - search mindmap index</name>
+<identifier>private.left_cmd_mindmap_index</identifier>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::COMMAND_L,
+KeyCode::COMMAND_L,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE_CONTENT
+</autogen>
+</item>
+
+<item>
 <name>general: left shift - switch app</name>
 <identifier>private.left_shift_to_wm_mode</identifier>
 <autogen>
@@ -9746,7 +9832,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
       @end
 
       @begin
-      KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
+      KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE
       @end
     </autogen>
   </item>
@@ -10200,7 +10286,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::J, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE
+          KeyCode::VK_OPEN_URL_ALFRED_RESEARCH_WEB_LINKS
       </autogen>
   </item>
 
@@ -10211,7 +10297,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::K, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
       </autogen>
   </item>
 
@@ -10409,7 +10495,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_RESEARCH_WEB_LINKS
+          KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_GROUPS
       </autogen>
   </item>
 
@@ -10608,7 +10694,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
 </autogen>
 </item>
 

@@ -11,6 +11,14 @@ functon wa() {
     code .
 }
 
+function rfg() {
+    rf -g '*.go' go run main.go $1
+}
+
+function rfn() {
+    rf -g '*.js' node main.js
+}
+
 function rfb() {
     rf -g '*.rb' ruby main.rb
 }
