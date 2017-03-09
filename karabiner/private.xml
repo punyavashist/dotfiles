@@ -82,6 +82,39 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_AWESOME_LIST</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: awesome list"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODE_UNIVERSITY</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: coding interview university"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_PINBOARD</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: pinboard"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_JSFIDDLE</name>
   <url type="shell">
   osascript -e '
@@ -1774,10 +1807,37 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_GITHUB_DIR_WATCH</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "githubDirWatch" in workflow "com.vitorgalvao.alfred.recentdownloads" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_WATCH_PROJECTS_DIR</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "projectsDitWatch" in workflow "com.vitorgalvao.alfred.recentdownloads" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_DESKTOP_DIR_WATCH</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "desktopDirWatch" in workflow "com.vitorgalvao.alfred.recentdownloads" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SYNONYMS_SEARCH</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "synonymsSearch" in workflow "me.clarencecastillo.alfred-powerthesaurus" with argument "test"
+tell application "Alfred 3" to run trigger "synonymsSearch" in workflow "me.clarencecastillo.alfred-powerthesaurus" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4379,7 +4439,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::D,
-       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PDF
+       KeyCode::VK_OPEN_URL_ALFRED_DESKTOP_DIR_WATCH
         </autogen>
 
        <autogen>
@@ -4391,7 +4451,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::J,
-       KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
+       KeyCode::VK_OPEN_URL_ALFRED_GITHUB_DIR_WATCH
         </autogen>
 
        <autogen>
@@ -4403,7 +4463,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::H,
-       KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
+       KeyCode::VK_OPEN_URL_ALFRED_WATCH_PROJECTS_DIR
         </autogen>
 
       ]]>
@@ -6067,8 +6127,26 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::2,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_AWESOME_LIST
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::3,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODE_UNIVERSITY
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::BACKQUOTE,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_JSFIDDLE
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::SLASH,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_PINBOARD
     </autogen>
 
     <autogen>
