@@ -1807,6 +1807,24 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_PIP_PACKAGES</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "packages" in workflow "nikivi.web-search" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_PINBOARD_TOPICS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "pinboardTopics" in workflow "nikivi.web-search" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_GITHUB_DIR_WATCH</name>
   <url type="shell">
   osascript -e '
@@ -1973,15 +1991,6 @@ tell application "Alfred 3" to run trigger "javaProjects" in workflow "com.codeb
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "searchSecureShell" in workflow "net.deanishe.alfred-ssh" with argument ""
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LECTURES</name>
-  <url type="shell">
-  osascript -e '
-tell application "Alfred 3" to run trigger "findLectures" in workflow "nikivi.web-search" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4990,7 +4999,25 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::4,
+        KeyCode::TAB,
+        KeyCode::VK_OPEN_URL_ALFRED_PIP_PACKAGES
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::6,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_AMINER
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::S,
+        KeyCode::VK_OPEN_URL_ALFRED_PINBOARD_TOPICS
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::6,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_AMINER
     </autogen>
 
@@ -5008,13 +5035,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::J,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LECTURES
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::S,
+        KeyCode::B,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ARXIV
     </autogen>
 
@@ -5044,7 +5065,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::V,
+        KeyCode::4,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_KM_FORUM
     </autogen>
 
@@ -5134,7 +5155,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::B,
+        KeyCode::V,
         KeyCode::VK_OPEN_URL_SEARCH_TWITTER
     </autogen>
 
