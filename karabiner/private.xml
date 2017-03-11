@@ -82,6 +82,28 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_8000</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: 8000"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOBSTERS</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: lobsters"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_AWESOME_LIST</name>
   <url type="shell">
   osascript -e '
@@ -5429,6 +5451,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::COMMA,
       KeyCode::V, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
+
+        <autogen>
+          __KeyToKey__
+          KeyCode::SPACE,
+        KeyCode::VK_OPEN_URL_KM_PASTE_SELECTED_TEXT_IN_ITERM
+        </autogen>
     
     <autogen>
       __KeyToKey__
@@ -5478,11 +5506,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::VK_OPEN_URL_ALFRED_CREATE_ARTIST_RADIO
         </autogen>
 
-    <autogen>
-      __KeyToKey__
-      KeyCode::SPACE,
-      KeyCode::A, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-    </autogen>
 
     <autogen>
       __KeyToKey__
@@ -5611,11 +5634,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::B,
     </autogen>
 
-        <autogen>
-          __KeyToKey__
-          KeyCode::SPACE,
-        KeyCode::VK_OPEN_URL_KM_PASTE_SELECTED_TEXT_IN_ITERM
-        </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::SPACE,
+      KeyCode::A, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
 
     <autogen>
       __KeyToKey__
@@ -6148,6 +6171,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::BACKQUOTE,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOBSTERS
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::2,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_AWESOME_LIST
     </autogen>
@@ -6160,7 +6189,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::BACKQUOTE,
+        KeyCode::4,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_JSFIDDLE
     </autogen>
 
@@ -7377,6 +7406,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::M,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_8000
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::DOT,
         KeyCode::VK_OPEN_URL_ALFRED_UPDATE_GITHUB_INDEX
     </autogen>
 
@@ -10341,7 +10376,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
       </autogen>
   </item>
 

@@ -49,6 +49,7 @@ alias ir='yarn run'
 alias ii='yarn install'
 alias ie='yarn remove'
 alias ig='yarn global add'
+alias is='yarn start'
 
 # _heroku
 alias he='heroku'
