@@ -468,6 +468,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_VLC</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: vlc"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_DECREASE_YOUTUBE_PLAYBACK</name>
   <url type="shell">
   osascript -e '
@@ -3342,47 +3353,28 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     KeyCode::M, ModifierFlag::SHIFT_L
   </autogen>
 
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::4,
-    KeyCode::4, ModifierFlag::SHIFT_L
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::5,
-    KeyCode::5, ModifierFlag::SHIFT_L
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::6,
-    KeyCode::6, ModifierFlag::SHIFT_L
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::7,
-    KeyCode::7, ModifierFlag::SHIFT_L
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::8,
-    KeyCode::8, ModifierFlag::SHIFT_L
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::9,
-    KeyCode::9, ModifierFlag::SHIFT_L
-  </autogen>
-
   <autogen>
     __KeyToKey__
     KeyCode::SLASH,
     KeyCode::SLASH, ModifierFlag::SHIFT_L
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::1,
+    KeyCode::O, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::2,
+    KeyCode::P, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::3,
+    KeyCode::I, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
   </autogen>
 
   <autogen>
@@ -5395,6 +5387,36 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::VK_OPEN_URL_KM_CREATE_NEW_CONTACT
     </autogen>
 
+    <autogen>
+        __KeyToKey__
+        KeyCode::1,
+        KeyCode::1, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::2,
+        KeyCode::2, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::3,
+        KeyCode::3, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::4,
+        KeyCode::4, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::5,
+        KeyCode::5, ModifierFlag::CONTROL_L
+    </autogen>
+
   </item>
 
 <item>
@@ -5760,7 +5782,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::T,
-      KeyCode::VK_OPEN_URL_KM_OPEN_XCCELLO
+      KeyCode::VK_OPEN_URL_KM_OPEN_SIMULATOR
 		</autogen>
 
         <autogen>
@@ -5851,12 +5873,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     __KeyToKey__
       KeyCode::COMMAND_R,
       KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH
-    </autogen>
-
-    <autogen>
-    __KeyToKey__
-      KeyCode::COMMAND_L,
-      KeyCode::VK_OPEN_URL_KM_OPEN_PAW
     </autogen>
 
     <autogen>
@@ -6826,6 +6842,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __BlockUntilKeyUp__ KeyCode::R,
     </autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::V,
+      KeyCode::VK_OPEN_URL_KM_OPEN_VLC
+		</autogen>
 
         <autogen>
       __KeyToKey__
@@ -10442,7 +10464,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::N,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
       </autogen>
   </item>
 
@@ -10828,7 +10850,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PODS
 </autogen>
 </item>
 
@@ -10895,6 +10917,17 @@ __SimultaneousKeyPresses__
 KeyCode::N, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE
+</autogen>
+</item>
+
+<item>
+<name>general: sim space i = youtube</name>
+<identifier>private.sim_space_i_youtube</identifier>
+<autogen>
+__SimultaneousKeyPresses__
+KeyCode::I, KeyCode::SPACE,
+KeyCode::VK_LOCK_ALL_FORCE_OFF,
+KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
 </autogen>
 </item>
 
