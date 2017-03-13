@@ -4525,7 +4525,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       @end
 
       @begin
-      KeyCode::SLASH,
+      KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
       @end
     </autogen>
   </item>
@@ -5699,9 +5699,9 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     </autogen>
 
     <autogen>
-      __KeyToKey__
-      KeyCode::J,
-      KeyCode::J, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+        __KeyToKey__
+        KeyCode::J,
+        KeyCode::VK_OPEN_URL_KM_TEST
     </autogen>
 
     <autogen>
@@ -5781,7 +5781,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::T,
+      KeyCode::R,
       KeyCode::VK_OPEN_URL_KM_OPEN_SIMULATOR
 		</autogen>
 
@@ -5817,7 +5817,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::R,
+        KeyCode::T,
         KeyCode::VK_OPEN_URL_KM_OPEN_XCCELLO
     </autogen>
 
@@ -6663,7 +6663,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
 
 <item>
-		<name>general: sticky g - symbols</name>
+		<name>general: sticky g - wm</name>
 		<identifier>private.launcher_mode_open_apps_v11</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -6706,15 +6706,15 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     </autogen>
 
     <autogen>
-        __KeyToKey__
-        KeyCode::F19,
-        KeyCode::6, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+      __KeyToKey__
+      KeyCode::J,
+      KeyCode::J, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
     </autogen>
 
     <autogen>
         __KeyToKey__
-        KeyCode::J,
-        KeyCode::VK_OPEN_URL_KM_TEST
+        KeyCode::F19,
+        KeyCode::6, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
     <autogen>
@@ -6738,8 +6738,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::L,
+        KeyCode::U,
         KeyCode::VK_OPEN_URL_HAMMERSPOON_TESTER
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::L,
+      KeyCode::L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
     </autogen>
 
        <autogen>
@@ -6768,15 +6774,15 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::I,
+      KeyCode::O,
       KeyCode::F17
 		</autogen>
 
-        <autogen>
+    <autogen>
       __KeyToKey__
-      KeyCode::O,
-      KeyCode::DOT, ModifierFlag::SHIFT_L
-		</autogen>
+      KeyCode::H,
+      KeyCode::H, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+    </autogen>
 
         <autogen>
       __KeyToKey__
@@ -6787,8 +6793,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::K,
+        KeyCode::I,
         KeyCode::F18
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::K,
+      KeyCode::K, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
     </autogen>
 
     <autogen>
@@ -10464,7 +10476,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::N,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
+          KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS
       </autogen>
   </item>
 
