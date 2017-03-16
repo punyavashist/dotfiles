@@ -5013,7 +5013,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::TAB,
+        KeyCode::DOT,
         KeyCode::VK_OPEN_URL_ALFRED_PIP_PACKAGES
     </autogen>
 
@@ -5057,12 +5057,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         __KeyToKey__
         KeyCode::Q,
         KeyCode::VK_OPEN_URL_ALFRED_QUORA_SEARCH
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::DOT,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
     </autogen>
 
     <autogen>
