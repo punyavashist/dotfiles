@@ -82,6 +82,28 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK_REAL_TIME</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: stack real time"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK_EXCHANGE_HOT</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: stack exchange hot"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_8000</name>
   <url type="shell">
   osascript -e '
@@ -6181,8 +6203,32 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::0,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_KM_FORUM
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::9,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_ALFRED_FORUM
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::BACKQUOTE,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOBSTERS
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::R,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK_REAL_TIME
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::E,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK_EXCHANGE_HOT
     </autogen>
 
     <autogen>
@@ -6283,7 +6329,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::E,
+        KeyCode::1,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_MIT_COURSES
     </autogen>
 
@@ -7160,6 +7206,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     __KeyToKey__
     KeyCode::B,
     KeyCode::VK_OPEN_URL_KM_INSERT_TODO
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::Y,
+    KeyCode::6, ModifierFlag::SHIFT_L
   </autogen>
 
   <autogen>
@@ -10404,7 +10456,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+          KeyCode::E, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
       </autogen>
   </item>
 
@@ -10426,7 +10478,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::L,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
+          KeyCode::E, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
       </autogen>
   </item>
 
