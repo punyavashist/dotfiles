@@ -82,6 +82,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_TRENDING</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: github trending"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK_REAL_TIME</name>
   <url type="shell">
   osascript -e '
@@ -484,6 +495,17 @@
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "a: lowercase selected text"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_SELECTED_TEXT_TO_ANKI</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: selected text to anki"
     end tell
     '
   </url>
@@ -1862,6 +1884,24 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_AWESOME_LIST</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchAwesome" in workflow "com.maruware.awesome" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SUBREDDITS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchRedditSubreddits" in workflow "net.deanishe.alfred-reddit" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_PIP_PACKAGES</name>
   <url type="shell">
   osascript -e '
@@ -2082,15 +2122,6 @@ tell application "Alfred 3" to run trigger "eggTimerStart" in workflow "carlosnz
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "openArchive" in workflow "com.fniephaus.pocket" with argument "in:archive "
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_SUBREDDIT_SEARCHES</name>
-  <url type="shell">
-  osascript -e '
-tell application "Alfred 3" to run trigger "subredditSearches" in workflow "nikivi.search-the-web" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -2665,14 +2696,6 @@ tell application "Alfred 3" to run trigger "cleanFolders" in workflow "nikivi.cl
   </url>
 </vkopenurldef>
 
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SUBREDDITS</name>
-  <url type="shell">
-  osascript -e '
-tell application "Alfred 3" to run trigger "searchRedditSubreddits" in workflow "net.deanishe.alfred-reddit" with argument ""
-    '
-  </url>
-</vkopenurldef>
 
 <vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_DICTIONARY_SEARCH</name>
@@ -4478,7 +4501,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::G,
-       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_WOLFRAM_ALPHA
+       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_AWESOME_LIST
         </autogen>
 
        <autogen>
@@ -4609,6 +4632,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __BlockUntilKeyUp__ KeyCode::SPACE,
     </autogen>
+    
+        <autogen>
+      __KeyToKey__
+      KeyCode::F19,
+      KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_ANKI
+		</autogen>
 
         <autogen>
       __KeyToKey__
@@ -4972,21 +5001,21 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-      KeyCode::M,
-      KeyCode::CURSOR_RIGHT
- </autogen>
-
-    <autogen>
-        __KeyToKey__
       KeyCode::V,
       KeyCode::VK_OPEN_URL_HAMMERSPOON_TESTER
  </autogen>
 
-    <autogen>
-      __KeyToKey__
-      KeyCode::N,
-      KeyCode::CURSOR_LEFT
- </autogen>
+        <autogen>
+          __KeyToKey__
+          KeyCode::N,
+          KeyCode::VK_OPEN_URL_KM_DECREASE_YOUTUBE_PLAYBACK
+        </autogen>
+        
+        <autogen>
+          __KeyToKey__
+          KeyCode::M,
+          KeyCode::VK_OPEN_URL_KM_INCREASE_YOUTUBE_PLAYBACK
+        </autogen>
 
   </item>
 
@@ -5059,8 +5088,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::C,
-        KeyCode::VK_OPEN_URL_ALFRED_SUBREDDIT_SEARCHES
+        KeyCode::W,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_WOLFRAM_ALPHA
     </autogen>
 
     <autogen>
@@ -5131,7 +5160,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::W,
+        KeyCode::C,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MEDIUM
     </autogen>
 
@@ -5803,6 +5832,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
+      KeyCode::H,
+      KeyCode::VK_OPEN_URL_KM_OPEN_ANKI
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::D,
       KeyCode::VK_OPEN_URL_KM_OPEN_SUBLIME_TEXT
 		</autogen>
@@ -6203,6 +6238,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::R,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_TRENDING
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::0,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_KM_FORUM
     </autogen>
@@ -6221,7 +6262,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::R,
+        KeyCode::TAB,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK_REAL_TIME
     </autogen>
 
@@ -6626,7 +6667,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
           __KeyToKey__
           KeyCode::SPACE,
-        KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L
+        KeyCode::O, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
         </autogen>
 
   </item>
@@ -6747,6 +6788,18 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __KeyToKey__
+      KeyCode::A,
+      KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+    </autogen>
+    
+    <autogen>
+      __KeyToKey__
+      KeyCode::Z,
+      KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
       KeyCode::J,
       KeyCode::J, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
     </autogen>
@@ -6766,7 +6819,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::SPACE,
-        KeyCode::O, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+        KeyCode::VK_OPEN_URL_KM_SELECTED_TEXT_TO_ANKI
     </autogen>
 
     <autogen>
@@ -6845,7 +6898,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::A,
+        KeyCode::S,
         KeyCode::VK_OPEN_URL_ALFRED_DISMISS_NOTIFICATIONS
     </autogen>
 
@@ -7200,6 +7253,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     KeyCode::M,
     KeyCode::DOT,
     KeyCode::SLASH
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::H,
+    KeyCode::6, ModifierFlag::SHIFT_L
   </autogen>
 
   <autogen>
@@ -10941,7 +11000,7 @@ KeyCode::VK_OPEN_URL_ALFRED_CHROME_CANARY_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::E, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+  KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 </autogen>
 </item>
 
