@@ -82,6 +82,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_PINBOARD_RECENT</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: pinboard recent"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_TRENDING</name>
   <url type="shell">
   osascript -e '
@@ -6238,6 +6249,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::SHIFT_L,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_PINBOARD_RECENT
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::R,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_TRENDING
     </autogen>
@@ -6268,7 +6285,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::E,
+        KeyCode::B,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK_EXCHANGE_HOT
     </autogen>
 
@@ -6352,7 +6369,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::B,
+        KeyCode::E,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_HACKER_NEWS_NEW
     </autogen>
     
@@ -6412,7 +6429,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::J,
+        KeyCode::K,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA
     </autogen>
 
@@ -6454,7 +6471,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
-        KeyCode::K,
+        KeyCode::J,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_KHAN_ACADEMY
     </autogen>
 
@@ -9985,6 +10002,17 @@ KeyCode::DELETE, ModifierFlag::COMMAND_L
 </item>
 
 <item>
+<name>general: left control - test</name>
+<identifier>private.left_control_mindmap_index</identifier>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::CONTROL_L,
+KeyCode::CONTROL_L,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE_CONTENT
+</autogen>
+</item>
+
+<item>
 <name>general: left cmd - search mindmap index</name>
 <identifier>private.left_cmd_mindmap_index</identifier>
 <autogen>
@@ -10127,6 +10155,12 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
         __KeyToKey__
         KeyCode::OPTION_R,
         KeyCode::3, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::4,
+        KeyCode::4, ModifierFlag::OPTION_L
     </autogen>
 
     <autogen>
@@ -11091,5 +11125,4 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
           PointingButton::LEFT, ModifierFlag::OPTION_L
       </autogen>
   </item>
-
 </root>
