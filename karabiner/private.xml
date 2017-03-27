@@ -10002,17 +10002,6 @@ KeyCode::DELETE, ModifierFlag::COMMAND_L
 </item>
 
 <item>
-<name>general: left control - test</name>
-<identifier>private.left_control_mindmap_index</identifier>
-<autogen>
-__KeyOverlaidModifier__
-KeyCode::CONTROL_L,
-KeyCode::CONTROL_L,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE_CONTENT
-</autogen>
-</item>
-
-<item>
 <name>general: left cmd - search mindmap index</name>
 <identifier>private.left_cmd_mindmap_index</identifier>
 <autogen>
