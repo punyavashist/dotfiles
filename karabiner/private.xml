@@ -4595,6 +4595,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
       <autogen>
           __KeyToKey__
+          KeyCode::M,
+KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+      </autogen>
+
+      <autogen>
+          __KeyToKey__
           KeyCode::A,
           KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SKYTORRENT
       </autogen>
@@ -4672,12 +4678,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::COMMAND_R,
       KeyCode::SPACE, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::L,
-      KeyCode::VK_OPEN_URL_ALFRED_TOGGL_PROJECTS
 		</autogen>
 
         <autogen>
@@ -4819,12 +4819,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::VK_OPEN_URL_KM_RESET_BITBAR_TODO
     </autogen>
 
-    <autogen>
-      __KeyToKey__
-      KeyCode::N,
-      KeyCode::VK_OPEN_URL_ALFRED_TOGGL_REPORTS
-    </autogen>
-
   </item>
 
 
@@ -4925,7 +4919,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>general: sticky dot - emoji</name>
+    <name>general: sticky dot - productivity</name>
     <identifier>private.launcher_mode_open_apps_v20</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -4969,33 +4963,63 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
          __KeyToKey__
+         KeyCode::SPACE,
+         KeyCode::E, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+     </autogen>
+
+       <autogen>
+         __KeyToKey__
          KeyCode::V,
          KeyCode::VK_OPEN_URL_KM_SEND_YELLOW_STAR_EMOJI
      </autogen>
 
        <autogen>
          __KeyToKey__
-         KeyCode::G,
-         KeyCode::VK_OPEN_URL_KM_SEND_SEARCH_EMOJI
+        KeyCode::D,
+         KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
      </autogen>
 
        <autogen>
          __KeyToKey__
-         KeyCode::F,
-         KeyCode::VK_OPEN_URL_KM_SEND_SPARKLES_EMOJI
+        KeyCode::S,
+         KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
      </autogen>
+
+       <autogen>
+         __KeyToKey__
+        KeyCode::E,
+         KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW
+     </autogen>
+     
+       <autogen>
+         __KeyToKey__
+        KeyCode::W,
+         KeyCode::VK_OPEN_URL_ALFRED_TIMER_START
+     </autogen>
+
+       <autogen>
+         __KeyToKey__
+         KeyCode::A,
+         KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TODO_TASK
+     </autogen>
+
+       <autogen>
+         __KeyToKey__
+         KeyCode::G,
+         KeyCode::VK_OPEN_URL_ALFRED_ACTIVATE_FOCUS
+     </autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::F,
+      KeyCode::VK_OPEN_URL_ALFRED_NEW_BITBAR_TASK
+		</autogen>
 
        <autogen>
          __KeyToKey__
          KeyCode::K,
          KeyCode::TAB, ModifierFlag::COMMAND_L,
          KeyCode::COMMAND_L,
-     </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::A,
-      KeyCode::VK_OPEN_URL_KM_SEND_DOG_FACE_EMOJI
      </autogen>
 
     <autogen>
@@ -5018,15 +5042,33 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
           __KeyToKey__
-          KeyCode::N,
+          KeyCode::J,
           KeyCode::VK_OPEN_URL_KM_DECREASE_YOUTUBE_PLAYBACK
         </autogen>
         
         <autogen>
           __KeyToKey__
-          KeyCode::M,
+          KeyCode::K,
           KeyCode::VK_OPEN_URL_KM_INCREASE_YOUTUBE_PLAYBACK
         </autogen>
+
+      <autogen>
+          __KeyToKey__
+          KeyCode::M,
+KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+      </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::B,
+      KeyCode::VK_OPEN_URL_ALFRED_TOGGL_REPORTS
+    </autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::N,
+      KeyCode::VK_OPEN_URL_ALFRED_TOGGL_PROJECTS
+		</autogen>
 
   </item>
 
@@ -5237,6 +5279,18 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::SHIFT_L,
+        KeyCode::VK_OPEN_URL_ALFRED_MULTI_SITE_LIST_FILTER
+    </autogen>
+
+       <autogen>
+         __KeyToKey__
+         KeyCode::F19,
+         KeyCode::E, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+     </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::R,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_REDDIT
     </autogen>
@@ -5277,12 +5331,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
      KeyCode::COMMAND_R,
      KeyCode::VK_OPEN_URL_ALFRED_GITHUB_CODE_ISSUES_SEARCH
  </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::F19,
-        KeyCode::VK_OPEN_URL_ALFRED_MULTI_SITE_LIST_FILTER
-    </autogen>
 
   </item>
 
@@ -7963,9 +8011,15 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::RETURN, ModifierFlag::OPTION_L
        </autogen>
 
+       <autogen>
+         __KeyToKey__
+         KeyCode::E,
+         KeyCode::3, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+     </autogen>
+
     <autogen>
         __KeyToKey__
-        KeyCode::E,
+        KeyCode::D,
         KeyCode::EQUAL, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
     </autogen>
 
@@ -7973,12 +8027,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::J,
       KeyCode::DELETE
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::D,
-      KeyCode::7, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
 
     <autogen>
@@ -10148,6 +10196,12 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 
     <autogen>
         __KeyToKey__
+        KeyCode::5,
+        KeyCode::5, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::4,
         KeyCode::4, ModifierFlag::OPTION_L
     </autogen>
@@ -10984,7 +11038,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
 </item>
 
 <item>
-<name>general: sim :space = dash</name>
+<name>general: sim space : = dash</name>
 <identifier>private.sim_sem__dash</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -11023,7 +11077,7 @@ KeyCode::VK_OPEN_URL_ALFRED_CHROME_CANARY_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-  KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 </autogen>
 </item>
 
