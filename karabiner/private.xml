@@ -1895,6 +1895,24 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_DESKTOP_CLEAN</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "cleanDesktop" in workflow "nikivi.clean.folders" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_BOOKMARKS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchSafariBookmarks" in workflow "com.alfredapp.andrew.safari" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_AWESOME_LIST</name>
   <url type="shell">
   osascript -e '
@@ -4581,7 +4599,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       @end
 
       @begin
-      KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+      KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS
       @end
     </autogen>
   </item>
@@ -6007,6 +6025,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       __KeyToKey__
       KeyCode::O,
       KeyCode::VK_OPEN_URL_KM_OPEN_KEYBOARD_MAESTRO
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::C,
+      KeyCode::VK_OPEN_URL_KM_OPEN_SUBLIME_TEXT
     </autogen>
 
     <autogen>
@@ -7629,6 +7653,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
        __KeyToKey__
        KeyCode::O,
        KeyCode::VK_OPEN_URL_KM_OPEN_KARABINER_PREFERENCES
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::A,
+       KeyCode::VK_OPEN_URL_ALFRED_DESKTOP_CLEAN
         </autogen>
 
        <autogen>
@@ -10592,7 +10622,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::E, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
       </autogen>
   </item>
 
@@ -10746,7 +10776,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::SEMICOLON, KeyCode::J,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_BOOKMARKS
       </autogen>
   </item>
 
@@ -10801,7 +10831,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::SEMICOLON, KeyCode::N,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_DICTIONARY_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS
       </autogen>
   </item>
 
@@ -11044,7 +11074,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
 </autogen>
 </item>
 

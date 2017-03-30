@@ -1,29 +1,4 @@
 " --------------------------------------
-" _rules
-" --------------------------------------
-" 1. 
-" don't copy, use any line that I don't fully understand 
-" that is what _testing is for, once I understand it well, I can move it to the
-" appropriate part of my config
-"                                           
-" 2. 
-" everything is structured into their appopriate parts, I use _ symbol to
-" signify some main part in my code that I want to search for, this vimrc
-" included
-"
-" 3.
-" read :h help for the commands in question, then search on internet, then
-" ask on irc
-" 
-" 4. 
-" going along with point 1, add comments to the commands and plugins I download
-" to document in my own words what its purpose is in my vimrc
-"
-" TODO: make macro that will take highlighted Plug '' text and open github
-" page with that plugin
-"
-
-" --------------------------------------
 "  _testing
 " --------------------------------------
 

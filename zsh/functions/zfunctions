@@ -119,7 +119,7 @@ function highlight(){
   highlight -O rtf $1 --font-size 25 --style solarized-dark -W -J 50 -j 3 --src-lang $2 | pbcopy
 }
 
-cwd() { printf %s "$PWD" | pbcopy; }
+cw() { printf %s "$PWD" | pbcopy; }
 
 function md {
   [[ -n "$1" ]] && mkdir -p "$1" && builtin cd "$1"
