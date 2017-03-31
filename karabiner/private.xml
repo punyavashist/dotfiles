@@ -512,6 +512,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_GODOC</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: godoc"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_SELECTED_TEXT_TO_ANKI</name>
   <url type="shell">
   osascript -e '
@@ -1038,6 +1049,28 @@
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "open: transmission"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_SCRIPT_DEBUGGER</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: script debugger"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_SCRIPT_EDITOR</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: script editor"
     end tell
     '
   </url>
@@ -4981,12 +5014,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
        <autogen>
          __KeyToKey__
-         KeyCode::SPACE,
-         KeyCode::E, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
-     </autogen>
-
-       <autogen>
-         __KeyToKey__
          KeyCode::V,
          KeyCode::VK_OPEN_URL_KM_SEND_YELLOW_STAR_EMOJI
      </autogen>
@@ -6030,7 +6057,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __KeyToKey__
       KeyCode::C,
-      KeyCode::VK_OPEN_URL_KM_OPEN_SUBLIME_TEXT
+      KeyCode::VK_OPEN_URL_KM_OPEN_SCRIPT_DEBUGGER
     </autogen>
 
     <autogen>
@@ -6484,7 +6511,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::W,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_WAKATIME
+        KeyCode::VK_OPEN_URL_KM_GODOC
     </autogen>
 
     <autogen>
