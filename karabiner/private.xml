@@ -1928,6 +1928,15 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_FOCUS_FOR_40_MIN</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "focusFor40" in workflow "nikivi.block.websites" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_DESKTOP_CLEAN</name>
   <url type="shell">
   osascript -e '
@@ -4961,11 +4970,127 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       __BlockUntilKeyUp__ KeyCode::COMMA,
     </autogen>
 
-      <autogen>
-          __KeyToKey__
-          KeyCode::A,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SKYTORRENT
-      </autogen>
+        <autogen>
+      __KeyToKey__
+      KeyCode::B,
+      KeyCode::VK_OPEN_URL_ALFRED_BATTERY
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::T,
+      KeyCode::VK_OPEN_URL_ALFRED_FORCE_EMPTY_TRASH
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::L,
+      KeyCode::VK_OPEN_URL_ALFRED_OPEN_LYRICS_FOR_SPOTIFY_ITUNES_SONG
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::BACKQUOTE,
+      KeyCode::F6, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::Z,
+      KeyCode::VK_OPEN_URL_KM_LIKE_AND_SAVE_CURRENT_UNSPLASH_WALLPAPER
+		</autogen>
+
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::W,
+      KeyCode::VK_OPEN_URL_ALFRED_TOGGLE_WIFI
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::SPACE,
+      KeyCode::U, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+		</autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::C,
+        KeyCode::VK_OPEN_URL_ALFRED_WIFI_CHECK
+    </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::COMMAND_R,
+    KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::K,
+    KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::A,
+    KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::SEMICOLON,
+    KeyCode::VK_OPEN_URL_ALFRED_UNINSTALL_WITH_CLEANMYMAC
+  </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::N,
+        KeyCode::VK_OPEN_URL_ALFRED_NEW_IOS_PLAYGROUND
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::E,
+       KeyCode::VK_OPEN_URL_ALFRED_RESTART_WIFI
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::Q,
+       KeyCode::VK_OPEN_URL_ALFRED_RESTART_WIFI
+    </autogen>
+
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::1,
+        KeyCode::1, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::2,
+        KeyCode::2, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::3,
+        KeyCode::3, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::4,
+        KeyCode::4, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::5,
+        KeyCode::5, ModifierFlag::CONTROL_L
+    </autogen>
 
   </item>
 
@@ -5380,7 +5505,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
   </item>
 
 <item>
-    <name>general: sticky m - handy utils</name>
+    <name>general: sticky m - productivity</name>
     <identifier>private.launcher_mode_open_apps_v17</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -5422,149 +5547,77 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       __BlockUntilKeyUp__ KeyCode::M,
     </autogen>
 
-        <autogen>
-      __KeyToKey__
-      KeyCode::B,
-      KeyCode::VK_OPEN_URL_ALFRED_BATTERY
-		</autogen>
+       <autogen>
+         __KeyToKey__
+        KeyCode::V,
+         KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
+     </autogen>
 
-        <autogen>
-      __KeyToKey__
-      KeyCode::T,
-      KeyCode::VK_OPEN_URL_ALFRED_FORCE_EMPTY_TRASH
-		</autogen>
+       <autogen>
+         __KeyToKey__
+        KeyCode::L,
+         KeyCode::VK_OPEN_URL_ALFRED_FOCUS_FOR_40_MIN
+     </autogen>
 
-        <autogen>
-      __KeyToKey__
-      KeyCode::L,
-      KeyCode::VK_OPEN_URL_ALFRED_OPEN_LYRICS_FOR_SPOTIFY_ITUNES_SONG
-		</autogen>
+       <autogen>
+         __KeyToKey__
+        KeyCode::S,
+         KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
+     </autogen>
+
+       <autogen>
+         __KeyToKey__
+        KeyCode::E,
+         KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW
+     </autogen>
 
         <autogen>
       __KeyToKey__
       KeyCode::BACKQUOTE,
-      KeyCode::F6, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::Z,
-      KeyCode::VK_OPEN_URL_KM_LIKE_AND_SAVE_CURRENT_UNSPLASH_WALLPAPER
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::F19,
       KeyCode::F3, ModifierFlag::COMMAND_L
 		</autogen>
+     
+       <autogen>
+         __KeyToKey__
+        KeyCode::W,
+         KeyCode::VK_OPEN_URL_ALFRED_TIMER_START
+     </autogen>
+
+       <autogen>
+         __KeyToKey__
+         KeyCode::A,
+         KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TODO_TASK
+     </autogen>
+
+       <autogen>
+         __KeyToKey__
+         KeyCode::G,
+         KeyCode::VK_OPEN_URL_ALFRED_ACTIVATE_FOCUS
+     </autogen>
 
         <autogen>
       __KeyToKey__
-      KeyCode::W,
-      KeyCode::VK_OPEN_URL_ALFRED_TOGGLE_WIFI
+      KeyCode::F,
+      KeyCode::VK_OPEN_URL_ALFRED_NEW_BITBAR_TASK
 		</autogen>
+
+      <autogen>
+          __KeyToKey__
+          KeyCode::SPACE,
+        KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+      </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::B,
+      KeyCode::VK_OPEN_URL_ALFRED_TOGGL_REPORTS
+    </autogen>
 
         <autogen>
       __KeyToKey__
-      KeyCode::SPACE,
-      KeyCode::U, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+      KeyCode::N,
+      KeyCode::VK_OPEN_URL_ALFRED_TOGGL_PROJECTS
 		</autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::C,
-        KeyCode::VK_OPEN_URL_ALFRED_WIFI_CHECK
-    </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::COMMAND_R,
-    KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::K,
-    KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::A,
-    KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::SEMICOLON,
-    KeyCode::VK_OPEN_URL_ALFRED_UNINSTALL_WITH_CLEANMYMAC
-  </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::N,
-        KeyCode::VK_OPEN_URL_ALFRED_NEW_IOS_PLAYGROUND
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::E,
-       KeyCode::VK_OPEN_URL_ALFRED_RESTART_WIFI
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::Q,
-       KeyCode::VK_OPEN_URL_ALFRED_RESTART_WIFI
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::S,
-        KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::D,
-        KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE_FILE
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::F,
-        KeyCode::VK_OPEN_URL_KM_CREATE_NEW_CONTACT
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::1,
-        KeyCode::1, ModifierFlag::CONTROL_L
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::2,
-        KeyCode::2, ModifierFlag::CONTROL_L
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::3,
-        KeyCode::3, ModifierFlag::CONTROL_L
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::4,
-        KeyCode::4, ModifierFlag::CONTROL_L
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::5,
-        KeyCode::5, ModifierFlag::CONTROL_L
-    </autogen>
 
   </item>
 
@@ -5759,7 +5812,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
   </item>
 
 <item>
-    <name>general: sticky b - window control</name>
+    <name>general: sticky b - scripts</name>
     <identifier>private.launcher_mode_open_apps_v13</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -5812,6 +5865,24 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     </autogen>
 
     <autogen>
+        __KeyToKey__
+        KeyCode::J,
+        KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::K,
+        KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE_FILE
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::L,
+        KeyCode::VK_OPEN_URL_KM_CREATE_NEW_CONTACT
+    </autogen>
+
+    <autogen>
       __KeyToKey__
       KeyCode::M,
       KeyCode::F4, ModifierFlag::COMMAND_L
@@ -5834,24 +5905,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       KeyCode::I,
       KeyCode::H, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 		</autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::L,
-      KeyCode::L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::K,
-      KeyCode::K, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::J,
-        KeyCode::VK_OPEN_URL_KM_TEST
-    </autogen>
 
     <autogen>
       __KeyToKey__
@@ -7103,7 +7156,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         <autogen>
       __KeyToKey__
       KeyCode::G,
-      KeyCode::VK_OPEN_URL_KM_LAST_TIME
+      KeyCode::VK_OPEN_URL_KM_OPEN_SPOTIFY
 		</autogen>
 
         <autogen>
@@ -10715,7 +10768,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::N,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS
+          KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
       </autogen>
   </item>
 
@@ -11134,7 +11187,7 @@ KeyCode::VK_OPEN_URL_ALFRED_CHROME_CANARY_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
 </autogen>
 </item>
 
