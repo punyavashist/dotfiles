@@ -1877,6 +1877,7 @@
   </vkopenurldef>
 
   <vkopenurldef>
+      <background/>
     <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_CLIPBOARD_CONTENT</name>
     <url>hammerspoon://showClipBoardContent</url>
   </vkopenurldef>
@@ -5549,7 +5550,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
        <autogen>
          __KeyToKey__
-        KeyCode::V,
+        KeyCode::D,
          KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
      </autogen>
 
@@ -5893,18 +5894,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       KeyCode::C,
       KeyCode::F11, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
     </autogen>
-
-            <autogen>
-      __KeyToKey__
-      KeyCode::O,
-      KeyCode::L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
-		</autogen>
-
-                <autogen>
-      __KeyToKey__
-      KeyCode::I,
-      KeyCode::H, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
-		</autogen>
 
     <autogen>
       __KeyToKey__
@@ -6960,6 +6949,18 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       KeyCode::A,
       KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::R,
+      KeyCode::4, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::E,
+      KeyCode::5, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+    </autogen>
     
     <autogen>
       __KeyToKey__
@@ -7034,11 +7035,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         KeyCode::F12, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
     </autogen>
 
-        <autogen>
-      __KeyToKey__
-      KeyCode::O,
-      KeyCode::F17
-		</autogen>
 
     <autogen>
       __KeyToKey__
@@ -7053,11 +7049,18 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       KeyCode::SLASH
 		</autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::I,
-        KeyCode::F18
-    </autogen>
+
+            <autogen>
+      __KeyToKey__
+      KeyCode::O,
+      KeyCode::L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+		</autogen>
+
+                <autogen>
+      __KeyToKey__
+      KeyCode::I,
+      KeyCode::H, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+		</autogen>
 
     <autogen>
       __KeyToKey__
@@ -10304,6 +10307,18 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
         KeyCode::3, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
     </autogen>
 
+        <autogen>
+      __KeyToKey__
+      KeyCode::O,
+      KeyCode::F17
+		</autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::I,
+        KeyCode::F18
+    </autogen>
+
     <autogen>
         __KeyToKey__
         KeyCode::5,
@@ -10691,7 +10706,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::K,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_YANDEX_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
       </autogen>
   </item>
 
