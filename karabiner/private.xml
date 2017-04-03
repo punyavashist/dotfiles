@@ -82,6 +82,50 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA_ANSWER</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: quora answer"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_SLACK</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: slack"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_TOP_NEW</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: reddit top new"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_MOZILLA_DEV</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: mozilla dev"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_PINBOARD_RECENT</name>
   <url type="shell">
   osascript -e '
@@ -148,11 +192,11 @@
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_AWESOME_LIST</name>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_COURSERA</name>
   <url type="shell">
   osascript -e '
     tell application "Keyboard Maestro Engine"
-    do script "w: awesome list"
+    do script "w: coursera"
     end tell
     '
   </url>
@@ -4970,11 +5014,17 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __BlockUntilKeyUp__ KeyCode::COMMA,
     </autogen>
+    
+        <autogen>
+      __KeyToKey__
+      KeyCode::A,
+      KeyCode::VK_OPEN_URL_KM_DECREASE_YOUTUBE_PLAYBACK
+		</autogen>
 
         <autogen>
       __KeyToKey__
-      KeyCode::B,
-      KeyCode::VK_OPEN_URL_ALFRED_BATTERY
+      KeyCode::S,
+      KeyCode::VK_OPEN_URL_KM_INCREASE_YOUTUBE_PLAYBACK
 		</autogen>
 
         <autogen>
@@ -5029,12 +5079,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
   <autogen>
     __KeyToKey__
     KeyCode::K,
-    KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::A,
     KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller
   </autogen>
 
@@ -6390,13 +6434,37 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
+        KeyCode::D,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_SLACK
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::D,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_SLACK
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::V,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_MOZILLA_DEV
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::BACKQUOTE,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_TOP_NEW
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::SHIFT_L,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_PINBOARD_RECENT
     </autogen>
 
     <autogen>
         __KeyToKey__
-        KeyCode::R,
+        KeyCode::QUOTE,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_TRENDING
     </autogen>
 
@@ -6414,7 +6482,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
-        KeyCode::BACKQUOTE,
+        KeyCode::DANISH_DOLLAR,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOBSTERS
     </autogen>
 
@@ -6433,7 +6501,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::2,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_AWESOME_LIST
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_COURSERA
     </autogen>
 
     <autogen>
@@ -6457,19 +6525,13 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::Q,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_KAGGLE
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA_ANSWER
     </autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::OPTION_R,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_ALL
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::D,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_HABRAHABR
     </autogen>
 
     <autogen>
@@ -6488,12 +6550,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         __KeyToKey__
         KeyCode::S,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_MEDIUM
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::QUOTE,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_HACKERRANK
     </autogen>
 
     <autogen>
@@ -11125,7 +11181,7 @@ KeyCode::VK_OPEN_URL_ALFRED_JAVA_PROJECTS_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::H,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
+KeyCode::VK_OPEN_URL_ALFRED_YANDEX_SEARCH
 </autogen>
 </item>
 
