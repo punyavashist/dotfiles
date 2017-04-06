@@ -1973,6 +1973,24 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MUSIC_WEB</name>
+  <url type="shell">
+  osascript -e '
+  tell application "Alfred 3" to run trigger "searchMusic" in workflow "nikivi.web-search" with argument "" 
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_BING</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchBing" in workflow "net.deanishe.alfred-searchio" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_FOCUS_FOR_40_MIN</name>
   <url type="shell">
   osascript -e '
@@ -5197,7 +5215,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
        <autogen>
          __KeyToKey__
         KeyCode::S,
-         KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
+         KeyCode::VK_OPEN_URL_KM_INCREASE_YOUTUBE_PLAYBACK
      </autogen>
 
        <autogen>
@@ -5215,7 +5233,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
        <autogen>
          __KeyToKey__
          KeyCode::A,
-         KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TODO_TASK
+         KeyCode::VK_OPEN_URL_KM_DECREASE_YOUTUBE_PLAYBACK
      </autogen>
 
        <autogen>
@@ -5328,6 +5346,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
       __BlockUntilKeyUp__ KeyCode::N,
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::X,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MUSIC_WEB
     </autogen>
 
     <autogen>
@@ -6452,7 +6476,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
-        KeyCode::BACKQUOTE,
+        KeyCode::COMMAND_L,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_TOP_NEW
     </autogen>
 
@@ -6578,7 +6602,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
-        KeyCode::COMMAND_R,
+        KeyCode::BACKQUOTE,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT
     </autogen>
 
@@ -7950,7 +7974,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
         <autogen>
       __KeyToKey__
-      KeyCode::V,
+      KeyCode::E,
       KeyCode::VK_OPEN_URL_KM_OPEN_DISCORD
 		</autogen>
 
@@ -10762,7 +10786,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::K,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_YANDEX_SEARCH
       </autogen>
   </item>
 
@@ -10773,7 +10797,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
       </autogen>
   </item>
 
@@ -10795,7 +10819,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::L,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::E, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
       </autogen>
   </item>
 
@@ -10839,7 +10863,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::N,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
       </autogen>
   </item>
 
@@ -10916,7 +10940,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::SEMICOLON, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
+          KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
       </autogen>
   </item>
 
@@ -11181,7 +11205,7 @@ KeyCode::VK_OPEN_URL_ALFRED_JAVA_PROJECTS_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::H,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_YANDEX_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
 </autogen>
 </item>
 
