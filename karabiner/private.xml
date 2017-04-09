@@ -10721,7 +10721,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
   <item>
-      <name>scroller: simultaneous jk = google</name>
+      <name>scroller: sim jk = google</name>
       <identifier>private.sim_jk_google_scroller</identifier>
 
  <autogen>
@@ -10741,19 +10741,19 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::COMMA, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
     </autogen>
   </item>
 
   <item>
-      <name>general: simultaneous jk = google</name>
+      <name>general: sim jk = google</name>
       <identifier>private.sim_jk_google</identifier>
 
  <autogen>
           __SimultaneousKeyPresses__
           KeyCode::J, KeyCode::K,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE
+          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
     </autogen>
   </item>
 
@@ -11205,7 +11205,7 @@ KeyCode::VK_OPEN_URL_ALFRED_JAVA_PROJECTS_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::H,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
+KeyCode::VK_OPEN_URL_ALFRED_AMAZON_SEARCH
 </autogen>
 </item>
 
