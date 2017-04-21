@@ -1,6 +1,6 @@
 # [my configuration files for macOS](https://my.mindnode.com/RtzZgV6UUoBuyJeHykxa5sEAqpJpuptfunbGG8u4)
 
-![](http://i.imgur.com/lRi9KTE.png)
+![](http://i.imgur.com/vB7YyvZ.png)
 
 ## [karabiner ⌨](https://my.mindnode.com/aGPrpzjuxth5dqytYpTzts9PZWKMFydgGt1Sjddz)
 
