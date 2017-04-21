@@ -8,7 +8,6 @@ The most exciting thing in here is probably how I utilise [Karabiner](https://pq
 
 ## [neovim 🌻](https://my.mindnode.com/QKK41ixhzhCk64Bss2xsvAssL7j79HDKdY1TsNd5)
 
-![](http://i.imgur.com/NV4d8B9.png)
 
 I am [still learning vim](https://my.mindnode.com/dsyhczzfLsBAG4EpFt5TZnBYWAD9mfc9ms7nPMCz) but the this journey has been very rewarding. Modal editing is pretty amazing. I also very often use VS Code since it also has very well built [vim mode](https://github.com/VSCodeVim/Vim).
 
@@ -18,8 +17,6 @@ I don't use [hammerspoon](http://www.hammerspoon.org/) as extensively however I 
 
 
 ## [zsh 🐚](https://my.mindnode.com/jGwmewTqeqrXyRkupzgqqVD2zC7yTczxwgw5QTCq)
-
-![](http://i.imgur.com/Wubu2YN.jpg)
 
 I also am using [zsh](http://www.zsh.org) as my shell with [prezto](https://github.com/sorin-ionescu/prezto) configuration. Here is how my prompt looks currently : 
 

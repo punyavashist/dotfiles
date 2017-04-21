@@ -5,7 +5,7 @@ alias yt='yotube-dl'
 alias r='trash'
 alias ca='carthage'
 alias cad='carthage update'
-alias af='alfred'
+alias alf='alfred'
 alias ta='touch readme.md'
 alias s='sudo'
 # TODO: fk alias to run last cmd as sudo instantly

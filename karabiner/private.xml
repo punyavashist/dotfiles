@@ -81,6 +81,18 @@
   </url>
 </vkopenurldef>
 
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_TOGGL_WEEK_REVIEW</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: toggl week"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
 <vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA_ANSWER</name>
   <url type="shell">
@@ -4787,6 +4799,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
         <autogen>
       __KeyToKey__
+      KeyCode::N,
+      KeyCode::VK_OPEN_URL_ALFRED_TOGGL_REPORTS
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::A,
       KeyCode::2, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
 		</autogen>
@@ -6458,8 +6476,8 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
-        KeyCode::D,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_SLACK
+        KeyCode::X,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_WAKATIME
     </autogen>
 
     <autogen>
@@ -6537,7 +6555,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::4,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_JSFIDDLE
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_MIT_COURSES
     </autogen>
 
     <autogen>
@@ -6609,7 +6627,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::1,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_MIT_COURSES
+        KeyCode::VK_OPEN_URL_KM_OPEN_TOGGL_WEEK_REVIEW
     </autogen>
 
     <autogen>
@@ -10797,7 +10815,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
+          KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
       </autogen>
   </item>
 
@@ -10984,7 +11002,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::COMMAND_R, KeyCode::SEMICOLON,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
       </autogen>
   </item>
 
@@ -11205,7 +11223,7 @@ KeyCode::VK_OPEN_URL_ALFRED_JAVA_PROJECTS_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::H,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_AMAZON_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
 </autogen>
 </item>
 
@@ -11249,7 +11267,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
+KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
 </autogen>
 </item>
 
@@ -11304,7 +11322,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
 __SimultaneousKeyPresses__
 KeyCode::M, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_TOGGL_REPORTS
 </autogen>
 </item>
 
