@@ -37,7 +37,7 @@ alias ksq='docker ps -q'
 alias kk='docker kill'
 
 # _node 
-alias n='node'
+alias nd='node'
 alias ndi='node install'
 alias n.='node .'
 
@@ -46,7 +46,7 @@ alias i='yarn'
 alias it='yarn init'
 alias ia='yarn add'
 alias ir='yarn run'
-alias ii='yarn install'
+alias ii='yarn add'
 alias ie='yarn remove'
 alias ig='yarn global add'
 alias is='yarn start'
@@ -59,7 +59,7 @@ alias ra='pip install'
 
 
 # _npm - depracated
-alias nn='npm'
+alias n='npm'
 alias ni='npm install'
 alias ns='npm start'
 alias nls='npm ls'

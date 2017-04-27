@@ -1111,6 +1111,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI_TECHNOLOGY_PREVIEW</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: safari technology preview"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_SCRIPT_DEBUGGER</name>
   <url type="shell">
   osascript -e '
@@ -1985,6 +1996,24 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_MORE_LIST_FILTER</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchContentOfMoreMindMaps" in workflow "nikivi.research" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MORE_MINDMAPS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchMoreNode" in workflow "nikivi.research" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDMAP_IMAGES</name>
   <url type="shell">
   osascript -e '
@@ -2215,15 +2244,6 @@ tell application "Alfred 3" to run trigger "SearchTexFiles" in workflow "nikivi.
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "colourPicker" in workflow "tylereich.colors" with argument ""
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALL_MINDMAPS</name>
-  <url type="shell">
-  osascript -e '
-tell application "Alfred 3" to run trigger "allMindMaps" in workflow "nikivi.research" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -6077,6 +6097,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
         <autogen>
       __KeyToKey__
+      KeyCode::U,
+      KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI_TECHNOLOGY_PREVIEW
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::R,
       KeyCode::VK_OPEN_URL_KM_OPEN_SIMULATOR
 		</autogen>
@@ -7603,8 +7629,8 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
   <autogen>
     __KeyToKey__
     KeyCode::L,
-    KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
     KeyCode::EQUAL,
+    KeyCode::DOT, ModifierFlag::SHIFT_L,
     KeyCode::SPACE
   </autogen>
 
@@ -8007,6 +8033,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
        __KeyToKey__
       KeyCode::M,
       KeyCode::VK_OPEN_URL_KM_OPEN_CHATTY
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::V,
+      KeyCode::VK_OPEN_URL_KM_OPEN_DISCORD
 		</autogen>
 
         <autogen>
@@ -9613,6 +9645,24 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
        <autogen>
          __KeyToKey__
+         KeyCode::9,
+         KeyCode::9, ModifierFlag::CONTROL_L
+       </autogen>
+
+       <autogen>
+         __KeyToKey__
+         KeyCode::8,
+         KeyCode::8, ModifierFlag::CONTROL_L
+       </autogen>
+
+       <autogen>
+         __KeyToKey__
+         KeyCode::7,
+         KeyCode::7, ModifierFlag::CONTROL_L
+       </autogen>
+
+       <autogen>
+         __KeyToKey__
          KeyCode::6,
          KeyCode::6, ModifierFlag::CONTROL_L
        </autogen>
@@ -10840,7 +10890,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
       </autogen>
   </item>
 
@@ -11093,7 +11143,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALL_MINDMAPS
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MORE_MINDMAPS
       </autogen>
   </item>
 
@@ -11120,13 +11170,13 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim ou = spotify</name>
+          <name>general: sim ou = more mind maps</name>
       <identifier>private.sim_ou_spotify</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::U, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
+          KeyCode::VK_OPEN_URL_ALFRED_MORE_LIST_FILTER
       </autogen>
   </item>
 
@@ -11176,7 +11226,7 @@ KeyCode::VK_CONFIG_TOGGLE_notsave_ubiq_vimnormal,
 </item>
 
 <item>
-<name>general: sim l + rcmd = spotify current track</name>
+<name>general: sim lrcmd = spotify current track</name>
 <identifier>private.sim_rcmd_current_track</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -11292,7 +11342,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
 </autogen>
 </item>
 
