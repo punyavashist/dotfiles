@@ -43,10 +43,10 @@ alias n.='node .'
 
 # _yarn
 alias i='yarn'
+alias ii='yarn install'
 alias it='yarn init'
 alias ia='yarn add'
 alias ir='yarn run'
-alias ii='yarn add'
 alias ie='yarn remove'
 alias ig='yarn global add'
 alias is='yarn start'

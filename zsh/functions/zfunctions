@@ -11,6 +11,12 @@ functon wa() {
     code .
 }
 
+function ggi() {
+    git init
+    git add .
+    git commit -m "🌅"
+}
+
 function rfg() {
     rf -g '*.go' go run main.go $1
 }
