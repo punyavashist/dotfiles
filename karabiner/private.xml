@@ -182,17 +182,6 @@
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_8000</name>
-  <url type="shell">
-  osascript -e '
-    tell application "Keyboard Maestro Engine"
-    do script "w: 8000"
-    end tell
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOBSTERS</name>
   <url type="shell">
   osascript -e '
@@ -5686,6 +5675,36 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
        <autogen>
          __KeyToKey__
+        KeyCode::1,
+         KeyCode::1, ModifierFlag::CONTROL_L
+     </autogen>
+
+       <autogen>
+         __KeyToKey__
+        KeyCode::2,
+         KeyCode::2, ModifierFlag::CONTROL_L
+     </autogen>
+
+       <autogen>
+         __KeyToKey__
+        KeyCode::3,
+         KeyCode::3, ModifierFlag::CONTROL_L
+     </autogen>
+
+       <autogen>
+         __KeyToKey__
+        KeyCode::4,
+         KeyCode::4, ModifierFlag::CONTROL_L
+     </autogen>
+
+       <autogen>
+         __KeyToKey__
+        KeyCode::5,
+         KeyCode::5, ModifierFlag::CONTROL_L
+     </autogen>
+
+       <autogen>
+         __KeyToKey__
         KeyCode::D,
          KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
      </autogen>
@@ -5840,7 +5859,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __KeyToKey__
       KeyCode::SEMICOLON,
-      KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_ADD_SONG_TO_PLAYLIST
+      KeyCode::VK_OPEN_URL_KM_INCREASE_YOUTUBE_PLAYBACK
     </autogen>
 
     <autogen>
@@ -7100,6 +7119,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
       __KeyToKey__
+      KeyCode::W,
+      KeyCode::6, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
       KeyCode::A,
       KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
@@ -7715,7 +7740,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         <autogen>
       __KeyToKey__
       KeyCode::TAB,
-      KeyCode::8, ModifierFlag::SHIFT_L
+      KeyCode::4, ModifierFlag::SHIFT_L
 		</autogen>
 
         <autogen>
@@ -7871,7 +7896,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::M,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_8000
+        KeyCode::VK_OPEN_URL_KM_TEST
     </autogen>
 
     <autogen>
@@ -7883,7 +7908,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
        <autogen>
        __KeyToKey__
        KeyCode::SEMICOLON,
-       KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L
+       KeyCode::VK_OPEN_URL_KM_INCREASE_YOUTUBE_PLAYBACK
         </autogen>
 
        <autogen>

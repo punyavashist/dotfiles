@@ -96,6 +96,7 @@ alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r 
 
 # _brew 
 alias b='brew'
+alias bf='brew info'
 alias bci='brew cask install'
 alias bt='brew audit --strict'
 alias bl='brew list'
@@ -106,6 +107,8 @@ alias bdoc='brew doctor'
 alias bcl='brew cask list'
 alias bui='brew uninstall'
 alias ba='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
+
+# _brew service
 alias bss='brew services start'
 alias bsl='brew services list'
 alias bst='brew services stop'
