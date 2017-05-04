@@ -81,6 +81,28 @@
   </url>
 </vkopenurldef>
 
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: stack"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_SOURCEGRAPH</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: sourcegraph"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
 
 <vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_TOGGL_WEEK_REVIEW</name>
@@ -1996,31 +2018,23 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_MORE_LIST_FILTER</name>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_PERSONAL_RESEARCH_MINDMAPS</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "searchContentOfMoreMindMaps" in workflow "nikivi.research" with argument ""
+tell application "Alfred 3" to run trigger "personalResearch" in workflow "nikivi.research" with argument ""
     '
   </url>
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MORE_MINDMAPS</name>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALL_MINDMAPS</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "searchMoreNode" in workflow "nikivi.research" with argument ""
+tell application "Alfred 3" to run trigger "searchAll" in workflow "nikivi.research" with argument ""
     '
   </url>
 </vkopenurldef>
 
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDMAP_IMAGES</name>
-  <url type="shell">
-  osascript -e '
-tell application "Alfred 3" to run trigger "searchImages" in workflow "nikivi.research" with argument ""
-    '
-  </url>
-</vkopenurldef>
 
 <vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LEARNING_MINDMAPS</name>
@@ -5594,7 +5608,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::G,
-        KeyCode::VK_OPEN_URL_ALFRED_GITHUB
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_HACKER_NEWS
     </autogen>
 
     <autogen>
@@ -5696,6 +5710,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         KeyCode::4,
          KeyCode::4, ModifierFlag::CONTROL_L
      </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::SEMICOLON,
+    KeyCode::VK_OPEN_URL_ALFRED_UNINSTALL_WITH_CLEANMYMAC
+  </autogen>
 
        <autogen>
          __KeyToKey__
@@ -6641,8 +6661,8 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
-        KeyCode::Q,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA_ANSWER
+        KeyCode::J,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK
     </autogen>
 
     <autogen>
@@ -6785,8 +6805,8 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
-        KeyCode::J,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_KHAN_ACADEMY
+        KeyCode::Q,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT
     </autogen>
 
     <autogen>
@@ -10965,7 +10985,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::K, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDMAP_IMAGES
+          KeyCode::VK_OPEN_URL_ALFRED_PERSONAL_RESEARCH_MINDMAPS
       </autogen>
   </item>
 
@@ -11185,7 +11205,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MORE_MINDMAPS
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALL_MINDMAPS
       </autogen>
   </item>
 
@@ -11218,7 +11238,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::U, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_MORE_LIST_FILTER
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALL_MINDMAPS
       </autogen>
   </item>
 
