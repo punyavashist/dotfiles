@@ -1,30 +1,27 @@
 # _aliases for opening files with vim
 
 # _main
-alias ee='nvim .'
-alias er='nvim readme.md'
+alias ee='nvim .'                 # current dir
+alias er='nvim readme.md'         
 alias ei='nvim index.js'
 alias egi='nvim .gitignore'
 alias ej='nvim package.json'
 
 # _config
-alias ea='nvim ~/.dotfiles/zsh/aliases/zalias'
-alias ejj='nvim ~/.dotfiles/intellij/ideavimrc'
-alias ez='nvim ~/.dotfiles/zsh/zshrc'
-alias eze='nvim ~/.dotfiles/zsh/aliases/zvim'
-alias ezk='nvim ~/.dotfiles/zsh/aliases/zcd'
-alias ek='nvim ~/Library/Application\ Support/Karabiner/private.xml'
-alias ezz='nvim ~/.zprofile'
-alias ew='nvim ~/.dotfiles/vim/nvim/nvimrc +30'
-alias ef='nvim ~/.dotfiles/zsh/functions/zfunctions'
-alias ehs='nvim ~/.dotfiles/hammerspoon/init.lua'
-alias ezd='nvim ~/.dotfiles/zsh/aliases/zdev'
-alias ezg='nvim ~/.dotfiles/zsh/aliases/zgit'
-alias eza='nvim ~/.dotfiles/zsh/aliases/zapp'
-alias ezs='nvim ~/.dotfiles/zsh/aliases/zscripts'
-alias ezv='nvim ~/.dotfiles/zsh/dev/zenv'
-alias ezo='nvim ~/.dotfiles/zsh/aliases/zdocker'
-alias et='nvim ~/.dotfiles/tmux/tmux.conf.local'
-alias ezb='nvim ~/.dotfiles/zsh/zsh/zbindings'
-alias ehsa='nvim ~/.hammerspoon/private/awesomeconfig.lua'
-alias evs='nvim ~/Library/Application\ Support/Code/User/settings.json'
+alias ea='nvim ~/.dotfiles/zsh/aliases/zalias'                # alias
+alias ejj='nvim ~/.dotfiles/intellij/ideavimrc'               # idea
+alias ez='nvim ~/.dotfiles/zsh/zshrc'                         # zshrc
+alias eze='nvim ~/.dotfiles/zsh/aliases/zvim'                 # goto vim
+alias ezk='nvim ~/.dotfiles/zsh/aliases/zcd'                  # goto cd
+alias ek='nvim ~/Library/Application\ Support/Karabiner/private.xml' # karabiner
+alias ezz='nvim ~/.zprofile'                                  # zprezto
+alias ew='nvim ~/.dotfiles/vim/nvim/nvimrc'                   # vimrc
+alias ef='nvim ~/.dotfiles/zsh/functions/zfunctions'          # shell functions
+alias ehs='nvim ~/.dotfiles/hammerspoon/init.lua'             # hammerspoon   
+alias ezd='nvim ~/.dotfiles/zsh/aliases/zdev'                 # development alias
+alias ezg='nvim ~/.dotfiles/zsh/aliases/zgit'                 # git alias
+alias eza='nvim ~/.dotfiles/zsh/aliases/zapp'                 # app alias
+alias ezv='nvim ~/.dotfiles/zsh/dev/zenv'                     # enviroment variables
+alias ezo='nvim ~/.dotfiles/zsh/aliases/zdocker'              # docker alias
+alias et='nvim ~/.dotfiles/tmux/tmux.conf.local'              # tmux config
+alias ezb='nvim ~/.dotfiles/zsh/zsh/zbindings'                # shell keyboard bindings

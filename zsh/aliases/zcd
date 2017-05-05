@@ -28,6 +28,7 @@ alias djs='cd ~/code/js'
 alias dgo='cd ~/code/go'
 alias dsj='cd ~/code/solutions/java'
 alias dss='cd ~/oss/nikivi/solutions'
+alias di='cd ~/experiment'
 
 # _xcode - swift
 alias dx='cd ~/xcode'
@@ -64,7 +65,6 @@ alias ds='cd ~/oss/'
 alias dsn='cd ~/oss/nikivi'
 alias dsr='cd ~/oss/research'
 alias dsf='cd ~/oss/forks'
-alias di='cd ~/inspiration'
 
 # _macos
 alias de='cd ~/Desktop'

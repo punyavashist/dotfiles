@@ -3380,6 +3380,36 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     KeyCode::SEMICOLON,
   </autogen>
 
+       <autogen>
+         __KeyToKey__
+        KeyCode::1,
+         KeyCode::1, ModifierFlag::CONTROL_L
+     </autogen>
+
+       <autogen>
+         __KeyToKey__
+        KeyCode::2,
+         KeyCode::2, ModifierFlag::CONTROL_L
+     </autogen>
+
+       <autogen>
+         __KeyToKey__
+        KeyCode::3,
+         KeyCode::3, ModifierFlag::CONTROL_L
+     </autogen>
+
+       <autogen>
+         __KeyToKey__
+        KeyCode::4,
+         KeyCode::4, ModifierFlag::CONTROL_L
+     </autogen>
+
+       <autogen>
+         __KeyToKey__
+        KeyCode::5,
+         KeyCode::5, ModifierFlag::CONTROL_L
+     </autogen>
+
   <autogen>
     __KeyToKey__
     KeyCode::COMMAND_R,
@@ -3603,23 +3633,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     KeyCode::SLASH, ModifierFlag::SHIFT_L
   </autogen>
 
-  <autogen>
-    __KeyToKey__
-    KeyCode::1,
-    KeyCode::O, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::2,
-    KeyCode::P, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::3,
-    KeyCode::I, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
-  </autogen>
 
   <autogen>
     __KeyToKey__
@@ -5229,7 +5242,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
   </item>
 
 <item>
-    <name>general: sticky dot - productivity</name>
+    <name>general: sticky dot - tooling</name>
     <identifier>private.launcher_mode_open_apps_v20</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -5270,7 +5283,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __BlockUntilKeyUp__ KeyCode::DOT,
     </autogen>
-
+    
        <autogen>
          __KeyToKey__
          KeyCode::V,
@@ -5316,7 +5329,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         <autogen>
       __KeyToKey__
       KeyCode::F,
-      KeyCode::VK_OPEN_URL_ALFRED_NEW_BITBAR_TASK
+      KeyCode::D, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
 		</autogen>
 
        <autogen>
@@ -5687,29 +5700,24 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       __BlockUntilKeyUp__ KeyCode::M,
     </autogen>
 
-       <autogen>
-         __KeyToKey__
-        KeyCode::1,
-         KeyCode::1, ModifierFlag::CONTROL_L
-     </autogen>
+  <autogen>
+    __KeyToKey__
+    KeyCode::1,
+    KeyCode::O, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+  </autogen>
 
-       <autogen>
-         __KeyToKey__
-        KeyCode::2,
-         KeyCode::2, ModifierFlag::CONTROL_L
-     </autogen>
+  <autogen>
+    __KeyToKey__
+    KeyCode::2,
+    KeyCode::P, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+  </autogen>
 
-       <autogen>
-         __KeyToKey__
-        KeyCode::3,
-         KeyCode::3, ModifierFlag::CONTROL_L
-     </autogen>
+  <autogen>
+    __KeyToKey__
+    KeyCode::3,
+    KeyCode::I, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+  </autogen>
 
-       <autogen>
-         __KeyToKey__
-        KeyCode::4,
-         KeyCode::4, ModifierFlag::CONTROL_L
-     </autogen>
 
   <autogen>
     __KeyToKey__
@@ -6034,11 +6042,11 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       __BlockUntilKeyUp__ KeyCode::B,
     </autogen>
 
-    <autogen>
-      __KeyToKey__
-      KeyCode::SPACE,
-      KeyCode::A, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-    </autogen>
+        <autogen>
+          __KeyToKey__
+          KeyCode::SPACE,
+        KeyCode::Y, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+        </autogen>
 
     <autogen>
         __KeyToKey__
@@ -6154,7 +6162,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         <autogen>
       __KeyToKey__
       KeyCode::R,
-      KeyCode::VK_OPEN_URL_KM_OPEN_SIMULATOR
+      KeyCode::VK_OPEN_URL_KM_OPEN_PAW
 		</autogen>
 
         <autogen>
@@ -6662,7 +6670,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::J,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_SLACK
     </autogen>
 
     <autogen>
@@ -6967,7 +6975,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         <autogen>
           __KeyToKey__
           KeyCode::SPACE,
-        KeyCode::VK_OPEN_URL_KM_PASTE_SELECTED_TEXT_IN_ITERM
+        KeyCode::Y, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
         </autogen>
 
   </item>
@@ -7685,8 +7693,8 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
   <autogen>
     __KeyToKey__
     KeyCode::L,
+    KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
     KeyCode::EQUAL,
-    KeyCode::DOT, ModifierFlag::SHIFT_L,
     KeyCode::SPACE
   </autogen>
 
@@ -7912,6 +7920,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         KeyCode::SPACE,
         KeyCode::F, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
+
 
     <autogen>
         __KeyToKey__
@@ -10935,13 +10944,13 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim hk = yandex</name>
+          <name>general: sim kh = yandex</name>
       <identifier>private.sim_hk_duck_search</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::K,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
       </autogen>
   </item>
 
@@ -10952,7 +10961,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
       </autogen>
   </item>
 
@@ -10968,13 +10977,13 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim hl = lab</name>
+          <name>general: sim lh = lab</name>
       <identifier>private.sim_hl_lab</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::L,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
       </autogen>
   </item>
 
@@ -11007,7 +11016,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::K, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
+          KeyCode::VK_OPEN_URL_ALFRED_EXPLAIN_SHELL 
       </autogen>
   </item>
 
@@ -11095,7 +11104,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::SEMICOLON, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
       </autogen>
   </item>
 

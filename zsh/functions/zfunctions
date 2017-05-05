@@ -17,6 +17,42 @@ function ggi() {
     git commit -m "🌅"
 }
 
+function gao() {
+    clipboard="$(pbpaste)" 
+    git remote add origin $clipboard 
+}
+
+# TODO: anybar
+function anybar() {
+    echo -n "red" | nc -4u -w0 localhost 1738
+}
+
+# finds recursively number of files in dir given
+function findfiles() {
+    arg="$1"
+    find $arg -type f | wc -l
+}
+
+# bootstrap new repo
+function glw() {
+    clipboard="$(pbpaste)"
+    git remote add origin $clipboard.git
+    git push -u origin master
+}
+
+# TODO: git clone and cd instantly to cloned repo
+#function ..() {
+#    clipboard="$(pbpaste)"
+#    git clone "$clipboard" && cd "${1##*/}" 
+#}
+
+function gc() {
+    arg="$*"
+    git commit -m "$arg"
+}
+
+
+
 function rfg() {
     rf -g '*.go' go run main.go $1
 }
@@ -37,6 +73,18 @@ function tc() {
     touch Cartfile
     chmod +x Cartfile
     nvim Cartfile
+}
+
+
+function gll(){
+    clipboard="$(pbpaste)"
+    git clone $clipboard 
+}
+
+function ggs() {
+    git add .
+    git commit . -m ':sparkles:'
+    git push
 }
 
 function gw() {
