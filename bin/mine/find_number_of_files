@@ -1,9 +1,0 @@
-#!/bin/bash
-
-# purpose : 
-# finds recursively number of files in a directory given
-
-arg="$1"
-
-find $arg -type f | wc -l
-

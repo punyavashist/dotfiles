@@ -1,7 +1,0 @@
-#!/bin/bash
-
-clipboard="$(pbpaste)"
-
-git remote add origin $clipboard.git
-
-git push -u origin master
