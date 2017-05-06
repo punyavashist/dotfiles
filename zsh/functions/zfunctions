@@ -53,20 +53,20 @@ function gc() {
 
 
 
-function rfg() {
-    rf -g '*.go' go run main.go $1
+function wfg() {
+    reflex -g '*.go' go run main.go $1
 }
 
-function rfn() {
-    rf -g '*.js' node main.js
+function wfj() {
+    reflex -g '*.js' node $1
 }
 
-function rfb() {
-    rf -g '*.rb' ruby main.rb
+function wfb() {
+    reflex -g '*.rb' ruby main.rb
 }
 
-function rfw() {
-    rf -g '*.go' alfred build
+function wfw() {
+    reflex -g '*.go' alfred build
 }
 
 function tc() {

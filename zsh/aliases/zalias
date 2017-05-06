@@ -1,5 +1,4 @@
 # _general
-alias re='create-react-app'
 alias tl='tmux'
 alias pd='pandoc'
 alias yt='yotube-dl'

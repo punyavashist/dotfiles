@@ -10,7 +10,7 @@ alias kb='kubectl'
 alias ss='serve'
 alias sv='python3 -m http.server'
 
-alias nra='create-react-app'
+alias re='create-react-app'
 
 alias lic='legit'
 
