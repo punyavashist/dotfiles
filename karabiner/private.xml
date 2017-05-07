@@ -2007,6 +2007,16 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SKETCH</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchSketch" in workflow "nikivi.search.files" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_OPEN_DOCUMENTATION</name>
   <url type="shell">
   osascript -e '
@@ -6159,7 +6169,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
         <autogen>
       __KeyToKey__
-      KeyCode::R,
+      KeyCode::T,
       KeyCode::VK_OPEN_URL_KM_OPEN_PAW
 		</autogen>
 
@@ -6201,8 +6211,8 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
-        KeyCode::T,
-        KeyCode::VK_OPEN_URL_KM_OPEN_XCCELLO
+        KeyCode::R,
+        KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH
     </autogen>
 
         <autogen>
@@ -7955,7 +7965,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
        <autogen>
        __KeyToKey__
        KeyCode::W,
-       KeyCode::N, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+       KeyCode::D, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
         </autogen>
 
        <autogen>
@@ -11192,7 +11202,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::M, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-      KeyCode::VK_OPEN_URL_ALFRED_LAYOUT_MANAGER
+      KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SKETCH
       </autogen>
   </item>
 
@@ -11451,13 +11461,13 @@ KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
 </item>
 
 <item>
-<name>general: sim space o = xcode</name>
+<name>general: sim o space = xcode</name>
 <identifier>private.sim_space_o_xcode</identifier>
 <autogen>
 __SimultaneousKeyPresses__
 KeyCode::O, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PDF
 </autogen>
 </item>
 
