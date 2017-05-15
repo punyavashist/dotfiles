@@ -6,6 +6,14 @@ functin afl() {
     alfred link
 }
 
+# changed queries in search engine
+function qe() {
+    yarn run clean-triggers
+    git add .
+    git commit -m "queries"
+    git push
+}
+
 functon wa() {
     cd "$1"
     code .

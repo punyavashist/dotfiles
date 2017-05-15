@@ -82,6 +82,39 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_ANALYTICS</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: google analytics"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEARN_ANYTHING</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: learn anything"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_DRIBBLE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: dribble"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK</name>
   <url type="shell">
   osascript -e '
@@ -2007,6 +2040,16 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_EXLPORE</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "exploreMindMaps" in workflow "nikivi.research" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SKETCH</name>
   <url type="shell">
   osascript -e '
@@ -2045,7 +2088,7 @@ tell application "Alfred 3" to run trigger "searchAll" in workflow "nikivi.resea
 
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LEARNING_MINDMAPS</name>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_OPEN_LEARNING_MINDMAPS</name>
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "learnAnything" in workflow "nikivi.research" with argument ""
@@ -2122,6 +2165,15 @@ tell application "Alfred 3" to run trigger "searchRedditSubreddits" in workflow 
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "packages" in workflow "nikivi.web-search" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_PINBOARD_TOPIC_LIST_FILTER</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "pinboardTopics" in workflow "nikivi.pinboard.topics" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -5629,7 +5681,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::G,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_HACKER_NEWS
+        KeyCode::VK_OPEN_URL_ALFRED_PINBOARD_TOPIC_LIST_FILTER
     </autogen>
 
     <autogen>
@@ -6284,7 +6336,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __KeyToKey__
       KeyCode::I,
-      KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_CANARY
+      KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI_TECHNOLOGY_PREVIEW
     </autogen>
 
     <autogen>
@@ -6594,7 +6646,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::D,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_SLACK
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_ANALYTICS
     </autogen>
 
     <autogen>
@@ -6708,7 +6760,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::A,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_WIKI
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEARN_ANYTHING
     </autogen>
     
     <autogen>
@@ -6822,7 +6874,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::Q,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_DRIBBLE
     </autogen>
 
     <autogen>
@@ -11004,7 +11056,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::K, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_PERSONAL_RESEARCH_MINDMAPS
+          KeyCode::VK_OPEN_URL_ALFRED_OPEN_LEARNING_MINDMAPS
       </autogen>
   </item>
 
@@ -11015,7 +11067,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::J, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LEARNING_MINDMAPS
+          KeyCode::VK_OPEN_URL_ALFRED_MIND_EXLPORE
       </autogen>
   </item>
 
@@ -11257,7 +11309,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::U, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALL_MINDMAPS
+          KeyCode::VK_OPEN_URL_ALFRED_PERSONAL_RESEARCH_MINDMAPS
       </autogen>
   </item>
 
