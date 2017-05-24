@@ -3,6 +3,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.dotfiles/zsh/prezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.dotfiles/zsh/prezto/init.zsh"
 fi
 
+# antigen
+source ~/.dotfiles/zsh/antigen/antigen.zsh
+
 # _source my own aliases
 source ~/.dotfiles/zsh/zsh/zbindings
 source ~/.dotfiles/zsh/dev/zenv
@@ -28,6 +31,11 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 # uninstall by removing these lines or running `tabtab uninstall yarn`
 [[ -f /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh ]] && . /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh
 
+
+
+
+# zsh modules
+antigen bundle wbinglee/zsh-wakatime
 
 # need it
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

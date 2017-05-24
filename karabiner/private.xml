@@ -1739,6 +1739,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_CHROME</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: chrome"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_CANARY</name>
   <url type="shell">
   osascript -e '
@@ -2040,7 +2051,7 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_EXLPORE</name>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_EXPLORE</name>
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "exploreMindMaps" in workflow "nikivi.research" with argument ""
@@ -6336,7 +6347,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __KeyToKey__
       KeyCode::I,
-      KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI_TECHNOLOGY_PREVIEW
+      KeyCode::VK_OPEN_URL_KM_OPEN_CHROME
     </autogen>
 
     <autogen>
@@ -11067,7 +11078,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::J, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_MIND_EXLPORE
+          KeyCode::VK_OPEN_URL_ALFRED_MIND_EXPLORE
       </autogen>
   </item>
 
