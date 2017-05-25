@@ -6885,7 +6885,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::Q,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_DRIBBLE
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_WAKATIME
     </autogen>
 
     <autogen>
