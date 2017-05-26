@@ -1,13 +1,12 @@
-# [my configuration files for macOS 🐚](https://my.mindnode.com/RtzZgV6UUoBuyJeHykxa5sEAqpJpuptfunbGG8u4) 
+# [my configuration files for macOS 🐚](https://my.mindnode.com/ZkoD3EQMbzJAjzoNLC4kJhe5txFYNttc55y6odib) 
 
-![](http://i.imgur.com/vB7YyvZ.png)
+![](http://i.imgur.com/gHrp9P8.png)
 
 ## [karabiner ⌨](https://my.mindnode.com/aGPrpzjuxth5dqytYpTzts9PZWKMFydgGt1Sjddz)
 
 The most exciting thing in here is probably how I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now. 
 
 ## [neovim 🌻](https://my.mindnode.com/QKK41ixhzhCk64Bss2xsvAssL7j79HDKdY1TsNd5)
-
 
 I am [still learning vim](https://my.mindnode.com/dsyhczzfLsBAG4EpFt5TZnBYWAD9mfc9ms7nPMCz) but the this journey has been very rewarding. Modal editing is pretty amazing. I also very often use VS Code since it also has very well built [vim mode](https://github.com/VSCodeVim/Vim).
 
