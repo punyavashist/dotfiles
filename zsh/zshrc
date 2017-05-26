@@ -32,10 +32,10 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 [[ -f /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh ]] && . /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh
 
 
-
-
 # zsh modules
 antigen bundle wbinglee/zsh-wakatime
+
+antigen apply
 
 # need it
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -8303,12 +8303,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
        KeyCode::F19,
        KeyCode::3, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
         </autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::BACKQUOTE,
-       KeyCode::1, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
-        </autogen>
+        
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::BACKQUOTE,
+                  KeyCode::F12, ModifierFlag::COMMAND_L
+               </autogen>
 
        <autogen>
        __KeyToKey__
@@ -8418,9 +8418,15 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
       __KeyToKey__
-      KeyCode::S,
+      KeyCode::BACKQUOTE,
       KeyCode::T, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
+    
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::S,
+                  KeyCode::F12, ModifierFlag::COMMAND_L
+               </autogen>
 
        <autogen>
        __KeyToKey__
@@ -11070,7 +11076,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::K, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_EXPLAIN_SHELL 
+          KeyCode::F18
       </autogen>
   </item>
 
