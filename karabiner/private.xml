@@ -82,6 +82,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_POCKET</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: pocket"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_ANALYTICS</name>
   <url type="shell">
   osascript -e '
@@ -4573,7 +4584,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::S,
-       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
+       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SKETCH
         </autogen>
 
        <autogen>
@@ -6214,7 +6225,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         <autogen>
       __KeyToKey__
       KeyCode::T,
-      KeyCode::VK_OPEN_URL_KM_OPEN_PAW
+      KeyCode::VK_OPEN_URL_KM_OPEN_SIMULATOR
 		</autogen>
 
         <autogen>
@@ -6759,6 +6770,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         __KeyToKey__
         KeyCode::P,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_PRODUCT_HUNT
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::R,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_POCKET
     </autogen>
 
     <autogen>
@@ -11087,7 +11104,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::N,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
       </autogen>
   </item>
 
@@ -11164,7 +11181,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::SEMICOLON, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
+          KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS
       </autogen>
   </item>
 
@@ -11230,7 +11247,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::SEMICOLON, KeyCode::N,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS
+          KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
       </autogen>
   </item>
 
