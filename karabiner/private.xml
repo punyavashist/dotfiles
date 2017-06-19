@@ -82,6 +82,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_NPM</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: npm"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_POCKET</name>
   <url type="shell">
   osascript -e '
@@ -1155,6 +1166,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_SONIC_PI</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: sonic pi"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_POSTGRES</name>
   <url type="shell">
   osascript -e '
@@ -2062,6 +2084,34 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_ICLOUD_TABS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "iCloud tabs" in workflow "com.targumanu.icloudtabs" with argument ""
+
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_PINBOARD</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "pinboard" in workflow "com.vitorgalvao.alfred.hackerboard" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_HACKER_NEWS</name>
+  <url type="shell">
+  osascript -e '
+  tell application "Alfred 3" to run trigger "hackerNews" in workflow "com.vitorgalvao.alfred.hackerboard" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SKETCH</name>
   <url type="shell">
   osascript -e '
@@ -2084,7 +2134,7 @@ tell application "Alfred 3" to run trigger "searchDocs" in workflow "com.nirelba
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_INSIDE_MINDMAPS</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "inside" in workflow "nikivi.learn-anything" with argument ""
+tell application "Alfred 3" to run trigger "inside" in workflow "nikivi.mind" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4150,7 +4200,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                <autogen>
                  __KeyToKey__
                  KeyCode::I,
-                 KeyCode::3, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+                 KeyCode::SPACE, ModifierFlag::CONTROL_L
              </autogen>
 
                <autogen>
@@ -4377,8 +4427,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                <autogen>
                  __KeyToKey__
                  KeyCode::I,
-                 KeyCode::3, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L
-               </autogen>
+                 KeyCode::SPACE, ModifierFlag::CONTROL_L
+             </autogen>
 
                <autogen>
                  __KeyToKey__
@@ -4560,6 +4610,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::F,
+          KeyCode::VK_OPEN_URL_ALFRED_PINBOARD
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::V,
           KeyCode::VK_OPEN_URL_SEARCH_TEX_FILES
         </autogen>
 
@@ -4698,7 +4754,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
           __KeyToKey__
           KeyCode::W,
-          KeyCode::VK_OPEN_URL_ALFRED_OPEN_DOCUMENTATION
+          KeyCode::VK_OPEN_URL_ALFRED_DESKTOP_DIR_WATCH
         </autogen>
 
         <autogen>
@@ -4782,7 +4838,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::D,
-       KeyCode::VK_OPEN_URL_ALFRED_DESKTOP_DIR_WATCH
+       KeyCode::VK_OPEN_URL_ALFRED_HACKER_NEWS
         </autogen>
 
        <autogen>
@@ -6319,12 +6375,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     </autogen>
 
     <autogen>
-    __KeyToKey__
-      KeyCode::COMMAND_R,
-      KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH
-    </autogen>
-
-    <autogen>
       __KeyToKey__
       KeyCode::L,
       KeyCode::VK_OPEN_URL_KM_OPEN_XCODE
@@ -6654,6 +6704,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
+        KeyCode::COMMAND_R,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_ALL
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::V,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_MOZILLA_DEV
     </autogen>
@@ -6733,7 +6789,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::J,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_SLACK
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_NPM
     </autogen>
 
     <autogen>
@@ -6757,13 +6813,13 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::S,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_MEDIUM
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODEPEN
     </autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::A,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEARN_ANYTHING
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT
     </autogen>
     
     <autogen>
@@ -6841,7 +6897,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::K,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA
+        KeyCode::VK_OPEN_URL_KM_GODOC
     </autogen>
 
     <autogen>
@@ -7395,6 +7451,18 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __BlockUntilKeyUp__ KeyCode::R,
     </autogen>
+    
+        <autogen>
+      __KeyToKey__
+      KeyCode::F,
+      KeyCode::VK_OPEN_URL_KM_OPEN_PAPRIKA_RECIPE_MANAGER
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::W,
+      KeyCode::VK_OPEN_URL_KM_OPEN_SONIC_PI
+		</autogen>
 
         <autogen>
       __KeyToKey__
@@ -7424,12 +7492,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         __KeyToKey__
         KeyCode::SLASH,
         KeyCode::VK_OPEN_URL_KM_OPEN_ACTIVITY_MONITOR
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::F,
-        KeyCode::VK_OPEN_URL_KM_OPEN_IBOOKS
     </autogen>
 
         <autogen>
@@ -7699,8 +7761,9 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
   <autogen>
     __KeyToKey__
     KeyCode::M,
-    KeyCode::DOT,
-    KeyCode::SLASH
+    KeyCode::EQUAL,
+    KeyCode::DOT, ModifierFlag::SHIFT_L,
+    KeyCode::SPACE
   </autogen>
 
   <autogen>
@@ -8421,16 +8484,17 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
          KeyCode::3, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
      </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::D,
-        KeyCode::EQUAL, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
-    </autogen>
 
     <autogen>
       __KeyToKey__
       KeyCode::J,
-      KeyCode::DELETE
+      KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEARN_ANYTHING
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::D,
+      KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEARN_ANYTHING
     </autogen>
 
     <autogen>
@@ -11038,7 +11102,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
       </autogen>
   </item>
 
@@ -11104,7 +11168,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::N,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
+          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
       </autogen>
   </item>
 
@@ -11291,7 +11355,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_OPEN_LEARNING_MINDMAPS
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
       </autogen>
   </item>
 
@@ -11318,13 +11382,24 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
       <item>
-          <name>general: sim ou = more mind maps</name>
+          <name>general: sim op = icloud</name>
+      <identifier>private.sim_op_spotify</identifier>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::P, KeyCode::O,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_ICLOUD_TABS
+      </autogen>
+  </item>
+
+      <item>
+          <name>general: sim ou = icloud</name>
       <identifier>private.sim_ou_spotify</identifier>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::U, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
+          KeyCode::VK_OPEN_URL_ALFRED_ICLOUD_TABS
       </autogen>
   </item>
 
@@ -11380,7 +11455,7 @@ KeyCode::VK_CONFIG_TOGGLE_notsave_ubiq_vimnormal,
 __SimultaneousKeyPresses__
 KeyCode::L, KeyCode::COMMAND_R,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
 </autogen>
 </item>
 
@@ -11446,7 +11521,7 @@ KeyCode::VK_OPEN_URL_ALFRED_JAVA_PROJECTS_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::H,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
+KeyCode::VK_OPEN_URL_ALFRED_ICLOUD_TABS
 </autogen>
 </item>
 
@@ -11490,7 +11565,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
 </autogen>
 </item>
 

@@ -65,6 +65,7 @@ alias ds='cd ~/oss/'
 alias dsn='cd ~/oss/nikivi'
 alias dsr='cd ~/oss/research'
 alias dsf='cd ~/oss/forks'
+alias dm='cd ~/oss/learn-anything'
 
 # _macos
 alias de='cd ~/Desktop'
@@ -83,7 +84,6 @@ alias dv='cd ~/.dotfiles/vim'
 alias d.='cd ~/.dotfiles'
 alias dsk='cd ~/Library/Application\ Support/Karabiner'
 alias db='cd ~/.dotfiles/bin'
-alias dm='cd ~/.dotfiles/bin/mine'
 alias dh='cd ~/.hammerspoon'
 
 
