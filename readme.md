@@ -1,6 +1,5 @@
-<div align="center">
-<h1><a href="https://my.mindnode.com/ZkoD3EQMbzJAjzoNLC4kJhe5txFYNttc55y6odib#-575.1,-16.9,1">my configuration files for macOS 🐚 </a></h1>
-</div>
+<h1 align="center"><a href="https://my.mindnode.com/ZkoD3EQMbzJAjzoNLC4kJhe5txFYNttc55y6odib#-575.1,-16.9,1">my configuration files for macOS 🐚 </a></h1>
+
 
 ![](http://i.imgur.com/oPmKLBd.png)
 
