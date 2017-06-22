@@ -2,7 +2,6 @@
 
 # _main
 alias ee='nvim .'                 # current dir
-alias er='nvim readme.md'         
 alias ei='nvim index.js'
 alias egi='nvim .gitignore'
 alias ej='nvim package.json'

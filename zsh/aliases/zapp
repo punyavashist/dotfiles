@@ -8,7 +8,7 @@ alias af='open -a MacDown'
 alias wt='open -a Atom'
 alias w='code'
 alias ww='code .'
-alias wr="open -a Marked\ 2"
+alias ar="open -a Marked\ 2"
 
 # _web
 alias l="open -a Google\ Chrome\ Canary"

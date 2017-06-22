@@ -1,10 +1,16 @@
 # TODO: sort it into appropriate sections
 
 # _dev
-functin afl() {
+function afl() {
     alfred build
     alfred link
 }
+
+function gp() {
+    git pull origin pull/"$1"/head
+}
+
+
 
 # changed queries in search engine
 function qe() {
