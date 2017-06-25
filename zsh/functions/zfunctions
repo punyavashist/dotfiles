@@ -6,6 +6,12 @@ function afl() {
     alfred link
 }
 
+function fix() {
+    rm -rf ~/.antigen/.zcompdump
+    rm -rf ~/.antigen/.zcompdump.zwc
+    exec zsh
+}
+
 function gp() {
     git pull origin pull/"$1"/head
 }
@@ -86,7 +92,7 @@ function wfb() {
     reflex -g '*.rb' ruby main.rb
 }
 
-function wfw() {
+function wfa() {
     reflex -g '*.go' alfred build
 }
 

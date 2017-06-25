@@ -1,6 +1,7 @@
 [user]
 	name = Nikita Voloboev
 	email = nikita.voloboev@gmail.com
+	signingkey = AE62C5729D8249C0
 [core]
 	editor = nvim
 	excludesfile = /Users/nikivi/.gitignore_global
@@ -12,3 +13,5 @@
 	d = diff
     open = !open `git config remote.origin.url`
     url =! bash -c 'git config --get remote.origin.url | sed -E "s/.+:\\(.+\\)\\.git$/https:\\\\/\\\\/github\\\\.com\\\\/\\\\1/g"'
+[commit]
+	gpgsign = true

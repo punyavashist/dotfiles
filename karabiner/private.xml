@@ -1199,6 +1199,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_SHIP</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: ship"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_SONIC_PI</name>
   <url type="shell">
   osascript -e '
@@ -2112,6 +2123,24 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.workflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_GIT_REPOS</name>
+  <url type="shell">
+  osascript -e '
+  tell application "Alfred 3" to run trigger "gitRepos" in workflow "net.deanishe.alfred-git-repos" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_REDDIT_SUBS_SEARCH</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchRedditSubs" in workflow "nikivi.web-search" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4542,6 +4571,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                <autogen>
                  __KeyToKey__
                  KeyCode::M,
+                 KeyCode::F18
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::COMMA,
                  KeyCode::F2, ModifierFlag::COMMAND_L
                </autogen>
 
@@ -5011,7 +5046,13 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __BlockUntilKeyUp__ KeyCode::SPACE,
     </autogen>
-    
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::L,
+      KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
+		</autogen>
+
         <autogen>
       __KeyToKey__
       KeyCode::F19,
@@ -5277,25 +5318,13 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __BlockUntilKeyUp__ KeyCode::COMMA,
     </autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::F,
+      KeyCode::F18
+		</autogen>
     
-        <autogen>
-      __KeyToKey__
-      KeyCode::A,
-      KeyCode::VK_OPEN_URL_KM_DECREASE_YOUTUBE_PLAYBACK
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::S,
-      KeyCode::VK_OPEN_URL_KM_INCREASE_YOUTUBE_PLAYBACK
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::T,
-      KeyCode::VK_OPEN_URL_ALFRED_FORCE_EMPTY_TRASH
-		</autogen>
-
         <autogen>
       __KeyToKey__
       KeyCode::L,
@@ -5613,7 +5642,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
-        KeyCode::S,
+        KeyCode::L,
         KeyCode::VK_OPEN_URL_ALFRED_PINBOARD_TOPICS
     </autogen>
 
@@ -5703,7 +5732,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
-        KeyCode::D,
+        KeyCode::S,
         KeyCode::VK_OPEN_URL_ALFRED_STACK_OVERFLOW_SEARCH
     </autogen>
 
@@ -5733,7 +5762,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
-        KeyCode::S,
+        KeyCode::D,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PODS
     </autogen>
 
@@ -5776,7 +5805,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
        <autogen>
          __KeyToKey__
          KeyCode::F19,
-         KeyCode::E, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+         KeyCode::VK_OPEN_URL_ALFRED_REDDIT_SUBS_SEARCH
      </autogen>
 
     <autogen>
@@ -5789,18 +5818,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         __KeyToKey__
         KeyCode::G,
         KeyCode::VK_OPEN_URL_ALFRED_PINBOARD_TOPIC_LIST_FILTER
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::L,
-        KeyCode::CURSOR_RIGHT
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::K,
-        KeyCode::CURSOR_LEFT
     </autogen>
 
     <autogen>
@@ -5952,11 +5969,11 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       KeyCode::VK_OPEN_URL_ALFRED_NEW_BITBAR_TASK
 		</autogen>
 
-      <autogen>
-          __KeyToKey__
-          KeyCode::SPACE,
-        KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
-      </autogen>
+    <autogen>
+        __KeyToKey__
+        KeyCode::SPACE,
+        KeyCode::F1, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
 
     <autogen>
       __KeyToKey__
@@ -6328,8 +6345,8 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
         <autogen>
       __KeyToKey__
-      KeyCode::T,
-      KeyCode::VK_OPEN_URL_KM_OPEN_SIMULATOR
+      KeyCode::R,
+      KeyCode::VK_OPEN_URL_KM_OPEN_SHIP
 		</autogen>
 
         <autogen>
@@ -6370,7 +6387,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
-        KeyCode::R,
+        KeyCode::T,
         KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH
     </autogen>
 
@@ -6689,7 +6706,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::SPACE,
-        KeyCode::F1, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+        KeyCode::7, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
     </autogen>
 
 
@@ -7508,12 +7525,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
         <autogen>
       __KeyToKey__
-      KeyCode::W,
-      KeyCode::VK_OPEN_URL_KM_OPEN_SONIC_PI
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
       KeyCode::V,
       KeyCode::VK_OPEN_URL_KM_OPEN_VLC
 		</autogen>
@@ -7950,7 +7961,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         <autogen>
       __KeyToKey__
       KeyCode::TAB,
-      KeyCode::6, ModifierFlag::SHIFT_L
+      KeyCode::BACKQUOTE
 		</autogen>
 
         <autogen>
@@ -7962,7 +7973,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         <autogen>
       __KeyToKey__
       KeyCode::SHIFT_L,
-      KeyCode::6, ModifierFlag::SHIFT_L
+      KeyCode::BACKQUOTE
 		</autogen>
 
         <autogen>
@@ -8279,7 +8290,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         <autogen>
        __KeyToKey__
       KeyCode::M,
-      KeyCode::VK_OPEN_URL_KM_OPEN_CHATTY
+      KeyCode::8, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
 		</autogen>
 
         <autogen>
@@ -8542,7 +8553,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __KeyToKey__
       KeyCode::D,
-      KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEARN_ANYTHING
+      KeyCode::VK_OPEN_URL_ALFRED_HASTEBIN
     </autogen>
 
     <autogen>
@@ -9606,6 +9617,13 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
+        KeyCode::SPACE,
+        KeyCode::X, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+        __KeyToKey__
         KeyCode::1,
         KeyCode::1, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
@@ -9674,13 +9692,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         __KeyToKey__
         KeyCode::EQUAL,
         KeyCode::EQUAL, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
-    </autogen>
-
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::SPACE,
-        KeyCode::X, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
     <autogen>
@@ -11635,7 +11646,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
 __SimultaneousKeyPresses__
 KeyCode::L, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_CHROME_CANARY_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_GIT_REPOS
 </autogen>
 </item>
 
@@ -11668,7 +11679,7 @@ KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
 __SimultaneousKeyPresses__
 KeyCode::M, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_TOGGL_REPORTS
+KeyCode::VK_OPEN_URL_ALFRED_ASK_CREATE_SHARE
 </autogen>
 </item>
 

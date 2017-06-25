@@ -1,5 +1,7 @@
 # _general
 alias tl='tmux'
+alias afb='alfred build'
+alias mc='md-to-alfred'
 alias pd='pandoc'
 alias yt='yotube-dl'
 alias r='trash'

@@ -27,7 +27,8 @@ export ZPLUG_HOME=/usr/local/opt/zplug
 export FLASK_APP=app.py
 
 
-
+# _github
+export GITHUB_TOKEN=dd5bbde90bda08cec08b8ec9972d3cbc5a51ea8c
 
 
 
