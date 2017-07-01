@@ -55,7 +55,7 @@ darkblue = {red=24/255,blue=195/255,green=145/255,alpha=1}
 --------------------------------------------------------------------------------
 -- show my todo task in a neat window briefly
 function showTodoTask () 
-hs.alert.show( ( hs.execute("~/Documents/d.\\ app/bitbar/todo") ) )
+hs.alert.show( ( hs.execute("~/Documents/app/bitbar/todo") ) )
 end
 hs.urlevent.bind("showTodoTask", showTodoTask)
 

@@ -79,7 +79,6 @@ function gc() {
 }
 
 
-
 function wfg() {
     reflex -g '*.go' go run main.go $1
 }

@@ -3,8 +3,8 @@ set -o vi
 
 
 # _bindings
-bindkey -M viins "^j" beginning-of-line
-bindkey -M viins "^k" end-of-line
+bindkey -M viins "^w" beginning-of-line
+bindkey -M viins "^e" end-of-line
 bindkey -M vicmd "^[" vi-insert
 bindkey -sM viins "^v" ./
 bindkey '^N' forward-word

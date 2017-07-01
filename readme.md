@@ -1,7 +1,16 @@
 <h1 align="center"><a href="https://my.mindnode.com/ZkoD3EQMbzJAjzoNLC4kJhe5txFYNttc55y6odib#-575.1,-16.9,1">my configuration files for macOS 🐚 </a></h1>
 
+<div align="center">
+<a href="https://www.patreon.com/nikitavoloboev">
+		<img src="https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg">
+	</a>
+	<a href="https://github.com/nikitavoloboev/dotfiles/blob/master/LICENSE">
+		<img src="https://img.shields.io/pypi/l/pipenv.svg">
+	</a>
+</div>
 
-![](http://i.imgur.com/oPmKLBd.png)
+<p align="center"><img src="http://i.imgur.com/oPmKLBd.png" alt="img" width="600"></p>
+
 
 <h1 align="center"><a href="https://my.mindnode.com/c7EmmKvaxCyCEuTzcpkGB4MGeLpWdR8nsJK4rjDh">Karabiner ⌨</a></h1>
 

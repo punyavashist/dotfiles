@@ -17,6 +17,9 @@ source ~/.dotfiles/zsh/aliases/zdev
 source ~/.dotfiles/zsh/aliases/zalias
 source ~/.dotfiles/zsh/aliases/zapp
 
+# default editor
+export EDITOR='code'
+
 # autojump > cd
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 

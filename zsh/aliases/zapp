@@ -9,9 +9,10 @@ alias wt='open -a Atom'
 alias w='code'
 alias ww='code .'
 alias ar="open -a Marked\ 2"
+alias zr='open -a Preview'
 
 # _web
-alias l="open -a Google\ Chrome\ Canary"
+alias l="open -a Google\ Chrome"
 alias qq="open -a Safari"
 
 # _other
