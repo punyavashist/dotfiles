@@ -4692,8 +4692,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
+       KeyCode::BACKQUOTE,
+          KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_GROUPS
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
        KeyCode::F,
-          KeyCode::VK_OPEN_URL_ALFRED_PINBOARD
+          KeyCode::VK_OPEN_URL_ALFRED_GIT_REPOS
         </autogen>
 
        <autogen>
@@ -4741,7 +4747,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::C,
-       KeyCode::VK_OPEN_URL_ALFRED_COLOUR_PICKER
+       KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
         </autogen>
 
        <autogen>
@@ -4818,15 +4824,9 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __KeyToKey__
-      KeyCode::BACKQUOTE,
+      KeyCode::X,
       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
     </autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::M,
-       KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_GROUPS
-        </autogen>
 
        <autogen>
        __KeyToKey__
@@ -4939,7 +4939,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::G,
-       KeyCode::VK_OPEN_URL_ALFRED_WATCH_GODIR
+       KeyCode::VK_OPEN_URL_ALFRED_PINBOARD
         </autogen>
 
        <autogen>
@@ -5985,6 +5985,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       __KeyToKey__
       KeyCode::F19,
       KeyCode::4, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::C,
+      KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
 		</autogen>
 
         <autogen>
