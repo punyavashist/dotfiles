@@ -180,3 +180,5 @@ hs.urlevent.bind("reloadConfig", hs.reload)
 hs.alert.show("config loaded")
 
 
+local anycomplete = require "anycomplete/anycomplete"
+anycomplete.registerDefaultBindings()

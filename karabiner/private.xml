@@ -82,6 +82,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOCALHOST</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: localhost"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GO_PLAYGROUND</name>
   <url type="shell">
   osascript -e '
@@ -667,15 +678,16 @@
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_ADD_TO_2DO_READING_LIST</name>
+  <name>KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE</name>
   <url type="shell">
   osascript -e '
     tell application "Keyboard Maestro Engine"
-    do script "a: add link to reading list in 2Do"
+    do script "a: 2Do with current url as note"
     end tell
     '
   </url>
 </vkopenurldef>
+
 
 <vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_GODOC</name>
@@ -2138,11 +2150,12 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
   </url>
 </vkopenurldef>
 
+
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_WATCH_GODIR</name>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_DASH_PROFILE_SWITCH</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "watchGoPath" in workflow "com.vitorgalvao.alfred.recentdownloads" with argument ""
+tell application "Alfred 3" to run trigger "dashSwitch" in workflow "nikivi.dash-profiles" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -2332,24 +2345,6 @@ tell application "Alfred 3" to run trigger "pinboardTopics" in workflow "nikivi.
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_GITHUB_DIR_WATCH</name>
-  <url type="shell">
-  osascript -e '
-tell application "Alfred 3" to run trigger "githubDirWatch" in workflow "com.vitorgalvao.alfred.recentdownloads" with argument ""
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_WATCH_PROJECTS_DIR</name>
-  <url type="shell">
-  osascript -e '
-tell application "Alfred 3" to run trigger "projectsDitWatch" in workflow "com.vitorgalvao.alfred.recentdownloads" with argument ""
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_DESKTOP_DIR_WATCH</name>
   <url type="shell">
   osascript -e '
@@ -2362,7 +2357,7 @@ tell application "Alfred 3" to run trigger "desktopDirWatch" in workflow "com.vi
   <name>KeyCode::VK_OPEN_URL_ALFRED_SYNONYMS_SEARCH</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "synonymsSearch" in workflow "me.clarencecastillo.alfred-powerthesaurus" with argument ""
+  tell application "Alfred 3" to run trigger "synonym" in workflow "com.vitorgalvao.alfred.synant" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4692,6 +4687,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
+       KeyCode::B,
+          KeyCode::VK_OPEN_URL_ALFRED_PINBOARD
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
        KeyCode::BACKQUOTE,
           KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_GROUPS
         </autogen>
@@ -4705,7 +4706,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::S,
-          KeyCode::VK_OPEN_URL_SEARCH_TEX_FILES
+          KeyCode::W, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
         </autogen>
 
        <autogen>
@@ -4828,12 +4829,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
     </autogen>
 
-       <autogen>
-       __KeyToKey__
-       KeyCode::SPACE,
-       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
-        </autogen>
-
         <autogen>
           __KeyToKey__
           KeyCode::W,
@@ -4891,7 +4886,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::R,
-       KeyCode::VK_OPEN_URL_KM_ADD_TO_2DO_READING_LIST
+       KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE
         </autogen>
 
        <autogen>
@@ -4915,7 +4910,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::D,
-       KeyCode::VK_OPEN_URL_ALFRED_HACKER_NEWS
+       KeyCode::VK_OPEN_URL_ALFRED_OPEN_DOCUMENTATION
         </autogen>
 
        <autogen>
@@ -4927,7 +4922,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::H,
-       KeyCode::VK_OPEN_URL_ALFRED_GITHUB_DIR_WATCH
+       KeyCode::VK_OPEN_URL_ALFRED_PINBOARD
         </autogen>
 
        <autogen>
@@ -4939,13 +4934,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::G,
-       KeyCode::VK_OPEN_URL_ALFRED_PINBOARD
+       KeyCode::VK_OPEN_URL_ALFRED_HACKER_NEWS
         </autogen>
 
        <autogen>
        __KeyToKey__
        KeyCode::V,
-       KeyCode::VK_OPEN_URL_ALFRED_WATCH_PROJECTS_DIR
+       KeyCode::VK_OPEN_URL_SEARCH_TEX_FILES
         </autogen>
 
       ]]>
@@ -5183,12 +5178,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       __KeyToKey__
       KeyCode::J,
       KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::R,
-      KeyCode::VK_OPEN_URL_KM_ADD_TO_2DO_READING_LIST
 		</autogen>
 
         <autogen>
@@ -8565,7 +8554,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __KeyToKey__
       KeyCode::J,
-      KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEARN_ANYTHING
+      KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOCALHOST
     </autogen>
 
     <autogen>
@@ -11103,6 +11092,20 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
   <item>
+      <name>scroller: sim l, = keyclue</name>
+      <identifier>private.sim_,l_keyclue</identifier>
+
+ <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::COMMA, KeyCode::L,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_SHELL_switchprofile_general,
+          KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
+    </autogen>
+  </item>
+
+
+  <item>
       <name>scroller: sim jk = google</name>
       <identifier>private.sim_jk_google_scroller</identifier>
 
@@ -11708,7 +11711,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
 __SimultaneousKeyPresses__
 KeyCode::L, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_GIT_REPOS
+KeyCode::VK_OPEN_URL_ALFRED_DASH_PROFILE_SWITCH
 </autogen>
 </item>
 
