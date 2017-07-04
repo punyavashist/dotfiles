@@ -9,7 +9,9 @@
 	</a>
 </div>
 
-<p align="center"><img src="http://i.imgur.com/oPmKLBd.png" alt="img" width="600"></p>
+
+
+![](http://i.imgur.com/oPmKLBd.png)
 
 
 <h1 align="center"><a href="https://my.mindnode.com/c7EmmKvaxCyCEuTzcpkGB4MGeLpWdR8nsJK4rjDh">Karabiner ⌨</a></h1>
