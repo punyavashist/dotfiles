@@ -1,10 +1,8 @@
 # prezto config
-if [[ -s "${ZDOTDIR:-$HOME}/.dotfiles/zsh/prezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.dotfiles/zsh/prezto/init.zsh"
-fi
+source ~/.dotfiles/zsh/prezto/init.zsh
 
-# antigen
-source ~/.dotfiles/zsh/antigen/antigen.zsh
+# _plugin manager
+source <(antibody init) 
 
 # _source my own aliases
 source ~/.dotfiles/zsh/zsh/zbindings
@@ -30,16 +28,14 @@ eval "$(thefuck --alias)"
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
+
+# _zsh modules
+antibody bundle wbinglee/zsh-wakatime
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # tabtab source for yarn package
 # uninstall by removing these lines or running `tabtab uninstall yarn`
 [[ -f /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh ]] && . /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh
 
-
-# zsh modules
-antigen bundle wbinglee/zsh-wakatime
-
-antigen apply
-
-# need it
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
