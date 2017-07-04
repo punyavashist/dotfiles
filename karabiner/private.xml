@@ -82,6 +82,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_TRAVIS</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: travis"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOCALHOST</name>
   <url type="shell">
   osascript -e '
@@ -7029,7 +7040,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::Q,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_POCKET
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_TRAVIS
     </autogen>
 
     <autogen>

@@ -1,0 +1,6 @@
+caarlos0/git-add-remote # easily add remotes
+caarlos0/ports kind:path
+caarlos0/zsh-git-fetch-merge kind:path
+caarlos0/zsh-git-sync kind:path
+wbinglee/zsh-wakatime # track time
+

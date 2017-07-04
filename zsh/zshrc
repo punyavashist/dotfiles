@@ -4,6 +4,9 @@ source ~/.dotfiles/zsh/prezto/init.zsh
 # _plugin manager
 source <(antibody init) 
 
+# source all plugins
+antibody bundle < ~/.dotfiles/zsh/plugins/plugins.txt
+
 # _source my own aliases
 source ~/.dotfiles/zsh/zsh/zbindings
 source ~/.dotfiles/zsh/dev/zenv
@@ -14,6 +17,9 @@ source ~/.dotfiles/zsh/functions/zfunctions
 source ~/.dotfiles/zsh/aliases/zdev
 source ~/.dotfiles/zsh/aliases/zalias
 source ~/.dotfiles/zsh/aliases/zapp
+
+# _secret config
+source ~/.secrets
 
 # default editor
 export EDITOR='code'
@@ -27,10 +33,6 @@ eval "$(thefuck --alias)"
 # neat colour schemes to use
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
-
-
-# _zsh modules
-antibody bundle wbinglee/zsh-wakatime
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
