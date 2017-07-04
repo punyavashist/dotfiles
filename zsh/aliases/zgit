@@ -1,5 +1,5 @@
 # _general
-alias gr='github-release'
+alias gr='goreleaser'
 alias g:='git push -u origin master'
 alias gn='git open'
 alias ge='git checkout'

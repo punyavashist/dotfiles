@@ -1,5 +1,6 @@
 # _general
 alias tl='tmux'
+alias mit='license-up Nikita Voloboev'
 alias afb='alfred build'
 alias mc='md-to-alfred'
 alias pd='pandoc'
