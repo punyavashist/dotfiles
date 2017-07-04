@@ -30,8 +30,7 @@ I don't use [hammerspoon](http://www.hammerspoon.org/) as extensively however I 
 
 I also am using [zsh](http://www.zsh.org) as my shell with [prezto](https://github.com/sorin-ionescu/prezto) configuration. Here is how my prompt looks currently : 
 
-
-<p align="center"><img src="https://i.imgur.com/iLAX5P6.png" alt="img" width="600"></p>
+![](https://i.imgur.com/iLAX5P6.png)
 
 <h1 align="center"> Thanks 🍀</h1>
 
