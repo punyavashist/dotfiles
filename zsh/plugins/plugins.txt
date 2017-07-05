@@ -1,6 +1,21 @@
-caarlos0/git-add-remote # easily add remotes
+# this block is in alphabetic order
+caarlos0/git-add-remote kind:path
+caarlos0/jvm
 caarlos0/ports kind:path
 caarlos0/zsh-git-fetch-merge kind:path
 caarlos0/zsh-git-sync kind:path
-wbinglee/zsh-wakatime # track time
+caarlos0/zsh-mkc
+caarlos0/zsh-open-pr kind:path
+mafredri/zsh-async
+rupa/z
+Tarrasch/zsh-bd
+wbinglee/zsh-wakatime
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
+junegunn/fzf
 
+# these should be at last
+sindresorhus/pure
+zsh-users/zsh-history-substring-search
+wbinglee/zsh-wakatime # track time
+zsh-users/zsh-syntax-highlighting

@@ -1,11 +1,5 @@
-# prezto config
-source ~/.dotfiles/zsh/prezto/init.zsh
-
-# _plugin manager
-source <(antibody init) 
-
-# source all plugins
-antibody bundle < ~/.dotfiles/zsh/plugins/plugins.txt
+# default editor
+export EDITOR='code'
 
 # _source my own aliases
 source ~/.dotfiles/zsh/zsh/zbindings
@@ -21,11 +15,7 @@ source ~/.dotfiles/zsh/aliases/zapp
 # _secret config
 source ~/.secrets
 
-# default editor
-export EDITOR='code'
-
-# autojump > cd
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+source ~/.zsh_plugins.sh
 
 # 'thefuck' command correction 
 eval "$(thefuck --alias)"
@@ -33,8 +23,6 @@ eval "$(thefuck --alias)"
 # neat colour schemes to use
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # tabtab source for yarn package
 # uninstall by removing these lines or running `tabtab uninstall yarn`

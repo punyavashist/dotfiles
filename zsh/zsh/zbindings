@@ -10,7 +10,6 @@ bindkey -sM viins "^v" ./
 bindkey '^N' forward-word
 bindkey '^B' backward-word
 bindkey "^F" history-incremental-search-backward
-bindkey "^G" fzf-history-widget
 
 
 bindkey -M viins ' ' magic-space # TODO: not sure if needed
