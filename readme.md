@@ -10,7 +10,6 @@
 </div>
 
 
-
 ![](http://i.imgur.com/2jmFmPT.png)
 
 

@@ -1,19 +1,16 @@
-caarlos0/git-add-remote kind:path
-caarlos0/jvm
-caarlos0/ports kind:path
-caarlos0/zsh-git-fetch-merge kind:path
-caarlos0/zsh-git-sync kind:path
-caarlos0/zsh-mkc
-caarlos0/zsh-open-pr kind:path
-mafredri/zsh-async
-rupa/z
-Tarrasch/zsh-bd
-wbinglee/zsh-wakatime
-zsh-users/zsh-completions
-zsh-users/zsh-autosuggestions
-junegunn/fzf
-
-sindresorhus/pure
-zsh-users/zsh-history-substring-search
-wbinglee/zsh-wakatime # track time
-zsh-users/zsh-syntax-highlighting
+caarlos0/git-add-remote kind:path            # easily add the upstream remote
+caarlos0/jvm                                              # never manually change your JAVA_HOME again
+caarlos0/ports kind:path                            # see what's happening on your computer's ports
+caarlos0/zsh-git-fetch-merge kind:path     # git fetch && git merge
+caarlos0/zsh-git-sync kind:path                 # sync git repositories and clean them up
+caarlos0/zsh-open-pr kind:path                  # open pull requests from the command line
+mafredri/zsh-async                                     # perform tasks asynchronously
+rupa/z                                                          # jump around
+Tarrasch/zsh-bd                                           # jump back to a specific directory
+wbinglee/zsh-wakatime                               # track time spent and commands typed
+zsh-users/zsh-completions                           # additional completion definitions for Zsh
+zsh-users/zsh-autosuggestions                     # fish-like autosuggestions for zsh
+junegunn/fzf                                                 # command-line fuzzy finder
+sindresorhus/pure                                         # pretty, minimal and fast zsh prompt
+zsh-users/zsh-history-substring-search        # zsh port of the fish shell's history search
+zsh-users/zsh-syntax-highlighting                # fish shell like syntax highlighting for zsh

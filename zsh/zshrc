@@ -15,7 +15,7 @@ source ~/.dotfiles/zsh/aliases/zapp
 # _secret config
 source ~/.secrets
 
-# zsh plugins
+# _zsh plugins
 source ~/.zsh_plugins.sh
 
 # 'thefuck' command correction 
