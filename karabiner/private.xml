@@ -3357,7 +3357,7 @@ tell application "Alfred 3" to run trigger "searchPDF" in workflow "nikivi.searc
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_FOLDERS</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "searchFolders" in workflow "nikivi.search.files" with argument ""
+  tell application "Alfred 3" to run trigger "searchFolders" in workflow "nikivi.search-folders" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -11450,7 +11450,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
+          KeyCode::VK_OPEN_URL_ALFRED_LAYOUT_MANAGER
       </autogen>
   </item>
 

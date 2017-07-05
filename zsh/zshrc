@@ -12,6 +12,8 @@ source ~/.dotfiles/zsh/aliases/zdev
 source ~/.dotfiles/zsh/aliases/zalias
 source ~/.dotfiles/zsh/aliases/zapp
 
+setopt autocd
+
 # _secret config
 source ~/.secrets
 

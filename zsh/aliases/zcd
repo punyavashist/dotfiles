@@ -2,6 +2,7 @@
 alias dk='cd ~/projects'
 alias daq='cd ~/code/xcode/projects/macos/quoter'
 alias d:='cd ~/learning'
+alias dla='cd ~/oss/learn-anything/learn-anything'
 
 # _documents
 alias dap='cd ~/Documents/d.\ app'
