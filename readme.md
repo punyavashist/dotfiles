@@ -30,9 +30,11 @@ I don't use [hammerspoon](http://www.hammerspoon.org/) as extensively however I 
 
 <h1 align="center">zsh 🐚</h1>
 
-I also am using [zsh](http://www.zsh.org) as my shell with [prezto](https://github.com/sorin-ionescu/prezto) configuration. Here is how my prompt looks currently : 
+I also am using [zsh](http://www.zsh.org) as my shell with [antibody](https://github.com/getantibody/antibody) plugin manager. 
 
-![](https://i.imgur.com/iLAX5P6.png)
+Here is how my prompt looks currently : 
+
+![](http://i.imgur.com/nfKcVmo.png)
 
 <h1 align="center"> Thanks 🍀</h1>
 
