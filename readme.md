@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://my.mindnode.com/ZkoD3EQMbzJAjzoNLC4kJhe5txFYNttc55y6odib#-575.1,-16.9,1">my configuration files for macOS 🐚 </a></h1>
+<h1 align="center"><a href="https://my.mindnode.com/3EfbezxGu7xVAM4GQNuN8Lq1naudqs333HqgTuDj">my configuration files for macOS 🐚 </a></h1>
 
 <div align="center">
 <a href="https://www.patreon.com/nikitavoloboev">
@@ -11,7 +11,7 @@
 
 
 
-![](http://i.imgur.com/oPmKLBd.png)
+![](http://i.imgur.com/2jmFmPT.png)
 
 
 <h1 align="center"><a href="https://my.mindnode.com/c7EmmKvaxCyCEuTzcpkGB4MGeLpWdR8nsJK4rjDh">Karabiner ⌨</a></h1>

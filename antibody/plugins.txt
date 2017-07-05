@@ -1,4 +1,3 @@
-# this block is in alphabetic order
 caarlos0/git-add-remote kind:path
 caarlos0/jvm
 caarlos0/ports kind:path
@@ -14,7 +13,6 @@ zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions
 junegunn/fzf
 
-# these should be at last
 sindresorhus/pure
 zsh-users/zsh-history-substring-search
 wbinglee/zsh-wakatime # track time
