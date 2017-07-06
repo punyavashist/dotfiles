@@ -1,5 +1,5 @@
 # default editor
-export EDITOR='code'
+export EDITOR='nvim'
 
 # _source my own aliases
 source ~/.dotfiles/zsh/zsh/zbindings

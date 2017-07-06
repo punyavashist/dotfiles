@@ -6,6 +6,56 @@ function afl() {
     alfred link
 }
 
+# _fzf
+# fe [FUZZY PATTERN] - Open the selected file with the default editor
+#   - Bypass fuzzy finder if there's only one match (--select-1)
+#   - Exit if there's no match (--exit-0)
+fe() {
+  local files
+  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
+  [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
+}
+
+# fd - cd to selected directory
+fd() {
+  local dir
+  dir=$(find ${1:-.} -path '*/\.*' -prune \
+                  -o -type d -print 2> /dev/null | fzf +m) &&
+  cd "$dir"
+}
+
+# cdf - cd into the directory of the selected file
+fw() {
+   local file
+   local dir
+   file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"
+   ls
+}
+
+# cf - fuzzy cd from anywhere
+# ex: cf word1 word2 ... (even part of a file name)
+# zsh autoload function
+df() {
+  local file
+
+  file="$(locate -Ai -0 $@ | grep -z -vE '~$' | fzf --read0 -0 -1)"
+
+  if [[ -n $file ]]
+  then
+     if [[ -d $file ]]
+     then
+        cd -- $file
+     else
+        cd -- ${file:h}
+     fi
+  fi
+}
+
+# fh - repeat history
+j() {
+  eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
+}
+
 function fix() {
     rm -rf ~/.antigen/.zcompdump
     rm -rf ~/.antigen/.zcompdump.zwc
@@ -122,10 +172,8 @@ function ogg() {
     go get github.com/$@
 }
 
-
-function fa() {
-    alias | grep "^$1"
-}
+# find aliases 
+fa() { grep -r -h "alias[[:space:]]\+${(q)1}" ~/.dotfiles/zsh; }
 
 # find where is text searched is contained
 function fl() {

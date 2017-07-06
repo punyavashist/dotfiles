@@ -1,5 +1,5 @@
 # _general
-alias tl='tmux'
+alias tl='tmux' # multiplexer
 alias mit='license-up Nikita Voloboev nikitavoloboev.xyz'
 alias afb='alfred build'
 alias mc='md-to-alfred'
@@ -116,7 +116,7 @@ alias bsl='brew services list'
 alias bst='brew services stop'
 
 # _silver searcher
-alias f="ag -g"
+alias f="rg"
 
 # _directory listings
 alias l.='ls -d .*'
@@ -126,10 +126,6 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-
-# _shortcuts
-alias h="history"
-alias j="jobs"
 
 # _cli tools
 alias kn='/Applications/Karabiner.app/Contents/Library/bin/karabiner'

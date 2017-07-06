@@ -4732,7 +4732,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::T,
-          KeyCode::VK_OPEN_URL_ALFRED_WEATHER_TODAY
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TIMEZONES
         </autogen>
 
        <autogen>
@@ -6426,7 +6426,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::T,
-        KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH
+        KeyCode::VK_OPEN_URL_KM_OPEN_PAW
     </autogen>
 
         <autogen>
