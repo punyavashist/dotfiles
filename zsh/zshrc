@@ -1,7 +1,6 @@
 # _exports
 export EDITOR='nvim'
 export DOTFILES="$HOME/.dotfiles"
-export PROJECTS="$HOME/projects"
 
 # _source aliases
 source ~/.dotfiles/zsh/zsh/zbindings
