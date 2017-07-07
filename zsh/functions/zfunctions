@@ -6,6 +6,11 @@ function afl() {
     alfred link
 }
 
+function img() {
+    cd ~/oss/nikivi/img/github
+    open .
+}
+
 # _fzf
 # fe [FUZZY PATTERN] - Open the selected file with the default editor
 #   - Bypass fuzzy finder if there's only one match (--select-1)
