@@ -7,7 +7,7 @@ vnoremap <D-c> y
 set timeout timeoutlen=1000 ttimeoutlen=10        " faster esc - maybe :|
 set showcmd                                       " show me what I'm typing
 set autowrite                                     " automatically save before :next, :make etc
-set ignorecase                                    " search case insensitive 
+set ignorecase                                    " search case insensitive
 set smartcase                                     " .. but not when search pattern contains upper case characters
 set nocursorcolumn
 set nocursorline
@@ -26,10 +26,10 @@ set path=+**                                      " search down into subfolders
 " _basic vim config
 " --------------------------------------
 "  TODO: check if some of these settings come as default with neovim
-set clipboard^=unnamed                            " copy text to system clipboard
+set clipboard^=unnamed                                                                               " copy text to system clipboard
 set clipboard^=unnamedplus
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1                 " a nice looking editor
-set title                                         " set terminal title
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1                                          " a nice looking editor
+set title                                                                                                           " set terminal title
 set whichwrap+=<,>,[,]
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set completeopt-=preview                          " no annoying scratch preview above
@@ -78,12 +78,12 @@ Plug 'zchee/deoplete-jedi'
 Plug 'szw/vim-g'                                    " search selected text in google
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'rizzatti/dash.vim'
-Plug 'tpope/vim-fugitive' 
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'vim-airline/vim-airline'                      " a nice looking status bar on the bottom
 Plug 'vim-airline/vim-airline-themes'
-Plug 'easymotion/vim-easymotion' 
+Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -114,7 +114,7 @@ inoremap      ()   ()
 :command R !node %
 command Rp execute "w|!python3 %"
 cabbrev rp Rp
-" -go 
+" -go
 command Rg execute "!go run %"
 command RR execute "!go build %"
 
@@ -137,7 +137,7 @@ nnoremap <SPACE> <Nop>
 
 let mapleader="\<Space>"
 
-nnoremap <leader>= yypVr=  
+nnoremap <leader>= yypVr=
 
 " TODO: tabe seems rather interesting
 nmap <leader>vimrc :tabe ~/.dotfiles/vim/nvim/nvimrc<cr>
@@ -197,6 +197,6 @@ let g:deoplete#enable_at_startup = 1               " activate deoplete
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " run goimports on save
-let g:go_fmt_command = "goimports" 
+let g:go_fmt_command = "goimports"
 
 

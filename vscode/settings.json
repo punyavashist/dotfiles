@@ -1,1 +1,77 @@
-/Users/nikivi/Library/Application Support/Code/User/settings.json
+{
+// _general
+"editor.snippetSuggestions": "top",
+
+"code-runner.runInTerminal": false,
+
+"vim.useSystemClipboard": true,
+
+"editor.fontFamily": "Fira Code",
+"editor.fontSize": 20,
+"editor.fontLigatures": true,
+
+// _vim
+"vim.leader": " ",
+// remap normal mode
+
+"vim.otherModesKeyBindingsNonRecursive": [
+  {
+      "before": ["<leader>", "w"],
+      "after": [],
+      "commands": [
+          {
+              "command": "workbench.action.files.save",
+              "args": []
+          }
+      ]
+  },
+    {
+      "before": ["<leader>", "e"],
+      "after": [],
+      "commands": [
+          {
+              "command": "workbench.action.files.save",
+              "args": []
+          }
+      ]
+  },
+  {
+      "before": ["Y"],
+      "after": ["y", "$"]
+  }
+],
+
+// _go
+"go.formatTool": "gofmt",
+"go.lintTool":"golint",
+"go.lintOnSave":false,
+"go.buildOnSave": true,
+"go.formatOnSave": true,
+"go.goroot": "/usr/local/go",
+"go.gopath": "/Users/nikivi/go/",
+
+// _vim
+"vim.relativenumbers": true,
+"vim.easymotion": true,
+  "vim.insertModeKeyBindings": [
+       {
+           "before": ["j", "j"],
+           "after": ["<Esc>"]
+       }
+  ]
+,
+"window.zoomLevel": 0,
+"editor.cursorStyle": "block",
+"java.errors.incompleteClasspath.severity": "ignore",
+"workbench.welcome.enabled": false,
+"workbench.colorTheme": "An Old Hope",
+"workbench.iconTheme": "vs-seti",
+"vim.disableAnnoyingNeovimMessage": true,
+"typescript.check.tscVersion": false
+}
+
+
+
+
+
+

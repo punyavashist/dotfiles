@@ -1,7 +1,9 @@
-# default editor
+# _exports
 export EDITOR='nvim'
+export DOTFILES="$HOME/.dotfiles"
+export PROJECTS="$HOME/projects"
 
-# _source my own aliases
+# _source aliases
 source ~/.dotfiles/zsh/zsh/zbindings
 source ~/.dotfiles/zsh/dev/zenv
 source ~/.dotfiles/zsh/aliases/zgit
@@ -14,13 +16,13 @@ source ~/.dotfiles/zsh/aliases/zapp
 
 setopt autocd
 
-# _secret config
+# _secret configs
 source ~/.secrets
 
-# _zsh plugins
+# _load zsh plugins
 source ~/.zsh_plugins.sh
 
-# 'thefuck' command correction 
+# 'thefuck' command correction
 eval "$(thefuck --alias)"
 
 # neat colour schemes to use

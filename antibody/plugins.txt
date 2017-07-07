@@ -1,5 +1,4 @@
 caarlos0/git-add-remote kind:path            # easily add the upstream remote
-caarlos0/jvm                                              # never manually change your JAVA_HOME again
 caarlos0/ports kind:path                            # see what's happening on your computer's ports
 caarlos0/zsh-git-fetch-merge kind:path     # git fetch && git merge
 caarlos0/zsh-git-sync kind:path                 # sync git repositories and clean them up

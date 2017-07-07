@@ -4773,7 +4773,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::Z,
+       KeyCode::A,
        KeyCode::VK_OPEN_URL_ALFRED_KILL_PROCESS
         </autogen>
 
@@ -4875,7 +4875,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::A,
+       KeyCode::Z,
        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_WORKFLOWS
         </autogen>
 
