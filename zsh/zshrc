@@ -32,3 +32,6 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 [[ -f /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh ]] && . /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh
 
 
+# TODO: does not work
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+

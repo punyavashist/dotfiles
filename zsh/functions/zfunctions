@@ -6,6 +6,10 @@ function afl() {
     alfred link
 }
 
+function iz () {
+    primitive -i in.png -o output.png -n "$1"
+}
+
 function img() {
     cd ~/oss/nikivi/img/github
     open .
