@@ -14,6 +14,6 @@ install: |
   fi
 script:
   - curl -sL https://git.io/shcheck | bash -x -s
-  - ./script/test
+  - ./scripts/test.sh
 notifications:
   email: false
