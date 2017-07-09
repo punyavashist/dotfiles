@@ -4,7 +4,6 @@
 # inspired by : https://github.com/mathiasbynens/dotfiles
 # more can be found here : https://gist.github.com/brandonb927/3195465
 
-
 if [ "$(uname -s)" != "Darwin" ]; then
 	exit 0
 fi
@@ -90,5 +89,3 @@ defaults write org.m0k.transmission EncryptionRequire -bool true
 defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 defaults write org.m0k.transmission BlocklistNew -bool true
 defaults write org.m0k.transmission BlocklistURL -string "http://john.bitsurge.net/public/biglist.p2p.gz"
-
-
