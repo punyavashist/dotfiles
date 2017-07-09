@@ -13,7 +13,6 @@ install: |
     brew install shellcheck shfmt zsh
   fi
 script:
-  - curl -sL https://git.io/shcheck | bash -x -s
   - ./scripts/test.sh
 notifications:
   email: false
