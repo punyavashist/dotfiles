@@ -1,4 +1,6 @@
 language: ruby
+rvm:
+  - 2.0.0
 os:
   - linux
   - osx
@@ -11,7 +13,7 @@ install: |
     brew install shellcheck shfmt zsh
   fi
 script:
-  - curl -sL https://git.io/shcheck | bash -x -s 
+  - curl -sL https://git.io/shcheck | bash -x -s
   - ./script/test
 notifications:
-  email: false 
+  email: false
