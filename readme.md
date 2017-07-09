@@ -1,6 +1,9 @@
 <h1 align="center"><a href="https://my.mindnode.com/3EfbezxGu7xVAM4GQNuN8Lq1naudqs333HqgTuDj">my configuration files for macOS 🐚 </a></h1>
 
 <div align="center">
+	<a href="https://travis-ci.org/nikitavoloboev/dotfiles">
+		<img src="https://img.shields.io/travis/nikitavoloboev/dotfiles/master.svg?style=flat-square">
+	</a>
 <a href="https://www.patreon.com/nikitavoloboev">
 		<img src="https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg">
 	</a>

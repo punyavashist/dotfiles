@@ -1,11 +1,19 @@
-language: bash
-sudo: required
+language: ruby
+rvm:
+  - 2.0.0
 os:
   - linux
   - osx
-install:
-  - ./build/install.sh
+install: |
+  if [ "$TRAVIS_OS_NAME" == "linux" ]; then
+    sudo apt-get update >/dev/null
+    sudo apt-get install -y zsh
+  else
+    brew update >/dev/null
+    brew install shellcheck shfmt zsh
+  fi
 script:
-  - ./build/build.sh
+  - curl -sL https://git.io/shcheck | bash -x -s -- \
+  - ./script/test
 notifications:
-  email: false
+  email: false 
