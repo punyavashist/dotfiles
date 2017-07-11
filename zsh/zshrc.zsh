@@ -3,15 +3,15 @@ export EDITOR='nvim'
 export DOTFILES="$HOME/.dotfiles"
 
 # _source aliases
-source ~/.dotfiles/zsh/zsh/zbindings
-source ~/.dotfiles/zsh/dev/zenv
-source ~/.dotfiles/zsh/aliases/zgit
-source ~/.dotfiles/zsh/aliases/zvim
-source ~/.dotfiles/zsh/aliases/zcd
-source ~/.dotfiles/zsh/functions/zfunctions
-source ~/.dotfiles/zsh/aliases/zdev
-source ~/.dotfiles/zsh/aliases/zalias
-source ~/.dotfiles/zsh/aliases/zapp
+source ~/.dotfiles/zsh/zsh/bindings.zsh
+source ~/.dotfiles/zsh/dev/env.zsh
+source ~/.dotfiles/zsh/aliases/git.zsh
+source ~/.dotfiles/zsh/aliases/vim.zsh
+source ~/.dotfiles/zsh/aliases/cd.zsh
+source ~/.dotfiles/zsh/functions/functions.zsh
+source ~/.dotfiles/zsh/aliases/dev.zsh
+source ~/.dotfiles/zsh/aliases/alias.zsh
+source ~/.dotfiles/zsh/aliases/app.zsh
 
 setopt autocd
 
@@ -30,7 +30,6 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 
 # _yarn autocomplete
 [[ -f /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh ]] && . /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh
-
 
 # TODO: does not work
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'

@@ -68,7 +68,7 @@ alias t10='tail -n 10'
 alias rrpdf='rm -rf *.pdf'
 
 # _source things
-alias sz='source ~/.dotfiles/zsh/zshrc'
+alias sz='source ~/.dotfiles/zsh/zshrc.zsh'
 
 # _ls
 alias la="ls -aF"

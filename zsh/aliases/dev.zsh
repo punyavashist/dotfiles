@@ -28,14 +28,14 @@ alias rv='virtualenv -p /usr/local/bin/python3'
 
 # _docker
 alias k='docker'
-alias kc='docker compose' 
+alias kc='docker compose'
 alias kl='docker logs'
 alias klt='docker logs --tail 100'
 alias ks='docker ps'
 alias ksq='docker ps -q'
 alias kk='docker kill'
 
-# _node 
+# _node
 alias nd='node'
 alias ndi='node install'
 alias n.='node .'
@@ -46,7 +46,7 @@ alias ii='yarn install'
 alias it='yarn init'
 alias ia='yarn add'
 alias ir='yarn run'
-alias ie='yarn remove'
+alias ire='yarn remove'
 alias ig='yarn global add'
 alias is='yarn start'
 
@@ -56,9 +56,8 @@ alias he='heroku'
 # _pip
 alias ra='pip install'
 
-
 # _npm - depracated
-alias n='npm'
+alias np='npm'
 alias ni='npm install'
 alias ns='npm start'
 alias nls='npm ls'

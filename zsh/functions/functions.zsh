@@ -16,6 +16,7 @@ function img() {
 }
 
 # _fzf
+
 # fe [FUZZY PATTERN] - Open the selected file with the default editor
 #   - Bypass fuzzy finder if there's only one match (--select-1)
 #   - Exit if there's no match (--exit-0)
@@ -23,6 +24,21 @@ fe() {
   local files
   IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
   [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
+}
+
+# fdr - cd to selected parent directory
+fdr() {
+  local declare dirs=()
+  get_parent_dirs() {
+    if [[ -d "${1}" ]]; then dirs+=("$1"); else return; fi
+    if [[ "${1}" == '/' ]]; then
+      for _dir in "${dirs[@]}"; do echo $_dir; done
+    else
+      get_parent_dirs $(dirname "$1")
+    fi
+  }
+  local DIR=$(get_parent_dirs $(realpath "${1:-$PWD}") | fzf-tmux --tac)
+  cd "$DIR"
 }
 
 # fd - cd to selected directory
@@ -39,6 +55,18 @@ fw() {
    local dir
    file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"
    ls
+}
+
+# fshow - git commit browser
+fgs() {
+  git log --graph --color=always \
+      --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |
+  fzf --ansi --no-sort --reverse --tiebreak=index --bind=ctrl-s:toggle-sort \
+      --bind "ctrl-m:execute:
+                (grep -o '[a-f0-9]\{7\}' | head -1 |
+                xargs -I % sh -c 'git show --color=always % | less -R') << 'FZF-EOF'
+                {}
+FZF-EOF"
 }
 
 # cf - fuzzy cd from anywhere
@@ -238,13 +266,6 @@ function each() {
 
 function fn() { ls **/*$1* }
 
-npm() {
-	if [ -f "yarn.lock" ]; then
-		echo "$(tput sgr 0 1)$(tput setaf 1)You should use Yarn for this project.$(tput sgr0)"
-		return
-	fi
-	command npm $@
-}
 
 function fnd() { ls **/*$1*(/) }
 
@@ -451,6 +472,14 @@ esac
 (( $success == 0 )) && (( $remove_archive == 0 )) && rm "$1"
 shift
   done
+}
+
+npm() {
+	if [ -f "yarn.lock" ]; then
+		echo "$(tput sgr 0 1)$(tput setaf 1)You should use Yarn for this project.$(tput sgr0)"
+		return
+	fi
+	command npm $@
 }
 
 function ram() {

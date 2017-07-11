@@ -4714,7 +4714,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::BACKQUOTE,
-          KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_GROUPS
+          KeyCode::VK_OPEN_URL_SEARCH_TEX_FILES
         </autogen>
 
        <autogen>
@@ -4732,7 +4732,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::T,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TIMEZONES
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
         </autogen>
 
        <autogen>
@@ -4762,13 +4762,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::SHIFT_L,
-       KeyCode::VK_OPEN_URL_ALFRED_KILL_PROCESS
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::C,
-       KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
+       KeyCode::VK_OPEN_URL_SEARCH_TEX_FILES
         </autogen>
 
        <autogen>
@@ -4864,7 +4858,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::C,
-       KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
+       KeyCode::VK_OPEN_URL_ALFRED_COLOUR_PICKER
         </autogen>
 
        <autogen>
@@ -4960,7 +4954,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::V,
-       KeyCode::VK_OPEN_URL_SEARCH_TEX_FILES
+       KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_GROUPS
         </autogen>
 
       ]]>
@@ -7703,12 +7697,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       KeyCode::VK_OPEN_URL_KM_OPEN_1PASSWORD
     </autogen>
 
-    <autogen>
-      __KeyToKey__
-      KeyCode::SEMICOLON,
-      KeyCode::VK_OPEN_URL_KM_OPEN_SPOTIFY
-    </autogen>
-
         <autogen>
       __KeyToKey__
       KeyCode::J,
@@ -7717,7 +7705,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
         <autogen>
       __KeyToKey__
-      KeyCode::B,
+      KeyCode::SEMICOLON,
       KeyCode::VK_OPEN_URL_KM_OPEN_TEXPAD
 		</autogen>
 
