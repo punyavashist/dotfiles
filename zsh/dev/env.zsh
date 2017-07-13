@@ -6,6 +6,9 @@ export PATH="$HOME/.yarn/bin:$PATH"
 
 export PATH=$PATH:~/.dotfiles/bin
 
+# _npm path
+export PATH=$PATH:./node_modules/.bin/
+
 # _anaconda
 export PATH=$PATH:$HOME/software/anaconda3/bin
 

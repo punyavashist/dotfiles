@@ -7,8 +7,8 @@ alias tm='task'
 alias rf='reflex'
 alias kb='kubectl'
 
-alias ss='serve'
-alias sv='python3 -m http.server'
+alias ser='serve'
+alias ss='python3 -m http.server'
 
 alias re='create-react-app'
 
@@ -42,11 +42,11 @@ alias n.='node .'
 
 # _yarn
 alias i='yarn'
-alias ii='yarn install'
-alias it='yarn init'
+alias il='yarn list'
+alias ii='yarn init'
 alias ia='yarn add'
 alias ir='yarn run'
-alias ire='yarn remove'
+alias iw='yarn remove'
 alias ig='yarn global add'
 alias is='yarn start'
 

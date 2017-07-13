@@ -15,83 +15,6 @@ function img() {
     open .
 }
 
-# _fzf
-
-# fe [FUZZY PATTERN] - Open the selected file with the default editor
-#   - Bypass fuzzy finder if there's only one match (--select-1)
-#   - Exit if there's no match (--exit-0)
-fe() {
-  local files
-  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
-  [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
-}
-
-# fdr - cd to selected parent directory
-fdr() {
-  local declare dirs=()
-  get_parent_dirs() {
-    if [[ -d "${1}" ]]; then dirs+=("$1"); else return; fi
-    if [[ "${1}" == '/' ]]; then
-      for _dir in "${dirs[@]}"; do echo $_dir; done
-    else
-      get_parent_dirs $(dirname "$1")
-    fi
-  }
-  local DIR=$(get_parent_dirs $(realpath "${1:-$PWD}") | fzf-tmux --tac)
-  cd "$DIR"
-}
-
-# fd - cd to selected directory
-fd() {
-  local dir
-  dir=$(find ${1:-.} -path '*/\.*' -prune \
-                  -o -type d -print 2> /dev/null | fzf +m) &&
-  cd "$dir"
-}
-
-# cdf - cd into the directory of the selected file
-fw() {
-   local file
-   local dir
-   file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"
-   ls
-}
-
-# fshow - git commit browser
-fgs() {
-  git log --graph --color=always \
-      --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |
-  fzf --ansi --no-sort --reverse --tiebreak=index --bind=ctrl-s:toggle-sort \
-      --bind "ctrl-m:execute:
-                (grep -o '[a-f0-9]\{7\}' | head -1 |
-                xargs -I % sh -c 'git show --color=always % | less -R') << 'FZF-EOF'
-                {}
-FZF-EOF"
-}
-
-# cf - fuzzy cd from anywhere
-# ex: cf word1 word2 ... (even part of a file name)
-# zsh autoload function
-df() {
-  local file
-
-  file="$(locate -Ai -0 $@ | grep -z -vE '~$' | fzf --read0 -0 -1)"
-
-  if [[ -n $file ]]
-  then
-     if [[ -d $file ]]
-     then
-        cd -- $file
-     else
-        cd -- ${file:h}
-     fi
-  fi
-}
-
-# fh - repeat history
-j() {
-  eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
-}
 
 function fix() {
     rm -rf ~/.antigen/.zcompdump
@@ -102,8 +25,6 @@ function fix() {
 function gp() {
     git pull origin pull/"$1"/head
 }
-
-
 
 # changed queries in search engine
 function qe() {
@@ -132,8 +53,8 @@ function ggi() {
 }
 
 function gao() {
-    clipboard="$(pbpaste)" 
-    git remote add origin $clipboard 
+    clipboard="$(pbpaste)"
+    git remote add origin $clipboard
 }
 
 # TODO: anybar
@@ -157,7 +78,7 @@ function glw() {
 # TODO: git clone and cd instantly to cloned repo
 #function ..() {
 #    clipboard="$(pbpaste)"
-#    git clone "$clipboard" && cd "${1##*/}" 
+#    git clone "$clipboard" && cd "${1##*/}"
 #}
 
 function gc() {
@@ -191,7 +112,7 @@ function tc() {
 
 function gll(){
     clipboard="$(pbpaste)"
-    git clone $clipboard 
+    git clone $clipboard
 }
 
 function ggs() {
@@ -209,7 +130,7 @@ function ogg() {
     go get github.com/$@
 }
 
-# find aliases 
+# find aliases
 fa() { grep -r -h "alias[[:space:]]\+${(q)1}" ~/.dotfiles/zsh; }
 
 # find where is text searched is contained
@@ -235,7 +156,7 @@ function finder {
 EOF
 }
 
-xo(){ 
+xo(){
   if test -n "$(find . -maxdepth 1 -name '*.xcworkspace' -print -quit)"
   then
     echo "Opening workspace"
@@ -246,13 +167,12 @@ xo(){
     then
       echo "Opening project"
       open *.xcodeproj
-      return  
+      return
     else
       echo "Nothing found"
     fi
   fi
 }
-
 
 function each() {
   for dir in *; do
@@ -263,9 +183,7 @@ function each() {
   done
 }
 
-
 function fn() { ls **/*$1* }
-
 
 function fnd() { ls **/*$1*(/) }
 
@@ -292,8 +210,8 @@ function fex {
   find . -type f -iname "*${1:-}*" -exec "${2:-file}" '{}' \;
 }
 
-
-fs() {
+# TODO: ?
+fss() {
 	if du -b /dev/null > /dev/null 2>&1; then
 		local arg=-sbh
 	else

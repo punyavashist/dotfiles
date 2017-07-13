@@ -1,6 +1,5 @@
 # _text editors
 alias cr='open -a CodeRunner'
-alias jj='open -a IntelliJ\ IDEA'
 alias xx='open -a Xcode'
 alias x.='open -a Xcode .'
 alias ae='open -a MacDown readme.md'
