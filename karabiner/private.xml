@@ -2717,10 +2717,10 @@ tell application "Alfred 3" to run trigger "searchYandex" in workflow "net.deani
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_CHROME_CANARY_SEARCH</name>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_CHROME_SEARCH</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "searchChromeCanaryBookmarks" in workflow "com.mdreizin.chrome.bookmarks" with argument ""
+tell application "Alfred 3" to run trigger "searchChromeBookmarks" in workflow "com.mdreizin.chrome.bookmarks" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -7857,6 +7857,13 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
   <autogen>
     __KeyToKey__
+    KeyCode::U,
+    KeyCode::DOT,
+    KeyCode::SLASH
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
     KeyCode::H,
     KeyCode::4, ModifierFlag::SHIFT_L
   </autogen>
@@ -11018,7 +11025,7 @@ KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
 __SimultaneousKeyPresses__
 KeyCode::P, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
+KeyCode::VK_OPEN_URL_ALFRED_CHROME_SEARCH
 </autogen>
 </item>
 
@@ -11040,7 +11047,7 @@ KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
+KeyCode::VK_OPEN_URL_ALFRED_CHROME_SEARCH
 </autogen>
 </item>
 
@@ -11084,7 +11091,7 @@ KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::U, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
+KeyCode::VK_OPEN_URL_ALFRED_CHROME_SEARCH
 </autogen>
 </item>
 

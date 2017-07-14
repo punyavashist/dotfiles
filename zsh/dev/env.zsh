@@ -7,12 +7,12 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export PATH=$PATH:~/.dotfiles/bin
 
 # _npm path
-export PATH=$PATH:./node_modules/.bin/
+export PATH=./node_modules/.bin/:$PATH
 
 # _anaconda
 export PATH=$PATH:$HOME/software/anaconda3/bin
 
-# _go 
+# _go
 export GOPATH=/Users/nikivi/go/
 export PATH=$PATH:$GOPATH/bin:$GOPATH/bin
 export GOBIN=$GOPATH/bin
