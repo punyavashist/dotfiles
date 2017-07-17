@@ -41,7 +41,7 @@ function mi() {
 }
 
 
-functon wa() {
+functon aw() {
     cd "$1"
     code .
 }
@@ -202,7 +202,7 @@ function md {
 }
 
 # change to a directory and list its contents
-function da {
+function ad {
   builtin cd "$argv[-1]" && ls "${(@)argv[1,-2]}"
 }
 

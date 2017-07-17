@@ -5,6 +5,7 @@
 
 // _prettier
 "prettier.singleQuote": true,
+"editor.formatOnSave": true,
 
 "extensions.autoUpdate": true,
 
@@ -66,7 +67,7 @@
        }
   ]
 ,
-"window.zoomLevel": 1,
+"window.zoomLevel": -1,
 "editor.cursorStyle": "block",
 "java.errors.incompleteClasspath.severity": "ignore",
 "workbench.welcome.enabled": false,

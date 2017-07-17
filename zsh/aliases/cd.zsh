@@ -1,4 +1,4 @@
-# _projects 
+# _projects
 alias dk='cd ~/projects'
 alias daq='cd ~/code/xcode/projects/macos/quoter'
 alias d:='cd ~/learning'
@@ -25,7 +25,7 @@ alias drb='cd ~/code/ruby'
 alias dpp='cd ~/code/python'
 alias dlove='cd ~/code/lua/love'
 alias djs='cd ~/code/js'
-#alias da='cd ~/code' TODO: change 
+#alias da='cd ~/code' TODO: change
 alias dgo='cd ~/code/go'
 alias dsj='cd ~/code/solutions/java'
 alias dss='cd ~/oss/nikivi/solutions'
@@ -82,7 +82,7 @@ alias dbl='cd ~/oss/nikivi/hugo/content/post'
 alias d..='cd ~/.config'
 alias dbi='cd ~/.dotfiles/bin/internets'
 alias dv='cd ~/.dotfiles/vim'
-alias d.='cd ~/.dotfiles'
+alias da='cd ~/.dotfiles'
 alias dsk='cd ~/Library/Application\ Support/Karabiner'
 alias db='cd ~/.dotfiles/bin'
 alias dh='cd ~/.hammerspoon'

@@ -1,14 +1,14 @@
 # _general
-alias tl='tmux' # multiplexer
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias le='less -r'
 alias du='du -sh * | sort'
 alias mit='license-up Nikita Voloboev nikitavoloboev.xyz'
 alias afb='alfred build'
+alias j='tmux'
 alias mc='md-to-alfred'
 alias pd='pandoc'
 alias yt='yotube-dl'
-alias r='trash'
+alias r='rg'
 alias ca='carthage'
 alias cad='carthage update'
 alias alf='alfred'
@@ -26,11 +26,11 @@ alias how='howdoi'
 alias ua='unalias'
 alias sudo='sudo '
 alias m='mkdir'
-alias tk='killall tmux'
+alias jj='killall tmux'
 alias loc='count_number_of_lines'
 alias mm='tldr'
 alias ma='man'
-alias aw='k -h'
+# alias aw='k -h' TODO: ?
 alias c='ccat'
 alias rec='asciinema rec'
 alias b='bd'
@@ -117,9 +117,6 @@ alias ba='brew update  && brew upgrade --all && brew cleanup && brew prune && br
 alias bss='brew services start'
 alias bsl='brew services list'
 alias bst='brew services stop'
-
-# _silver searcher
-alias f="rg"
 
 # _directory listings
 alias l.='ls -d .*'

@@ -1,3 +1,52 @@
+" -------------------------------------
+"  _plugins
+" -------------------------------------
+call plug#begin() " plugins to use
+
+" autocomplete engine
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+
+Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/heytmux'
+Plug 'sbdchd/neoformat'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'danro/rename.vim'                             " allow to :Rename files
+Plug 'rking/ag.vim'                                 " lightining fast :Ag searcher
+Plug 'sheerun/vim-polyglot'
+Plug 'chriskempson/base16-vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'tpope/vim-sensible'                           " sensible defaults
+Plug 'pangloss/vim-javascript'
+Plug 'airblade/vim-gitgutter'
+Plug 'zchee/deoplete-jedi'
+Plug 'szw/vim-g'                                    " search selected text in google
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'rizzatti/dash.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
+Plug 'vim-airline/vim-airline'                      " a nice looking status bar on the bottom
+Plug 'vim-airline/vim-airline-themes'
+Plug 'easymotion/vim-easymotion'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'fatih/vim-go'
+Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'carlitux/deoplete-ternjs'                    " js autocomplete
+
+call plug#end()
+
+
+
 " --------------------------------------
 "  _testing
 " --------------------------------------
@@ -50,50 +99,6 @@ autocmd FileType help wincmd L
 
 :autocmd InsertEnter,InsertLeave * set cul!       " notify on mode change visually
 
-" -------------------------------------
-"  _plugins
-" -------------------------------------
-call plug#begin() " plugins to use
-
-" autocomplete engine
-function! DoRemote(arg)
-  UpdateRemotePlugins
-endfunction
-
-Plug 'jiangmiao/auto-pairs'
-Plug 'sbdchd/neoformat'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'danro/rename.vim'                             " allow to :Rename files
-Plug 'rking/ag.vim'                                 " lightining fast :Ag searcher
-Plug 'sheerun/vim-polyglot'
-Plug 'chriskempson/base16-vim'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'junegunn/vim-easy-align'
-Plug 'junegunn/limelight.vim'
-Plug 'junegunn/goyo.vim'
-Plug 'tpope/vim-sensible'                           " sensible defaults
-Plug 'pangloss/vim-javascript'
-Plug 'airblade/vim-gitgutter'
-Plug 'zchee/deoplete-jedi'
-Plug 'szw/vim-g'                                    " search selected text in google
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'rizzatti/dash.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-repeat'
-Plug 'vim-airline/vim-airline'                      " a nice looking status bar on the bottom
-Plug 'vim-airline/vim-airline-themes'
-Plug 'easymotion/vim-easymotion'
-Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'fatih/vim-go'
-Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-Plug 'zchee/deoplete-go', { 'do': 'make'}
-Plug 'carlitux/deoplete-ternjs'                    " js autocomplete
-
-call plug#end()
 
 " --------------------------------------
 "  _comma mapping
@@ -199,4 +204,24 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " run goimports on save
 let g:go_fmt_command = "goimports"
 
+" _fzf
+" Mapping selecting mappings
+nmap <leader><tab> <plug>(fzf-maps-n)
+xmap <leader><tab> <plug>(fzf-maps-x)
+omap <leader><tab> <plug>(fzf-maps-o)
 
+" Insert mode completion
+imap <c-x><c-k> <plug>(fzf-complete-word)
+imap <c-x><c-f> <plug>(fzf-complete-path)
+imap <c-x><c-j> <plug>(fzf-complete-file-ag)
+imap <c-x><c-l> <plug>(fzf-complete-line)
+
+" Advanced customization using autoload functions
+inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
+
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)

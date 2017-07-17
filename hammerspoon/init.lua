@@ -54,7 +54,7 @@ darkblue = {red=24/255,blue=195/255,green=145/255,alpha=1}
 -- _utils
 --------------------------------------------------------------------------------
 -- show my todo task in a neat window briefly
-function showTodoTask () 
+function showTodoTask ()
 hs.alert.show( ( hs.execute("~/Documents/app/bitbar/todo") ) )
 end
 hs.urlevent.bind("showTodoTask", showTodoTask)
@@ -101,7 +101,7 @@ function mouseHighlight()
     -- set a timer to delete the circle after 2 seconds
     mouseCircleTimer = hs.timer.doAfter(2, function() mouseCircle:delete() end)
 end
-hs.urlevent.bind("visuallyCircleMouse", mouseHighlight) 
+hs.urlevent.bind("visuallyCircleMouse", mouseHighlight)
 
 function showTime()
     if not time_draw then
@@ -118,13 +118,13 @@ function showTime()
         time_draw=nil
     end
 end
-hs.urlevent.bind("showTime", showTime) 
+hs.urlevent.bind("showTime", showTime)
 
 
 --------------------------------------------------------------------------------
 -- _wm = window management
 --------------------------------------------------------------------------------
-hs.window.animationDuration = 0 
+hs.window.animationDuration = 0
 hs.hotkey.alertDuration=0
 
 resize_current_winnum = 1
@@ -145,8 +145,8 @@ end
 hs.urlevent.bind("cycleWindowsPrevious", cycle_wins_pre)
 
 -- doesn't work
-function showWindowHints() 
-   hs.hints.windowHints() 
+function showWindowHints()
+   hs.hints.windowHints()
 end
 hs.urlevent.bind("showActiveWindows", showWindowHints)
 
@@ -155,6 +155,7 @@ hs.urlevent.bind("showActiveWindows", showWindowHints)
 -- _testing
 --------------------------------------------------------------------------------
 
+-- google search
 local anycomplete = require "anycomplete/anycomplete"
 anycomplete.registerDefaultBindings(cmd_alt_ctrl, "W")
 
@@ -165,7 +166,7 @@ end
 hs.urlevent.bind("tester", focus)
 
 --------------------------------------------------------------------------------
--- _meta 
+-- _meta
 --------------------------------------------------------------------------------
 
 function openConsole()
@@ -178,7 +179,3 @@ hs.urlevent.bind("reloadConfig", hs.reload)
 
 -- _notify that config is reloaded
 hs.alert.show("config loaded")
-
-
-local anycomplete = require "anycomplete/anycomplete"
-anycomplete.registerDefaultBindings()

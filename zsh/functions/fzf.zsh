@@ -1,3 +1,10 @@
+unalias z 2> /dev/null
+z() {
+  [ $# -gt 0 ] && _z "$*" && return
+  cd "$(_z -l 2>&1 | fzf --height 40% --reverse --inline-info +s --tac --query "$*" | sed 's/^[0-9,.]* *//')"
+}
+alias d='z'
+
 # fkill - kill process
 fkill() {
   local pid
@@ -8,6 +15,7 @@ fkill() {
     echo $pid | xargs kill -${1:-9}
   fi
 }
+
 
 # fbr - checkout git branch (including remote branches), sorted by most recent commit, limit 30 last branches
 fb() {
@@ -59,13 +67,6 @@ ft() {
   done
 }
 
-unalias z 2> /dev/null
-z() {
-  [ $# -gt 0 ] && _z "$*" && return
-  cd "$(_z -l 2>&1 | fzf --height 40% --reverse --inline-info +s --tac --query "$*" | sed 's/^[0-9,.]* *//')"
-}
-alias d='z'
-
 # fcs - get git commit sha
 # example usage: git rebase -i `fcs`
 fcs() {
@@ -86,10 +87,16 @@ fm() {
 # fe [FUZZY PATTERN] - Open the selected file with the default editor
 #   - Bypass fuzzy finder if there's only one match (--select-1)
 #   - Exit if there's no match (--exit-0)
-fe() {
+f() {
   local files
   IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
   [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
+}
+
+w() {
+  local files
+  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
+  [[ -n "$files" ]] && code "${files[@]}"
 }
 
 # fdr - cd to selected parent directory
@@ -108,7 +115,7 @@ fdr() {
 }
 
 # fd - cd to selected directory
-fd() {
+r() {
   local dir
   dir=$(find ${1:-.} -path '*/\.*' -prune \
                   -o -type d -print 2> /dev/null | fzf +m) &&
@@ -149,6 +156,6 @@ df() {
 }
 
 # fh - repeat history
-j() {
+h() {
   eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
 }

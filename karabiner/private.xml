@@ -82,6 +82,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_IMGUR</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: imgur"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_TRAVIS</name>
   <url type="shell">
   osascript -e '
@@ -4725,7 +4736,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::S,
+       KeyCode::A,
           KeyCode::W, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
         </autogen>
 
@@ -4749,12 +4760,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::S,
-       KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SKETCH
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
        KeyCode::E,
       KeyCode::F9, ModifierFlag::OPTION_L
         </autogen>
@@ -4767,8 +4772,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::A,
-       KeyCode::VK_OPEN_URL_ALFRED_KILL_PROCESS
+       KeyCode::S,
+       KeyCode::VK_OPEN_URL_ALFRED_EXPLAIN_SHELL
         </autogen>
 
        <autogen>
@@ -4936,7 +4941,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::H,
-       KeyCode::VK_OPEN_URL_ALFRED_PINBOARD
+       KeyCode::VK_OPEN_URL_ALFRED_HACKER_NEWS
         </autogen>
 
        <autogen>
@@ -4948,7 +4953,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::G,
-       KeyCode::VK_OPEN_URL_ALFRED_HACKER_NEWS
+       KeyCode::VK_OPEN_URL_ALFRED_KILL_PROCESS
         </autogen>
 
        <autogen>
@@ -6898,7 +6903,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::J,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_NPM
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_YOUTUBE
     </autogen>
 
     <autogen>
@@ -6970,7 +6975,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::I,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEETCODE
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA_ANSWER
     </autogen>
 
     <autogen>
@@ -7017,6 +7022,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
+        KeyCode::G,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_IMGUR
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::H,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_HCKR_NEWS
     </autogen>
@@ -7042,7 +7053,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::N,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_NOTIFICATIONS
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_NPM
     </autogen>
 
     <autogen>
