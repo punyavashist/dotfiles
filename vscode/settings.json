@@ -13,7 +13,7 @@
 
 "vim.useSystemClipboard": true,
 
-"editor.fontFamily": "Fira Code",
+"editor.fontFamily": "Monospace",
 "editor.fontSize": 20,
 "editor.fontLigatures": true,
 
@@ -67,7 +67,7 @@
        }
   ]
 ,
-"window.zoomLevel": -1,
+"window.zoomLevel": -2,
 "editor.cursorStyle": "block",
 "java.errors.incompleteClasspath.severity": "ignore",
 "workbench.welcome.enabled": false,
@@ -75,7 +75,18 @@
 "workbench.iconTheme": "vs-seti",
 "vim.disableAnnoyingNeovimMessage": true,
 "typescript.check.tscVersion": false,
-"typescript.check.npmIsInstalled": false
+"typescript.check.npmIsInstalled": false,
+"sync.gist": "0c57cbed63ec19108a8437f4325bdd32",
+"sync.lastUpload": "2017-07-18T07:26:15.238Z",
+"sync.autoDownload": false,
+"sync.autoUpload": false,
+"sync.lastDownload": "",
+"sync.forceDownload": false,
+"sync.anonymousGist": false,
+"sync.host": "",
+"sync.pathPrefix": "",
+"sync.quietSync": false,
+"sync.askGistName": false
 }
 
 

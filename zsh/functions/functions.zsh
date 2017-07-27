@@ -86,6 +86,32 @@ function gc() {
     git commit -m "$arg"
 }
 
+# function gc() { arg=$*; printf 'git commit -m <%s>\n' "$arg";}
+
+function upd() {
+  cd ~/projects/search-engine/
+  git pull
+  yarn run update-maps
+  rm -r ~/oss/learn-anything/learn-anything/learn-anything
+  react-mindmap-parse maps ~/oss/learn-anything/learn-anything
+  rm -r maps
+  cd ~/oss/learn-anything/learn-anything/
+  yarn run upload
+  git add .
+  git commit -m "new maps"
+  git push
+}
+
+# run from search engine folder
+function mdev() {
+  git checkout dev
+  git pull
+  git checkout master
+  git pull
+  git merge dev
+  git push
+  git checkout dev
+}
 
 function wfg() {
     reflex -g '*.go' go run main.go $1
@@ -101,6 +127,10 @@ function wfb() {
 
 function wfa() {
     reflex -g '*.go' alfred build
+}
+
+function fdef() {
+  whence -f "$1"
 }
 
 function tc() {
@@ -419,4 +449,3 @@ function ram() {
     fi
   fi
 }
-
