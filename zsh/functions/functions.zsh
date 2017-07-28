@@ -26,6 +26,12 @@ function gp() {
     git pull origin pull/"$1"/head
 }
 
+function ggr() {
+  git add readme.md
+  git commit -m "updated readme"
+  git push
+}
+
 # changed queries in search engine
 function qe() {
     yarn run clean-triggers
@@ -100,6 +106,15 @@ function upd() {
   git add .
   git commit -m "new maps"
   git push
+}
+
+
+# run md-to-alfred on each md file in current dir
+function mc.() {
+  for entry in ./*.md
+ do
+   md-to-alfred json $entry
+  done
 }
 
 # run from search engine folder

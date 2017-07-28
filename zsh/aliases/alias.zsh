@@ -14,6 +14,7 @@ alias cad='carthage update'
 alias alf='alfred'
 alias ta='touch readme.md'
 alias s='cd'
+alias gos='go-search'
 alias sd='sudo'
 # TODO: fk alias to run last cmd as sudo instantly
 alias lg='ls | grep'
@@ -26,6 +27,7 @@ alias how='howdoi'
 alias ua='unalias'
 alias sudo='sudo '
 alias m='mkdir'
+alias w='code'
 alias jj='killall tmux'
 alias loc='count_number_of_lines'
 alias mm='tldr'
@@ -70,6 +72,7 @@ alias rrpdf='rm -rf *.pdf'
 # _source things
 alias sz='source ~/.dotfiles/zsh/zshrc.zsh'
 
+
 # _ls
 alias la="ls -aF"
 alias ld="ls -ld"
@@ -78,7 +81,8 @@ alias lsn='ls -Art1 && echo "------Newest--"'
 alias a.='ls -d .*'
 
 # _hugo
-alias hser='hugo server'
+alias ud='hugo server -D'
+alias u='hugo'
 
 # _jekyll
 alias js='bundle exec jekyll serve'

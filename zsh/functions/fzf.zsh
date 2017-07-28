@@ -93,7 +93,7 @@ f() {
   [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
 }
 
-w() {
+fw() {
   local files
   IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
   [[ -n "$files" ]] && code "${files[@]}"
@@ -123,7 +123,7 @@ r() {
 }
 
 # cdf - cd into the directory of the selected file
-fw() {
+fd() {
    local file
    local dir
    file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"
