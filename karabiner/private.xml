@@ -82,6 +82,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_AWS</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: aws"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_LICHESS</name>
   <url type="shell">
   osascript -e '
@@ -700,6 +711,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: clone repo to ~/play"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_IN_SAFARI</name>
   <url type="shell">
   osascript -e '
@@ -1250,6 +1272,17 @@
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "open: transmission"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMIT</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: transmit"
     end tell
     '
   </url>
@@ -2218,6 +2251,34 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_CURRENT_SONG</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "web_search_current_track" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_OPEN_LYRICS</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "lyrics" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_GIT_REPOS_UPDATE</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "gitUpdate" in workflow "net.deanishe.alfred-git-repos" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_PLAY_DIR_WATCH</name>
   <url type="shell">
   osascript -e '
@@ -2227,10 +2288,19 @@ tell application "Alfred 3" to run trigger "playDirWatch" in workflow "com.vitor
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_REMOVE_SONG_FROM_PLAYLIST</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "remove_current_track_from" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_WATCH_SPOTIFY_LIKES</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "alfredPlaylist" in workflow "com.vdesabou.spotify.mini.player" with argument "✧Alfred Playlist▹"
+tell application "Alfred 3" to run trigger "show_alfred_playlist" in workflow "com.vdesabou.spotify.mini.player" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -2240,15 +2310,6 @@ tell application "Alfred 3" to run trigger "playDirWatch" in workflow "com.vitor
   <url type="shell">
   osascript -e '
   tell application "Alfred 3" to run trigger "addSongToMyMusic" in workflow "com.vdesabou.spotify.mini.player" with argument ""
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SPOTIFY</name>
-  <url type="shell">
-  osascript -e '
-  tell application "Alfred 3" to run trigger "spotifySearch" in workflow "com.vdesabou.spotify.mini.player" with argument "✧Search Online▹"
     '
   </url>
 </vkopenurldef>
@@ -2402,6 +2463,15 @@ tell application "Alfred 3" to run trigger "cleanDesktop" in workflow "nikivi.cl
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_READING_LIST</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "reading-list" in workflow "net.deanishe.alfred.safari" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_BOOKMARKS</name>
   <url type="shell">
   osascript -e '
@@ -2495,7 +2565,7 @@ tell application "Alfred 3" to run trigger "aminer" in workflow "nikivi.web-sear
   <name>KeyCode::VK_OPEN_URL_ALFRED_CREATE_ARTIST_RADIO</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "createArtistRadio" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+tell application "Alfred 3" to run trigger "artist_radio" in workflow "com.vdesabou.spotify.mini.player" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -2504,7 +2574,7 @@ tell application "Alfred 3" to run trigger "createArtistRadio" in workflow "com.
   <name>KeyCode::VK_OPEN_URL_ALFRED_CREATE_SONG_RADIO</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "createSongRadio" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+tell application "Alfred 3" to run trigger "song_radio" in workflow "com.vdesabou.spotify.mini.player" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -2532,6 +2602,7 @@ tell application "Alfred 3" to run trigger "playAlbumOfSong" in workflow "com.vd
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "play_alfred_playlist" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+
     '
   </url>
 </vkopenurldef>
@@ -2540,7 +2611,7 @@ tell application "Alfred 3" to run trigger "play_alfred_playlist" in workflow "c
   <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_ADD_SONG_TO_PLAYLIST</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "addSongToPlaylist" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+tell application "Alfred 3" to run trigger "add_current_track_to" in workflow "com.vdesabou.spotify.mini.player" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -3061,15 +3132,6 @@ tell application "Alfred 3" to run trigger "showCalendar" in workflow "zmin.cale
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_OPEN_LYRICS_FOR_SPOTIFY_ITUNES_SONG</name>
-  <url type="shell">
-  osascript -e '
-tell application "Alfred 3" to run trigger "showLyricsForSpotifyItunes" in workflow "com.likewinter.genius" with argument ""
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_CONTACTS_TEXT</name>
   <url type="shell">
   osascript -e '
@@ -3329,7 +3391,7 @@ tell application "Alfred 3" to run trigger "snippetsLabSearch" in workflow "com.
   <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "spotifyMain" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+  tell application "Alfred 3" to run trigger "spot_mini" in workflow "com.vdesabou.spotify.mini.player" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -3393,7 +3455,7 @@ tell application "Alfred 3" to run trigger "itermSessions" in workflow "com.madv
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "searchSafariHistory" in workflow "com.alfredapp.andrew.safari" with argument ""
+  tell application "Alfred 3" to run trigger "history" in workflow "net.deanishe.alfred.safari" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -5258,7 +5320,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         <autogen>
       __KeyToKey__
       KeyCode::I,
-      KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+      KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY
 		</autogen>
 
         <autogen>
@@ -5429,12 +5491,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       __KeyToKey__
       KeyCode::F,
       KeyCode::F18
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::L,
-      KeyCode::VK_OPEN_URL_ALFRED_OPEN_LYRICS_FOR_SPOTIFY_ITUNES_SONG
 		</autogen>
 
         <autogen>
@@ -5983,6 +6039,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __BlockUntilKeyUp__ KeyCode::M,
     </autogen>
+    
+  <autogen>
+    __KeyToKey__
+    KeyCode::K,
+    KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_CURRENT_SONG
+  </autogen>
 
   <autogen>
     __KeyToKey__
@@ -6010,12 +6072,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
   <autogen>
     __KeyToKey__
-    KeyCode::C,
-    KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SPOTIFY
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
     KeyCode::V,
     KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_PLAYLISTS
   </autogen>
@@ -6034,20 +6090,14 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
   <autogen>
     __KeyToKey__
-    KeyCode::1,
-    KeyCode::O, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+    KeyCode::3,
+    KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_REMOVE_SONG_FROM_PLAYLIST
   </autogen>
 
   <autogen>
     __KeyToKey__
     KeyCode::W,
     KeyCode::VK_OPEN_URL_ALFRED_TIMER_START
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::2,
-    KeyCode::P, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
   </autogen>
 
   <autogen>
@@ -6073,12 +6123,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         KeyCode::S,
          KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
      </autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::BACKQUOTE,
-      KeyCode::F3, ModifierFlag::COMMAND_L
-		</autogen>
 
        <autogen>
          __KeyToKey__
@@ -6127,6 +6171,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       KeyCode::F19,
       KeyCode::4, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
 		</autogen>
+
 
         <autogen>
       __KeyToKey__
@@ -6540,7 +6585,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::T,
-        KeyCode::VK_OPEN_URL_KM_OPEN_PAW
+        KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMIT
     </autogen>
 
         <autogen>
@@ -6952,7 +6997,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::COMMAND_R,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_ALL
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES
     </autogen>
 
     <autogen>
@@ -7054,7 +7099,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::S,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODEPEN
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_AWS
     </autogen>
 
     <autogen>
@@ -7753,12 +7798,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     </autogen>
 
     <autogen>
-        __KeyToKey__
-        KeyCode::QUOTE,
-        KeyCode::VK_OPEN_URL_KM_OPEN_MUSIXMATCH_LYRICS
-    </autogen>
-
-    <autogen>
       __KeyToKey__
       KeyCode::SPACE,
       KeyCode::G, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
@@ -8347,7 +8386,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         <autogen>
         __KeyToKey__
         KeyCode::U,
-        KeyCode::V, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+        KeyCode::VK_OPEN_URL_ALFRED_GIT_REPOS_UPDATE
         </autogen>
 
     <autogen>
@@ -10874,7 +10913,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::COMMAND_R, KeyCode::SEMICOLON,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_ADD_SONG_TO_PLAYLIST
+          KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
       </autogen>
   </item>
 
@@ -10896,7 +10935,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::SEMICOLON, KeyCode::N,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+		KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_READING_LIST
       </autogen>
   </item>
 
