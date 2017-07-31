@@ -1,7 +1,7 @@
 # _general
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias le='less -r'
-alias du='du -sh * | sort'
+# alias du='du -sh * | sort'
 alias mit='license-up Nikita Voloboev nikitavoloboev.xyz'
 alias afb='alfred build'
 alias j='tmux'
@@ -9,11 +9,12 @@ alias mc='md-to-alfred'
 alias pd='pandoc'
 alias yt='yotube-dl'
 alias r='rg'
+alias s='open'
 alias ca='carthage'
 alias cad='carthage update'
 alias alf='alfred'
 alias ta='touch readme.md'
-alias s='cd'
+alias d='cd'
 alias gos='go-search'
 alias sd='sudo'
 # TODO: fk alias to run last cmd as sudo instantly
@@ -49,7 +50,7 @@ alias tre='tree -a'
 alias q='exit'
 alias e='nvim'
 alias sf='screenfetch'
-alias ze='open .'
+alias se='open .'
 alias mx='chmod +x'
 alias rr='rm -rf'
 alias a='ls -FG'
@@ -81,7 +82,8 @@ alias lsn='ls -Art1 && echo "------Newest--"'
 alias a.='ls -d .*'
 
 # _hugo
-alias ud='hugo server -D'
+alias us='hugo server -D'
+alias ut='hugo server -w' # testing
 alias u='hugo'
 
 # _jekyll

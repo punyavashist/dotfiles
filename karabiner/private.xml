@@ -2251,6 +2251,15 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SHOW_QUEUE</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "playQueue" in workflow "com.vdesabou.spotify.mini.player" with argument "✧Play Queue▹"
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_CURRENT_SONG</name>
   <url type="shell">
   osascript -e '
@@ -2309,7 +2318,7 @@ tell application "Alfred 3" to run trigger "show_alfred_playlist" in workflow "c
   <name>KeyCode::VK_OPEN_URL_ALFRED_ADD_SONG_SPOTIFY</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "addSongToMyMusic" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+  tell application "Alfred 3" to run trigger "add_current_track_to_alfred_playlist_or_your_music" in workflow "com.vdesabou.spotify.mini.player" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -6039,6 +6048,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __BlockUntilKeyUp__ KeyCode::M,
     </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::C,
+    KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SHOW_QUEUE
+  </autogen>
     
   <autogen>
     __KeyToKey__
@@ -6048,9 +6063,15 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
   <autogen>
     __KeyToKey__
+    KeyCode::X,
+    KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_OPEN_LYRICS
+  </autoge>
+
+  <autogen>
+    __KeyToKey__
     KeyCode::Y,
     KeyCode::VK_OPEN_URL_ALFRED_CREATE_ARTIST_RADIO
-  </autogen>
+  </autoge>
 
   <autogen>
     __KeyToKey__
@@ -6260,11 +6281,11 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       KeyCode::VK_OPEN_URL_ALFRED_PLAY_MY_LIKES_PLAYLIST
     </autogen>
 
-    <autogen>
-      __KeyToKey__
-      KeyCode::SEMICOLON,
-      KeyCode::VK_OPEN_URL_KM_INCREASE_YOUTUBE_PLAYBACK
-    </autogen>
+       <autogen>
+       __KeyToKey__
+       KeyCode::SEMICOLON,
+       KeyCode::VK_OPEN_URL_KM_INCREASE_YOUTUBE_PLAYBACK
+        </autogen>
 
     <autogen>
       __KeyToKey__
@@ -7550,7 +7571,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
       __KeyToKey__
-      KeyCode::U,
+      KeyCode::COMMA,
       KeyCode::B, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
     </autogen>
 
@@ -8623,6 +8644,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
        <autogen>
        __KeyToKey__
+       KeyCode::Z,
+       KeyCode::SPACE, ModifierFlag::COMMAND_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
        KeyCode::1,
        KeyCode::1, ModifierFlag::CONTROL_L
         </autogen>
@@ -8747,6 +8774,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
        __KeyToKey__
        KeyCode::H,
        KeyCode::RETURN, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+       </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::COMMA,
+       KeyCode::RETURN, ModifierFlag::SHIFT_L
        </autogen>
 
        <autogen>
