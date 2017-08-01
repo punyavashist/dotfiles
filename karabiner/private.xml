@@ -1278,6 +1278,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_KM_OPEN_AFFINITY_PHOTO</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: affinity photo"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMIT</name>
   <url type="shell">
   osascript -e '
@@ -1294,17 +1305,6 @@
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "open: UI browser"
-    end tell
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_OPEN_EXPRESSIONS</name>
-  <url type="shell">
-  osascript -e '
-    tell application "Keyboard Maestro Engine"
-    do script "open: expressions"
     end tell
     '
   </url>
@@ -1647,17 +1647,6 @@
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "open: pocket"
-    end tell
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_OPEN_PATTERNS</name>
-  <url type="shell">
-  osascript -e '
-    tell application "Keyboard Maestro Engine"
-    do script "open: patterns"
     end tell
     '
   </url>
@@ -6057,13 +6046,19 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     
   <autogen>
     __KeyToKey__
-    KeyCode::K,
+    KeyCode::X,
     KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_CURRENT_SONG
   </autogen>
 
   <autogen>
     __KeyToKey__
-    KeyCode::X,
+    KeyCode::BACKQUOTE,
+    KeyCode::M, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+  </autoge>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::K,
     KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_OPEN_LYRICS
   </autoge>
 
@@ -6543,6 +6538,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       KeyCode::VK_OPEN_URL_KM_OPEN_ANKI
 		</autogen>
 
+        <autogen>
+      __KeyToKey__
+      KeyCode::V,
+      KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMIT
+		</autogen>
+
     <autogen>
         __KeyToKey__
         KeyCode::4,
@@ -6557,20 +6558,14 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
         <autogen>
       __KeyToKey__
-      KeyCode::R,
+      KeyCode::H,
       KeyCode::VK_OPEN_URL_KM_OPEN_SHIP
 		</autogen>
 
         <autogen>
       __KeyToKey__
-      KeyCode::H,
-      KeyCode::VK_OPEN_URL_KM_OPEN_EXPRESSIONS
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
       KeyCode::D,
-      KeyCode::VK_OPEN_URL_KM_OPEN_CODERUNNER
+      KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMIT
 		</autogen>
 
         <autogen>
@@ -6606,12 +6601,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::T,
-        KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMIT
+        KeyCode::VK_OPEN_URL_KM_OPEN_TOWER
     </autogen>
 
         <autogen>
       __KeyToKey__
-      KeyCode::V,
+      KeyCode::R,
       KeyCode::VK_OPEN_URL_KM_OPEN_FANTASTICAL
 		</autogen>
 
@@ -6884,9 +6879,10 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
         <autogen>
       __KeyToKey__
-      KeyCode::I,
+      KeyCode::U,
       KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
 		</autogen>
+
 
   </item>
 
@@ -7775,17 +7771,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       KeyCode::VK_OPEN_URL_KM_OPEN_FLUME
 		</autogen>
 
-        <autogen>
-      __KeyToKey__
-      KeyCode::B,
-      KeyCode::VK_OPEN_URL_KM_OPEN_PAPRIKA_RECIPE_MANAGER
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::2,
-      KeyCode::VK_OPEN_URL_KM_OPEN_UI_BROWSER
-		</autogen>
 
         <autogen>
       __KeyToKey__
@@ -7795,7 +7780,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
         <autogen>
       __KeyToKey__
-      KeyCode::BACKQUOTE,
+      KeyCode::B,
       KeyCode::VK_OPEN_URL_KM_EDIT_KEYBOARD_SHORTCUTS
 		</autogen>
 
@@ -7827,7 +7812,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::COMMA,
-        KeyCode::VK_OPEN_URL_KM_OPEN_PATTERNS
+        KeyCode::VK_OPEN_URL_KM_OPEN_AFFINITY_PHOTO
     </autogen>
 
         <autogen>
@@ -8064,6 +8049,17 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     KeyCode::EQUAL,
     KeyCode::DOT, ModifierFlag::SHIFT_L,
     KeyCode::SPACE
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::COMMAND_R,
+    KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L,
+    KeyCode::C,
+    KeyCode::L,
+    KeyCode::I,
+    KeyCode::P,
+    KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L,
   </autogen>
 
   <autogen>
@@ -8364,6 +8360,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
+        KeyCode::E,
+        KeyCode::Y, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::M,
         KeyCode::VK_OPEN_URL_KM_TEST
     </autogen>
@@ -8379,6 +8381,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
        KeyCode::SEMICOLON,
        KeyCode::VK_OPEN_URL_KM_INCREASE_YOUTUBE_PLAYBACK
         </autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::S,
+      KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+		</autogen>
 
        <autogen>
        __KeyToKey__
@@ -8494,8 +8502,8 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
         <autogen>
       __KeyToKey__
-      KeyCode::F,
-      KeyCode::VK_OPEN_URL_KM_OPEN_DISCORD
+      KeyCode::E,
+      KeyCode::VK_OPEN_URL_KM_OPEN_SLACK
 		</autogen>
 
         <autogen>
@@ -8548,8 +8556,8 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
         <autogen>
       __KeyToKey__
-      KeyCode::E,
-      KeyCode::VK_OPEN_URL_KM_OPEN_DISCORD
+      KeyCode::F,
+      KeyCode::VK_OPEN_URL_KM_OPEN_AIRMAIL
 		</autogen>
 
         <autogen>
@@ -8635,6 +8643,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __BlockUntilKeyUp__ KeyCode::F,
     </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::U,
+       KeyCode::SHIFT_L
+        </autogen>
 
        <autogen>
        __KeyToKey__

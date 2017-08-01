@@ -3,11 +3,11 @@ alias cr='open -a CodeRunner'
 alias xx='open -a Xcode'
 alias x.='open -a Xcode .'
 alias ae='open -a MacDown readme.md'
-alias af='open -a MacDown'
+alias ar='open -a MacDown'
 alias wt='open -a Atom'
 alias we='code'
 alias ww='code .'
-alias ar="open -a Marked\ 2"
+# alias ar="open -a Marked\ 2"
 alias zr='open -a Preview'
 
 # _web

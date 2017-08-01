@@ -32,6 +32,5 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 # _yarn autocomplete
 [[ -f /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh ]] && . /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh
 
-# TODO: does not work
-zstyle ':completion:*' matcherlist 'm:{a-z}={A-Z}'
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 

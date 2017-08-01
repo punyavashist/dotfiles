@@ -10,7 +10,7 @@ alias kb='kubectl'
 alias ser='serve'
 alias ss='python3 -m http.server'
 
-alias re='create-react-app'
+alias ra='create-react-app'
 
 alias lic='legit'
 
@@ -54,7 +54,7 @@ alias is='yarn start'
 alias he='heroku'
 
 # _pip
-alias ra='pip install'
+# TODO:
 
 # _npm - depracated
 alias np='npm'

@@ -15,6 +15,12 @@ function img() {
     open .
 }
 
+function gmit() {
+  license-up learn-anything.xyz
+  git add LICENSE
+  git commit -m 'MIT license'
+}
+
 
 function fix() {
     rm -rf ~/.antigen/.zcompdump
@@ -144,7 +150,7 @@ function wfa() {
     reflex -g '*.go' alfred build
 }
 
-function fdef() {
+function af() {
   whence -f "$1"
 }
 

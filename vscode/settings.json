@@ -67,7 +67,7 @@
        }
   ]
 ,
-"window.zoomLevel": 0,
+"window.zoomLevel": -1,
 "editor.cursorStyle": "block",
 "java.errors.incompleteClasspath.severity": "ignore",
 "workbench.welcome.enabled": false,
