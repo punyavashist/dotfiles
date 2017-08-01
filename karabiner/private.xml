@@ -11070,7 +11070,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::U, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
+          KeyCode::VK_OPEN_URL_ALFRED_EXPLAIN_SHELL
       </autogen>
   </item>
 
