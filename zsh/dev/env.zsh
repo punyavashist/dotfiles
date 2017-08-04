@@ -17,6 +17,10 @@ export GOPATH=/Users/nikivi/go/
 export PATH=$PATH:$GOPATH/bin:$GOPATH/bin
 export GOBIN=$GOPATH/bin
 
+# _rust
+export PATH=$PATH:~/.cargo/bin
+
+
 # _sql
 export PATH=/usr/local/mysql/bin:$PATH
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/

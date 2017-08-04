@@ -2,9 +2,8 @@
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias le='less -r'
 # alias du='du -sh * | sort'
-alias mit='license-up Nikita Voloboev nikitavoloboev.xyz'
 alias afb='alfred build'
-alias j='tmux'
+alias h='tmux'
 alias mc='md-to-alfred'
 alias pd='pandoc'
 alias yt='yotube-dl'
@@ -53,12 +52,15 @@ alias sf='screenfetch'
 alias se='open .'
 alias mx='chmod +x'
 alias rr='rm -rf'
-alias a='ls -FG'
+# alias a='ls -FG'
+alias a='exa'
 alias wg='wget -r --no-parent'
 alias v='mv'
 alias os='osascript'
 alias lt='ls -lart'
-alias aa='ls -lahFG'
+alias al='exa -l'
+# alias aa='ls -lahFG'
+alias aa='exa -lahF'
 alias tp='type'
 #alias cl='/usr/local/bin/m'
 
@@ -71,8 +73,7 @@ alias t10='tail -n 10'
 alias rrpdf='rm -rf *.pdf'
 
 # _source things
-alias sz='source ~/.dotfiles/zsh/zshrc.zsh'
-
+alias sz='exec zsh'
 
 # _ls
 alias la="ls -aF"
@@ -104,6 +105,7 @@ alias ngerr='tail -f /usr/local/var/log/nginx/error.log'
 # _utility
 alias net="ping ya.ru | grep -E --only-match --color=never '[0-9\.]+ ms'"                # check connection
 alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r | head"
+alias ba="bash"
 
 # _brew
 alias b='brew'
@@ -117,7 +119,7 @@ alias bu='brew update'
 alias bdoc='brew doctor'
 alias bcl='brew cask list'
 alias bui='brew uninstall'
-alias ba='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
+alias bw='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
 
 # _brew service
 alias bss='brew services start'

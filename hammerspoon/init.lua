@@ -157,7 +157,7 @@ hs.urlevent.bind("showActiveWindows", showWindowHints)
 
 -- google search
 local anycomplete = require "anycomplete/anycomplete"
-anycomplete.registerDefaultBindings(cmd_alt_ctrl, "W")
+anycomplete.registerDefaultBindings(cmd_alt_ctrl, "R")
 
 -- TODO: finish it
 function focus()

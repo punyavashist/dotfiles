@@ -10,9 +10,20 @@ function iz () {
     primitive -i in.png -o output.png -n "$1"
 }
 
+function udm() {
+    cd /Users/nikivi/alfred/Alfred.alfredpreferences/workflows/user.workflow.7C419057-23E4-4C26-ADE6-DCBF5DF3F556
+    bash update.sh
+}
+
 function img() {
     cd ~/oss/nikivi/img/github
     open .
+}
+
+function mit() {
+  license-up Nikita Voloboev nikitavoloboev.xyz
+  git add LICENSE
+  git commit -m 'MIT license'
 }
 
 function gmit() {
@@ -100,7 +111,7 @@ function gc() {
 
 # function gc() { arg=$*; printf 'git commit -m <%s>\n' "$arg";}
 
-function upd() {
+function uds() {
   cd ~/projects/search-engine/
   git pull
   yarn run update-maps
