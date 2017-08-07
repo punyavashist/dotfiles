@@ -1311,6 +1311,28 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_FOG</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: fog"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_DR_RACKET</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: DrRacket"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_SCREENFLOW</name>
   <url type="shell">
   osascript -e '
@@ -6559,7 +6581,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         <autogen>
       __KeyToKey__
       KeyCode::U,
-      KeyCode::VK_OPEN_URL_KM_OPEN_CODERUNNER
+      KeyCode::VK_OPEN_URL_KM_OPEN_DR_RACKET
 		</autogen>
 
         <autogen>
@@ -7597,6 +7619,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
       __KeyToKey__
+      KeyCode::S,
+      KeyCode::P, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
       KeyCode::A,
       KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
@@ -7859,7 +7887,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::S,
-        KeyCode::VK_OPEN_URL_KM_OPEN_CONTACTS
+        KeyCode::VK_OPEN_URL_KM_OPEN_IBOOKS
     </autogen>
 
     <autogen>
