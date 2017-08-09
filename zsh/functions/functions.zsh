@@ -10,7 +10,17 @@ function iz () {
     primitive -i in.png -o output.png -n "$1"
 }
 
-function udm() {
+function sf() {
+  if [ $# -eq 0 ]; then
+    filePath=$(pwd)
+    osascript -e "tell application \"Alfred 3\" to search \"$filePath\""
+   else
+    filePath=$(realpath "$1")
+    osascript -e "tell application \"Alfred 3\" to search \"$filePath\"" -e "delay 0.2" -e "tell application \"System Events\" to key code 98"
+   fi
+}
+
+function ud() {
     cd /Users/nikivi/alfred/Alfred.alfredpreferences/workflows/user.workflow.7C419057-23E4-4C26-ADE6-DCBF5DF3F556
     bash update.sh
 }
@@ -125,7 +135,6 @@ function uds() {
   git push
 }
 
-
 # run md-to-alfred on each md file in current dir
 function mc.() {
   for entry in ./*.md
@@ -192,8 +201,8 @@ function ogg() {
     go get github.com/$@
 }
 
-# find aliases
-fa() { grep -r -h "alias[[:space:]]\+${(q)1}" ~/.dotfiles/zsh; }
+# find aliases - TODO: use fzf
+fs() { grep -r -h "alias[[:space:]]\+${(q)1}" ~/.dotfiles/zsh; }
 
 # find where is text searched is contained
 function fl() {

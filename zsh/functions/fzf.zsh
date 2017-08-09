@@ -15,6 +15,14 @@ fkill() {
   fi
 }
 
+# cd to selected directory - TODO: ignore node_modules
+fa() {
+  local dir
+  dir=$(find ${1:-.} -path '*/\.*' -prune \
+                  -o -type d -print 2> /dev/null | fzf +m) &&
+  cd "$dir"
+}
+
 
 # fbr - checkout git branch (including remote branches), sorted by most recent commit, limit 30 last branches
 fb() {
@@ -26,7 +34,7 @@ fb() {
 }
 
 # fshow - git commit browser
-fs() {
+fg() {
   git log --graph --color=always \
       --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |
   fzf --ansi --no-sort --reverse --tiebreak=index --bind=ctrl-s:toggle-sort \

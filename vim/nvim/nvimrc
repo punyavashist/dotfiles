@@ -3,6 +3,7 @@
 " -------------------------------------
 call plug#begin() " plugins to use
 set guicursor=
+set mouse=a
 
 " autocomplete engine
 function! DoRemote(arg)
