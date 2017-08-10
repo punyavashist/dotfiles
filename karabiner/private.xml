@@ -11132,7 +11132,6 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           KeyCode::T, ModifierFlag::COMMAND_R
       </autogen>
 
-
   </item>
 
   <item>
