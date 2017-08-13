@@ -35,3 +35,6 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
+PROMPT_TITLE='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
+export PROMPT_COMMAND="${PROMPT_TITLE}; ${PROMPT_COMMAND}"
+

@@ -2,7 +2,7 @@
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias le='less -r'
 # alias du='du -sh * | sort'
-alias afb='alfred build'
+alias wf='alfred build'
 alias h='tmux'
 alias mc='md-to-alfred'
 alias pd='pandoc'
@@ -119,7 +119,7 @@ alias bu='brew update'
 alias bdoc='brew doctor'
 alias bcl='brew cask list'
 alias bui='brew uninstall'
-alias bw='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
+alias bw='brew update  && brew upgrade && brew cleanup'
 
 # _brew service
 alias bss='brew services start'

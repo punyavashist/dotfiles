@@ -25,6 +25,7 @@ function ud() {
     bash update.sh
 }
 
+
 function img() {
     cd ~/oss/nikivi/img/github
     open .
@@ -36,7 +37,7 @@ function mit() {
   git commit -m 'MIT license'
 }
 
-function gmit() {
+function mitla () {
   license-up learn-anything.xyz
   git add LICENSE
   git commit -m 'MIT license'
@@ -152,6 +153,12 @@ function mdev() {
   git merge dev
   git push
   git checkout dev
+}
+
+
+# _reflex
+function rfg() {
+  reflex -g '*.go' go run main.go
 }
 
 function wfg() {
