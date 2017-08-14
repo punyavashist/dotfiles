@@ -158,7 +158,7 @@ function mdev() {
 
 # _reflex
 function rfg() {
-  reflex -g '*.go' go run main.go
+  reflex -g '*.go' go run $1
 }
 
 function wfg() {

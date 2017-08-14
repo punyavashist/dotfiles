@@ -2,6 +2,7 @@
     // _general
     "editor.snippetSuggestions": "top",
     "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
     // _prettier
     "prettier.singleQuote": true,
     "editor.formatOnSave": true,
@@ -22,6 +23,33 @@
                 "w"
             ],
             "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "s"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "s"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "e"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "s"
+            ],
             "commands": [
                 {
                     "command": "workbench.action.files.save",
