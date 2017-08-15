@@ -2388,7 +2388,7 @@
   <name>KeyCode::VK_OPEN_URL_ALFRED_REDDIT_MULTI_MIND</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "reddit multi" in workflow "nikivi.mind" with argument ""
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/reddit-multi.json"
     '
   </url>
 </vkopenurldef>
@@ -2434,7 +2434,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_REDDIT_USERS</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "reddit users" in workflow "nikivi.mind" with argument ""
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/reddit-users.json"
     '
   </url>
 </vkopenurldef>
@@ -2443,7 +2443,7 @@ tell application "Alfred 3" to run trigger "reddit users" in workflow "nikivi.mi
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_QUORA</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "quora" in workflow "nikivi.mind" with argument ""
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/quora.json"
     '
   </url>
 </vkopenurldef>
@@ -2506,7 +2506,7 @@ tell application "Alfred 3" to run trigger "quora" in workflow "nikivi.mind" wit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_STACK</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "stack" in workflow "nikivi.mind" with argument ""
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/stack.json"
     '
   </url>
 </vkopenurldef>
@@ -2515,7 +2515,7 @@ tell application "Alfred 3" to run trigger "stack" in workflow "nikivi.mind" wit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_YOUTUBE</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "youtube" in workflow "nikivi.mind" with argument ""
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/youtube.json"
     '
   </url>
 </vkopenurldef>
@@ -2560,7 +2560,7 @@ tell application "Alfred 3" to run trigger "youtube" in workflow "nikivi.mind" w
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_TWITTER</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "twitter" in workflow "nikivi.mind" with argument ""
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/twitter.json"
     '
   </url>
 </vkopenurldef>
@@ -2605,7 +2605,7 @@ tell application "Alfred 3" to run trigger "twitter" in workflow "nikivi.mind" w
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_PERSONAL</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "personal" in workflow "nikivi.mind" with argument ""
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/personal.json"
     '
   </url>
 </vkopenurldef>
@@ -2623,7 +2623,7 @@ tell application "Alfred 3" to run trigger "twitter" in workflow "nikivi.mind" w
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_GITHUB_USERS</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "github users" in workflow "nikivi.mind" with argument ""
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/github-users.json"
     '
   </url>
 </vkopenurldef>
@@ -2641,7 +2641,7 @@ tell application "Alfred 3" to run trigger "github users" in workflow "nikivi.mi
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_REDDIT</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "reddit" in workflow "nikivi.mind" with argument ""
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/reddit.json"
     '
   </url>
 </vkopenurldef>
@@ -3148,10 +3148,10 @@ tell application "Alfred 3" to run trigger "layoutManager" in workflow "de.leano
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_KILL_PROCESS</name>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_PROCESS_CONTROL</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "killProcess" in workflow "com.ngreenstein.alfred-process-killer" with argument ""
+tell application "Alfred 3" to run trigger "processControl" in workflow "com.vitorgalvao.alfred.processcontrol" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4457,6 +4457,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  KeyCode::COMMAND_L,
              </autogen>
 
+
+
                <autogen>
                __KeyToKey__
                KeyCode::SLASH,
@@ -5274,7 +5276,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::G,
-       KeyCode::VK_OPEN_URL_ALFRED_KILL_PROCESS
+       KeyCode::VK_OPEN_URL_ALFRED_PROCESS_CONTROL
         </autogen>
 
        <autogen>
@@ -6543,6 +6545,13 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       __BlockUntilKeyUp__ KeyCode::W,
     </autogen>
 
+ <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::J, KeyCode::K,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_BOOKMARKS
+    </autogen>
+
         <autogen>
       __KeyToKey__
       KeyCode::Y,
@@ -6911,7 +6920,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
-        KeyCode::DOT,
+        KeyCode::0,
         KeyCode::VK_OPEN_URL_ALFRED_MIND_CLI
     </autogen>
 
@@ -8879,6 +8888,20 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       __BlockUntilKeyUp__ KeyCode::F,
     </autogen>
 
+ <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::K, KeyCode::L,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
+    </autogen>
+
+ <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::J, KeyCode::K,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+    </autogen>
+
        <autogen>
        __KeyToKey__
        KeyCode::R,
@@ -9151,6 +9174,13 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
       __BlockUntilKeyUp__ KeyCode::E,
+    </autogen>
+
+ <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::J, KeyCode::K,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_EXPLAIN_SHELL
     </autogen>
 
     <autogen>
@@ -9774,6 +9804,13 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
       __BlockUntilKeyUp__ KeyCode::A,
+    </autogen>
+
+ <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::K, KeyCode::L,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
     </autogen>
 
  <autogen>
