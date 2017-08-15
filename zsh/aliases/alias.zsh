@@ -69,6 +69,8 @@ alias h2='head -n 2'
 alias h10='head -n 10'
 alias t10='tail -n 10'
 
+alias hs='ghci'
+
 # _delete things
 alias rrpdf='rm -rf *.pdf'
 

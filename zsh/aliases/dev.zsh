@@ -77,6 +77,8 @@ alias og='go get'
 alias ob='go build'
 alias oa='go build -o main'
 
+alias ugo='Go-Package-Store'
+
 # _meteor
 alias mt='meteor'
 
