@@ -71,6 +71,8 @@ alias t10='tail -n 10'
 
 alias hs='ghci'
 
+alias cwd='pwd | pbcopy'
+
 # _delete things
 alias rrpdf='rm -rf *.pdf'
 

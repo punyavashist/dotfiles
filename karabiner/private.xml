@@ -4642,12 +4642,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
                <autogen>
                  __KeyToKey__
-                 KeyCode::M,
-                 KeyCode::F18
-               </autogen>
-
-               <autogen>
-                 __KeyToKey__
                  KeyCode::COMMA,
                  KeyCode::F2, ModifierFlag::COMMAND_L
                </autogen>
@@ -5148,6 +5142,18 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       __KeyToKey__
       KeyCode::DOT,
       KeyCode::F9, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::E,
+      KeyCode::Z, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, 
+		</autogen>
+        
+        <autogen>
+      __KeyToKey__
+      KeyCode::W,
+KeyCode::5, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
 		</autogen>
 
         <autogen>
@@ -6051,7 +6057,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
           __SimultaneousKeyPresses__
           KeyCode::J, KeyCode::K,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS
+          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
     </autogen>
 
         <autogen>
@@ -8542,7 +8548,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
        <autogen>
        __KeyToKey__
        KeyCode::W,
-       KeyCode::VK_OPEN_URL_KM_LOWERCASE_SELECTED_TEXT
+          KeyCode::VK_OPEN_URL_KM_LOWERCASE_SELECTED_TEXT
        </autogen>
 
        <autogen>
@@ -8684,6 +8690,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
           KeyCode::J, KeyCode::K,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
           KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::SEMICOLON,
+          KeyCode::SEMICOLON, ModifierFlag::COMMAND_L, 
     </autogen>
 
     <autogen>
@@ -9320,7 +9332,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
           __SimultaneousKeyPresses__
           KeyCode::J, KeyCode::K,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
     </autogen>
 
        <autogen>
@@ -9381,7 +9393,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __KeyToKey__
       KeyCode::SEMICOLON,
-      KeyCode::SEMICOLON, ModifierFlag::CONTROL_L
+          KeyCode::SEMICOLON, ModifierFlag::CONTROL_L, 
     </autogen>
 
     <autogen>
@@ -10499,20 +10511,6 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
     </autogen>
   </item>
 
-
-  <item>
-      <name>scroller: sim jk = google</name>
-      <identifier>private.sim_jk_google_scroller</identifier>
-
- <autogen>
-          __SimultaneousKeyPresses__
-          KeyCode::J, KeyCode::K,
-          KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_SHELL_switchprofile_general,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE
-    </autogen>
-  </item>
-
   <item>
       <name>general: simultaneous m, = some</name>
       <identifier>private.sim_mcomma_some</identifier>
@@ -10698,7 +10696,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::SEMICOLON, KeyCode::K,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_AMAZON_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
       </autogen>
   </item>
 
@@ -10709,7 +10707,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::SEMICOLON, KeyCode::M,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS
+          KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
       </autogen>
   </item>
 
@@ -10720,7 +10718,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::SEMICOLON, KeyCode::J,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_BOOKMARKS
+          KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS
       </autogen>
   </item>
 

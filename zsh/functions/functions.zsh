@@ -10,7 +10,7 @@ function iz () {
     primitive -i in.png -o output.png -n "$1"
 }
 
-function ar() {
+function aw() {
   if [ $# -eq 0 ]; then
     filePath=$(pwd)
     osascript -e "tell application \"Alfred 3\" to search \"$filePath\""
@@ -23,12 +23,6 @@ function ar() {
 function ud() {
     cd /Users/nikivi/alfred/Alfred.alfredpreferences/workflows/user.workflow.7C419057-23E4-4C26-ADE6-DCBF5DF3F556
     bash update.sh
-}
-
-
-function img() {
-    cd ~/oss/nikivi/img/github
-    open .
 }
 
 function mit() {
@@ -75,15 +69,18 @@ function mi() {
 }
 
 
-functon aw() {
+function wa() {
     cd "$1"
     code .
 }
 
 function ggi() {
     git init
+    mit
     git add .
     git commit -m "🌅"
+    git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
+    git push -u origin master
 }
 
 function gao() {
@@ -132,7 +129,7 @@ function ula() {
   cd ~/oss/learn-anything/learn-anything/
   yarn run upload
   git add .
-  git commit -m "new maps"
+  git commit -m "new maps 🗺"
   git push
 }
 
