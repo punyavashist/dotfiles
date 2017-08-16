@@ -10,7 +10,7 @@ function iz () {
     primitive -i in.png -o output.png -n "$1"
 }
 
-function sf() {
+function ar() {
   if [ $# -eq 0 ]; then
     filePath=$(pwd)
     osascript -e "tell application \"Alfred 3\" to search \"$filePath\""
@@ -122,8 +122,8 @@ function gc() {
 
 # function gc() { arg=$*; printf 'git commit -m <%s>\n' "$arg";}
 
-function uds() {
-  cd ~/projects/search-engine/
+function ula() {
+  cd ~/oss/learn-anything/search-engine
   git pull
   yarn run update-maps
   rm -r ~/oss/learn-anything/learn-anything/learn-anything
