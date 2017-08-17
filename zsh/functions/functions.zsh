@@ -1,6 +1,9 @@
-# TODO: sort it into appropriate sections
+# _test
+function wo() {
 
-# _dev
+}
+
+
 function afl() {
     alfred build
     alfred link

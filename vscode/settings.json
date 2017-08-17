@@ -3,19 +3,53 @@
     "editor.snippetSuggestions": "top",
     "editor.minimap.enabled": false,
     "editor.lineNumbers": "relative",
+    "editor.cursorStyle": "line",
+    "window.zoomLevel": -1,
+    "workbench.welcome.enabled": false,
+    // _theme
+    "workbench.colorTheme": "An Old Hope",
+    "workbench.iconTheme": "vs-seti",
     // _prettier
     "prettier.singleQuote": true,
     "editor.formatOnSave": true,
     "prettier.jsonEnable": [],
     "extensions.autoUpdate": true,
+    // _plugins
     "code-runner.runInTerminal": false,
-    "vim.useSystemClipboard": true,
+    // _sync settings
+    "sync.gist": "0c57cbed63ec19108a8437f4325bdd32",
+    "sync.lastUpload": "2017-07-18T07:26:15.238Z",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "",
+    "sync.forceDownload": false,
+    "sync.anonymousGist": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    // _fonts
     "editor.fontFamily": "Monospace",
     "editor.fontSize": 20,
     "editor.fontLigatures": true,
     // _vim
     "vim.leader": " ",
-    // remap normal mode
+    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.useSystemClipboard": true,
+    "vim.relativenumbers": true,
+    "vim.easymotion": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    // _remap normal mode
     "vim.otherModesKeyBindingsNonRecursive": [
         {
             "before": [
@@ -88,40 +122,12 @@
     "go.formatOnSave": true,
     "go.goroot": "/usr/local/go",
     "go.gopath": "/Users/nikivi/go/",
-    // _vim
-    "vim.relativenumbers": true,
-    "vim.easymotion": true,
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        }
-    ],
-    "window.zoomLevel": -1,
-    "editor.cursorStyle": "block",
+    // _java
     "java.errors.incompleteClasspath.severity": "ignore",
-    "workbench.welcome.enabled": false,
-    "workbench.colorTheme": "An Old Hope",
-    "workbench.iconTheme": "vs-seti",
-    "vim.disableAnnoyingNeovimMessage": true,
+    // _typescript
     "typescript.check.tscVersion": false,
     "typescript.check.npmIsInstalled": false,
-    "sync.gist": "0c57cbed63ec19108a8437f4325bdd32",
-    "sync.lastUpload": "2017-07-18T07:26:15.238Z",
-    "sync.autoDownload": false,
-    "sync.autoUpload": false,
-    "sync.lastDownload": "",
-    "sync.forceDownload": false,
-    "sync.anonymousGist": false,
-    "sync.host": "",
-    "sync.pathPrefix": "",
-    "sync.quietSync": false,
-    "sync.askGistName": false,
+    // _files
     "files.associations": {
         "*.toml": "toml"
     }

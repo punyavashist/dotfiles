@@ -2140,6 +2140,15 @@
 
 <!-- _alfred def -->
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SCREENSHOT_TO_GOOGLE</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "similarImage" in workflow "net.deanishe.alfred-google-similar-images" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PDF_CONTENT</name>
   <url type="shell">
   osascript -e '
@@ -2184,6 +2193,14 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   </url>
 </vkopenurldef>
 
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_CLI</name>
+  <url type="shell">
+  osascript -e '
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/explain-shell.json"
+    '
+  </url>
+</vkopenurldef>
 
 <vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_RECENT</name>
@@ -4649,7 +4666,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                <autogen>
                  __KeyToKey__
                  KeyCode::F19,
-                 KeyCode::ESCAPE
+                 KeyCode::VK_OPEN_URL_ALFRED_SCREENSHOT_TO_GOOGLE
                </autogen>
 
                <autogen>
@@ -4928,7 +4945,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::N,
-      KeyCode::VK_OPEN_URL_ALFRED_EDIT_FILES
+      KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
 		</autogen>
 
        <autogen>
@@ -6207,7 +6224,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __KeyToKey__
       KeyCode::SEMICOLON,
-      KeyCode::L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_VS_CODE
     </autogen>
 
     <autogen>
@@ -6231,7 +6248,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __KeyToKey__
       KeyCode::M,
-      KeyCode::VK_OPEN_URL_KM_OPEN_VS_CODE
+      KeyCode::VK_OPEN_URL_KM_OPEN_TOWER
     </autogen>
   </item>
 
@@ -6483,6 +6500,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
         __KeyToKey__
         KeyCode::DOT,
+        KeyCode::VK_OPEN_URL_ALFRED_MIND_CLI
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::SLASH,
         KeyCode::VK_OPEN_URL_ALFRED_MIND_PERSONAL
     </autogen>
 
@@ -7604,7 +7627,7 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         <autogen>
       __KeyToKey__
       KeyCode::SEMICOLON,
-      KeyCode::VK_OPEN_URL_KM_OPEN_TEXPAD
+      KeyCode::VK_OPEN_URL_KM_OPEN_DAY_ONE
 		</autogen>
 
         <autogen>
@@ -9031,10 +9054,15 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
     <autogen>
         __KeyToKey__
+        KeyCode::F19,
+        KeyCode::Z, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, 
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::SPACE,
         KeyCode::X, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
-
 
     <autogen>
         __KeyToKey__
@@ -10531,7 +10559,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::J, KeyCode::K,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE
+          KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
     </autogen>
   </item>
 
@@ -10773,7 +10801,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           __SimultaneousKeyPresses__
           KeyCode::SEMICOLON, KeyCode::N,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-		KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
+		KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE
       </autogen>
   </item>
 

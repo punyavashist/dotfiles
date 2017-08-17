@@ -1,5 +1,6 @@
 # _general
 alias gr='goreleaser'
+alias gsh='git stash'
 alias gt='git tag'
 alias g:='git push -u origin master'
 alias gn='git open'

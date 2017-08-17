@@ -23,7 +23,7 @@ alias brs='browser-sync'
 
 # _python
 alias y='python3'
-alias y2='python'
+alias ya='python'
 alias rv='virtualenv -p /usr/local/bin/python3'
 
 # _docker
