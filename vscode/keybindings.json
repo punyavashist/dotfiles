@@ -1,23 +1,54 @@
 // Place your key bindings in this file to overwrite the defaults
 [
- { "key": "cmd+shift+k",         "command": "workbench.action.nextEditor" },
- { "key": "cmd+shift+j",         "command": "workbench.action.previousEditor" },
- // TODO: : doesn't work
-{ "key": "ctrl + j",        "command": "workbench.action.focusPreviousGroup" },
-{ "key": "ctrl + k",        "command": "workbench.action.focusNextGroup" },
-  { "key": "Space w",  "command": "workbench.action.files.save", "when": "editorFocus && !inDebugRepl && vim.mode == 'Normal Mode'" },
-  {"key": "ctrl+ f",       "command":"extension.dash.specific"},
-  {"key":  "cmd+m", "command":"code-runner.run" },
   {
-    "key": "cmd+;",
-    "command": "editor.action.commentLine"
+    "key": "cmd+shift+k", //
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "cmd+shift+j",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+j", // TODO: : doesn't work
+    "command": "workbench.action.focusPreviousGroup"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "Space w",
+    "command": "workbench.action.files.save",
+    "when": "editorFocus && !inDebugRepl && vim.mode == 'Normal Mode'"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "extension.dash.specific"
+  },
+  {
+    "key": "cmd+m",
+    "command": "code-runner.run"
   },
   {
     "key": "shift+cmd+i",
     "command": "git.push"
+  },
+  {
+    "key": "shift+cmd+y",
+    "command": "-workbench.debug.action.toggleRepl"
+  },
+  {
+    "key": "shift+cmd+;",
+    "command": "workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "cmd+;",
+    "command": "workbench.action.terminal.focus"
   }
 ]
-
-
-
-

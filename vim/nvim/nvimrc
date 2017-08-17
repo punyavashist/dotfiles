@@ -119,13 +119,7 @@ inoremap      ()   ()
 " --------------------------------------
 "  _command mapping
 " --------------------------------------
-:command R !node %
-command Rp execute "w|!python3 %"
 cabbrev rp Rp
-" -go
-command Rg execute "!go run %"
-command RR execute "!go build %"
-
 
 " --------------------------------------
 "  _control mapping
@@ -140,30 +134,28 @@ let g:ctrlp_cmd = 'CtrlP'
 " --------------------------------------
 "  _space mapping
 " --------------------------------------
-
 nnoremap <SPACE> <Nop>
-
 let mapleader="\<Space>"
 
 nnoremap <leader>= yypVr=
 
 " TODO: tabe seems rather interesting
-nmap <leader>vimrc :tabe ~/.dotfiles/vim/nvim/nvimrc<cr>
+nnoremap <leader>vimrc :tabe ~/.dotfiles/vim/nvim/nvimrc<cr>
 
-nmap <Leader>k    :GoDef<CR>
-nmap <Leader>a    :Dash<CR>
-nmap <Leader>w    :w<CR>
-nmap <Leader>q    :q<CR>
-nmap <Leader>y    :%y<CR>
-nmap <Leader>vW   :wa<CR>
-nmap <Leader>vq   :wqall<CR>
-nmap <Leader>vQ   :qa<CR>
-nmap <Leader>ee   :e ~/.dotfiles/vim/nvim/nvimrc<CR>
-nmap <Leader>se   :source ~/.dotfiles/vim/nvim/nvimrc<CR>
-nmap <Leader>ii   :PlugInstall<CR>
-nmap <Leader>ia   :PlugUpdate<CR>
-nmap <Leader>vm   :make<CR>
-nmap <Leader>o    :!go run %<CR>
+" _single letter maps 
+nnoremap <Leader>w    :w<CR>  " save
+nnoremap <Leader>q    :q<CR>  " quit
+nnoremap <Leader>y    :%y<CR> " yank entire file
+nnoremap <Leader>e   :source $MYVIMRC<CR> " source vimrc
+
+nnoremap <Leader>aw   :put yat`]p<CR> 
+nnoremap <Leader>at   :Dash<CR>
+nnoremap <Leader>aa   :wa<CR>
+nnoremap <Leader>vq   :wqall<CR>
+nnoremap <Leader>vQ   :qa<CR>
+nnoremap <Leader>ii   :PlugInstall<CR>
+nnoremap <Leader>ia   :PlugUpdate<CR>
+nnoremap <Leader>vm   :make<CR>
 nnoremap <leader>l :%d<cr>
 
 
@@ -173,15 +165,15 @@ nnoremap <Leader>ts :split <Bar> term.
 nnoremap <Leader>tv :vsplit <Bar> term.
 
 nnoremap <silent><expr> <C-L> winnr()==g:NERDTree.GetWinNum() ? ":NERDTreeClose\<CR>" : ":NERDTreeFocus\<CR>"
-nmap <C-s> :w<cr>
+nnoremap <C-s> :w<cr>
 
 
-nmap <Leader>pi :PlugInstall<CR>
-nmap <Leader>pu :PlugUpdate<CR>
+nnoremap <Leader>pi :PlugInstall<CR>
+nnoremap <Leader>pu :PlugUpdate<CR>
 " --------------------------------------
 "  _command + shift mapping
 " --------------------------------------
-nmap <D-S-F> :Ack<space>
+nnoremap <D-S-F> :Ack<space>
 
 " -------------------------------------
 "  _basic UI config
@@ -210,7 +202,7 @@ let g:go_fmt_command = "goimports"
 
 " _fzf
 " Mapping selecting mappings
-nmap <leader><tab> <plug>(fzf-maps-n)
+nnoremap <leader><tab> <plug>(fzf-maps-n)
 xmap <leader><tab> <plug>(fzf-maps-x)
 omap <leader><tab> <plug>(fzf-maps-o)
 
@@ -228,5 +220,5 @@ inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
 xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
+nnoremap ga <Plug>(EasyAlign)
 

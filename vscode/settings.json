@@ -14,6 +14,7 @@
     "editor.formatOnSave": true,
     "prettier.jsonEnable": [],
     "extensions.autoUpdate": true,
+    // _commands
     // _plugins
     "code-runner.runInTerminal": false,
     // _sync settings
