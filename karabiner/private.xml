@@ -5208,6 +5208,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
         <autogen>
       __KeyToKey__
+      KeyCode::S,
+      KeyCode::C, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::E,
       KeyCode::Z, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, 
 		</autogen>
