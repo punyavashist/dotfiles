@@ -6874,13 +6874,13 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
         __KeyToKey__
         KeyCode::K,
-        KeyCode::VK_OPEN_URL_KM_GODOC
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_DUCKDUCKGO
     </autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::O,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT
+        KeyCode::VK_OPEN_URL_KM_GODOC
     </autogen>
 
     <autogen>
