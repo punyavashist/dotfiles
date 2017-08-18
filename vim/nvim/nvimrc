@@ -11,6 +11,7 @@ function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 
+"Plug 'easymotion/vim-easymotion'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/heytmux'
 Plug 'sbdchd/neoformat'
@@ -36,7 +37,6 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'vim-airline/vim-airline'                      " a nice looking status bar on the bottom
 Plug 'vim-airline/vim-airline-themes'
-Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -48,12 +48,9 @@ Plug 'carlitux/deoplete-ternjs'                    " js autocomplete
 
 call plug#end()
 
-
-
 " --------------------------------------
 "  _testing
 " --------------------------------------
-
 noremap Q @q
 vnoremap <D-c> y
 set timeout timeoutlen=1000 ttimeoutlen=10        " faster esc - maybe :|
@@ -139,16 +136,23 @@ let mapleader="\<Space>"
 
 nnoremap <leader>= yypVr=
 
-" TODO: tabe seems rather interesting
 nnoremap <leader>vimrc :tabe ~/.dotfiles/vim/nvim/nvimrc<cr>
 
-" _single letter maps 
-nnoremap <Leader>w    :w<CR>  " save
-nnoremap <Leader>q    :q<CR>  " quit
-nnoremap <Leader>y    :%y<CR> " yank entire file
-nnoremap <Leader>e   :source $MYVIMRC<CR> " source vimrc
+" _single letter 
+nmap <Leader>w    :w<CR>  
+nnoremap <Leader>q    :q<CR>  
+nnoremap <Leader>y    :%y<CR> 
+nnoremap <Leader>f   :source $MYVIMRC<CR> 
+" search files inside current dir
+nnoremap <Leader>e    :Files<CR> 
 
-nnoremap <Leader>aw   :put yat`]p<CR> 
+" switch dir for fzf searching to current dir
+map <Leader>cd :lcd %:p:h<CR>
+" yank xml block to next line
+nnoremap <Leader>aw    yat`]o<Esc>p<CR> 
+" yank function block
+nnoremap <Leader>yf    :exe search('^function','cb')';/}/y'<CR> 
+" dash doc lookup
 nnoremap <Leader>at   :Dash<CR>
 nnoremap <Leader>aa   :wa<CR>
 nnoremap <Leader>vq   :wqall<CR>

@@ -77,8 +77,8 @@
         },
         {
             "before": [
-                "g",
-                "e"
+                "leader",
+                "a"
             ],
             "after": [
                 "leader",

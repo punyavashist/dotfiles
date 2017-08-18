@@ -48,7 +48,11 @@
     "when": "!terminalFocus"
   },
   {
-    "key": "cmd+;",
-    "command": "workbench.action.terminal.focus"
+    "key": "cmd+o",
+    "command": "workbench.action.tasks.build"
+  },
+  {
+    "key": "shift+cmd+b",
+    "command": "-workbench.action.tasks.build"
   }
 ]

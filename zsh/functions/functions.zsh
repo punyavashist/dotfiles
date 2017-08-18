@@ -4,9 +4,9 @@ function wo() {
 }
 
 
-function afl() {
-    alfred build
+function wl() {
     alfred link
+    alfred build
 }
 
 function iz () {
