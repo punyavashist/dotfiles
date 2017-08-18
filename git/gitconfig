@@ -2,9 +2,19 @@
 	name = Nikita Voloboev
 	email = nikita.voloboev@icloud.com
 	signingkey = 43EDACFC00099A17
+[mergetool]
+	path = /usr/bin/nvim
+    keepBackup = false
+[diff]
+	tool = nvimdiff
+[push]
+	default = matching
+[merge]
+	tool = nvimdiff
+    conflictstyle = diff3
 [core]
 	editor = nvim
-	excludesfile = /Users/nikivi/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [github]
     user = nikitavoloboev
@@ -15,5 +25,8 @@
     open = !open `git config remote.origin.url` # open repo in browser
     url =! bash -c 'git config --get remote.origin.url | sed -E "s/.+:\\(.+\\)\\.git$/https:\\\\/\\\\/github\\\\.com\\\\/\\\\1/g"' # show ul of remote
 	fm = fetch-merge # fetch and merge
+	tree = log --graph --pretty=format:'%C(auto)%h - %s [%an] (%C(blue)%ar)%C(auto)%d'
+ 	bigtree = log --graph --decorate --pretty=format:'%C(auto)%d%n%h %s%+b%n(%G?) %an <%ae> (%C(blue)%ad%C(auto))%n'
+    hist = log --date=short --pretty=format:'%C(auto)%ad %h (%G?) %s [%an] %d'
 [commit]
 	gpgsign = true
