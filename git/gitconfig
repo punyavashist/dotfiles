@@ -1,6 +1,6 @@
 [user]
 	name = Nikita Voloboev
-	email = nikita.voloboev@gmail.com
+	email = nikita.voloboev@icloud.com
 	signingkey = 43EDACFC00099A17
 [core]
 	editor = nvim
@@ -14,6 +14,6 @@
     count = shortlog -sn  # give list of who commited to this repo
     open = !open `git config remote.origin.url` # open repo in browser
     url =! bash -c 'git config --get remote.origin.url | sed -E "s/.+:\\(.+\\)\\.git$/https:\\\\/\\\\/github\\\\.com\\\\/\\\\1/g"' # show ul of remote
-	fm = fetch-merge # fetch and merge 
+	fm = fetch-merge # fetch and merge
 [commit]
 	gpgsign = true
