@@ -2,6 +2,7 @@
 export EDITOR='nvim'
 export DOTFILES="$HOME/.dotfiles"
 
+
 # _load zsh plugins
 source ~/.zsh_plugins.sh
 
