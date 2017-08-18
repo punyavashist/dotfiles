@@ -1,7 +1,7 @@
 [user]
 	name = Nikita Voloboev
 	email = nikita.voloboev@gmail.com
-    signingkey = AE62C5729D8249C0
+	signingkey = 43EDACFC00099A17
 [core]
 	editor = nvim
 	excludesfile = /Users/nikivi/.gitignore_global

@@ -54,5 +54,15 @@
   {
     "key": "shift+cmd+b",
     "command": "-workbench.action.tasks.build"
+  },
+  {
+    "key": "cmd+;",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+/",
+    "command": "-editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]

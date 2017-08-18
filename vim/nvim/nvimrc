@@ -149,7 +149,7 @@ nnoremap <Leader>e    :Files<CR>
 " switch dir for fzf searching to current dir
 map <Leader>cd :lcd %:p:h<CR>
 " yank xml block to next line
-nnoremap <Leader>aw    yat`]o<Esc>p<CR> 
+nnoremap <Leader>aw    vat:t'><CR>'[O<Esc><CR> 
 " yank function block
 nnoremap <Leader>yf    :exe search('^function','cb')';/}/y'<CR> 
 " dash doc lookup

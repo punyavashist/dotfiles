@@ -4864,7 +4864,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::T,
-          KeyCode::O, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+          KeyCode::VK_OPEN_URL_ALFRED_MAILTO
         </autogen>
 
        <autogen>
@@ -5181,6 +5181,12 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __BlockUntilKeyUp__ KeyCode::SPACE,
     </autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::F,
+      KeyCode::X, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+		</autogen>
 
         <autogen>
       __KeyToKey__
@@ -7792,6 +7798,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
 <autogen>
     __KeyToKey__
+    KeyCode::P,
+    KeyCode::BRACKET_RIGHT
+  </autogen>
+
+<autogen>
+    __KeyToKey__
     KeyCode::BRACKET_LEFT,
     KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L, 
   </autogen>
@@ -8445,7 +8457,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
             <autogen>
       __KeyToKey__
       KeyCode::SPACE,
-      KeyCode::S, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+      KeyCode::Q, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
     </autogen>
 
        <autogen>
@@ -9353,6 +9365,13 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
           KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
     </autogen>
 
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::SPACE,
+        KeyCode::S, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
        <autogen>
          __KeyToKey__
          KeyCode::9,
@@ -9381,13 +9400,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
          __KeyToKey__
          KeyCode::COMMAND_R,
          KeyCode::A, ModifierFlag::CONTROL_L
-       </autogen>
-
-
-       <autogen>
-         __KeyToKey__
-         KeyCode::SPACE,
-         KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
        </autogen>
 
     <autogen>
@@ -10472,11 +10484,12 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
         KeyCode::SLASH, ModifierFlag::OPTION_L
     </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::SPACE,
-        KeyCode::S, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-    </autogen>
+
+       <autogen>
+         __KeyToKey__
+         KeyCode::SPACE,
+         KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+       </autogen>
 
   </item>
 

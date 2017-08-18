@@ -55,7 +55,7 @@
         {
             "before": [
                 "<leader>",
-                "w"
+                "k"
             ],
             "after": [],
             "commands": [
@@ -63,16 +63,6 @@
                     "command": "workbench.action.files.save",
                     "args": []
                 }
-            ]
-        },
-        {
-            "before": [
-                "s"
-            ],
-            "after": [
-                "leader",
-                "leader",
-                "s"
             ]
         },
         {
@@ -95,7 +85,7 @@
         {
             "before": [
                 "<leader>",
-                "e"
+                "w"
             ],
             "after": [],
             "commands": [
