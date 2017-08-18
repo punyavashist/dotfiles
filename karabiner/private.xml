@@ -5955,17 +5955,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         KeyCode::Y, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
         </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::J,
-        KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::K,
-        KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE_FILE
-    </autogen>
 
     <autogen>
         __KeyToKey__
@@ -8119,6 +8108,18 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
       __BlockUntilKeyUp__ KeyCode::T,
     </autogen>
+    
+    <autogen>
+        __KeyToKey__
+        KeyCode::K,
+        KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::J,
+        KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE_FILE
+    </autogen>
 
         <autogen>
       __KeyToKey__
@@ -8224,7 +8225,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
         __KeyToKey__
-        KeyCode::K,
+        KeyCode::H,
         KeyCode::VK_OPEN_URL_HAMMERSPOON_RELOAD_CONFIG
     </autogen>
 
