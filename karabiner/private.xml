@@ -740,6 +740,18 @@
     '
   </url>
 </vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_TITLE_CASE_TEXT</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: title case selected text"
+   end tell
+    '
+  </url>
+</vkopenurldef>
+
 <vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_MANIPULATE_CLIPBOARD</name>
   <url type="shell">
@@ -4715,11 +4727,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_front_window_center
                </autogen>
 
-           <autogen>
-           __KeyToKey__
-           KeyCode::SPACE,
-       KeyCode::B, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
-            </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::SPACE,
+        KeyCode::G, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+    </autogen>
 
                <autogen>
                  __KeyToKey__
@@ -5181,12 +5194,6 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
       __KeyToKey__
       KeyCode::A,
       KeyCode::1, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, 
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::I,
-      KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY
 		</autogen>
 
         <autogen>
@@ -7462,6 +7469,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME
 		</autogen>
 
+           <autogen>
+           __KeyToKey__
+           KeyCode::SPACE,
+       KeyCode::B, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+            </autogen>
+
     <autogen>
       __KeyToKey__
       KeyCode::M,
@@ -7539,12 +7552,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         KeyCode::DOT,
         KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME
     </autogenVK>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::SPACE,
-        KeyCode::G, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
-    </autogen>
 
     <autogen>
         __KeyToKey__
@@ -7685,7 +7692,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         <autogen>
       __KeyToKey__
       KeyCode::3,
-      KeyCode::VK_OPEN_URL_KM_OPEN_FLUME
+      KeyCode::VK_OPEN_URL_KM_OPEN_KARABINER_PREFERENCES
 		</autogen>
 
         <autogen>
@@ -8381,21 +8388,21 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
        <autogen>
        __KeyToKey__
-       KeyCode::SEMICOLON,
+       KeyCode::O,
        KeyCode::VK_OPEN_URL_KM_INCREASE_YOUTUBE_PLAYBACK
         </autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::SEMICOLON,
+      KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY
+		</autogen>
 
         <autogen>
       __KeyToKey__
       KeyCode::S,
       KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
 		</autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::O,
-       KeyCode::VK_OPEN_URL_KM_OPEN_KARABINER_PREFERENCES
-        </autogen>
 
        <autogen>
        __KeyToKey__
@@ -8560,7 +8567,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         <autogen>
     __KeyToKey__
       KeyCode::L,
-      KeyCode::VK_OPEN_URL_KM_OPEN_AIRMAIL
+      KeyCode::VK_OPEN_URL_KM_OPEN_DISCORD
 		</autogen>
 
         <autogen>
@@ -8652,6 +8659,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
           KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
     </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::2,
+       KeyCode::VK_OPEN_URL_KM_TITLE_CASE_TEXT
+        </autogen>
 
        <autogen>
        __KeyToKey__
