@@ -729,6 +729,29 @@
   </url>
 </vkopenurldef>
 
+<!-- _word def -->
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_keystroke_about</name>
+  <url type="shell">
+  osascript -e '
+   tell application "System Events"
+          keystroke "about "
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_keystroke_issue</name>
+  <url type="shell">
+  osascript -e '
+   tell application "System Events"
+          keystroke "issue "
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
 <!-- _km def-->
 <vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_RERUN_CMD_ITERM</name>
@@ -1034,7 +1057,7 @@
   <url type="shell">
   osascript -e '
     tell application "Keyboard Maestro Engine"
-    do script "a: get current url from safari"
+    do script "a: get current url from safari ✔️"
     end tell
     '
   </url>
@@ -5200,11 +5223,77 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
     <autogen>
       __BlockUntilKeyUp__ KeyCode::SPACE,
     </autogen>
+    
+        <autogen>
+      __KeyToKey__
+      KeyCode::O,
+      KeyCode::SEMICOLON, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::U,
+      KeyCode::J, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::H,
+      KeyCode::H, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::SEMICOLON,
+      KeyCode::L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::3,
+      KeyCode::G, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+		</autogen>
+    
+        <autogen>
+      __KeyToKey__
+      KeyCode::L,
+      KeyCode::F, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::S,
+      KeyCode::S, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::Y,
+      KeyCode::K, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::T,
+      KeyCode::A, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+		</autogen>
 
         <autogen>
       __KeyToKey__
       KeyCode::G,
       KeyCode::X, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::L,
+      KeyCode::U, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::R,
+      KeyCode::P, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, 
 		</autogen>
 
         <autogen>
@@ -7392,7 +7481,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
   </item>
 
 <item>
-		<name>general: sticky 3 - something</name>
+		<name>general: sticky 3 - common words</name>
 		<identifier>private.launcher_mode_open_apps_v51</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -7434,23 +7523,28 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __BlockUntilKeyUp__ KeyCode::3,
     </autogen>
 
+        <autogen>
+          __KeyToKey__
+          KeyCode::T,
+          KeyCode::VK_OPEN_URL_keystroke_about
+        </autogen>
+
+        <autogen>
+          __KeyToKey__
+          KeyCode::I,
+          KeyCode::VK_OPEN_URL_keystroke_issue
+        </autogen>
 
         <autogen>
           __KeyToKey__
           KeyCode::F19,
           KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_DAYONE
         </autogen>
-
+        
         <autogen>
           __KeyToKey__
-          KeyCode::J,
-          KeyCode::VK_OPEN_URL_KM_DECREASE_YOUTUBE_PLAYBACK
-        </autogen>
-
-        <autogen>
-          __KeyToKey__
-          KeyCode::K,
-          KeyCode::VK_OPEN_URL_KM_INCREASE_YOUTUBE_PLAYBACK
+          KeyCode::F19,
+          KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_DAYONE
         </autogen>
 
         <autogen>
