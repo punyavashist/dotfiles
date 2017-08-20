@@ -40,7 +40,7 @@ I also am using [zsh](http://www.zsh.org) as my shell with [antibody](https://gi
 
 Here is how my prompt looks currently : 
 
-![](http://i.imgur.com/nfKcVmo.png)
+<p align="center"><img src="http://i.imgur.com/nfKcVmo.png" alt="img" width="600"></p>
 
 <h1 align="center"> Thanks 🍀</h1>
 
