@@ -19,7 +19,7 @@ function aw() {
     osascript -e "tell application \"Alfred 3\" to search \"$filePath\""
    else
     filePath=$(realpath "$1")
-    osascript -e "tell application \"Alfred 3\" to search \"$filePath\"" -e "delay 0.2" -e "tell application \"System Events\" to key code 98"
+    osascript -e "tell application \"Alfred 3\" to search \"$filePath\"" -e "delay 0.3" -e "tell application \"System Events\" to key code 98"
    fi
 }
 

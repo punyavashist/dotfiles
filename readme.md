@@ -8,9 +8,9 @@
 		<img src="https://img.shields.io/pypi/l/pipenv.svg">
 	</a>
 </div>
-
-
-![](http://i.imgur.com/2jmFmPT.png)
+  
+<a align="center" href="https://my.mindnode.com/3EfbezxGu7xVAM4GQNuN8Lq1naudqs333HqgTuDj">
+    <img width="900" heigth="900" src="http://i.imgur.com/2jmFmPT.png"></a>    
 
 <h1 align="center"> Description 📕</h1>
 
