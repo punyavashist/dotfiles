@@ -54,7 +54,9 @@ Similar to my Karabiner config, I keep a list of all aliases that I have with th
 
 There is quite a lot of awesome programs I use from my command line (you can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps-) for some of them).
 
-However I also really love customising my shell experience with various aliases and zsh functions. Here are some that I like and use very often.
+However I also really love customising my shell experience with various aliases and zsh functions. Here are some that I like and use very often : 
+
+<h2 align="center">commit and push repository to GitHub in one command</h2>
 
 ```Bash
 function ggi() {
@@ -82,6 +84,22 @@ function mit() {
 Which using [this CLI tool](https://github.com/nikitavoloboev/license-up), will create a license file and git commit it. After that it will add all the remaining files with a commit message you like, take the URL of my current browser window which will be at the newly created repository, point the local git repo to push there and push it. 
 
 And thus in one command I initialised and pushed the repo. To create a new repo quickly I use [this Alfred workflow](https://github.com/nikitavoloboev/alfred-ask-create-share).
+
+
+<h2 align="center">commit all with ✨</h2>
+
+I use this command really often. 
+
+```Bash
+function ggs() {
+    git add .
+    git commit . -m ':sparkles:'
+    git push
+}
+```
+
+It will simply add all files and commit them. I don't use this when working with code but for making some changes or for updating this dotfiles repo for example, I just use this. Saves a lot of time.
+
 
 <h1 align="center"> Thanks 🍀</h1>
 
