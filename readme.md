@@ -20,7 +20,7 @@ These are the various configuration files I use on macOS. I wrote about how I cu
 You can also see my top used applications, safari exensions and alfred workflows I use [here](https://github.com/nikitavoloboev/my-mac-os).
 
 
-<h1 align="center"><a href="https://my.mindnode.com/c7EmmKvaxCyCEuTzcpkGB4MGeLpWdR8nsJK4rjDh">Karabiner ⌨</a></h1>
+<h1 align="center">Karabiner ⌨</h1>
 
 The most exciting thing in here is probably how I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now. 
 
