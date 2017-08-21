@@ -27,7 +27,7 @@ The most exciting thing in here is probably how I utilise [Karabiner](https://pq
 Below is an interactive mind map of all the modifications I have done. You can click it to explore. I use it for my own personal documentation so it is always up-to-date.
 
 <a align="center" href="https://my.mindnode.com/c7EmmKvaxCyCEuTzcpkGB4MGeLpWdR8nsJK4rjDh">
-    <img width="900" heigth="900" src="media/karabiner.png"></a>
+    <img width="300" heigth="300" src="media/karabiner.png"></a>
 
 
 <h1 align="center"><a href="https://my.mindnode.com/EPJxCtfjuZJGz5TTHiwTyshmUUBfwRpVyH4BvQj2">Neovim 🌻</a></h1>
@@ -55,7 +55,7 @@ I use many aliases to get around in my system as fast as possible.
 Here is an interactive mind map of all aliases that I have with their descriptions. I use it for my own personal documentation so it is always up-to-date.
 
 <a align="center" href="https://my.mindnode.com/upnFQeGrQCPwgCf3pfS4FgywQUj5sXNLxb1awm1D">
-    <img width="900" heigth="900" src="media/aliases.png"></a>
+    <img width="300" heigth="300" src="media/aliases.png"></a>
 
 
 <h1 align="center"> Thanks 🍀</h1>
