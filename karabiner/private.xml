@@ -820,6 +820,17 @@
 
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE_READ</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: 2Do with current url as note - read"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE</name>
   <url type="shell">
   osascript -e '
@@ -2175,6 +2186,15 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "curl" in workflow "se.psu.alfred.download-file" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_STACK</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "searchStack" in workflow "nikivi.search-the-web" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4882,8 +4902,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::T,
-          KeyCode::VK_OPEN_URL_ALFRED_MAILTO
+       KeyCode::R,
+          KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE
         </autogen>
 
        <autogen>
@@ -5050,8 +5070,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::R,
-       KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE
+       KeyCode::T,
+       KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE_READ
         </autogen>
 
        <autogen>
@@ -5554,7 +5574,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
         __KeyToKey__
         KeyCode::D,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PODS
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_STACK
     </autogen>
 
     <autogen>
@@ -7452,7 +7472,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
   </item>
 
 <item>
-		<name>general: sticky 3 - common words</name>
+		<name>general: sticky 3 - alfred</name>
 		<identifier>private.launcher_mode_open_apps_v51</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -7494,18 +7514,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __BlockUntilKeyUp__ KeyCode::3,
     </autogen>
 
-        <autogen>
-          __KeyToKey__
-          KeyCode::R,
-          KeyCode::8, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
-        </autogen>
+       <autogen>
+         __KeyToKey__
+         KeyCode::O,
+         KeyCode::VK_OPEN_URL_ALFRED_MAILTO
+       </autogen>
 
-        <autogen>
-          __KeyToKey__
-          KeyCode::F19,
-          KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_DAYONE
-        </autogen>
-        
         <autogen>
           __KeyToKey__
           KeyCode::F19,
@@ -10495,7 +10509,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 </item>
 
 <item>
-		<name>general: sticky backquote - to add</name>
+		<name>general: sticky backquote - alfred</name>
 		<identifier>private.launcher_mode_open_apps_v40</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -10537,12 +10551,12 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
       __BlockUntilKeyUp__ KeyCode::BACKQUOTE,
     </autogen>
 
-
        <autogen>
          __KeyToKey__
          KeyCode::SPACE,
          KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
        </autogen>
+
 
   </item>
 

@@ -24,6 +24,13 @@ You can also see my top used applications, safari exensions and alfred workflows
 
 The most exciting thing in here is probably how I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now. 
 
+Below is an interactive mind map of all the modifications I have done. You can click it to explore.
+
+I use it for my own personal documentation so it is always up-to-date.
+
+<a align="center" href="https://my.mindnode.com/c7EmmKvaxCyCEuTzcpkGB4MGeLpWdR8nsJK4rjDh">
+    <img width="800" heigth="800" src="http://imgur.com/d8q7E31"></a>
+
 <h1 align="center"><a href="https://my.mindnode.com/EPJxCtfjuZJGz5TTHiwTyshmUUBfwRpVyH4BvQj2">Neovim 🌻</a></h1>
 
 I am [still learning vim](https://my.mindnode.com/24sx5yV3S7FLayi5Msvhysx5HZ8aAPzUqJ6rStKi) but the this journey has been very rewarding. Modal editing is pretty amazing. 
@@ -41,6 +48,18 @@ I also am using [zsh](http://www.zsh.org) as my shell with [antibody](https://gi
 Here is how my prompt looks currently : 
 
 <p align="center"><img src="http://i.imgur.com/nfKcVmo.png" alt="img" width="600"></p>
+
+<h1 align="center">zsh aliases 🐚</h1>
+
+I use many aliases to get around in my system as fast as possible. 
+
+Here is an interactive mind map of all aliases that I have with their descriptions.
+
+I use it for my own personal documentation so it is always up-to-date.
+
+<a align="center" href="https://my.mindnode.com/upnFQeGrQCPwgCf3pfS4FgywQUj5sXNLxb1awm1D">
+    <img width="600" heigth="600" src="http://imgur.com/Ik6LycD"></a>
+
 
 <h1 align="center"> Thanks 🍀</h1>
 
