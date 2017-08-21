@@ -29,7 +29,7 @@ Below is an interactive mind map of all the modifications I have done. You can c
 I use it for my own personal documentation so it is always up-to-date.
 
 
-<p align="center"><img src="media/karabiner.png" alt="img" width="600"></p>
+<p align="center"><img href="https://my.mindnode.com/c7EmmKvaxCyCEuTzcpkGB4MGeLpWdR8nsJK4rjDh" src="media/karabiner.png" alt="img" width="600"></p>
 
 <h1 align="center"><a href="https://my.mindnode.com/EPJxCtfjuZJGz5TTHiwTyshmUUBfwRpVyH4BvQj2">Neovim 🌻</a></h1>
 
@@ -58,7 +58,7 @@ Here is an interactive mind map of all aliases that I have with their descriptio
 I use it for my own personal documentation so it is always up-to-date.
 
 
-<p align="center" href="https://my.mindnode.com/upnFQeGrQCPwgCf3pfS4FgywQUj5sXNLxb1awm1D" ><img src="media/aliases.png" alt="img" width="600"></p>
+<p align="center" ><img href="https://my.mindnode.com/upnFQeGrQCPwgCf3pfS4FgywQUj5sXNLxb1awm1D" src="media/aliases.png" alt="img" width="600"></p>
 
 
 
