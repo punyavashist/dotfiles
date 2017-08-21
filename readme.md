@@ -55,7 +55,7 @@ I use many aliases to get around in my system as fast as possible.
 Here is an interactive mind map of all aliases that I have with their descriptions. I use it for my own personal documentation so it is always up-to-date.
 
 <a align="center" href="https://my.mindnode.com/upnFQeGrQCPwgCf3pfS4FgywQUj5sXNLxb1awm1D">
-    <img width="300" heigth="300" src="media/aliases.png"></a>
+    <img width="400" heigth="400" src="media/aliases.png"></a>
 
 
 <h1 align="center"> Thanks 🍀</h1>
