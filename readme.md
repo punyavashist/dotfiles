@@ -10,7 +10,7 @@
 </div>
   
 <a align="center" href="https://my.mindnode.com/3EfbezxGu7xVAM4GQNuN8Lq1naudqs333HqgTuDj">
-    <img width="900" heigth="900" src="http://i.imgur.com/2jmFmPT.png"></a>    
+    <img width="900" heigth="900" src="media/dotfiles.png"></a>    
 
 <h1 align="center"> Description 📕</h1>
 
@@ -24,12 +24,11 @@ You can also see my top used applications, safari exensions and alfred workflows
 
 The most exciting thing in here is probably how I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now. 
 
-Below is an interactive mind map of all the modifications I have done. You can click it to explore.
+Below is an interactive mind map of all the modifications I have done. You can click it to explore. I use it for my own personal documentation so it is always up-to-date.
 
-I use it for my own personal documentation so it is always up-to-date.
+<a align="center" href="https://my.mindnode.com/c7EmmKvaxCyCEuTzcpkGB4MGeLpWdR8nsJK4rjDh">
+    <img width="900" heigth="900" src="media/karabiner.png"></a>
 
-
-<p align="center"><img href="https://my.mindnode.com/c7EmmKvaxCyCEuTzcpkGB4MGeLpWdR8nsJK4rjDh" src="media/karabiner.png" alt="img" width="600"></p>
 
 <h1 align="center"><a href="https://my.mindnode.com/EPJxCtfjuZJGz5TTHiwTyshmUUBfwRpVyH4BvQj2">Neovim 🌻</a></h1>
 
@@ -53,13 +52,10 @@ Here is how my prompt looks currently :
 
 I use many aliases to get around in my system as fast as possible. 
 
-Here is an interactive mind map of all aliases that I have with their descriptions.
+Here is an interactive mind map of all aliases that I have with their descriptions. I use it for my own personal documentation so it is always up-to-date.
 
-I use it for my own personal documentation so it is always up-to-date.
-
-
-<p align="center" ><img href="https://my.mindnode.com/upnFQeGrQCPwgCf3pfS4FgywQUj5sXNLxb1awm1D" src="media/aliases.png" alt="img" width="600"></p>
-
+<a align="center" href="https://my.mindnode.com/upnFQeGrQCPwgCf3pfS4FgywQUj5sXNLxb1awm1D">
+    <img width="900" heigth="900" src="media/aliases.png"></a>
 
 
 <h1 align="center"> Thanks 🍀</h1>
