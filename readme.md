@@ -42,7 +42,7 @@ I also am using [zsh](http://www.zsh.org) as my shell with [antibody](https://gi
 
 Here is how my prompt looks currently : 
 
-<p align="center"><img src="media/prompt.png" alt="img" width="600"></p>
+<p align="center"><img src="media/prompt.png" alt="img" width="200"></p>
 
 <h1 align="center">zsh aliases 🐚</h1>
 
