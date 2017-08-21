@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://my.mindnode.com/3EfbezxGu7xVAM4GQNuN8Lq1naudqs333HqgTuDj">my configuration files for macOS 🐚 </a></h1>
+<h1 align="center"><a href="https://my.mindnode.com/3EfbezxGu7xVAM4GQNuN8Lq1naudqs333HqgTuDj">My configuration files for macOS 🐚 </a></h1>
 
 <div align="center">
 <a href="https://www.patreon.com/nikitavoloboev">
@@ -24,19 +24,15 @@ You can also see my top used applications, safari exensions and alfred workflows
 
 The most exciting thing in here is probably how I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now. 
 
-Below is an interactive mind map of all the modifications I have done. You can click it to explore. I use it for my own personal documentation so it is always up-to-date.
+I document all the keybindings I have made and changed as an interactive mind map [here](https://my.mindnode.com/c7EmmKvaxCyCEuTzcpkGB4MGeLpWdR8nsJK4rjDh). Scroll around and explore, perhaps you find something interesting.
 
-<a align="center" href="https://my.mindnode.com/c7EmmKvaxCyCEuTzcpkGB4MGeLpWdR8nsJK4rjDh">
-    <img width="300" heigth="300" src="media/karabiner.png"></a>
-
-
-<h1 align="center"><a href="https://my.mindnode.com/EPJxCtfjuZJGz5TTHiwTyshmUUBfwRpVyH4BvQj2">Neovim 🌻</a></h1>
+<h1 align="center">Neovim 🌻</a></h1>
 
 I am [still learning vim](https://my.mindnode.com/24sx5yV3S7FLayi5Msvhysx5HZ8aAPzUqJ6rStKi) but the this journey has been very rewarding. Modal editing is pretty amazing. 
 
 My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it also has very well built [vim mode](https://github.com/VSCodeVim/Vim).
 
-<h1 align="center"><a href="https://github.com/nikitavoloboev/dotfiles/tree/master/hammerspoon">Hammerspoon 🔨</a></h1>
+<h1 align="center">Hammerspoon 🔨</a></h1>
 
 I don't use [hammerspoon](http://www.hammerspoon.org/) as extensively however I am looking into implementing more of its features into my workflow.
 
@@ -46,17 +42,46 @@ I also am using [zsh](http://www.zsh.org) as my shell with [antibody](https://gi
 
 Here is how my prompt looks currently : 
 
-<p align="center"><img src="http://i.imgur.com/nfKcVmo.png" alt="img" width="600"></p>
+<p align="center"><img src="media/prompt.png" alt="img" width="600"></p>
 
 <h1 align="center">zsh aliases 🐚</h1>
 
-I use many aliases to get around in my system as fast as possible. 
+I use many aliases to get around my system as fast as possible.
 
-Here is an interactive mind map of all aliases that I have with their descriptions. I use it for my own personal documentation so it is always up-to-date.
+Similar to my Karabiner config, I keep a list of all aliases that I have with their descriptions in an interactive mind map you can view [here](https://my.mindnode.com/upnFQeGrQCPwgCf3pfS4FgywQUj5sXNLxb1awm1D).
 
-<a align="center" href="https://my.mindnode.com/upnFQeGrQCPwgCf3pfS4FgywQUj5sXNLxb1awm1D">
-    <img width="300" heigth="500" src="media/aliases.png"></a>
+<h1 align="center">interesting aliases and zsh functions 🐚</h1>
 
+There is quite a lot of awesome programs I use from my command line (you can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps-) for some of them).
+
+However I also really love customising my shell experience with various aliases and zsh functions. Here are some that I like and use very often.
+
+```Bash
+function ggi() {
+    git init
+    mit
+    git add .
+    git commit -m "🌅"
+    git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
+    git push -u origin master
+}
+```
+
+Say I created some project and wrote some code in it or added a simple README with some text in it. I then go on to create a [new GitHub repository](https://github.com/new) and give it a name. After that I just run this `ggi` command.
+
+It will initialise my current directory with git if it wasn't already. It will then call this function : 
+
+```Bash
+function mit() {
+  license-up Nikita Voloboev nikitavoloboev.xyz
+  git add LICENSE
+  git commit -m 'MIT license'
+}
+```
+
+Which using [this CLI tool](https://github.com/nikitavoloboev/license-up), will create a license file and git commit it. After that it will add all the remaining files with a commit message you like, take the URL of my current browser window which will be at the newly created repository, point the local git repo to push there and push it. 
+
+And thus in one command I initialised and pushed the repo. To create a new repo quickly I use [this Alfred workflow](https://github.com/nikitavoloboev/alfred-ask-create-share).
 
 <h1 align="center"> Thanks 🍀</h1>
 
