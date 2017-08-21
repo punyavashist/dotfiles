@@ -58,7 +58,8 @@ Here is an interactive mind map of all aliases that I have with their descriptio
 I use it for my own personal documentation so it is always up-to-date.
 
 
-<p align="center"><img src="media/aliases.png" alt="img" width="600"></p>
+<p align="center" href="https://my.mindnode.com/upnFQeGrQCPwgCf3pfS4FgywQUj5sXNLxb1awm1D" ><img src="media/aliases.png" alt="img" width="600"></p>
+
 
 
 <h1 align="center"> Thanks 🍀</h1>
