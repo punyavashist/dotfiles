@@ -22,6 +22,8 @@ You can also see my top used applications, safari exensions and alfred workflows
 
 <h1 align="center">Karabiner ⌨</h1>
 
+<p align="center"><img src="https://explainxkcd.com/wiki/images/b/bf/borrow_your_laptop.png" alt="img" width="400"></p>
+
 The most exciting thing in here is probably how I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now. 
 
 I document all the keybindings I have made and changed as an interactive mind map [here](https://my.mindnode.com/c7EmmKvaxCyCEuTzcpkGB4MGeLpWdR8nsJK4rjDh). Scroll around and explore, perhaps you find something interesting.
