@@ -6,7 +6,6 @@ caarlos0/zsh-open-pr kind:path                  # open pull requests from the co
 mafredri/zsh-async                                     # perform tasks asynchronously
 rupa/z                                                          # jump around
 Tarrasch/zsh-bd                                           # jump back to a specific directory
-wbinglee/zsh-wakatime                               # track time spent and commands typed
 zsh-users/zsh-completions                           # additional completion definitions for Zsh
 zsh-users/zsh-autosuggestions                     # fish-like autosuggestions for zsh
 junegunn/fzf                                                 # command-line fuzzy finder
