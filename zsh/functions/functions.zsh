@@ -3,6 +3,25 @@ function wo() {
 
 }
 
+function zs() {
+  z $1 && open .
+}
+
+function mdg() {
+    md $1
+    touch $1.go
+}
+
+function d.() {
+  export git_dir="$(git rev-parse --show-toplevel 2> /dev/null)"
+  if [ -z $git_dir ]
+  then
+    cd ..
+  else
+    cd $git_dir
+  fi
+}
+
 
 function wl() {
     alfred link
@@ -161,7 +180,7 @@ function rfg() {
   reflex -g '*.go' go run $1
 }
 
-function wfg() {
+function rfm() {
     reflex -g '*.go' go run main.go $1
 }
 
