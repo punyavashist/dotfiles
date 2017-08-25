@@ -13,6 +13,7 @@ endfunction
 
 "Plug 'easymotion/vim-easymotion'
 Plug 'jiangmiao/auto-pairs'
+Plug 'wakatime/vim-wakatime'
 Plug 'junegunn/heytmux'
 Plug 'sbdchd/neoformat'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }

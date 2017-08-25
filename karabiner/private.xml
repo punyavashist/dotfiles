@@ -82,6 +82,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_MAIL</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: tutanota"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB</name>
   <url type="shell">
   osascript -e '
@@ -659,17 +670,6 @@
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "w: soundcloud"
-    end tell
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_FACEBOOK</name>
-  <url type="shell">
-  osascript -e '
-    tell application "Keyboard Maestro Engine"
-    do script "w: facebook"
     end tell
     '
   </url>
@@ -7062,6 +7062,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
         __KeyToKey__
+        KeyCode::1,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_MAIL
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::DOT,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_KAGGLE
     </autogen>
@@ -7222,11 +7228,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_SOUNDCLOUD
     </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::1,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_KAGGLE
-    </autogen>
 
     <autogen>
         __KeyToKey__
@@ -7292,12 +7293,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         __KeyToKey__
         KeyCode::SEMICOLON,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK_OVERFLOW
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::COMMA,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_FACEBOOK
     </autogen>
 
     <autogen>
@@ -7869,6 +7864,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         KeyCode::VK_OPEN_URL_KM_OPEN_HAZEL
     </autogen>
 
+    <autogen>
+        __KeyToKey__
+        KeyCode::Q,
+        KeyCode::VK_OPEN_URL_KM_OPEN_CONTACTS
+    </autogen>
+
  <autogen>
           __SimultaneousKeyPresses__
           KeyCode::J, KeyCode::K,
@@ -8088,6 +8089,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
       __BlockUntilKeyUp__ KeyCode::U,
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::1,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_KAGGLE
     </autogen>
 
     <autogen>
@@ -8608,7 +8615,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
        <autogen>
        __KeyToKey__
        KeyCode::E,
-       KeyCode::D, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+       KeyCode::E, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, 
         </autogen>
 
        <autogen>

@@ -8,6 +8,7 @@ rupa/z                                                          # jump around
 Tarrasch/zsh-bd                                           # jump back to a specific directory
 zsh-users/zsh-completions                           # additional completion definitions for Zsh
 zsh-users/zsh-autosuggestions                     # fish-like autosuggestions for zsh
+wbinglee/zsh-wakatime                               # track time spent and commands typed
 junegunn/fzf                                                 # command-line fuzzy finder
 sindresorhus/pure                                         # pretty, minimal and fast zsh prompt
 zsh-users/zsh-history-substring-search        # zsh port of the fish shell's history search
