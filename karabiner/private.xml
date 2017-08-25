@@ -1914,22 +1914,11 @@
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_OPEN_CHROME</name>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_CHROMIUM</name>
   <url type="shell">
   osascript -e '
     tell application "Keyboard Maestro Engine"
-    do script "open: chrome"
-    end tell
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_CANARY</name>
-  <url type="shell">
-  osascript -e '
-    tell application "Keyboard Maestro Engine"
-    do script "open: chrome canary"
+    do script "open: chromium"
     end tell
     '
   </url>
@@ -2220,6 +2209,15 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "curl" in workflow "se.psu.alfred.download-file" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_CRYPTO_TRACK</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "cryptoTrack" in workflow "com.cryprotracker" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -3044,15 +3042,6 @@ tell application "Alfred 3" to run trigger "searchDash" in workflow "com.nikivi.
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "searchYandex" in workflow "net.deanishe.alfred-searchio" with argument ""
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_CHROME_SEARCH</name>
-  <url type="shell">
-  osascript -e '
-tell application "Alfred 3" to run trigger "searchChromeBookmarks" in workflow "com.mdreizin.chrome.bookmarks" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -5399,7 +5388,13 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         <autogen>
       __KeyToKey__
       KeyCode::W,
-KeyCode::5, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+    KeyCode::5, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::Q,
+    KeyCode::W, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, 
 		</autogen>
 
         <autogen>
@@ -6499,6 +6494,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         <autogen>
       __KeyToKey__
       KeyCode::U,
+      KeyCode::VK_OPEN_URL_KM_OPEN_CHROMIUM
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::I,
       KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX
 		</autogen>
 
@@ -6614,12 +6615,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyToKey__
       KeyCode::SEMICOLON,
       KeyCode::VK_OPEN_URL_KM_OPEN_VS_CODE
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::I,
-      KeyCode::VK_OPEN_URL_KM_OPEN_CHROME
     </autogen>
 
     <autogen>
@@ -7591,6 +7586,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
          __KeyToKey__
          KeyCode::O,
          KeyCode::VK_OPEN_URL_ALFRED_MAILTO
+       </autogen>
+
+       <autogen>
+         __KeyToKey__
+         KeyCode::T,
+         KeyCode::VK_OPEN_URL_ALFRED_CRYPTO_TRACK
        </autogen>
 
         <autogen>
@@ -10636,7 +10637,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
        <autogen>
          __KeyToKey__
          KeyCode::SPACE,
-         KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+         KeyCode::Q, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
        </autogen>
 
 
@@ -10821,7 +10822,7 @@ KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTI
           __SimultaneousKeyPresses__
           KeyCode::L, KeyCode::N,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_CHROME_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_DICTIONARY_SEARCH
       </autogen>
   </item>
 
@@ -11222,17 +11223,6 @@ KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
 </item>
 
 <item>
-<name>general: sim space p = keyclue</name>
-<identifier>private.sim_p_key</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::P, KeyCode::SPACE,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_CHROME_SEARCH
-</autogen>
-</item>
-
-<item>
 <name>general: sim space , = keyclue</name>
 <identifier>private.sim_comma_key</identifier>
 <autogen>
@@ -11284,17 +11274,6 @@ __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
 KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
-</autogen>
-</item>
-
-<item>
-<name>general: sim space u = keyclue</name>
-<identifier>private.sim_space_u_xcode</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::U, KeyCode::SPACE,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_CHROME_SEARCH
 </autogen>
 </item>
 
