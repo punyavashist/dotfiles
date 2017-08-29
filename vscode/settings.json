@@ -4,8 +4,11 @@
     "editor.minimap.enabled": false,
     "editor.lineNumbers": "relative",
     "editor.cursorStyle": "line",
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 2,
     "workbench.welcome.enabled": false,
+    // _zen
+    "zenMode.fullScreen": true,
+    "zenMode.restore": true,
     // _theme
     "workbench.colorTheme": "An Old Hope",
     "workbench.iconTheme": "vs-seti",
@@ -103,7 +106,7 @@
                 "y",
                 "$"
             ]
-        },
+        }
     ],
     // _go
     "go.formatTool": "gofmt",

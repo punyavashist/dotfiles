@@ -6,16 +6,16 @@ export DOTFILES="$HOME/.dotfiles"
 source ~/.zsh_plugins.sh
 
 # _source aliases
+source ~/.dotfiles/zsh/dev/env.zsh
 source ~/.dotfiles/zsh/functions/functions.zsh
 source ~/.dotfiles/zsh/functions/fzf.zsh
-source ~/.dotfiles/zsh/zsh/bindings.zsh
-source ~/.dotfiles/zsh/dev/env.zsh
 source ~/.dotfiles/zsh/aliases/git.zsh
 source ~/.dotfiles/zsh/aliases/vim.zsh
 source ~/.dotfiles/zsh/aliases/cd.zsh
 source ~/.dotfiles/zsh/aliases/dev.zsh
 source ~/.dotfiles/zsh/aliases/app.zsh
 source ~/.dotfiles/zsh/aliases/alias.zsh
+source ~/.dotfiles/zsh/zsh/bindings.zsh
 
 setopt autocd
 

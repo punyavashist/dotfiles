@@ -174,6 +174,11 @@ function mdev() {
   git checkout dev
 }
 
+# _git
+igit() {
+  git rev-parse HEAD > /dev/null 2>&1
+}
+
 
 # _reflex
 function rfg() {

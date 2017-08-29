@@ -11,7 +11,7 @@ alias ww='code .'
 alias zr='open -a Preview'
 
 # _web
-alias l="open -a Google\ Chrome"
+alias l="open -a FirefoxDeveloperEdition"
 alias qq="open -a Safari"
 
 # _other

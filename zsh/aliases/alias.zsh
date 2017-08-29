@@ -1,5 +1,6 @@
 # _general
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
+alias yi="python3 -i"
 alias le='less -r'
 # alias du='du -sh * | sort'
 alias wf='alfred build'
