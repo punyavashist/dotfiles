@@ -102,6 +102,52 @@ function ggs() {
 
 It will simply add all files and commit them. I don't use this when working with code but for making some changes or for updating this dotfiles repo for example, I just use this. Saves a lot of time.
 
+<h1 align="center">fzf bindings 🔎</h1>
+
+
+[fzf](https://github.com/junegunn/fzf) is a command line tool that lets you fuzzy search on text. I use it very often now for fuzzy searching for files to open with neovim, or fuzzy searching through my commit messages and more.
+
+Here are some of my favourite commands I use with it : 
+
+
+<h2 align="center">search for files to edit in current dir</h2>
+
+```Bash
+fe() {
+  local files
+  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
+  [[ -n "$files" ]] && nvim "${files[@]}"
+}
+```
+
+This command will let me fuzzy search for a file to open from the directory I am currently in. I use it a lot.
+
+Since I also use VS Code as my primary editor, I use this command too : 
+
+```Bash
+fw() {
+  local files
+  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
+  [[ -n "$files" ]] && code "${files[@]}"
+}
+```
+
+Which does the same thing but opens the files in VS Code instead of neovim.
+
+
+<h2 align="center"> search for files to edit in my ~/.dotfiles</h2>
+
+```Bash
+fea() {
+  cd ~/.dotfiles
+  local files
+  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
+  [[ -n "$files" ]] && nvim "${files[@]}"
+}
+```
+
+A slight variation of the above command that first `cd`'s to `~/.dotfiles` and then lets me search through contents of it to quickly edit and modify my config with neovim.
+ 
 
 <h1 align="center"> Thanks 🍀</h1>
 

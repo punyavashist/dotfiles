@@ -11,6 +11,8 @@ bindkey '^N' forward-word
 bindkey '^B' backward-word
 bindkey "^F" history-incremental-search-backward
 
+bindkey -s "^Xi" "^[Iiex -S ^[A"
+
 
 # _fzf
 
