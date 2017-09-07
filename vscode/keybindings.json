@@ -22,10 +22,6 @@
     "when": "editorFocus && !inDebugRepl && vim.mode == 'Normal Mode'"
   },
   {
-    "key": "ctrl+f",
-    "command": "extension.dash.specific"
-  },
-  {
     "key": "cmd+m",
     "command": "code-runner.run"
   },
@@ -64,5 +60,133 @@
     "key": "cmd+/",
     "command": "-editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "C_Cpp.PeekDeclaration",
+    "when": "editorTextFocus && editorLangId == 'cpp'"
+  },
+  {
+    "key": "ctrl+alt+f12",
+    "command": "-C_Cpp.PeekDeclaration",
+    "when": "editorTextFocus && editorLangId == 'cpp'"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "editor.action.previewDeclaration",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  {
+    "key": "alt+f12",
+    "command": "-editor.action.previewDeclaration",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "C_Cpp.PeekDeclaration",
+    "when": "editorTextFocus && editorLangId == 'c'"
+  },
+  {
+    "key": "ctrl+alt+f12",
+    "command": "-C_Cpp.PeekDeclaration",
+    "when": "editorTextFocus && editorLangId == 'c'"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "extension.dash.specific",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-extension.dash.specific",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+k",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "shift+cmd+p",
+    "command": "-workbench.action.showCommands"
+  },
+  {
+    "key": "cmd+l",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "shift+cmd+b",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "-workbench.view.explorer"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "editor.action.goToDeclaration",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "f12",
+    "command": "-editor.action.goToDeclaration",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "workbench.action.showErrorsWarnings"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "editor.action.marker.next",
+    "when": "editorFocus && !editorReadonly"
+  },
+  {
+    "key": "f8",
+    "command": "-editor.action.marker.next",
+    "when": "editorFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "editor.action.marker.prev",
+    "when": "editorFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+f8",
+    "command": "-editor.action.marker.prev",
+    "when": "editorFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+i",
+    "command": "workbench.action.terminal.clear",
+    "when": ""
+  },
+  {
+    "key": "cmd+k",
+    "command": "-workbench.action.terminal.clear",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+o",
+    "command": "workbench.action.files.openFileFolder"
+  },
+  {
+    "key": "cmd+o",
+    "command": "-workbench.action.files.openFileFolder"
   }
 ]

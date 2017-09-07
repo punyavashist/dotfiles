@@ -7,6 +7,51 @@ function zs() {
   z $1 && open .
 }
 
+# _alfred
+
+# alfred search function
+
+aw() {
+    if [ $# -eq 0 ]; then   # If nothing is put as arguments open Alfred at the working directory so it list the content
+        osascript -e "tell application \"Alfred 3\" to browse \"$(pwd)\""
+    elif [ $# -eq 1 ]; then # If only one argument is set
+        if [[ -d $1 ]] || [[ -f $1 ]]; then   # if it looks like a path or file, then make sure we send a full path to Alfred
+            osascript -e "tell application \"Alfred 3\" to browse \"$(realpath -s "$1")\""
+        else    # Any other words that are not a path would be sent to Alfred as is  (ex: alfs snip  ->  would open Alfred with "snip")
+            osascript -e "tell application \"Alfred 3\" to search \"$*\""
+        fi
+    else   # If multiple arguments are set, then they are sent to Alfred as is. (ex: alfs define allo  ->  would pop Alfred with "define allo")
+        osascript -e "tell application \"Alfred 3\" to search \"$*\""
+    fi
+}
+
+# alfred action function (pop the alfred action window)
+awe() {
+    if [ $# -eq 0 ]; then    # If no arguments, pop Alfred Action Window in the working directory
+        osascript -e "tell application \"Alfred 3\" to action \"$(pwd)\""
+    else
+        args=""
+        argsAreAllPaths=true
+        for arg in "$@" ; do
+            filePath=$(realpath -s "$arg")
+            if [[ -d $filePath ]] || [[ -f $filePath ]]; then    # if the arg is a file of folder, append the path to the args string to build a list for the osascript command
+                args+="\"$filePath\","
+            else
+                argsAreAllPaths=false   # if one argument is not a folder or file path, then pop Alfred with the standard search and try to access Alfred Action Window. This also makes it clear there's a problem with one of the passed paths
+                break
+            fi
+        done
+        if [ "$argsAreAllPaths" = true ] ; then    # If all arguments are files or directories, open Alfred Action Window with the list
+            args=${args%?} # remove the trailing comma
+            osascript -e "tell application \"Alfred 3\" to action { $args }"
+        else  # If not all arguments are files or directories, search as is and try to access the Alfred Action Window. The Action Window should pop if it's possible, or the standard Alfred Search would be shown (ex: alfa activity monitor  ->  Would open the file action window of the Activity Monitor)
+            actionKey="keystroke (ASCII character 29)"  # (meaning: right arrow) Put your prefered action key (Alfred -> File Search -> Actions -> Show Actions) as applescript command for keystroke or key code (ex: "key code 98")
+            delayBetweenEvents=0.1    # Play with the number if the action doesn't work correctly
+            osascript -e "tell application \"Alfred 3\" to search \"$*\"" -e "delay $delayBetweenEvents" -e "tell application \"System Events\" to $actionKey"
+        fi
+    fi
+}
+
 function mdg() {
     md $1
     touch $1.go
@@ -30,16 +75,6 @@ function wl() {
 
 function iz () {
     primitive -i in.png -o output.png -n "$1"
-}
-
-function aw() {
-  if [ $# -eq 0 ]; then
-    filePath=$(pwd)
-    osascript -e "tell application \"Alfred 3\" to search \"$filePath\""
-   else
-    filePath=$(realpath "$1")
-    osascript -e "tell application \"Alfred 3\" to search \"$filePath\"" -e "delay 0.3" -e "tell application \"System Events\" to key code 98"
-   fi
 }
 
 function ud() {
@@ -96,6 +131,12 @@ function wa() {
     code .
 }
 
+function ggu() {
+    git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
+    git push -u origin master
+}
+
+# TODO: check if it is already initialised and if it has license
 function ggi() {
     git init
     mit
@@ -142,17 +183,8 @@ function gc() {
 # function gc() { arg=$*; printf 'git commit -m <%s>\n' "$arg";}
 
 function ula() {
-  cd ~/oss/learn-anything/search-engine
-  git pull
-  yarn run update-maps
-  rm -r ~/oss/learn-anything/learn-anything/learn-anything
-  react-mindmap-parse maps ~/oss/learn-anything/learn-anything
-  rm -r maps
-  cd ~/oss/learn-anything/learn-anything/
-  yarn run upload
-  git add .
-  git commit -m "new maps 🗺"
-  git push
+  cd ~/oss/learn-anything/maps
+  yarn run update:prod
 }
 
 # run md-to-alfred on each md file in current dir

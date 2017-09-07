@@ -2,9 +2,14 @@
     // _general
     "editor.snippetSuggestions": "top",
     "editor.minimap.enabled": false,
+    // _dash
+    "dash.docset.go": [
+        "go",
+        "godoc"
+    ],
     "editor.lineNumbers": "relative",
     "editor.cursorStyle": "line",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 0,
     "workbench.welcome.enabled": false,
     // _zen
     "zenMode.fullScreen": true,
@@ -105,6 +110,19 @@
             "after": [
                 "y",
                 "$"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.commentLine",
+                    "args": []
+                }
             ]
         }
     ],

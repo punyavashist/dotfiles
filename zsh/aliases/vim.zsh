@@ -8,8 +8,9 @@ alias ej='nvim package.json'
 
 # _config
 alias ea='nvim ~/.dotfiles/zsh/aliases/alias.zsh'                # alias
+alias es='nvim ~/.secrets'                                        # secret configs
 alias ezn='nvim ~/.dotfiles/antibody/plugins.txt'             # plugins
-alias es='nvim ~/.ssh/config'                                 # ssh config
+alias eh='nvim ~/.ssh/config'                                 # ssh config
 alias ejj='nvim ~/.dotfiles/intellij/ideavimrc'               # idea
 alias ez='nvim ~/.dotfiles/zsh/zshrc.zsh'                         # zshrc
 alias eze='nvim ~/.dotfiles/zsh/aliases/vim.zsh'                 # goto vim
