@@ -9,10 +9,10 @@
     ],
     "editor.lineNumbers": "relative",
     "editor.cursorStyle": "line",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "workbench.welcome.enabled": false,
     // _zen
-    "zenMode.fullScreen": true,
+    "zenMode.fullScreen": false,
     "zenMode.restore": true,
     // _theme
     "workbench.colorTheme": "An Old Hope",
@@ -127,7 +127,7 @@
         }
     ],
     // _go
-    "go.formatTool": "gofmt",
+    "go.autocompleteUnimportedPackages": true,
     "go.lintTool": "golint",
     "go.lintOnSave": false,
     "go.buildOnSave": true,

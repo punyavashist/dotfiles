@@ -13,7 +13,7 @@ export PATH=./node_modules/.bin/:$PATH
 export PATH=$PATH:$HOME/software/anaconda3/bin
 
 # _go
-export GOPATH=/Users/nikivi/go/
+export GOPATH=/Users/nikivi/go
 export PATH=$PATH:$GOPATH/bin:$GOPATH/bin
 export GOBIN=$GOPATH/bin
 

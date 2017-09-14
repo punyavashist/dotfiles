@@ -11,11 +11,7 @@ bindkey '^N' forward-word
 bindkey '^B' backward-word
 bindkey "^F" history-incremental-search-backward
 
-bindkey -s "^Xi" "^[Iiex -S ^[A"
-
-
 # _fzf
-
 # bind '"\er": redraw-current-line'
 # bind '"\C-g\C-f": "$(gf)\e\C-e\er"'
 # bind '"\C-g\C-b": "$(gb)\e\C-e\er"'

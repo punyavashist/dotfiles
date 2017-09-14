@@ -22,8 +22,8 @@ alias li='open -a Google\ Chrome\ Canary index.html'
 alias brs='browser-sync'
 
 # _python
-alias y='python3'
-alias ya='python'
+alias p='python3'
+alias p2='python'
 alias rv='virtualenv -p /usr/local/bin/python3'
 
 # _docker

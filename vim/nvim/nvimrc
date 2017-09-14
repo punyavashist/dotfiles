@@ -125,6 +125,7 @@ cabbrev rp Rp
 vmap <C-x> :!pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
 vmap <C-d> :Dash<CR>
+vmap <C-e> :Files<CR>
 
 let g:ctrlp_map = '<c-k>'
 let g:ctrlp_cmd = 'CtrlP'

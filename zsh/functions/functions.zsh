@@ -1,6 +1,14 @@
 # _test
-function wo() {
+function wo(){
 
+}
+
+function woo() {
+    url=$(pbpaste) 
+    dest_dir=${url##*/} dest_dir=${dest_dir%.git};
+    echo $dest_dir
+    #git clone "$url" "$dest_dir"
+    #code "$dest_dir"
 }
 
 function zs() {

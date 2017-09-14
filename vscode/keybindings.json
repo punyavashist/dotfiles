@@ -92,7 +92,7 @@
     "when": "editorTextFocus && editorLangId == 'c'"
   },
   {
-    "key": "ctrl+k",
+    "key": "ctrl+d",
     "command": "extension.dash.specific",
     "when": "editorTextFocus"
   },
@@ -134,7 +134,7 @@
     "command": "-workbench.view.scm"
   },
   {
-    "key": "ctrl+l",
+    "key": "ctrl+f",
     "command": "editor.action.goToDeclaration",
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
@@ -149,10 +149,6 @@
   },
   {
     "key": "ctrl+r",
-    "command": "workbench.action.showErrorsWarnings"
-  },
-  {
-    "key": "ctrl+e",
     "command": "editor.action.marker.next",
     "when": "editorFocus && !editorReadonly"
   },
@@ -188,5 +184,18 @@
   {
     "key": "cmd+o",
     "command": "-workbench.action.files.openFileFolder"
+  },
+  {
+    "key": "shift+cmd+t",
+    "command": "workbench.action.toggleZenMode"
+  },
+  {
+    "key": "cmd+k z",
+    "command": "-workbench.action.toggleZenMode"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "extension.vim_ctrl+o",
+    "when": "editorTextFocus && vim.active && vim.use<C-o> && !inDebugRepl"
   }
 ]
