@@ -26,6 +26,10 @@ alias p='python3'
 alias p2='python'
 alias rv='virtualenv -p /usr/local/bin/python3'
 
+# _alfred
+alias wf='alfred build'
+alias wfa='alfred pack -o ~/Desktop'
+
 # _docker
 alias k='docker'
 alias kc='docker compose'

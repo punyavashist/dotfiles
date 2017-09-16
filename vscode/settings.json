@@ -9,7 +9,7 @@
     ],
     "editor.lineNumbers": "relative",
     "editor.cursorStyle": "line",
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 1,
     "workbench.welcome.enabled": false,
     // _zen
     "zenMode.fullScreen": false,
@@ -132,8 +132,8 @@
     "go.lintOnSave": false,
     "go.buildOnSave": true,
     "go.formatOnSave": true,
-    "go.goroot": "/usr/local/go",
-    "go.gopath": "/Users/nikivi/go/",
+    "go.gopath": "/Users/nikivi/go",
+    // "go.goroot": "/usr/local/go",
     // _java
     "java.errors.incompleteClasspath.severity": "ignore",
     // _typescript

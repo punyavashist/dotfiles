@@ -4,7 +4,7 @@ function wo(){
 }
 
 function woo() {
-    url=$(pbpaste) 
+    url=$(pbpaste)
     dest_dir=${url##*/} dest_dir=${dest_dir%.git};
     echo $dest_dir
     #git clone "$url" "$dest_dir"
@@ -19,7 +19,7 @@ function zs() {
 
 # alfred search function
 
-aw() {
+awe() {
     if [ $# -eq 0 ]; then   # If nothing is put as arguments open Alfred at the working directory so it list the content
         osascript -e "tell application \"Alfred 3\" to browse \"$(pwd)\""
     elif [ $# -eq 1 ]; then # If only one argument is set
@@ -34,7 +34,7 @@ aw() {
 }
 
 # alfred action function (pop the alfred action window)
-awe() {
+aw() {
     if [ $# -eq 0 ]; then    # If no arguments, pop Alfred Action Window in the working directory
         osascript -e "tell application \"Alfred 3\" to action \"$(pwd)\""
     else
@@ -231,14 +231,6 @@ function rfm() {
 
 function wfj() {
     reflex -g '*.js' node $1
-}
-
-function wfb() {
-    reflex -g '*.rb' ruby main.rb
-}
-
-function wfa() {
-    reflex -g '*.go' alfred build
 }
 
 function af() {

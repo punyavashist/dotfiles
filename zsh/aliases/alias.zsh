@@ -1,9 +1,9 @@
 # _general
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias yi="python3 -i"
+alias kar="/Applications/Karabiner.app/Contents/Library/bin/karabiner"
 alias le='less -r'
 # alias du='du -sh * | sort'
-alias wf='alfred build'
 alias h='tmux'
 alias mc='md-to-alfred'
 alias pd='pandoc'
