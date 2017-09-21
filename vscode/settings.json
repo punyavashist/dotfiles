@@ -9,8 +9,13 @@
     ],
     "editor.lineNumbers": "relative",
     "editor.cursorStyle": "line",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": -3,
     "workbench.welcome.enabled": false,
+    // _code runner
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.executorMap": {
+        "python": "python2"
+    },
     // _zen
     "zenMode.fullScreen": false,
     "zenMode.restore": true,
@@ -86,6 +91,20 @@
             "commands": [
                 {
                     "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "r"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    // "command": "workbench.action.files.save",
+                    "command": "code-runner.run",
                     "args": []
                 }
             ]

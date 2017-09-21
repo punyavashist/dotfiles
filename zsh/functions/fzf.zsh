@@ -4,7 +4,7 @@ z() {
   cd "$(_z -l 2>&1 | fzf --height 40% --reverse --inline-info +s --tac --query "$*" | sed 's/^[0-9,.]* *//')"
 }
 
-# fkill - kill process
+# kill process
 fkill() {
   local pid
   pid=$(ps -ef | sed 1d | fzf -m | awk '{print $2}')
@@ -149,19 +149,10 @@ fea() {
   [[ -n "$files" ]] && nvim "${files[@]}"
 }
 
-fe() {
-  local files
-  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
-  [[ -n "$files" ]] && nvim "${files[@]}"
-}
-
-# fe [FUZZY PATTERN] - Open the selected file with the default editor
-#   - Bypass fuzzy finder if there's only one match (--select-1)
-#   - Exit if there's no match (--exit-0)
 f() {
   local files
   IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
-  [[ -n "$files" ]] && code "${files[@]}"
+  [[ -n "$files" ]] && nvim "${files[@]}"
 }
 
 fw() {
@@ -185,16 +176,15 @@ fdr() {
   cd "$DIR"
 }
 
-# fd - cd to selected directory
-r() {
-  local dir
-  dir=$(find ${1:-.} -path '*/\.*' -prune \
-                  -o -type d -print 2> /dev/null | fzf +m) &&
-  cd "$dir"
-}
+# fs() {
+#   local dir
+#   dir=$(find ${1:-.} -path '*/\.*' -prune \
+#                   -o -type d -print 2> /dev/null | fzf +m) &&
+#   cd "$dir"
+# }
 
-# cdf - cd into the directory of the selected file
-fd() {
+# cd into the directory of the selected file
+fs() {
    local file
    local dir
    file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"

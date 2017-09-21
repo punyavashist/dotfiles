@@ -3,14 +3,6 @@ function wo(){
 
 }
 
-function woo() {
-    url=$(pbpaste)
-    dest_dir=${url##*/} dest_dir=${dest_dir%.git};
-    echo $dest_dir
-    #git clone "$url" "$dest_dir"
-    #code "$dest_dir"
-}
-
 function zs() {
   z $1 && open .
 }
@@ -149,7 +141,7 @@ function ggi() {
     git init
     mit
     git add .
-    git commit -m "🌅"
+    git commit -m "🌅 initial commit"
     git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
     git push -u origin master
 }
@@ -243,6 +235,12 @@ function tc() {
     nvim Cartfile
 }
 
+function ggd() {
+  git add readme.md
+  git commit -m "✍🏻 updated readme"
+  git push
+}
+
 
 function gll(){
     clipboard="$(pbpaste)"
@@ -251,7 +249,7 @@ function gll(){
 
 function ggs() {
     git add .
-    git commit . -m ':sparkles:'
+    git commit . -m '✨'
     git push
 }
 
@@ -264,8 +262,8 @@ function ogg() {
     go get github.com/$@
 }
 
-# find aliases - TODO: use fzf
-fs() { grep -r -h "alias[[:space:]]\+${(q)1}" ~/.dotfiles/zsh; }
+# find aliases - TODO: use fzf or alfred
+# fs() { grep -r -h "alias[[:space:]]\+${(q)1}" ~/.dotfiles/zsh; }
 
 # find where is text searched is contained
 function fl() {

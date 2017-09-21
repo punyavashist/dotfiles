@@ -317,5 +317,25 @@
     "key": "cmd+i",
     "command": "-expandLineSelection",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "workbench.action.debug.continue",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.continue",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "workbench.action.debug.start",
+    "when": "!inDebugMode"
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.start",
+    "when": "!inDebugMode"
   }
 ]

@@ -8,9 +8,9 @@
 		<img src="https://img.shields.io/pypi/l/pipenv.svg">
 	</a>
 </div>
-  
+
 <a align="center" href="https://my.mindnode.com/3EfbezxGu7xVAM4GQNuN8Lq1naudqs333HqgTuDj">
-    <img width="900" heigth="900" src="media/dotfiles.png"></a>    
+    <img width="900" heigth="900" src="media/dotfiles.png"></a>
 
 <h1 align="center"> Description 📕</h1>
 
@@ -24,13 +24,13 @@ You can also see my top used applications, safari exensions and alfred workflows
 
 <p align="center"><img src="https://explainxkcd.com/wiki/images/b/bf/borrow_your_laptop.png" alt="img" width="400"></p>
 
-The most exciting thing in here is probably how I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now. 
+The most exciting thing in here is probably how I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now.
 
 I document all the keybindings I have made and changed as an interactive mind map [here](https://my.mindnode.com/c7EmmKvaxCyCEuTzcpkGB4MGeLpWdR8nsJK4rjDh). Scroll around and explore, perhaps you find something interesting.
 
 <h1 align="center">Neovim 🌻</a></h1>
 
-I am [still learning vim](https://my.mindnode.com/24sx5yV3S7FLayi5Msvhysx5HZ8aAPzUqJ6rStKi) but the this journey has been very rewarding. Modal editing is pretty amazing. 
+I am [still learning vim](https://my.mindnode.com/24sx5yV3S7FLayi5Msvhysx5HZ8aAPzUqJ6rStKi) but the this journey has been very rewarding. Modal editing is pretty amazing.
 
 My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it also has very well built [vim mode](https://github.com/VSCodeVim/Vim).
 
@@ -40,9 +40,9 @@ I don't use [hammerspoon](http://www.hammerspoon.org/) as extensively however I 
 
 <h1 align="center">zsh 🐚</h1>
 
-I also am using [zsh](http://www.zsh.org) as my shell with [antibody](https://github.com/getantibody/antibody) plugin manager. 
+I also am using [zsh](http://www.zsh.org) as my shell with [antibody](https://github.com/getantibody/antibody) plugin manager.
 
-Here is how my prompt looks currently : 
+Here is how my prompt looks currently :
 
 <p align="center"><img src="media/prompt.png" alt="img" width="200"></p>
 
@@ -56,7 +56,7 @@ Similar to my Karabiner config, I keep a list of all aliases that I have with th
 
 There is quite a lot of awesome programs I use from my command line (you can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps-) for some of them).
 
-However I also really love customising my shell experience with various aliases and zsh functions. Here are some that I like and use very often : 
+However I also really love customising my shell experience with various aliases and zsh functions. Here are some that I like and use very often :
 
 <h2 align="center">commit and push repository to GitHub in one command</h2>
 
@@ -65,7 +65,7 @@ function ggi() {
     git init
     mit
     git add .
-    git commit -m "🌅"
+    git commit -m "🌅 initial commit"
     git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
     git push -u origin master
 }
@@ -73,7 +73,7 @@ function ggi() {
 
 Say I created some project and wrote some code in it or added a simple README with some text in it. I then go on to create a [new GitHub repository](https://github.com/new) and give it a name. After that I just run this `ggi` command.
 
-It will initialise my current directory with git if it wasn't already. It will then call this function : 
+It will initialise my current directory with git if it wasn't already. It will then call this function :
 
 ```Bash
 function mit() {
@@ -83,19 +83,19 @@ function mit() {
 }
 ```
 
-Which using [this CLI tool](https://github.com/nikitavoloboev/license-up), will create a license file and git commit it. After that it will add all the remaining files with a commit message you like, take the URL of my current browser window which will be at the newly created repository, point the local git repo to push there and push it. 
+Which using [this CLI tool](https://github.com/nikitavoloboev/license-up), will create a license file and git commit it. After that it will add all the remaining files with a commit message you like, take the URL of my current browser window which will be at the newly created repository, point the local git repo to push there and push it.
 
 And thus in one command I initialised and pushed the repo. To create a new repo quickly I use [this Alfred workflow](https://github.com/nikitavoloboev/alfred-ask-create-share).
 
 
 <h2 align="center">commit all with ✨</h2>
 
-I use this command really often. 
+I use this command really often.
 
 ```Bash
 function ggs() {
     git add .
-    git commit . -m ':sparkles:'
+    git commit . -m '✨'
     git push
 }
 ```
@@ -107,7 +107,7 @@ It will simply add all files and commit them. I don't use this when working with
 
 [fzf](https://github.com/junegunn/fzf) is a command line tool that lets you fuzzy search on text. I use it very often now for fuzzy searching for files to open with neovim, or fuzzy searching through my commit messages and more.
 
-Here are some of my favourite commands I use with it : 
+Here are some of my favourite commands I use with it :
 
 
 <h2 align="center">search for files to edit in current dir</h2>
@@ -122,7 +122,7 @@ fe() {
 
 This command will let me fuzzy search for a file to open from the directory I am currently in. I use it a lot.
 
-Since I also use VS Code as my primary editor, I use this command too : 
+Since I also use VS Code as my primary editor, I use this command too :
 
 ```Bash
 fw() {
@@ -147,8 +147,8 @@ fea() {
 ```
 
 A slight variation of the above command that first `cd`'s to `~/.dotfiles` and then lets me search through contents of it to quickly edit and modify my config with neovim.
- 
+
 
 <h1 align="center"> Thanks 🍀</h1>
 
-You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-191.2,-905.2,2) I shared. Thank you. 💛 
+You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-191.2,-905.2,2) I shared. Thank you. 💛
