@@ -9,7 +9,7 @@
     ],
     "editor.lineNumbers": "relative",
     "editor.cursorStyle": "line",
-    "window.zoomLevel": -3,
+    "window.zoomLevel": 0,
     "workbench.welcome.enabled": false,
     // _code runner
     "code-runner.clearPreviousOutput": true,
@@ -161,5 +161,6 @@
     // _files
     "files.associations": {
         "*.toml": "toml"
-    }
+    },
+    "git.enableSmartCommit": true
 }

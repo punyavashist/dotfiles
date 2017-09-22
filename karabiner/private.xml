@@ -819,6 +819,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_CMD_CLICK</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: cmd click"
+   end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_MOVE_MOUSE_TOP_MIDDLE</name>
   <url type="shell">
   osascript -e '
@@ -2440,6 +2451,15 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "curl" in workflow "se.psu.alfred.download-file" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_WATCH_DROPBOX_SHARES</name>
+  <url type="shell">
+  osascript -e '
+  tell application "Alfred 3" to run trigger "dropboxShares" in workflow "com.vitorgalvao.alfred.recentdownloads" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -5220,6 +5240,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         KeyCode::VK_OPEN_URL_KM_TEST
     </autogen>
 
+    <autogen>
+        __KeyToKey__
+        KeyCode::Y,
+        KeyCode::VK_OPEN_URL_ALFRED_WATCH_DROPBOX_SHARES
+    </autogen>
+
        <autogen>
        __KeyToKey__
        KeyCode::S,
@@ -5259,7 +5285,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::A,
-          KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+          KeyCode::C, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, 
         </autogen>
 
        <autogen>
@@ -6112,6 +6138,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __BlockUntilKeyUp__ KeyCode::M,
     </autogen>
 
+    <autogen>
+      __KeyToKey__
+      KeyCode::SPACE,
+      KeyCode::X, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, 
+    </autogen>
+
   <autogen>
     __KeyToKey__
     KeyCode::3,
@@ -6961,7 +6993,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
       __KeyToKey__
       KeyCode::C,
-      KeyCode::VK_OPEN_URL_KM_OPEN_SCRIPT_DEBUGGER
+      KeyCode::VK_OPEN_URL_KM_OPEN_SCRIPT_EDITOR
     </autogen>
 
     <autogen>
@@ -7110,6 +7142,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
         __KeyToKey__
+        KeyCode::0,
+        KeyCode::VK_OPEN_URL_ALFRED_MIND_GITTER
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::E,
         KeyCode::VK_OPEN_URL_ALFRED_MIND_CODEPEN
     </autogen>
@@ -7164,7 +7202,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
         __KeyToKey__
-        KeyCode::0,
+        KeyCode::9,
         KeyCode::VK_OPEN_URL_ALFRED_MIND_CLI
     </autogen>
 
@@ -8981,7 +9019,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
         __KeyToKey__
         KeyCode::J,
-        KeyCode::VK_OPEN_URL_KM_DECREASE_YOUTUBE_PLAYBACK
+        KeyCode::VK_OPEN_URL_KM_OPEN_PLAY_JS
     </autogen>
 
     <autogen>
