@@ -39,7 +39,6 @@ alias ggn='git_add_origin_and_origin_push'
 
 
 # _commit
-#alias gds='git commit . -m ':sparkles:''
 alias gdf='git commit . -m ':tada: initial commit''
 alias gpm="git push origin master"
 alias gpd="git push origin develop"
