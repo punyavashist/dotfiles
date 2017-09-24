@@ -32,7 +32,17 @@ I document all the keybindings I have made and changed as an interactive mind ma
 
 I am [still learning vim](https://my.mindnode.com/24sx5yV3S7FLayi5Msvhysx5HZ8aAPzUqJ6rStKi) but the this journey has been very rewarding. Modal editing is pretty amazing.
 
-My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it also has very well built [vim mode](https://github.com/VSCodeVim/Vim).
+
+<h1 align="center">VS Code ⌨</a></h1>
+
+My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has very well built [vim mode](https://github.com/VSCodeVim/Vim). And I really love its [Go Plugin](https://github.com/Microsoft/vscode-go) + the amazing zen mode. 
+
+I use [Calamity](https://marketplace.visualstudio.com/items?itemName=Pustur.calamity-vscode) VS Code theme : 
+
+<p align="center"><img src="https://i.imgur.com/PmgzCiF.png" width="600" alt="img"></p>
+
+Configs I use for it can be seen [here](https://github.com/nikitavoloboev/dotfiles/tree/master/vscode).
+
 
 <h1 align="center">Hammerspoon 🔨</a></h1>
 

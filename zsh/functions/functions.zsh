@@ -89,7 +89,7 @@ function mit() {
 }
 
 function mitla () {
-  license-up learn-anything.xyz
+  license-up Learn Anything, learn-anything.xyz
   git add LICENSE
   git commit -m 'MIT license'
 }
@@ -137,14 +137,25 @@ function ggu() {
 }
 
 # TODO: check if it is already initialised and if it has license
+function ggo() {
+    git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
+    git push -u origin master
+}
+
+function ggla() {
+    git init
+    mitla
+    git add .
+    git commit -m "🌅 initial commit"
+}
+
 function ggi() {
     git init
     mit
     git add .
     git commit -m "🌅 initial commit"
-    git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
-    git push -u origin master
 }
+
 
 function gao() {
     clipboard="$(pbpaste)"

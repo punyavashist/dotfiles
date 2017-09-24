@@ -9,7 +9,7 @@
     ],
     "editor.lineNumbers": "relative",
     "editor.cursorStyle": "line",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "workbench.welcome.enabled": false,
     // _code runner
     "code-runner.clearPreviousOutput": true,
@@ -20,7 +20,7 @@
     "zenMode.fullScreen": false,
     "zenMode.restore": true,
     // _theme
-    "workbench.colorTheme": "An Old Hope",
+    "workbench.colorTheme": "Calamity",
     "workbench.iconTheme": "vs-seti",
     // _prettier
     "prettier.singleQuote": true,
