@@ -39,7 +39,7 @@ My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since
 
 I use [Calamity](https://marketplace.visualstudio.com/items?itemName=Pustur.calamity-vscode) VS Code theme : 
 
-<p align="center"><img src="https://i.imgur.com/PmgzCiF.png" width="600" alt="img"></p>
+<p align="center"><img src="https://i.imgur.com/HcHzaK8.png" width="600" alt="img"></p>
 
 Configs I use for it can be seen [here](https://github.com/nikitavoloboev/dotfiles/tree/master/vscode).
 
