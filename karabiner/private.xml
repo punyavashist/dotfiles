@@ -82,6 +82,39 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_TWITTER</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: twitter"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_TWITCH</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: twitch"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODEWARS</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: code wars"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITBOOKS</name>
   <url type="shell">
   osascript -e '
@@ -5338,12 +5371,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
        <autogen>
        __KeyToKey__
-       KeyCode::U,
-          KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
        KeyCode::B,
           KeyCode::VK_OPEN_URL_ALFRED_PINBOARD
         </autogen>
@@ -5939,6 +5966,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyToKey__
       KeyCode::W,
       KeyCode::0, ModifierFlag::SHIFT_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::F,
+      KeyCode::5, ModifierFlag::SHIFT_L, 
 		</autogen>
 
         <autogen>
@@ -6958,7 +6991,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
         __KeyToKey__
         KeyCode::4,
-      KeyCode::VK_OPEN_URL_KM_OPEN_CHARLES
+      KeyCode::VK_OPEN_URL_KM_OPEN_ACTIVITY_MONITOR
     </autogen>
 
     <autogen>
@@ -7546,6 +7579,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
         __KeyToKey__
+        KeyCode::SHIFT_L,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_TWITTER
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::3,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_YOUTUBE_AUTOPLAY
     </autogen>
@@ -7559,13 +7598,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
         __KeyToKey__
         KeyCode::DOT,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_KAGGLE
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::SHIFT_L,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_KAGGLE
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_WIKI
     </autogen>
 
     <autogen>
@@ -7661,7 +7694,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
         __KeyToKey__
         KeyCode::N,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_PINBOARD
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK
     </autogen>
 
     <autogen>
@@ -7712,7 +7745,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_SOUNDCLOUD
     </autogen>
 
-
     <autogen>
         __KeyToKey__
         KeyCode::I,
@@ -7734,13 +7766,13 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
         __KeyToKey__
         KeyCode::W,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_GO_PLAYGROUND
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT
     </autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::BACKQUOTE,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_GO_PLAYGROUND
     </autogen>
 
     <autogen>
@@ -8645,7 +8677,25 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
         __KeyToKey__
+        KeyCode::C,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODEWARS
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::A,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_ARXIV
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::V,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_TWITCH
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::B,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITBOOKS
     </autogen>
 
@@ -9373,7 +9423,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         <autogen>
       __KeyToKey__
       KeyCode::SEMICOLON,
-      KeyCode::VK_OPEN_URL_ALFRED_MAILTO
+      KeyCode::VK_OPEN_URL_KM_OPEN_SLACK
 		</autogen>
 
         <autogen>
