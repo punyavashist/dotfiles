@@ -158,6 +158,16 @@ fea() {
 
 A slight variation of the above command that first `cd`'s to `~/.dotfiles` and then lets me search through contents of it to quickly edit and modify my config with neovim.
 
+<h2 align="center"> clone current url in clipboard</h2>
+
+```Bash
+function gll(){
+    git clone "$(pbpaste)"
+}
+```
+
+I use this very often to quickly clone the URL that I copied from GitHub.
+
 
 <h1 align="center"> Thanks 🍀</h1>
 

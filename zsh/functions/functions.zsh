@@ -252,11 +252,10 @@ function ggd() {
   git push
 }
 
-
 function gll(){
-    clipboard="$(pbpaste)"
-    git clone $clipboard
+    git clone "$(pbpaste)"
 }
+
 
 function ggs() {
     git add .

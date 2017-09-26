@@ -2199,17 +2199,6 @@
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_OPEN_CHROMIUM</name>
-  <url type="shell">
-  osascript -e '
-    tell application "Keyboard Maestro Engine"
-    do script "open: chromium"
-    end tell
-    '
-  </url>
-</vkopenurldef>
-
-<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_ITERM</name>
   <url type="shell">
   osascript -e '
@@ -2522,6 +2511,33 @@ tell application "Alfred 3" to run trigger "curl" in workflow "se.psu.alfred.dow
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_SHEETS</name>
+  <url type="shell">
+  osascript -e '
+  tell application "Alfred 3" to run trigger "sheets" in workflow "com.github.robwalton.alfred-ulysses-workflow" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MARKDOWN</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "markdown" in workflow "nikivi.search.files" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALL_FILES</name>
+  <url type="shell">
+  osascript -e '
+  tell application "Alfred 3" to run trigger "allFiles" in workflow "nikivi.search.files" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TWITTER</name>
   <url type="shell">
   osascript -e '
@@ -2549,7 +2565,7 @@ tell application "Alfred 3" to run trigger "commitFolders" in workflow "nikivi.c
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARH_MARKDOWN</name>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARH_MARKDOWN_WIKI</name>
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "markdownWiki" in workflow "nikivi.search.files" with argument ""
@@ -5359,6 +5375,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
         __KeyToKey__
+        KeyCode::TAB,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MARKDOWN
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::V,
         KeyCode::VK_OPEN_URL_ALFRED_WATCH_DROPBOX_SHARES
     </autogen>
@@ -5384,7 +5406,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::SPACE,
-          KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MARKDOWN
         </autogen>
 
        <autogen>
@@ -5396,7 +5418,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::A,
-          KeyCode::C, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, 
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALL_FILES
         </autogen>
 
        <autogen>
@@ -5528,7 +5550,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
         __KeyToKey__
         KeyCode::C,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARH_MARKDOWN
+        KeyCode::VK_OPEN_URL_ALFRED_SEARH_MARKDOWN_WIKI
     </autogen>
 
        <autogen>
@@ -5862,7 +5884,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
 
 <item>
-    <name>general: sticky p - symbols</name>
+    <name>general: sticky p - things</name>
     <identifier>private.launcher_mode_open_apps_v12</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -5953,6 +5975,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyToKey__
       KeyCode::Q,
       KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::E,
+      KeyCode::BRACKET_RIGHT
 		</autogen>
 
         <autogen>
@@ -8708,7 +8736,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
         __KeyToKey__
         KeyCode::H,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_HASHNODE
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_KHAN_ACADEMY
     </autogen>
 
    <autogen>
@@ -11378,6 +11406,12 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 
        <autogen>
          __KeyToKey__
+         KeyCode::L,
+         KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_GROUPS
+       </autogen>
+
+       <autogen>
+         __KeyToKey__
          KeyCode::P,
          KeyCode::VK_OPEN_URL_ALFRED_CRYPTO_TRACK
        </autogen>
@@ -11452,7 +11486,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
     <autogen>
         __KeyToKey__
         KeyCode::SEMICOLON,
-        KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE_FILE
+        KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_SHEETS
     </autogen>
 
        <autogen>
