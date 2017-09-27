@@ -17,10 +17,6 @@ alias lic='legit'
 # _flask
 alias fr='flask run'
 
-# _web
-alias li='open -a Google\ Chrome\ Canary index.html'
-alias brs='browser-sync'
-
 # _python
 alias p='python3'
 alias p2='python'

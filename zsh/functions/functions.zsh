@@ -3,6 +3,24 @@ function wo(){
 
 }
 
+# Link source to destination
+# _link src dst
+ll() {
+  # If destination folder doesn't exist,
+  # create the folder.
+  if [[ ! -d $(dirname "$2") ]]; then
+    mkdir -p $(dirname "$2")
+  fi
+
+  # If destination exists remove it.
+  if [[ -e "$2" ]] || [[ -L "$2" ]]; then
+    rm -r "$2"
+  fi
+
+  echo "linking $2"
+  ln -s "$1" "$2"
+}
+
 function zs() {
   z $1 && open .
 }

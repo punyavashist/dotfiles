@@ -3238,7 +3238,7 @@ tell application "Alfred 3" to run trigger "learnAnything" in workflow "nikivi.l
   <name>KeyCode::VK_OPEN_URL_ALFRED_BING</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "searchBing" in workflow "net.deanishe.alfred-searchio" with argument ""
+tell application "Alfred 3" to run trigger "bing" in workflow "net.deanishe.alfred-searchio" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -3518,7 +3518,7 @@ tell application "Alfred 3" to run trigger "searchDash" in workflow "com.nikivi.
   <name>KeyCode::VK_OPEN_URL_ALFRED_YANDEX_SEARCH</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "searchYandex" in workflow "net.deanishe.alfred-searchio" with argument ""
+tell application "Alfred 3" to run trigger "yandex" in workflow "net.deanishe.alfred-searchio" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -3789,7 +3789,7 @@ tell application "Alfred 3" to run trigger "searchXcodeProjects" in workflow "co
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "searchGoogleImages" in workflow "net.deanishe.alfred-searchio" with argument ""
+tell application "Alfred 3" to run trigger "google images" in workflow "net.deanishe.alfred-searchio" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4064,7 +4064,7 @@ tell application "Alfred 3" to run trigger "keyClue" in workflow "com.tedwise.me
   <name>KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "youtubeSearch" in workflow "net.deanishe.alfred-searchio" with argument ""
+tell application "Alfred 3" to run trigger "youtube" in workflow "net.deanishe.alfred-searchio" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4073,7 +4073,7 @@ tell application "Alfred 3" to run trigger "youtubeSearch" in workflow "net.dean
   <name>KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "duckduckgoSearch" in workflow "net.deanishe.alfred-searchio" with argument ""
+tell application "Alfred 3" to run trigger "duckduckgo" in workflow "net.deanishe.alfred-searchio" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4082,7 +4082,7 @@ tell application "Alfred 3" to run trigger "duckduckgoSearch" in workflow "net.d
   <name>KeyCode::VK_OPEN_URL_ALFRED_WIKI_SIMPLE_SEARCH</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "wikiSimpleSearch" in workflow "net.deanishe.alfred-searchio" with argument ""
+tell application "Alfred 3" to run trigger "wiki simple" in workflow "net.deanishe.alfred-searchio" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4091,7 +4091,7 @@ tell application "Alfred 3" to run trigger "wikiSimpleSearch" in workflow "net.d
   <name>KeyCode::VK_OPEN_URL_ALFRED_AMAZON_SEARCH</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "amazonSearch" in workflow "net.deanishe.alfred-searchio" with argument ""
+tell application "Alfred 3" to run trigger "amazon" in workflow "net.deanishe.alfred-searchio" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4100,7 +4100,7 @@ tell application "Alfred 3" to run trigger "amazonSearch" in workflow "net.deani
   <name>KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "wikiSearch" in workflow "net.deanishe.alfred-searchio" with argument ""
+tell application "Alfred 3" to run trigger "wiki" in workflow "net.deanishe.alfred-searchio" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4136,7 +4136,7 @@ tell application "Alfred 3" to run trigger "toggleWifi" in workflow "nikivi.wifi
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "googleSearch" in workflow "net.deanishe.alfred-searchio" with argument ""
+tell application "Alfred 3" to run trigger "google" in workflow "net.deanishe.alfred-searchio" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -5852,8 +5852,14 @@ KeyCode::A, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
         
         <autogen>
       __KeyToKey__
-      KeyCode::I,
+      KeyCode::U,
       KeyCode::E, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::I,
+      KeyCode::V, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, 
 		</autogen>
 
         <autogen>
@@ -7139,7 +7145,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
       __KeyToKey__
       KeyCode::L,
-      KeyCode::VK_OPEN_URL_KM_OPEN_XCODE
+      KeyCode::VK_OPEN_URL_KM_OPEN_SUBLIME_TEXT
     </autogen>
 
     <autogen>
