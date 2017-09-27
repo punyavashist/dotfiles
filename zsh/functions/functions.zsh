@@ -5,7 +5,7 @@ function wo(){
 
 # Link source to destination
 # _link src dst
-ll() {
+li() {
   # If destination folder doesn't exist,
   # create the folder.
   if [[ ! -d $(dirname "$2") ]]; then

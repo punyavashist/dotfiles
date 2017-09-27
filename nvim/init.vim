@@ -70,8 +70,6 @@ set nobackup                                      " don't create annoying backup
 set path=+**                                      " search down into subfolders
 
 " testing
-colorscheme glacier
-
 
 " --------------------------------------
 " _basic vim config
@@ -148,7 +146,7 @@ nnoremap <leader>vimrc :tabe ~/.dotfiles/vim/nvim/nvimrc<cr>
 nmap <Leader>w    :w<CR>  
 nnoremap <Leader>q    :q<CR>  
 nnoremap <Leader>y    :%y<CR> 
-nnoremap <Leader>f   :source $MYVIMRC<CR> 
+nnoremap <Leader>f   :source ~/.dotfiles/nvim/init.vim<CR> 
 " search files inside current dir
 nnoremap <Leader>e    :Files<CR> 
 
