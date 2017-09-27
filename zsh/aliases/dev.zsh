@@ -2,6 +2,7 @@
 
 # _general
 alias co='coala'
+alias ll='ln -s'
 alias jd='jid'
 alias tm='task'
 alias rf='reflex'

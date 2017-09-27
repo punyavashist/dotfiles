@@ -69,6 +69,9 @@ set nobackup                                      " don't create annoying backup
 " TODO: maybe a plugin is better
 set path=+**                                      " search down into subfolders
 
+" testing
+colorscheme glacier
+
 
 " --------------------------------------
 " _basic vim config
