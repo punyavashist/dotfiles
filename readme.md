@@ -32,6 +32,10 @@ I document all the keybindings I have made and changed as an interactive mind ma
 
 I am [still learning vim](https://my.mindnode.com/24sx5yV3S7FLayi5Msvhysx5HZ8aAPzUqJ6rStKi) but the this journey has been very rewarding. Modal editing is pretty amazing.
 
+Here is how my neovim theme looks like : 
+
+<p align="center"><img src="https://i.imgur.com/V65MpFf.png" width="600" alt="img"></p>
+
 
 <h1 align="center">VS Code ⌨</a></h1>
 
@@ -54,7 +58,7 @@ I also am using [zsh](http://www.zsh.org) as my shell with [antibody](https://gi
 
 Here is how my prompt looks currently :
 
-<p align="center"><img src="media/prompt.png" alt="img" width="200"></p>
+<p align="center"><img src="https://i.imgur.com/RVVTJC6.png" width="600" alt="img"></p>
 
 <h1 align="center">zsh aliases 🐚</h1>
 
