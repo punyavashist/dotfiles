@@ -37,7 +37,7 @@ I am [still learning vim](https://my.mindnode.com/24sx5yV3S7FLayi5Msvhysx5HZ8aAP
 
 My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has very well built [vim mode](https://github.com/VSCodeVim/Vim). And I really love its [Go Plugin](https://github.com/Microsoft/vscode-go) + the amazing zen mode. 
 
-I use [Calamity](https://marketplace.visualstudio.com/items?itemName=Tyriar.theme-glacier) VS Code theme : 
+I use [Glacier](https://marketplace.visualstudio.com/items?itemName=Tyriar.theme-glacier) VS Code theme : 
 
 <p align="center"><img src="https://i.imgur.com/o38bvGa.png" width="600" alt="img"></p>
 
