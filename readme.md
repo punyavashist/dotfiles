@@ -9,8 +9,7 @@
 	</a>
 </div>
 
-<a align="center" href="https://my.mindnode.com/3EfbezxGu7xVAM4GQNuN8Lq1naudqs333HqgTuDj">
-    <img width="900" heigth="900" src="media/dotfiles.png"></a>
+<p align="center"><img src="https://i.imgur.com/qAQ0jLT.png" width="600" alt="img"></p>
 
 <h1 align="center"> Description 📕</h1>
 
