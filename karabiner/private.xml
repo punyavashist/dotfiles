@@ -8783,7 +8783,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
    <autogen>
       __KeyToKey__
-      KeyCode::M,
+      KeyCode::I,
       KeyCode::VK_OPEN_URL_KM_OPEN_URL_WAKATIME
     </autogen>
 

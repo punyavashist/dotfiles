@@ -1,5 +1,4 @@
-#!/bin/bash
-# onlyshk
+#!/bin/sh
 
 for file in $(ls "$@"); do
   echo -n $(pwd)

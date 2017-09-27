@@ -75,12 +75,12 @@ set path=+**                                      " search down into subfolders
 " _basic vim config
 " --------------------------------------
 "  TODO: check if some of these settings come as default with neovim
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1                                          " a nice looking editor
 set clipboard^=unnamed                                " copy text to system clipboard
 set guicursor=
 set mouse=a
 set gdefault " always do global substitutions
 set clipboard^=unnamedplus
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1                                          " a nice looking editor
 set title                                                                                                           " set terminal title
 set whichwrap+=<,>,[,]
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
