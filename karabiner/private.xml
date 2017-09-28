@@ -2533,6 +2533,15 @@ tell application "Alfred 3" to run trigger "curl" in workflow "se.psu.alfred.dow
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_DOWNLOAD_CURRENT_URL_TO_DESKTOP_WATCH</name>
+  <url type="shell">
+  osascript -e '
+  tell application "Alfred 3" to run trigger "test" in workflow "com.vitorgalvao.alfred.downvid" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_SHEETS</name>
   <url type="shell">
   osascript -e '
@@ -6090,6 +6099,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
         <autogen>
       __KeyToKey__
+      KeyCode::D,
+      KeyCode::VK_OPEN_URL_ALFRED_DOWNLOAD_CURRENT_URL_TO_DESKTOP_WATCH
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::BACKQUOTE,
       KeyCode::VK_OPEN_URL_KM_DUCKDUCKGO_CLIPBOARD
 		</autogen>
@@ -7207,7 +7222,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
   </item>
 
 <item>
-    <name>general: sticky quote - scripts</name>
+    <name>general: sticky quote - scroll</name>
     <identifier>private.launcher_mode_open_apps_v32</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -7255,29 +7270,48 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         KeyCode::F2, ModifierFlag::COMMAND_L
     </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::SPACE,
-        KeyCode::F9, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
-    </autogen>
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::M,
+                 KeyCode::VK_OPEN_URL_KM_MOVE_MOUSE_TO_CENTRE_SCREEN
+               </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::S,
-        KeyCode::COMMA, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-    </autogen>
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::I,
+                 KeyCode::MINUS, ModifierFlag::COMMAND_L
+               </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::W,
-        KeyCode::COMMA, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
-    </autogen>
+    <!-- scroll -->
+        <autogen>
+          __KeyToKey__
+          {{ VI_H }},
+          KeyCode::VK_MOUSEKEY_SCROLL_LEFT, ModifierFlag::MOUSE_KEYS_MODE_2,
+        </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::E,
-        KeyCode::F7, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
-    </autogen>
+        <autogen>
+          __KeyToKey__
+          {{ VI_J }},
+          KeyCode::VK_MOUSEKEY_SCROLL_DOWN, ModifierFlag::MOUSE_KEYS_MODE_2,
+        </autogen>
+        <autogen>
+          __KeyToKey__
+          {{ VI_K }},
+          KeyCode::VK_MOUSEKEY_SCROLL_UP, ModifierFlag::MOUSE_KEYS_MODE_2,
+        </autogen>
+        <autogen>
+          __KeyToKey__
+          {{ VI_L }},
+          KeyCode::VK_MOUSEKEY_SCROLL_RIGHT, ModifierFlag::MOUSE_KEYS_MODE_2,
+           </autogen>
+
+           <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::VK_MOUSEKEY_HIGHSPEED, ModifierFlag::MOUSE_KEYS_MODE_2</autogen>
+
+        <autogen>
+             __KeyToKey__
+             KeyCode::O,
+             KeyCode::EQUAL, ModifierFlag::COMMAND_L
+           </autogen>
 
 
   </item>
@@ -11355,30 +11389,6 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
                  KeyCode::I,
                  KeyCode::MINUS, ModifierFlag::COMMAND_L
                </autogen>
-
-    <!-- scroll -->
-        <autogen>
-          __KeyToKey__
-          {{ VI_H }},
-          KeyCode::VK_MOUSEKEY_SCROLL_LEFT, ModifierFlag::MOUSE_KEYS_MODE_2,
-        </autogen>
-        <autogen>
-          __KeyToKey__
-          {{ VI_J }},
-          KeyCode::VK_MOUSEKEY_SCROLL_DOWN, ModifierFlag::MOUSE_KEYS_MODE_2,
-        </autogen>
-        <autogen>
-          __KeyToKey__
-          {{ VI_K }},
-          KeyCode::VK_MOUSEKEY_SCROLL_UP, ModifierFlag::MOUSE_KEYS_MODE_2,
-        </autogen>
-        <autogen>
-          __KeyToKey__
-          {{ VI_L }},
-          KeyCode::VK_MOUSEKEY_SCROLL_RIGHT, ModifierFlag::MOUSE_KEYS_MODE_2,
-           </autogen>
-
-           <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::VK_MOUSEKEY_HIGHSPEED, ModifierFlag::MOUSE_KEYS_MODE_2</autogen>
 
         <autogen>
              __KeyToKey__
