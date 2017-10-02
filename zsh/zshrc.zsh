@@ -38,5 +38,3 @@ zstyle ':completion:*' matcher-list +'l:|=* r:|=*'
 
 PROMPT_TITLE='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
 export PROMPT_COMMAND="${PROMPT_TITLE}; ${PROMPT_COMMAND}"
-
-

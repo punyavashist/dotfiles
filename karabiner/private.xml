@@ -2533,10 +2533,10 @@ tell application "Alfred 3" to run trigger "curl" in workflow "se.psu.alfred.dow
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_ALFRED_DOWNLOAD_CURRENT_URL_TO_DESKTOP_WATCH</name>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SOULVER</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "test" in workflow "com.vitorgalvao.alfred.downvid" with argument ""
+  tell application "Alfred 3" to run trigger "soulver" in workflow "nikivi.search.files" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -2545,7 +2545,7 @@ tell application "Alfred 3" to run trigger "curl" in workflow "se.psu.alfred.dow
   <name>KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_SHEETS</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "sheets" in workflow "com.github.robwalton.alfred-ulysses-workflow" with argument ""
+  tell application "Alfred 3" to run trigger "Ulysses sheets" in workflow "nikivi.search.files" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -3987,7 +3987,7 @@ tell application "Alfred 3" to run trigger "npmSearch" in workflow "com.sindreso
   <name>KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_GROUPS</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "ulyssesGroups" in workflow "com.github.robwalton.alfred-ulysses-workflow" with argument ""
+  tell application "Alfred 3" to run trigger "ulyssesGroups" in workflow "nikivi.search.files" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -5323,11 +5323,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                </autogen>
 
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::SPACE,
-        KeyCode::G, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
-    </autogen>
 
                <autogen>
                  __KeyToKey__
@@ -5350,7 +5345,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                <autogen>
                  __KeyToKey__
                  KeyCode::SPACE,
-                 KeyCode::SPACE
+                 KeyCode::VK_OPEN_URL_KM_PASTE_SELECTED_TEXT
                </autogen>
 
                <autogen>
@@ -5358,7 +5353,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  KeyCode::A,
                  KeyCode::C, ModifierFlag::COMMAND_L
                </autogen>
-
 
                <autogen>
                  __KeyToKey__
@@ -5437,7 +5431,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::SPACE,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MARKDOWN
+          KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_SHEETS
         </autogen>
 
        <autogen>
@@ -5485,7 +5479,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::COMMAND_L,
-       KeyCode::VK_OPEN_URL_ALFRED_FILTER_KNOWLEDGE_WIKI_FOLDERS
+       KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_GROUPS
         </autogen>
 
        <autogen>
@@ -5921,7 +5915,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
 
 <item>
-    <name>general: sticky p - things</name>
+    <name>general: sticky p - scroll</name>
     <identifier>private.launcher_mode_open_apps_v12</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -5963,6 +5957,42 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __BlockUntilKeyUp__ KeyCode::P,
     </autogen>
 
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::I,
+                 KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_front_window_center
+               </autogen>
+
+       <autogen>__KeyToKey__ KeyCode::O, KeyCode::VK_MOUSEKEY_HIGHSPEED, ModifierFlag::MOUSE_KEYS_MODE_2</autogen>
+
+             <!-- scroll -->
+        <autogen>
+          __KeyToKey__
+          {{ VI_H }},
+          KeyCode::VK_MOUSEKEY_SCROLL_LEFT, ModifierFlag::MOUSE_KEYS_MODE_2,
+        </autogen>
+
+        <autogen>
+          __KeyToKey__
+          {{ VI_J }},
+          KeyCode::VK_MOUSEKEY_SCROLL_DOWN, ModifierFlag::MOUSE_KEYS_MODE_2,
+        </autogen>
+        <autogen>
+          __KeyToKey__
+          {{ VI_K }},
+          KeyCode::VK_MOUSEKEY_SCROLL_UP, ModifierFlag::MOUSE_KEYS_MODE_2,
+        </autogen>
+        <autogen>
+          __KeyToKey__
+          {{ VI_L }},
+          KeyCode::VK_MOUSEKEY_SCROLL_RIGHT, ModifierFlag::MOUSE_KEYS_MODE_2,
+           </autogen>
+
+       <autogen>
+         __KeyToKey__
+         KeyCode::F19,
+         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SOULVER
+       </autogen>
   </item>
 
 <item>
@@ -6099,12 +6129,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
         <autogen>
       __KeyToKey__
-      KeyCode::D,
-      KeyCode::VK_OPEN_URL_ALFRED_DOWNLOAD_CURRENT_URL_TO_DESKTOP_WATCH
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
       KeyCode::BACKQUOTE,
       KeyCode::VK_OPEN_URL_KM_DUCKDUCKGO_CLIPBOARD
 		</autogen>
@@ -6190,6 +6214,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
       __BlockUntilKeyUp__ KeyCode::N,
     </autogen>
+
+       <autogen>
+         __KeyToKey__
+         KeyCode::F19,
+         KeyCode::VK_OPEN_URL_ALFRED_COMMIT_FOLDERS
+       </autogen>
 
     <autogen>
         __KeyToKey__
@@ -7048,7 +7078,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
         <autogen>
       __KeyToKey__
-      KeyCode::Y,
+      KeyCode::U,
       KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI_TECHNOLOGY_PREVIEW
 		</autogen>
 
@@ -7084,7 +7114,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
         <autogen>
       __KeyToKey__
-      KeyCode::U,
+      KeyCode::Y,
       KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX
 		</autogen>
 
@@ -7282,7 +7312,14 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
                  KeyCode::MINUS, ModifierFlag::COMMAND_L
                </autogen>
 
-    <!-- scroll -->
+
+        <autogen>
+             __KeyToKey__
+             KeyCode::U,
+             KeyCode::EQUAL, ModifierFlag::COMMAND_L
+           </autogen>
+
+             <!-- scroll -->
         <autogen>
           __KeyToKey__
           {{ VI_H }},
@@ -7305,13 +7342,8 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
           KeyCode::VK_MOUSEKEY_SCROLL_RIGHT, ModifierFlag::MOUSE_KEYS_MODE_2,
            </autogen>
 
-           <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::VK_MOUSEKEY_HIGHSPEED, ModifierFlag::MOUSE_KEYS_MODE_2</autogen>
+           <autogen>__KeyToKey__ KeyCode::O, KeyCode::VK_MOUSEKEY_HIGHSPEED, ModifierFlag::MOUSE_KEYS_MODE_2</autogen>
 
-        <autogen>
-             __KeyToKey__
-             KeyCode::O,
-             KeyCode::EQUAL, ModifierFlag::COMMAND_L
-           </autogen>
 
 
   </item>
@@ -7571,7 +7603,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
   </item>
 
 <item>
-		<name>general: sticky 1 - something</name>
+		<name>general: sticky 1 - things</name>
 		<identifier>private.launcher_mode_open_apps_v80</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -7625,7 +7657,18 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         KeyCode::O, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
         </autogen>
 
+       <autogen>
+         __KeyToKey__
+         KeyCode::K,
+         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SKETCH
+       </autogen>
 
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::P,
+        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAGES
+    </autogen>
 
   </item>
 
@@ -7692,14 +7735,14 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
         __KeyToKey__
-        KeyCode::COMMA,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES
+        KeyCode::E,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOCALHOST
     </autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::DOT,
-        KeyCode::VK_OPEN_URL_KM_OPEN_URL_WIKI
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES
     </autogen>
 
     <autogen>
@@ -7836,7 +7879,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
         __KeyToKey__
-        KeyCode::E,
+        KeyCode::COMMA,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_HACKER_NEWS_NEW
     </autogen>
 
@@ -7933,7 +7976,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
   </item>
 
 <item>
-		<name>general: sticky 2 - something</name>
+		<name>general: sticky 2 - moving more</name>
 		<identifier>private.launcher_mode_open_apps_v93</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -7981,12 +8024,42 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         KeyCode::R, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, 
     </autogen>
 
+    <autogen>
+        __KeyToKey__
+        KeyCode::J,
+        KeyCode::CURSOR_DOWN, ModifierFlag::COMMAND_L, 
+    </autogen>
 
     <autogen>
         __KeyToKey__
-        KeyCode::G,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAGES
+        KeyCode::L,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L, 
     </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::H,
+        KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L, 
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::K,
+        KeyCode::CURSOR_UP, ModifierFlag::COMMAND_L, 
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::O,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L, 
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::I,
+        KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L, 
+    </autogen>
+
 
         <autogen>
           __KeyToKey__
@@ -8172,7 +8245,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
   </item>
 
 <item>
-		<name>general: sticky 3 - chrome</name>
+		<name>general: sticky 3 - files</name>
 		<identifier>private.launcher_mode_open_apps_v51</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -8216,6 +8289,25 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
         <autogen>
           __KeyToKey__
+          KeyCode::F19,
+          KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_DAYONE
+        </autogen>
+
+        <autogen>
+          __KeyToKey__
+          KeyCode::SPACE,
+          KeyCode::8, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+        </autogen>
+
+
+        <autogen>
+          __KeyToKey__
+          KeyCode::SEMICOLON,
+          KeyCode::VK_OPEN_URL_KM_GET_CURRENT_CHROME_URL
+        </autogen>
+
+        <autogen>
+          __KeyToKey__
           KeyCode::O,
           KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_CANVAS
         </autogen>
@@ -8226,23 +8318,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
           KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_3000
         </autogen>
 
-        <autogen>
-          __KeyToKey__
-          KeyCode::F19,
-          KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_DAYONE
-        </autogen>
 
-        <autogen>
-          __KeyToKey__
-          KeyCode::SEMICOLON,
-          KeyCode::VK_OPEN_URL_KM_GET_CURRENT_CHROME_URL
-        </autogen>
-
-        <autogen>
-          __KeyToKey__
-          KeyCode::SPACE,
-          KeyCode::8, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
-        </autogen>
 
   </item>
 
@@ -8345,7 +8421,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
       __KeyToKey__
-      KeyCode::1,
+      KeyCode::Q,
       KeyCode::6, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
     </autogen>
 
@@ -8375,7 +8451,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
       __KeyToKey__
-      KeyCode::Q,
+      KeyCode::1,
       KeyCode::5, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
     </autogen>
 
@@ -8513,6 +8589,14 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __BlockUntilKeyUp__ KeyCode::R,
     </autogen>
 
+
+            <autogen>
+      __KeyToKey__
+      KeyCode::SPACE,
+      KeyCode::S, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, 
+    </autogen>
+
+
     <autogen>
         __KeyToKey__
         KeyCode::1,
@@ -8611,12 +8695,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_SCREENFLOW
     </autogen>
 
-            <autogen>
-      __KeyToKey__
-      KeyCode::SPACE,
-        KeyCode::VK_OPEN_URL_KM_PASTE_SELECTED_TEXT
-    </autogen>
-
     <autogen>
         __KeyToKey__
         KeyCode::COMMA,
@@ -8638,7 +8716,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         <autogen>
       __KeyToKey__
       KeyCode::F19,
-      KeyCode::Y, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+      KeyCode::VK_OPEN_URL_KM_OPEN_SOULVER
 		</autogen>
 
         <autogen>
@@ -9522,12 +9600,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 		</autogen>
 
         <autogen>
-    __KeyToKey__
-      KeyCode::L,
-      KeyCode::VK_OPEN_URL_ALFRED_MAILTO
-		</autogen>
-
-        <autogen>
        __KeyToKey__
       KeyCode::M,
       KeyCode::VK_OPEN_URL_ALFRED_MAILTO
@@ -9629,6 +9701,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
           KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
     </autogen>
 
+    <autogen>
+        __KeyToKey__
+        KeyCode::SPACE,
+        KeyCode::G, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+    </autogen>
+
 
        <autogen>
        __KeyToKey__
@@ -9642,11 +9720,13 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
        KeyCode::VK_OPEN_URL_KM_MANIPULATE_CLIPBOARD
         </autogen>
 
+
             <autogen>
       __KeyToKey__
       KeyCode::SPACE,
-      KeyCode::S, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, 
+        KeyCode::VK_OPEN_URL_KM_PASTE_SELECTED_TEXT
     </autogen>
+
 
        <autogen>
        __KeyToKey__
@@ -11449,14 +11529,14 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 
        <autogen>
          __KeyToKey__
-         KeyCode::L,
-         KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_GROUPS
+         KeyCode::P,
+         KeyCode::VK_OPEN_URL_ALFRED_CRYPTO_TRACK
        </autogen>
 
        <autogen>
          __KeyToKey__
-         KeyCode::P,
-         KeyCode::VK_OPEN_URL_ALFRED_CRYPTO_TRACK
+         KeyCode::N,
+         KeyCode::VK_OPEN_URL_ALFRED_SYNONYMS_SEARCH
        </autogen>
 
        <autogen>
@@ -11473,7 +11553,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 
        <autogen>
          __KeyToKey__
-         KeyCode::N,
+         KeyCode::S,
          KeyCode::VK_OPEN_URL_ALFRED_MONTHS_NUMBERS
        </autogen>
 
@@ -11507,18 +11587,11 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
         KeyCode::VK_OPEN_URL_ALFRED_CURL_URL
       </autogen>
 
-       <autogen>
-         __KeyToKey__
-         KeyCode::N,
-         KeyCode::VK_OPEN_URL_ALFRED_NEW_NOTE
-       </autogen>
-
     <autogen>
         __KeyToKey__
         KeyCode::R,
         KeyCode::VK_OPEN_URL_ALFRED_GO_TO_SUB
     </autogen>
-
 
     <autogen>
         __KeyToKey__
@@ -11526,22 +11599,10 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
         KeyCode::VK_OPEN_URL_ALFRED_FONT_AWESOME
     </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::SEMICOLON,
-        KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_SHEETS
-    </autogen>
-
        <autogen>
          __KeyToKey__
          KeyCode::SPACE,
          KeyCode::S, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, 
-       </autogen>
-
-       <autogen>
-         __KeyToKey__
-         KeyCode::O,
-         KeyCode::VK_OPEN_URL_ALFRED_MAILTO
        </autogen>
 
   </item>
@@ -12143,7 +12204,7 @@ KeyCode::VK_OPEN_URL_ALFRED_DASH_PROFILE_SWITCH
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE
+KeyCode::VK_OPEN_URL_ALFRED_DASH_PROFILE_SWITCH
 </autogen>
 </item>
 
@@ -12165,7 +12226,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 __SimultaneousKeyPresses__
 KeyCode::L, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
+KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
 </autogen>
 </item>
 
@@ -12231,7 +12292,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_CHROME_URL
 __SimultaneousKeyPresses__
 KeyCode::I, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
 </autogen>
 </item>
 

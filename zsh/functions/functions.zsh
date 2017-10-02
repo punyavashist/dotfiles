@@ -240,6 +240,10 @@ igit() {
   git rev-parse HEAD > /dev/null 2>&1
 }
 
+og() {
+  go get -u "$@"
+}
+
 
 # _reflex
 function rfg() {
@@ -287,7 +291,12 @@ function gw() {
 }
 
 function ogg() {
-    go get github.com/$@
+  # get url
+  url=$(osascript -e 'tell application "Safari" to return URL of front document')
+  # remove https:// 
+  url="${url#https://}"
+  #  get the package/tool
+  go get -u $url
 }
 
 # find aliases - TODO: use fzf or alfred

@@ -21,6 +21,7 @@ alias fr='flask run'
 # _python
 alias p='python3'
 alias p2='python'
+alias pi='pip install' 
 alias rv='virtualenv -p /usr/local/bin/python3'
 
 # _alfred
@@ -74,7 +75,6 @@ alias ot='playgo'
 alias or='go run'
 alias oo='go install'
 alias ov='go vet'
-alias og='go get'
 alias ob='go build'
 alias oa='go build -o main'
 
