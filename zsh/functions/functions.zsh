@@ -3,6 +3,10 @@ function wo(){
 
 }
 
+function re(){
+  mv "$1" ~/.Trash
+}
+
 # Link source to destination
 # _link src dst
 li() {

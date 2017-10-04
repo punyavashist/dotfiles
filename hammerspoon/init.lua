@@ -9,6 +9,7 @@ hs.logger = require("hs.logger")
 hs.logger.historySize(200)
 
 hs.hints.showTitleThresh = 9
+hs.allowAppleScript(true)
 
 
 --------------------------------------------------------------------------------

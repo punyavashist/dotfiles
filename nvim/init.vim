@@ -195,7 +195,6 @@ set tabstop=4                         " default indentation is 4 spaces long and
 set matchtime=2
 set background=dark                   " set night mode
 
-
 " -------------------------------------
 "  _activating / modifying plugins
 " -------------------------------------

@@ -15,6 +15,7 @@ alias ddes='cd ~/Documents/design'
 alias dn='cd ~/oss/nikivi/'
 
 # _code
+alias dsh='cd ~/.ssh'
 alias dl='cd ~/play'
 alias dj='cd ~/learning'
 alias dg='cd ~/go/src/github.com/nikitavoloboev'
