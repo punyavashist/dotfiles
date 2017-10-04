@@ -126,6 +126,15 @@ function gll(){
 
 I use this very often to quickly clone the URL that I copied from GitHub.
 
+<h2 align="center"> trash files / folders</h2>
+
+A lot more safer than `rm -rf` files as you can always check out `~/.Trash` in cases of emergency or mistakes.
+
+```Bash
+function re(){
+  mv "$1" ~/.Trash
+}
+```
 
 <h1 align="center">fzf bindings 🔎</h1>
 
