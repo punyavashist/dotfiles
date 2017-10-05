@@ -57,7 +57,7 @@ I also am using [zsh](http://www.zsh.org) as my shell with [antibody](https://gi
 
 Here is how my prompt looks currently :
 
-<p align="center"><img src="https://i.imgur.com/RVVTJC6.png" width="600" alt="img"></p>
+<p align="center"><img src="https://i.imgur.com/H2pQyi2.png" width="600" alt="img"></p>
 
 <h1 align="center">zsh aliases 🐚</h1>
 
