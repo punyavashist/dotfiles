@@ -3,6 +3,12 @@ function wo(){
 
 }
 
+# create a file and any intermediary directories if necessary
+w
+function td() {
+  mkdir -p "$(dirname "$1")/" && touch "$1"
+}
+
 function re(){
   mv "$1" ~/.Trash
 }
