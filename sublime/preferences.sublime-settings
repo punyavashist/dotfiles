@@ -28,5 +28,14 @@
 		"Vintage"
 	],
 	"open_files_in_new_window": false,
-	"theme": "Glacier.sublime-theme"
+	"theme": "Glacier.sublime-theme",
+  // Other keybinding....
+
+  // Unbind `space` in `normal-mode`
+  // in order to make it a `prefix` keybinding
+  { "keys": [" "], "command": "noop", "context": [{ "key": "six_is_in_command_mode" }] },
+
+  // `SPC w` to save
+  { "keys": [" ", "w"], "command": "save", "context": [{ "key": "six_is_in_command_mode" }], 
+  "description": "save file/buffer" }
 }

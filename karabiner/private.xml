@@ -2883,7 +2883,7 @@ tell application "Alfred 3" to run trigger "pdf" in workflow "nikivi.search.mind
   <name>KeyCode::VK_OPEN_URL_ALFRED_REDDIT_MULTI_MIND</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/reddit-multi.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/reddit-multi.json"
     '
   </url>
 </vkopenurldef>
@@ -2919,7 +2919,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_CLI</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/explain-shell.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/explain-shell.json"
     '
   </url>
 </vkopenurldef>
@@ -2928,7 +2928,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_RECENT</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/recent.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/recent.json"
     '
   </url>
 </vkopenurldef>
@@ -2937,7 +2937,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_REDDIT_USERS</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/reddit-users.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/reddit-users.json"
     '
   </url>
 </vkopenurldef>
@@ -2946,7 +2946,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_QUORA</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/quora.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/quora.json"
     '
   </url>
 </vkopenurldef>
@@ -2955,7 +2955,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_ARTICLES</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/articles.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/articles.json"
     '
   </url>
 </vkopenurldef>
@@ -2964,7 +2964,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_CODEPEN</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/codepen.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/codepen.json"
     '
   </url>
 </vkopenurldef>
@@ -2973,7 +2973,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_IMAGES</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/images.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/images.json"
     '
   </url>
 </vkopenurldef>
@@ -2982,7 +2982,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_PODCASTS</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/podcasts.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/podcasts.json"
     '
   </url>
 </vkopenurldef>
@@ -2991,7 +2991,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_RESEARCH_PAPERS</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/research-papers.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/research-papers.json"
     '
   </url>
 </vkopenurldef>
@@ -3000,7 +3000,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_GISTS</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/gists.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/gists.json"
     '
   </url>
 </vkopenurldef>
@@ -3009,7 +3009,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_STACK</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/stack.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/stack.json"
     '
   </url>
 </vkopenurldef>
@@ -3018,7 +3018,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_YOUTUBE</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/youtube.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/youtube.json"
     '
   </url>
 </vkopenurldef>
@@ -3027,7 +3027,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_CLI</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/cli.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/cli.json"
     '
   </url>
 </vkopenurldef>
@@ -3036,7 +3036,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_MUSIC_PLAYLISTS</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/music-playlists.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/music-playlists.json"
     '
   </url>
 </vkopenurldef>
@@ -3045,7 +3045,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_SLACK</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/slack.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/slack.json"
     '
   </url>
 </vkopenurldef>
@@ -3054,7 +3054,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_GITTER</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/gitter.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/gitter.json"
     '
   </url>
 </vkopenurldef>
@@ -3063,7 +3063,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_NOTES</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/notes.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/notes.json"
     '
   </url>
 </vkopenurldef>
@@ -3072,7 +3072,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_TWITTER</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/twitter.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/twitter.json"
     '
   </url>
 </vkopenurldef>
@@ -3081,7 +3081,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_COURSES</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/courses.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/courses.json"
     '
   </url>
 </vkopenurldef>
@@ -3090,7 +3090,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_PINBOARD</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/pinboard.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/pinboard.json"
     '
   </url>
 </vkopenurldef>
@@ -3099,7 +3099,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_BOOKS</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/books.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/books.json"
     '
   </url>
 </vkopenurldef>
@@ -3108,7 +3108,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_BLOGS</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/blogs.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/blogs.json"
     '
   </url>
 </vkopenurldef>
@@ -3117,7 +3117,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_PERSONAL</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/personal.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/personal.json"
     '
   </url>
 </vkopenurldef>
@@ -3126,7 +3126,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_WEB</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/web.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/web.json"
     '
   </url>
 </vkopenurldef>
@@ -3135,7 +3135,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_GITHUB_USERS</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/github-users.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/github-users.json"
     '
   </url>
 </vkopenurldef>
@@ -3144,7 +3144,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_PROFILES</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/profiles.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/profiles.json"
     '
   </url>
 </vkopenurldef>
@@ -3153,7 +3153,7 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
   <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_REDDIT</name>
   <url type="shell">
   osascript -e '
-  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/reddit.json"
+  tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind.v1" with argument "lists/reddit.json"
     '
   </url>
 </vkopenurldef>
@@ -3181,7 +3181,7 @@ tell application "Alfred 3" to run trigger "transmit" in workflow "sher.transmit
   <name>KeyCode::VK_OPEN_URL_ALFRED_UPDATE_MIND</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "updateMind" in workflow "nikivi.mind" with argument ""
+tell application "Alfred 3" to run trigger "updateMind" in workflow "nikivi.mind.v1" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -3337,7 +3337,7 @@ tell application "Alfred 3" to run trigger "searchDocs" in workflow "com.nirelba
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_INSIDE_MINDMAPS</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "inside" in workflow "nikivi.mind" with argument ""
+tell application "Alfred 3" to run trigger "inside" in workflow "nikivi.mind.v1" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -6282,6 +6282,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
         <autogen>
       __KeyToKey__
+      KeyCode::H,
+      KeyCode::VK_OPEN_URL_HAMMERSPOON_TESTER
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::Z,
       KeyCode::VK_OPEN_URL_KM_LIKE_AND_SAVE_CURRENT_UNSPLASH_WALLPAPER
 		</autogen>
@@ -8635,6 +8641,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
       __KeyToKey__
+      KeyCode::COMMA,
+      KeyCode::COMMA, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, 
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
       KeyCode::W,
       KeyCode::W, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, 
     </autogen>
@@ -9858,7 +9870,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
         __KeyToKey__
         KeyCode::H,
-        KeyCode::VK_OPEN_URL_HAMMERSPOON_TESTER
+        KeyCode::VK_OPEN_URL_HAMMERSPOON_RELOAD_CONFIG
     </autogen>
 
     <autogen>
@@ -9933,11 +9945,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         KeyCode::VK_OPEN_URL_ALFRED_GIT_REPOS_UPDATE
         </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::H,
-        KeyCode::VK_OPEN_URL_HAMMERSPOON_RELOAD_CONFIG
-    </autogen>
 
     <autogen>
         __KeyToKey__
