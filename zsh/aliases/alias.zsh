@@ -7,6 +7,7 @@ alias kar="/Applications/Karabiner.app/Contents/Library/bin/karabiner"
 alias le='less -r'
 # alias du='du -sh * | sort'
 alias h='tmux'
+alias eo='echo'
 alias mc='md-to-alfred'
 alias pd='pandoc'
 alias yt='yotube-dl'
@@ -65,6 +66,97 @@ alias al='exa -l'
 alias aa='exa -lahF'
 alias tp='type'
 #alias cl='/usr/local/bin/m'
+
+# _dev
+# _general
+alias co='coala'
+alias ll='ln -s'
+alias jd='jid'
+alias tm='task'
+alias rf='reflex'
+alias kb='kubectl'
+
+alias ser='serve'
+alias ss='python3 -m http.server'
+
+alias ra='create-react-app'
+
+alias lic='legit'
+
+# _flask
+alias fr='flask run'
+
+# _python
+alias p='python3'
+alias p2='python'
+alias pi='pip install' 
+alias rv='virtualenv -p /usr/local/bin/python3'
+
+# _alfred
+alias wf='alfred build'
+alias wfl='alfred link'
+alias wfa='alfred pack -o ~/Desktop'
+
+# _docker
+alias k='docker'
+alias kc='docker compose'
+alias kl='docker logs'
+alias klt='docker logs --tail 100'
+alias ks='docker ps'
+alias ksq='docker ps -q'
+alias kk='docker kill'
+
+# _node
+alias nd='node'
+alias ndi='node install'
+alias n.='node .'
+
+# _yarn
+alias i='yarn'
+alias il='yarn list'
+alias ii='yarn init'
+alias ia='yarn add'
+alias ir='yarn run'
+alias iw='yarn remove'
+alias ig='yarn global add'
+alias is='yarn start'
+
+# _heroku
+alias he='heroku'
+
+# _pip
+# TODO:
+
+# _npm - depracated
+alias np='npm'
+alias ni='npm install'
+alias ns='npm start'
+alias nls='npm ls'
+alias nu='npm update'
+alias nt='npm init'
+alias nig='npm install -g'
+alias nb='npm run build'
+alias nr='npm run'
+
+# _go
+alias o='go'
+alias ot='playgo'
+alias or='go run'
+alias oo='go install'
+alias ov='go vet'
+alias ob='go build'
+alias oa='go build -o main'
+
+alias ugo='Go-Package-Store'
+
+# _meteor
+alias mt='meteor'
+
+# _compile code
+alias sw='swift'
+
+# _ruby
+alias rb='ruby'
 
 # _piping
 alias h2='head -n 2'
@@ -150,6 +242,115 @@ alias mem='top -o rsize' # memory
 
 # _macos
 alias bb='pbcopy'
+
+# _text editors
+alias cr='open -a CodeRunner'
+alias xx='open -a Xcode'
+alias x.='open -a Xcode .'
+alias ae='open -a MacDown readme.md'
+alias ad='open -a MacDown'
+alias wt='open -a Atom'
+alias we='code'
+alias ww='code .'
+# alias ar="open -a Marked\ 2"
+alias zr='open -a Preview'
+
+# _web
+alias l="open -a Google\ Chrome"
+alias qq="open -a Safari"
+
+# _other
+alias pdf='open -a PDF\ Expert'
+alias love="/Applications/love.app/Contents/MacOS/love"
+
+# _general
+# alias gr='goreleaser'
+alias gsh='git stash'
+# alias gt='git tag'
+alias g:='git push -u origin master'
+alias gn='git open'
+alias ge='git checkout'
+alias gu='git commit --amend'
+alias ggf='git push -f'
+alias g::='git_remote_add_origin_from_active_link'
+alias g="git"
+alias gi='git init'
+alias gl='git pull'
+alias gcl='git clone'
+alias g.='git add .'
+alias ga='git add'
+# alias gb='git branch'
+alias gbd='git branch -d'
+alias gg='git push'
+#alias gr='git rm'
+# alias gf='git fetch'
+alias glp='git pull && git push'
+alias grao='git remote add origin'
+alias gz='git discard'
+alias gk='git checkout'
+#alias gr='git rm --cached -r'
+
+# _diff
+alias gd='git diff'
+alias gds='git diff --staged'
+alias gdn='git diff --name-only'
+
+# _status
+alias gs='git status --short'
+alias gss='git show --word-diff=color'
+
+
+alias ggn='git_add_origin_and_origin_push'
+
+
+# _commit
+alias gdf='git commit . -m ':tada: initial commit''
+alias gpm="git push origin master"
+alias gpd="git push origin develop"
+
+# _git all add commits
+alias ggm='git_commit_update'
+
+# _utilities
+
+# remove git from a project
+alias ungit="find . -name '.git' -exec rm -rf {} \;"
+
+# _app
+alias gto='gittower'
+
+
+# _list commit hashes
+function commits() {
+git log $1 --oneline --reverse | cut -d' ' -f 1 | tr '/n' ' '
+}
+
+# _cd jumps
+
+# _main
+alias ee='nvim .'                 # current dir
+alias ei='nvim index.js'
+alias egi='nvim .gitignore'
+alias ej='nvim package.json'
+
+# _config
+alias ea='nvim ~/.dotfiles/zsh/aliases/alias.zsh'                # alias
+alias eh='nvim ~/.ssh/config'                                 # ssh config
+alias ejj='nvim ~/.dotfiles/intellij/ideavimrc'               # idea
+alias ez='nvim ~/.dotfiles/zsh/zshrc.zsh'                         # zshrc
+alias eze='nvim ~/.dotfiles/zsh/aliases/vim.zsh'                 # goto vim
+alias ezk='nvim ~/.dotfiles/zsh/aliases/cd.zsh'                  # goto cd
+alias ek='nvim ~/Library/Application\ Support/Karabiner/private.xml' # karabiner
+alias ew='nvim ~/.dotfiles/nvim/init.vim'                  		 # nvimrc
+alias ef='nvim ~/.dotfiles/zsh/functions/functions.zsh'          # shell functions
+alias ehs='nvim ~/.dotfiles/hammerspoon/init.lua'             # hammerspoon
+alias ezd='nvim ~/.dotfiles/zsh/aliases/dev.zsh'                 # development alias
+alias ezg='nvim ~/.dotfiles/zsh/aliases/git.zsh'                 # git alias
+alias eza='nvim ~/.dotfiles/zsh/aliases/app.zsh'                 # app alias
+alias ezv='nvim ~/.dotfiles/zsh/dev/env.zsh'                     # enviroment variables
+alias ezo='nvim ~/.dotfiles/zsh/aliases/docker.zsh'              # docker alias
+alias et='nvim ~/.dotfiles/tmux/tmux.conf.local'              # tmux config
+alias ezb='nvim ~/.dotfiles/zsh/zsh/bindings.zsh'                # shell keyboard bindings
 
 # _move file locations
 # TODO: add move files to hazel alias / function

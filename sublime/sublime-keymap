@@ -17,6 +17,5 @@
   // _leader
   // `leader w` to save
   { "keys": [" ", "w"], "command": "save", "context": [{ "key": "six_is_in_command_mode" }] }
-
 ]
 

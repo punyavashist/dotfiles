@@ -3,6 +3,12 @@ function wo(){
 
 }
 
+# commit 
+function gc() {
+    git commit -m "$@"
+}
+
+
 # create a file and any intermediary directories if necessary
 function td() {
   mkdir -p "$(dirname "$1")/" && touch "$1"
