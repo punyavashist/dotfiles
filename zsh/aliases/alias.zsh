@@ -12,7 +12,7 @@ alias mc='md-to-alfred'
 alias pd='pandoc'
 alias yt='yotube-dl'
 alias r='rg'
-alias s='open'
+alias s='subl'
 alias ca='carthage'
 alias cad='carthage update'
 alias alf='alfred'
@@ -263,70 +263,7 @@ alias qq="open -a Safari"
 alias pdf='open -a PDF\ Expert'
 alias love="/Applications/love.app/Contents/MacOS/love"
 
-# _general
-# alias gr='goreleaser'
-alias gsh='git stash'
-# alias gt='git tag'
-alias g:='git push -u origin master'
-alias gn='git open'
-alias ge='git checkout'
-alias gu='git commit --amend'
-alias ggf='git push -f'
-alias g::='git_remote_add_origin_from_active_link'
-alias g="git"
-alias gi='git init'
-alias gl='git pull'
-alias gcl='git clone'
-alias g.='git add .'
-alias ga='git add'
-# alias gb='git branch'
-alias gbd='git branch -d'
-alias gg='git push'
-#alias gr='git rm'
-# alias gf='git fetch'
-alias glp='git pull && git push'
-alias grao='git remote add origin'
-alias gz='git discard'
-alias gk='git checkout'
-#alias gr='git rm --cached -r'
-
-# _diff
-alias gd='git diff'
-alias gds='git diff --staged'
-alias gdn='git diff --name-only'
-
-# _status
-alias gs='git status --short'
-alias gss='git show --word-diff=color'
-
-
-alias ggn='git_add_origin_and_origin_push'
-
-
-# _commit
-alias gdf='git commit . -m ':tada: initial commit''
-alias gpm="git push origin master"
-alias gpd="git push origin develop"
-
-# _git all add commits
-alias ggm='git_commit_update'
-
-# _utilities
-
-# remove git from a project
-alias ungit="find . -name '.git' -exec rm -rf {} \;"
-
-# _app
-alias gto='gittower'
-
-
-# _list commit hashes
-function commits() {
-git log $1 --oneline --reverse | cut -d' ' -f 1 | tr '/n' ' '
-}
-
-# _cd jumps
-
+# _vim jumps
 # _main
 alias ee='nvim .'                 # current dir
 alias ei='nvim index.js'
@@ -351,6 +288,97 @@ alias ezv='nvim ~/.dotfiles/zsh/dev/env.zsh'                     # enviroment va
 alias ezo='nvim ~/.dotfiles/zsh/aliases/docker.zsh'              # docker alias
 alias et='nvim ~/.dotfiles/tmux/tmux.conf.local'              # tmux config
 alias ezb='nvim ~/.dotfiles/zsh/zsh/bindings.zsh'                # shell keyboard bindings
+
+# _projects
+alias dk='cd ~/projects'
+alias daq='cd ~/code/xcode/projects/macos/quoter'
+alias dla='cd ~/oss/learn-anything/learn-anything'
+alias dz='cd ~/oss/nikivi/personal/knowledge'
+
+# _documents
+alias dap='cd ~/Documents/d.\ app'
+alias dte='cd ~/Documents/d.\ app/tester'
+#alias dk='cd ~/Documents/d. \app/unclutter/Unclutter\ Files'
+alias doc='cd ~/Documents'
+alias dbit='cd ~/Documents/d. \app/bitbar'
+alias dF='cd ~/Documents/app/unclutter/Unclutter\ Files'
+alias ddes='cd ~/Documents/design'
+alias dn='cd ~/oss/nikivi/'
+
+# _code
+alias dsh='cd ~/.ssh'
+alias dl='cd ~/play'
+alias dj='cd ~/learning'
+alias dg='cd ~/go/src/github.com/nikitavoloboev'
+alias dp='cd ~/code/python'
+alias dgp='cd ~/code/go/projects'
+alias dgl='cd ~/code/go/play'
+alias drb='cd ~/code/ruby'
+alias dpp='cd ~/code/python'
+alias dlove='cd ~/code/lua/love'
+alias djs='cd ~/code/js'
+#alias da='cd ~/code' TODO: change
+alias dgo='cd ~/code/go'
+alias dsj='cd ~/code/solutions/java'
+alias dss='cd ~/oss/nikivi/solutions'
+alias di='cd ~/ideas'
+
+# _xcode - swift
+alias dx='cd ~/xcode'
+alias dxi='cd ~/xcode/projects/ios'
+alias dxm='cd ~/xcode/projects/macos'
+
+# _web
+alias dwp='cd ~/web/projects'
+alias dw='cd ~/web'
+
+# _research
+alias dr='cd ~/research'
+alias dai='cd ~/research/ai'
+alias dapp='cd ~/research/apps'
+alias dcr='cd ~/research/crypto'
+alias ddot='cd ~/research/dots'
+alias drg='cd ~/research/general'
+alias dreact='cd ~/research/react'
+alias dxr='cd ~/xcode/research'
+alias dres='cd ~/research/resources'
+
+# _research code
+alias dbr='cd ~/code/bash/research'
+alias dcr='cd ~/code/c/research'
+alias djr='cd ~/code/java/research'
+alias dpr="cd ~/code/python/research"
+alias dgr='cd ~/code/go/research'
+alias djsr='cd ~/code/js/research'
+alias docr='cd ~code/objc/research'
+alias dwr='cd ~/web/research'
+
+# _oss
+alias ds='cd ~/oss/'
+alias dsn='cd ~/oss/nikivi'
+alias dsr='cd ~/oss/research'
+alias dsf='cd ~/oss/forks'
+alias dm='cd ~/oss/learn-anything'
+
+# _macos
+alias de='cd ~/Desktop'
+alias dq='cd ~/Downloads'
+alias dls='cd ~/Library/Services'
+alias dnm='cd /usr/local/lib/node_modules'
+alias dbb='cd /usr/local/bin'
+alias dcl='cd /usr/local/Cellar'
+alias drp='cd ~/Dropbox'
+alias dbl='cd ~/oss/nikivi/hugo/content/post'
+
+# _config
+alias d..='cd ~/.config'
+alias dbi='cd ~/.dotfiles/bin/internets'
+alias dv='cd ~/.dotfiles/vim'
+alias da='cd ~/.dotfiles'
+alias dsk='cd ~/Library/Application\ Support/Karabiner'
+alias db='cd ~/.dotfiles/bin'
+alias dh='cd ~/.hammerspoon'
+
 
 # _move file locations
 # TODO: add move files to hazel alias / function

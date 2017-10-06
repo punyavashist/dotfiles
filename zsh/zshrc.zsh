@@ -11,7 +11,8 @@ source ~/.dotfiles/zsh/dev/env.zsh
 source ~/.dotfiles/zsh/aliases/alias.zsh
 source ~/.dotfiles/zsh/functions/functions.zsh
 source ~/.dotfiles/zsh/functions/fzf.zsh
-source ~/.dotfiles/zsh/zsh/bindings.zsh
+source ~/.dotfiles/zsh/bindings.zsh
+source ~/.dotfiles/zsh/aliases/git.zsh
 
 # can just write down the file name
 setopt autocd

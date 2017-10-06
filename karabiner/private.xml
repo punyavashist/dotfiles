@@ -1074,11 +1074,22 @@
 </vkopenurldef>
 
 <vkopenurldef>
-  <name>KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY_AND_OPEN</name>
+  <name>KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY_AND_OPEN_WITH_VS_CODE</name>
   <url type="shell">
   osascript -e '
     tell application "Keyboard Maestro Engine"
-    do script "a: clone repo to ~/play and open"
+    do script "a: clone repo to ~/play and open with vs code"
+   end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY_AND_OPEN_WITH_SUBLIME</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: clone repo to ~/play and open with sublime"
    end tell
     '
   </url>
@@ -6207,6 +6218,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
         __KeyToKey__
+        KeyCode::W,
+        KeyCode::VK_OPEN_URL_ALFRED_WEATHER_TODAY
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::G,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAGES
     </autogen>
@@ -8095,7 +8112,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
         __KeyToKey__
         KeyCode::SPACE,
-        KeyCode::G, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+        KeyCode::C, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, 
     </autogen>
 
     <autogen>
@@ -10159,22 +10176,11 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
     </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::R,
-        KeyCode::VK_OPEN_URL_ALFRED_WEATHER_TODAY
-    </autogen>
 
     <autogen>
         __KeyToKey__
         KeyCode::H,
         KeyCode::VK_OPEN_URL_HAMMERSPOON_RELOAD_CONFIG
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::R,
-        KeyCode::N, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
     </autogen>
 
     <autogen>
@@ -10198,7 +10204,13 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         <autogen>
       __KeyToKey__
       KeyCode::E,
-      KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY_AND_OPEN
+      KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY_AND_OPEN_WITH_VS_CODE
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::R,
+      KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY_AND_OPEN_WITH_SUBLIME
 		</autogen>
 
         <autogen>
