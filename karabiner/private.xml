@@ -850,6 +850,51 @@
   </url>
 </vkopenurldef>
 
+<!-- _timer def-->
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_TIMER_10</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 10 reminder"
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_TIMER_20</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 20 reminder"
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_TIMER_30</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 30 reminder"
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_TIMER_40</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 40 reminder"
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_TIMER_50</name>
+  <url type="shell">
+  osascript -e '
+tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 50 reminder"
+    '
+  </url>
+</vkopenurldef>
 
 <!-- _km def-->
 <vkopenurldef>
@@ -858,6 +903,17 @@
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "a: rerun command in iterm"
+   end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_KM_INSERT_BACKQUOTES_AND_CLIP</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "a: insert `` and clipboard"
    end tell
     '
   </url>
@@ -2784,6 +2840,15 @@
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "curl" in workflow "se.psu.alfred.download-file" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_CHEATSHEET</name>
+  <url type="shell">
+  osascript -e '
+  tell application "Alfred 3" to run trigger "cheatsheet" in workflow "com.mutdmour.cheatsheet" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -6224,6 +6289,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
         __KeyToKey__
+        KeyCode::C,
+        KeyCode::VK_OPEN_URL_ALFRED_CHEATSHEET
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
         KeyCode::G,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAGES
     </autogen>
@@ -6366,10 +6437,26 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
         <autogen>
       __KeyToKey__
+      KeyCode::D,
+      KeyCode::T, ModifierFlag::SHIFT_L, 
+      KeyCode::O, ModifierFlag::SHIFT_L, 
+      KeyCode::D, ModifierFlag::SHIFT_L, 
+      KeyCode::O, ModifierFlag::SHIFT_L, 
+      KeyCode::SEMICOLON, ModifierFlag::SHIFT_L, 
+      KeyCode::SPACE,
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::TAB,
+      KeyCode::VK_OPEN_URL_KM_INSERT_BACKQUOTES_AND_CLIP
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::Q,
       KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L, 
 		</autogen>
-
 
         <autogen>
       __KeyToKey__
@@ -6721,21 +6808,39 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
       __KeyToKey__
+      KeyCode::1,
+      KeyCode::VK_OPEN_URL_TIMER_10
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::2,
+      KeyCode::VK_OPEN_URL_TIMER_20
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::3,
+      KeyCode::VK_OPEN_URL_TIMER_30
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::4,
+      KeyCode::VK_OPEN_URL_TIMER_40
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::5,
+      KeyCode::VK_OPEN_URL_TIMER_50
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
       KeyCode::SPACE,
       KeyCode::X, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, 
     </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::3,
-    KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_REMOVE_SONG_FROM_PLAYLIST
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::1,
-    KeyCode::VK_OPEN_URL_ALFRED_CREATE_SONG_RADIO
-  </autogen>
 
   <autogen>
     __KeyToKey__
@@ -6902,7 +7007,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
       __KeyToKey__
       KeyCode::SPACE,
-      KeyCode::A, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+      KeyCode::V, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, 
     </autogen>
 
     <autogen>
