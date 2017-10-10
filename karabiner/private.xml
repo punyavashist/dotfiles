@@ -11,7 +11,7 @@
 <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_general</name>
     <url type="shell">
-        <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name general    ]]>
+        <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name general]]>
         <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name general]]>
    </url>
 </vkopenurldef>
@@ -19,8 +19,16 @@
 <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_gaming</name>
     <url type="shell">
-        <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name gaming    ]]>
         <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name gaming]]>
+        <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name gaming]]>
+    </url>
+</vkopenurldef>
+
+<vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_python</name>
+    <url type="shell">
+        <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name python]]>
+        <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name python]]>
     </url>
 </vkopenurldef>
 
@@ -4587,11 +4595,10 @@ KeyCode::0, ModifierFlag::SHIFT_L
 
 <item>
   <name>general: sticky semicolon - shift key</name>
-  <!-- Don't change the line below, will break not sure why. Have to do with the prifix of the name. But if you want to have more launcher mode in the future for other key you can change the number 21 to 22 ...etc -->
 <identifier>private.launcher_mode_open_apps_v30</identifier>
 <inputsource_only>US</inputsource_only>
 
-  <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+
   <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
   <modifier_not>
     ModifierFlag::COMMAND_L,
@@ -4940,8 +4947,6 @@ KeyCode::0, ModifierFlag::SHIFT_L
     <name>general: sticky s - essential things - NOT: iTerm</name>
     <identifier>private.launcher_mode_open_apps_v23</identifier>
     <not>ITERM</not>
-
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -4959,10 +4964,6 @@ KeyCode::0, ModifierFlag::SHIFT_L
       __KeyOverlaidModifier__
       KeyCode::S,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v23, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -5201,7 +5202,7 @@ KeyCode::0, ModifierFlag::SHIFT_L
     <identifier>private.launcher_mode_open_apps_v25</identifier>
     <only>ITERM</only>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -5219,10 +5220,6 @@ KeyCode::0, ModifierFlag::SHIFT_L
       __KeyOverlaidModifier__
       KeyCode::S,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v25, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -5825,7 +5822,7 @@ KeyCode::0, ModifierFlag::SHIFT_L
     <name>general: sticky slash - websites</name>
     <identifier>private.launcher_mode_open_apps_v19</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -5843,10 +5840,6 @@ KeyCode::0, ModifierFlag::SHIFT_L
       __KeyOverlaidModifier__
       KeyCode::SLASH,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v19, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -5876,7 +5869,7 @@ KeyCode::0, ModifierFlag::SHIFT_L
 		<name>general: sticky space - km palettes</name>
 		<identifier>private.launcher_mode_open_apps_v34</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -5894,10 +5887,6 @@ KeyCode::0, ModifierFlag::SHIFT_L
       __KeyOverlaidModifier__
       KeyCode::SPACE,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v34, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -6169,6 +6158,55 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __BlockUntilKeyUp__ KeyCode::P,
     </autogen>
 
+        <autogen>
+      __KeyToKey__
+      KeyCode::SPACE,
+      KeyCode::U, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+		</autogen>
+
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::TAB,
+      KeyCode::VK_OPEN_URL_KM_INSERT_BACKQUOTES_AND_CLIP
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::Q,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::C,
+      KeyCode::DOT,
+      KeyCode::SLASH
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::W,
+      KeyCode::0, ModifierFlag::SHIFT_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::F,
+      KeyCode::5, ModifierFlag::SHIFT_L, 
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::D,
+      KeyCode::T, ModifierFlag::SHIFT_L, 
+      KeyCode::O, ModifierFlag::SHIFT_L, 
+      KeyCode::D, ModifierFlag::SHIFT_L, 
+      KeyCode::O, ModifierFlag::SHIFT_L, 
+      KeyCode::SEMICOLON, ModifierFlag::SHIFT_L, 
+      KeyCode::SPACE,
+		</autogen>
+
     <autogen>
         __KeyToKey__
         KeyCode::1,
@@ -6247,8 +6285,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 <item>
     <name>go: sticky comma</name>
     <identifier>private.launcher_mode_open_apps_v72</identifier>
-
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -6266,10 +6302,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::COMMA,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v72, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -6289,44 +6321,53 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
         <autogen>
       __KeyToKey__
-      KeyCode::D,
-      KeyCode::T, ModifierFlag::SHIFT_L, 
-      KeyCode::O, ModifierFlag::SHIFT_L, 
-      KeyCode::D, ModifierFlag::SHIFT_L, 
-      KeyCode::O, ModifierFlag::SHIFT_L, 
-      KeyCode::SEMICOLON, ModifierFlag::SHIFT_L, 
-      KeyCode::SPACE,
+      KeyCode::2,
+      KeyCode::VK_OPEN_URL_SHELL_switchprofile_python
 		</autogen>
+
+  </item>
+
+<item>
+    <name>python: sticky comma</name>
+    <identifier>private.launcher_mode_open_apps_v77</identifier>
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::COMMA,
+
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v77, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::COMMA,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v77</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::COMMA,
+    </autogen>
 
         <autogen>
       __KeyToKey__
-      KeyCode::TAB,
-      KeyCode::VK_OPEN_URL_KM_INSERT_BACKQUOTES_AND_CLIP
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::Q,
-      KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L, 
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::C,
-      KeyCode::DOT,
-      KeyCode::SLASH
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::W,
-      KeyCode::0, ModifierFlag::SHIFT_L, 
-		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::F,
-      KeyCode::5, ModifierFlag::SHIFT_L, 
+      KeyCode::1,
+      KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
 		</autogen>
 
         <autogen>
@@ -6341,21 +6382,14 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       KeyCode::0, ModifierFlag::SHIFT_L, 
       KeyCode::CURSOR_LEFT
 		</autogen>
-
-        <autogen>
-      __KeyToKey__
-      KeyCode::SPACE,
-      KeyCode::U, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
-		</autogen>
-
-
   </item>
+
 
 <item>
     <name>general: sticky dot - one off scripts</name>
     <identifier>private.launcher_mode_open_apps_v20</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -6373,10 +6407,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::DOT,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v20, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -6455,7 +6485,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky n - web searches</name>
     <identifier>private.launcher_mode_open_apps_v35</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -6473,10 +6503,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::N,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v35, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -6632,7 +6658,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky m - productivity</name>
     <identifier>private.launcher_mode_open_apps_v17</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -6650,10 +6676,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::M,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v17, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -6836,7 +6858,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky v - media controls</name>
     <identifier>private.launcher_mode_open_apps_v16</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -6854,10 +6876,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::V,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v16, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -7007,7 +7025,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky [ - more maps</name>
     <identifier>private.launcher_mode_open_apps_v73</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -7029,10 +7047,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::BRACKET_LEFT,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v73, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -7218,7 +7232,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky b - maps</name>
     <identifier>private.launcher_mode_open_apps_v13</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -7240,10 +7254,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::B,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v13, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -7537,7 +7547,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky w - open top apps</name>
     <identifier>private.launcher_mode_open_apps_v3</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -7555,10 +7565,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::W,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v3, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -7769,7 +7775,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky quote - scroll</name>
     <identifier>private.launcher_mode_open_apps_v32</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -7787,10 +7793,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::QUOTE,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v32, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -7866,7 +7868,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 		<name>general: sticky x - alfred my mind</name>
 		<identifier>private.launcher_mode_open_apps_v43</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -7884,10 +7886,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::X,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v43, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -8120,7 +8118,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky 1 - ⌥ + ⌘ + ⌃</name>
 		<identifier>private.launcher_mode_open_apps_v80</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -8138,10 +8136,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::1,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v80, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -8177,7 +8171,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 		<name>general: sticky c - websites</name>
 		<identifier>private.launcher_mode_open_apps_v41</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -8195,10 +8189,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::C,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v41, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -8480,7 +8470,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 		<name>general: sticky 2 - moving more</name>
 		<identifier>private.launcher_mode_open_apps_v93</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -8498,10 +8488,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::2,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v93, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -8609,7 +8595,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 		<name>general: sticky tab - chrome</name>
 		<identifier>private.launcher_mode_open_apps_v55</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -8627,10 +8613,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::TAB,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v55, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -8685,7 +8667,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 		<name>general: sticky 5 - something</name>
 		<identifier>private.launcher_mode_open_apps_v54</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -8703,10 +8685,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::5,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v54, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -8736,7 +8714,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky 4 - paths</name>
 		<identifier>private.launcher_mode_open_apps_v53</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -8754,10 +8732,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::4,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v53, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -8884,7 +8858,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky 3 - ⇧ + ⌃ + ⌥</name>
 		<identifier>private.launcher_mode_open_apps_v51</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -8902,10 +8876,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::3,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v51, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -9108,8 +9078,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 <item>
 		<name>general: sticky g - wm</name>
 		<identifier>private.launcher_mode_open_apps_v11</identifier>
-
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -9127,10 +9095,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::G,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v11, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -9333,7 +9297,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky r - open other apps</name>
     <identifier>private.launcher_mode_open_apps_v8</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -9351,10 +9315,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::R,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v8, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -9592,7 +9552,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky u - websites</name>
     <identifier>private.launcher_mode_open_apps_v33</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -9610,10 +9570,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::U,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v33, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -9734,7 +9690,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky i - inserting symbols</name>
     <identifier>private.launcher_mode_open_apps_v15</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -9752,10 +9708,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::I,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v15, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -10070,7 +10022,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky t - handy actions</name>
     <identifier>private.launcher_mode_open_apps_v14</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -10088,10 +10040,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::T,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v14, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -10280,7 +10228,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky z - open chat apps</name>
     <identifier>private.launcher_mode_open_apps_v9</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -10298,10 +10246,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::Z,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v9, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -10422,7 +10366,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky f - essential keybinds</name>
     <identifier>private.launcher_mode_open_apps_v2</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -10440,10 +10384,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::F,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v2, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -10705,7 +10645,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 <item>
     <name>general: sticky e - command</name>
     <identifier>private.launcher_mode_open_apps_v91</identifier>
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -10723,10 +10663,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::E,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v91, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -11055,7 +10991,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky q - command shift</name>
     <identifier>private.launcher_mode_open_apps_v6</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -11073,10 +11009,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::Q,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v6, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -11352,7 +11284,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <name>general: sticky a - control modifier</name>
     <identifier>private.launcher_mode_example</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -11370,10 +11302,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyOverlaidModifier__
       KeyCode::A,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -12179,7 +12107,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 		<name>general: sticky right cmd - things</name>
 		<identifier>private.launcher_mode_open_apps_v81</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -12196,10 +12124,6 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
       __KeyOverlaidModifier__
       KeyCode::COMMAND_R,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v81, ModifierFlag::MY_LAUNCHER_MODE,
       @end
@@ -12247,7 +12171,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 		<name>general: sticky backquote - alfred + projects</name>
 		<identifier>private.launcher_mode_open_apps_v40</identifier>
 
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -12265,10 +12189,6 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
       __KeyOverlaidModifier__
       KeyCode::BACKQUOTE,
 
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v40, ModifierFlag::MY_LAUNCHER_MODE,
       @end
