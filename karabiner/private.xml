@@ -12,6 +12,7 @@
     <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_general</name>
     <url type="shell">
         <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name general    ]]>
+        <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name general]]>
    </url>
 </vkopenurldef>
 
@@ -26,6 +27,7 @@
     <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_gaming</name>
     <url type="shell">
         <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name gaming    ]]>
+        <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name gaming]]>
     </url>
 </vkopenurldef>
 
