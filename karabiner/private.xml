@@ -17,31 +17,10 @@
 </vkopenurldef>
 
 <vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_wm</name>
-    <url type="shell">
-        <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name wm    ]]>
-    </url>
-</vkopenurldef>
-
-<vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_gaming</name>
     <url type="shell">
         <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name gaming    ]]>
         <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name gaming]]>
-    </url>
-</vkopenurldef>
-
-<vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller</name>
-    <url type="shell">
-        <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name scroller    ]]>
-    </url>
-</vkopenurldef>
-
-<vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_capslock</name>
-    <url type="shell">
-        <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name capslock    ]]>
     </url>
 </vkopenurldef>
 
@@ -4558,18 +4537,6 @@ tell application "Alfred 3" to run trigger "google" in workflow "net.deanishe.al
   </url>
 </vkopenurldef>
 
-
-  <item>
-  <name>test: space after comma</name>
-  <appendix>space after comma</appendix>
-  <identifier>space_after_comma</identifier>
-  <autogen>__KeyToKey__
-  KeyCode::COMMA, ModifierFlag::NONE,
-  KeyCode::COMMA, ModifierFlag::NONE,
-  KeyCode::SPACE, ModifierFlag::NONE
-   </autogen>
-    </item>
-
 <!-- _language definitions -->
 <inputsourcedef>
 <name>US</name>
@@ -4925,42 +4892,6 @@ KeyCode::0, ModifierFlag::SHIFT_L
 
 </item>
 
-<item>
-    <name>scroller: sticky semicolon</name>
-    <identifier>private.launcher_mode_open_apps_v71</identifier>
-
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
-    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
-    <modifier_not>
-      ModifierFlag::COMMAND_L,
-      ModifierFlag::COMMAND_R,
-      ModifierFlag::CONTROL_L,
-      ModifierFlag::CONTROL_R,
-      ModifierFlag::FN,
-      ModifierFlag::OPTION_L,
-      ModifierFlag::OPTION_R,
-      ModifierFlag::SHIFT_L,
-      ModifierFlag::SHIFT_R,
-    </modifier_not>
-
-    <autogen>
-      __KeyOverlaidModifier__
-      KeyCode::SEMICOLON,
-
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
-      @begin
-      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v71, ModifierFlag::MY_LAUNCHER_MODE,
-      @end
-
-      @begin
-      KeyCode::TAB, ModifierFlag::COMMAND_L,
-      @end
-    </autogen>
-  </item>
-
   <item hidden="true">
     <identifier vk_config="true">notsave.private_launcher_mode_v71</identifier>
 
@@ -4975,169 +4906,6 @@ KeyCode::0, ModifierFlag::SHIFT_L
     </autogen>
 
   </item>
-
-<item>
-    <name>wm: main</name>
-    <identifier>private.wm_main remap</identifier>
-
-   <autogen>
-     __KeyToKey__
-     KeyCode::M,
-     KeyCode::F8, ModifierFlag::COMMAND_L,
-     KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
-   </autogen>
-
-   <autogen>
-     __KeyToKey__
-     KeyCode::F,
-     KeyCode::K, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L
-   </autogen>
-
-   <autogen>
-     __KeyToKey__
-     KeyCode::A,
-     KeyCode::H, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
-   </autogen>
-
-   <autogen>
-     __KeyToKey__
-     KeyCode::S,
-     KeyCode::L, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
-   </autogen>
-
-</item>
-
-<item>
-    <name>scroller: main</name>
-    <identifier>private.scroller_main remap</identifier>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::A,
-    KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::Z,
-        PointingButton::MIDDLE
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::BACKQUOTE,
-        KeyCode::VK_OPEN_URL_SHELL_switchprofile_general,
-        KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::C,
-        KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::DOT,
-        KeyCode::TAB, ModifierFlag::COMMAND_L,
-        KeyCode::COMMAND_L,
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::N,
-        KeyCode::TAB, ModifierFlag::COMMAND_L,
-        KeyCode::COMMAND_L,
-        KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::DOT,
-        KeyCode::P, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::M,
-    KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::H,
-        KeyCode::VK_MOUSEKEY_SCROLL_LEFT,
-    </autogen>
-      <autogen>
-        __KeyToKey__
-        KeyCode::K,
-        KeyCode::VK_MOUSEKEY_SCROLL_UP,
-    </autogen>
-      <autogen>
-        __KeyToKey__
-        KeyCode::J,
-        KeyCode::VK_MOUSEKEY_SCROLL_DOWN,
-    </autogen>
-
-      <autogen>
-        __KeyToKey__
-        KeyCode::L,
-        KeyCode::VK_MOUSEKEY_SCROLL_RIGHT,
-    </autogen>
-
-   <autogen>
-     __KeyToKey__
-     KeyCode::I,
-     KeyCode::MINUS, ModifierFlag::COMMAND_L
-   </autogen>
-
-   <autogen>
-     __KeyToKey__
-     KeyCode::O,
-     KeyCode::EQUAL, ModifierFlag::COMMAND_L
-   </autogen>
-
-   <autogen>
-     __KeyToKey__
-     KeyCode::V,
-     PointingButton::LEFT
-   </autogen>
-
-   <autogen>
-     __KeyToKey__
-     KeyCode::S,
-     KeyCode::VK_OPEN_URL_KM_OPEN_PDF_EXPERT
-   </autogen>
-
-   <autogen>
-     __KeyToKey__
-     KeyCode::W,
-     KeyCode::F, ModifierFlag::CONTROL_L
-   </autogen>
-
-   <autogen>
-     __KeyToKey__
-     KeyCode::SPACE,
-     KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-   </autogen>
-
-   <autogen>
-     __KeyToKey__
-     KeyCode::G,
-     KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_front_window_center
-   </autogen>
-
-   <autogen>
-     __KeyToKey__
-     KeyCode::F,
-     KeyCode::C, ModifierFlag::COMMAND_L,
-     KeyCode::F, ModifierFlag::CONTROL_L,
-     KeyCode::RETURN, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
-     KeyCode::V, ModifierFlag::COMMAND_L,
-     KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
-   </autogen>
-
-</item>
 
 <item>
   <name>general: hyper function semicolon key</name>
@@ -7197,12 +6965,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         __KeyToKey__
         KeyCode::D,
         ConsumerKeyCode::KEYBOARDLIGHT_OFF
-    </autogen>
-
-     <autogen>
-        __KeyToKey__
-        KeyCode::A,
-        KeyCode::VK_OPEN_URL_SHELL_switchprofile_scroller
     </autogen>
 
      <autogen>
@@ -9623,7 +9385,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
         __KeyToKey__
         KeyCode::S,
-        KeyCode::VK_OPEN_URL_KM_OPEN_OBS
+        KeyCode::VK_OPEN_URL_KM_OPEN_KARABINER_PREFERENCES
     </autogen>
 
     <autogen>
@@ -11939,7 +11701,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
 
 <item>
-<name>general: right shift and return, two different hotkeys on long and short</name>
+<name>test: right shift and return, two different hotkeys on long and short</name>
 <identifier>private.right_shift_return_two_diff_actions</identifier>
 <autogen>
   __HoldingKeyToKey__
@@ -11961,7 +11723,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
 
 <item>
-<name>general: left option and a, two different hotkeys when held and when quickly pressed</name>
+<name>test: left option and a, two different hotkeys when held and when quickly pressed</name>
 <identifier>private.left_opt_a_two_diff_actions</identifier>
 <autogen>
   __HoldingKeyToKey__
@@ -11984,7 +11746,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
 <!-- -simple rebinds  -->
 <item>
-<name>general: left option plus left shift to search documentation for selected text</name>
+<name>test: left option plus left shift to search documentation for selected text</name>
 <identifier>private.left_option_plus_left_shift_to_hotkey</identifier>
 <autogen>
 __KeyOverlaidModifier__
@@ -11995,7 +11757,7 @@ KeyCode::8, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 </item>
 
 <item>
-<name>general: control plus left shift to search wiki with selection</name>
+<name>test: control plus left shift to search wiki with selection</name>
 <identifier>private.control_shift_for_wiki_selection</identifier>
 <autogen>
 __KeyOverlaidModifier__
@@ -12006,7 +11768,7 @@ KeyCode::7, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 </item>
 
 <item>
-<name>general: command plus left shift to google selected text</name>
+<name>test: command plus left shift to google selected text</name>
 <identifier>private.command_plus_left_shift_to_hotkey</identifier>
 <autogen>
 __KeyOverlaidModifier__
@@ -12049,7 +11811,7 @@ KeyCode::OPTION_L,ModifierFlag::COMMAND_L,
 </item>
 
 <item>
-<name>general: left control - control and command - NOT: xcode</name>
+<name>test: left control - control and command - NOT: xcode</name>
 <identifier>private.left_control_to_control_and_command</identifier>
 <not>XCODE</not>
 <autogen>
@@ -12104,7 +11866,7 @@ KeyCode::TAB, ModifierFlag::COMMAND_L
 </item>
 
 <item>
-<name>general: iTerm adjustments for better productivity</name>
+<name>test: iTerm adjustments for better productivity</name>
 <identifier>private.iterm_as_ide</identifier>
 <only>ITERM</only>
 <autogen>
@@ -12244,7 +12006,7 @@ KeyCode::E, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 
 <!-- one more really nicely located app specific hotkey -->
 <item>
-<name>general: right shift and right command to app specific</name>
+<name>test: right shift and right command to app specific</name>
 <identifier>private.right_shit_and_right_command_to_app_specific</identifier>
 <autogen>
 __KeyToKey__
@@ -12256,7 +12018,7 @@ KeyCode::O, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 
 <!-- really useful as I use colon more often then semicolon except when coding javascript or java -->
 <item>
-<name>general: change colon to semicolon alone</name>
+<name>test: change colon to semicolon alone</name>
 <identifier>private.colon_to_semicolon_alone</identifier>
 <inputsource_only>US</inputsource_only>
 <autogen>
@@ -12267,7 +12029,7 @@ KeyCode::SEMICOLON
 </item>
 
 <item>
-<name>general: change semicolon to colon</name>
+<name>test: change semicolon to colon</name>
 <identifier>private.semicolon_to_colon_alone</identifier>
 <inputsource_only>US</inputsource_only>
 <autogen>
@@ -12289,7 +12051,7 @@ KeyCode::W, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
 
 
 <item>
-<name>general: right shift to command and shift when together, delete when alone</name>
+<name>test: right shift to command and shift when together, delete when alone</name>
 <identifier>private.right_shift_to_command_and_shift</identifier>
 <autogen>
 --KeyOverlaidModifier--
@@ -12302,7 +12064,7 @@ Option::KEYOVERLAIDMODIFIER_REPEAT,
 
 
 <item>
-<name>general: right shift and right command to option and command</name>
+<name>test: right shift and right command to option and command</name>
 <identifier>private.right_shift_and_command_to_option_command</identifier>
 <autogen>
 --KeyOverlaidModifier--
@@ -12336,7 +12098,7 @@ KeyCode::SHIFT_L,
 </item>
 
 <item>
-    <name>general: right shift - play / stop music</name>
+    <name>test: right shift - play / stop music</name>
 <identifier>private.right_shift_play_music</identifier>
 <autogen>
 __KeyOverlaidModifier__
@@ -12347,7 +12109,7 @@ ConsumerKeyCode::MUSIC_PLAY
 </item>
 
 <item>
-<name>general: left shift - switch to general mode</name>
+<name>test: left shift - switch to general mode</name>
 <identifier>private.left_shift_to_general_mode</identifier>
 <autogen>
 __KeyOverlaidModifier__
@@ -12359,7 +12121,7 @@ KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
 </item>
 
 <item>
-<name>general: lcmd = google</name>
+<name>test: lcmd = google</name>
 <identifier>private.left_command_to_dash</identifier>
 <autogen>
 __KeyOverlaidModifier__
@@ -12667,7 +12429,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
   <item>
-      <name>general: simultaneous jl = alfred</name>
+      <name>general: sim jl = alfred</name>
       <identifier>private.sim_jl_typinator</identifier>
 
  <autogen>
@@ -12679,20 +12441,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
   <item>
-      <name>scroller: sim l, = keyclue</name>
-      <identifier>private.sim_,l_keyclue</identifier>
-
- <autogen>
-          __SimultaneousKeyPresses__
-          KeyCode::COMMA, KeyCode::L,
-          KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_SHELL_switchprofile_general,
-          KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
-    </autogen>
-  </item>
-
-  <item>
-      <name>general: simultaneous m, = some</name>
+      <name>general: sim m, = some</name>
       <identifier>private.sim_mcomma_some</identifier>
 
  <autogen>
@@ -12725,16 +12474,6 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
           KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
     </autogen>
-  </item>
-
-  <item>
-      <name>capslock: semicolon to turn off caps lock and go to general</name>
-      <identifier>private.semi_turn_off_caps</identifier>
-      <autogen>
-          __KeyToKey__
-          KeyCode::SEMICOLON,
-          KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
-      </autogen>
   </item>
 
       <item>
@@ -12855,17 +12594,6 @@ KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTI
           KeyCode::O, KeyCode::I,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
           KeyCode::VK_OPEN_URL_ALFRED_ITERM_TTY
-      </autogen>
-  </item>
-
-      <item>
-          <name>general: sim li = github search</name>
-      <identifier>private.sim_li_github_search</identifier>
-        <autogen>
-          __SimultaneousKeyPresses__
-          KeyCode::L, KeyCode::I,
-          KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB_REPOS
       </autogen>
   </item>
 
