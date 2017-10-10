@@ -71,6 +71,17 @@
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_DROPBOX</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "w: dropbox"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_REPL</name>
   <url type="shell">
   osascript -e '
@@ -5845,7 +5856,7 @@ KeyCode::0, ModifierFlag::SHIFT_L
       @end
 
       @begin
-      KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS
+      KeyCode::SLASH
       @end
     </autogen>
   </item>
@@ -5861,6 +5872,12 @@ KeyCode::0, ModifierFlag::SHIFT_L
           __KeyToKey__
           KeyCode::R,
         KeyCode::VK_OPEN_URL_KM_OPEN_URL_REPL
+      </autogen>
+
+      <autogen>
+          __KeyToKey__
+          KeyCode::D,
+        KeyCode::VK_OPEN_URL_KM_OPEN_URL_DROPBOX
       </autogen>
 
   </item>
@@ -6087,6 +6104,24 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
       __BlockUntilKeyUp__ KeyCode::BRACKET_LEFT,
     </autogen>
+
+       <autogen>
+         __KeyToKey__
+         KeyCode::V,
+         KeyCode::VK_OPEN_URL_AFRED_GET_APP_VERSION
+       </autogen>
+
+       <autogen>
+         __KeyToKey__
+         KeyCode::M,
+         KeyCode::VK_OPEN_URL_ALFRED_TIME
+       </autogen>
+
+       <autogen>
+         __KeyToKey__
+         KeyCode::B,
+         KeyCode::VK_OPEN_URL_ALFRED_GUTENBERG
+       </autogen>
     
     <autogen>
         __KeyToKey__
@@ -6105,6 +6140,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         KeyCode::C,
         KeyCode::VK_OPEN_URL_ALFRED_CHEATSHEET
     </autogen>
+
+       <autogen>
+         __KeyToKey__
+         KeyCode::N,
+         KeyCode::VK_OPEN_URL_ALFRED_SYNONYMS_SEARCH
+       </autogen>
 
     <autogen>
         __KeyToKey__
@@ -6373,6 +6414,17 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         <autogen>
       __KeyToKey__
       KeyCode::R,
+      KeyCode::R,
+      KeyCode::E,
+      KeyCode::T,
+      KeyCode::VK_WAIT_50MS,
+      KeyCode::RETURN,
+      KeyCode::SPACE
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::E,
       KeyCode::P,
       KeyCode::R,
       KeyCode::I,
@@ -10069,11 +10121,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
           KeyCode::SEMICOLON, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
         </autogen>
 
-        <autogen>
-          __KeyToKey__
-          KeyCode::COMMA,
-          KeyCode::VK_OPEN_URL_KM_OPEN_RUN_PY_FILE
-        </autogen>
 
         <autogen>
           __KeyToKey__
@@ -10203,11 +10250,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         KeyCode::VK_OPEN_URL_ALFRED_SCREENSHOT_TO_GOOGLE
     </autogen>
 
-    <autogen>
-        __KeyToKey__
-        KeyCode::SEMICOLON,
-        KeyCode::VK_OPEN_URL_KM_OPEN_GO_PLAY
-    </autogen>
 
     <autogen>
         __KeyToKey__
@@ -12168,7 +12210,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
 <item>
-		<name>general: sticky backquote - alfred + projects</name>
+		<name>general: sticky backquote - runnable files + projects</name>
 		<identifier>private.launcher_mode_open_apps_v40</identifier>
 
   
@@ -12206,11 +12248,23 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
       __BlockUntilKeyUp__ KeyCode::BACKQUOTE,
     </autogen>
 
+    <autogen>
+        __KeyToKey__
+        KeyCode::N,
+        KeyCode::VK_OPEN_URL_KM_OPEN_GO_PLAY
+    </autogen>
+
        <autogen>
          __KeyToKey__
          KeyCode::A,
          KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, 
        </autogen>
+
+        <autogen>
+          __KeyToKey__
+          KeyCode::M,
+          KeyCode::VK_OPEN_URL_KM_OPEN_RUN_PY_FILE
+        </autogen>
 
        <autogen>
          __KeyToKey__
@@ -12268,20 +12322,8 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 
        <autogen>
          __KeyToKey__
-         KeyCode::A,
-         KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, 
-       </autogen>
-
-       <autogen>
-         __KeyToKey__
          KeyCode::P,
          KeyCode::VK_OPEN_URL_ALFRED_CRYPTO_TRACK
-       </autogen>
-
-       <autogen>
-         __KeyToKey__
-         KeyCode::N,
-         KeyCode::VK_OPEN_URL_ALFRED_SYNONYMS_SEARCH
        </autogen>
 
        <autogen>
@@ -12302,23 +12344,6 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
          KeyCode::VK_OPEN_URL_ALFRED_MONTHS_NUMBERS
        </autogen>
 
-       <autogen>
-         __KeyToKey__
-         KeyCode::V,
-         KeyCode::VK_OPEN_URL_AFRED_GET_APP_VERSION
-       </autogen>
-
-       <autogen>
-         __KeyToKey__
-         KeyCode::M,
-         KeyCode::VK_OPEN_URL_ALFRED_TIME
-       </autogen>
-
-       <autogen>
-         __KeyToKey__
-         KeyCode::B,
-         KeyCode::VK_OPEN_URL_ALFRED_GUTENBERG
-       </autogen>
 
       <autogen>
           __KeyToKey__
