@@ -4,20 +4,20 @@
 export PATH=$(brew --prefix ruby)/bin:$PATH
 export PATH="$HOME/.yarn/bin:$PATH"
 
+# my cli
 export PATH=$PATH:~/.dotfiles/bin
 
 # _npm path
 export PATH=./node_modules/.bin/:$PATH
 
 # _anaconda
-export PATH=$PATH:$HOME/software/anaconda3/bin
+export PATH=/Users/nikivi/anaconda3/bin:$PATH
 
 # _go
 export PATH=$PATH:/usr/local/go/bin:/Users/nikivi/go/bin
 
 # _rust
 export PATH=$PATH:~/.cargo/bin
-
 
 # _sql
 export PATH=/usr/local/mysql/bin:$PATH

@@ -14,7 +14,7 @@
     // _code runner
     "code-runner.clearPreviousOutput": true,
     "code-runner.executorMap": {
-        "python": "python2"
+        "python": "python3"
     },
     // _zen
     "zenMode.fullScreen": false,

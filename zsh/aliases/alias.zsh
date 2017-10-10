@@ -7,7 +7,9 @@ alias kar="/Applications/Karabiner.app/Contents/Library/bin/karabiner"
 alias le='less -r'
 # alias du='du -sh * | sort'
 alias h='tmux'
+alias eop='echo $PATH'
 alias eo='echo'
+alias es='elasticsearch'
 alias mc='md-to-alfred'
 alias pd='pandoc'
 alias yt='yotube-dl'
@@ -289,6 +291,7 @@ alias ezo='nvim ~/.dotfiles/zsh/aliases/docker.zsh'              # docker alias
 alias et='nvim ~/.dotfiles/tmux/tmux.conf.local'              # tmux config
 alias ezb='nvim ~/.dotfiles/zsh/zsh/bindings.zsh'                # shell keyboard bindings
 
+# _cd places
 # _projects
 alias dk='cd ~/projects'
 alias daq='cd ~/code/xcode/projects/macos/quoter'
@@ -307,6 +310,7 @@ alias dn='cd ~/oss/nikivi/'
 
 # _code
 alias dsh='cd ~/.ssh'
+alias dm='cd ~/ml'
 alias dl='cd ~/play'
 alias dj='cd ~/learning'
 alias dg='cd ~/go/src/github.com/nikitavoloboev'
@@ -358,7 +362,7 @@ alias ds='cd ~/oss/'
 alias dsn='cd ~/oss/nikivi'
 alias dsr='cd ~/oss/research'
 alias dsf='cd ~/oss/forks'
-alias dm='cd ~/oss/learn-anything'
+alias d:='cd ~/oss/learn-anything'
 
 # _macos
 alias de='cd ~/Desktop'
