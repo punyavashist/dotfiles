@@ -2,6 +2,7 @@
     // _general
     "editor.snippetSuggestions": "top",
     "editor.minimap.enabled": false,
+    "workbench.fontAliasing": "antialised",
     // _dash
     "dash.docset.go": [
         "go",
@@ -9,7 +10,7 @@
     ],
     "editor.lineNumbers": "relative",
     "editor.cursorStyle": "line",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -2,
     "workbench.welcome.enabled": false,
     // _python
     "python.linting.pylintArgs": [
@@ -67,38 +68,8 @@
             ]
         }
     ],
-    // _remap normal mode
+    // _space map
     "vim.otherModesKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<leader>",
-                "k"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.files.save",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "a"
-            ],
-            "after": [
-                "leader",
-                "leader",
-                "s"
-            ],
-            "commands": [
-                {
-                    "command": "workbench.action.files.save",
-                    "args": []
-                }
-            ]
-        },
         {
             "before": [
                 "<leader>",
@@ -107,8 +78,11 @@
             "after": [],
             "commands": [
                 {
-                    // "command": "workbench.action.files.save",
-                    "command": "code-runner.run",
+                    "command": [
+                        // "workbench.action.files.save"
+                        // "code-runner.run"
+                        "editor.action.commentLine"
+                    ],
                     "args": []
                 }
             ]
@@ -144,6 +118,19 @@
             "commands": [
                 {
                     "command": "editor.action.commentLine",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "r"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "code-runner.run",
                     "args": []
                 }
             ]

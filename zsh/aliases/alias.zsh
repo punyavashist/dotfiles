@@ -310,6 +310,7 @@ alias dn='cd ~/oss/nikivi/'
 
 # _code
 alias dsh='cd ~/.ssh'
+alias dno='cd ~/node'
 alias dm='cd ~/ml'
 alias dl='cd ~/play'
 alias dj='cd ~/learning'

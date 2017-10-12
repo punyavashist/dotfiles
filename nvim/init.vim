@@ -24,7 +24,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim'
-Plug 'tpope/vim-sensible'                           " sensible defaults
 Plug 'pangloss/vim-javascript'
 Plug 'airblade/vim-gitgutter'
 Plug 'zchee/deoplete-jedi'
@@ -162,6 +161,7 @@ nnoremap <Leader>aa   :wa<CR>
 nnoremap <Leader>vq   :wqall<CR>
 nnoremap <Leader>vQ   :qa<CR>
 nnoremap <Leader>ii   :PlugInstall<CR>
+nnoremap <Leader>ih   :CheckHealth<CR>
 nnoremap <Leader>ia   :PlugUpdate<CR>
 nnoremap <Leader>vm   :make<CR>
 nnoremap <leader>l :%d<cr>
