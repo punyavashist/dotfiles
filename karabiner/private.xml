@@ -1660,6 +1660,17 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_INSERT_WORKFLOW:</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "i: workflow:"
+   end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_INSERT_LOG_PRINTLN</name>
   <url type="shell">
   osascript -e '
@@ -1677,6 +1688,28 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "path: home"
+   end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_APPLICATIONS_PATH</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "path: applications"
+   end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_KM_OPEN_ROOT_PATH</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "path: root"
    end tell
     '
   </url>
@@ -1887,6 +1920,17 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
   osascript -e '
     tell application "Keyboard Maestro Engine"
     do script "open: itunes"
+    end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "open: console"
     end tell
     '
   </url>
@@ -3015,6 +3059,15 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
   <url type="shell">
   osascript -e '
 tell application "Alfred 3" to run trigger "curl" in workflow "se.psu.alfred.download-file" with argument ""
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Alfred 3" to run trigger "googleLucky" in workflow "net.deanishe.alfred-searchio" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -6903,8 +6956,14 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
         <autogen>
       __KeyToKey__
-      KeyCode::E,
+      KeyCode::G,
       KeyCode::VK_OPEN_URL_KM_INSERT_LOG_PRINTLN
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::W,
+      KeyCode::VK_OPEN_URL_KM_INSERT_WORKFLOW:
 		</autogen>
 
   </item>
@@ -8140,8 +8199,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 <item>
     <name>general: sticky w - open top apps</name>
     <identifier>private.launcher_mode_open_apps_v3</identifier>
-
-  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -8198,8 +8255,14 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
         <autogen>
       __KeyToKey__
-      KeyCode::3,
+      KeyCode::C,
       KeyCode::VK_OPEN_URL_KM_OPEN_PAW
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::3,
+      KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE
 		</autogen>
 
         <autogen>
@@ -8350,12 +8413,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __KeyToKey__
       KeyCode::O,
       KeyCode::VK_OPEN_URL_KM_OPEN_KEYBOARD_MAESTRO
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::C,
-      KeyCode::VK_OPEN_URL_KM_OPEN_SUBLIME_TEXT
     </autogen>
 
     <autogen>
@@ -9008,7 +9065,19 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         <autogen>
           __KeyToKey__
           KeyCode::COMMA,
+        KeyCode::VK_OPEN_URL_KM_OPEN_APPLICATIONS_PATH
+        </autogen>
+
+        <autogen>
+          __KeyToKey__
+          KeyCode::Y,
         KeyCode::VK_OPEN_URL_KM_OPEN_APP_PATH
+        </autogen>
+
+        <autogen>
+          __KeyToKey__
+          KeyCode::DOT,
+        KeyCode::VK_OPEN_URL_KM_OPEN_ROOT_PATH
         </autogen>
 
         <autogen>
@@ -9061,7 +9130,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
         <autogen>
           __KeyToKey__
-          KeyCode::T,
+          KeyCode::QUOTE,
         KeyCode::VK_OPEN_URL_KM_OPEN_OSS_LA_PATH
         </autogen>
 
@@ -9091,7 +9160,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
         <autogen>
           __KeyToKey__
-          KeyCode::P,
+          KeyCode::T,
         KeyCode::VK_OPEN_URL_KM_OPEN_APPLICATION_SUPPORT_PATH
         </autogen>
 
@@ -12680,6 +12749,17 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
   </item>
 
   <item>
+      <name>general: sim l, = chrome history</name>
+      <identifier>private.sim_l,_google</identifier>
+ <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::L, KeyCode::COMMA,
+          KeyCode::VK_LOCK_ALL_FORCE_OFF,
+          KeyCode::VK_OPEN_URL_ALFRED_CHROME_HISTORY
+    </autogen>
+  </item>
+
+  <item>
       <name>general: sim kl = typinator</name>
       <identifier>private.sim_kl_typinator</identifier>
 
@@ -13028,7 +13108,7 @@ KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTI
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_YANDEX_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
 </autogen>
 </item>
 
@@ -13281,7 +13361,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
 __SimultaneousKeyPresses__
 KeyCode::H, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PDF_CONTENT
+KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
 </autogen>
 </item>
 

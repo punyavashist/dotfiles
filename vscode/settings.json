@@ -10,7 +10,7 @@
     ],
     "editor.lineNumbers": "relative",
     "editor.cursorStyle": "line",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -2,
     "workbench.welcome.enabled": false,
     // _python
     "python.linting.pylintArgs": [
