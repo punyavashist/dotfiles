@@ -170,7 +170,7 @@ nnoremap <Leader>ii   :PlugInstall<CR>
 " check vim health
 nnoremap <Leader>ih   :CheckHealth<CR>
 " delete inside " 
-nnoremap <Leader>o   di"<CR>
+nnoremap <Leader>o   di"
 " update plugins
 nnoremap <Leader>ia   :PlugUpdate<CR>
 nnoremap <Leader>vm   :make<CR>
