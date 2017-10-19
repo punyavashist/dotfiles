@@ -14,7 +14,6 @@
 <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name general]]>
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_gaming</name>
 <url type="shell">
@@ -22,7 +21,6 @@
 <![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name gaming]]>
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_python</name>
 <url type="shell">
@@ -68,7 +66,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_DRAW</name>
 <url type="shell">
@@ -79,7 +76,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_BRILLIANT</name>
 <url type="shell">
@@ -90,7 +86,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_DROPBOX</name>
 <url type="shell">
@@ -101,7 +96,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_REPL</name>
 <url type="shell">
@@ -112,7 +106,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_TWITTER</name>
 <url type="shell">
@@ -123,7 +116,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_TWITCH</name>
 <url type="shell">
@@ -134,7 +126,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODEWARS</name>
 <url type="shell">
@@ -145,7 +136,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITBOOKS</name>
 <url type="shell">
@@ -156,7 +146,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_ARXIV</name>
 <url type="shell"> osascript -e '
@@ -166,7 +155,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_YOUTUBE_AUTOPLAY</name>
 <url type="shell">
@@ -177,7 +165,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GOOGLE_DRIVE</name>
 <url type="shell">
@@ -188,7 +175,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_HASHNODE</name>
 <url type="shell">
@@ -199,7 +185,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GOOGLE</name>
 <url type="shell">
@@ -210,7 +195,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_MAIL</name>
 <url type="shell">
@@ -221,7 +205,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB</name>
 <url type="shell">
@@ -232,7 +215,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODESANDBOX</name>
 <url type="shell">
@@ -243,7 +225,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_DUCKDUCKGO</name>
 <url type="shell">
@@ -254,7 +235,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_NETLIFY</name>
 <url type="shell">
@@ -265,7 +245,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_FRONT</name>
 <url type="shell">
@@ -276,7 +255,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_UNSPLASH</name>
 <url type="shell">
@@ -287,7 +265,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_AWS</name>
 <url type="shell">
@@ -298,7 +275,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_LICHESS</name>
 <url type="shell">
@@ -309,7 +285,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_IMGUR</name>
 <url type="shell">
@@ -320,7 +295,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_TRAVIS</name>
 <url type="shell">
@@ -331,7 +305,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOCALHOST</name>
 <url type="shell">
@@ -342,7 +315,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GO_PLAYGROUND</name>
 <url type="shell">
@@ -353,7 +325,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_REGEX101</name>
 <url type="shell">
@@ -364,7 +335,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_NPM</name>
 <url type="shell">
@@ -375,7 +345,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_POCKET</name>
 <url type="shell">
@@ -386,7 +355,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_ANALYTICS</name>
 <url type="shell">
@@ -397,7 +365,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEARN_ANYTHING</name>
 <url type="shell">
@@ -408,7 +375,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_DRIBBLE</name>
 <url type="shell">
@@ -419,7 +385,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK</name>
 <url type="shell">
@@ -430,7 +395,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_SOURCEGRAPH</name>
 <url type="shell">
@@ -441,7 +405,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA_ANSWER</name>
 <url type="shell">
@@ -452,7 +415,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_SLACK</name>
 <url type="shell">
@@ -463,7 +425,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_TOP_NEW</name>
 <url type="shell">
@@ -474,7 +435,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_MOZILLA_DEV</name>
 <url type="shell">
@@ -485,7 +445,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_PINBOARD_RECENT</name>
 <url type="shell">
@@ -496,7 +455,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_TRENDING</name>
 <url type="shell">
@@ -507,7 +465,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK_REAL_TIME</name>
 <url type="shell">
@@ -518,7 +475,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK_EXCHANGE_HOT</name>
 <url type="shell">
@@ -529,7 +485,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOBSTERS</name>
 <url type="shell">
@@ -540,7 +495,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_COURSERA</name>
 <url type="shell">
@@ -551,7 +505,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODE_UNIVERSITY</name>
 <url type="shell">
@@ -562,7 +515,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_PINBOARD</name>
 <url type="shell">
@@ -573,7 +525,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_JSFIDDLE</name>
 <url type="shell">
@@ -584,7 +535,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_KAGGLE</name>
 <url type="shell">
@@ -595,7 +545,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_ALL</name>
 <url type="shell">
@@ -606,7 +555,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_HABRAHABR</name>
 <url type="shell">
@@ -617,7 +565,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODEPEN</name>
 <url type="shell">
@@ -628,7 +575,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_HACKERRANK</name>
 <url type="shell">
@@ -639,7 +585,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_MEDIUM</name>
 <url type="shell">
@@ -650,7 +595,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_WIKI</name>
 <url type="shell">
@@ -661,7 +605,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_PRODUCT_HUNT</name>
 <url type="shell">
@@ -672,7 +615,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES</name>
 <url type="shell">
@@ -683,7 +625,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_HACKER_NEWS_NEW</name>
 <url type="shell">
@@ -694,7 +635,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT</name>
 <url type="shell">
@@ -705,7 +645,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_MIT_COURSES</name>
 <url type="shell">
@@ -716,7 +655,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_FREECODECAMP</name>
 <url type="shell">
@@ -727,7 +665,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA</name>
 <url type="shell">
@@ -738,7 +675,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_WAKATIME</name>
 <url type="shell">
@@ -749,7 +685,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_ALL_NOTIFICATIONS</name>
 <url type="shell">
@@ -760,7 +695,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK_OVERFLOW</name>
 <url type="shell">
@@ -771,7 +705,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_YOUTUBE</name>
 <url type="shell">
@@ -782,7 +715,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEETCODE</name>
 <url type="shell">
@@ -793,7 +725,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_SOUNDCLOUD</name>
 <url type="shell">
@@ -804,7 +735,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_HCKR_NEWS</name>
 <url type="shell">
@@ -815,7 +745,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_KHAN_ACADEMY</name>
 <url type="shell">
@@ -826,7 +755,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_ALFRED_FORUM</name>
 <url type="shell">
@@ -837,7 +765,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_KM_FORUM</name>
 <url type="shell">
@@ -848,7 +775,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_ASSIGNED_ISSUES</name>
 <url type="shell">
@@ -859,7 +785,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT</name>
 <url type="shell">
@@ -870,7 +795,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_NOTIFICATIONS</name>
 <url type="shell">
@@ -891,7 +815,6 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_TIMER_60</name>
 <url type="shell">
@@ -900,7 +823,6 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_TIMER_20</name>
 <url type="shell">
@@ -909,7 +831,6 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_TIMER_30</name>
 <url type="shell">
@@ -918,7 +839,6 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_TIMER_40</name>
 <url type="shell">
@@ -927,7 +847,6 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_TIMER_50</name>
 <url type="shell">
@@ -948,7 +867,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_LAST_N_MACROS_EXECUTED</name>
 <url type="shell">
@@ -959,7 +877,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_INSERT_BACKQUOTES_AND_CLIP</name>
 <url type="shell">
@@ -970,7 +887,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_1</name>
 <url type="shell">
@@ -993,7 +909,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_F2</name>
 <url type="shell">
@@ -1004,7 +919,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_F3</name>
 <url type="shell">
@@ -1015,7 +929,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_F4</name>
 <url type="shell">
@@ -1026,7 +939,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_F5</name>
 <url type="shell">
@@ -1037,7 +949,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_F6</name>
 <url type="shell">
@@ -1048,7 +959,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_F7</name>
 <url type="shell">
@@ -1059,7 +969,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_DUCKDUCKGO_CLIPBOARD</name>
 <url type="shell">
@@ -1070,7 +979,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_GOOGLE_CLIPBOARD</name>
 <url type="shell">
@@ -1081,7 +989,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_GET_CURRENT_CHROME_URL</name>
 <url type="shell">
@@ -1092,7 +999,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_COMMIT_WIKI_WITH_SPARKLES</name>
 <url type="shell">
@@ -1103,7 +1009,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_CMD_CLICK</name>
 <url type="shell">
@@ -1114,7 +1019,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_MOVE_MOUSE_TOP_MIDDLE</name>
 <url type="shell">
@@ -1125,7 +1029,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PLAY_JS</name>
 <url type="shell">
@@ -1136,7 +1039,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_MATH_HASKELL_FILE</name>
 <url type="shell">
@@ -1147,7 +1049,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_RUN_PY_FILE</name>
 <url type="shell">
@@ -1158,7 +1059,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_GO_PLAY</name>
 <url type="shell">
@@ -1169,7 +1069,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_MOVE_MOUSE_TO_CENTRE_SCREEN</name>
 <url type="shell">
@@ -1180,7 +1079,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY_AND_OPEN_WITH_VS_CODE</name>
 <url type="shell">
@@ -1191,7 +1089,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY_AND_OPEN_WITH_SUBLIME</name>
 <url type="shell">
@@ -1202,7 +1099,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_PASS</name>
 <url type="shell">
@@ -1213,7 +1109,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_TITLE_CASE_TEXT</name>
 <url type="shell">
@@ -1224,7 +1119,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_MANIPULATE_CLIPBOARD</name>
 <url type="shell">
@@ -1235,7 +1129,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_LOWERCASE_SELECTED_TEXT</name>
 <url type="shell">
@@ -1246,7 +1139,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_FOCUS_60_MIN</name>
 <url type="shell">
@@ -1257,7 +1149,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY</name>
 <url type="shell">
@@ -1268,7 +1159,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_IN_SAFARI</name>
 <url type="shell">
@@ -1291,7 +1181,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE</name>
 <url type="shell">
@@ -1314,7 +1203,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_SELECTED_TEXT_TO_ANKI</name>
 <url type="shell">
@@ -1325,7 +1213,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_DECREASE_YOUTUBE_PLAYBACK</name>
 <url type="shell">
@@ -1336,7 +1223,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_INCREASE_YOUTUBE_PLAYBACK</name>
 <url type="shell">
@@ -1347,7 +1233,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_DAYONE</name>
 <url type="shell">
@@ -1358,7 +1243,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_PASTE_SELECTED_TEXT_IN_ITERM</name>
 <url type="shell">
@@ -1369,7 +1253,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_MINDNODE_SCREENSHOT_TABBED</name>
 <url type="shell">
@@ -1380,7 +1263,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_PASTE_SELECTED_TEXT</name>
 <url type="shell">
@@ -1391,7 +1273,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_DICTIONARY_SELECTED_TEXT_TO_MINDNODE</name>
 <url type="shell">
@@ -1402,7 +1283,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_ANKI</name>
 <url type="shell">
@@ -1413,7 +1293,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_SELECTED_TEXT_TO_MINDNODE</name>
 <url type="shell">
@@ -1424,7 +1303,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_ITERM_START_NEXT_LINE</name>
 <url type="shell">
@@ -1435,7 +1313,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE_FILE</name>
 <url type="shell">
@@ -1446,7 +1323,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_NEW_SKETCH_FILE</name>
 <url type="shell">
@@ -1457,7 +1333,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_CREATE_NEW_CONTACT</name>
 <url type="shell">
@@ -1468,7 +1343,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_RESET_BITBAR_TODO</name>
 <url type="shell">
@@ -1479,7 +1353,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_EDIT_KEYBOARD_SHORTCUTS</name>
 <url type="shell">
@@ -1490,7 +1363,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_CUT_CURRENT_LINE</name>
 <url type="shell">
@@ -1501,7 +1373,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI</name>
 <url type="shell">
@@ -1512,7 +1383,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_TEST</name>
 <url type="shell">
@@ -1523,7 +1393,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_LIKE_AND_SAVE_CURRENT_UNSPLASH_WALLPAPER</name>
 <url type="shell">
@@ -1534,7 +1403,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET</name>
 <url type="shell">
@@ -1557,7 +1425,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PRIMARY_NEWS_PRESET</name>
 <url type="shell">
@@ -1568,7 +1435,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_UPPERCASE_SELECTED_TEXT</name>
 <url type="shell">
@@ -1579,7 +1445,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_CUT_WORD_BEFORE_CURSOR</name>
 <url type="shell">
@@ -1590,7 +1455,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_HIGHLIGHT_CURRENT_LINE</name>
 <url type="shell">
@@ -1601,7 +1465,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_MAKE_MARKDOWN_LINK_FROM_SELECTION</name>
 <url type="shell">
@@ -1612,7 +1475,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_MINDNODE</name>
 <url type="shell">
@@ -1623,7 +1485,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_CUT_CURRENT_WORD</name>
 <url type="shell">
@@ -1634,7 +1495,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_MATCH_SYMBOLS</name>
 <url type="shell">
@@ -1657,7 +1517,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_INSERT_STICKY</name>
 <url type="shell">
@@ -1668,7 +1527,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_INSERT_WORKFLOW:</name>
 <url type="shell">
@@ -1679,7 +1537,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_INSERT_LOG_PRINTLN</name>
 <url type="shell">
@@ -1702,7 +1559,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_APPLICATIONS_PATH</name>
 <url type="shell">
@@ -1713,7 +1569,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_ROOT_PATH</name>
 <url type="shell">
@@ -1724,7 +1579,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_XCODE_PATH</name>
 <url type="shell">
@@ -1735,7 +1589,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_GO_SRC_GITHUB</name>
 <url type="shell">
@@ -1746,7 +1599,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_APP_PATH</name>
 <url type="shell">
@@ -1757,7 +1609,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_UNI_PATH</name>
 <url type="shell">
@@ -1768,7 +1619,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PDFS_PATH</name>
 <url type="shell">
@@ -1779,7 +1629,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PAPERS_PATH</name>
 <url type="shell">
@@ -1790,7 +1639,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_IDEAS_PATH</name>
 <url type="shell">
@@ -1801,7 +1649,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_LEARNING_PATH</name>
 <url type="shell">
@@ -1812,7 +1659,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_OSS_LA_PATH</name>
 <url type="shell">
@@ -1823,7 +1669,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_OSS_NIKIVI_PATH</name>
 <url type="shell">
@@ -1834,7 +1679,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_OSS_PATH</name>
 <url type="shell">
@@ -1845,7 +1689,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_DROPBOX_PATH</name>
 <url type="shell">
@@ -1856,7 +1699,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_GOPATH_PATH</name>
 <url type="shell">
@@ -1867,7 +1709,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_DOTFILES_PATH</name>
 <url type="shell">
@@ -1878,7 +1719,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_APPLICATION_SUPPORT_PATH</name>
 <url type="shell">
@@ -1889,7 +1729,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_BOOKS_PATH</name>
 <url type="shell">
@@ -1900,7 +1739,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PROJECTS_PATH</name>
 <url type="shell">
@@ -1911,7 +1749,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_DOCUMENTS_PATH</name>
 <url type="shell">
@@ -1934,7 +1771,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE</name>
 <url type="shell">
@@ -1945,7 +1781,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_CAPRINE</name>
 <url type="shell">
@@ -1956,7 +1791,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_EMACS</name>
 <url type="shell">
@@ -1967,7 +1801,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_OBS</name>
 <url type="shell">
@@ -1978,7 +1811,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PREVIEW</name>
 <url type="shell">
@@ -1989,7 +1821,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PAGES</name>
 <url type="shell">
@@ -2000,7 +1831,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_MAPS</name>
 <url type="shell">
@@ -2011,7 +1841,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_CHARLES</name>
 <url type="shell">
@@ -2022,7 +1851,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_CHROME</name>
 <url type="shell">
@@ -2033,7 +1861,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_TEXTBAR</name>
 <url type="shell">
@@ -2044,7 +1871,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_IINA</name>
 <url type="shell">
@@ -2055,7 +1881,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX</name>
 <url type="shell">
@@ -2066,7 +1891,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_NUMI</name>
 <url type="shell">
@@ -2077,7 +1901,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMISSION</name>
 <url type="shell">
@@ -2088,7 +1911,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_FOG</name>
 <url type="shell">
@@ -2099,7 +1921,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_DR_RACKET</name>
 <url type="shell">
@@ -2110,7 +1931,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_SCREENFLOW</name>
 <url type="shell">
@@ -2121,7 +1941,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_AFFINITY_PHOTO</name>
 <url type="shell">
@@ -2132,7 +1951,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMIT</name>
 <url type="shell">
@@ -2143,7 +1961,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_UI_BROWSER</name>
 <url type="shell">
@@ -2154,7 +1971,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PIXELMATOR</name>
 <url type="shell">
@@ -2165,7 +1981,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_SHIP</name>
 <url type="shell">
@@ -2176,7 +1991,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_SONIC_PI</name>
 <url type="shell">
@@ -2187,7 +2001,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_POSTGRES</name>
 <url type="shell">
@@ -2198,7 +2011,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI_TECHNOLOGY_PREVIEW</name>
 <url type="shell">
@@ -2209,7 +2021,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_SCRIPT_DEBUGGER</name>
 <url type="shell">
@@ -2220,7 +2031,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_SCRIPT_EDITOR</name>
 <url type="shell">
@@ -2231,7 +2041,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_LAST_TIME</name>
 <url type="shell">
@@ -2242,7 +2051,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_DICTIONARY</name>
 <url type="shell">
@@ -2253,7 +2061,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_ANKI</name>
 <url type="shell">
@@ -2276,7 +2083,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PYCHARM</name>
 <url type="shell">
@@ -2287,7 +2093,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_GOGLAND</name>
 <url type="shell">
@@ -2298,7 +2103,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PAPRIKA_RECIPE_MANAGER</name>
 <url type="shell">
@@ -2309,7 +2113,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_BRAINWAVE_STUDIO</name>
 <url type="shell">
@@ -2320,7 +2123,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_MACDOWN</name>
 <url type="shell">
@@ -2331,7 +2133,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_ACTIVITY_MONITOR</name>
 <url type="shell">
@@ -2342,7 +2143,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_FLUME</name>
 <url type="shell">
@@ -2353,7 +2153,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_SUBLIME_TEXT</name>
 <url type="shell">
@@ -2364,7 +2163,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_SYSTEM_PREFERENCES</name>
 <url type="shell">
@@ -2375,7 +2173,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_MUSIXMATCH_LYRICS</name>
 <url type="shell">
@@ -2386,7 +2183,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_TIMING</name>
 <url type="shell">
@@ -2397,7 +2193,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_GITTER</name>
 <url type="shell">
@@ -2408,7 +2203,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_1PASSWORD</name>
 <url type="shell">
@@ -2419,7 +2213,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_AIRTABLE</name>
 <url type="shell">
@@ -2430,7 +2223,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_LITTLE_SNITCH_CONFIGURATION</name>
 <url type="shell">
@@ -2441,7 +2233,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_NOTES</name>
 <url type="shell">
@@ -2452,7 +2243,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_SIMULATOR</name>
 <url type="shell">
@@ -2463,7 +2253,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_POCKET</name>
 <url type="shell">
@@ -2474,7 +2263,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_YNAB</name>
 <url type="shell">
@@ -2485,7 +2273,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_IBOOKS</name>
 <url type="shell">
@@ -2496,7 +2283,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_KARABINER_PREFERENCES</name>
 <url type="shell">
@@ -2507,7 +2293,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_LICECAP</name>
 <url type="shell">
@@ -2518,7 +2303,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_DISCORD</name>
 <url type="shell">
@@ -2529,7 +2313,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH</name>
 <url type="shell">
@@ -2540,7 +2323,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_CODERUNNER</name>
 <url type="shell">
@@ -2551,7 +2333,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_XCCELLO</name>
 <url type="shell">
@@ -2562,7 +2343,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_TOWER</name>
 <url type="shell">
@@ -2573,7 +2353,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PAW</name>
 <url type="shell">
@@ -2584,7 +2363,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_SOULVER</name>
 <url type="shell">
@@ -2595,7 +2373,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_REEDER</name>
 <url type="shell">
@@ -2606,7 +2383,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_FINDER</name>
 <url type="shell">
@@ -2617,7 +2393,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_CONTACTS</name>
 <url type="shell">
@@ -2628,7 +2403,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_TEXPAD</name>
 <url type="shell">
@@ -2639,7 +2413,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_SPOTIFY</name>
 <url type="shell">
@@ -2650,7 +2423,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_FANTASTICAL</name>
 <url type="shell">
@@ -2661,7 +2433,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_BETTERTOUCHTOOL</name>
 <url type="shell">
@@ -2672,7 +2443,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_AIRMAIL</name>
 <url type="shell">
@@ -2683,7 +2453,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI</name>
 <url type="shell">
@@ -2694,7 +2463,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_ULYSSES</name>
 <url type="shell">
@@ -2705,7 +2473,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_MINDNODE</name>
 <url type="shell">
@@ -2716,7 +2483,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_XCODE</name>
 <url type="shell">
@@ -2727,7 +2493,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_ITERM</name>
 <url type="shell">
@@ -2738,7 +2503,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_VS_CODE</name>
 <url type="shell">
@@ -2749,7 +2513,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_ITERM</name>
 <url type="shell">
@@ -2760,7 +2523,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_TELEGRAM</name>
 <url type="shell">
@@ -2771,7 +2533,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_2DO</name>
 <url type="shell">
@@ -2782,7 +2543,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_SLACK</name>
 <url type="shell">
@@ -2793,7 +2553,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PDF_EXPERT</name>
 <url type="shell">
@@ -2804,7 +2563,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_TEXTUAL</name>
 <url type="shell">
@@ -2815,7 +2573,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_SNIPPETSLAB</name>
 <url type="shell">
@@ -2826,7 +2583,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_KEYBOARD_MAESTRO</name>
 <url type="shell">
@@ -2837,7 +2593,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_ALFRED_PREFERENCES</name>
 <url type="shell">
@@ -2848,7 +2603,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_AIRMAIL</name>
 <url type="shell">
@@ -2859,7 +2613,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_ULYSSES</name>
 <url type="shell">
@@ -2870,7 +2623,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_DAY_ONE</name>
 <url type="shell">
@@ -2881,7 +2633,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_TWEETBOT</name>
 <url type="shell">
@@ -2892,7 +2643,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_INTELLIJ</name>
 <url type="shell">
@@ -2903,7 +2653,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_CHATTY</name>
 <url type="shell">
@@ -2914,7 +2663,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PIXAVE</name>
 <url type="shell">
@@ -2925,7 +2673,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PIXAVE</name>
 <url type="shell">
@@ -2936,7 +2683,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PIXAVE</name>
 <url type="shell">
@@ -2947,7 +2693,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PIXAVE</name>
 <url type="shell">
@@ -2958,7 +2703,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PIXAVE</name>
 <url type="shell">
@@ -2976,53 +2720,44 @@ end tell
 <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TODO_TASK</name>
 <url>hammerspoon://showTodoTask</url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_OPEN_CONSOLE</name>
 <url>hammerspoon://openConsole</url>
 </vkopenurldef>
-
 <vkopenurldef>
 <background/>
 <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_ACTIVE_WINDOWS</name>
 <url>hammerspoon://showActiveWindows</url>
 </vkopenurldef>
-
 <vkopenurldef>
 <background/>
 <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_CLIPBOARD_CONTENT</name>
 <url>hammerspoon://showClipBoardContent</url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_VISUALLY_CIRCLE_MOUSE</name>
 <url>hammerspoon://visuallyCircleMouse</url>
 </vkopenurldef>
-
 <vkopenurldef>
 <background/>
 <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME</name>
 <url>hammerspoon://showTime</url>
 </vkopenurldef>
-
 <vkopenurldef>
 <background/>
 <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_RELOAD_CONFIG</name>
 <url>hammerspoon://reloadConfig</url>
 </vkopenurldef>
-
 <vkopenurldef>
 <background/>
 <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_TESTER</name>
 <url>hammerspoon://tester</url>
 </vkopenurldef>
-
 <vkopenurldef>
 <background/>
 <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_CYCLE_WINDOWS_NEXT</name>
 <url>hammerspoon://cycleWindowsNext</url>
 </vkopenurldef>
-
 <vkopenurldef>
 <background/>
 <name>KeyCode::VK_OPEN_URL_HAMMERSPOON_CYCLE_WINDOWS_PREVIOUS</name>
@@ -3040,7 +2775,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_FACEBOOK</name>
 <url type="shell">
@@ -3051,7 +2785,6 @@ end tell
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_3000</name>
 <url type="shell">
@@ -3072,7 +2805,6 @@ tell application "Alfred 3" to run trigger "curl" in workflow "se.psu.alfred.dow
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY</name>
 <url type="shell">
@@ -3081,7 +2813,6 @@ tell application "Alfred 3" to run trigger "googleLucky" in workflow "net.deanis
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_KARABINER_PROFILES</name>
 <url type="shell">
@@ -3090,7 +2821,6 @@ tell application "Alfred 3" to run trigger "karabiner switch" in workflow "com.g
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_UNITS</name>
 <url type="shell">
@@ -3099,7 +2829,6 @@ tell application "Alfred 3" to run trigger "units" in workflow "units.3.4.design
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_CHROME_PROFILES</name>
 <url type="shell">
@@ -3108,7 +2837,6 @@ tell application "Alfred 3" to run trigger "chromeProfiles" in workflow "com.mdr
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_CHROME_HISTORY</name>
 <url type="shell">
@@ -3117,7 +2845,6 @@ tell application "Alfred 3" to run trigger "history" in workflow "com.peterschma
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_CHEATSHEET</name>
 <url type="shell">
@@ -3126,7 +2853,6 @@ tell application "Alfred 3" to run trigger "cheatsheet" in workflow "com.mutdmou
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_WATCH_TRASH</name>
 <url type="shell">
@@ -3135,7 +2861,6 @@ tell application "Alfred 3" to run trigger "trash" in workflow "com.vitorgalvao.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SOULVER</name>
 <url type="shell">
@@ -3144,7 +2869,6 @@ tell application "Alfred 3" to run trigger "soulver" in workflow "nikivi.search.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_SHEETS</name>
 <url type="shell">
@@ -3153,7 +2877,6 @@ tell application "Alfred 3" to run trigger "Ulysses sheets" in workflow "nikivi.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MARKDOWN</name>
 <url type="shell">
@@ -3162,7 +2885,6 @@ tell application "Alfred 3" to run trigger "markdown" in workflow "nikivi.search
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALL_FILES</name>
 <url type="shell">
@@ -3171,7 +2893,6 @@ tell application "Alfred 3" to run trigger "allFiles" in workflow "nikivi.search
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TWITTER</name>
 <url type="shell">
@@ -3180,7 +2901,6 @@ tell application "Alfred 3" to run trigger "twitter" in workflow "nikivi.search-
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_COMMIT_FOLDERS</name>
 <url type="shell">
@@ -3189,7 +2909,6 @@ tell application "Alfred 3" to run trigger "commitFolders" in workflow "nikivi.c
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_FILTER_KNOWLEDGE_WIKI_FOLDERS</name>
 <url type="shell">
@@ -3198,7 +2917,6 @@ tell application "Alfred 3" to run trigger "wikiFolders" in workflow "nikivi.sea
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARH_MARKDOWN_WIKI</name>
 <url type="shell">
@@ -3207,7 +2925,6 @@ tell application "Alfred 3" to run trigger "markdownWiki" in workflow "nikivi.se
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MY_GITBOOKS_WIKI</name>
 <url type="shell">
@@ -3216,7 +2933,6 @@ tell application "Alfred 3" to run trigger "gitbooksWiki" in workflow "nikivi.se
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_WATCH_DROPBOX_SHARES</name>
 <url type="shell">
@@ -3225,7 +2941,6 @@ tell application "Alfred 3" to run trigger "dropboxShares" in workflow "com.vito
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MONTHS_NUMBERS</name>
 <url type="shell">
@@ -3234,7 +2949,6 @@ tell application "Alfred 3" to run trigger "months" in workflow "nikivi.month.nu
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_TIME</name>
 <url type="shell">
@@ -3243,7 +2957,6 @@ tell application "Alfred 3" to run trigger "time" in workflow "nikivi.time" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAGES</name>
 <url type="shell">
@@ -3252,7 +2965,6 @@ tell application "Alfred 3" to run trigger "searchPages" in workflow "nikivi.sea
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_AFRED_GET_APP_VERSION</name>
 <url type="shell">
@@ -3261,7 +2973,6 @@ tell application "Alfred 3" to run trigger "getVersion" in workflow "com.vitorga
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_ITERM_TTY</name>
 <url type="shell">
@@ -3270,7 +2981,6 @@ tell application "Alfred 3" to run trigger "tty" in workflow "net.isometry.alfre
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_GUTENBERG</name>
 <url type="shell">
@@ -3279,7 +2989,6 @@ tell application "Alfred 3" to run trigger "gutenberg" in workflow "net.deanishe
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_GO_TO_SUB</name>
 <url type="shell">
@@ -3288,7 +2997,6 @@ tell application "Alfred 3" to run trigger "goToSub" in workflow "nikivi.go.to.s
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_NEW_NOTE</name>
 <url type="shell">
@@ -3297,7 +3005,6 @@ tell application "Alfred 3" to run trigger "createNote" in workflow "com.surreal
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_APPLE_MAPS</name>
 <url type="shell">
@@ -3306,7 +3013,6 @@ tell application "Alfred 3" to run trigger "searchMaps" in workflow "search.appl
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_CHROME_BOOKMARKS</name>
 <url type="shell">
@@ -3315,7 +3021,6 @@ tell application "Alfred 3" to run trigger "searchChromeBookmarks" in workflow "
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_CRYPTO_TRACK</name>
 <url type="shell">
@@ -3324,7 +3029,6 @@ tell application "Alfred 3" to run trigger "cryptoTrack" in workflow "com.crypro
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MEDIUM</name>
 <url type="shell">
@@ -3333,7 +3037,6 @@ tell application "Alfred 3" to run trigger "searchMedium" in workflow "nikivi.se
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_HACKER_NEWS</name>
 <url type="shell">
@@ -3342,7 +3045,6 @@ tell application "Alfred 3" to run trigger "searchHN" in workflow "nikivi.search
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_VIEW_SCREENSHOTS</name>
 <url type="shell">
@@ -3351,7 +3053,6 @@ tell application "Alfred 3" to run trigger "webScreenshotsTaken" in workflow "co
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_STACK</name>
 <url type="shell">
@@ -3360,7 +3061,6 @@ tell application "Alfred 3" to run trigger "searchStack" in workflow "nikivi.sea
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_DISPLAY_SONG</name>
 <url type="shell">
@@ -3369,7 +3069,6 @@ tell application "Alfred 3" to run trigger "display_current_track_notification" 
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_QUORA</name>
 <url type="shell">
@@ -3378,7 +3077,6 @@ tell application "Alfred 3" to run trigger "searchQuora" in workflow "nikivi.sea
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SCREENSHOT_TO_GOOGLE</name>
 <url type="shell">
@@ -3387,7 +3085,6 @@ tell application "Alfred 3" to run trigger "similarImage" in workflow "net.deani
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PDF_CONTENT</name>
 <url type="shell">
@@ -3396,7 +3093,6 @@ tell application "Alfred 3" to run trigger "pdf" in workflow "nikivi.search.mind
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_WIFI_CHECK</name>
 <url type="shell">
@@ -3405,7 +3101,6 @@ tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_EDIT_FILES</name>
 <url type="shell">
@@ -3414,7 +3109,6 @@ tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_WEB_SEARCHES</name>
 <url type="shell">
@@ -3433,7 +3127,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_CLI</name>
 <url type="shell">
@@ -3442,7 +3135,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_RECENT</name>
 <url type="shell">
@@ -3451,7 +3143,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_REDDIT_USERS</name>
 <url type="shell">
@@ -3460,7 +3151,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_QUORA</name>
 <url type="shell">
@@ -3469,7 +3159,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_ARTICLES</name>
 <url type="shell">
@@ -3478,7 +3167,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_CODEPEN</name>
 <url type="shell">
@@ -3487,7 +3175,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_IMAGES</name>
 <url type="shell">
@@ -3496,7 +3183,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_PODCASTS</name>
 <url type="shell">
@@ -3505,7 +3191,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_RESEARCH_PAPERS</name>
 <url type="shell">
@@ -3514,7 +3199,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_GISTS</name>
 <url type="shell">
@@ -3523,7 +3207,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_STACK</name>
 <url type="shell">
@@ -3532,7 +3215,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_YOUTUBE</name>
 <url type="shell">
@@ -3541,7 +3223,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_CLI</name>
 <url type="shell">
@@ -3550,7 +3231,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_MUSIC_PLAYLISTS</name>
 <url type="shell">
@@ -3559,7 +3239,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_SLACK</name>
 <url type="shell">
@@ -3568,7 +3247,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_GITTER</name>
 <url type="shell">
@@ -3577,7 +3255,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_NOTES</name>
 <url type="shell">
@@ -3586,7 +3263,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_TWITTER</name>
 <url type="shell">
@@ -3595,7 +3271,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_COURSES</name>
 <url type="shell">
@@ -3604,7 +3279,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_PINBOARD</name>
 <url type="shell">
@@ -3613,7 +3287,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_BOOKS</name>
 <url type="shell">
@@ -3622,7 +3295,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_BLOGS</name>
 <url type="shell">
@@ -3631,7 +3303,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_PERSONAL</name>
 <url type="shell">
@@ -3640,7 +3311,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_WEB</name>
 <url type="shell">
@@ -3649,7 +3319,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_GITHUB_USERS</name>
 <url type="shell">
@@ -3658,7 +3327,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_PROFILES</name>
 <url type="shell">
@@ -3667,7 +3335,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_REDDIT</name>
 <url type="shell">
@@ -3686,7 +3353,6 @@ tell application "Alfred 3" to run trigger "all-folders" in workflow "net.deanis
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_TRANSMIT</name>
 <url type="shell">
@@ -3695,7 +3361,6 @@ tell application "Alfred 3" to run trigger "transmit" in workflow "sher.transmit
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_UPDATE_MIND</name>
 <url type="shell">
@@ -3704,7 +3369,6 @@ tell application "Alfred 3" to run trigger "updateMind" in workflow "nikivi.mind
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SHOW_QUEUE</name>
 <url type="shell">
@@ -3713,7 +3377,6 @@ tell application "Alfred 3" to run trigger "playQueue" in workflow "com.vdesabou
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_CURRENT_SONG</name>
 <url type="shell">
@@ -3722,7 +3385,6 @@ tell application "Alfred 3" to run trigger "web_search_current_track" in workflo
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_OPEN_LYRICS</name>
 <url type="shell">
@@ -3731,7 +3393,6 @@ tell application "Alfred 3" to run trigger "lyrics" in workflow "com.vdesabou.sp
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_GIT_REPOS_UPDATE</name>
 <url type="shell">
@@ -3750,7 +3411,6 @@ tell application "Alfred 3" to run trigger "playDirWatch" in workflow "com.vitor
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_REMOVE_SONG_FROM_PLAYLIST</name>
 <url type="shell">
@@ -3759,7 +3419,6 @@ tell application "Alfred 3" to run trigger "remove_current_track_from" in workfl
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_WATCH_SPOTIFY_LIKES</name>
 <url type="shell">
@@ -3768,7 +3427,6 @@ tell application "Alfred 3" to run trigger "show_alfred_playlist" in workflow "c
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_ADD_SONG_SPOTIFY</name>
 <url type="shell">
@@ -3777,7 +3435,6 @@ tell application "Alfred 3" to run trigger "add_current_track_to_alfred_playlist
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_IMGUR_SCREENSHOT</name>
 <url type="shell">
@@ -3786,7 +3443,6 @@ tell application "Alfred 3" to run trigger "webScreenshot" in workflow "com.vito
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_DASH_PROFILE_SWITCH</name>
 <url type="shell">
@@ -3795,7 +3451,6 @@ tell application "Alfred 3" to run trigger "dashSwitch" in workflow "nikivi.dash
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_GIT_REPOS</name>
 <url type="shell">
@@ -3804,7 +3459,6 @@ tell application "Alfred 3" to run trigger "gitRepos" in workflow "net.deanishe.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_ICLOUD_TABS</name>
 <url type="shell">
@@ -3814,7 +3468,6 @@ tell application "Alfred 3" to run trigger "iCloud tabs" in workflow "com.targum
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_PINBOARD</name>
 <url type="shell">
@@ -3823,7 +3476,6 @@ tell application "Alfred 3" to run trigger "pinboard" in workflow "com.vitorgalv
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_HACKER_NEWS</name>
 <url type="shell">
@@ -3832,7 +3484,6 @@ tell application "Alfred 3" to run trigger "hackerNews" in workflow "com.vitorga
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SKETCH</name>
 <url type="shell">
@@ -3851,7 +3502,6 @@ tell application "Alfred 3" to run trigger "searchDocs" in workflow "com.nirelba
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_INSIDE_MINDMAPS</name>
 <url type="shell">
@@ -3860,7 +3510,6 @@ tell application "Alfred 3" to run trigger "inside" in workflow "nikivi.mind" wi
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_OPEN_LEARNING_MINDMAPS</name>
 <url type="shell">
@@ -3869,7 +3518,6 @@ tell application "Alfred 3" to run trigger "learnAnything" in workflow "nikivi.l
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_BING</name>
 <url type="shell">
@@ -3878,7 +3526,6 @@ tell application "Alfred 3" to run trigger "bing" in workflow "net.deanishe.alfr
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_DESKTOP_CLEAN</name>
 <url type="shell">
@@ -3887,7 +3534,6 @@ tell application "Alfred 3" to run trigger "cleanDesktop" in workflow "nikivi.cl
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_READING_LIST</name>
 <url type="shell">
@@ -3896,7 +3542,6 @@ tell application "Alfred 3" to run trigger "reading-list" in workflow "net.deani
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_BOOKMARKS</name>
 <url type="shell">
@@ -3905,7 +3550,6 @@ tell application "Alfred 3" to run trigger "searchSafariBookmarks" in workflow "
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_AWESOME_LIST</name>
 <url type="shell">
@@ -3914,7 +3558,6 @@ tell application "Alfred 3" to run trigger "searchAwesome" in workflow "com.maru
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SUBREDDITS</name>
 <url type="shell">
@@ -3923,7 +3566,6 @@ tell application "Alfred 3" to run trigger "searchRedditSubreddits" in workflow 
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_DESKTOP_DIR_WATCH</name>
 <url type="shell">
@@ -3932,7 +3574,6 @@ tell application "Alfred 3" to run trigger "desktopDirWatch" in workflow "com.vi
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SYNONYMS_SEARCH</name>
 <url type="shell">
@@ -3941,7 +3582,6 @@ tell application "Alfred 3" to run trigger "synonym" in workflow "com.vitorgalva
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_WOLFRAM_ALPHA</name>
 <url type="shell">
@@ -3950,7 +3590,6 @@ tell application "Alfred 3" to run trigger "searchWolframAlpha" in workflow "nik
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_CREATE_ARTIST_RADIO</name>
 <url type="shell">
@@ -3959,7 +3598,6 @@ tell application "Alfred 3" to run trigger "artist_radio" in workflow "com.vdesa
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_CREATE_SONG_RADIO</name>
 <url type="shell">
@@ -3968,7 +3606,6 @@ tell application "Alfred 3" to run trigger "song_radio" in workflow "com.vdesabo
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_PLAY_ARTIST_OF_SONG</name>
 <url type="shell">
@@ -3977,7 +3614,6 @@ tell application "Alfred 3" to run trigger "playArtistOfSong" in workflow "com.v
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_PLAY_ALBUM_OF_CURRENT_SONG</name>
 <url type="shell">
@@ -3986,7 +3622,6 @@ tell application "Alfred 3" to run trigger "playAlbumOfSong" in workflow "com.vd
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_PLAY_MY_LIKES_PLAYLIST</name>
 <url type="shell">
@@ -3996,7 +3631,6 @@ tell application "Alfred 3" to run trigger "play_alfred_playlist" in workflow "c
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_ADD_SONG_TO_PLAYLIST</name>
 <url type="shell">
@@ -4005,7 +3639,6 @@ tell application "Alfred 3" to run trigger "add_current_track_to" in workflow "c
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_UPDATE_GITHUB_INDEX</name>
 <url type="shell">
@@ -4014,7 +3647,6 @@ tell application "Alfred 3" to run trigger "updateGitRepos" in workflow "me.lach
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_SEARCH_TEX_FILES</name>
 <url type="shell">
@@ -4023,7 +3655,6 @@ tell application "Alfred 3" to run trigger "SearchTexFiles" in workflow "nikivi.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_COLOUR_PICKER</name>
 <url type="shell">
@@ -4032,7 +3663,6 @@ tell application "Alfred 3" to run trigger "colourPicker" in workflow "tylereich
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_ACTIVATE_FOCUS</name>
 <url type="shell">
@@ -4041,7 +3671,6 @@ tell application "Alfred 3" to run trigger "activateFocus" in workflow "nikivi.b
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_JAVA_PROJECTS_SEARCH</name>
 <url type="shell">
@@ -4050,7 +3679,6 @@ tell application "Alfred 3" to run trigger "javaProjects" in workflow "com.codeb
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH</name>
 <url type="shell">
@@ -4059,7 +3687,6 @@ tell application "Alfred 3" to run trigger "ssh" in workflow "net.deanishe.alfre
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PLAYGROUNDS</name>
 <url type="shell">
@@ -4068,7 +3695,6 @@ tell application "Alfred 3" to run trigger "searchPlaygrounds" in workflow "niki
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW</name>
 <url type="shell">
@@ -4077,7 +3703,6 @@ tell application "Alfred 3" to run trigger "eggTimerView" in workflow "carlosnz.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_TIMER_START</name>
 <url type="shell">
@@ -4086,7 +3711,6 @@ tell application "Alfred 3" to run trigger "eggTimerStart" in workflow "carlosnz
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GODOC</name>
 <url type="shell">
@@ -4095,7 +3719,6 @@ tell application "Alfred 3" to run trigger "goDocSearch" in workflow "nikivi.sea
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_ACTIVE_WINDOWS</name>
 <url type="shell">
@@ -4104,7 +3727,6 @@ tell application "Alfred 3" to run trigger "openWindows" in workflow "jnewland.a
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE_CONTENT</name>
 <url type="shell">
@@ -4113,7 +3735,6 @@ tell application "Alfred 3" to run trigger "searchMindNodeContent" in workflow "
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_NEW_IOS_PLAYGROUND</name>
 <url type="shell">
@@ -4122,7 +3743,6 @@ tell application "Alfred 3" to run trigger "newiOSPlayground" in workflow "com.c
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB_REPOS</name>
 <url type="shell">
@@ -4131,7 +3751,6 @@ tell application "Alfred 3" to run trigger "githubRepoSearch" in workflow "com.p
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PODS</name>
 <url type="shell">
@@ -4140,7 +3759,6 @@ tell application "Alfred 3" to run trigger "podSearch" in workflow "ben.pod" wit
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH</name>
 <url type="shell">
@@ -4149,7 +3767,6 @@ tell application "Alfred 3" to run trigger "searchDash" in workflow "com.nikivi.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_YANDEX_SEARCH</name>
 <url type="shell">
@@ -4158,7 +3775,6 @@ tell application "Alfred 3" to run trigger "yandex" in workflow "net.deanishe.al
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_LAYOUT_MANAGER</name>
 <url type="shell">
@@ -4167,7 +3783,6 @@ tell application "Alfred 3" to run trigger "layoutManager" in workflow "de.leano
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_PROCESS_CONTROL</name>
 <url type="shell">
@@ -4176,7 +3791,6 @@ tell application "Alfred 3" to run trigger "processControl" in workflow "com.vit
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_CSS_COOKBOOK</name>
 <url type="shell">
@@ -4185,7 +3799,6 @@ tell application "Alfred 3" to run trigger "cssCookbook" in workflow "com.bitbaz
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_HTTP_CODES</name>
 <url type="shell">
@@ -4194,7 +3807,6 @@ tell application "Alfred 3" to run trigger "httpStatusCodes" in workflow "fred.l
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_ABOUT_THIS_MAC</name>
 <url type="shell">
@@ -4203,7 +3815,6 @@ tell application "Alfred 3" to run trigger "aboutThisMac" in workflow "yeraze.Ab
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_OPEN_MAN_PAGE_IN_PDF</name>
 <url type="shell">
@@ -4212,7 +3823,6 @@ tell application "Alfred 3" to run trigger "manInPDFSearch" in workflow "net.iso
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_BATTERY</name>
 <url type="shell">
@@ -4221,7 +3831,6 @@ tell application "Alfred 3" to run trigger "battery" in workflow "com.benzi.a2w.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_GITHUB_GISTS</name>
 <url type="shell">
@@ -4230,7 +3839,6 @@ tell application "Alfred 3" to run trigger "gists" in workflow "com.danielecook.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_EXPLAIN_SHELL</name>
 <url type="shell">
@@ -4239,7 +3847,6 @@ tell application "Alfred 3" to run trigger "explainShell" in workflow "com.ryanp
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_LOREM_IPSUM</name>
 <url type="shell">
@@ -4248,7 +3855,6 @@ tell application "Alfred 3" to run trigger "loremIpsum" in workflow "jeremy.lore
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_IMDB_SEARCH</name>
 <url type="shell">
@@ -4257,7 +3863,6 @@ tell application "Alfred 3" to run trigger "imdbSearch" in workflow "alfredimdbs
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GIPHY</name>
 <url type="shell">
@@ -4266,7 +3871,6 @@ tell application "Alfred 3" to run trigger "giphySearch" in workflow "com.arbitr
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_GEOLOCATION</name>
 <url type="shell">
@@ -4275,7 +3879,6 @@ tell application "Alfred 3" to run trigger "geoLocation" in workflow "com.ryanpa
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_DATE_CALCULATOR</name>
 <url type="shell">
@@ -4284,7 +3887,6 @@ tell application "Alfred 3" to run trigger "dateCalculator" in workflow "de.leen
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_FONT_AWESOME</name>
 <url type="shell">
@@ -4303,7 +3905,6 @@ tell application "Alfred 3" to run trigger "searchGoogleDrive" in workflow "com.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_DISPLAY_BRIGHTNESS</name>
 <url type="shell">
@@ -4312,7 +3913,6 @@ tell application "Alfred 3" to run trigger "displayBrightness" in workflow "com.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_PLAYLISTS</name>
 <url type="shell">
@@ -4321,7 +3921,6 @@ tell application "Alfred 3" to run trigger "spotifyPlaylists" in workflow "com.v
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MAILTO</name>
 <url type="shell">
@@ -4330,7 +3929,6 @@ tell application "Alfred 3" to run trigger "mailTo" in workflow "net.deanishe.al
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB</name>
 <url type="shell">
@@ -4339,7 +3937,6 @@ tell application "Alfred 3" to run trigger "searchGithub" in workflow "nikivi.se
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_INDEXED_GITHUB</name>
 <url type="shell">
@@ -4348,7 +3945,6 @@ tell application "Alfred 3" to run trigger "jumpToGithubRepo" in workflow "me.la
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SHOW_CALENDAR</name>
 <url type="shell">
@@ -4357,7 +3953,6 @@ tell application "Alfred 3" to run trigger "showCalendar" in workflow "zmin.cale
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_CONTACTS_TEXT</name>
 <url type="shell">
@@ -4366,7 +3961,6 @@ tell application "Alfred 3" to run trigger "searchContactsText" in workflow "com
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TIMEZONES</name>
 <url type="shell">
@@ -4375,7 +3969,6 @@ tell application "Alfred 3" to run trigger "timezonesSearch" in workflow "carlos
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_CAN_I_USE</name>
 <url type="shell">
@@ -4384,7 +3977,6 @@ tell application "Alfred 3" to run trigger "canIUse" in workflow "com.farrell.ca
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_TRANSLATE_EN_RU</name>
 <url type="shell">
@@ -4393,7 +3985,6 @@ tell application "Alfred 3" to run trigger "translateEnglishRussian" in workflow
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_WORKFLOWS</name>
 <url type="shell">
@@ -4402,7 +3993,6 @@ tell application "Alfred 3" to run trigger "searchThroughAlfredExtensions" in wo
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES</name>
 <url type="shell">
@@ -4411,7 +4001,6 @@ tell application "Alfred 3" to run trigger "searchPawFIles" in workflow "nikivi.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE</name>
 <url type="shell">
@@ -4420,7 +4009,6 @@ tell application "Alfred 3" to run trigger "xcode" in workflow "com.sindresorhus
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES</name>
 <url type="shell">
@@ -4429,7 +4017,6 @@ tell application "Alfred 3" to run trigger "google images" in workflow "net.dean
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_HASTEBIN</name>
 <url type="shell">
@@ -4438,7 +4025,6 @@ tell application "Alfred 3" to run trigger "hastebinFromClipboard" in workflow "
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SYMBOLS_SEARCH</name>
 <url type="shell">
@@ -4447,7 +4033,6 @@ tell application "Alfred 3" to run trigger "symbolsSearch" in workflow "pw.symbo
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_UNINSTALL_WITH_CLEANMYMAC</name>
 <url type="shell">
@@ -4456,7 +4041,6 @@ tell application "Alfred 3" to run trigger "uninstallWithCleanMyMac" in workflow
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <background/>
 <name>KeyCode::VK_OPEN_URL_ALFRED_RELOAD_KARABINER_XML</name>
@@ -4466,7 +4050,6 @@ tell application "Alfred 3" to run trigger "reloadKarabinerXML" in workflow "com
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS</name>
 <url type="shell">
@@ -4485,7 +4068,6 @@ tell application "Alfred 3" to run trigger "dictionarySearch" in workflow "nikiv
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_DISMISS_NOTIFICATIONS</name>
 <url type="shell">
@@ -4494,7 +4076,6 @@ tell application "Alfred 3" to run trigger "dismissNotifications" in workflow "s
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_FORCE_EMPTY_TRASH</name>
 <url type="shell">
@@ -4503,7 +4084,6 @@ tell application "Alfred 3" to run trigger "forceEmptyTrash" in workflow "com.re
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_REDDIT</name>
 <url type="shell">
@@ -4512,7 +4092,6 @@ tell application "Alfred 3" to run trigger "searchReddit" in workflow "nikivi.se
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_FORUM</name>
 <url type="shell">
@@ -4521,7 +4100,6 @@ tell application "Alfred 3" to run trigger "searchAlfredForum" in workflow "niki
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_IDOPE</name>
 <url type="shell">
@@ -4540,7 +4118,6 @@ tell application "Alfred 3" to run trigger "snippetsLabSearch" in workflow "com.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_RECENT_DOWNLOADS</name>
 <url type="shell">
@@ -4549,7 +4126,6 @@ tell application "Alfred 3" to run trigger "recentDownloads" in workflow "recent
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK</name>
 <url type="shell">
@@ -4568,7 +4144,6 @@ tell application "Alfred 3" to run trigger "spot_mini" in workflow "com.vdesabou
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH</name>
 <url type="shell">
@@ -4577,7 +4152,6 @@ tell application "Alfred 3" to run trigger "keyboardMaestroSearch" in workflow "
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH</name>
 <url type="shell">
@@ -4596,7 +4170,6 @@ tell application "Alfred 3" to run trigger "ulyssesGroups" in workflow "nikivi.s
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_ITERM_SESSIONS</name>
 <url type="shell">
@@ -4605,7 +4178,6 @@ tell application "Alfred 3" to run trigger "itermSessions" in workflow "com.madv
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY</name>
 <url type="shell">
@@ -4614,7 +4186,6 @@ tell application "Alfred 3" to run trigger "history" in workflow "net.deanishe.a
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS</name>
 <url type="shell">
@@ -4623,7 +4194,6 @@ tell application "Alfred 3" to run trigger "viewSafariTabs" in workflow "net.dea
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_WEATHER_TODAY</name>
 <url type="shell">
@@ -4632,7 +4202,6 @@ tell application "Alfred 3" to run trigger "start" in workflow "com.jason0x43.al
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_NEW_BITBAR_TASK</name>
 <url type="shell">
@@ -4641,7 +4210,6 @@ tell application "Alfred 3" to run trigger "newBitBarTask" in workflow "nikivi.b
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_ASK_CREATE_SHARE</name>
 <url type="shell">
@@ -4650,7 +4218,6 @@ tell application "Alfred 3" to run trigger "askCreateShare" in workflow "nikivi.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE</name>
 <url type="shell">
@@ -4659,7 +4226,6 @@ tell application "Alfred 3" to run trigger "searchMindnode" in workflow "nikivi.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PDF</name>
 <url type="shell">
@@ -4668,7 +4234,6 @@ tell application "Alfred 3" to run trigger "searchPDF" in workflow "nikivi.searc
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_FOLDERS</name>
 <url type="shell">
@@ -4677,7 +4242,6 @@ tell application "Alfred 3" to run trigger "searchFolders" in workflow "nikivi.s
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_GITHUB</name>
 <url type="shell">
@@ -4686,7 +4250,6 @@ tell application "Alfred 3" to run trigger "github" in workflow "de.gh01.alfred.
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE</name>
 <url type="shell">
@@ -4695,7 +4258,6 @@ tell application "Alfred 3" to run trigger "keyClue" in workflow "com.tedwise.me
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH</name>
 <url type="shell">
@@ -4704,7 +4266,6 @@ tell application "Alfred 3" to run trigger "youtube" in workflow "net.deanishe.a
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH</name>
 <url type="shell">
@@ -4713,7 +4274,6 @@ tell application "Alfred 3" to run trigger "duckduckgo" in workflow "net.deanish
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_WIKI_SIMPLE_SEARCH</name>
 <url type="shell">
@@ -4722,7 +4282,6 @@ tell application "Alfred 3" to run trigger "wiki simple" in workflow "net.deanis
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_AMAZON_SEARCH</name>
 <url type="shell">
@@ -4731,7 +4290,6 @@ tell application "Alfred 3" to run trigger "amazon" in workflow "net.deanishe.al
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_WIKI_SEARCH</name>
 <url type="shell">
@@ -4740,7 +4298,6 @@ tell application "Alfred 3" to run trigger "wiki" in workflow "net.deanishe.alfr
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_MAPS_SEARCH</name>
 <url type="shell">
@@ -4749,7 +4306,6 @@ tell application "Alfred 3" to run trigger "searchGoogleMaps" in workflow "nikiv
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_RESTART_WIFI</name>
 <url type="shell">
@@ -4758,7 +4314,6 @@ tell application "Alfred 3" to run trigger "restartWifi" in workflow "nikivi.wif
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_TOGGLE_WIFI</name>
 <url type="shell">
@@ -4767,7 +4322,6 @@ tell application "Alfred 3" to run trigger "toggleWifi" in workflow "nikivi.wifi
 '
 </url>
 </vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE</name>
 <url type="shell">
@@ -4839,7 +4393,6 @@ ModifierFlag::FN,
 ModifierFlag::OPTION_L,
 ModifierFlag::OPTION_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 <!-- __KeyOverlaidModifier__ take 3 parameters -->
@@ -4849,17 +4402,14 @@ KeyCode::SEMICOLON,
 Use notsave.launcher_mode_v2 in order to be higher priority.
 Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
 -->
-<!-- 2nd parameter will run when held down -->
-@begin
+<!-- 2nd parameter will run when held down -->@begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v30, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-<!-- 3rd parameter will run when tap, we did the key swap here -->
-@begin
+<!-- 3rd parameter will run when tap, we did the key swap here -->@begin
 KeyCode::SEMICOLON, ModifierFlag::SHIFT_L
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v30</identifier>
 
@@ -5083,13 +4633,13 @@ KeyCode::SHIFT_L,
 KeyCode::SLASH, ModifierFlag::SHIFT_L
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v71</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::SEMICOLON,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::A,
@@ -5111,13 +4661,11 @@ KeyCode::SEMICOLON
 __HoldingKeyToKey__
 KeyCode::SEMICOLON,
 
-<!-- short press -->
-@begin
+<!-- short press -->@begin
 KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
 @end
 
-<!-- hold -->
-@begin
+<!-- hold -->@begin
 KeyCode::SHIFT_L
 @end
 
@@ -5141,27 +4689,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::S,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v23, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::S,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v23</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::S,
 </autogen>
+
 
 <!-- send command-tab by m -->
 <autogen>
@@ -5362,27 +4907,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::S,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v25, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::S,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v25</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::S,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::BACKQUOTE,
@@ -5893,27 +5435,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::SLASH,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v19, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::SLASH
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v19</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::SLASH,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::R,
@@ -5953,27 +5492,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::SPACE,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v34, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::SPACE,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v34</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::SPACE,
 </autogen>
+
 
 <autogen>
 __KeyToKey__
@@ -6115,27 +5651,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::0,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v82, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::0
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v82</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::0,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::C,
@@ -6158,27 +5691,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::BRACKET_LEFT,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v75, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::BRACKET_LEFT
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v75</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::BRACKET_LEFT,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::V,
@@ -6257,27 +5787,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::P,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v12, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::P,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v12</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::P,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::SPACE,
@@ -6399,27 +5926,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::C,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v41, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::C,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v41</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::C,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::1,
@@ -6659,11 +6183,9 @@ ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
 __KeyOverlaidModifier__
-KeyCode::DOT,
-@begin
+KeyCode::DOT,@begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v1, ModifierFlag::MY_LAUNCHER_MODE,
-@end
-@begin
+@end@begin
 KeyCode::DOT,
 @end
 </autogen>
@@ -6673,6 +6195,7 @@ KeyCode::DOT,
 <autogen>
 __BlockUntilKeyUp__ KeyCode::DOT,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::2,
@@ -6697,11 +6220,9 @@ ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
 __KeyOverlaidModifier__
-KeyCode::DOT,
-@begin
+KeyCode::DOT,@begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v72, ModifierFlag::MY_LAUNCHER_MODE,
-@end
-@begin
+@end@begin
 KeyCode::DOT,
 @end
 </autogen>
@@ -6711,6 +6232,7 @@ KeyCode::DOT,
 <autogen>
 __BlockUntilKeyUp__ KeyCode::DOT,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::2,
@@ -6753,27 +6275,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::DOT,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v77, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::DOT,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v77</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::DOT,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::1,
@@ -6820,27 +6339,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::COMMA,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v20, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::COMMA,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v20</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::COMMA,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::X,
@@ -6905,27 +6421,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::N,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v35, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::N,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v35</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::N,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::F19,
@@ -7060,27 +6573,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::M,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v17, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::M,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v17</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::M,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::1,
@@ -7232,27 +6742,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::V,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v16, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::V,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v16</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::V,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::SPACE,
@@ -7379,27 +6886,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::BRACKET_LEFT,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v73, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::9, ModifierFlag::SHIFT_L
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v73</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::BRACKET_LEFT,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::Q,
@@ -7558,27 +7062,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::B,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v13, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::B,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v13</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::B,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::SPACE,
@@ -7821,27 +7322,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::W,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v3, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::W,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v3</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::W,
 </autogen>
+
 
 <autogen>
 __SimultaneousKeyPresses__
@@ -8022,27 +7520,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::QUOTE,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v32, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::QUOTE,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v32</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::QUOTE,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::B,
@@ -8072,27 +7567,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::X,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v43, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::X,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v43</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::X,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::P,
@@ -8285,27 +7777,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::1,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v80, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::1,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v80</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::1,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::F19,
@@ -8334,27 +7823,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::2,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v93, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::2,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v93</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::2,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::N,
@@ -8444,27 +7930,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::TAB,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v55, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::TAB,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v55</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::TAB,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::SEMICOLON,
@@ -8509,27 +7992,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::5,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v54, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::5,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v54</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::5,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::SPACE,
@@ -8552,27 +8032,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::4,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v53, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::4,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v53</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::4,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::M,
@@ -8704,27 +8181,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::3,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v51, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::3,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v51</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::3,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::F19,
@@ -8895,11 +8369,9 @@ ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
 __KeyOverlaidModifier__
-KeyCode::G,
-@begin
+KeyCode::G,@begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v11, ModifierFlag::MY_LAUNCHER_MODE,
-@end
-@begin
+@end@begin
 KeyCode::G,
 @end
 </autogen>
@@ -8909,6 +8381,7 @@ KeyCode::G,
 <autogen>
 __BlockUntilKeyUp__ KeyCode::G,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::D,
@@ -9003,8 +8476,7 @@ KeyCode::6, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 __KeyToKey__
 KeyCode::DOT,
 KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME
-</autogenVK>
-
+</autogen>
 <autogen>
 __KeyToKey__
 KeyCode::DOT,
@@ -9074,27 +8546,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::R,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v8, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::R,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v8</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::R,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::SPACE,
@@ -9285,27 +8754,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::U,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v33, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::U,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v33</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::U,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::1,
@@ -9407,27 +8873,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::I,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v15, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::I,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v15</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::I,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::B,
@@ -9696,27 +9159,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::Y,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v83, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::Y,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v83</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::Y,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::M,
@@ -9739,27 +9199,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::T,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v14, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::T,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v14</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::T,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::M,
@@ -9903,27 +9360,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::Z,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v9, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::Z,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v9</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::Z,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::D,
@@ -10032,27 +9486,23 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::F,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v2, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::F,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v2</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::F,
 </autogen>
+
 <autogen>
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::L,
@@ -10269,27 +9719,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::E,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v91, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::E,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v91</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::E,
 </autogen>
+
 <autogen>
 __SimultaneousKeyPresses__
 KeyCode::J, KeyCode::K,
@@ -10555,27 +10002,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::Q,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v6, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::Q,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v6</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::Q,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::F19,
@@ -10803,27 +10247,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::A,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::A,
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::A,
 </autogen>
+
 <autogen>
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::L,
@@ -11081,13 +10522,11 @@ KeyCode::L, ModifierFlag::CONTROL_L
 __HoldingKeyToKey__
 KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
 
-<!-- short press -->
-@begin
+<!-- short press -->@begin
 KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
 @end
 
-<!-- hold -->
-@begin
+<!-- hold -->@begin
 KeyCode::5, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
 @end
 
@@ -11103,13 +10542,11 @@ Option::NOREPEAT,
 __HoldingKeyToKey__
 KeyCode::RETURN, ModifierFlag::SHIFT_R,
 
-<!-- short press -->
-@begin
+<!-- short press -->@begin
 KeyCode::RETURN, ModifierFlag::SHIFT_R
 @end
 
-<!-- hold -->
-@begin
+<!-- hold -->@begin
 KeyCode::7, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
 @end
 
@@ -11125,13 +10562,11 @@ Option::NOREPEAT,
 __HoldingKeyToKey__
 KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 
-<!-- short press -->
-@begin
+<!-- short press -->@begin
 KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 @end
 
-<!-- hold -->
-@begin
+<!-- hold -->@begin
 KeyCode::6, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
 @end
 
@@ -11269,13 +10704,11 @@ KeyCode::TAB, ModifierFlag::COMMAND_L
 __HoldingKeyToKey__
 KeyCode::L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
 
-<!-- short press -->
-@begin
+<!-- short press -->@begin
 KeyCode::L, ModifierFlag::CONTROL_L
 @end
 
-<!-- hold -->
-@begin
+<!-- hold -->@begin
 KeyCode::L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 @end
 
@@ -11285,13 +10718,11 @@ Option::NOREPEAT,
 __HoldingKeyToKey__
 KeyCode::S, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
 
-<!-- short press -->
-@begin
+<!-- short press -->@begin
 KeyCode::S, ModifierFlag::CONTROL_L
 @end
 
-<!-- hold -->
-@begin
+<!-- hold -->@begin
 KeyCode::S, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 @end
 
@@ -11301,13 +10732,11 @@ Option::NOREPEAT,
 __HoldingKeyToKey__
 KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
 
-<!-- short press -->
-@begin
+<!-- short press -->@begin
 KeyCode::A, ModifierFlag::CONTROL_L
 @end
 
-<!-- hold -->
-@begin
+<!-- hold -->@begin
 KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 @end
 
@@ -11317,13 +10746,11 @@ Option::NOREPEAT,
 __HoldingKeyToKey__
 KeyCode::Q, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
 
-<!-- short press -->
-@begin
+<!-- short press -->@begin
 KeyCode::Q, ModifierFlag::CONTROL_L
 @end
 
-<!-- hold -->
-@begin
+<!-- hold -->@begin
 KeyCode::Q, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 @end
 
@@ -11333,13 +10760,11 @@ Option::NOREPEAT,
 __HoldingKeyToKey__
 KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
 
-<!-- short press -->
-@begin
+<!-- short press -->@begin
 KeyCode::E, ModifierFlag::CONTROL_L
 @end
 
-<!-- hold -->
-@begin
+<!-- hold -->@begin
 KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 @end
 
@@ -11349,13 +10774,11 @@ Option::NOREPEAT,
 __HoldingKeyToKey__
 KeyCode::D, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L,
 
-<!-- short press -->
-@begin
+<!-- short press -->@begin
 KeyCode::D, ModifierFlag::CONTROL_L
 @end
 
-<!-- hold -->
-@begin
+<!-- hold -->@begin
 KeyCode::D, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 @end
 
@@ -11365,13 +10788,11 @@ Option::NOREPEAT,
 __HoldingKeyToKey__
 KeyCode::B, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L,
 
-<!-- short press -->
-@begin
+<!-- short press -->@begin
 KeyCode::B, ModifierFlag::CONTROL_L
 @end
 
-<!-- hold -->
-@begin
+<!-- hold -->@begin
 KeyCode::B, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 @end
 
@@ -11554,27 +10975,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::COMMAND_R,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v81, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v81</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::COMMAND_R,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::M,
@@ -11612,27 +11030,24 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
-
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::BACKQUOTE,
-
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v40, ModifierFlag::MY_LAUNCHER_MODE,
 @end
-
 @begin
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE
 @end
 </autogen>
 </item>
-
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v40</identifier>
 
 <autogen>
 __BlockUntilKeyUp__ KeyCode::BACKQUOTE,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::N,
