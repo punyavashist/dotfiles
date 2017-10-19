@@ -1660,6 +1660,17 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 </vkopenurldef>
 
 <vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_KM_INSERT_STICKY</name>
+  <url type="shell">
+  osascript -e '
+    tell application "Keyboard Maestro Engine"
+    do script "i: /sticky"
+   end tell
+    '
+  </url>
+</vkopenurldef>
+
+<vkopenurldef>
   <name>KeyCode::VK_OPEN_URL_KM_INSERT_WORKFLOW:</name>
   <url type="shell">
   osascript -e '
@@ -4406,7 +4417,7 @@ tell application "Alfred 3" to run trigger "searchPawFIles" in workflow "nikivi.
   <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE</name>
   <url type="shell">
   osascript -e '
-tell application "Alfred 3" to run trigger "searchXcodeProjects" in workflow "com.sindresorhus.xcode" with argument ""
+tell application "Alfred 3" to run trigger "xcode" in workflow "com.sindresorhus.xcode" with argument ""
     '
   </url>
 </vkopenurldef>
@@ -4819,8 +4830,6 @@ KeyCode::0, ModifierFlag::SHIFT_L
   <name>general: sticky semicolon - shift key</name>
 <identifier>private.launcher_mode_open_apps_v30</identifier>
 <inputsource_only>US</inputsource_only>
-
-
   <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
   <modifier_not>
     ModifierFlag::COMMAND_L,
@@ -6380,6 +6389,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
        <autogen>
          __KeyToKey__
+         KeyCode::F,
+         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
+       </autogen>
+
+       <autogen>
+         __KeyToKey__
          KeyCode::T,
          KeyCode::VK_OPEN_URL_KM_LAST_N_MACROS_EXECUTED
        </autogen>
@@ -6906,7 +6921,45 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
   </item>
 
 <item>
-    <name>go: sticky comma</name>
+    <name>iterm: sticky dot</name>
+    <identifier>private.launcher_mode_open_apps_v1</identifier>
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::DOT,
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v1, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+      @begin
+      KeyCode::DOT,
+      @end
+    </autogen>
+  </item>
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v1</identifier>
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::DOT,
+    </autogen>
+        <autogen>
+      __KeyToKey__
+      KeyCode::2,
+      KeyCode::VK_OPEN_URL_SHELL_switchprofile_python
+		</autogen>
+  </item>
+
+<item>
+    <name>go: sticky dot</name>
     <identifier>private.launcher_mode_open_apps_v72</identifier>
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
@@ -6920,32 +6973,32 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       ModifierFlag::SHIFT_L,
       ModifierFlag::SHIFT_R,
     </modifier_not>
-
     <autogen>
       __KeyOverlaidModifier__
-      KeyCode::COMMA,
-
+      KeyCode::DOT,
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v72, ModifierFlag::MY_LAUNCHER_MODE,
       @end
-
       @begin
-      KeyCode::COMMA,
+      KeyCode::DOT,
       @end
     </autogen>
   </item>
-
   <item hidden="true">
     <identifier vk_config="true">notsave.private_launcher_mode_v72</identifier>
-
     <autogen>
-      __BlockUntilKeyUp__ KeyCode::COMMA,
+      __BlockUntilKeyUp__ KeyCode::DOT,
     </autogen>
-
         <autogen>
       __KeyToKey__
       KeyCode::2,
       KeyCode::VK_OPEN_URL_SHELL_switchprofile_python
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::S,
+      KeyCode::VK_OPEN_URL_KM_INSERT_STICKY
 		</autogen>
 
         <autogen>
@@ -6969,7 +7022,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
   </item>
 
 <item>
-    <name>python: sticky comma</name>
+    <name>python: sticky dot</name>
     <identifier>private.launcher_mode_open_apps_v77</identifier>
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
@@ -6986,14 +7039,14 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
       __KeyOverlaidModifier__
-      KeyCode::COMMA,
+      KeyCode::DOT,
 
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v77, ModifierFlag::MY_LAUNCHER_MODE,
       @end
 
       @begin
-      KeyCode::COMMA,
+      KeyCode::DOT,
       @end
     </autogen>
   </item>
@@ -7002,7 +7055,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <identifier vk_config="true">notsave.private_launcher_mode_v77</identifier>
 
     <autogen>
-      __BlockUntilKeyUp__ KeyCode::COMMA,
+      __BlockUntilKeyUp__ KeyCode::DOT,
     </autogen>
 
         <autogen>
@@ -7039,10 +7092,8 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
 
 <item>
-    <name>general: sticky dot - one off scripts</name>
+    <name>general: sticky comma - one off scripts</name>
     <identifier>private.launcher_mode_open_apps_v20</identifier>
-
-  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -7058,14 +7109,14 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
       __KeyOverlaidModifier__
-      KeyCode::DOT,
+      KeyCode::COMMA,
 
       @begin
       KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v20, ModifierFlag::MY_LAUNCHER_MODE,
       @end
 
       @begin
-      KeyCode::DOT,
+      KeyCode::COMMA,
       @end
     </autogen>
   </item>
@@ -7074,7 +7125,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <identifier vk_config="true">notsave.private_launcher_mode_v20</identifier>
 
     <autogen>
-      __BlockUntilKeyUp__ KeyCode::DOT,
+      __BlockUntilKeyUp__ KeyCode::COMMA,
     </autogen>
 
         <autogen>
@@ -7137,8 +7188,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 <item>
     <name>general: sticky n - web searches</name>
     <identifier>private.launcher_mode_open_apps_v35</identifier>
-
-  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -7200,6 +7249,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     <autogen>
         __KeyToKey__
         KeyCode::A,
+        KeyCode::VK_OPEN_URL_ALFRED_ASK_CREATE_SHARE
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::H,
         KeyCode::VK_OPEN_URL_ALFRED_SEARCH_HACKER_NEWS
     </autogen>
 
@@ -7510,8 +7565,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 <item>
     <name>general: sticky v - media controls</name>
     <identifier>private.launcher_mode_open_apps_v16</identifier>
-
-  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -7677,8 +7730,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 <item>
     <name>general: sticky [ - more maps</name>
     <identifier>private.launcher_mode_open_apps_v73</identifier>
-
-  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -8315,8 +8366,8 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
         <autogen>
       __KeyToKey__
-      KeyCode::N,
-      KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH
+      KeyCode::M,
+      KeyCode::VK_OPEN_URL_KM_OPEN_XCODE
 		</autogen>
 
         <autogen>
@@ -8393,6 +8444,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
       __KeyToKey__
+      KeyCode::H,
+      KeyCode::VK_OPEN_URL_KM_OPEN_PAW
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
       KeyCode::A,
       KeyCode::1, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
     </autogen>
@@ -8417,8 +8474,8 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
       __KeyToKey__
-      KeyCode::M,
-      KeyCode::VK_OPEN_URL_KM_OPEN_TOWER
+      KeyCode::N,
+      KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH
     </autogen>
   </item>
 
@@ -8724,7 +8781,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
   </item>
 
 <item>
-    <name>general: sticky 1 - ⌥ + ⌘ + ⌃</name>
+    <name>general: sticky 1 - alfred</name>
 		<identifier>private.launcher_mode_open_apps_v80</identifier>
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
@@ -8771,15 +8828,11 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
           KeyCode::SPACE,
         KeyCode::N, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, 
         </autogen>
-
   </item>
-
 
 <item>
 		<name>general: sticky 2 - moving more</name>
 		<identifier>private.launcher_mode_open_apps_v93</identifier>
-
-  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -9666,8 +9719,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __BlockUntilKeyUp__ KeyCode::R,
     </autogen>
 
-
-            <autogen>
+        <autogen>
       __KeyToKey__
       KeyCode::SPACE,
       KeyCode::S, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, 
@@ -9738,7 +9790,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         <autogen>
       __KeyToKey__
       KeyCode::2,
-      KeyCode::VK_OPEN_URL_KM_OPEN_CONTACTS
+      KeyCode::VK_OPEN_URL_KM_OPEN_ANKI
 		</autogen>
 
         <autogen>
@@ -9812,12 +9864,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         __KeyToKey__
         KeyCode::A,
         KeyCode::VK_OPEN_URL_KM_OPEN_ALFRED_PREFERENCES
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::COMMAND_L,
-        KeyCode::VK_OPEN_URL_KM_OPEN_ANKI
     </autogen>
 
         <autogen>
@@ -10059,6 +10105,17 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       __BlockUntilKeyUp__ KeyCode::I,
     </autogen>
 
+        <autogen>
+      __KeyToKey__
+      KeyCode::B,
+      KeyCode::T, ModifierFlag::SHIFT_L, 
+      KeyCode::O, ModifierFlag::SHIFT_L, 
+      KeyCode::D, ModifierFlag::SHIFT_L, 
+      KeyCode::O, ModifierFlag::SHIFT_L, 
+      KeyCode::SEMICOLON, ModifierFlag::SHIFT_L, 
+      KeyCode::SPACE,
+		</autogen>
+
 <autogen>
     __KeyToKey__
     KeyCode::9,
@@ -10131,12 +10188,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
     __KeyToKey__
     KeyCode::G,
     KeyCode::4, ModifierFlag::SHIFT_L
-  </autogen>
-
-  <autogen>
-    __KeyToKey__
-    KeyCode::B,
-    KeyCode::6, ModifierFlag::SHIFT_L
   </autogen>
 
   <autogen>
@@ -10353,6 +10404,50 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
   </item>
 
 <item>
+    <name>general: sticky y - things</name>
+    <identifier>private.launcher_mode_open_apps_v83</identifier>
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::Y,
+
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v83, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::Y,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v83</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::Y,
+    </autogen>
+
+        <autogen>
+          __KeyToKey__
+          KeyCode::M,
+          KeyCode::D, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+        </autogen>
+  </item>
+
+<item>
     <name>general: sticky t - handy actions</name>
     <identifier>private.launcher_mode_open_apps_v14</identifier>
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
@@ -10515,7 +10610,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         KeyCode::VK_OPEN_URL_ALFRED_GIT_REPOS_UPDATE
         </autogen>
 
-
     <autogen>
         __KeyToKey__
         KeyCode::L,
@@ -10540,8 +10634,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
         KeyCode::W,
         KeyCode::VK_OPEN_URL_KM_PASS
     </autogen>
-
-
   </item>
 
 <item>
@@ -10688,15 +10780,12 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
       KeyCode::J,
       KeyCode::VK_OPEN_URL_KM_OPEN_TEXTUAL
 		</autogen>
-
   </item>
 
 
 <item>
     <name>general: sticky f - essential keybinds</name>
     <identifier>private.launcher_mode_open_apps_v2</identifier>
-
-  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -10868,7 +10957,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
     <autogen>
       __KeyToKey__
-      KeyCode::P,
+      KeyCode::COMMA,
     KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
     KeyCode::X, ModifierFlag::COMMAND_L,
     Option::NOREPEAT,
@@ -10906,7 +10995,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
        <autogen>
        __KeyToKey__
-       KeyCode::H,
+       KeyCode::P,
        KeyCode::RETURN, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
        </autogen>
 
@@ -10918,7 +11007,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 
        <autogen>
        __KeyToKey__
-       KeyCode::COMMA,
+       KeyCode::H,
        KeyCode::RETURN, ModifierFlag::SHIFT_L
        </autogen>
 
@@ -10975,7 +11064,6 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 <item>
     <name>general: sticky e - command</name>
     <identifier>private.launcher_mode_open_apps_v91</identifier>
-  
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
       ModifierFlag::COMMAND_L,
@@ -13020,7 +13108,7 @@ KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTI
           __SimultaneousKeyPresses__
           KeyCode::H, KeyCode::O,
           KeyCode::VK_LOCK_ALL_FORCE_OFF,
-          KeyCode::VK_OPEN_URL_ALFRED_LAYOUT_MANAGER
+          KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE
       </autogen>
   </item>
 
@@ -13284,7 +13372,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 __SimultaneousKeyPresses__
 KeyCode::L, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_ASK_CREATE_SHARE
 </autogen>
 </item>
 
@@ -13328,7 +13416,7 @@ KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
 __SimultaneousKeyPresses__
 KeyCode::N, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_ASK_CREATE_SHARE
+KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
 </autogen>
 </item>
 
@@ -13339,7 +13427,7 @@ KeyCode::VK_OPEN_URL_ALFRED_ASK_CREATE_SHARE
 __SimultaneousKeyPresses__
 KeyCode::DOT, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_KM_GET_CURRENT_CHROME_URL
+KeyCode::VK_OPEN_URL_ALFRED_KARABINER_PROFILES
 </autogen>
 </item>
 

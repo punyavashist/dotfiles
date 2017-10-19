@@ -10,7 +10,7 @@
     ],
     "editor.lineNumbers": "relative",
     "editor.cursorStyle": "line",
-    "window.zoomLevel": -2,
+    "window.zoomLevel": -4,
     "workbench.welcome.enabled": false,
     // _python
     "python.linting.pylintArgs": [
@@ -73,23 +73,6 @@
         {
             "before": [
                 "<leader>",
-                "r"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": [
-                        // "workbench.action.files.save"
-                        // "code-runner.run"
-                        "editor.action.commentLine"
-                    ],
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
                 "w"
             ],
             "after": [],
@@ -98,6 +81,17 @@
                     "command": "workbench.action.files.save",
                     "args": []
                 }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "i"
+            ],
+            "after": [
+                "y",
+                "i",
+                "\""
             ]
         },
         {

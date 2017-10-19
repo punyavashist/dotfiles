@@ -1,6 +1,10 @@
 # vi movement in iTerm
 set -o vi
 
+bindkey -e # TODO: not sure 
+
+bindkey '⌃T' edit-command-line
+
 
 # _bindings
 bindkey -M viins "^w" beginning-of-line

@@ -1,5 +1,5 @@
 " -------------------------------------
-"  _plugins
+"  _install
 " -------------------------------------
 call plug#begin() " plugins to use
 
@@ -11,6 +11,7 @@ endfunction
 " _move
 "Plug 'easymotion/vim-easymotion'
 Plug 'jiangmiao/auto-pairs'
+"Plug 'mbbill/undotree'
 Plug 'wakatime/vim-wakatime'
 Plug 'junegunn/heytmux'
 Plug 'sbdchd/neoformat'
@@ -142,9 +143,13 @@ nnoremap <leader>= yypVr=
 nnoremap <leader>vimrc :tabe ~/.dotfiles/vim/nvim/nvimrc<cr>
 
 " _single letter 
-nmap <Leader>w    :w<CR>  
+" save
+nmap <Leader>w    :w<CR>   
+" quit
 nnoremap <Leader>q    :q<CR>  
+" yank whole file
 nnoremap <Leader>y    :%y<CR> 
+" source vimrc
 nnoremap <Leader>f   :source ~/.dotfiles/nvim/init.vim<CR> 
 " search files inside current dir
 nnoremap <Leader>e    :Files<CR> 
@@ -152,7 +157,7 @@ nnoremap <Leader>e    :Files<CR>
 " switch dir for fzf searching to current dir
 map <Leader>cd :lcd %:p:h<CR>
 " yank xml block to next line
-nnoremap <Leader>aw    vat:t'><CR>'[O<Esc><CR> 
+nnoremap <Leader>aw    vat:t'><CR>'[<Esc><CR> 
 " yank function block
 nnoremap <Leader>yf    :exe search('^function','cb')';/}/y'<CR> 
 " dash doc lookup
@@ -160,8 +165,13 @@ nnoremap <Leader>at   :Dash<CR>
 nnoremap <Leader>aa   :wa<CR>
 nnoremap <Leader>vq   :wqall<CR>
 nnoremap <Leader>vQ   :qa<CR>
+" install plugins
 nnoremap <Leader>ii   :PlugInstall<CR>
+" check vim health
 nnoremap <Leader>ih   :CheckHealth<CR>
+" delete inside " 
+nnoremap <Leader>o   di"<CR>
+" update plugins
 nnoremap <Leader>ia   :PlugUpdate<CR>
 nnoremap <Leader>vm   :make<CR>
 nnoremap <leader>l :%d<cr>

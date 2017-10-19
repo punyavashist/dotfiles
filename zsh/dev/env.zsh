@@ -19,6 +19,10 @@ export PATH=$PATH:/usr/local/go/bin:/Users/nikivi/go/bin
 # _rust
 export PATH=$PATH:~/.cargo/bin
 
+# _fzf TODO: not sure if it works
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
 # _sql
 export PATH=/usr/local/mysql/bin:$PATH
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
