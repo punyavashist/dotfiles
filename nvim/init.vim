@@ -175,17 +175,12 @@ nnoremap <Leader>o   di"
 nnoremap <Leader>ia   :PlugUpdate<CR>
 nnoremap <Leader>vm   :make<CR>
 nnoremap <leader>l :%d<cr>
-
-
 " run commands in new splits
 nnoremap <Leader>tt :tabedit <Bar> term.
 nnoremap <Leader>ts :split <Bar> term.
 nnoremap <Leader>tv :vsplit <Bar> term.
-
 nnoremap <silent><expr> <C-L> winnr()==g:NERDTree.GetWinNum() ? ":NERDTreeClose\<CR>" : ":NERDTreeFocus\<CR>"
 nnoremap <C-s> :w<cr>
-
-
 nnoremap <Leader>pi :PlugInstall<CR>
 nnoremap <Leader>pu :PlugUpdate<CR>
 " --------------------------------------
