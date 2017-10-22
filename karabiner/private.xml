@@ -5561,7 +5561,7 @@ KeyCode::S, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIF
 <autogen>
 __KeyToKey__
 KeyCode::Y,
-KeyCode::K, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+KeyCode::H, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7778,12 +7778,10 @@ __KeyToKey__
 KeyCode::U,
 KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
 </autogen>
-
-
 </item>
 
 <item>
-<name>general: sticky 1 - alfred</name>
+<name>general: sticky 1 - ulysses</name>
 <identifier>private.launcher_mode_open_apps_v80</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -7810,7 +7808,6 @@ KeyCode::1,
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v80</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::1,
 </autogen>
@@ -7820,11 +7817,145 @@ __KeyToKey__
 KeyCode::F19,
 KeyCode::Z, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, 
 </autogen>
-
 <autogen>
 __KeyToKey__
 KeyCode::SPACE,
 KeyCode::N, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::Q,
+KeyCode::Q, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::Z,
+KeyCode::Z, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::W,
+KeyCode::W, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::E,
+KeyCode::E, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::R,
+KeyCode::R, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::T,
+KeyCode::T, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::Y,
+KeyCode::Y, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::I,
+KeyCode::I, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::O,
+KeyCode::O, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::P,
+KeyCode::P, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::A,
+KeyCode::A, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::S,
+KeyCode::S, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::D,
+KeyCode::D, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::F,
+KeyCode::F, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::G,
+KeyCode::G, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::H,
+KeyCode::H, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::J,
+KeyCode::J, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::K,
+KeyCode::K, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::L,
+KeyCode::L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::SEMICOLON,
+KeyCode::SEMICOLON, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::X,
+KeyCode::X, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::C,
+KeyCode::C, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::V,
+KeyCode::V, ModifierFlag::COMMAND_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::B,
+KeyCode::B, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::N,
+KeyCode::N, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::M,
+KeyCode::M, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::COMMA,
+KeyCode::COMMA, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
 </autogen>
 </item>
 
@@ -8371,7 +8502,7 @@ KeyCode::M, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION
 </item>
 
 <item>
-<name>general: sticky lcmd - ulysses</name>
+<name>test: sticky lcmd - things</name>
 <identifier>private.launcher_mode_open_apps_v4</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8401,136 +8532,6 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE_CONTENT
 __BlockUntilKeyUp__ KeyCode::COMMAND_L,
 </autogen>
 
-<autogen>
-__KeyToKey__
-KeyCode::Q,
-KeyCode::Q, ModifierFlag::COMMAND_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::Z,
-KeyCode::Z, ModifierFlag::COMMAND_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::W,
-KeyCode::W, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::E,
-KeyCode::E, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::R,
-KeyCode::R, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::T,
-KeyCode::T, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::Y,
-KeyCode::Y, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::I,
-KeyCode::I, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::O,
-KeyCode::O, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::P,
-KeyCode::P, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::A,
-KeyCode::A, ModifierFlag::COMMAND_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::S,
-KeyCode::S, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::D,
-KeyCode::D, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::F,
-KeyCode::F, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::G,
-KeyCode::G, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::H,
-KeyCode::H, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::J,
-KeyCode::J, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::K,
-KeyCode::K, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::L,
-KeyCode::L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SEMICOLON,
-KeyCode::SEMICOLON, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::X,
-KeyCode::X, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::C,
-KeyCode::C, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::V,
-KeyCode::V, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::B,
-KeyCode::B, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::N,
-KeyCode::N, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::M,
-KeyCode::M, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
-</autogen>
 <autogen>
 __KeyToKey__
 KeyCode::COMMA,
@@ -9666,7 +9667,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_TEXTUAL
 </autogen>
 </item>
 
-
 <item>
 <name>general: sticky f - essential keybinds</name>
 <identifier>private.launcher_mode_open_apps_v2</identifier>
@@ -10003,6 +10003,11 @@ KeyCode::SEMICOLON, ModifierFlag::COMMAND_L
 __KeyToKey__
 KeyCode::1,
 KeyCode::1, ModifierFlag::COMMAND_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::Z,
+KeyCode::Z, ModifierFlag::COMMAND_L
 </autogen>
 <autogen>
 __KeyDownUpToKey__
