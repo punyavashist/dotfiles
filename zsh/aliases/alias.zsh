@@ -147,6 +147,7 @@ alias or='go run'
 alias oo='go install'
 alias ov='go vet'
 alias ob='go build'
+alias ora='go-pry'
 alias oa='go build -o main'
 
 alias ugo='Go-Package-Store'

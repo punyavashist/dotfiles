@@ -5648,7 +5648,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 </item>
 
 <item>
-<name>general: sticky 0 - ulysses</name>
+<name>general: sticky 0 - websites</name>
 <identifier>private.launcher_mode_open_apps_v82</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -5675,16 +5675,10 @@ KeyCode::0
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v82</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::0,
 </autogen>
 
-<autogen>
-__KeyToKey__
-KeyCode::Q,
-KeyCode::VK_OPEN_URL_ALFRED_CHROME_PROFILES
-</autogen>
 </item>
 
 <item>
@@ -5959,7 +5953,6 @@ KeyCode::C,
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v41</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::C,
 </autogen>
@@ -5992,7 +5985,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOCALHOST
 <autogen>
 __KeyToKey__
 KeyCode::DOT,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_REGEX101
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6002,7 +5995,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEARN_ANYTHING
 <autogen>
 __KeyToKey__
 KeyCode::D,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_ANALYTICS
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_MEDIUM
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7381,7 +7374,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI_TECHNOLOGY_PREVIEW
 <autogen>
 __KeyToKey__
 KeyCode::C,
-KeyCode::VK_OPEN_URL_KM_OPEN_PAW
+KeyCode::VK_OPEN_URL_KM_OPEN_SCRIPT_EDITOR
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7856,6 +7849,11 @@ KeyCode::T, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTRO
 __KeyToKey__
 KeyCode::Y,
 KeyCode::Y, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::U,
+KeyCode::U, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8927,8 +8925,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_TIMING
 <item>
 <name>general: sticky u - websites</name>
 <identifier>private.launcher_mode_open_apps_v33</identifier>
-
-
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
 ModifierFlag::COMMAND_L,
@@ -8954,7 +8950,6 @@ KeyCode::U,
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v33</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::U,
 </autogen>
@@ -9017,7 +9012,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_NETLIFY
 <autogen>
 __KeyToKey__
 KeyCode::D,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_MEDIUM
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_ANALYTICS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9039,15 +9034,11 @@ __KeyToKey__
 KeyCode::S,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_NPM
 </autogen>
-
-
 </item>
 
 <item>
 <name>general: sticky i - inserting symbols</name>
 <identifier>private.launcher_mode_open_apps_v15</identifier>
-
-
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
 ModifierFlag::COMMAND_L,
@@ -9423,11 +9414,6 @@ KeyCode::U, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
 __KeyToKey__
 KeyCode::Q,
 KeyCode::SEMICOLON, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::DOT,
-KeyCode::VK_OPEN_URL_KM_OPEN_MATH_HASKELL_FILE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11243,6 +11229,11 @@ KeyCode::VK_OPEN_URL_KM_OPEN_PLAY_JS
 __KeyToKey__
 KeyCode::A,
 KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::DOT,
+KeyCode::VK_OPEN_URL_KM_OPEN_MATH_HASKELL_FILE
 </autogen>
 <autogen>
 __KeyToKey__

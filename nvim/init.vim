@@ -137,9 +137,7 @@ let g:ctrlp_cmd = 'CtrlP'
 " --------------------------------------
 nnoremap <SPACE> <Nop>
 let mapleader="\<Space>"
-
 nnoremap <leader>= yypVr=
-
 nnoremap <leader>vimrc :tabe ~/.dotfiles/vim/nvim/nvimrc<cr>
 
 " _single letter 
