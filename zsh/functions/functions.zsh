@@ -1,6 +1,8 @@
 # _test
 function wo(){
-
+  git add readme.md
+  git commit -m "reformat readme"
+  git push
 }
 
 # commit 
@@ -111,20 +113,18 @@ function iz () {
 }
 
 function ud() {
-    cd /Users/nikivi/alfred/Alfred.alfredpreferences/workflows/user.workflow.7C419057-23E4-4C26-ADE6-DCBF5DF3F556
+    cd /Users/nikivi/go/src/github.com/nikitavoloboev/alfred-my-mind/workflow/
     bash update.sh
 }
 
 function mit() {
   license-up Nikita Voloboev nikitavoloboev.xyz
   git add LICENSE
-  git commit -m 'MIT license'
 }
 
 function mitla () {
   license-up Learn Anything, learn-anything.xyz
   git add LICENSE
-  git commit -m 'MIT license'
 }
 
 

@@ -9,7 +9,7 @@ function! DoRemote(arg)
 endfunction
 
 " _move
-"Plug 'easymotion/vim-easymotion'
+Plug 'easymotion/vim-easymotion'
 Plug 'jiangmiao/auto-pairs'
 "Plug 'mbbill/undotree'
 Plug 'wakatime/vim-wakatime'
@@ -26,8 +26,8 @@ Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'pangloss/vim-javascript'
-Plug 'airblade/vim-gitgutter'
 Plug 'zchee/deoplete-jedi'
+Plug 'tpope/vim-surround' 
 Plug 'szw/vim-g'                                    " search selected text in google
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'rizzatti/dash.vim'
@@ -66,7 +66,6 @@ set notimeout
 set ttimeout
 set ttimeoutlen=10
 set nobackup                                      " don't create annoying backup files
-" TODO: maybe a plugin is better
 set path=+**                                      " search down into subfolders
 
 " testing
@@ -139,7 +138,6 @@ nnoremap <SPACE> <Nop>
 let mapleader="\<Space>"
 nnoremap <leader>= yypVr=
 nnoremap <leader>vimrc :tabe ~/.dotfiles/vim/nvim/nvimrc<cr>
-
 " _single letter 
 " save
 nmap <Leader>w    :w<CR>   
@@ -151,7 +149,6 @@ nnoremap <Leader>y    :%y<CR>
 nnoremap <Leader>f   :source ~/.dotfiles/nvim/init.vim<CR> 
 " search files inside current dir
 nnoremap <Leader>e    :Files<CR> 
-
 " switch dir for fzf searching to current dir
 map <Leader>cd :lcd %:p:h<CR>
 " yank xml block to next line
@@ -199,13 +196,14 @@ set matchtime=2
 set background=dark                   " set night mode
 
 " -------------------------------------
-"  _activating / modifying plugins
+"  _settings
 " -------------------------------------
 let g:deoplete#enable_at_startup = 1               " activate deoplete
 
 " autocomplete with tab
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-
+" activate leader for easymotion
+map <Leader> <Plug>(easymotion-prefix)
 
 " run goimports on save
 let g:go_fmt_command = "goimports"

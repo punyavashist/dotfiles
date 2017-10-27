@@ -15,6 +15,7 @@ alias pd='pandoc'
 alias yt='yotube-dl'
 alias r='rg'
 alias s='subl'
+alias ss='subl .'
 alias ca='carthage'
 alias cad='carthage update'
 alias alf='alfred'
@@ -79,7 +80,7 @@ alias rf='reflex'
 alias kb='kubectl'
 
 alias ser='serve'
-alias ss='python3 -m http.server'
+alias sr='python3 -m http.server'
 
 alias ra='create-react-app'
 

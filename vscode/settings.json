@@ -24,8 +24,6 @@
     // _zen
     "zenMode.fullScreen": false,
     "zenMode.restore": true,
-    // _theme
-    "workbench.colorTheme": "Glacier",
     "workbench.iconTheme": "vs-seti",
     // _prettier
     "prettier.singleQuote": true,
@@ -57,6 +55,7 @@
     "vim.useSystemClipboard": true,
     "vim.relativenumbers": true,
     "vim.easymotion": true,
+    "vim.easymotionMarkerBackgroundColor": "red",
     "vim.insertModeKeyBindings": [
         {
             "before": [
