@@ -5,9 +5,15 @@ function wo(){
   git push
 }
 
-# commit 
+# write quick commit message
 function gc() {
     git commit -m "$@"
+}
+
+# 
+function gk() {
+  git add .
+
 }
 
 
