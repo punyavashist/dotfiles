@@ -9,10 +9,10 @@ source ~/.zsh_plugins.sh
 # TODO: do some smart for loop iteration
 source ~/.dotfiles/zsh/dev/env.zsh
 source ~/.dotfiles/zsh/aliases/alias.zsh
-source ~/.dotfiles/zsh/functions/functions.zsh
 source ~/.dotfiles/zsh/functions/fzf.zsh
 source ~/.dotfiles/zsh/bindings.zsh
 source ~/.dotfiles/zsh/aliases/git.zsh
+source ~/.dotfiles/zsh/functions/functions.zsh
 
 # can just write down the file name
 setopt autocd

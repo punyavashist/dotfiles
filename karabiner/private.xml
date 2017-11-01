@@ -1800,6 +1800,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_MARKED</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "open: marked"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE</name>
 <url type="shell">
 osascript -e '
@@ -2804,6 +2814,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_CODESANDBOX</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "c: codesandbox"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_SOURCEGRAPH</name>
 <url type="shell">
 osascript -e '
@@ -3121,7 +3141,7 @@ tell application "Alfred 3" to run trigger "searchHN" in workflow "nikivi.search
 <name>KeyCode::VK_OPEN_URL_ALFRED_VIEW_SCREENSHOTS</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "webScreenshotsTaken" in workflow "com.vitorgalvao.alfred.webscreenshot" with argument ""
+tell application "Alfred 3" to run trigger "screenshots taken" in workflow "com.vitorgalvao.alfred.webscreenshot" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3511,7 +3531,7 @@ tell application "Alfred 3" to run trigger "add_current_track_to_alfred_playlist
 <name>KeyCode::VK_OPEN_URL_ALFRED_IMGUR_SCREENSHOT</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "webScreenshot" in workflow "com.vitorgalvao.alfred.webscreenshot" with argument ""
+tell application "Alfred 3" to run trigger "take screen" in workflow "com.vitorgalvao.alfred.webscreenshot" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -5719,45 +5739,12 @@ KeyCode::0
 <autogen>
 __BlockUntilKeyUp__ KeyCode::0,
 </autogen>
+
 <autogen>
 __KeyToKey__
 KeyCode::W,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
 </autogen>
-</item>
-
-<item>
-<name>general: sticky left bracket - alfred</name>
-<identifier>private.launcher_mode_open_apps_v75</identifier>
-<pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
-<modifier_not>
-ModifierFlag::COMMAND_L,
-ModifierFlag::COMMAND_R,
-ModifierFlag::CONTROL_L,
-ModifierFlag::CONTROL_R,
-ModifierFlag::FN,
-ModifierFlag::OPTION_L,
-ModifierFlag::OPTION_R,
-ModifierFlag::SHIFT_L,
-ModifierFlag::SHIFT_R,
-</modifier_not>
-<autogen>
-__KeyOverlaidModifier__
-KeyCode::BRACKET_LEFT,
-@begin
-KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v75, ModifierFlag::MY_LAUNCHER_MODE,
-@end
-@begin
-KeyCode::BRACKET_LEFT
-@end
-</autogen>
-</item>
-<item hidden="true">
-<identifier vk_config="true">notsave.private_launcher_mode_v75</identifier>
-<autogen>
-__BlockUntilKeyUp__ KeyCode::BRACKET_LEFT,
-</autogen>
-
 <autogen>
 __KeyToKey__
 KeyCode::V,
@@ -5775,7 +5762,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::T,
+KeyCode::S,
 KeyCode::VK_OPEN_URL_KM_LAST_N_MACROS_EXECUTED
 </autogen>
 <autogen>
@@ -5800,7 +5787,7 @@ KeyCode::VK_OPEN_URL_ALFRED_CHROME_PROFILES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::W,
+KeyCode::T,
 KeyCode::VK_OPEN_URL_ALFRED_WEATHER_TODAY
 </autogen>
 <autogen>
@@ -5827,6 +5814,75 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAGES
 __KeyToKey__
 KeyCode::F19,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SOULVER
+</autogen>
+</item>
+
+<item>
+<name>general: sticky left bracket - chrome</name>
+<identifier>private.launcher_mode_open_apps_v75</identifier>
+<pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+<modifier_not>
+ModifierFlag::COMMAND_L,
+ModifierFlag::COMMAND_R,
+ModifierFlag::CONTROL_L,
+ModifierFlag::CONTROL_R,
+ModifierFlag::FN,
+ModifierFlag::OPTION_L,
+ModifierFlag::OPTION_R,
+ModifierFlag::SHIFT_L,
+ModifierFlag::SHIFT_R,
+</modifier_not>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::BRACKET_LEFT,
+@begin
+KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v75, ModifierFlag::MY_LAUNCHER_MODE,
+@end
+@begin
+KeyCode::9, ModifierFlag::SHIFT_L, 
+@end
+</autogen>
+</item>
+<item hidden="true">
+<identifier vk_config="true">notsave.private_launcher_mode_v75</identifier>
+<autogen>
+__BlockUntilKeyUp__ KeyCode::BRACKET_LEFT,
+</autogen>
+
+<autogen>
+__KeyToKey__
+KeyCode::C,
+KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_CODESANDBOX
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::SPACE,
+KeyCode::VK_OPEN_URL_KM_GET_CURRENT_CHROME_URL
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::S,
+KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_SOURCEGRAPH
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::V,
+KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_CANVAS
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::G,
+KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_GITHUB
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::F,
+KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_FACEBOOK
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::E,
+KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_3000
 </autogen>
 </item>
 
@@ -8137,36 +8193,6 @@ __BlockUntilKeyUp__ KeyCode::TAB,
 
 <autogen>
 __KeyToKey__
-KeyCode::SEMICOLON,
-KeyCode::VK_OPEN_URL_KM_GET_CURRENT_CHROME_URL
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::H,
-KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_SOURCEGRAPH
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::O,
-KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_CANVAS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::G,
-KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_GITHUB
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::K,
-KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_FACEBOOK
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::I,
-KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_3000
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::SPACE,
 KeyCode::Z, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, 
 </autogen>
@@ -8175,8 +8201,6 @@ KeyCode::Z, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION
 <item>
 <name>general: sticky 5 - something</name>
 <identifier>private.launcher_mode_open_apps_v54</identifier>
-
-
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
 ModifierFlag::COMMAND_L,
@@ -8936,7 +8960,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_REEDER
 <autogen>
 __KeyToKey__
 KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_OPEN_OBS
+KeyCode::VK_OPEN_URL_KM_OPEN_MARKED
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9884,7 +9908,7 @@ KeyCode::RETURN, ModifierFlag::CONTROL_L
 <autogen>
 __KeyToKey__
 KeyCode::P,
-KeyCode::RETURN, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+KeyCode::RETURN, ModifierFlag::SHIFT_L
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11115,7 +11139,7 @@ KeyCode::DELETE, ModifierFlag::COMMAND_L
 </item>
 
 <item>
-<name>general: left shift - switch app</name>
+<name>test: left shift - switch app</name>
 <identifier>private.left_shift_to_wm_mode</identifier>
 <autogen>
 __KeyOverlaidModifier__
@@ -11547,7 +11571,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_INSIDE_MINDMAPS
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::M,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
+KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
 </autogen>
 </item>
 
@@ -11613,7 +11637,7 @@ KeyCode::VK_OPEN_URL_ALFRED_CHROME_HISTORY
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::M,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
+KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
 </autogen>
 </item>
 
@@ -11800,7 +11824,7 @@ KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
 </autogen>
 </item>
 
@@ -12031,7 +12055,7 @@ KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::DOT, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_KARABINER_PROFILES
+KeyCode::VK_OPEN_URL_ALFRED_CHROME_HISTORY
 </autogen>
 </item>
 
@@ -12053,7 +12077,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
 __SimultaneousKeyPresses__
 KeyCode::H, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
+KeyCode::VK_OPEN_URL_ALFRED_CHROME_HISTORY
 </autogen>
 </item>
 

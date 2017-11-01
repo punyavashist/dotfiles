@@ -10,12 +10,11 @@ function gc() {
     git commit -m "$@"
 }
 
-# 
-function gk() {
-  git add .
-
-}
-
+# release alfred workflow 
+function wr() {
+  # TODO: check if current dir has go in it (if yes, cd to workflow and then run script)
+  package-workflow .
+} 
 
 # create a file and any intermediary directories if necessary
 function td() {
