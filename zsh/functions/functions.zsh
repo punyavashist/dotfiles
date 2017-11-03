@@ -11,7 +11,7 @@ function gc() {
 }
 
 # release alfred workflow 
-function wr() {
+function  wr() {
   # TODO: check if current dir has go in it (if yes, cd to workflow and then run script)
   package-workflow .
 } 

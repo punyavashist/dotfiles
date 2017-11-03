@@ -1324,16 +1324,6 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_ITERM_START_NEXT_LINE</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "iterm: next line"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE_FILE</name>
 <url type="shell">
 osascript -e '
@@ -2866,6 +2856,14 @@ end tell
 
 <!-- _alfred def -->
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GO_FAST_DIR</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "go fast" in workflow "nikivi.search.files" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_CURL_URL</name>
 <url type="shell">
 osascript -e '
@@ -2966,14 +2964,6 @@ tell application "Alfred 3" to run trigger "soulver" in workflow "nikivi.search.
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "Ulysses sheets" in workflow "nikivi.search.files" with argument ""
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MARKDOWN</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "markdown" in workflow "nikivi.search.files" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3631,14 +3621,6 @@ tell application "Alfred 3" to run trigger "cleanDesktop" in workflow "nikivi.cl
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "bookmarks" in workflow "net.deanishe.alfred.safari" with argument ""
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_AWESOME_LIST</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "searchAwesome" in workflow "com.maruware.awesome" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4758,9 +4740,8 @@ Option::NOREPEAT,
 </item>
 
 <item>
-<name>general: sticky s - essential things - NOT: iTerm</name>
+<name>general: sticky s - essential things</name>
 <identifier>private.launcher_mode_open_apps_v23</identifier>
-<not>ITERM</not>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
 ModifierFlag::COMMAND_L,
@@ -4786,13 +4767,11 @@ KeyCode::S,
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v23</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::S,
 </autogen>
 
 
-<!-- send command-tab by m -->
 <autogen>
 __KeyToKey__
 KeyCode::G,
@@ -4973,190 +4952,6 @@ KeyCode::CURSOR_DOWN, ModifierFlag::COMMAND_L
 </autogen>
 </item>
 
-<item>
-<name>general: sticky s - essential things - ONLY: iTerm</name>
-<identifier>private.launcher_mode_open_apps_v25</identifier>
-<only>ITERM</only>
-<pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
-<modifier_not>
-ModifierFlag::COMMAND_L,
-ModifierFlag::COMMAND_R,
-ModifierFlag::CONTROL_L,
-ModifierFlag::CONTROL_R,
-ModifierFlag::FN,
-ModifierFlag::OPTION_L,
-ModifierFlag::OPTION_R,
-ModifierFlag::SHIFT_L,
-ModifierFlag::SHIFT_R,
-</modifier_not>
-<autogen>
-__KeyOverlaidModifier__
-KeyCode::S,
-@begin
-KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v25, ModifierFlag::MY_LAUNCHER_MODE,
-@end
-@begin
-KeyCode::S,
-@end
-</autogen>
-</item>
-<item hidden="true">
-<identifier vk_config="true">notsave.private_launcher_mode_v25</identifier>
-
-<autogen>
-__BlockUntilKeyUp__ KeyCode::S,
-</autogen>
-
-<autogen>
-__KeyToKey__
-KeyCode::BACKQUOTE,
-KeyCode::VK_OPEN_URL_KM_ITERM_SNIPPET_FROM_SELECTION
-</autogen>
-
-<!-- send command-tab by m -->
-<autogen>
-__KeyToKey__
-KeyCode::G,
-KeyCode::TAB, ModifierFlag::COMMAND_L,
-<!-- release command key to commit command-tab -->
-KeyCode::COMMAND_L,
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::A,
-KeyCode::C, ModifierFlag::COMMAND_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::N,
-KeyCode::V, ModifierFlag::COMMAND_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::BRACKET_LEFT,
-KeyCode::F7
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SEMICOLON,
-KeyCode::MINUS,
-KeyCode::SPACE
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SHIFT_R,
-KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
-KeyCode::X, ModifierFlag::COMMAND_L,
-Option::NOREPEAT,
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::E,
-KeyCode::TAB
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::U,
-KeyCode::F12, ModifierFlag::COMMAND_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::P,
-KeyCode::J, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::QUOTE,
-KeyCode::F6, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::DOT,
-KeyCode::D,
-KeyCode::D
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::R,
-KeyCode::V, ModifierFlag::COMMAND_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::F,
-KeyCode::RETURN
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::A,
-KeyCode::C, ModifierFlag::COMMAND_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::V,
-KeyCode::SHIFT_L,
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::O,
-KeyCode::VK_OPEN_URL_KM_ITERM_START_NEXT_LINE
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::D,
-KeyCode::DELETE
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SHIFT_L,
-KeyCode::F10, ModifierFlag::COMMAND_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::I,
-KeyCode::SPACE, ModifierFlag::CONTROL_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::M,
-KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::V | ModifierFlag::SHIFT_L,
-KeyCode::T, ModifierFlag::COMMAND_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::B,
-KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::Z,
-KeyCode::Z, ModifierFlag::COMMAND_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::H,
-KeyCode::CURSOR_LEFT
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::L,
-KeyCode::CURSOR_RIGHT
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::K,
-KeyCode::CURSOR_UP
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::J,
-KeyCode::CURSOR_DOWN
-</autogen>
-</item>
-
 <!-- sticky d for mouse movement  -->
 <replacementdef>
 <replacementname>MOUSE_KEYS_MODE_2_EXTRA</replacementname>
@@ -5311,8 +5106,8 @@ KeyCode::VK_OPEN_URL_ALFRED_GIT_REPOS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::C,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALL_FILES
+KeyCode::I,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GO_FAST_DIR
 </autogen>
 <autogen>
 __KeyToKey__
@@ -5436,13 +5231,8 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_WORKFLOWS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LIBRARY
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SHIFT_L,
-KeyCode::TAB, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+KeyCode::C,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALL_FILES
 </autogen>
 <autogen>
 __KeyToKey__
@@ -5709,6 +5499,45 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 </item>
 
 <item>
+<name>general: sticky 9 - alfred go fast</name>
+<identifier>private.launcher_mode_open_apps_v84</identifier>
+<pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+<modifier_not>
+ModifierFlag::COMMAND_L,
+ModifierFlag::COMMAND_R,
+ModifierFlag::CONTROL_L,
+ModifierFlag::CONTROL_R,
+ModifierFlag::FN,
+ModifierFlag::OPTION_L,
+ModifierFlag::OPTION_R,
+ModifierFlag::SHIFT_L,
+ModifierFlag::SHIFT_R,
+</modifier_not>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::9,
+@begin
+KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v84, ModifierFlag::MY_LAUNCHER_MODE,
+@end
+@begin
+KeyCode::9
+@end
+</autogen>
+</item>
+<item hidden="true">
+<identifier vk_config="true">notsave.private_launcher_mode_v84</identifier>
+<autogen>
+__BlockUntilKeyUp__ KeyCode::9,
+</autogen>
+
+<autogen>
+__KeyToKey__
+KeyCode::W,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
+</autogen>
+</item>
+
+<item>
 <name>general: sticky 0 - alfred</name>
 <identifier>private.launcher_mode_open_apps_v82</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
@@ -5747,6 +5576,11 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::B,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LIBRARY
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::V,
 KeyCode::VK_OPEN_URL_AFRED_GET_APP_VERSION
 </autogen>
@@ -5774,11 +5608,6 @@ KeyCode::VK_OPEN_URL_ALFRED_ALFRED_DOC
 __KeyToKey__
 KeyCode::M,
 KeyCode::VK_OPEN_URL_ALFRED_TIME
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::B,
-KeyCode::VK_OPEN_URL_ALFRED_GUTENBERG
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8869,7 +8698,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMISSION
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::H,
+KeyCode::P,
 KeyCode::VK_OPEN_URL_KM_OPEN_PAPRIKA_RECIPE_MANAGER
 </autogen>
 <autogen>
@@ -8960,7 +8789,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_REEDER
 <autogen>
 __KeyToKey__
 KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_OPEN_MARKED
+KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH
 </autogen>
 <autogen>
 __KeyToKey__

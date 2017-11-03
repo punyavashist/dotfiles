@@ -1,4 +1,27 @@
 {
+    // _testing
+    "newFile.defaultFileExtension": ".go",
+    "newFile.showPathRelativeTo": "project",
+    // _todo
+    "todohighlight.isEnable": true,
+    "todohighlight.isCaseSensitive": true,
+    "todohighlight.keywords": [
+        {
+            "text": "NOTE:",
+            "color": "yellow",
+            "backgroundColor": "rgba(0,0,0,.2)",
+        },
+        {
+            "text": "TODO:",
+            "color": "red",
+            "backgroundColor": "rgba(0,0,0,.2)",
+        },
+        {
+            "text": "FIXME:",
+            "color": "orange",
+            "backgroundColor": "rgba(0,0,0,.2)",
+        }
+    ],
     // _general
     "editor.snippetSuggestions": "top",
     "editor.minimap.enabled": false,
@@ -10,7 +33,7 @@
     ],
     "editor.lineNumbers": "relative",
     "editor.cursorStyle": "line",
-    "window.zoomLevel": -2,
+    "window.zoomLevel": -1,
     "workbench.welcome.enabled": false,
     // _python
     "python.linting.pylintArgs": [
@@ -131,12 +154,12 @@
     ],
     // _go
     "go.autocompleteUnimportedPackages": true,
+    "go.useLanguageServer": true,
     "go.lintTool": "golint",
     "go.lintOnSave": false,
     "go.buildOnSave": true,
     "go.formatOnSave": true,
     "go.gopath": "/Users/nikivi/go",
-    // "go.goroot": "/usr/local/go",
     // _java
     "java.errors.incompleteClasspath.severity": "ignore",
     // _typescript
@@ -146,5 +169,6 @@
     "files.associations": {
         "*.toml": "toml"
     },
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+    "todohighlight.isEnable": true
 }
