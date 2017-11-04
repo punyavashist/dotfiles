@@ -369,5 +369,13 @@
     "key": "alt+cmd+l",
     "command": "-bookmarks.jumpToNext",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "extension.copyGitHubLinkToClipboard"
+  },
+  {
+    "key": "ctrl+l c",
+    "command": "-extension.copyGitHubLinkToClipboard"
   }
 ]

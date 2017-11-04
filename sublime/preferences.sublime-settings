@@ -21,9 +21,9 @@
 		"*.jar",
 		"*.zip"
 	],
-	"color_scheme": "Packages/Theme - Glacier/glacier.tmTheme",
+	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"font_face": "Monospace",
-	"font_size": 16,
+	"font_size": 10,
 	"ignored_packages":
 	[
 		"Vintage"
