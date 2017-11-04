@@ -1546,6 +1546,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_INSERT_LOG_PRINTF</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "i: log.printf"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_INSERT_STICKY</name>
 <url type="shell">
 osascript -e '
@@ -6170,7 +6180,7 @@ KeyCode::VK_OPEN_URL_KM_INSERT_FMT_PRINTLN
 <autogen>
 __KeyToKey__
 KeyCode::G,
-KeyCode::VK_OPEN_URL_KM_INSERT_LOG_PRINTLN
+KeyCode::VK_OPEN_URL_KM_INSERT_LOG_PRINTF
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7271,6 +7281,11 @@ KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 __KeyToKey__
 KeyCode::U,
 KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI_TECHNOLOGY_PREVIEW
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::P,
+KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE
 </autogen>
 <autogen>
 __KeyToKey__
