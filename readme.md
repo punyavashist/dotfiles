@@ -1,4 +1,4 @@
-# My configuration files for macOS 🐚 [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
+# My configuration files for macOS [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
 > zsh, neovim, karabiner, hammerspoon, vs code
 
 <img src="https://i.imgur.com/ogfwIID.png" width="400" alt="img">
