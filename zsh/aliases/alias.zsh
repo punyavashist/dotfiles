@@ -1,6 +1,7 @@
 # _general
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias lc='tokei'
+alias sf='screenfetch -E'
 alias _='sudo'
 alias yi="python3 -i"
 alias kar="/Applications/Karabiner.app/Contents/Library/bin/karabiner"

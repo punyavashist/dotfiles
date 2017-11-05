@@ -10,6 +10,12 @@ function gc() {
     git commit -m "$@"
 }
 
+# start dynamoDB
+function dynamo() {
+  cd ~/db/dynamo
+  java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
+}
+
 # release alfred workflow 
 function  wr() {
   # TODO: check if current dir has go in it (if yes, cd to workflow and then run script)
@@ -124,7 +130,7 @@ function ud() {
 
 function mit() {
   license-up Nikita Voloboev nikitavoloboev.xyz
-  git add LICENSE
+  git add LICENSE 
 }
 
 function mitla () {

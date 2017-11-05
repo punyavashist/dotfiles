@@ -3222,10 +3222,18 @@ tell application "Alfred 3" to run trigger "web searches" in workflow "nikivi.we
 
 <!-- _mind def-->
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_REDDIT_MULTI_MIND</name>
+<name>KeyCode::VK_OPEN_URL_ALFRED_REDDIT_MIND_MULTI</name>
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/reddit-multi.json"
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_REDDIT_MIND_GITHUB</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/github.json"
 '
 </url>
 </vkopenurldef>
@@ -3354,14 +3362,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/gitter.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_NOTES</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/wiki.json"
 '
 </url>
 </vkopenurldef>
@@ -4242,7 +4242,7 @@ tell application "Alfred 3" to run trigger "keyboardMaestroSearch" in workflow "
 <name>KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "npmSearch" in workflow "com.sindresorhus.npms" with argument ""
+tell application "Alfred 3" to run trigger "npm" in workflow "com.sindresorhus.npms" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -5426,7 +5426,7 @@ KeyCode::F, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIF
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::S,
+KeyCode::A,
 KeyCode::S, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
 </autogen>
 <autogen>
@@ -5458,16 +5458,6 @@ KeyCode::P, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIF
 __KeyToKey__
 KeyCode::F,
 KeyCode::T, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::A,
-KeyCode::1, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::K,
-KeyCode::L, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7294,11 +7284,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_SCRIPT_EDITOR
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::3,
-KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::V,
 KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMIT
 </autogen>
@@ -7309,7 +7294,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_DR_RACKET
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::4,
+KeyCode::3,
 KeyCode::VK_OPEN_URL_KM_OPEN_ACTIVITY_MONITOR
 </autogen>
 <autogen>
@@ -7530,7 +7515,7 @@ KeyCode::VK_OPEN_URL_ALFRED_MIND_REDDIT_USERS
 <autogen>
 __KeyToKey__
 KeyCode::0,
-KeyCode::VK_OPEN_URL_ALFRED_REDDIT_MULTI_MIND
+KeyCode::VK_OPEN_URL_ALFRED_REDDIT_MIND_MULTI
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7549,7 +7534,7 @@ KeyCode::VK_OPEN_URL_ALFRED_MIND_COURSES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::C,
+KeyCode::M,
 KeyCode::VK_OPEN_URL_ALFRED_MIND_ARTICLES
 </autogen>
 <autogen>
@@ -7584,7 +7569,7 @@ KeyCode::VK_OPEN_URL_ALFRED_MIND_CLI
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::N,
+KeyCode::K,
 KeyCode::VK_OPEN_URL_ALFRED_MIND_STACK
 </autogen>
 <autogen>
@@ -7599,11 +7584,6 @@ KeyCode::VK_OPEN_URL_ALFRED_MIND_TWITTER
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::F,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_NOTES
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::B,
 KeyCode::VK_OPEN_URL_ALFRED_MIND_BLOGS
 </autogen>
@@ -7611,11 +7591,6 @@ KeyCode::VK_OPEN_URL_ALFRED_MIND_BLOGS
 __KeyToKey__
 KeyCode::L,
 KeyCode::VK_OPEN_URL_ALFRED_MIND_WIKI
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::M,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_NOTES
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7644,7 +7619,7 @@ KeyCode::VK_OPEN_URL_ALFRED_MIND_PROFILES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::K,
+KeyCode::N,
 KeyCode::VK_OPEN_URL_ALFRED_MIND_BOOKS
 </autogen>
 <autogen>
@@ -7977,7 +7952,7 @@ KeyCode::0, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTR
 </item>
 
 <item>
-<name>general: sticky tab - chrome</name>
+<name>general: sticky tab - alfred</name>
 <identifier>private.launcher_mode_open_apps_v55</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8012,6 +7987,11 @@ __BlockUntilKeyUp__ KeyCode::TAB,
 __KeyToKey__
 KeyCode::SPACE,
 KeyCode::Z, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::N,
+KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
 </autogen>
 </item>
 

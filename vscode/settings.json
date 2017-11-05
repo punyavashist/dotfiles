@@ -154,6 +154,10 @@
     ],
     // _go
     "go.autocompleteUnimportedPackages": true,
+    "go.liveErrors": {
+        "enabled": true,
+        "delay": 500
+    },
     "go.useLanguageServer": true,
     "go.lintTool": "golint",
     "go.lintOnSave": false,
@@ -170,5 +174,16 @@
         "*.toml": "toml"
     },
     "git.enableSmartCommit": true,
-    "todohighlight.isEnable": true
+    "todohighlight.isEnable": true,
+    "todohighlight.include": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.html",
+        "**/*.php",
+        "**/*.css",
+        "**/*.scss",
+        "**/*.go"
+    ]
 }

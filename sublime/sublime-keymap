@@ -12,6 +12,7 @@
     ]
   },
   { "keys": ["ctrl+d"], "command": "dash_doc" },
+  // TODO: doesn't work
   { "keys": ["ctrl+f"], "command": "gs_doc", "mode": "goto" },
 
   // TODO: fix cmd + j = console
