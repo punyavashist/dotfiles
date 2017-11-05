@@ -3,12 +3,12 @@
 
 <img src="https://i.imgur.com/ogfwIID.png" width="400" alt="img">
 
-## Description 📕
+## Description 
 These are the various configuration files I use on macOS. I wrote about how I customise and use my shell in article [here](https://medium.com/@NikitaVoloboev/pretty-and-fast-shell-97ea870f2805).
 
 You can also see my top used applications, safari exensions and alfred workflows I use [here](https://github.com/nikitavoloboev/my-mac-os).
 
-## Karabiner ⌨
+## Karabiner 
 
 <img src="https://explainxkcd.com/wiki/images/b/bf/borrow_your_laptop.png" width="500" alt="img">
 
@@ -16,34 +16,34 @@ The most exciting thing in here is probably how I utilise [Karabiner](https://pq
 
 I go over how I use Karabiner in detail [here](https://nikitavoloboev.gitbooks.io/knowledge/content/macOS/apps/karabiner/Karabiner.html) and I document all the keybindings I have made and changed as an interactive mind map [here](https://my.mindnode.com/c7EmmKvaxCyCEuTzcpkGB4MGeLpWdR8nsJK4rjDh#2086.8,-2205.5,2). Scroll around and explore, perhaps you find something interesting.
 
-## Neovim 🌻
+## Neovim 
 I am [still learning vim](https://my.mindnode.com/24sx5yV3S7FLayi5Msvhysx5HZ8aAPzUqJ6rStKi) but the this journey has been very rewarding. Modal editing is pretty amazing.
 
 Here is how my neovim theme looks like : 
 
 <img src="https://i.imgur.com/V65MpFf.png" width="500" alt="img">
 
-## VS Code ⌨
+## VS Code 
 My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has very well built [vim mode](https://github.com/VSCodeVim/Vim). And I really love its [Go Plugin](https://github.com/Microsoft/vscode-go) + the amazing zen mode. 
 
 Configs I use for it can be seen [here](https://github.com/nikitavoloboev/dotfiles/tree/master/vscode).
 
-## Hammerspoon 🔨
+## Hammerspoon 
 I don't use [hammerspoon](http://www.hammerspoon.org/) as extensively however I am looking into implementing more of its features into my workflow.
 
-## Zsh 🐚
+## Zsh 
 I also am using [zsh](http://www.zsh.org) as my shell with [antibody](https://github.com/getantibody/antibody) plugin manager.
 
 Here is how my prompt looks currently :
 
 <img src="https://i.imgur.com/H2pQyi2.png" width="500" alt="img">
 
-## Zsh aliases 🐚
+## Zsh aliases 
 I use many aliases to get around my system as fast as possible.
 
 Similar to my Karabiner config, I keep a list of all aliases that I have with their descriptions in an interactive mind map you can view [here](https://my.mindnode.com/upnFQeGrQCPwgCf3pfS4FgywQUj5sXNLxb1awm1D).
 
-## Interesting aliases and zsh functions 🐚
+## Interesting aliases and zsh functions 
 There is quite a lot of awesome programs I use from my command line (you can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps-) for some of them).
 
 However I also really love customising my shell experience with various aliases and zsh functions. Here are some that I like and use very often :
@@ -111,7 +111,7 @@ function re(){
 }
 ```
 
-### Fzf bindings 🔎
+### Fzf bindings 
 [fzf](https://github.com/junegunn/fzf) is a command line tool that lets you fuzzy search on text. I use it very often now for fuzzy searching for files to open with neovim, or fuzzy searching through my commit messages and more.
 
 Here are some of my favourite commands I use with it :
@@ -155,5 +155,5 @@ fea() {
 
 A slight variation of the above command that first `cd`'s to `~/.dotfiles` and then lets me search through contents of it to quickly edit and modify my config with neovim.
 
-## Thanks 🍀
-You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-143.5,-902.6,0) I shared. Thank you. 💚
+## Thank you 💜
+You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-143.5,-902.6,0) I shared. 
