@@ -1070,21 +1070,21 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_RUN_PY_FILE</name>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_RUN_PY_FILE</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: open run.py"
+do script "edit: run.py"
 end tell
 '
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_GO_PLAY</name>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_GO_PLAY</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: open go-play"
+do script "edit: go play"
 end tell
 '
 </url>
@@ -2142,16 +2142,6 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_GOGLAND</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: gogland"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PAPRIKA_RECIPE_MANAGER</name>
 <url type="shell">
 osascript -e '
@@ -2884,6 +2874,62 @@ tell application "Alfred 3" to run trigger "go fast" in workflow "nikivi.search.
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MY_TOPS</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "spot_mini" in workflow "com.vdesabou.spotify.mini.player" with argument "Your Tops▹"
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_ALBUMS</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "spot_mini" in workflow "com.vdesabou.spotify.mini.player" with argument "Album▹"
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_ARTISTS</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "spot_mini" in workflow "com.vdesabou.spotify.mini.player" with argument "Artist▹"
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_PLAY_QUEUE</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "show_play_queue" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_BROWSE</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "show_browse" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GO_FAST_DIR</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "go fast" in workflow "nikivi.search.files" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_HISTORY</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "show_recent_tracks" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_CURL_URL</name>
 <url type="shell">
 osascript -e '
@@ -3168,6 +3214,14 @@ tell application "Alfred 3" to run trigger "searchStack" in workflow "nikivi.sea
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "display_current_track_notification" in workflow "com.vdesabou.spotify.mini.player" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_ONLINE</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "show_search_online" in workflow "com.vdesabou.spotify.mini.player" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4003,7 +4057,7 @@ tell application "Alfred 3" to run trigger "displayBrightness" in workflow "com.
 <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_PLAYLISTS</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "spotifyPlaylists" in workflow "com.vdesabou.spotify.mini.player" with argument "✧Playlist▹"
+tell application "Alfred 3" to run trigger "show_playlists" in workflow "com.vdesabou.spotify.mini.player" with argument "test"
 '
 </url>
 </vkopenurldef>
@@ -4216,7 +4270,7 @@ tell application "Alfred 3" to run trigger "recentDownloads" in workflow "recent
 <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "spotifyCurrentTrack" in workflow "com.vdesabou.spotify.mini.player" with argument "✧Current Track▹"
+tell application "Alfred 3" to run trigger "show_current_track" in workflow "com.vdesabou.spotify.mini.player" with argument "test"
 '
 </url>
 </vkopenurldef>
@@ -6518,7 +6572,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_WOLFRAM_ALPHA
 </item>
 
 <item>
-<name>general: sticky m - productivity</name>
+<name>general: sticky m - productivity + spotify</name>
 <identifier>private.launcher_mode_open_apps_v17</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -6545,15 +6599,59 @@ KeyCode::M,
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v17</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::M,
 </autogen>
 
 <autogen>
 __KeyToKey__
+KeyCode::L,
+KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_ALBUMS
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::1,
 KeyCode::VK_OPEN_URL_TIMER_10
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::K,
+KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_ARTISTS
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::I,
+KeyCode::VK_OPEN_URL_ALFRED_CREATE_SONG_RADIO
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::H,
+KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_REMOVE_SONG_FROM_PLAYLIST
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::O,
+KeyCode::VK_OPEN_URL_ALFRED_CREATE_ARTIST_RADIO
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::TAB,
+KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MY_TOPS
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::BACKQUOTE,
+KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_PLAY_QUEUE
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::B,
+KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_BROWSE
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::Z,
+KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_ONLINE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6588,9 +6686,8 @@ KeyCode::X, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L,
 <autogen>
 __KeyToKey__
 KeyCode::C,
-KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SHOW_QUEUE
+KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_HISTORY
 </autogen>
-
 <autogen>
 __KeyToKey__
 KeyCode::B,
@@ -11115,7 +11212,7 @@ KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY_AND_OPEN_WITH_SUBLIME
 <autogen>
 __KeyToKey__
 KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_OPEN_GO_PLAY
+KeyCode::VK_OPEN_URL_KM_EDIT_GO_PLAY
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11125,7 +11222,12 @@ KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY
 <autogen>
 __KeyToKey__
 KeyCode::N,
-KeyCode::VK_OPEN_URL_KM_OPEN_RUN_PY_FILE
+KeyCode::VK_OPEN_URL_KM_EDIT_RUN_PY_FILE
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::COMMA,
+KeyCode::VK_OPEN_URL_KM_EDIT_PLAY_JS
 </autogen>
 <autogen>
 __KeyToKey__
