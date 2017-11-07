@@ -1,7 +1,7 @@
-# _test
+# _tester func
 function wo(){
   git add readme.md
-  git commit -m "reformat readme"
+  git commit -m "improve readme"
   git push
 }
 

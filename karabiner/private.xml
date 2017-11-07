@@ -1050,11 +1050,11 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_PLAY_JS</name>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_PLAY_JS</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: open play.js"
+do script "edit: play.js"
 end tell
 '
 </url>
@@ -1540,7 +1540,17 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "i: fmt.println"
+do script "go: fmt.println"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_INSERT_CONSOLE_LOG</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "js: console.log"
 end tell
 '
 </url>
@@ -1550,17 +1560,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "i: log.printf"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_INSERT_STICKY</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "i: /sticky"
+do script "go: log.printf"
 end tell
 '
 </url>
@@ -1570,7 +1570,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "i: workflow:"
+do script "go: workflow:"
 end tell
 '
 </url>
@@ -1580,7 +1580,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "i: log.println"
+do script "go: log.println"
 end tell
 '
 </url>
@@ -3582,7 +3582,7 @@ tell application "Alfred 3" to run trigger "pinboard" in workflow "com.vitorgalv
 <name>KeyCode::VK_OPEN_URL_ALFRED_HACKER_NEWS</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "hackerNews" in workflow "com.vitorgalvao.alfred.hackerboard" with argument ""
+tell application "Alfred 3" to run trigger "hn" in workflow "com.vitorgalvao.alfred.hackerboard" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -5460,6 +5460,7 @@ KeyCode::F,
 KeyCode::T, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
+
 __KeyToKey__
 KeyCode::DOT,
 KeyCode::F9, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
@@ -5540,6 +5541,11 @@ KeyCode::9
 __BlockUntilKeyUp__ KeyCode::9,
 </autogen>
 
+<autogen>
+__KeyToKey__
+KeyCode::C,
+KeyCode::VK_OPEN_URL_ALFRED_COLOUR_PICKER
+</autogen>
 <autogen>
 __KeyToKey__
 KeyCode::W,
@@ -5918,7 +5924,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_YOUTUBE_AUTOPLAY
 <autogen>
 __KeyToKey__
 KeyCode::BRACKET_LEFT,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_DRAW
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6122,8 +6128,46 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_ALL_NOTIFICATIONS
 </autogen>
 </item>
 
+
 <item>
-<name>go: sticky dot</name>
+<name>js: code</name>
+<identifier>private.launcher_mode_open_apps_v76</identifier>
+<pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+<modifier_not>
+ModifierFlag::COMMAND_L,
+ModifierFlag::COMMAND_R,
+ModifierFlag::CONTROL_L,
+ModifierFlag::CONTROL_R,
+ModifierFlag::FN,
+ModifierFlag::OPTION_L,
+ModifierFlag::OPTION_R,
+ModifierFlag::SHIFT_L,
+ModifierFlag::SHIFT_R,
+</modifier_not>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::P,@begin
+KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v76, ModifierFlag::MY_LAUNCHER_MODE,
+@end@begin
+KeyCode::P,
+@end
+</autogen>
+</item>
+<item hidden="true">
+<identifier vk_config="true">notsave.private_launcher_mode_v76</identifier>
+<autogen>
+__BlockUntilKeyUp__ KeyCode::P,
+</autogen>
+
+<autogen>
+__KeyToKey__
+KeyCode::A,
+KeyCode::VK_OPEN_URL_KM_INSERT_CONSOLE_LOG
+</autogen>
+</item>
+
+<item>
+<name>go: code</name>
 <identifier>private.launcher_mode_open_apps_v72</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -6159,11 +6203,6 @@ KeyCode::VK_OPEN_URL_SHELL_switchprofile_python
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::S,
-KeyCode::VK_OPEN_URL_KM_INSERT_STICKY
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::F,
 KeyCode::VK_OPEN_URL_KM_INSERT_FMT_PRINTLN
 </autogen>
@@ -6180,7 +6219,7 @@ KeyCode::VK_OPEN_URL_KM_INSERT_WORKFLOW:
 </item>
 
 <item>
-<name>python: sticky dot</name>
+<name>python: code</name>
 <identifier>private.launcher_mode_open_apps_v77</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -6364,6 +6403,11 @@ KeyCode::VK_OPEN_URL_ALFRED_COMMIT_FOLDERS
 <autogen>
 __KeyToKey__
 KeyCode::D,
+KeyCode::VK_OPEN_URL_ALFRED_EXPLAIN_SHELL
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::C,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_STACK
 </autogen>
 <autogen>
@@ -7629,11 +7673,6 @@ KeyCode::VK_OPEN_URL_ALFRED_MIND_REDDIT
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::C,
-KeyCode::VK_OPEN_URL_ALFRED_CSS_COOKBOOK
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::SPACE,
 KeyCode::B, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, 
 </autogen>
@@ -7985,6 +8024,11 @@ __BlockUntilKeyUp__ KeyCode::TAB,
 
 <autogen>
 __KeyToKey__
+KeyCode::U,
+KeyCode::VK_OPEN_URL_ALFRED_UNITS
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::SPACE,
 KeyCode::Z, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, 
 </autogen>
@@ -7992,6 +8036,11 @@ KeyCode::Z, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION
 __KeyToKey__
 KeyCode::N,
 KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::P,
+KeyCode::VK_OPEN_URL_ALFRED_CRYPTO_TRACK
 </autogen>
 </item>
 
@@ -9333,21 +9382,6 @@ KeyCode::VK_OPEN_URL_ALFRED_UPDATE_GITHUB_INDEX
 __KeyToKey__
 KeyCode::O,
 KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE_FILE
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::2,
-KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::E,
-KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY_AND_OPEN_WITH_VS_CODE
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::R,
-KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY_AND_OPEN_WITH_SUBLIME
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11075,8 +11109,18 @@ __BlockUntilKeyUp__ KeyCode::BACKQUOTE,
 
 <autogen>
 __KeyToKey__
+KeyCode::O,
+KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY_AND_OPEN_WITH_SUBLIME
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::M,
 KeyCode::VK_OPEN_URL_KM_OPEN_GO_PLAY
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::P,
+KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11086,12 +11130,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_RUN_PY_FILE
 <autogen>
 __KeyToKey__
 KeyCode::I,
-KeyCode::VK_OPEN_URL_ALFRED_UNITS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::V,
-KeyCode::VK_OPEN_URL_KM_OPEN_PLAY_JS
+KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY_AND_OPEN_WITH_VS_CODE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11150,18 +11189,8 @@ KeyCode::SEMICOLON, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::P,
-KeyCode::VK_OPEN_URL_ALFRED_CRYPTO_TRACK
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::T,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TIMEZONES
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::O,
-KeyCode::VK_OPEN_URL_ALFRED_COLOUR_PICKER
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11897,7 +11926,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
 
 <item>
 <only>MINDNODE</only>
-<name>mindnode: left command to option</name>
+<name>general: left command to option - ONLY: MindNode</name>
 <identifier>private.mindnode_left_cmd_to_opt</identifier>
 <autogen>
 __KeyToKey__

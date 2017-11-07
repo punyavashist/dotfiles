@@ -2,6 +2,7 @@
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias lc='tokei'
 alias sf='screenfetch -E'
+alias am='open -a "Marked 2"'
 alias _='sudo'
 alias yi="python3 -i"
 alias kar="/Applications/Karabiner.app/Contents/Library/bin/karabiner"
@@ -15,10 +16,9 @@ alias mc='md-to-alfred'
 alias pd='pandoc'
 alias yt='yotube-dl'
 alias r='rg'
-alias s='subl'
+alias s='subl -n'
 alias ss='subl .'
 alias ca='carthage'
-alias cad='carthage update'
 alias alf='alfred'
 alias ta='touch readme.md'
 alias d='cd'
@@ -83,7 +83,7 @@ alias kb='kubectl'
 alias ser='serve'
 alias sr='python3 -m http.server'
 
-alias ra='create-react-app'
+alias react='create-react-app'
 
 alias lic='legit'
 
