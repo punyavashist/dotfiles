@@ -49,15 +49,14 @@ li() {
   ln -s "$1" "$2"
 }
 
+
 function zs() {
   z $1 && open .
 }
 
 # _alfred
-
 # alfred search function
-
-awe() {
+we() {
     if [ $# -eq 0 ]; then   # If nothing is put as arguments open Alfred at the working directory so it list the content
         osascript -e "tell application \"Alfred 3\" to browse \"$(pwd)\""
     elif [ $# -eq 1 ]; then # If only one argument is set
@@ -294,12 +293,6 @@ function tc() {
     nvim Cartfile
 }
 
-function ggd() {
-  git add readme.md
-  git commit -m "✍🏻 updated readme"
-  git push
-}
-
 function gll(){
     git clone "$(pbpaste)"
 }
@@ -313,7 +306,8 @@ function ggs() {
 
 function gw() {
     git add .
-    git commit -m $1
+    git commit -m "$*" 
+    git push
 }
 
 function ogg() {

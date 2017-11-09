@@ -868,6 +868,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_NEW_2DO_QUICK_TASK</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "a: make 2do quick task"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_THINKING_MAP</name>
 <url type="shell">
 osascript -e '
@@ -1805,6 +1815,16 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "open: itunes"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_MAGIC_NUMBER</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "open: magic number"
 end tell
 '
 </url>
@@ -2874,6 +2894,14 @@ tell application "Alfred 3" to run trigger "go fast" in workflow "nikivi.search.
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GO_FAST_DIR</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "go fast" in workflow "nikivi.search.files" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MY_TOPS</name>
 <url type="shell">
 osascript -e '
@@ -3254,14 +3282,6 @@ tell application "Alfred 3" to run trigger "pdf" in workflow "nikivi.search.mind
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "checkWifi" in workflow "nikivi.wifi.workflow" with argument ""
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_EDIT_FILES</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "edit files" in workflow "nikivi.edit.files" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -5141,7 +5161,7 @@ KeyCode::VK_OPEN_URL_KM_TEST
 <autogen>
 __KeyToKey__
 KeyCode::TAB,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SKETCH
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GO_FAST_DIR
 </autogen>
 <autogen>
 __KeyToKey__
@@ -5206,7 +5226,7 @@ KeyCode::VK_OPEN_URL_ALFRED_RECENT_DOWNLOADS
 <autogen>
 __KeyToKey__
 KeyCode::E,
-KeyCode::F9, ModifierFlag::OPTION_L
+KeyCode::VK_OPEN_URL_KM_NEW_2DO_QUICK_TASK
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7435,8 +7455,13 @@ KeyCode::VK_OPEN_URL_KM_OPEN_DR_RACKET
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::3,
+KeyCode::4,
 KeyCode::VK_OPEN_URL_KM_OPEN_ACTIVITY_MONITOR
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::3,
+KeyCode::VK_OPEN_URL_KM_OPEN_ANKI
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8083,7 +8108,7 @@ KeyCode::K, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
 <autogen>
 __KeyToKey__
 KeyCode::SPACE,
-KeyCode::0, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+KeyCode::G, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, 
 </autogen>
 </item>
 
@@ -8127,7 +8152,7 @@ KeyCode::VK_OPEN_URL_ALFRED_UNITS
 <autogen>
 __KeyToKey__
 KeyCode::SPACE,
-KeyCode::Z, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, 
+KeyCode::G, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8670,7 +8695,7 @@ KeyCode::S, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION
 <autogen>
 __KeyToKey__
 KeyCode::F19,
-KeyCode::6, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_ANKI
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8732,6 +8757,39 @@ KeyCode::VK_OPEN_URL_ALFRED_DISMISS_NOTIFICATIONS
 </item>
 
 <item>
+<name>general: sticky right shift - things</name>
+<identifier>private.launcher_mode_open_apps_v36</identifier>
+<pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+<modifier_not>
+ModifierFlag::COMMAND_L,
+ModifierFlag::COMMAND_R,
+ModifierFlag::CONTROL_L,
+ModifierFlag::CONTROL_R,
+ModifierFlag::FN,
+ModifierFlag::OPTION_L,
+ModifierFlag::OPTION_R,
+ModifierFlag::SHIFT_L,
+</modifier_not>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::SHIFT_R,
+@begin
+KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v36, ModifierFlag::MY_LAUNCHER_MODE,
+@end
+@begin
+KeyCode::DELETE,
+@end
+</autogen>
+</item>
+<item hidden="true">
+<identifier vk_config="true">notsave.private_launcher_mode_v36</identifier>
+<autogen>
+__BlockUntilKeyUp__ KeyCode::SHIFT_R,
+</autogen>
+
+</item>
+
+<item>
 <name>general: sticky r - open other apps</name>
 <identifier>private.launcher_mode_open_apps_v8</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
@@ -8759,7 +8817,6 @@ KeyCode::R,
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v8</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::R,
 </autogen>
@@ -8822,11 +8879,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_PIXAVE
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::2,
-KeyCode::VK_OPEN_URL_KM_OPEN_ANKI
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::Y,
 KeyCode::VK_OPEN_URL_KM_OPEN_YNAB
 </autogen>
@@ -8868,7 +8920,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_PAGES
 <autogen>
 __KeyToKey__
 KeyCode::F19,
-KeyCode::VK_OPEN_URL_KM_OPEN_SOULVER
+KeyCode::VK_OPEN_URL_KM_OPEN_MAGIC_NUMBER
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9432,6 +9484,11 @@ KeyCode::U, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::J,
+KeyCode::VK_OPEN_URL_KM_DECREASE_YOUTUBE_PLAYBACK
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::Q,
 KeyCode::SEMICOLON, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
 </autogen>
@@ -9467,7 +9524,7 @@ KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::J,
+KeyCode::H,
 KeyCode::VK_OPEN_URL_HAMMERSPOON_RELOAD_CONFIG
 </autogen>
 <autogen>
@@ -9704,7 +9761,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
 <autogen>
 __KeyToKey__
 KeyCode::SPACE,
-KeyCode::G, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+KeyCode::M, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10466,7 +10523,7 @@ KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTI
 <autogen>
 __KeyToKey__
 KeyCode::F19,
-KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_ANKI
+KeyCode::6, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11472,7 +11529,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::O,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_EDIT_FILES
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GO_FAST_DIR
 </autogen>
 </item>
 

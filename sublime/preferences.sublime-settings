@@ -1,6 +1,7 @@
 {
 	"auto_format_on_save": true,
-	"binary_file_patterns": [
+	"binary_file_patterns":
+	[
 		"dist/*",
 		"node_modules/*",
 		"autoload/*",
@@ -22,8 +23,11 @@
 	],
 	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"font_face": "Monospace",
-	"font_size": 13,
-	"ignored_packages": ["Vintage"],
-	"open_files_in_new_window": false,
+	"font_size": 15,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"open_files_in_new_window": true,
 	"theme": "Glacier.sublime-theme"
 }

@@ -68,8 +68,7 @@ set ttimeoutlen=10
 set nobackup                                      " don't create annoying backup files
 set path=+**                                      " search down into subfolders
 
-" testing
-
+" _testing
 " --------------------------------------
 " _basic vim config
 " --------------------------------------
