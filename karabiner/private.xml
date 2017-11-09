@@ -1544,9 +1544,9 @@ end tell
 </url>
 </vkopenurldef>
 
-<!-- _km insert things-->
+<!-- _km go maps-->
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_INSERT_FMT_PRINTLN</name>
+<name>KeyCode::VK_OPEN_URL_KM_GO_FMT_PRINTLN</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -1556,17 +1556,17 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_INSERT_CONSOLE_LOG</name>
+<name>KeyCode::VK_OPEN_URL_KM_go_log_fatal</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "js: console.log"
+do script "go: log.Fatal()"
 end tell
 '
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_INSERT_LOG_PRINTF</name>
+<name>KeyCode::VK_OPEN_URL_KM_GO_LOG_PRINTF</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -1576,7 +1576,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_INSERT_WORKFLOW:</name>
+<name>KeyCode::VK_OPEN_URL_KM_GO_WORKFLOW:</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -1586,11 +1586,23 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_INSERT_LOG_PRINTLN</name>
+<name>KeyCode::VK_OPEN_URL_KM_GO_LOG_PRINTLN</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "go: log.println"
+end tell
+'
+</url>
+</vkopenurldef>
+
+<!-- _km js maps-->
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_JS_CONSOLE_LOG</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "js: console.log"
 end tell
 '
 </url>
@@ -6236,7 +6248,7 @@ __BlockUntilKeyUp__ KeyCode::P,
 <autogen>
 __KeyToKey__
 KeyCode::A,
-KeyCode::VK_OPEN_URL_KM_INSERT_CONSOLE_LOG
+KeyCode::VK_OPEN_URL_KM_JS_CONSOLE_LOG
 </autogen>
 </item>
 
@@ -6272,23 +6284,23 @@ __BlockUntilKeyUp__ KeyCode::P,
 
 <autogen>
 __KeyToKey__
-KeyCode::2,
-KeyCode::VK_OPEN_URL_SHELL_switchprofile_python
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::F,
-KeyCode::VK_OPEN_URL_KM_INSERT_FMT_PRINTLN
+KeyCode::VK_OPEN_URL_KM_GO_FMT_PRINTLN
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::G,
-KeyCode::VK_OPEN_URL_KM_INSERT_LOG_PRINTF
+KeyCode::VK_OPEN_URL_KM_GO_LOG_PRINTF
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::T,
+KeyCode::VK_OPEN_URL_KM_go_log_fatal
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::W,
-KeyCode::VK_OPEN_URL_KM_INSERT_WORKFLOW:
+KeyCode::VK_OPEN_URL_KM_GO_WORKFLOW:
 </autogen>
 </item>
 
@@ -8349,12 +8361,10 @@ __KeyToKey__
 KeyCode::SPACE,
 KeyCode::F1, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 </autogen>
-
-
 </item>
 
 <item>
-<name>general: sticky 3 - ⇧ + ⌃ + ⌥</name>
+<name>general: sticky 3 - ⇧ + ⌃ + ⌥  = files</name>
 <identifier>private.launcher_mode_open_apps_v51</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>

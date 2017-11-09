@@ -154,13 +154,6 @@ function ggr() {
   git push
 }
 
-# changed queries in search engine
-function qe() {
-    yarn run clean-triggers
-    git add .
-    git commit -m "queries"
-    git push
-}
 
 function mi() {
     mkdir "$1"
@@ -189,14 +182,14 @@ function ggla() {
     git init
     mitla
     git add .
-    git commit -m "🌅 initial commit"
+    git commit -m "initial commit"
 }
 
 function ggi() {
     git init
     mit
     git add .
-    git commit -m "🌅 initial commit"
+    git commit -m "initial commit"
 }
 
 
