@@ -28,7 +28,7 @@ function td() {
 }
 
 function re(){
-  mv "$1" ~/.Trash
+  mv "$@" ~/.Trash
 }
 
 # Link source to destination
@@ -56,7 +56,7 @@ function zs() {
 
 # _alfred
 # alfred search function
-we() {
+awe() {
     if [ $# -eq 0 ]; then   # If nothing is put as arguments open Alfred at the working directory so it list the content
         osascript -e "tell application \"Alfred 3\" to browse \"$(pwd)\""
     elif [ $# -eq 1 ]; then # If only one argument is set

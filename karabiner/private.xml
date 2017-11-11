@@ -868,6 +868,26 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_FOCUS_90_MIN</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "a: focus for 90 min"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_NEW_TWEET_WITH_SAFARI_URL</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "a: new tweet with current URL"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_NEW_2DO_QUICK_TASK</name>
 <url type="shell">
 osascript -e '
@@ -4641,11 +4661,6 @@ KeyCode::CAPSLOCK
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::F19,
-KeyCode::F6
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::DOT,
 KeyCode::DOT, ModifierFlag::SHIFT_L
 </autogen>
@@ -5487,6 +5502,11 @@ KeyCode::SEMICOLON, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFl
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::G,
+KeyCode::I, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, 
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::L,
 KeyCode::J, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
 </autogen>
@@ -5680,6 +5700,11 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
 __KeyToKey__
 KeyCode::B,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LIBRARY
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::U,
+KeyCode::VK_OPEN_URL_ALFRED_UNINSTALL_WITH_CLEANMYMAC
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6673,6 +6698,11 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MY_TOPS
 <autogen>
 __KeyToKey__
 KeyCode::BACKQUOTE,
+KeyCode::VK_OPEN_URL_KM_NEW_TWEET_WITH_SAFARI_URL
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::SEMICOLON,
 KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_PLAY_QUEUE
 </autogen>
 <autogen>
@@ -6733,20 +6763,18 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_CURRENT_SONG
 <autogen>
 __KeyToKey__
 KeyCode::R,
-KeyCode::VK_OPEN_URL_KM_FOCUS_120_MIN
+KeyCode::VK_OPEN_URL_KM_FOCUS_90_MIN
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::K,
 KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_OPEN_LYRICS
-</autoge>
-
+</autogen>
 <autogen>
 __KeyToKey__
 KeyCode::Y,
 KeyCode::VK_OPEN_URL_ALFRED_CREATE_ARTIST_RADIO
 </autoge>
-
 <autogen>
 __KeyToKey__
 KeyCode::Q,
@@ -6776,11 +6804,6 @@ KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW
 __KeyToKey__
 KeyCode::W,
 KeyCode::VK_OPEN_URL_ALFRED_TIMER_START
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SEMICOLON,
-KeyCode::VK_OPEN_URL_ALFRED_UNINSTALL_WITH_CLEANMYMAC
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8965,7 +8988,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_REEDER
 <autogen>
 __KeyToKey__
 KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH
+KeyCode::VK_OPEN_URL_KM_OPEN_MARKED
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9649,6 +9672,11 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_SLACK
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::SEMICOLON,
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_SLACK
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::COMMAND_L,
 KeyCode::E, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
 </autogen>
@@ -9681,11 +9709,6 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_CONTACTS_TEXT
 __KeyToKey__
 KeyCode::G,
 KeyCode::VK_OPEN_URL_KM_OPEN_GITTER
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SEMICOLON,
-KeyCode::VK_OPEN_URL_KM_OPEN_SLACK
 </autogen>
 <autogen>
 __KeyToKey__
