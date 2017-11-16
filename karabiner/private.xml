@@ -1704,7 +1704,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "path: pdfs"
+do script "path: pdf"
 end tell
 '
 </url>
@@ -1977,6 +1977,16 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "open: IINA"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX_DEV</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "open: firefox dev"
 end tell
 '
 </url>
@@ -4326,8 +4336,6 @@ tell application "Alfred 3" to run trigger "show_current_track" in workflow "com
 '
 </url>
 </vkopenurldef>
-
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN</name>
 <url type="shell">
@@ -4352,8 +4360,6 @@ tell application "Alfred 3" to run trigger "npm" in workflow "com.sindresorhus.n
 '
 </url>
 </vkopenurldef>
-
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_GROUPS</name>
 <url type="shell">
@@ -4382,7 +4388,7 @@ tell application "Alfred 3" to run trigger "history" in workflow "com.alfredapp.
 <name>KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "view safari tabs" in workflow "net.deanishe.alfred.safari" with argument ""
+tell application "Alfred 3" to run trigger "safari tabs" in workflow "net.deanishe.alfred.safari" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -8274,6 +8280,11 @@ KeyCode::4,
 __BlockUntilKeyUp__ KeyCode::4,
 </autogen>
 
+<autogen>
+__KeyToKey__
+KeyCode::F19,
+KeyCode::Y, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, 
+</autogen>
 <autogen>
 __KeyToKey__
 KeyCode::M,
