@@ -149,16 +149,16 @@ fea() {
   [[ -n "$files" ]] && nvim "${files[@]}"
 }
 
-f() {
+fe() {
   local files
   IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
   [[ -n "$files" ]] && nvim "${files[@]}"
 }
 
-fw() {
+f() {
   local files
   IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
-  [[ -n "$files" ]] && code "${files[@]}"
+  [[ -n "$files" ]] && subl "${files[@]}"
 }
 
 # fdr - cd to selected parent directory
@@ -184,7 +184,7 @@ fdr() {
 # }
 
 # cd into the directory of the selected file
-fs() {
+fw() {
    local file
    local dir
    file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"
