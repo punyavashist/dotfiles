@@ -18,9 +18,9 @@ I go over how I use Karabiner in detail [here](https://nikitavoloboev.gitbooks.i
 ## Neovim 
 I am [still learning vim](https://my.mindnode.com/24sx5yV3S7FLayi5Msvhysx5HZ8aAPzUqJ6rStKi) but the this journey has been very rewarding. Modal editing is pretty amazing.
 
-Here is how my neovim theme looks like : 
+I use [ayu theme](https://github.com/ayu-theme/ayu-vim) across all my editors, including neovim:
 
-<img src="https://i.imgur.com/V65MpFf.png" width="500" alt="img">
+<img src="https://i.imgur.com/nL5NGpJ.png" width="500" alt="img">
 
 ## VS Code 
 My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has very well built [vim mode](https://github.com/VSCodeVim/Vim). And I really love its [Go Plugin](https://github.com/Microsoft/vscode-go) + the amazing zen mode. 
@@ -31,11 +31,11 @@ Configs I use for it can be seen [here](https://github.com/nikitavoloboev/dotfil
 I don't use [hammerspoon](http://www.hammerspoon.org/) as extensively however I am looking into implementing more of its features into my workflow.
 
 ## Zsh 
-I also am using [zsh](http://www.zsh.org) as my shell with [antibody](https://github.com/getantibody/antibody) plugin manager.
+I am using [zsh](http://www.zsh.org) as my shell with [antibody](https://github.com/getantibody/antibody) plugin manager.
 
-Here is how my prompt looks currently :
+I am also using [ayu theme](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/ayu.itermcolors) in zsh. Here is how my prompt looks like:
 
-<img src="https://i.imgur.com/H2pQyi2.png" width="500" alt="img">
+<img src="https://i.imgur.com/JfAUnKm.png" width="500" alt="img">
 
 ## Zsh aliases 
 I use many aliases to get around my system as fast as possible.
@@ -45,7 +45,7 @@ Similar to my Karabiner config, I keep a list of all aliases that I have with th
 ## Interesting aliases and zsh functions 
 There is quite a lot of awesome programs I use from my command line (you can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps-) for some of them).
 
-However I also really love customising my shell experience with various aliases and zsh functions. Here are some that I like and use very often :
+However I also really love customising my shell experience with various aliases and zsh functions. Here are some that I like and use very often:
 
 ### Commit and push repository to GitHub in one command
 
@@ -156,3 +156,6 @@ A slight variation of the above command that first `cd`'s to `~/.dotfiles` and t
 
 ## Thank you 💜
 You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-143.5,-902.6,0) I shared. 
+
+## License
+MIT © [Nikita Voloboev](https://www.nikitavoloboev.xyz)
