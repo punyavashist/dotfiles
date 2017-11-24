@@ -35,8 +35,7 @@ I am using [zsh](http://www.zsh.org) as my shell with [antibody](https://github.
 
 I am also using [ayu theme](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/ayu.itermcolors) in zsh. Here is how my prompt looks like:
 
-<!-- <img src="https://i.imgur.com/JfAUnKm.png" width="500" alt="img"> -->
-![](https://i.imgur.com/JfAUnKm.png)
+<img src="https://i.imgur.com/JfAUnKm.png" width="500" alt="img">
 
 ## Zsh aliases 
 I use many aliases to get around my system as fast as possible.
