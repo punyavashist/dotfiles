@@ -10,6 +10,7 @@ endfunction
 
 " _move
 Plug 'easymotion/vim-easymotion'
+Plug 'ayu-theme/ayu-vim' " theme
 Plug 'jiangmiao/auto-pairs'
 "Plug 'mbbill/undotree'
 Plug 'wakatime/vim-wakatime'
@@ -198,6 +199,12 @@ set background=dark                   " set night mode
 "  _settings
 " -------------------------------------
 let g:deoplete#enable_at_startup = 1               " activate deoplete
+
+set termguicolors     " enable true colors support
+let ayucolor="light"  " for light version of theme
+let ayucolor="mirage" " for mirage version of theme
+let ayucolor="dark"   " for dark version of theme
+colorscheme ayu
 
 " autocomplete with tab
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"

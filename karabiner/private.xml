@@ -1862,6 +1862,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_TRELLO</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "open: trello"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_PHOTOS</name>
 <url type="shell">
 osascript -e '
@@ -2936,7 +2946,7 @@ end tell
 </url>
 </vkopenurldef>
 
-<!-- _alfred def -->
+<!-- _alf def -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GO_FAST_DIR</name>
 <url type="shell">
@@ -5235,7 +5245,7 @@ KeyCode::VK_OPEN_URL_ALFRED_PLAY_DIR_WATCH
 <autogen>
 __KeyToKey__
 KeyCode::B,
-KeyCode::VK_OPEN_URL_ALFRED_PINBOARD
+KeyCode::SPACE, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -5441,8 +5451,6 @@ KeyCode::VK_OPEN_URL_ALFRED_PROCESS_CONTROL
 <item>
 <name>general: sticky slash - websites</name>
 <identifier>private.launcher_mode_open_apps_v19</identifier>
-
-
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
 ModifierFlag::COMMAND_L,
@@ -7522,12 +7530,12 @@ KeyCode::VK_OPEN_URL_KM_OPEN_DR_RACKET
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::4,
-KeyCode::VK_OPEN_URL_KM_OPEN_ACTIVITY_MONITOR
+KeyCode::3,
+KeyCode::VK_OPEN_URL_KM_OPEN_TRELLO
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::3,
+KeyCode::4,
 KeyCode::VK_OPEN_URL_KM_OPEN_ANKI
 </autogen>
 <autogen>
@@ -8230,6 +8238,16 @@ KeyCode::G, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
 __KeyToKey__
 KeyCode::N,
 KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::B,
+KeyCode::VK_OPEN_URL_ALFRED_PINBOARD
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::H,
+KeyCode::VK_OPEN_URL_ALFRED_HACKER_NEWS
 </autogen>
 <autogen>
 __KeyToKey__

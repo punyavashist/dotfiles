@@ -288,6 +288,7 @@ function tc() {
 
 function gll(){
     git clone "$(pbpaste)"
+    # TODO: cd into cloned project
 }
 
 
