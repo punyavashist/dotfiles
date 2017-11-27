@@ -1090,41 +1090,41 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_EDIT_PLAY_JS</name>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_TEST_JS</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "edit: play.js"
+do script "edit: test.js"
 end tell
 '
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_MATH_HASKELL_FILE</name>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_MAIN_HASKELL</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: open math.hs"
+do script "edit: main.hs"
 end tell
 '
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_EDIT_RUN_PY_FILE</name>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_TEST_PY_FILE</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "edit: run.py"
+do script "edit: test.py"
 end tell
 '
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_EDIT_GO_PLAY</name>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_TEST_GO_MAIN</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "edit: go play"
+do script "edit: main.go"
 end tell
 '
 </url>
@@ -5552,8 +5552,13 @@ KeyCode::H, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIF
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::SEMICOLON,
+KeyCode::T,
 KeyCode::G, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::SEMICOLON,
+KeyCode::VK_OPEN_URL_KM_GET_CURRENT_CHROME_URL
 </autogen>
 <autogen>
 __KeyToKey__
@@ -5844,11 +5849,6 @@ __BlockUntilKeyUp__ KeyCode::BRACKET_LEFT,
 __KeyToKey__
 KeyCode::C,
 KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_CODESANDBOX
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SPACE,
-KeyCode::VK_OPEN_URL_KM_GET_CURRENT_CHROME_URL
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6365,7 +6365,7 @@ KeyCode::VK_OPEN_URL_KM_GO_WORKFLOW:
 </item>
 
 <item>
-<name>python: code</name>
+<name>py: code</name>
 <identifier>private.launcher_mode_open_apps_v77</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -6415,7 +6415,7 @@ KeyCode::SPACE,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::E,
+KeyCode::A,
 KeyCode::P,
 KeyCode::R,
 KeyCode::I,
@@ -7510,6 +7510,11 @@ KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI_TECHNOLOGY_PREVIEW
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::0,
+KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX_DEV
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::P,
 KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE
 </autogen>
@@ -7521,7 +7526,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_SCRIPT_EDITOR
 <autogen>
 __KeyToKey__
 KeyCode::V,
-KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMIT
+KeyCode::VK_OPEN_URL_KM_OPEN_SCRIPT_DEBUGGER
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11332,7 +11337,7 @@ KeyCode::EQUAL, ModifierFlag::COMMAND_L
 </item>
 
 <item>
-<name>general: sticky backquote - runnable files + projects</name>
+<name>general: sticky backquote - runnable files + projects + cloning</name>
 <identifier>private.launcher_mode_open_apps_v40</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -11372,7 +11377,7 @@ KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY_AND_OPEN_WITH_SUBLIME
 <autogen>
 __KeyToKey__
 KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_EDIT_GO_PLAY
+KeyCode::VK_OPEN_URL_KM_EDIT_TEST_GO_MAIN
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11382,12 +11387,12 @@ KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY
 <autogen>
 __KeyToKey__
 KeyCode::N,
-KeyCode::VK_OPEN_URL_KM_EDIT_RUN_PY_FILE
+KeyCode::VK_OPEN_URL_KM_EDIT_TEST_PY_FILE
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::COMMA,
-KeyCode::VK_OPEN_URL_KM_EDIT_PLAY_JS
+KeyCode::VK_OPEN_URL_KM_EDIT_TEST_JS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11402,7 +11407,7 @@ KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
 <autogen>
 __KeyToKey__
 KeyCode::DOT,
-KeyCode::VK_OPEN_URL_KM_OPEN_MATH_HASKELL_FILE
+KeyCode::VK_OPEN_URL_KM_EDIT_MAIN_HASKELL
 </autogen>
 <autogen>
 __KeyToKey__
