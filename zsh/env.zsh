@@ -4,7 +4,7 @@
 export PATH=$(brew --prefix ruby)/bin:$PATH
 export PATH="$HOME/.yarn/bin:$PATH"
 
-# my cli tools
+# My CLI tools
 export PATH=$PATH:~/.dotfiles/bin
 
 # _npm path

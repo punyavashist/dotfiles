@@ -1,4 +1,5 @@
 # _general
+alias g='hub'
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias lc='tokei'
 alias sf='screenfetch -E'
@@ -9,7 +10,7 @@ alias kar="/Applications/Karabiner.app/Contents/Library/bin/karabiner"
 alias le='less -r'
 alias wifi='wifi-password -q'
 # alias du='du -sh * | sort'
-alias h='tmux'
+alias h='hub'
 alias eop='echo $PATH'
 alias eo='echo'
 alias es='elasticsearch'
@@ -45,6 +46,7 @@ alias ma='man'
 alias c='ccat'
 alias rec='asciinema rec'
 alias b='bd'
+alias ws='workflow-install -s source'
 alias fk='fuck'
 alias dus='du -s'
 alias t='touch'
@@ -52,7 +54,7 @@ alias zo='open'
 alias ff='open .'
 alias ki='kill'
 alias icat='imgcat'
-alias tt='type'
+alias tt='tldr'
 alias tre='tree -a'
 alias q='exit'
 alias e='nvim'
@@ -297,7 +299,7 @@ alias ezb='nvim ~/.dotfiles/zsh/zsh/bindings.zsh'                # shell keyboar
 
 # _cd places
 # _projects
-alias dk='cd ~/projects'
+# alias dk='cd ~/projects'
 alias daq='cd ~/code/xcode/projects/macos/quoter'
 alias dla='cd ~/oss/learn-anything/learn-anything'
 alias dz='cd ~/oss/nikivi/personal/knowledge'
@@ -310,17 +312,17 @@ alias doc='cd ~/Documents'
 alias dbit='cd ~/Documents/d. \app/bitbar'
 alias dF='cd ~/Documents/app/unclutter/Unclutter\ Files'
 alias ddes='cd ~/Documents/design'
-alias dn='cd ~/oss/nikivi/'
+alias dk='cd ~/oss/nikivi/'
 
 # _code
 alias dsh='cd ~/.ssh'
 alias dno='cd ~/node'
 # alias dm='cd ~/ml'
-alias dm='cd ~/testing'
+alias dt='cd ~/testing'
 alias dl='cd ~/play'
 alias dj='cd ~/ideas'
 alias dg='cd ~/go/src/github.com/nikitavoloboev'
-alias di='cd ~/learning'
+alias dn='cd ~/learning'
 alias dw='cd ~/work'
 
 # _xcode
@@ -332,7 +334,7 @@ alias dxm='cd ~/xcode/macos'
 # _oss
 alias ds='cd ~/oss/'
 alias dsn='cd ~/oss/nikivi'
-alias dt='cd ~/oss/learn-anything'
+alias dm='cd ~/oss/learn-anything'
 alias d:='cd ~/oss/nikivi/code'
 
 # _macos

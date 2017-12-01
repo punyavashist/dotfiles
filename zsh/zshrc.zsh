@@ -6,15 +6,15 @@ export DOTFILES="$HOME/.dotfiles"
 source ~/.zsh_plugins.sh
 
 # _source things
-# TODO: do some smart for loop iteration
-source ~/.dotfiles/zsh/dev/env.zsh
+# TODO: Do some smart for loop iteration
+source ~/.dotfiles/zsh/env.zsh
 source ~/.dotfiles/zsh/aliases/alias.zsh
 source ~/.dotfiles/zsh/functions/fzf.zsh
 source ~/.dotfiles/zsh/bindings.zsh
 source ~/.dotfiles/zsh/aliases/git.zsh
 source ~/.dotfiles/zsh/functions/functions.zsh
 
-# can just write down the file name
+# Can just write down the file name
 setopt autocd
 
 # _secret configs
@@ -23,11 +23,11 @@ source ~/.secrets
 # 'thefuck' command correction
 eval "$(thefuck --alias)"
 
-# neat colour schemes to use
+# Neat colour schemes to use
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
-# _yarn autocomplete
+# Yarn autocomplete
 [[ -f /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh ]] && . /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh
 
 autoload -Uz compinit && compinit
@@ -36,3 +36,15 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 PROMPT_TITLE='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
 export PROMPT_COMMAND="${PROMPT_TITLE}; ${PROMPT_COMMAND}"
+
+HISTSIZE=5000               # how many lines of history to keep in memory
+HISTFILE=~/.zsh_history     # where to save history to disk
+SAVEHIST=5000               # number of history entries to save to disk
+#HISTDUP=erase              # erase duplicates in the history file
+setopt    appendhistory     # append history to the history file (no overwriting)
+setopt    sharehistory      # share history across terminals
+setopt    incappendhistory  # immediately append to the history file, not just when a term is killed
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval "$(hub alias -s)"

@@ -1,9 +1,10 @@
 # _tester func
 function wo(){
   git add readme.md
-  git commit -m "improve readme"
+  git commit -m "Improve readme"
   git push
 }
+
 
 # write quick commit message
 function gc() {
@@ -27,6 +28,7 @@ function td() {
   mkdir -p "$(dirname "$1")/" && touch "$1"
 }
 
+# Move files to Trash
 function re(){
   mv "$@" ~/.Trash
 }
@@ -148,9 +150,9 @@ function gp() {
     git pull origin pull/"$1"/head
 }
 
-function ggr() {
+function ggr(){
   git add readme.md
-  git commit -m "updated readme"
+  git commit -m "Improve readme"
   git push
 }
 

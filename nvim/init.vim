@@ -1,5 +1,5 @@
 " -------------------------------------
-"  _install
+"  _Install
 " -------------------------------------
 call plug#begin() " plugins to use
 
@@ -10,6 +10,7 @@ endfunction
 
 " _move
 Plug 'easymotion/vim-easymotion'
+Plug 'christoomey/vim-titlecase' 
 Plug 'ayu-theme/ayu-vim' " theme
 Plug 'jiangmiao/auto-pairs'
 "Plug 'mbbill/undotree'
@@ -141,6 +142,8 @@ nnoremap <leader>vimrc :tabe ~/.dotfiles/vim/nvim/nvimrc<cr>
 " _single letter 
 " save
 nmap <Leader>w    :w<CR>   
+" search lines with fzf
+nnoremap <silent> <Leader>l        :Lines<CR>
 " quit
 nnoremap <Leader>q    :q<CR>  
 " yank whole file
@@ -169,7 +172,6 @@ nnoremap <Leader>o   29jzz
 " update plugins
 nnoremap <Leader>ia   :PlugUpdate<CR>
 nnoremap <Leader>vm   :make<CR>
-nnoremap <leader>l :%d<cr>
 " run commands in new splits
 nnoremap <Leader>tt :tabedit <Bar> term.
 nnoremap <Leader>ts :split <Bar> term.
