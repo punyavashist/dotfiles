@@ -2,7 +2,7 @@
 > Includes zsh, neovim, karabiner, hammerspoon, vs code
 
 ## Contents
-- [What?](#what?)
+- [What?](#what)
 - [Karabiner](#karabiner)
 - [Neovim](#neovim)
 - [VS Code](#vs-code)
