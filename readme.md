@@ -9,7 +9,6 @@
 - [Hammerspoon](#hammerspoon)
 - [Zsh](#zsh)
 - [Zsh aliases](#zsh-aliases)
-- [Interesting aliases and zsh functions](#interesting-aliases-and-zsh-functions)
 
 ## What?
 These are the various configuration files I use on macOS. I wrote about how I customise and use my shell in article [here](https://medium.com/@NikitaVoloboev/pretty-and-fast-shell-97ea870f2805).
