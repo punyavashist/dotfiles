@@ -3730,15 +3730,6 @@ tell application "Alfred 3" to run trigger "gitRepos" in workflow "net.deanishe.
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_ICLOUD_TABS</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "iCloud tabs" in workflow "com.targumanu.icloudtabs" with argument ""
-
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_PINBOARD</name>
 <url type="shell">
 osascript -e '
@@ -4171,7 +4162,7 @@ tell application "Alfred 3" to run trigger "show_playlists" in workflow "com.vde
 <name>KeyCode::VK_OPEN_URL_ALFRED_MAILTO</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "mailTo" in workflow "net.deanishe.alfred-mailto" with argument ""
+tell application "Alfred 3" to run trigger "mail" in workflow "net.deanishe.alfred-mailto" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4227,7 +4218,7 @@ tell application "Alfred 3" to run trigger "canIUse" in workflow "com.farrell.ca
 <name>KeyCode::VK_OPEN_URL_ALFRED_TRANSLATE_EN_RU</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "translateEnglishRussian" in workflow "dmitry.traslate.ru.en" with argument ""
+tell application "Alfred 3" to run trigger "translate" in workflow "dmitry.traslate.ru.en" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -6567,7 +6558,7 @@ KeyCode::VK_OPEN_URL_ALFRED_COMMIT_FOLDERS
 <autogen>
 __KeyToKey__
 KeyCode::D,
-KeyCode::VK_OPEN_URL_ALFRED_EXPLAIN_SHELL
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB_REPOS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6607,7 +6598,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MEDIUM
 <autogen>
 __KeyToKey__
 KeyCode::T,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB_REPOS
+KeyCode::VK_OPEN_URL_ALFRED_EXPLAIN_SHELL
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11876,7 +11867,7 @@ KeyCode::VK_OPEN_URL_ALFRED_ACTIVATE_FOCUS
 __SimultaneousKeyPresses__
 KeyCode::P, KeyCode::O,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_ICLOUD_TABS
+KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
 </autogen>
 </item>
 
