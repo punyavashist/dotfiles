@@ -140,11 +140,11 @@ let mapleader="\<Space>"
 nnoremap <leader>= yypVr=
 nnoremap <leader>vimrc :tabe ~/.dotfiles/vim/nvim/nvimrc<cr>
 " _single letter 
-" save
+" Save
 nmap <Leader>w    :w<CR>   
-" search lines with fzf
+" Search lines with fzf
 nnoremap <silent> <Leader>l        :Lines<CR>
-" quit
+" Quit
 nnoremap <Leader>q    :q<CR>  
 " yank whole file
 nnoremap <Leader>y    :%y<CR> 
