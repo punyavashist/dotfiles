@@ -33,7 +33,7 @@
     ],
     "editor.lineNumbers": "relative",
     "editor.cursorStyle": "line",
-    "window.zoomLevel": -1,
+    "window.zoomLevel": -3,
     "workbench.welcome.enabled": false,
     // _python
     "python.linting.pylintArgs": [

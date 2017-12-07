@@ -300,6 +300,12 @@ function ggs() {
     git push
 }
 
+function gwi() {
+    git add .
+    git commit -m "Improve $*" 
+    git push
+}
+
 function gw() {
     git add .
     git commit -m "$*" 

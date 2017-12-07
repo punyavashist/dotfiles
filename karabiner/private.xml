@@ -821,7 +821,7 @@ end tell
 <name>KeyCode::VK_OPEN_URL_TIMER_10</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 10 reminder"
+tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 10 Reminder"
 '
 </url>
 </vkopenurldef>
@@ -829,7 +829,7 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 <name>KeyCode::VK_OPEN_URL_TIMER_60</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 60 reminder"
+tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 60 Reminder"
 '
 </url>
 </vkopenurldef>
@@ -837,7 +837,7 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 <name>KeyCode::VK_OPEN_URL_TIMER_20</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 20 reminder"
+tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 20 Reminder"
 '
 </url>
 </vkopenurldef>
@@ -845,7 +845,7 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 <name>KeyCode::VK_OPEN_URL_TIMER_30</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 30 reminder"
+tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 30 Reminder"
 '
 </url>
 </vkopenurldef>
@@ -853,7 +853,7 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 <name>KeyCode::VK_OPEN_URL_TIMER_40</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 40 reminder"
+tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 40 Reminder"
 '
 </url>
 </vkopenurldef>
@@ -861,7 +861,7 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 <name>KeyCode::VK_OPEN_URL_TIMER_50</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 50 reminder"
+tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 50 Reminder"
 '
 </url>
 </vkopenurldef>
@@ -2976,6 +2976,14 @@ tell application "Alfred 3" to run trigger "go fast" in workflow "nikivi.a.searc
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_STACK_OVERFLOW_SEARCH_SUGGESTIONS</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "stack" in workflow "net.deanishe.alfred-stackoverflow" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MDN</name>
 <url type="shell">
 osascript -e '
@@ -3131,7 +3139,7 @@ tell application "Alfred 3" to run trigger "googleLucky" in workflow "net.deanis
 <name>KeyCode::VK_OPEN_URL_ALFRED_KARABINER_PROFILES</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "karabiner switch" in workflow "com.genkisugimoto.alfredworkflow.karabiner" with argument ""
+tell application "Alfred 3" to run trigger "switch" in workflow "com.genkisugimoto.alfredworkflow.karabiner" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3171,7 +3179,7 @@ tell application "Alfred 3" to run trigger "cheatsheet" in workflow "com.mutdmou
 <name>KeyCode::VK_OPEN_URL_ALFRED_WATCH_TRASH</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "trash" in workflow "com.vitorgalvao.alfred.recentdownloads.v2" with argument ""
+tell application "Alfred 3" to run trigger "trash" in workflow "com.vitorgalvao.alfred.directories" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3243,7 +3251,7 @@ tell application "Alfred 3" to run trigger "my wiki" in workflow "nikivi.search-
 <name>KeyCode::VK_OPEN_URL_ALFRED_WATCH_DROPBOX_SHARES</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "dropboxShares" in workflow "com.vitorgalvao.alfred.recentdownloads.v2" with argument ""
+tell application "Alfred 3" to run trigger "dropbox" in workflow "com.vitorgalvao.alfred.directories" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3307,7 +3315,7 @@ tell application "Alfred 3" to run trigger "goto" in workflow "nikivi.go.to.sub"
 <name>KeyCode::VK_OPEN_URL_ALFRED_NEW_NOTE</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "createNote" in workflow "com.surrealroad.alfred-note-icloud" with argument ""
+tell application "Alfred 3" to run trigger "note" in workflow "com.surrealroad.alfred-note-icloud" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3331,7 +3339,7 @@ tell application "Alfred 3" to run trigger "search chrome" in workflow "com.mdre
 <name>KeyCode::VK_OPEN_URL_ALFRED_CRYPTO_TRACK</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "cryptoTrack" in workflow "com.cryprotracker" with argument ""
+tell application "Alfred 3" to run trigger "track" in workflow "com.cryprotracker" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3395,7 +3403,7 @@ tell application "Alfred 3" to run trigger "quora" in workflow "nikivi.search-th
 <name>KeyCode::VK_OPEN_URL_ALFRED_SCREENSHOT_TO_GOOGLE</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "similarImage" in workflow "net.deanishe.alfred-google-similar-images" with argument ""
+tell application "Alfred 3" to run trigger "similar" in workflow "net.deanishe.alfred-google-similar-images" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3713,7 +3721,7 @@ tell application "Alfred 3" to run trigger "gitUpdate" in workflow "net.deanishe
 <name>KeyCode::VK_OPEN_URL_ALFRED_PLAY_DIR_WATCH</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "play" in workflow "com.vitorgalvao.alfred.recentdownloads.v2" with argument ""
+tell application "Alfred 3" to run trigger "play" in workflow "com.vitorgalvao.alfred.directories" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3761,7 +3769,7 @@ tell application "Alfred 3" to run trigger "switch" in workflow "nikivi.dash-pro
 <name>KeyCode::VK_OPEN_URL_ALFRED_GIT_REPOS</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "gitRepos" in workflow "net.deanishe.alfred-git-repos" with argument ""
+tell application "Alfred 3" to run trigger "git" in workflow "net.deanishe.alfred-git-repos" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3851,7 +3859,7 @@ tell application "Alfred 3" to run trigger "searchRedditSubreddits" in workflow 
 <name>KeyCode::VK_OPEN_URL_ALFRED_DESKTOP_DIR_WATCH</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "desktop" in workflow "com.vitorgalvao.alfred.recentdownloads.v2" with argument ""
+tell application "Alfred 3" to run trigger "desktop" in workflow "com.vitorgalvao.alfred.directories" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3980,7 +3988,7 @@ tell application "Alfred 3" to run trigger "playgrounds" in workflow "nikivi.sea
 <name>KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "eggTimerView" in workflow "carlosnz.eggtimer2" with argument ""
+tell application "Alfred 3" to run trigger "view" in workflow "carlosnz.eggtimer2" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3988,7 +3996,7 @@ tell application "Alfred 3" to run trigger "eggTimerView" in workflow "carlosnz.
 <name>KeyCode::VK_OPEN_URL_ALFRED_TIMER_START</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "eggTimerStart" in workflow "carlosnz.eggtimer2" with argument ""
+tell application "Alfred 3" to run trigger "start" in workflow "carlosnz.eggtimer2" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4020,7 +4028,7 @@ tell application "Alfred 3" to run trigger "mindnode" in workflow "nikivi.search
 <name>KeyCode::VK_OPEN_URL_ALFRED_NEW_IOS_PLAYGROUND</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "newiOSPlayground" in workflow "com.chrisbuchholz.new-xcode-playground" with argument ""
+tell application "Alfred 3" to run trigger "iOS" in workflow "com.chrisbuchholz.new-xcode-playground" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4028,7 +4036,7 @@ tell application "Alfred 3" to run trigger "newiOSPlayground" in workflow "com.c
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PODS</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "podSearch" in workflow "ben.pod" with argument ""
+tell application "Alfred 3" to run trigger "pod" in workflow "ben.pod" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4085,14 +4093,6 @@ tell application "Alfred 3" to run trigger "http" in workflow "fred.liang.status
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "about" in workflow "yeraze.AboutThisMac.v1.3" with argument ""
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_OPEN_MAN_PAGE_IN_PDF</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "manInPDFSearch" in workflow "net.isometry.alfred.man" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4164,17 +4164,15 @@ tell application "Alfred 3" to run trigger "date" in workflow "de.leenno.datecal
 <name>KeyCode::VK_OPEN_URL_ALFRED_FONT_AWESOME</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "fontAwesome" in workflow "com.ruedap.font-awesome" with argument ""
+tell application "Alfred 3" to run trigger "font" in workflow "com.ruedap.font-awesome" with argument ""
 '
 </url>
 </vkopenurldef>
-
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "searchGoogleDrive" in workflow "com.drive.azai91" with argument ""
+tell application "Alfred 3" to run trigger "search" in workflow "com.drive.azai91" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4182,7 +4180,7 @@ tell application "Alfred 3" to run trigger "searchGoogleDrive" in workflow "com.
 <name>KeyCode::VK_OPEN_URL_ALFRED_DISPLAY_BRIGHTNESS</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "displayBrightness" in workflow "com.fniephaus.brightness" with argument ""
+tell application "Alfred 3" to run trigger "display" in workflow "com.fniephaus.brightness" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4238,7 +4236,7 @@ tell application "Alfred 3" to run trigger "contacts" in workflow "nikivi.search
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TIMEZONES</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "timezonesSearch" in workflow "carlosnz.timezones" with argument ""
+tell application "Alfred 3" to run trigger "search" in workflow "carlosnz.timezones" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4294,7 +4292,7 @@ tell application "Alfred 3" to run trigger "google images" in workflow "net.dean
 <name>KeyCode::VK_OPEN_URL_ALFRED_HASTEBIN</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "hastebinFromClipboard" in workflow "co.jmes.hastebin" with argument ""
+tell application "Alfred 3" to run trigger "hastebin" in workflow "co.jmes.hastebin" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4345,7 +4343,7 @@ tell application "Alfred 3" to run trigger "search" in workflow "nikivi.dictiona
 <name>KeyCode::VK_OPEN_URL_ALFRED_DISMISS_NOTIFICATIONS</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "dismissNotifications" in workflow "shh" with argument ""
+tell application "Alfred 3" to run trigger "dismiss" in workflow "shh" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4353,7 +4351,7 @@ tell application "Alfred 3" to run trigger "dismissNotifications" in workflow "s
 <name>KeyCode::VK_OPEN_URL_ALFRED_FORCE_EMPTY_TRASH</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "forceEmptyTrash" in workflow "com.renegaed.force-empty-trash" with argument ""
+tell application "Alfred 3" to run trigger "empty" in workflow "com.renegaed.force-empty-trash" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4475,7 +4473,7 @@ tell application "Alfred 3" to run trigger "start" in workflow "com.jason0x43.al
 <name>KeyCode::VK_OPEN_URL_ALFRED_NEW_BITBAR_TASK</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "newBitBarTask" in workflow "nikivi.bitbar.create.task" with argument ""
+tell application "Alfred 3" to run trigger "new" in workflow "nikivi.bitbar.create.task" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -5464,11 +5462,6 @@ KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_MAPS_SEARCH
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::H,
-KeyCode::VK_OPEN_URL_ALFRED_HACKER_NEWS
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::P,
 KeyCode::F7, ModifierFlag::OPTION_L
 </autogen>
@@ -5691,7 +5684,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 </item>
 
 <item>
-<name>general: sticky 9 - alfred go fast</name>
+<name>general: sticky 9 - search files</name>
 <identifier>private.launcher_mode_open_apps_v84</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -5724,8 +5717,57 @@ __BlockUntilKeyUp__ KeyCode::9,
 
 <autogen>
 __KeyToKey__
+KeyCode::G,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAGES
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::F19,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SOULVER
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::W,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
+</autogen>
+</item>
+
+<item>
+<name>general: sticky dash - alfred</name>
+<identifier>private.launcher_mode_open_apps_v78</identifier>
+<pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+<modifier_not>
+ModifierFlag::COMMAND_L,
+ModifierFlag::COMMAND_R,
+ModifierFlag::CONTROL_L,
+ModifierFlag::CONTROL_R,
+ModifierFlag::FN,
+ModifierFlag::OPTION_L,
+ModifierFlag::OPTION_R,
+ModifierFlag::SHIFT_L,
+ModifierFlag::SHIFT_R,
+</modifier_not>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::MINUS,
+@begin
+KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v78, ModifierFlag::MY_LAUNCHER_MODE,
+@end
+@begin
+KeyCode::MINUS
+@end
+</autogen>
+</item>
+<item hidden="true">
+<identifier vk_config="true">notsave.private_launcher_mode_v78</identifier>
+<autogen>
+__BlockUntilKeyUp__ KeyCode::MINUS,
+</autogen>
+
+<autogen>
+__KeyToKey__
+KeyCode::S,
+KeyCode::VK_OPEN_URL_ALFRED_SYNONYMS_SEARCH
 </autogen>
 </item>
 
@@ -5768,6 +5810,11 @@ KeyCode::VK_OPEN_URL_ALFRED_COLOUR_PICKER
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::R,
+KeyCode::VK_OPEN_URL_ALFRED_GO_TO_SUB
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::W,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
 </autogen>
@@ -5775,6 +5822,11 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
 __KeyToKey__
 KeyCode::B,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LIBRARY
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::G,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -5835,16 +5887,6 @@ KeyCode::VK_OPEN_URL_ALFRED_CHEATSHEET
 __KeyToKey__
 KeyCode::S,
 KeyCode::VK_OPEN_URL_ALFRED_SYNONYMS_SEARCH
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::G,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAGES
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::F19,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SOULVER
 </autogen>
 </item>
 
@@ -6583,6 +6625,41 @@ __BlockUntilKeyUp__ KeyCode::N,
 
 <autogen>
 __KeyToKey__
+KeyCode::X,
+KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::1,
+KeyCode::1, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::2,
+KeyCode::2, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::3,
+KeyCode::3, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::4,
+KeyCode::4, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::5,
+KeyCode::5, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::6,
+KeyCode::6, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::F19,
 KeyCode::VK_OPEN_URL_ALFRED_COMMIT_FOLDERS
 </autogen>
@@ -6644,7 +6721,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_IDOPE
 <autogen>
 __KeyToKey__
 KeyCode::B,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MY_GITBOOKS_WIKI
+KeyCode::VK_OPEN_URL_ALFRED_STACK_OVERFLOW_SEARCH_SUGGESTIONS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8266,6 +8343,11 @@ KeyCode::VK_OPEN_URL_ALFRED_CONVERT
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::N,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TIMEZONES
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::M,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MDN
 </autogen>
@@ -8273,11 +8355,6 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MDN
 __KeyToKey__
 KeyCode::SPACE,
 KeyCode::G, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::N,
-KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11491,23 +11568,8 @@ KeyCode::SEMICOLON, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::T,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TIMEZONES
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::0,
 KeyCode::VK_OPEN_URL_ALFRED_MONTHS_NUMBERS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::U,
-KeyCode::VK_OPEN_URL_ALFRED_CURL_URL
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::R,
-KeyCode::VK_OPEN_URL_ALFRED_GO_TO_SUB
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11520,8 +11582,6 @@ KeyCode::SPACE,
 KeyCode::S, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, 
 </autogen>
 </item>
-
-<!-- _one to one mappings  TODO: add -->
 
 <item>
 <name>general: opt + return = safari</name>
