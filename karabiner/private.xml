@@ -826,6 +826,14 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_TIMER_120</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 120 Reminder"
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_TIMER_60</name>
 <url type="shell">
 osascript -e '
@@ -866,7 +874,7 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 </url>
 </vkopenurldef>
 
-<!-- _km def-->
+<!-- _KM def-->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_RERUN_CMD_ITERM</name>
 <url type="shell">
@@ -2966,12 +2974,20 @@ end tell
 </url>
 </vkopenurldef>
 
-<!-- _alf def -->
+<!-- _Alf def -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GO_FAST_DIR</name>
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "go fast" in workflow "nikivi.a.search.files" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_REMOVE_REMINDER_TIMER</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "remove reminder" in workflow "carlosnz.eggtimer2" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3679,7 +3695,7 @@ tell application "Alfred 3" to run trigger "transmit" in workflow "sher.transmit
 <name>KeyCode::VK_OPEN_URL_ALFRED_UPDATE_MIND</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "updateMind" in workflow "nikivi.mind" with argument ""
+tell application "Alfred 3" to run trigger "update" in workflow "nikivi.mind" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -6625,8 +6641,28 @@ __BlockUntilKeyUp__ KeyCode::N,
 
 <autogen>
 __KeyToKey__
-KeyCode::X,
-KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
+KeyCode::1,
+KeyCode::VK_OPEN_URL_TIMER_10
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::2,
+KeyCode::VK_OPEN_URL_TIMER_20
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::3,
+KeyCode::VK_OPEN_URL_TIMER_30
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::4,
+KeyCode::VK_OPEN_URL_TIMER_40
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::5,
+KeyCode::VK_OPEN_URL_TIMER_50
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6657,6 +6693,11 @@ KeyCode::5, ModifierFlag::OPTION_L,
 __KeyToKey__
 KeyCode::6,
 KeyCode::6, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::X,
+KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6814,13 +6855,38 @@ __BlockUntilKeyUp__ KeyCode::M,
 
 <autogen>
 __KeyToKey__
-KeyCode::L,
-KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_ALBUMS
+KeyCode::1,
+KeyCode::1, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::1,
-KeyCode::VK_OPEN_URL_TIMER_10
+KeyCode::2,
+KeyCode::2, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::3,
+KeyCode::3, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::4,
+KeyCode::4, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::5,
+KeyCode::5, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::6,
+KeyCode::6, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::L,
+KeyCode::VK_OPEN_URL_ALFRED_REMOVE_REMINDER_TIMER
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6840,7 +6906,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_REMOVE_SONG_FROM_PLAYLIST
 <autogen>
 __KeyToKey__
 KeyCode::O,
-KeyCode::VK_OPEN_URL_ALFRED_CREATE_ARTIST_RADIO
+KeyCode::VK_OPEN_URL_TIMER_120
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6854,11 +6920,6 @@ KeyCode::VK_OPEN_URL_KM_NEW_TWEET_WITH_SAFARI_URL
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::SEMICOLON,
-KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_PLAY_QUEUE
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::B,
 KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_BROWSE
 </autogen>
@@ -6869,27 +6930,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_ONLINE
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::2,
-KeyCode::VK_OPEN_URL_TIMER_20
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::3,
-KeyCode::VK_OPEN_URL_TIMER_30
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::4,
-KeyCode::VK_OPEN_URL_TIMER_40
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::5,
-KeyCode::VK_OPEN_URL_TIMER_50
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::BACKQUOTE,
+KeyCode::SEMICOLON,
 KeyCode::VK_OPEN_URL_TIMER_60
 </autogen>
 <autogen>
@@ -6915,7 +6956,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_CURRENT_SONG
 <autogen>
 __KeyToKey__
 KeyCode::R,
-KeyCode::VK_OPEN_URL_KM_FOCUS_90_MIN
+KeyCode::VK_OPEN_URL_KM_FOCUS_60_MIN
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9869,7 +9910,7 @@ KeyCode::E, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::R,
+KeyCode::U,
 KeyCode::VK_OPEN_URL_KM_OPEN_SLACK
 </autogen>
 <autogen>
@@ -11776,7 +11817,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_CHROME_BOOKMARKS
 __SimultaneousKeyPresses__
 KeyCode::J, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
+KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 </autogen>
 </item>
 

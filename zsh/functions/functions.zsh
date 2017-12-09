@@ -184,14 +184,14 @@ function ggla() {
     git init
     mitla
     git add .
-    git commit -m "Initial commit"
+    git commit -m "Init"
 }
 
 function ggi() {
     git init
     mit
     git add .
-    git commit -m "Initial commit"
+    git commit -m "Init"
 }
 
 

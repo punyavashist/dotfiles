@@ -133,13 +133,13 @@ let g:ctrlp_map = '<c-k>'
 let g:ctrlp_cmd = 'CtrlP'
 
 " --------------------------------------
-"  _space mapping
+"  _Space mapping
 " --------------------------------------
 nnoremap <SPACE> <Nop>
 let mapleader="\<Space>"
 nnoremap <leader>= yypVr=
 nnoremap <leader>vimrc :tabe ~/.dotfiles/vim/nvim/nvimrc<cr>
-" _single letter 
+" _Single letter 
 " Save
 nmap <Leader>w    :w<CR>   
 " Search lines with fzf

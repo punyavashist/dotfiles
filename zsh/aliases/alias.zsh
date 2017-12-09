@@ -10,7 +10,6 @@ alias kar="/Applications/Karabiner.app/Contents/Library/bin/karabiner"
 alias le='less -r'
 alias wifi='wifi-password -q'
 # alias du='du -sh * | sort'
-alias h='hub'
 alias eop='echo $PATH'
 alias eo='echo'
 alias es='elasticsearch'
@@ -84,7 +83,7 @@ alias rf='reflex'
 alias kb='kubectl'
 
 alias ser='serve'
-alias sr='python3 -m http.server'
+alias h='python3 -m http.server'
 
 alias react='create-react-app'
 
@@ -299,7 +298,6 @@ alias ezb='nvim ~/.dotfiles/zsh/zsh/bindings.zsh'                # shell keyboar
 
 # _cd places
 # _projects
-# alias dk='cd ~/projects'
 alias daq='cd ~/code/xcode/projects/macos/quoter'
 alias dla='cd ~/oss/learn-anything/learn-anything'
 alias dz='cd ~/oss/nikivi/personal/knowledge'
@@ -307,23 +305,20 @@ alias dz='cd ~/oss/nikivi/personal/knowledge'
 # _documents
 alias dap='cd ~/Documents/d.\ app'
 alias dte='cd ~/Documents/d.\ app/tester'
-#alias dk='cd ~/Documents/d. \app/unclutter/Unclutter\ Files'
 alias doc='cd ~/Documents'
 alias dbit='cd ~/Documents/d. \app/bitbar'
 alias dF='cd ~/Documents/app/unclutter/Unclutter\ Files'
 alias ddes='cd ~/Documents/design'
-alias dk='cd ~/oss/nikivi/'
+alias dn='cd ~/oss/nikivi/'
 
 # _code
 alias dsh='cd ~/.ssh'
-alias dno='cd ~/node'
-# alias dm='cd ~/ml'
 alias dt='cd ~/testing'
 alias dl='cd ~/play'
-alias dj='cd ~/ideas'
+alias di='cd ~/ideas'
 alias dg='cd ~/go/src/github.com/nikitavoloboev'
-alias dn='cd ~/learning'
-alias dw='cd ~/work'
+alias dj='cd ~/learning'
+alias dk='cd ~/code'
 
 # _xcode
 alias dx='cd ~/xcode'
@@ -335,7 +330,7 @@ alias dxm='cd ~/xcode/macos'
 alias ds='cd ~/oss/'
 alias dsn='cd ~/oss/nikivi'
 alias dm='cd ~/oss/learn-anything'
-alias d:='cd ~/oss/nikivi/code'
+alias d:='cd ~/code'
 
 # _macos
 alias de='cd ~/Desktop'
