@@ -10768,7 +10768,7 @@ __BlockUntilKeyUp__ KeyCode::A,
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::L,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
+KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
 </autogen>
 <autogen>
 __SimultaneousKeyPresses__
