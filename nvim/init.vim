@@ -182,11 +182,11 @@ nnoremap <Leader>pi :PlugInstall<CR>
 nnoremap <Leader>pu :PlugUpdate<CR>
 " --------------------------------------
 "  _command + shift mapping
-" --------------------------------------
+" -You don't have to read the white paper to be willing to donate I think-------------------------------------
 nnoremap <D-S-F> :Ack<space>
 
 " -------------------------------------
-"  _basic UI config
+"  _Basic UI config
 " -------------------------------------
 set relativenumber                    " relative to current posion line numbers
 set number                            " show line numbers
@@ -198,7 +198,7 @@ set matchtime=2
 set background=dark                   " set night mode
 
 " -------------------------------------
-"  _settings
+"  _Settings
 " -------------------------------------
 let g:deoplete#enable_at_startup = 1               " activate deoplete
 
@@ -216,7 +216,7 @@ map <Leader> <Plug>(easymotion-prefix)
 " run goimports on save
 let g:go_fmt_command = "goimports"
 
-" _fzf
+" _Fzf
 " Mapping selecting mappings
 nnoremap <leader><tab> <plug>(fzf-maps-n)
 xmap <leader><tab> <plug>(fzf-maps-x)
@@ -231,10 +231,8 @@ imap <c-x><c-l> <plug>(fzf-complete-line)
 " Advanced customization using autoload functions
 inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
 
-
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nnoremap ga <Plug>(EasyAlign)
-

@@ -47,4 +47,6 @@ setopt    incappendhistory  # immediately append to the history file, not just w
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+unset IFS
+
 eval "$(hub alias -s)"

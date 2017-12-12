@@ -264,9 +264,14 @@ og() {
 }
 
 
-# _reflex
+# _Reflex
 function rfg() {
   reflex -g '*.go' go run $1
+}
+
+# Rerun python file passed in on python file changes.
+function rft() {
+  reflex -g '*.py' python3 "$@"
 }
 
 function rfm() {
