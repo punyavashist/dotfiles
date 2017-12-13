@@ -318,7 +318,7 @@ alias dl='cd ~/play'
 alias di='cd ~/ideas'
 alias dg='cd ~/go/src/github.com/nikitavoloboev'
 alias dj='cd ~/learning'
-alias dk='cd ~/code'
+alias dk='cd ~/testing'
 
 # _xcode
 alias dx='cd ~/xcode'
@@ -331,6 +331,7 @@ alias ds='cd ~/oss/'
 alias dsn='cd ~/oss/nikivi'
 alias dm='cd ~/oss/learn-anything'
 alias d:='cd ~/code'
+alias dw='cd ~/code'
 
 # _macos
 alias de='cd ~/Desktop'

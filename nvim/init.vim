@@ -181,8 +181,7 @@ nnoremap <C-s> :w<cr>
 nnoremap <Leader>pi :PlugInstall<CR>
 nnoremap <Leader>pu :PlugUpdate<CR>
 " --------------------------------------
-"  _command + shift mapping
-" -You don't have to read the white paper to be willing to donate I think-------------------------------------
+"  _Command + shift mapping
 nnoremap <D-S-F> :Ack<space>
 
 " -------------------------------------
@@ -213,7 +212,7 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " activate leader for easymotion
 map <Leader> <Plug>(easymotion-prefix)
 
-" run goimports on save
+" Run goimports on save
 let g:go_fmt_command = "goimports"
 
 " _Fzf

@@ -4673,6 +4673,22 @@ KeyCode::SEMICOLON,
 </item>
 
 <item>
+<name>general: arrows = change songs</name>
+<identifier>private.arrows.songs</identifier>
+<inputsource_not>RU</inputsource_not>
+<autogen>
+__KeyToKey__
+KeyCode::CURSOR_LEFT,
+ConsumerKeyCode::MUSIC_PREV
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::CURSOR_RIGHT,
+ConsumerKeyCode::MUSIC_NEXT
+</autogen>
+</item>
+
+<item>
 <name>general: sticky semicolon - shift key</name>
 <identifier>private.launcher_mode_open_apps_v30</identifier>
 <inputsource_only>US</inputsource_only>
