@@ -1,6 +1,4 @@
-" -------------------------------------
 "  _Install
-" -------------------------------------
 call plug#begin() " plugins to use
 
 " autocomplete engine
@@ -8,7 +6,7 @@ function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 
-" _move
+" _Move
 Plug 'easymotion/vim-easymotion'
 Plug 'christoomey/vim-titlecase' 
 Plug 'ayu-theme/ayu-vim' " theme
@@ -49,9 +47,7 @@ Plug 'carlitux/deoplete-ternjs'                    " js autocomplete
 
 call plug#end()
 
-" --------------------------------------
-"  _testing
-" --------------------------------------
+"  _Testing
 noremap Q @q
 vnoremap <D-c> y
 set timeout timeoutlen=1000 ttimeoutlen=10        " faster esc - maybe :|
@@ -70,10 +66,7 @@ set ttimeoutlen=10
 set nobackup                                      " don't create annoying backup files
 set path=+**                                      " search down into subfolders
 
-" _testing
-" --------------------------------------
-" _basic vim config
-" --------------------------------------
+" _Basic vim config
 "  TODO: check if some of these settings come as default with neovim
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1                                          " a nice looking editor
 set clipboard^=unnamed                                " copy text to system clipboard
@@ -81,7 +74,7 @@ set guicursor=
 set mouse=a
 set gdefault " always do global substitutions
 set clipboard^=unnamedplus
-set title                                                                                                           " set terminal title
+set title                                         " set terminal title
 set whichwrap+=<,>,[,]
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set completeopt-=preview                          " no annoying scratch preview above
@@ -103,27 +96,19 @@ autocmd FileType help wincmd L
 :autocmd InsertEnter,InsertLeave * set cul!       " notify on mode change visually
 
 
-" --------------------------------------
-"  _comma mapping
-" --------------------------------------
+"  _Comma mapping
 
-" --------------------------------------
-"  _insert  mapping
-" --------------------------------------
+"  _Insert  mapping
 inoremap      jk  <Esc>
 inoremap      kj  <Esc>
 inoremap (<Space>  ();<Esc>hi
 inoremap      (;   ();<Esc>o
 inoremap      ()   ()
 
-" --------------------------------------
-"  _command mapping
-" --------------------------------------
+"  _Command mapping
 cabbrev rp Rp
 
-" --------------------------------------
-"  _control mapping
-" --------------------------------------
+"  _Control mapping
 vmap <C-x> :!pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
 vmap <C-d> :Dash<CR>
@@ -132,13 +117,12 @@ vmap <C-e> :Files<CR>
 let g:ctrlp_map = '<c-k>'
 let g:ctrlp_cmd = 'CtrlP'
 
-" --------------------------------------
 "  _Space mapping
-" --------------------------------------
 nnoremap <SPACE> <Nop>
 let mapleader="\<Space>"
 nnoremap <leader>= yypVr=
 nnoremap <leader>vimrc :tabe ~/.dotfiles/vim/nvim/nvimrc<cr>
+
 " _Single letter 
 " Save
 nmap <Leader>w    :w<CR>   
@@ -150,29 +134,29 @@ nnoremap <Leader>q    :q<CR>
 nnoremap <Leader>y    :%y<CR> 
 " source vimrc
 nnoremap <Leader>f   :source ~/.dotfiles/nvim/init.vim<CR> 
-" search files inside current dir
+" Search files inside current dir
 nnoremap <Leader>e    :Files<CR> 
-" switch dir for fzf searching to current dir
+" Switch dir for fzf searching to current dir
 map <Leader>cd :lcd %:p:h<CR>
-" yank xml block to next line
+" Yank xml block to next line
 nnoremap <Leader>aw    vat:t'><CR>'[<Esc><CR> 
-" yank function block
+" Yank function block
 nnoremap <Leader>yf    :exe search('^function','cb')';/}/y'<CR> 
-" dash doc lookup
+" Dash doc lookup
 nnoremap <Leader>at   :Dash<CR>
 nnoremap <Leader>aa   :wa<CR>
 nnoremap <Leader>vq   :wqall<CR>
 nnoremap <Leader>vQ   :qa<CR>
-" install plugins
+" Install plugins
 nnoremap <Leader>ii   :PlugInstall<CR>
-" check vim health
+" Check vim health
 nnoremap <Leader>ih   :CheckHealth<CR>
-" move 10 lines down (for karabiner sticky keys)
+" Move 10 lines down (for karabiner sticky keys)
 nnoremap <Leader>o   29jzz
-" update plugins
+" Update plugins
 nnoremap <Leader>ia   :PlugUpdate<CR>
 nnoremap <Leader>vm   :make<CR>
-" run commands in new splits
+" Run commands in new splits
 nnoremap <Leader>tt :tabedit <Bar> term.
 nnoremap <Leader>ts :split <Bar> term.
 nnoremap <Leader>tv :vsplit <Bar> term.
@@ -196,9 +180,7 @@ set tabstop=4                         " default indentation is 4 spaces long and
 set matchtime=2
 set background=dark                   " set night mode
 
-" -------------------------------------
 "  _Settings
-" -------------------------------------
 let g:deoplete#enable_at_startup = 1               " activate deoplete
 
 set termguicolors     " enable true colors support

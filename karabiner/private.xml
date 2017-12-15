@@ -7835,7 +7835,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_KEYBOARD_MAESTRO
 <autogen>
 __KeyToKey__
 KeyCode::N,
-KeyCode::VK_OPEN_URL_KM_OPEN_INTELLIJ
+KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH
 </autogen>
 </item>
 
@@ -11565,7 +11565,7 @@ KeyCode::VK_OPEN_URL_KM_EDIT_TEST_GO_MAIN
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::P,
+KeyCode::I,
 KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY
 </autogen>
 <autogen>
@@ -11580,7 +11580,7 @@ KeyCode::VK_OPEN_URL_KM_EDIT_TEST_JS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
+KeyCode::SEMICOLON,
 KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY_AND_OPEN_WITH_VS_CODE
 </autogen>
 <autogen>
@@ -11632,11 +11632,6 @@ KeyCode::K, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
 __KeyToKey__
 KeyCode::L,
 KeyCode::L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SEMICOLON,
-KeyCode::SEMICOLON, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11881,7 +11876,7 @@ KeyCode::VK_OPEN_URL_ALFRED_ITERM_TTY
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::K,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
 </autogen>
 </item>
 

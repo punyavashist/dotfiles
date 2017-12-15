@@ -12,6 +12,8 @@ You can also see my top used applications, safari exensions and alfred workflows
 - [VS Code](#vs-code)
 - [Hammerspoon](#hammerspoon)
 - [Zsh](#zsh)
+- [Inspiring dotfiles](#inspiring-dotfiles)
+- [Contributing](#contributing)
 
 ## Karabiner 
 
@@ -60,7 +62,7 @@ function ggi() {
     git init
     mit
     git add .
-    git commit -m "🌅 initial commit"
+    git commit -m "Init"
     git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
     git push -u origin master
 }
@@ -159,6 +161,13 @@ fea() {
 ```
 
 A slight variation of the above command that first `cd`'s to `~/.dotfiles` and then lets me search through contents of it to quickly edit and modify my config with neovim.
+
+## Inspiring dotfiles
+These are dotfiles I got many ideas from and really liked.
+- [caarlos0](https://github.com/caarlos0/dotfiles)
+
+## Contributing
+[Suggestions](https://github.com/nikitavoloboev/dotfiles/issues) on how I can improve the structure of these dotfiles as well as suggesting new and awesome tools one can use is welcome. 
 
 ## Thank you 💜
 You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-143.5,-902.6,0) I shared. 

@@ -1,200 +1,170 @@
 {
-    // _testing
-    "newFile.defaultFileExtension": ".go",
-    "newFile.showPathRelativeTo": "project",
-    // _todo
-    "todohighlight.isEnable": true,
-    "todohighlight.isCaseSensitive": true,
-    "todohighlight.keywords": [
-        {
-            "text": "NOTE:",
-            "color": "yellow",
-            "backgroundColor": "rgba(0,0,0,.2)",
-        },
-        {
-            "text": "TODO:",
-            "color": "red",
-            "backgroundColor": "rgba(0,0,0,.2)",
-        },
-        {
-            "text": "FIXME:",
-            "color": "orange",
-            "backgroundColor": "rgba(0,0,0,.2)",
-        }
-    ],
-    // _general
-    "editor.snippetSuggestions": "top",
-    "editor.minimap.enabled": false,
-    "workbench.fontAliasing": "antialised",
-    // _dash
-    "dash.docset.go": [
-        "go",
-        "godoc"
-    ],
-    "editor.lineNumbers": "relative",
-    "editor.cursorStyle": "line",
-    "window.zoomLevel": -2,
-    "workbench.welcome.enabled": false,
-    // _python
-    "python.linting.pylintArgs": [
-        "--errors-only"
-    ],
-    // _code runner
-    "code-runner.clearPreviousOutput": true,
-    "code-runner.executorMap": {
-        "python": "python3"
+  // _testing
+  "newFile.defaultFileExtension": ".go",
+  "newFile.showPathRelativeTo": "project",
+  // _todo
+  "todohighlight.isEnable": true,
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.keywords": [
+    {
+      "text": "NOTE:",
+      "color": "yellow",
+      "backgroundColor": "rgba(0,0,0,.2)"
     },
-    // _zen
-    "zenMode.fullScreen": false,
-    "zenMode.restore": true,
-    "workbench.iconTheme": "vs-seti",
-    // _prettier
-    "prettier.singleQuote": true,
-    "editor.formatOnSave": true,
-    "prettier.jsonEnable": [],
-    "extensions.autoUpdate": true,
-    // _commands
-    // _plugins
-    "code-runner.runInTerminal": false,
-    // _sync settings
-    "sync.gist": "0c57cbed63ec19108a8437f4325bdd32",
-    "sync.lastUpload": "2017-07-18T07:26:15.238Z",
-    "sync.autoDownload": false,
-    "sync.autoUpload": false,
-    "sync.lastDownload": "",
-    "sync.forceDownload": false,
-    "sync.anonymousGist": false,
-    "sync.host": "",
-    "sync.pathPrefix": "",
-    "sync.quietSync": false,
-    "sync.askGistName": false,
-    // _fonts
-    "editor.fontFamily": "Monospace",
-    "editor.fontSize": 20,
-    "editor.fontLigatures": true,
-    // _vim
-    "vim.leader": " ",
-    "vim.disableAnnoyingNeovimMessage": true,
-    "vim.useSystemClipboard": true,
-    "vim.relativenumbers": true,
-    "vim.easymotion": true,
-    "vim.easymotionMarkerBackgroundColor": "red",
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        }
-    ],
-    // _space map
-    "vim.otherModesKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<leader>",
-                "w"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.files.save",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "i"
-            ],
-            "after": [
-                "y",
-                "i",
-                "\""
-            ]
-        },
-        {
-            "before": [
-                "Y"
-            ],
-            "after": [
-                "y",
-                "$"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "e"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.commentLine",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "r"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "code-runner.run",
-                    "args": []
-                }
-            ]
-        }
-    ],
-    // _go
-    "go.autocompleteUnimportedPackages": true,
-    "go.liveErrors": {
-        "enabled": true,
-        "delay": 500
+    {
+      "text": "TODO:",
+      "color": "red",
+      "backgroundColor": "rgba(0,0,0,.2)"
     },
-    "go.useLanguageServer": true,
-    "go.lintTool": "golint",
-    "go.lintOnSave": false,
-    "go.buildOnSave": true,
-    "go.formatOnSave": true,
-    "go.gopath": "/Users/nikivi/go",
-    // _java
-    "java.errors.incompleteClasspath.severity": "ignore",
-    // _typescript
-    "typescript.check.tscVersion": false,
-    "typescript.check.npmIsInstalled": false,
-    // _files
-    "files.associations": {
-        "*.toml": "toml"
-    },
-    "git.enableSmartCommit": true,
-    "todohighlight.isEnable": true,
-    "todohighlight.include": [
-        "**/*.js",
-        "**/*.jsx",
-        "**/*.ts",
-        "**/*.tsx",
-        "**/*.html",
-        "**/*.php",
-        "**/*.css",
-        "**/*.scss",
-        "**/*.go"
-    ],
-    "workbench.colorTheme": "Ayu Dark",
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressUpdateNotice": true,
-        "suppressWelcomeNotice": false
+    {
+      "text": "FIXME:",
+      "color": "orange",
+      "backgroundColor": "rgba(0,0,0,.2)"
     }
+  ],
+  // _general
+  "editor.snippetSuggestions": "top",
+  "editor.minimap.enabled": false,
+  "workbench.fontAliasing": "antialised",
+  // _dash
+  "dash.docset.go": ["go", "godoc"],
+  "editor.lineNumbers": "relative",
+  "editor.cursorStyle": "line",
+  "explorer.confirmDragAndDrop": false,
+  "window.zoomLevel": -2,
+  "workbench.welcome.enabled": false,
+  // _python
+  "python.linting.pylintArgs": ["--errors-only"],
+  // _code runner
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.executorMap": {
+    "python": "python3"
+  },
+  // _zen
+  "zenMode.fullScreen": false,
+  "zenMode.restore": true,
+  "workbench.iconTheme": "vs-seti",
+  // _prettier
+  "prettier.singleQuote": true,
+  "editor.formatOnSave": true,
+  "prettier.jsonEnable": [],
+  "extensions.autoUpdate": true,
+  // _commands
+  // _plugins
+  "code-runner.runInTerminal": false,
+  // _sync settings
+  "sync.gist": "0c57cbed63ec19108a8437f4325bdd32",
+  "sync.lastUpload": "2017-07-18T07:26:15.238Z",
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "sync.lastDownload": "",
+  "sync.forceDownload": false,
+  "sync.anonymousGist": false,
+  "sync.host": "",
+  "sync.pathPrefix": "",
+  "sync.quietSync": false,
+  "sync.askGistName": false,
+  // _fonts
+  "editor.fontFamily": "Monospace",
+  "editor.fontSize": 20,
+  "editor.fontLigatures": true,
+  // _vim
+  "vim.leader": " ",
+  "vim.disableAnnoyingNeovimMessage": true,
+  "vim.useSystemClipboard": true,
+  "vim.relativenumbers": true,
+  "vim.easymotion": true,
+  "vim.easymotionMarkerBackgroundColor": "red",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  // _space map
+  "vim.otherModesKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "w"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.files.save",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "i"],
+      "after": ["y", "i", "\""]
+    },
+    {
+      "before": ["Y"],
+      "after": ["y", "$"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.commentLine",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "r"],
+      "after": [],
+      "commands": [
+        {
+          "command": "code-runner.run",
+          "args": []
+        }
+      ]
+    }
+  ],
+  // _go
+  "go.autocompleteUnimportedPackages": true,
+  "go.liveErrors": {
+    "enabled": true,
+    "delay": 500
+  },
+  "go.useLanguageServer": true,
+  "go.lintTool": "golint",
+  "go.lintOnSave": false,
+  "go.buildOnSave": true,
+  "go.formatOnSave": true,
+  "go.gopath": "/Users/nikivi/go",
+  // _java
+  "java.errors.incompleteClasspath.severity": "ignore",
+  // _typescript
+  "typescript.check.tscVersion": false,
+  "typescript.check.npmIsInstalled": false,
+  // _files
+  "files.associations": {
+    "*.toml": "toml"
+  },
+  "git.enableSmartCommit": true,
+  "todohighlight.isEnable": true,
+  "todohighlight.include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",
+    "**/*.php",
+    "**/*.css",
+    "**/*.scss",
+    "**/*.go"
+  ],
+  "workbench.colorTheme": "Ayu Dark",
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressUpdateNotice": true,
+    "suppressWelcomeNotice": false
+  }
 }

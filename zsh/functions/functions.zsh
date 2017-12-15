@@ -1,11 +1,16 @@
-# _tester func
+# _Tester func
 function wo(){
   git add readme.md
   git commit -m "Improve readme"
   git push
 }
 
-# write quick commit message
+function C(){
+  curl cheat.sh/$@
+}
+
+
+# Write quick commit message
 function gc() {
     git commit -m "$@"
 }
@@ -312,7 +317,7 @@ function gwi() {
 
 function gw() {
     git add .
-    git commit -m "$*" 
+    git commit -m "${(j: :)@}"
     git push
 }
 
