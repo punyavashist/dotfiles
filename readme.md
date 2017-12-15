@@ -170,7 +170,7 @@ These are dotfiles I got many ideas from and really liked.
 [Suggestions](https://github.com/nikitavoloboev/dotfiles/issues) on how I can improve the structure of these dotfiles as well as suggesting new and awesome tools one can use is welcome. 
 
 ## Thank you 💜
-You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look [into other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-143.5,-902.6,0) I shared. 
+You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look into [other repositories](https://my.mindnode.com/ZKGETDkUaQUsL3q8q9z788CxG84oEHgDiT79GuzX#-143.5,-902.6,0) I shared. 
 
 ## License
 MIT © [Nikita Voloboev](https://www.nikitavoloboev.xyz)
