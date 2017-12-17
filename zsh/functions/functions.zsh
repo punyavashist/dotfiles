@@ -5,8 +5,10 @@ function wo(){
   git push
 }
 
+# cheat.sh
 function C(){
-  curl cheat.sh/$@
+  curl cheat.sh/${@:-cheat}
+  # curl cheat.sh/$@
 }
 
 
@@ -76,7 +78,7 @@ awe() {
     fi
 }
 
-# alfred action function (pop the alfred action window)
+# Alfred action function (pop the alfred action window)
 aw() {
     if [ $# -eq 0 ]; then    # If no arguments, pop Alfred Action Window in the working directory
         osascript -e "tell application \"Alfred 3\" to action \"$(pwd)\""

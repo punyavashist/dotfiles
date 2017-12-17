@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <root>
 
-<!-- _modif def -->
+<!-- _Modif def -->
 <modifierdef>MY_CAPSLOCK</modifierdef>
 <modifierdef>MY_OPTION_L</modifierdef>
 <modifierdef>MY_CONTROL_L</modifierdef>
 
-<!-- _profile def  -->
+<!-- _Profile def  -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_general</name>
 <url type="shell">
@@ -55,13 +55,33 @@
 <equal>com.googlecode.iterm2</equal>
 </appdef>
 
-<!-- _km websites-->
+<!-- _km url-->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "w: github"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITTER</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "w: gitter"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_DISCORD</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "w: discord"
 end tell
 '
 </url>
@@ -2994,6 +3014,14 @@ tell application "Alfred 3" to run trigger "go fast" in workflow "nikivi.a.searc
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GO_DIR</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "go" in workflow "com.vitorgalvao.alfred.directories" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_REMOVE_REMINDER_TIMER</name>
 <url type="shell">
 osascript -e '
@@ -3229,7 +3257,7 @@ tell application "Alfred 3" to run trigger "ulysses sheets" in workflow "nikivi.
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALL_FILES</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "all files" in workflow "nikivi.search.files" with argument ""
+tell application "Alfred 3" to run trigger "all files" in workflow "nikivi.a.search.files" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -5465,7 +5493,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_WORKFLOWS
 <autogen>
 __KeyToKey__
 KeyCode::C,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALL_FILES
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GO_DIR
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6463,7 +6491,7 @@ __BlockUntilKeyUp__ KeyCode::P,
 
 <autogen>
 __KeyToKey__
-KeyCode::F,
+KeyCode::A,
 KeyCode::VK_OPEN_URL_KM_GO_FMT_PRINTLN
 </autogen>
 <autogen>
@@ -6668,31 +6696,6 @@ __BlockUntilKeyUp__ KeyCode::N,
 <autogen>
 __KeyToKey__
 KeyCode::1,
-KeyCode::VK_OPEN_URL_TIMER_10
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::2,
-KeyCode::VK_OPEN_URL_TIMER_20
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::3,
-KeyCode::VK_OPEN_URL_TIMER_30
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::4,
-KeyCode::VK_OPEN_URL_TIMER_40
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::5,
-KeyCode::VK_OPEN_URL_TIMER_50
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::1,
 KeyCode::1, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
@@ -6881,33 +6884,38 @@ __BlockUntilKeyUp__ KeyCode::M,
 
 <autogen>
 __KeyToKey__
+KeyCode::E,
+KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::W,
+KeyCode::VK_OPEN_URL_ALFRED_TIMER_START
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::1,
-KeyCode::1, ModifierFlag::OPTION_L, 
+KeyCode::VK_OPEN_URL_TIMER_10
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::2,
-KeyCode::2, ModifierFlag::OPTION_L, 
+KeyCode::VK_OPEN_URL_TIMER_20
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::3,
-KeyCode::3, ModifierFlag::OPTION_L, 
+KeyCode::VK_OPEN_URL_TIMER_30
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::4,
-KeyCode::4, ModifierFlag::OPTION_L, 
+KeyCode::VK_OPEN_URL_TIMER_40
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::5,
-KeyCode::5, ModifierFlag::OPTION_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::6,
-KeyCode::6, ModifierFlag::OPTION_L, 
+KeyCode::VK_OPEN_URL_TIMER_50
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7013,16 +7021,6 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_PLAYLISTS
 __KeyToKey__
 KeyCode::F19,
 KeyCode::8, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::E,
-KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::W,
-KeyCode::VK_OPEN_URL_ALFRED_TIMER_START
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9115,11 +9113,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_HAZEL
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::H,
-KeyCode::VK_OPEN_URL_KM_OPEN_PHOTOS
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::D,
 KeyCode::VK_OPEN_URL_KM_OPEN_NOTES
 </autogen>
@@ -9156,7 +9149,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMISSION
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::P,
+KeyCode::H,
 KeyCode::VK_OPEN_URL_KM_OPEN_PAPRIKA_RECIPE_MANAGER
 </autogen>
 <autogen>
@@ -9932,7 +9925,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_SLACK
 <autogen>
 __KeyToKey__
 KeyCode::SEMICOLON,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_SLACK
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_DISCORD
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9967,7 +9960,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_CONTACTS_TEXT
 <autogen>
 __KeyToKey__
 KeyCode::G,
-KeyCode::VK_OPEN_URL_KM_OPEN_GITTER
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITTER
 </autogen>
 <autogen>
 __KeyToKey__
