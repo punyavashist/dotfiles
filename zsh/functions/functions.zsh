@@ -11,6 +11,11 @@ function C(){
   # curl cheat.sh/$@
 }
 
+# Copy content of file to clipboard
+function cfile(){
+  cat $1 | pbcopy
+}
+
 
 # Write quick commit message
 function gc() {

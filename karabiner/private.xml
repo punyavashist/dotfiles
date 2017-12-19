@@ -10050,6 +10050,11 @@ KeyCode::M, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::4,
+KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_3000
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::D,
 KeyCode::VK_OPEN_URL_KM_MANIPULATE_CLIPBOARD
 </autogen>
@@ -10140,7 +10145,7 @@ KeyCode::RETURN, ModifierFlag::SHIFT_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::COMMA,
+KeyCode::DOT,
 KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
 KeyCode::X, ModifierFlag::COMMAND_L,
 Option::NOREPEAT,
@@ -10177,8 +10182,8 @@ KeyCode::RETURN, ModifierFlag::SHIFT_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::DOT,
-KeyCode::RETURN, ModifierFlag::SHIFT_L
+KeyCode::COMMA,
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOCALHOST
 </autogen>
 <autogen>
 __KeyToKey__

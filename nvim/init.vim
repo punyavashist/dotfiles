@@ -6,7 +6,7 @@ function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 
-" _Move
+" _Plugs
 Plug 'easymotion/vim-easymotion'
 Plug 'christoomey/vim-titlecase' 
 Plug 'ayu-theme/ayu-vim' " theme
@@ -183,10 +183,9 @@ set background=dark                   " set night mode
 "  _Settings
 let g:deoplete#enable_at_startup = 1               " activate deoplete
 
+" _Theme
 set termguicolors     " enable true colors support
-let ayucolor="light"  " for light version of theme
-let ayucolor="mirage" " for mirage version of theme
-let ayucolor="dark"   " for dark version of theme
+let ayucolor="dark" " for mirage version of theme
 colorscheme ayu
 
 " autocomplete with tab

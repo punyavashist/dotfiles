@@ -31,7 +31,7 @@
   "editor.lineNumbers": "relative",
   "editor.cursorStyle": "line",
   "explorer.confirmDragAndDrop": false,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
   "workbench.welcome.enabled": false,
   // _python
   "python.linting.pylintArgs": ["--errors-only"],
@@ -156,7 +156,7 @@
     "**/*.scss",
     "**/*.go"
   ],
-  "workbench.colorTheme": "Ayu Dark",
+  "workbench.colorTheme": "Ayu Mirage",
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,

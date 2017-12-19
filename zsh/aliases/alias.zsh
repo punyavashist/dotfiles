@@ -1,4 +1,4 @@
-# _general
+# _General
 alias g='hub'
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias lc='tokei'
@@ -67,9 +67,9 @@ alias wg='wget -r --no-parent'
 alias v='mv'
 alias os='osascript'
 alias lt='ls -lart'
-alias al='exa -l'
+alias aa='exa -l'
 # alias aa='ls -lahFG'
-alias aa='exa -lahF'
+# alias aa='exa -lahF'
 alias tp='type'
 #alias cl='/usr/local/bin/m'
 
