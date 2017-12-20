@@ -185,7 +185,7 @@ let g:deoplete#enable_at_startup = 1               " activate deoplete
 
 " _Theme
 set termguicolors     " enable true colors support
-let ayucolor="dark" " for mirage version of theme
+let ayucolor="mirage" " for mirage version of theme
 colorscheme ayu
 
 " autocomplete with tab
