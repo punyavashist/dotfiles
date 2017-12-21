@@ -6957,7 +6957,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_ARTISTS
 <autogen>
 __KeyToKey__
 KeyCode::I,
-KeyCode::VK_OPEN_URL_ALFRED_CREATE_SONG_RADIO
+KeyCode::VK_OPEN_URL_ALFRED_CREATE_ARTIST_RADIO
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6967,7 +6967,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_REMOVE_SONG_FROM_PLAYLIST
 <autogen>
 __KeyToKey__
 KeyCode::O,
-KeyCode::VK_OPEN_URL_TIMER_120
+KeyCode::VK_OPEN_URL_ALFRED_CREATE_SONG_RADIO
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7017,7 +7017,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_CURRENT_SONG
 <autogen>
 __KeyToKey__
 KeyCode::R,
-KeyCode::VK_OPEN_URL_KM_FOCUS_60_MIN
+KeyCode::VK_OPEN_URL_KM_FOCUS_90_MIN
 </autogen>
 <autogen>
 __KeyToKey__

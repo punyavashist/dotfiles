@@ -141,13 +141,13 @@ function ud() {
 }
 
 function mit() {
-  license-up Nikita Voloboev nikitavoloboev.xyz
-  git add LICENSE 
+  license-up mit Nikita Voloboev nikitavoloboev.xyz
+  git add license
 }
 
 function mitla () {
-  license-up Learn Anything, learn-anything.xyz
-  git add LICENSE
+  license-up mit Learn Anything, learn-anything.xyz
+  git add license 
 }
 
 

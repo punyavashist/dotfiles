@@ -1,8 +1,8 @@
 {
-  // _testing
+  // _Testing
   "newFile.defaultFileExtension": ".go",
   "newFile.showPathRelativeTo": "project",
-  // _todo
+  // _Todo
   "todohighlight.isEnable": true,
   "todohighlight.isCaseSensitive": true,
   "todohighlight.keywords": [
@@ -22,20 +22,25 @@
       "backgroundColor": "rgba(0,0,0,.2)"
     }
   ],
-  // _general
+  // _General
   "editor.snippetSuggestions": "top",
   "editor.minimap.enabled": false,
   "workbench.fontAliasing": "antialised",
-  // _dash
-  "dash.docset.go": ["go", "godoc"],
+  // _Dash
+  "dash.docset.go": [
+    "go",
+    "godoc"
+  ],
   "editor.lineNumbers": "relative",
   "editor.cursorStyle": "line",
   "explorer.confirmDragAndDrop": false,
   "window.zoomLevel": -2,
   "workbench.welcome.enabled": false,
-  // _python
-  "python.linting.pylintArgs": ["--errors-only"],
-  // _code runner
+  // _Python
+  "python.linting.pylintArgs": [
+    "--errors-only"
+  ],
+  // _Code runner
   "code-runner.clearPreviousOutput": true,
   "code-runner.executorMap": {
     "python": "python3"
@@ -77,14 +82,22 @@
   "vim.easymotionMarkerBackgroundColor": "red",
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   // _space map
   "vim.otherModesKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "w"],
+      "before": [
+        "<leader>",
+        "w"
+      ],
       "after": [],
       "commands": [
         {
@@ -94,15 +107,30 @@
       ]
     },
     {
-      "before": ["<leader>", "i"],
-      "after": ["y", "i", "\""]
+      "before": [
+        "<leader>",
+        "i"
+      ],
+      "after": [
+        "y",
+        "i",
+        "\""
+      ]
     },
     {
-      "before": ["Y"],
-      "after": ["y", "$"]
+      "before": [
+        "Y"
+      ],
+      "after": [
+        "y",
+        "$"
+      ]
     },
     {
-      "before": ["<leader>", "e"],
+      "before": [
+        "<leader>",
+        "e"
+      ],
       "after": [],
       "commands": [
         {
@@ -112,7 +140,10 @@
       ]
     },
     {
-      "before": ["<leader>", "r"],
+      "before": [
+        "<leader>",
+        "r"
+      ],
       "after": [],
       "commands": [
         {
