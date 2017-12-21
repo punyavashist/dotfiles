@@ -3185,7 +3185,7 @@ tell application "Alfred 3" to run trigger "alfred doc" in workflow "com.vitorga
 <name>KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "googleLucky" in workflow "net.deanishe.alfred-searchio.old" with argument ""
+tell application "Alfred 3" to run trigger "lucky" in workflow "net.deanishe.alfred-searchio.old" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -5920,11 +5920,6 @@ KeyCode::VK_OPEN_URL_ALFRED_CHROME_PROFILES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::A,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_KEYWORDS
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::D,
 KeyCode::VK_OPEN_URL_ALFRED_ALFRED_DOC
 </autogen>
@@ -6025,7 +6020,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_3000
 </item>
 
 <item>
-<name>general: sticky dot - symbols</name>
+<name>general: sticky p - symbols</name>
 <identifier>private.launcher_mode_open_apps_v12</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -6041,19 +6036,19 @@ ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
 __KeyOverlaidModifier__
-KeyCode::DOT,
+KeyCode::P,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v12, ModifierFlag::MY_LAUNCHER_MODE,
 @end
 @begin
-KeyCode::DOT,
+KeyCode::P,
 @end
 </autogen>
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v12</identifier>
 <autogen>
-__BlockUntilKeyUp__ KeyCode::DOT,
+__BlockUntilKeyUp__ KeyCode::P,
 </autogen>
 
 <autogen>
@@ -6476,17 +6471,17 @@ ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
 __KeyOverlaidModifier__
-KeyCode::P,@begin
+KeyCode::DOT,@begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v72, ModifierFlag::MY_LAUNCHER_MODE,
 @end@begin
-KeyCode::P,
+KeyCode::DOT,
 @end
 </autogen>
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v72</identifier>
 <autogen>
-__BlockUntilKeyUp__ KeyCode::P,
+__BlockUntilKeyUp__ KeyCode::DOT,
 </autogen>
 
 <autogen>
@@ -6503,7 +6498,6 @@ KeyCode::9, ModifierFlag::SHIFT_L,
 KeyCode::0, ModifierFlag::SHIFT_L,  
 KeyCode::CURSOR_LEFT
 </autogen>
-
 <autogen>
 __KeyToKey__
 KeyCode::S,
@@ -6515,6 +6509,17 @@ KeyCode::T,
 KeyCode::9, ModifierFlag::SHIFT_L,  
 KeyCode::0, ModifierFlag::SHIFT_L,  
 KeyCode::CURSOR_LEFT
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::R,
+KeyCode::R,
+KeyCode::E,
+KeyCode::T,
+KeyCode::U,
+KeyCode::R,
+KeyCode::N,
+KeyCode::SPACE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6550,12 +6555,12 @@ ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
 __KeyOverlaidModifier__
-KeyCode::P,
+KeyCode::DOT,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v77, ModifierFlag::MY_LAUNCHER_MODE,
 @end
 @begin
-KeyCode::P,
+KeyCode::DOT,
 @end
 </autogen>
 </item>
@@ -6563,7 +6568,7 @@ KeyCode::P,
 <identifier vk_config="true">notsave.private_launcher_mode_v77</identifier>
 
 <autogen>
-__BlockUntilKeyUp__ KeyCode::P,
+__BlockUntilKeyUp__ KeyCode::DOT,
 </autogen>
 
 <autogen>
@@ -7300,7 +7305,7 @@ KeyCode::P, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTR
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::A,
+KeyCode::1,
 KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
 </autogen>
 <autogen>
@@ -7735,7 +7740,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_TRELLO
 <autogen>
 __KeyToKey__
 KeyCode::4,
-KeyCode::VK_OPEN_URL_KM_OPEN_ANKI
+KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7765,7 +7770,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_BETTERTOUCHTOOL
 <autogen>
 __KeyToKey__
 KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_OPEN_TOWER
+KeyCode::VK_OPEN_URL_KM_OPEN_PAW
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7830,7 +7835,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_ITERM
 <autogen>
 __KeyToKey__
 KeyCode::H,
-KeyCode::VK_OPEN_URL_KM_OPEN_PAW
+KeyCode::VK_OPEN_URL_KM_OPEN_TOWER
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8911,7 +8916,17 @@ __BlockUntilKeyUp__ KeyCode::G,
 
 <autogen>
 __KeyToKey__
-KeyCode::D,
+KeyCode::S,
+KeyCode::J, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::A,
+KeyCode::H, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::X,
 KeyCode::P, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
 </autogen>
 <autogen>
@@ -8946,7 +8961,7 @@ KeyCode::F4, ModifierFlag::COMMAND_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::Z,
+KeyCode::X,
 KeyCode::T, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L,
 </autogen>
 <autogen>
@@ -8956,7 +8971,7 @@ KeyCode::T, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::Q,
+KeyCode::1,
 KeyCode::6, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
 </autogen>
 <autogen>
@@ -8966,12 +8981,12 @@ KeyCode::M, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::W,
+KeyCode::Q,
 KeyCode::4, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::A,
+KeyCode::W,
 KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
 </autogen>
 <autogen>
@@ -9022,7 +9037,7 @@ KeyCode::F10, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
+KeyCode::D,
 KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_CLIPBOARD_CONTENT
 </autogen>
 <autogen>
@@ -9053,7 +9068,7 @@ KeyCode::F, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::S,
+KeyCode::Z,
 KeyCode::VK_OPEN_URL_ALFRED_DISMISS_NOTIFICATIONS
 </autogen>
 </item>
@@ -10063,7 +10078,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::J, KeyCode::K,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10109,16 +10124,6 @@ KeyCode::SPACE, ModifierFlag::COMMAND_L
 __KeyToKey__
 KeyCode::T,
 KeyCode::SPACE, ModifierFlag::CONTROL_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::2,
-KeyCode::H, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::3,
-KeyCode::J, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12336,7 +12341,7 @@ KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::DOT, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_CHROME_HISTORY
+KeyCode::VK_OPEN_URL_ALFRED_KARABINER_PROFILES
 </autogen>
 </item>
 
