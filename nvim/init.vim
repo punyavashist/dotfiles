@@ -34,8 +34,6 @@ Plug 'rizzatti/dash.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
-Plug 'vim-airline/vim-airline'                      " a nice looking status bar on the bottom
-Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -89,7 +87,7 @@ set undolevels=1000
 set smartindent                                   " indentation
 set shortmess=Ia                                  " disable startup message
 
-" open help vertically
+" Open help vertically
 command! -nargs=* -complete=help Help vertical belowright help <args>
 autocmd FileType help wincmd L
 

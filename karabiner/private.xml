@@ -7734,7 +7734,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_DR_RACKET
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::3,
+KeyCode::E,
 KeyCode::VK_OPEN_URL_KM_OPEN_TRELLO
 </autogen>
 <autogen>
@@ -7799,7 +7799,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_DICTIONARY
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::E,
+KeyCode::3,
 KeyCode::VK_OPEN_URL_KM_OPEN_MINDNODE
 </autogen>
 <autogen>

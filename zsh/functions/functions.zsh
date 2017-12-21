@@ -1,14 +1,5 @@
 # _Tester func
 function wi(){
-  mv LICENSE LICENSE_
-  git add LICENSE_
-  git commit -m "✨"
-  git push
-  rm -rf LICENSE_
-  license-up mit Nikita Voloboev nikitavoloboev.xyz
-  git add license
-  git commit -m "MIT license"
-  git push
 }
 
 
