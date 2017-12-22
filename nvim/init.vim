@@ -34,6 +34,8 @@ Plug 'rizzatti/dash.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
+Plug 'vim-airline/vim-airline'                      " a nice looking status bar on the bottom
+Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'

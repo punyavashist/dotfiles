@@ -1,6 +1,4 @@
---------------------------------------------------------------------------------
--- _require
---------------------------------------------------------------------------------
+-- _Require
 require("hs.ipc") -- hammerpoon cli
 
 print("-- "..os.date()) -- know when it gets sourced
@@ -11,10 +9,7 @@ hs.logger.historySize(200)
 hs.hints.showTitleThresh = 9
 hs.allowAppleScript(true)
 
-
---------------------------------------------------------------------------------
--- _constants
---------------------------------------------------------------------------------
+-- _Constants
 local caps = {"alt", "ctrl"}
 local cmd_alt = {"cmd", "alt"}
 local cmd_alt_ctrl = {"cmd", "alt", "ctrl"}
@@ -27,11 +22,8 @@ local second_monitor = "DELL U2515H"
 local mouseCircle = nil
 local mouseCircleTimer = nil
 
-
---------------------------------------------------------------------------------
--- _variables
---------------------------------------------------------------------------------
--- _colours
+-- _Variables
+-- _Colors
 white = hs.drawing.color.white
 black = hs.drawing.color.black
 blue = hs.drawing.color.blue
@@ -50,27 +42,23 @@ black50 = {red=0,blue=0,green=0,alpha=0.5}
 darkblue = {red=24/255,blue=195/255,green=145/255,alpha=1}
 red = {red=229/255,blue=66/255,green=77/255,alpha=1}
 
--- _paths
+-- _Paths
 
---------------------------------------------------------------------------------
--- _utils
---------------------------------------------------------------------------------
--- show my todo task in a neat window briefly
+-- _Utils
+-- Show my todo task in a neat window briefly
 function showTodoTask ()
 hs.alert.show( ( hs.execute("~/app/bitbar/todo") ) )
 end
 hs.urlevent.bind("showTodoTask", showTodoTask)
 
-
--- _display clipboard contents
+-- _Display clipboard contents
 function showClipBoardContent ()
 	clipboard = hs.pasteboard.getContents()
 	hs.alert.show(clipboard)
 end
 hs.urlevent.bind("showClipBoardContent", showClipBoardContent)
 
-
--- _wifi watcher
+-- _Wifi watcher
 wifiwatcher = hs.wifi.watcher.new(function ()
     net = hs.wifi.currentNetwork()
     if net==nil then
@@ -82,25 +70,25 @@ end)
 wifiwatcher:start()
 
 
--- _visually circle my mouse pointer
+-- _Visually circle my mouse pointer
 function mouseHighlight()
-    -- delete an existing highlight if it exists
+    -- Delete an existing highlight if it exists
     if mouseCircle then
         mouseCircle:delete()
         if mouseCircleTimer then
             mouseCircleTimer:stop()
         end
     end
-    -- get the current co-ordinates of the mouse pointer
+    -- Get the current co-ordinates of the mouse pointer
     mousepoint = hs.mouse.getAbsolutePosition()
-    -- prepare a circle around the mouse pointer
+    -- Prepare a circle around the mouse pointer
     mouseCircle = hs.drawing.circle(hs.geometry.rect(mousepoint.x-40, mousepoint.y-40, 80, 80))
     mouseCircle:setStrokeColor({["red"]=100,["blue"]=0,["green"]=40,["alpha"]=1})
     mouseCircle:setFill(false)
     mouseCircle:setStrokeWidth(5)
     mouseCircle:show()
 
-    -- set a timer to delete the circle after 2 seconds
+    -- Set a timer to delete the circle after 2 seconds
     mouseCircleTimer = hs.timer.doAfter(2, function() mouseCircle:delete() end)
 end
 hs.urlevent.bind("visuallyCircleMouse", mouseHighlight)
@@ -123,9 +111,7 @@ end
 hs.urlevent.bind("showTime", showTime)
 
 
---------------------------------------------------------------------------------
--- _wm = window management
---------------------------------------------------------------------------------
+-- _wm = Window management
 hs.window.animationDuration = 0
 hs.hotkey.alertDuration=0
 
@@ -146,31 +132,25 @@ function cycle_wins_pre()
 end
 hs.urlevent.bind("cycleWindowsPrevious", cycle_wins_pre)
 
--- doesn't work
+-- Doesn't work
 function showWindowHints()
    hs.hints.windowHints()
 end
 hs.urlevent.bind("showActiveWindows", showWindowHints)
 
+-- _Testing
 
---------------------------------------------------------------------------------
--- _testing
---------------------------------------------------------------------------------
-
--- google search
+-- Google search
 local anycomplete = require "anycomplete/anycomplete"
 anycomplete.registerDefaultBindings(cmd_alt_ctrl, "R")
 
--- TODO: finish it
+-- TODO: Finish it
 function focus()
 
 end
 hs.urlevent.bind("tester", focus)
 
---------------------------------------------------------------------------------
--- _meta
---------------------------------------------------------------------------------
-
+-- _Meta
 function openConsole()
     hs.toggleConsole()
 end
@@ -179,6 +159,5 @@ hs.urlevent.bind("openConsole", openConsole)
 
 hs.urlevent.bind("reloadConfig", hs.reload)
 
--- _notify that config is reloaded
+-- Notify that config is reloaded
 hs.alert.show("config loaded")
-
