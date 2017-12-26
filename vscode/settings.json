@@ -197,5 +197,6 @@
     "suppressNoRepositoryWarning": false,
     "suppressUpdateNotice": true,
     "suppressWelcomeNotice": false
-  }
+  },
+  "git.autofetch": true
 }

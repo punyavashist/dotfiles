@@ -9,7 +9,7 @@ endfunction
 " _Plugs
 Plug 'easymotion/vim-easymotion'
 Plug 'christoomey/vim-titlecase' 
-Plug 'ayu-theme/ayu-vim' " theme
+Plug 'ayu-theme/ayu-vim'          " theme
 Plug 'jiangmiao/auto-pairs'
 "Plug 'mbbill/undotree'
 Plug 'wakatime/vim-wakatime'
@@ -50,10 +50,10 @@ call plug#end()
 "  _Testing
 noremap Q @q
 vnoremap <D-c> y
-set timeout timeoutlen=1000 ttimeoutlen=10        " faster esc - maybe :|
-set showcmd                                       " show me what I'm typing
-set autowrite                                     " automatically save before :next, :make etc
-set ignorecase                                    " search case insensitive
+set timeout timeoutlen=1000 ttimeoutlen=10        " NOTE: Faster esc - maybe
+set showcmd                                       " Show me what I'm typing
+set autowrite                                     " Automatically save before :next, :make etc
+set ignorecase                                    " Search case insensitive
 set smartcase                                     " .. but not when search pattern contains upper case characters
 set nocursorcolumn
 set nocursorline
@@ -63,15 +63,15 @@ set formatoptions=qrn1
 set notimeout
 set ttimeout
 set ttimeoutlen=10
-set nobackup                                      " don't create annoying backup files
-set path=+**                                      " search down into subfolders
+set nobackup                                      " Don't create annoying backup files
+set path=+**                                      " Search down into subfolders
 
 " _Basic vim config
-"  TODO: check if some of these settings come as default with neovim
+"  TODO: Check if some of these settings come as default with neovim
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1                                          " a nice looking editor
 set clipboard^=unnamed                                " copy text to system clipboard
 set guicursor=
-set mouse=a
+set mouse=a 
 set gdefault " always do global substitutions
 set clipboard^=unnamedplus
 set title                                         " set terminal title
@@ -94,7 +94,6 @@ command! -nargs=* -complete=help Help vertical belowright help <args>
 autocmd FileType help wincmd L
 
 :autocmd InsertEnter,InsertLeave * set cul!       " notify on mode change visually
-
 
 "  _Comma mapping
 

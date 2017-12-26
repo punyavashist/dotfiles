@@ -4,7 +4,7 @@ function wi(){
 
 
 # Improve readme commit
-function wo(){
+function gz(){
   git add readme.md
   git commit -m "Improve readme"
   git push
@@ -327,6 +327,14 @@ function gwi() {
     git push
 }
 
+# Commit all files with an Update .. message
+function gd() {
+    git add .
+    git commit -m "Update ${(j: :)@}"
+    git push
+}
+
+# Commit all files with a message
 function gw() {
     git add .
     git commit -m "${(j: :)@}"

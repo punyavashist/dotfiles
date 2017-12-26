@@ -1636,7 +1636,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: make markdown link from selection - {link}"
+do script "a: Make markdown link from selection {link}"
 end tell
 '
 </url>
@@ -1666,7 +1666,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: match symbols"
+do script "a: Match symbols"
 end tell
 '
 </url>
@@ -3060,6 +3060,14 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "go fast" in workflow "nikivi.a.search.files" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_LEARN_ANYTHING</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "learn" in workflow "nikivi.learn-anything" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -6550,6 +6558,23 @@ KeyCode::CURSOR_LEFT
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::F,
+KeyCode::F,
+KeyCode::M,
+KeyCode::T,
+KeyCode::DOT,
+KeyCode::P, ModifierFlag::SHIFT_L, 
+KeyCode::R,
+KeyCode::I,
+KeyCode::N,
+KeyCode::T,
+KeyCode::F,
+KeyCode::9, ModifierFlag::SHIFT_L,  
+KeyCode::0, ModifierFlag::SHIFT_L,  
+KeyCode::CURSOR_LEFT
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::S,
 KeyCode::P,
 KeyCode::R,
@@ -6777,6 +6802,11 @@ KeyCode::1, ModifierFlag::OPTION_L,
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::E,
+KeyCode::VK_OPEN_URL_ALFRED_LEARN_ANYTHING
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::2,
 KeyCode::2, ModifierFlag::OPTION_L, 
 </autogen>
@@ -6802,7 +6832,7 @@ KeyCode::6, ModifierFlag::OPTION_L,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::X,
+KeyCode::SEMICOLON,
 KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
 </autogen>
 <autogen>
@@ -6872,7 +6902,7 @@ KeyCode::VK_OPEN_URL_ALFRED_STACK_OVERFLOW_SEARCH_SUGGESTIONS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::E,
+KeyCode::I,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SUBREDDITS
 </autogen>
 <autogen>
@@ -6898,11 +6928,6 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_INDEXED_GITHUB
 <autogen>
 __KeyToKey__
 KeyCode::O,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_APPLE_MAPS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::I,
 KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_MAPS_SEARCH
 </autogen>
 <autogen>
@@ -7751,7 +7776,6 @@ KeyCode::W,
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v3</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::W,
 </autogen>
@@ -7767,7 +7791,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
 __SimultaneousKeyPresses__
 KeyCode::J, KeyCode::K,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7792,7 +7816,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_SCRIPT_EDITOR
 <autogen>
 __KeyToKey__
 KeyCode::V,
-KeyCode::VK_OPEN_URL_KM_OPEN_SCRIPT_DEBUGGER
+KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7802,7 +7826,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_DR_RACKET
 <autogen>
 __KeyToKey__
 KeyCode::3,
-KeyCode::VK_OPEN_URL_KM_OPEN_TRELLO
+KeyCode::VK_OPEN_URL_KM_OPEN_MINDNODE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7867,7 +7891,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_DICTIONARY
 <autogen>
 __KeyToKey__
 KeyCode::E,
-KeyCode::VK_OPEN_URL_KM_OPEN_MINDNODE
+KeyCode::VK_OPEN_URL_KM_OPEN_TRELLO
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8490,6 +8514,11 @@ KeyCode::TAB,
 __BlockUntilKeyUp__ KeyCode::TAB,
 </autogen>
 
+<autogen>
+__KeyToKey__
+KeyCode::O,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_APPLE_MAPS
+</autogen>
 <autogen>
 __KeyToKey__
 KeyCode::U,
@@ -9259,11 +9288,11 @@ KeyCode::VK_OPEN_URL_KM_OPEN_PAPRIKA_RECIPE_MANAGER
 <autogen>
 __KeyToKey__
 KeyCode::3,
-KeyCode::VK_OPEN_URL_KM_OPEN_CONTACTS
+KeyCode::VK_OPEN_URL_KM_OPEN_PAPRIKA_RECIPE_MANAGER
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::Y,
+KeyCode::2,
 KeyCode::VK_OPEN_URL_KM_OPEN_YNAB
 </autogen>
 <autogen>
@@ -10143,11 +10172,6 @@ KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::3,
-KeyCode::SEMICOLON, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::SPACE,
 KeyCode::M, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, 
 </autogen>
@@ -10173,7 +10197,7 @@ KeyCode::SHIFT_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::2,
+KeyCode::3,
 KeyCode::P, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 </autogen>
 <autogen>
@@ -10214,7 +10238,7 @@ KeyCode::3, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
 <autogen>
 __KeyToKey__
 KeyCode::BACKQUOTE,
-KeyCode::Q, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+KeyCode::SEMICOLON, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
 </autogen>
 <autogen>
 __KeyToKey__

@@ -4,7 +4,7 @@ alias gsh='git stash'
 alias g:='git push -u origin master'
 alias gn='git open'
 alias ge='git checkout'
-alias gu='git commit --amend'
+#alias gu='git commit --amend'
 alias ggf='git push -f'
 alias g::='git_remote_add_origin_from_active_link'
 # alias g="git"
@@ -20,7 +20,7 @@ alias gg='git push'
 # alias gf='git fetch'
 alias glp='git pull && git push'
 alias grao='git remote add origin'
-alias gz='git discard'
+#alias gz='git discard'
 #alias gr='git rm --cached -r'
 
 # undo your last commit, but don't throw away your changes
@@ -28,7 +28,7 @@ alias greset='git reset --soft HEAD^'
 
 
 # _diff
-alias gd='git diff'
+alias gdi='git diff'
 alias gds='git diff --staged'
 alias gdn='git diff --name-only'
 
