@@ -17,8 +17,8 @@ Plug 'junegunn/heytmux'
 Plug 'sbdchd/neoformat'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'danro/rename.vim'                             " allow to :Rename files
-Plug 'rking/ag.vim'                                 " lightining fast :Ag searcher
+Plug 'danro/rename.vim'                             " Allow to :Rename files
+Plug 'rking/ag.vim'                                 " Lightining fast :Ag searcher
 Plug 'sheerun/vim-polyglot'
 Plug 'chriskempson/base16-vim'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -28,13 +28,13 @@ Plug 'junegunn/goyo.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'zchee/deoplete-jedi'
 Plug 'tpope/vim-surround' 
-Plug 'szw/vim-g'                                    " search selected text in google
+Plug 'szw/vim-g'                                    " Search selected text in google
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'rizzatti/dash.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
-Plug 'vim-airline/vim-airline'                      " a nice looking status bar on the bottom
+Plug 'vim-airline/vim-airline'                      " Nice looking status bar on the bottom
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
@@ -43,7 +43,7 @@ Plug 'fatih/vim-go'
 Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'zchee/deoplete-go', { 'do': 'make'}
-Plug 'carlitux/deoplete-ternjs'                    " js autocomplete
+Plug 'carlitux/deoplete-ternjs'                    " JS autocomplete
 
 call plug#end()
 
@@ -68,32 +68,32 @@ set path=+**                                      " Search down into subfolders
 
 " _Basic vim config
 "  TODO: Check if some of these settings come as default with neovim
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1                                          " a nice looking editor
-set clipboard^=unnamed                                " copy text to system clipboard
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1                                          " Nice looking editor
+set clipboard^=unnamed                                " Copy text to system clipboard
 set guicursor=
 set mouse=a 
 set gdefault " always do global substitutions
 set clipboard^=unnamedplus
-set title                                         " set terminal title
+set title                                         " Set terminal title
 set whichwrap+=<,>,[,]
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-set completeopt-=preview                          " no annoying scratch preview above
-set expandtab                                     " spaces on tabs
+set completeopt-=preview                          " No annoying scratch preview above
+set expandtab                                     " Spaces on tabs
 set shiftwidth=4
 set softtabstop=2
-set backspace=indent,eol,start                    " makes backspace key more powerful
-set hlsearch                                      " highlight search results
-set incsearch                                     " highlight pattern matches as you type
-set history=1000                                  " remember everything
+set backspace=indent,eol,start                    " Makes backspace key more powerful
+set hlsearch                                      " Highlight search results
+set incsearch                                     " Highlight pattern matches as you type
+set history=1000                                  " Remember everything
 set undolevels=1000
-set smartindent                                   " indentation
-set shortmess=Ia                                  " disable startup message
+set smartindent                                   " Indentation
+set shortmess=Ia                                  " Disable startup message
 
 " Open help vertically
 command! -nargs=* -complete=help Help vertical belowright help <args>
 autocmd FileType help wincmd L
 
-:autocmd InsertEnter,InsertLeave * set cul!       " notify on mode change visually
+:autocmd InsertEnter,InsertLeave * set cul!       " Notify on mode change visually
 
 "  _Comma mapping
 
@@ -129,9 +129,9 @@ nmap <Leader>w    :w<CR>
 nnoremap <silent> <Leader>l        :Lines<CR>
 " Quit
 nnoremap <Leader>q    :q<CR>  
-" yank whole file
+" Yank whole file
 nnoremap <Leader>y    :%y<CR> 
-" source vimrc
+" Source vimrc
 nnoremap <Leader>f   :source ~/.dotfiles/nvim/init.vim<CR> 
 " Search files inside current dir
 nnoremap <Leader>e    :Files<CR> 
@@ -170,26 +170,26 @@ nnoremap <D-S-F> :Ack<space>
 " -------------------------------------
 "  _Basic UI config
 " -------------------------------------
-set relativenumber                    " relative to current posion line numbers
-set number                            " show line numbers
-set cursorline                        " highlight current line
+set relativenumber                    " Relative to current posion line numbers
+set number                            " Show line numbers
+set cursorline                        " Highlight current line
 let python_highlight_all = 1
 set showmatch
-set tabstop=4                         " default indentation is 4 spaces long and uses tabs, not spaces
+set tabstop=4                         " Default indentation is 4 spaces long and uses tabs, not spaces
 set matchtime=2
-set background=dark                   " set night mode
+set background=dark                   " Set night mode
 
 "  _Settings
-let g:deoplete#enable_at_startup = 1               " activate deoplete
+let g:deoplete#enable_at_startup = 1               " Activate deoplete
 
 " _Theme
-set termguicolors     " enable true colors support
-let ayucolor="mirage" " for mirage version of theme
+set termguicolors     " Enable true colors support
+let ayucolor="mirage" " For mirage version of theme
 colorscheme ayu
 
-" autocomplete with tab
+" Autocomplete with tab
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" activate leader for easymotion
+" Activate leader for easymotion
 map <Leader> <Plug>(easymotion-prefix)
 
 " Run goimports on save

@@ -1,11 +1,11 @@
-# _exports
+# _Exports
 export EDITOR='nvim'
 export DOTFILES="$HOME/.dotfiles"
 
-# _load zsh plugins
+# _Load zsh plugins
 source ~/.zsh_plugins.sh
 
-# _source things
+# _Source things
 # TODO: Do some smart for loop iteration
 source ~/.dotfiles/zsh/env.zsh
 source ~/.dotfiles/zsh/aliases/alias.zsh
@@ -17,7 +17,7 @@ source ~/.dotfiles/zsh/functions/functions.zsh
 # Can just write down the file name
 setopt autocd
 
-# _secret configs
+# _Secret configs
 source ~/.secrets
 
 # 'thefuck' command correction

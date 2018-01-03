@@ -190,7 +190,7 @@ function ggu() {
     git push -u origin master
 }
 
-# TODO: check if it is already initialised and if it has license
+# TODO: Check if it is already initialised and if it has license
 function ggo() {
     git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
     git push -u origin master
@@ -203,6 +203,7 @@ function ggla() {
     git commit -m "Init"
 }
 
+# Initialise repository and add MIT license
 function ggi() {
     git init
     mit
