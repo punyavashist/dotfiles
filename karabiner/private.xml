@@ -900,7 +900,27 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: rerun command in iterm"
+do script "g: rerun command in iterm"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_STOP_ALL_MACROS</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "g: Kill All Macros"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_NOIZIO</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "g: Edit noizio"
 end tell
 '
 </url>
@@ -910,7 +930,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: 2Do with current url as note - watch"
+do script "g: 2Do with current url as note - watch"
 end tell
 '
 </url>
@@ -1020,7 +1040,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: goto km group of the app from picklist"
+do script "g: goto km group of the app from picklist"
 end tell
 '
 </url>
@@ -1030,7 +1050,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: 2Do with current url as note - research"
+do script "g: 2Do with current url as note - research"
 end tell
 '
 </url>
@@ -1040,7 +1060,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: focus for 90 min"
+do script "g: focus for 90 min"
 end tell
 '
 </url>
@@ -1050,7 +1070,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: new tweet with current URL"
+do script "g: new tweet with current URL"
 end tell
 '
 </url>
@@ -1060,7 +1080,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: make 2do quick task"
+do script "g: make 2do quick task"
 end tell
 '
 </url>
@@ -1080,7 +1100,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: create snippetslab snippet from selection"
+do script "g: create snippetslab snippet from selection"
 end tell
 '
 </url>
@@ -1090,7 +1110,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: list last n macros executed"
+do script "g: list last n macros executed"
 end tell
 '
 </url>
@@ -1100,7 +1120,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: insert `` and clipboard"
+do script "g: insert `` and clipboard"
 end tell
 '
 </url>
@@ -1110,7 +1130,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: open iTerm 1st tab"
+do script "g: open iTerm 1st tab"
 end tell
 '
 </url>
@@ -1192,7 +1212,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: duckduckgo clipboard"
+do script "g: duckduckgo clipboard"
 end tell
 '
 </url>
@@ -1202,7 +1222,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: google clipboard"
+do script "g: google clipboard"
 end tell
 '
 </url>
@@ -1212,7 +1232,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: get current url from chrome"
+do script "g: get current url from chrome"
 end tell
 '
 </url>
@@ -1222,7 +1242,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: commit with ✨ my wiki"
+do script "g: commit with ✨ my wiki"
 end tell
 '
 </url>
@@ -1232,7 +1252,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: cmd click"
+do script "g: cmd click"
 end tell
 '
 </url>
@@ -1242,7 +1262,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: mouse pointer top middle"
+do script "g: mouse pointer top middle"
 end tell
 '
 </url>
@@ -1302,7 +1322,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: centre mouse pointer"
+do script "g: centre mouse pointer"
 end tell
 '
 </url>
@@ -1312,7 +1332,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: clone repo to ~/play and open with vs code"
+do script "g: clone repo to ~/play and open with vs code"
 end tell
 '
 </url>
@@ -1322,7 +1342,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: clone repo to ~/play and open with sublime"
+do script "g: clone repo to ~/play and open with sublime"
 end tell
 '
 </url>
@@ -1332,7 +1352,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: pass"
+do script "g: pass"
 end tell
 '
 </url>
@@ -1342,7 +1362,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: title case selected text"
+do script "g: title case selected text"
 end tell
 '
 </url>
@@ -1352,7 +1372,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: manipulate clipboard"
+do script "g: manipulate clipboard"
 end tell
 '
 </url>
@@ -1362,7 +1382,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: lowercase selected text"
+do script "g: lowercase selected text"
 end tell
 '
 </url>
@@ -1372,7 +1392,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: focus for 60 min"
+do script "g: focus for 60 min"
 end tell
 '
 </url>
@@ -1382,7 +1402,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: focus for 120 min"
+do script "g: focus for 120 min"
 end tell
 '
 </url>
@@ -1392,7 +1412,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: clone repo to ~/play"
+do script "g: clone repo to ~/play"
 end tell
 '
 </url>
@@ -1402,7 +1422,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: open url in safari"
+do script "g: open url in safari"
 end tell
 '
 </url>
@@ -1414,7 +1434,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: 2Do with current url as note - read"
+do script "g: 2Do with current url as note - read"
 end tell
 '
 </url>
@@ -1424,7 +1444,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: 2Do with current url as note"
+do script "g: 2Do with current url as note"
 end tell
 '
 </url>
@@ -1446,7 +1466,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: selected text to anki"
+do script "g: selected text to anki"
 end tell
 '
 </url>
@@ -1456,7 +1476,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: decrease playback on youtube"
+do script "g: decrease playback on youtube"
 end tell
 '
 </url>
@@ -1466,7 +1486,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: increase playback on youtube"
+do script "g: increase playback on youtube"
 end tell
 '
 </url>
@@ -1476,7 +1496,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: screenshot to day one"
+do script "g: screenshot to day one"
 end tell
 '
 </url>
@@ -1486,7 +1506,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: run command in iterm"
+do script "g: run command in iterm"
 end tell
 '
 </url>
@@ -1496,7 +1516,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: screenshot to mindnode tabbed"
+do script "g: screenshot to mindnode tabbed"
 end tell
 '
 </url>
@@ -1506,7 +1526,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: paste selected text in previous application"
+do script "g: paste selected text in previous application"
 end tell
 '
 </url>
@@ -1526,7 +1546,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: screenshot to anki"
+do script "g: screenshot to anki"
 end tell
 '
 </url>
@@ -1536,7 +1556,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: selected text to mindnode"
+do script "g: selected text to mindnode"
 end tell
 '
 </url>
@@ -1546,7 +1566,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: new mindnode file"
+do script "g: new mindnode file"
 end tell
 '
 </url>
@@ -1556,7 +1576,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: new sketch file"
+do script "g: new sketch file"
 end tell
 '
 </url>
@@ -1566,7 +1586,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: create new contact"
+do script "g: create new contact"
 end tell
 '
 </url>
@@ -1576,7 +1596,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: reset todo in bitbar"
+do script "g: reset todo in bitbar"
 end tell
 '
 </url>
@@ -1586,7 +1606,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: edit keyboard shortcuts"
+do script "g: edit keyboard shortcuts"
 end tell
 '
 </url>
@@ -1596,7 +1616,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: cut current line"
+do script "g: cut current line"
 end tell
 '
 </url>
@@ -1606,7 +1626,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: get current url from safari"
+do script "g: get current url from safari"
 end tell
 '
 </url>
@@ -1626,7 +1646,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: like and save current unsplash wallpaper"
+do script "g: like and save current unsplash wallpaper"
 end tell
 '
 </url>
@@ -1636,7 +1656,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: new snippetslab snippet"
+do script "g: new snippetslab snippet"
 end tell
 '
 </url>
@@ -1656,7 +1676,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: open primary news preset"
+do script "g: open primary news preset"
 end tell
 '
 </url>
@@ -1666,7 +1686,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: uppercase selected text"
+do script "g: uppercase selected text"
 end tell
 '
 </url>
@@ -1676,7 +1696,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: cut word before cursor"
+do script "g: cut word before cursor"
 end tell
 '
 </url>
@@ -1686,7 +1706,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: highlight current line"
+do script "g: highlight current line"
 end tell
 '
 </url>
@@ -1696,7 +1716,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: make markdown link from selection"
+do script "g: make markdown link from selection"
 end tell
 '
 </url>
@@ -1706,7 +1726,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: Make markdown link from selection {link}"
+do script "g: Make markdown link from selection {link}"
 end tell
 '
 </url>
@@ -1716,7 +1736,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: screenshot to mindnode"
+do script "g: screenshot to mindnode"
 end tell
 '
 </url>
@@ -1726,7 +1746,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: cut current word"
+do script "g: cut current word"
 end tell
 '
 </url>
@@ -1736,7 +1756,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "a: Match symbols"
+do script "g: Match symbols"
 end tell
 '
 </url>
@@ -7299,6 +7319,11 @@ KeyCode::V, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::DOT,
+KeyCode::M, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, 
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::W,
 KeyCode::VK_OPEN_URL_KM_EDIT_HAMMERSPOON_CONFIG
 </autogen>
@@ -7325,7 +7350,7 @@ KeyCode::X, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
 <autogen>
 __KeyToKey__
 KeyCode::COMMA,
-KeyCode::M, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+KeyCode::VK_OPEN_URL_KM_EDIT_NOIZIO
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10037,7 +10062,7 @@ KeyCode::VK_OPEN_URL_HAMMERSPOON_RELOAD_CONFIG
 <autogen>
 __KeyToKey__
 KeyCode::DOT,
-KeyCode::VK_OPEN_URL_ALFRED_UPDATE_GITHUB_INDEX
+KeyCode::VK_OPEN_URL_KM_STOP_ALL_MACROS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10282,7 +10307,7 @@ KeyCode::SHIFT_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::3,
+KeyCode::S,
 KeyCode::P, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 </autogen>
 <autogen>
@@ -10414,7 +10439,7 @@ KeyCode::T, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTR
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::S,
+KeyCode::3,
 KeyCode::F12, ModifierFlag::COMMAND_L
 </autogen>
 <autogen>

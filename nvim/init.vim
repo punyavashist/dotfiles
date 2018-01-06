@@ -48,6 +48,10 @@ Plug 'carlitux/deoplete-ternjs'                    " JS autocomplete
 call plug#end()
 
 "  _Testing
+nmap J <Plug>(easymotion-j)
+nmap K <Plug>(easymotion-k)
+vmap J <Plug>(easymotion-j)
+vmap K <Plug>(easymotion-k)
 noremap Q @q
 vnoremap <D-c> y
 set timeout timeoutlen=1000 ttimeoutlen=10        " NOTE: Faster esc - maybe

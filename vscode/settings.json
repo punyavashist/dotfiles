@@ -34,7 +34,7 @@
   "editor.lineNumbers": "relative",
   "editor.cursorStyle": "line",
   "explorer.confirmDragAndDrop": false,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
   "workbench.welcome.enabled": false,
   // _Python
   "python.linting.pylintArgs": [
@@ -45,19 +45,19 @@
   "code-runner.executorMap": {
     "python": "python3"
   },
-  // _zen
+  // _Zen
   "zenMode.fullScreen": false,
   "zenMode.restore": true,
   "workbench.iconTheme": "vs-seti",
-  // _prettier
+  // _Prettier
   "prettier.singleQuote": true,
   "editor.formatOnSave": true,
   "prettier.jsonEnable": [],
   "extensions.autoUpdate": true,
-  // _commands
-  // _plugins
+  // _Commands
+  // _Plugins
   "code-runner.runInTerminal": false,
-  // _sync settings
+  // _Sync settings
   "sync.gist": "0c57cbed63ec19108a8437f4325bdd32",
   "sync.lastUpload": "2017-07-18T07:26:15.238Z",
   "sync.autoDownload": false,
@@ -104,6 +104,26 @@
           "command": "workbench.action.files.save",
           "args": []
         }
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "after": [
+        "leader",
+        "leader",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "J"
+      ],
+      "after": [
+        "leader",
+        "leader",
+        "j"
       ]
     },
     {

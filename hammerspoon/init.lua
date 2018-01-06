@@ -62,9 +62,9 @@ hs.urlevent.bind("showClipBoardContent", showClipBoardContent)
 wifiwatcher = hs.wifi.watcher.new(function ()
     net = hs.wifi.currentNetwork()
     if net==nil then
-        hs.notify.show("wifi disconnected","","","")
+        hs.notify.show("WiFi disconnected","","","")
     else
-        hs.notify.show("wifi connected","",net,"")
+        hs.notify.show("WiFi connected","",net,"")
     end
 end)
 wifiwatcher:start()

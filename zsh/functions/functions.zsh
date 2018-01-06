@@ -3,7 +3,7 @@ function wi(){
 }
 
 
-# Improve readme commit
+# Improve readme
 function gz(){
   git add readme.md
   git commit -m "Improve readme"
