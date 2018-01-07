@@ -311,29 +311,25 @@ alias dF='cd ~/Documents/app/unclutter/Unclutter\ Files'
 alias ddes='cd ~/Documents/design'
 alias dn='cd ~/oss/nikivi/'
 
-# _code
+# _Code
 alias dsh='cd ~/.ssh'
-alias dt='cd ~/testing'
-alias dl='cd ~/play'
-alias di='cd ~/ideas'
+alias dl='cd ~/src/play'
+alias di='cd ~/src/ideas'
 alias dg='cd ~/go/src/github.com/nikitavoloboev'
-alias dj='cd ~/learning'
-alias dk='cd ~/testing'
+alias dj='cd ~/src/learning'
+alias dk='cd ~/src/testing'
+alias ds='cd ~/src/'
+alias dsn='cd ~/src/oss/nikitavoloboev'
+alias dm='cd ~/src/oss/learn-anything'
+alias dt='cd ~/src/testing'
 
-# _xcode
-alias dx='cd ~/xcode'
-alias dxi='cd ~/xcode/ios'
-alias dxm='cd ~/xcode/macos'
 
+# _Xcode
+alias dx='cd ~/src/xcode'
+alias dxi='cd ~/src/xcode/iOS'
+alias dxm='cd ~/src/xcode/macOS'
 
-# _oss
-alias ds='cd ~/oss/'
-alias dsn='cd ~/oss/nikivi'
-alias dm='cd ~/oss/learn-anything'
-alias d:='cd ~/code'
-alias dw='cd ~/code'
-
-# _macos
+# _macOS
 alias de='cd ~/Desktop'
 alias dq='cd ~/Downloads'
 alias dls='cd ~/Library/Services'

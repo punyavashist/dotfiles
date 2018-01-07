@@ -1,7 +1,9 @@
 # _Tester func
-function wi(){
+function T(){
+  cd "$1"
+  workflow-install -s source
+  cd ..
 }
-
 
 # Improve readme
 function gz(){

@@ -946,16 +946,6 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_EDIT_BOOKMARKS</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "edit: bookmarks"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_MINDNODE_MACOS</name>
 <url type="shell">
 osascript -e '
@@ -1332,7 +1322,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: clone repo to ~/play and open with vs code"
+do script "g: Clone repo to ~/src/play and open with VS Code"
 end tell
 '
 </url>
@@ -1342,7 +1332,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: clone repo to ~/play and open with sublime"
+do script "g: Clone repo to ~/src/play and open with Sublime"
 end tell
 '
 </url>
@@ -1412,7 +1402,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: clone repo to ~/play"
+do script "g: clone repo to ~/src/play"
 end tell
 '
 </url>
@@ -3168,14 +3158,6 @@ end tell
 </vkopenurldef>
 
 <!-- _Alf def -->
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GO_FAST_DIR</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "go fast" in workflow "nikivi.a.search.files" with argument ""
-'
-</url>
-</vkopenurldef>
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GISTS</name>
 <url type="shell">
@@ -5569,7 +5551,7 @@ KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE
 <autogen>
 __KeyToKey__
 KeyCode::F19,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_FOLDERS
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_KEYWORDS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -5664,7 +5646,7 @@ KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
 <autogen>
 __KeyToKey__
 KeyCode::A,
-KeyCode::VK_OPEN_URL_ALFRED_SEARH_MARKDOWN_WIKI
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_FOLDERS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7169,6 +7151,11 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_REMOVE_SONG_FROM_PLAYLIST
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::COMMAND_L,
+KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_ONLINE
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::O,
 KeyCode::VK_OPEN_URL_ALFRED_CREATE_SONG_RADIO
 </autogen>
@@ -7190,7 +7177,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_BROWSE
 <autogen>
 __KeyToKey__
 KeyCode::Z,
-KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_ONLINE
+KeyCode::3, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,  
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8881,11 +8868,6 @@ KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_DAYONE
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::J,
-KeyCode::VK_OPEN_URL_KM_EDIT_BOOKMARKS
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::M,
 KeyCode::VK_OPEN_URL_KM_EDIT_WEBSITES
 </autogen>
@@ -9413,7 +9395,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_SCREENFLOW
 <autogen>
 __KeyToKey__
 KeyCode::COMMA,
-KeyCode::VK_OPEN_URL_KM_OPEN_AFFINITY_PHOTO
+KeyCode::VK_OPEN_URL_KM_OPEN_ITUNES
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9433,7 +9415,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_MAGIC_NUMBER
 <autogen>
 __KeyToKey__
 KeyCode::Z,
-KeyCode::VK_OPEN_URL_KM_OPEN_BETTERTOUCHTOOL
+KeyCode::VK_OPEN_URL_KM_OPEN_ITUNES
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12105,7 +12087,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::O,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GO_FAST_DIR
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_FOLDERS
 </autogen>
 </item>
 
@@ -12380,7 +12362,7 @@ KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_KEYWORDS
+KeyCode::VK_OPEN_URL_ALFRED_SEARH_MARKDOWN_WIKI
 </autogen>
 </item>
 
