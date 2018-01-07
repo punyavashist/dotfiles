@@ -5551,7 +5551,7 @@ KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE
 <autogen>
 __KeyToKey__
 KeyCode::F19,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_KEYWORDS
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_FOLDERS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -5646,7 +5646,7 @@ KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
 <autogen>
 __KeyToKey__
 KeyCode::A,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_FOLDERS
+KeyCode::VK_OPEN_URL_ALFRED_SEARH_MARKDOWN_WIKI
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12087,7 +12087,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::O,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_FOLDERS
+KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
 </autogen>
 </item>
 
@@ -12362,7 +12362,7 @@ KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARH_MARKDOWN_WIKI
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_KEYWORDS
 </autogen>
 </item>
 

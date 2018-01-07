@@ -142,10 +142,11 @@ function iz () {
     primitive -i in.png -o output.png -n "$1"
 }
 
-function ud() {
-    cd /Users/nikivi/go/src/github.com/nikitavoloboev/alfred-my-mind/workflow/
-    bash update.sh
-}
+# TODO: Doesn't work
+# function ud() {
+#     cd /Users/nikivi/go/src/github.com/nikitavoloboev/alfred-my-mind/workflow/
+#     bash update.sh
+# }
 
 function mit() {
   license-up mit Nikita Voloboev nikitavoloboev.xyz

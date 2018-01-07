@@ -1,7 +1,36 @@
+"  _Testing
+" t t t t 
+" Trigger a highlight in the appropriate direction when pressing these keys:
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+" Trigger a highlight only when pressing f and F.
+let g:qs_highlight_on_keys = ['f', 'F']
+nmap J <Plug>(easymotion-j)
+nmap K <Plug>(easymotion-k)
+vmap J <Plug>(easymotion-j)
+vmap K <Plug>(easymotion-k)
+noremap Q @q
+vnoremap <D-c> y
+set timeout timeoutlen=1000 ttimeoutlen=10        " NOTE: Faster esc - maybe
+set showcmd                                       " Show me what I'm typing
+set autowrite                                     " Automatically save before :next, :make etc
+set ignorecase                                    " Search case insensitive
+set smartcase                                     " .. but not when search pattern contains upper case characters
+set nocursorcolumn
+set nocursorline
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+set notimeout
+set ttimeout
+set ttimeoutlen=10
+set nobackup                                      " Don't create annoying backup files
+set path=+**                                      " Search down into subfolders
+
 "  _Install
 call plug#begin() " plugins to use
 
-" autocomplete engine
+" Autocomplete engine
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
@@ -9,6 +38,7 @@ endfunction
 " _Plugs
 Plug 'easymotion/vim-easymotion'
 Plug 'christoomey/vim-titlecase' 
+Plug 'unblevable/quick-scope' 
 Plug 'ayu-theme/ayu-vim'          " theme
 Plug 'jiangmiao/auto-pairs'
 "Plug 'mbbill/undotree'
@@ -47,35 +77,12 @@ Plug 'carlitux/deoplete-ternjs'                    " JS autocomplete
 
 call plug#end()
 
-"  _Testing
-nmap J <Plug>(easymotion-j)
-nmap K <Plug>(easymotion-k)
-vmap J <Plug>(easymotion-j)
-vmap K <Plug>(easymotion-k)
-noremap Q @q
-vnoremap <D-c> y
-set timeout timeoutlen=1000 ttimeoutlen=10        " NOTE: Faster esc - maybe
-set showcmd                                       " Show me what I'm typing
-set autowrite                                     " Automatically save before :next, :make etc
-set ignorecase                                    " Search case insensitive
-set smartcase                                     " .. but not when search pattern contains upper case characters
-set nocursorcolumn
-set nocursorline
-set wrap
-set textwidth=79
-set formatoptions=qrn1
-set notimeout
-set ttimeout
-set ttimeoutlen=10
-set nobackup                                      " Don't create annoying backup files
-set path=+**                                      " Search down into subfolders
 
 " _Basic vim config
 "  TODO: Check if some of these settings come as default with neovim
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1                                          " Nice looking editor
 set clipboard^=unnamed                                " Copy text to system clipboard
 set guicursor=
-set mouse=a 
 set gdefault " always do global substitutions
 set clipboard^=unnamedplus
 set title                                         " Set terminal title
@@ -86,9 +93,6 @@ set expandtab                                     " Spaces on tabs
 set shiftwidth=4
 set softtabstop=2
 set backspace=indent,eol,start                    " Makes backspace key more powerful
-set hlsearch                                      " Highlight search results
-set incsearch                                     " Highlight pattern matches as you type
-set history=1000                                  " Remember everything
 set undolevels=1000
 set smartindent                                   " Indentation
 set shortmess=Ia                                  " Disable startup message
