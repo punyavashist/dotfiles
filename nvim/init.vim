@@ -1,5 +1,7 @@
-"  _Testing
-" t t t t 
+" _Testing
+set guicursor=n-v-c:hor20,i-ci:ver20
+"autocmd VimLeave * set guicursor=n-v-c:hor20
+
 " Trigger a highlight in the appropriate direction when pressing these keys:
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
@@ -14,7 +16,7 @@ vnoremap <D-c> y
 set timeout timeoutlen=1000 ttimeoutlen=10        " NOTE: Faster esc - maybe
 set showcmd                                       " Show me what I'm typing
 set autowrite                                     " Automatically save before :next, :make etc
-set ignorecase                                    " Search case insensitive
+set ignorecase                                    " Search case insensitive:
 set smartcase                                     " .. but not when search pattern contains upper case characters
 set nocursorcolumn
 set nocursorline
@@ -38,9 +40,9 @@ endfunction
 " _Plugs
 Plug 'easymotion/vim-easymotion'
 Plug 'christoomey/vim-titlecase' 
-Plug 'unblevable/quick-scope' 
+Plug 'unblevable/quick-scope'
 Plug 'ayu-theme/ayu-vim'          " theme
-Plug 'jiangmiao/auto-pairs'
+"Plug 'jiangmiao/auto-pairs' 
 "Plug 'mbbill/undotree'
 Plug 'wakatime/vim-wakatime'
 Plug 'junegunn/heytmux'
@@ -82,7 +84,6 @@ call plug#end()
 "  TODO: Check if some of these settings come as default with neovim
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1                                          " Nice looking editor
 set clipboard^=unnamed                                " Copy text to system clipboard
-set guicursor=
 set gdefault " always do global substitutions
 set clipboard^=unnamedplus
 set title                                         " Set terminal title
@@ -192,7 +193,7 @@ let g:deoplete#enable_at_startup = 1               " Activate deoplete
 
 " _Theme
 set termguicolors     " Enable true colors support
-let ayucolor="mirage" " For mirage version of theme
+let ayucolor="dark" " For mirage version of theme
 colorscheme ayu
 
 " Autocomplete with tab

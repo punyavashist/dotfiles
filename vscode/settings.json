@@ -4,6 +4,7 @@
   "newFile.showPathRelativeTo": "project",
   // _Todo
   "todohighlight.isEnable": true,
+  "editor.cursorBlinking": "solid",
   "todohighlight.isCaseSensitive": true,
   "todohighlight.keywords": [
     {
@@ -25,7 +26,6 @@
   // _General
   "editor.snippetSuggestions": "top",
   "editor.minimap.enabled": false,
-  "workbench.fontAliasing": "antialised",
   // _Dash
   "dash.docset.go": [
     "go",
@@ -69,29 +69,24 @@
   "sync.pathPrefix": "",
   "sync.quietSync": false,
   "sync.askGistName": false,
-  // _fonts
+  // _Fonts
   "editor.fontFamily": "Monospace",
+  "editor.fontSize": 30,
+  "workbench.fontAliasing": "antialised",
+  "terminal.integrated.fontSize": 25,
   "editor.fontSize": 20,
   "editor.fontLigatures": true,
-  // _vim
+  // _Vim
   "vim.leader": " ",
+  "vim.cursorStylePerMode": {
+    "normal": "underline"
+  }
   "vim.disableAnnoyingNeovimMessage": true,
   "vim.useSystemClipboard": true,
   "vim.relativenumbers": true,
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "red",
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "j",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
-  // _space map
+  // _Space map
   "vim.otherModesKeyBindingsNonRecursive": [
     {
       "before": [
@@ -173,7 +168,7 @@
       ]
     }
   ],
-  // _go
+  // _Go
   "go.autocompleteUnimportedPackages": true,
   "go.liveErrors": {
     "enabled": true,
@@ -185,12 +180,12 @@
   "go.buildOnSave": true,
   "go.formatOnSave": true,
   "go.gopath": "/Users/nikivi/go",
-  // _java
+  // _Java
   "java.errors.incompleteClasspath.severity": "ignore",
-  // _typescript
+  // _Typescript
   "typescript.check.tscVersion": false,
   "typescript.check.npmIsInstalled": false,
-  // _files
+  // _Files
   "files.associations": {
     "*.toml": "toml"
   },
@@ -207,7 +202,7 @@
     "**/*.scss",
     "**/*.go"
   ],
-  "workbench.colorTheme": "Ayu Mirage",
+  "workbench.colorTheme": "Ayu Dark",
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,

@@ -1,4 +1,6 @@
+# _General git aliases
 # alias gr='goreleaser'
+alias gb4='git rebase -i HEAD~4'
 alias gsh='git stash'
 # alias gt='git tag'
 alias g:='git push -u origin master'

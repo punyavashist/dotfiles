@@ -1818,6 +1818,36 @@ end tell
 
 <!-- _KM edit files -->
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_INTERESTING_THINGS</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "edit: interesting things"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_READING</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "edit: reading"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_RESEARCHING</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "edit: researching"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_EDIT_WEBSITES</name>
 <url type="shell">
 osascript -e '
@@ -1838,6 +1868,17 @@ end tell
 </url>
 </vkopenurldef>
 
+<!-- _KM Go def-->
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_GO_PREFILL_COMMENT_OF_FUNCTION</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "Prefill comment of function"
+end tell
+'
+</url>
+</vkopenurldef>
 
 <!-- _KM Paths def -->
 <vkopenurldef>
@@ -6708,12 +6749,17 @@ KeyCode::VK_OPEN_URL_KM_GO_LOG_PRINTF
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::C,
+KeyCode::VK_OPEN_URL_KM_GO_PREFILL_COMMENT_OF_FUNCTION
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::T,
 KeyCode::VK_OPEN_URL_KM_go_log_fatal
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::W,
+KeyCode::O,
 KeyCode::VK_OPEN_URL_KM_GO_WORKFLOW:
 </autogen>
 </item>
@@ -7151,7 +7197,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_REMOVE_SONG_FROM_PLAYLIST
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::COMMAND_L,
+KeyCode::Z,
 KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_ONLINE
 </autogen>
 <autogen>
@@ -7176,7 +7222,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_BROWSE
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::Z,
+KeyCode::COMMAND_L,
 KeyCode::3, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,  
 </autogen>
 <autogen>
@@ -7600,7 +7646,6 @@ KeyCode::M, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTR
 </autogen>
 </item>
 
-
 <item>
 <name>general: sticky w - open top apps</name>
 <identifier>private.launcher_mode_open_apps_v3</identifier>
@@ -7649,7 +7694,7 @@ KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTI
 <autogen>
 __KeyToKey__
 KeyCode::U,
-KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI_TECHNOLOGY_PREVIEW
+KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX_DEV
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8868,6 +8913,11 @@ KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_DAYONE
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::J,
+KeyCode::VK_OPEN_URL_KM_EDIT_RESEARCHING
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::M,
 KeyCode::VK_OPEN_URL_KM_EDIT_WEBSITES
 </autogen>
@@ -8878,7 +8928,7 @@ KeyCode::VK_OPEN_URL_KM_EDIT_REDDIT_SUBS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::K,
+KeyCode::L,
 KeyCode::VK_OPEN_URL_KM_EDIT_ASK_CREATE_SHARE
 </autogen>
 <autogen>
@@ -8951,7 +9001,6 @@ __KeyToKey__
 KeyCode::D,
 KeyCode::D, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, 
 </autogen>
-
 <autogen>
 __KeyToKey__
 KeyCode::F,
@@ -8969,8 +9018,8 @@ KeyCode::H, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::L,
-KeyCode::VK_OPEN_URL_KM_EDIT_WEB_SEARCHES
+KeyCode::K,
+KeyCode::VK_OPEN_URL_KM_EDIT_READING
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9089,12 +9138,12 @@ __BlockUntilKeyUp__ KeyCode::G,
 
 <autogen>
 __KeyToKey__
-KeyCode::S,
+KeyCode::W,
 KeyCode::J, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::A,
+KeyCode::S,
 KeyCode::H, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
 </autogen>
 <autogen>
@@ -9159,7 +9208,7 @@ KeyCode::4, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::W,
+KeyCode::A,
 KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
 </autogen>
 <autogen>
@@ -9695,11 +9744,6 @@ KeyCode::SLASH
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::U,
-KeyCode::4, ModifierFlag::SHIFT_L
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::G,
 KeyCode::4, ModifierFlag::SHIFT_L
 </autogen>
@@ -9801,11 +9845,6 @@ KeyCode::BACKQUOTE
 __KeyToKey__
 KeyCode::4,
 KeyCode::8, ModifierFlag::SHIFT_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SHIFT_L,
-KeyCode::6,  ModifierFlag::SHIFT_L
 </autogen>
 <autogen>
 __KeyToKey__

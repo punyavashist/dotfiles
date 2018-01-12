@@ -3,7 +3,7 @@ alias g='hub'
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias lc='tokei'
 alias sf='screenfetch -E'
-alias am='open -a "Marked 2"'
+alias am='open -a "Marked 2" readme.md'
 alias _='sudo'
 alias yi="python3 -i"
 alias kar="/Applications/Karabiner.app/Contents/Library/bin/karabiner"
@@ -85,7 +85,7 @@ alias kb='kubectl'
 alias ser='serve'
 alias h='python3 -m http.server'
 
-alias react='create-react-app'
+alias cra='npx create-react-app'
 
 alias lic='legit'
 
