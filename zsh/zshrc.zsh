@@ -1,16 +1,16 @@
+# Only run once (exec zsh won't run it)
+if (( ! $+ETC_ZSH_ZSHRC )); then
+    # Load enviroment
+    source ~/.dotfiles/zsh/env.zsh
+fi
+export ETC_ZSH_ZSHRC=1
+
 # _Exports
 export EDITOR='nvim'
 export DOTFILES="$HOME/.dotfiles"
 
 # _Load zsh plugins
 source ~/.zsh_plugins.sh
-
-if (( ! $+ETC_ZSH_ZSHRC )); then
-    # Enviroment
-    source ~/.dotfiles/zsh/env.zsh
-    echo "ran here?"
-fi
-ETC_ZSH_ZSHRC=1
 
 # _Source things
 # TODO: Do some smart for loop iteration
@@ -57,4 +57,3 @@ setopt    incappendhistory  # immediately append to the history file, not just w
 unset IFS
 
 eval "$(hub alias -s)"
-typeset -U path # Remove duplicates in the PATH
