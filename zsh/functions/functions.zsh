@@ -1,8 +1,6 @@
 # _Tester func
 function T(){
-  cd "$1"
-  workflow-install -s source
-  cd ..
+  echo $PATH
 }
 
 # Improve readme
@@ -321,7 +319,7 @@ function gll(){
 
 function ggs() {
     git add .
-    git commit . -m '✨'
+    git commit . -m '.'
     git push
 }
 

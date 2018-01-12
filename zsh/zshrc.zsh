@@ -5,14 +5,9 @@ export DOTFILES="$HOME/.dotfiles"
 # _Load zsh plugins
 source ~/.zsh_plugins.sh
 
-# Source only once
-if (( ! $+ETC_ZSH_ZSHRC )); then
-    # Enviroment
-    source ~/.dotfiles/zsh/env.zsh
-fi
-
 # _Source things
 # TODO: Do some smart for loop iteration
+source ~/.dotfiles/zsh/env.zsh
 source ~/.dotfiles/zsh/aliases/alias.zsh
 source ~/.dotfiles/zsh/functions/fzf.zsh
 source ~/.dotfiles/zsh/bindings.zsh
@@ -55,3 +50,4 @@ setopt    incappendhistory  # immediately append to the history file, not just w
 unset IFS
 
 eval "$(hub alias -s)"
+typeset -U path # Remove duplicates in the PATH
