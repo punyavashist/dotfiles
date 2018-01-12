@@ -5,12 +5,12 @@ if (( ! $+ETC_ZSH_ZSHRC )); then
 fi
 export ETC_ZSH_ZSHRC=1
 
+# Load zsh plugins
+source ~/.zsh_plugins.sh
+
 # _Exports
 export EDITOR='nvim'
 export DOTFILES="$HOME/.dotfiles"
-
-# _Load zsh plugins
-source ~/.zsh_plugins.sh
 
 # _Source things
 # TODO: Do some smart for loop iteration
@@ -44,16 +44,19 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 PROMPT_TITLE='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
 export PROMPT_COMMAND="${PROMPT_TITLE}; ${PROMPT_COMMAND}"
 
-HISTSIZE=5000               # how many lines of history to keep in memory
-HISTFILE=~/.zsh_history     # where to save history to disk
-SAVEHIST=5000               # number of history entries to save to disk
-#HISTDUP=erase              # erase duplicates in the history file
-setopt    appendhistory     # append history to the history file (no overwriting)
-setopt    sharehistory      # share history across terminals
-setopt    incappendhistory  # immediately append to the history file, not just when a term is killed
+HISTSIZE=5000               # How many lines of history to keep in memory
+HISTFILE=~/.zsh_history     # Where to save history to disk
+SAVEHIST=5000               # Number of history entries to save to disk
+#HISTDUP=erase              # Erase duplicates in the history file
+setopt    appendhistory     # Append history to the history file (no overwriting)
+setopt    sharehistory      # Share history across terminals
+setopt    incappendhistory  # Immediately append to the history file, not just when a term is killed
 
+# Source FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 unset IFS
 
+# TODO: ?
 eval "$(hub alias -s)"
+
