@@ -316,10 +316,9 @@ function gll(){
     # TODO: cd into cloned project
 }
 
-
 function ggs() {
     git add .
-    git commit . -m '.'
+    git commit . -m 'Update'
     git push
 }
 
