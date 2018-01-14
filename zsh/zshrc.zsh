@@ -1,4 +1,4 @@
-# Only run once (exec zsh won't run it)
+# Only run once (exec zsh won't run what's inside)
 if (( ! $+ETC_ZSH_ZSHRC )); then
     # Load enviroment
     source ~/.dotfiles/zsh/env.zsh

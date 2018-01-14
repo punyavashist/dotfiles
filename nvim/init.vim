@@ -1,4 +1,5 @@
 " _Testing
+set mouse=a
 set guicursor=n-v-c:hor20,i-ci:ver20
 "autocmd VimLeave * set guicursor=n-v-c:hor20
 

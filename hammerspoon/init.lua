@@ -1,7 +1,7 @@
 -- _Require
-require("hs.ipc") -- hammerpoon cli
+require("hs.ipc") -- Hammerpoon CLI
 
-print("-- "..os.date()) -- know when it gets sourced
+print("-- "..os.date()) -- Know when it gets sourced
 
 hs.logger = require("hs.logger")
 hs.logger.historySize(200)
@@ -47,7 +47,7 @@ red = {red=229/255,blue=66/255,green=77/255,alpha=1}
 -- _Utils
 -- Show my todo task in a neat window briefly
 function showTodoTask ()
-hs.alert.show( ( hs.execute("~/app/bitbar/todo") ) )
+hs.alert.show( ( hs.execute("~/app/hammerspoon/todo") ) )
 end
 hs.urlevent.bind("showTodoTask", showTodoTask)
 
