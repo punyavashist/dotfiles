@@ -1,3 +1,5 @@
+# Aliases.
+
 # _General
 alias g='hub'
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
@@ -341,7 +343,7 @@ alias drp='cd ~/Dropbox'
 # _config
 alias d..='cd ~/.config'
 alias dv='cd ~/.dotfiles/nvim'
-alias da='cd ~/.dotfiles'
+# alias da='cd ~/.dotfiles'
 alias dsk='cd ~/Library/Application\ Support/Karabiner'
 alias db='cd ~/.dotfiles/bin'
 alias dh='cd ~/.hammerspoon'
@@ -349,4 +351,3 @@ alias dh='cd ~/.hammerspoon'
 
 # _move file locations
 # TODO: add move files to hazel alias / function
-

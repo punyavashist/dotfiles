@@ -80,7 +80,7 @@
   "vim.leader": " ",
   "vim.cursorStylePerMode": {
     "normal": "underline"
-  }
+  },
   "vim.disableAnnoyingNeovimMessage": true,
   "vim.useSystemClipboard": true,
   "vim.relativenumbers": true,

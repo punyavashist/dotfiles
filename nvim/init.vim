@@ -40,6 +40,7 @@ endfunction
 
 " _Plugs
 Plug 'easymotion/vim-easymotion'
+Plug 'isobit/vim-caddyfile'
 Plug 'christoomey/vim-titlecase' 
 Plug 'unblevable/quick-scope'
 Plug 'ayu-theme/ayu-vim'          " theme

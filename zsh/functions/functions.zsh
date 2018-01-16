@@ -1,79 +1,51 @@
-# _Tester func
+# Zsh functions.
+
+# T - Tester function (I change it often).
 function T(){
   echo $PATH
 }
 
-# Improve readme
+# gz - Improve readme commit.
 function gz(){
   git add readme.md
   git commit -m "Improve readme"
   git push
 }
 
-# cheat.sh
+# C <cmd-name> - Get cheat sheet of command from cheat.sh.
 function C(){
   curl cheat.sh/${@:-cheat}
   # curl cheat.sh/$@
 }
 
-# Copy content of file to clipboard
+# cfile <file> - Copy content of file to clipboard.
 function cfile(){
   cat $1 | pbcopy
 }
 
-
-# Write quick commit message
+# gc <commit-msg> - Write quick commit message.
 function gc() {
     git commit -m "$@"
 }
 
-# start dynamoDB
-function dynamo() {
-  cd ~/db/dynamo
-  java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
-}
-
-# release alfred workflow 
+# wr - Release alfred workflow.
 function  wr() {
-  # TODO: check if current dir has go in it (if yes, cd to workflow and then run script)
+  # TODO: Check if current dir has go in it (if yes, cd to workflow and then run script)
   package-workflow .
-} 
-
-# create a file and any intermediary directories if necessary
-function td() {
-  mkdir -p "$(dirname "$1")/" && touch "$1"
 }
 
-# Move files to Trash
+# re <files> - Move files to Trash.
 function re(){
   mv "$@" ~/.Trash
 }
 
-# Link source to destination
-# _link src dst
-li() {
-  # If destination folder doesn't exist,
-  # create the folder.
-  if [[ ! -d $(dirname "$2") ]]; then
-    mkdir -p $(dirname "$2")
-  fi
-
-  # If destination exists remove it.
-  if [[ -e "$2" ]] || [[ -L "$2" ]]; then
-    rm -r "$2"
-  fi
-
-  echo "linking $2"
-  ln -s "$1" "$2"
-}
-
-
+# zs - Search for most visited directores from z index and open them in Finder.
 function zs() {
   z $1 && open .
 }
 
-# _alfred
-# alfred search function
+# awe - Open path of current dir in Alfred.
+# awe <file> - Open path of <file> in Alfred.
 awe() {
     if [ $# -eq 0 ]; then   # If nothing is put as arguments open Alfred at the working directory so it list the content
         osascript -e "tell application \"Alfred 3\" to browse \"$(pwd)\""
@@ -88,7 +60,8 @@ awe() {
     fi
 }
 
-# Alfred action function (pop the alfred action window)
+# aw - Alfred file action search of current dir.
+# aw <file> - Alfred file action search for file.
 aw() {
     if [ $# -eq 0 ]; then    # If no arguments, pop Alfred Action Window in the working directory
         osascript -e "tell application \"Alfred 3\" to action \"$(pwd)\""
@@ -115,12 +88,14 @@ aw() {
     fi
 }
 
+# mdg <dir-name> - Create dir and .go file of <dir-name> name.
 function mdg() {
     md $1
     touch $1.go
 }
 
-function d.() {
+# g. - cd to root of .git project.
+function g.() {
   export git_dir="$(git rev-parse --show-toplevel 2> /dev/null)"
   if [ -z $git_dir ]
   then
@@ -130,73 +105,70 @@ function d.() {
   fi
 }
 
-
+# wl - Alfred link and build workflow.
 function wl() {
     alfred link
     alfred build
 }
 
+# iz <png-file> - Create geometric primitive of png-file.
 function iz () {
     primitive -i in.png -o output.png -n "$1"
 }
 
-# TODO: Doesn't work
-# function ud() {
-#     cd /Users/nikivi/go/src/github.com/nikitavoloboev/alfred-my-mind/workflow/
-#     bash update.sh
-# }
-
+# mit - Create MIT license file for Nikita Voloboev.
 function mit() {
   license-up mit Nikita Voloboev nikitavoloboev.xyz
   git add license
 }
 
+# mitla - Create MIT license file for Learn Anything.
 function mitla () {
   license-up mit Learn Anything, learn-anything.xyz
-  git add license 
+  git add license
 }
 
-
+# NOTE: Not sure if needed.
+# fix - Fixes antigen problems.
 function fix() {
     rm -rf ~/.antigen/.zcompdump
     rm -rf ~/.antigen/.zcompdump.zwc
     exec zsh
 }
 
+# NOTE: Not sure.
+# gp <link> - Pull changes made from PR to head
 function gp() {
     git pull origin pull/"$1"/head
 }
 
+# ggr - Commit readme changes with `Improve readme` message.
 function ggr(){
   git add readme.md
   git commit -m "Improve readme"
   git push
 }
 
-
-function mi() {
+# mg <dir-name> - Create dir, go to it and initialise it with Git.
+function mg() {
     mkdir "$1"
     cd "$1"
     git init
 }
 
-
+# wa <dir> - Go to do <dir> directory and open it with VS Code.
 function wa() {
     cd "$1"
     code .
 }
 
+# ggu - Git push to origin master of currently open Safari tab.
 function ggu() {
     git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
     git push -u origin master
 }
 
-# TODO: Check if it is already initialised and if it has license
-function ggo() {
-    git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
-    git push -u origin master
-}
-
+# ggla - Git initialise Learn Anything repository and make first commit.
 function ggla() {
     git init
     mitla
@@ -204,7 +176,7 @@ function ggla() {
     git commit -m "Init"
 }
 
-# Initialise repository and add MIT license
+# ggi - Initialise repository and add MIT license.
 function ggi() {
     git init
     mit
@@ -212,163 +184,119 @@ function ggi() {
     git commit -m "Init"
 }
 
-
+# gao - Git remote add origin of link found in clipboard.
 function gao() {
-    clipboard="$(pbpaste)"
-    git remote add origin $clipboard
+    git remote add origin "$(pbpaste)"
 }
 
-# TODO: anybar
-function anybar() {
-    echo -n "red" | nc -4u -w0 localhost 1738
+# TODO: Find for anybar.
+# function anybar() {
+#     echo -n "red" | nc -4u -w0 localhost 1738
+# }
+
+# dirfiles <dir> - Give number of files found inside given directory.
+function dirfiles() {
+    find "$1" -type f | wc -l
 }
 
-# finds recursively number of files in dir given
-function findfiles() {
-    arg="$1"
-    find $arg -type f | wc -l
+# gL <git-url> - Git clone and cd instantly to cloned repo.
+function gcd() {
+   git clone "$(pbpaste)" && cd "${1##*/}"
 }
 
-# bootstrap new repo
-function glw() {
-    clipboard="$(pbpaste)"
-    git remote add origin $clipboard.git
-    git push -u origin master
-}
-
-# TODO: git clone and cd instantly to cloned repo
-#function ..() {
-#    clipboard="$(pbpaste)"
-#    git clone "$clipboard" && cd "${1##*/}"
-#}
-
-function gc() {
-    arg="$*"
-    git commit -m "$arg"
-}
-
-# function gc() { arg=$*; printf 'git commit -m <%s>\n' "$arg";}
-
-function ula() {
-  cd ~/oss/learn-anything/maps
-  yarn run update:prod
-}
-
-# run md-to-alfred on each md file in current dir
-function mc.() {
-  for entry in ./*.md
- do
-   md-to-alfred json $entry
-  done
-}
-
-# run from search engine folder
-function mdev() {
-  git checkout dev
-  git pull
-  git checkout master
-  git pull
-  git merge dev
-  git push
-  git checkout dev
-}
-
-# _git
+# TODO: ?
+# igit -
 igit() {
   git rev-parse HEAD > /dev/null 2>&1
 }
 
+# og <git-repo> - Go get the GitHub repo.
 og() {
   go get -u "$@"
 }
 
-
-# _Reflex
+# rfg <file.go> - go run <file.go> on any Go file changes inside current dir.
 function rfg() {
   reflex -g '*.go' go run $1
 }
 
-# Rerun python file passed in on python file changes.
+# rft <file.py> - Rerun <file.py> on any Python file changes inside current dir.
 function rft() {
   reflex -g '*.py' python3 "$@"
 }
 
+# rfm <cmd-params> - Rerun main.go with <cmd-params> passed in on any Go files changes inside current dir.
 function rfm() {
     reflex -g '*.go' go run main.go $1
 }
 
+# wfj <file.js> - Rerun <file.js> on any JS file changes inside current dir.
 function wfj() {
     reflex -g '*.js' node $1
 }
 
+# af <cmd> - View definition of <cmd>.
 function af() {
   whence -f "$1"
 }
 
+# tc - Create and edit Cartfile.
 function tc() {
     touch Cartfile
     chmod +x Cartfile
     nvim Cartfile
 }
 
+# gll - Git clone link in clipboard.
 function gll(){
     git clone "$(pbpaste)"
-    # TODO: cd into cloned project
+    # TODO: cd into cloned project (need to extract name with regex)
 }
 
+# ggs - Git add all files and commit them with generic `Update` message.
 function ggs() {
     git add .
     git commit . -m 'Update'
     git push
 }
 
+# gwi <msg> - Git add all files and commit changes with `Improve <msg>`.
 function gwi() {
     git add .
-    git commit -m "Improve $*" 
+    git commit -m "Improve $*"
     git push
 }
 
-# Commit all files with an Update .. message
+# gd <msg> - Git add files and commit changes with `Update <msg>`.
 function gd() {
     git add .
     git commit -m "Update ${(j: :)@}"
     git push
 }
 
-# Commit all files with a message
+# gw <msg> - Git add all files and commit changes with <msg>.
 function gw() {
     git add .
     git commit -m "${(j: :)@}"
     git push
 }
 
+# ogg - go get currently active Safari URL.
 function ogg() {
-  # get url
+  # Get url
   url=$(osascript -e 'tell application "Safari" to return URL of front document')
-  # remove https:// 
+  # Remove https://
   url="${url#https://}"
-  #  get the package/tool
+  # Get the package/tool
   go get -u $url
 }
 
-# find aliases - TODO: use fzf or alfred
-# fs() { grep -r -h "alias[[:space:]]\+${(q)1}" ~/.dotfiles/zsh; }
-
-# find where is text searched is contained
+# fl <text> - Find where <text> is contained within current dir.
 function fl() {
     grep -rnw . -e "$*"
 }
 
-# taken folder as input, prefix it with a.
-function va() {
-    mv $1 a.\ $1
-}
-
-# remove prefixes from folder
-rk() { [[ -z "$1" ]] && return; mv "$1" "${1##*. }"};
-
-
-# show current Finder directory.
+# finder - Print current active Finder dir.
 function finder {
   osascript 2>/dev/null <<EOF
     tell application "Finder"
@@ -377,6 +305,7 @@ function finder {
 EOF
 }
 
+# xo <xcode-proj> - Open Xcode project.
 xo(){
   if test -n "$(find . -maxdepth 1 -name '*.xcworkspace' -print -quit)"
   then
@@ -395,56 +324,30 @@ xo(){
   fi
 }
 
-function each() {
-  for dir in *; do
-    # echo "${dir}:"
-    cd $dir
-    $@
-    cd ..
-  done
-}
-
-function fn() { ls **/*$1* }
-
-function fnd() { ls **/*$1*(/) }
-
-function download(){
+# down <url> - Download <url> and save to current dir.
+function down(){
 curl -O "$1"
 }
 
-function highlight(){
-  highlight -O rtf $1 --font-size 25 --style solarized-dark -W -J 50 -j 3 --src-lang $2 | pbcopy
-}
-
+# cw - Copy working dir.
 cw() { printf %s "$PWD" | pbcopy; }
 
+# md <dir-name> - Craete directory and cd into it.
 function md {
   [[ -n "$1" ]] && mkdir -p "$1" && builtin cd "$1"
 }
 
-# change to a directory and list its contents
-function ad {
-  builtin cd "$argv[-1]" && ls "${(@)argv[1,-2]}"
+# da - cd to ~/.dotfiles
+# da <dir> - Change to a directory and list its contents.
+function da {
+  if [ $# -eq 0 ]; then
+    cd ~/.dotfiles
+  else
+    builtin cd "$argv[-1]" && exa "${(@)argv[1,-2]}"
+  fi
 }
 
-function fex {
-  find . -type f -iname "*${1:-}*" -exec "${2:-file}" '{}' \;
-}
-
-# TODO: ?
-fss() {
-	if du -b /dev/null > /dev/null 2>&1; then
-		local arg=-sbh
-	else
-		local arg=-sh
-	fi
-	if [[ -n "$@" ]]; then
-		du $arg -- "$@"
-	else
-		du $arg .[^.]* *
-	fi
-}
-
+# server - Create server of current dir on port 8000 and open it in browser.
 server() {
 	local port="${1:-8000}"
 	sleep 1 && open "http://localhost:${port}/" &
@@ -453,32 +356,13 @@ server() {
 	python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
 }
 
+# te - See current dir and its contents recusively as a tree.
 te() {
 	tree -aC -I '.git' --dirsfirst "$@" | less -FRNX
 }
 
-repo() {
-	local giturl=$(git config --get remote.origin.url | sed 's/git@/\/\//g' | sed 's/.git$//' | sed 's/https://g' | sed 's/:/\//g')
-	if [[ $giturl == "" ]]; then
-		echo "Not a git repository or no remote.origin.url is set."
-	else
-		local gitbranch=$(git rev-parse --abbrev-ref HEAD)
-		local giturl="http:${giturl}"
-
-		if [[ $gitbranch != "master" ]]; then
-			if echo "${giturl}" | grep -i "bitbucket" > /dev/null ; then
-				local giturl="${giturl}/branch/${gitbranch}"
-			else
-				local giturl="${giturl}/tree/${gitbranch}"
-			fi
-		fi
-
-		echo $giturl
-		open $giturl
-	fi
-}
-
-  function compress()
+# compress <file/dir> - Compress <file/dir>.
+function compress()
   {
     dirPriorToExe=`pwd`
     dirName=`dirname $1`
@@ -545,6 +429,8 @@ repo() {
     echo "###########################################"
   }
 
+# TODO: Write a Go CLI that wraps extract and compress functions + more.
+# extract <file.tar> - Extract <file.tar>.
 function extract() {
   local remove_archive
   local success
@@ -613,14 +499,7 @@ shift
   done
 }
 
-npm() {
-	if [ -f "yarn.lock" ]; then
-		echo "$(tput sgr 0 1)$(tput setaf 1)You should use Yarn for this project.$(tput sgr0)"
-		return
-	fi
-	command npm $@
-}
-
+# ram <process-name> - Find how much RAM a process is taking.
 function ram() {
   local sum
   local items
