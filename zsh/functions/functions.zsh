@@ -5,13 +5,6 @@ function T(){
   echo $PATH
 }
 
-# gz - Improve readme commit.
-function gz(){
-  git add readme.md
-  git commit -m "Improve readme"
-  git push
-}
-
 # C <cmd-name> - Get cheat sheet of command from cheat.sh.
 function C(){
   curl cheat.sh/${@:-cheat}
@@ -21,11 +14,6 @@ function C(){
 # cfile <file> - Copy content of file to clipboard.
 function cfile(){
   cat $1 | pbcopy
-}
-
-# gc <commit-msg> - Write quick commit message.
-function gc() {
-    git commit -m "$@"
 }
 
 # wr - Release alfred workflow.
@@ -94,17 +82,6 @@ function mdg() {
     touch $1.go
 }
 
-# g. - cd to root of .git project.
-function g.() {
-  export git_dir="$(git rev-parse --show-toplevel 2> /dev/null)"
-  if [ -z $git_dir ]
-  then
-    cd ..
-  else
-    cd $git_dir
-  fi
-}
-
 # wl - Alfred link and build workflow.
 function wl() {
     alfred link
@@ -116,18 +93,6 @@ function iz () {
     primitive -i in.png -o output.png -n "$1"
 }
 
-# mit - Create MIT license file for Nikita Voloboev.
-function mit() {
-  license-up mit Nikita Voloboev nikitavoloboev.xyz
-  git add license
-}
-
-# mitla - Create MIT license file for Learn Anything.
-function mitla () {
-  license-up mit Learn Anything, learn-anything.xyz
-  git add license
-}
-
 # NOTE: Not sure if needed.
 # fix - Fixes antigen problems.
 function fix() {
@@ -136,57 +101,10 @@ function fix() {
     exec zsh
 }
 
-# NOTE: Not sure.
-# gp <link> - Pull changes made from PR to head
-function gp() {
-    git pull origin pull/"$1"/head
-}
-
-# ggr - Commit readme changes with `Improve readme` message.
-function ggr(){
-  git add readme.md
-  git commit -m "Improve readme"
-  git push
-}
-
-# mg <dir-name> - Create dir, go to it and initialise it with Git.
-function mg() {
-    mkdir "$1"
-    cd "$1"
-    git init
-}
-
 # wa <dir> - Go to do <dir> directory and open it with VS Code.
 function wa() {
     cd "$1"
     code .
-}
-
-# ggu - Git push to origin master of currently open Safari tab.
-function ggu() {
-    git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
-    git push -u origin master
-}
-
-# ggla - Git initialise Learn Anything repository and make first commit.
-function ggla() {
-    git init
-    mitla
-    git add .
-    git commit -m "Init"
-}
-
-# ggi - Initialise repository and add MIT license.
-function ggi() {
-    git init
-    mit
-    git add .
-    git commit -m "Init"
-}
-
-# gao - Git remote add origin of link found in clipboard.
-function gao() {
-    git remote add origin "$(pbpaste)"
 }
 
 # TODO: Find for anybar.
@@ -197,17 +115,6 @@ function gao() {
 # dirfiles <dir> - Give number of files found inside given directory.
 function dirfiles() {
     find "$1" -type f | wc -l
-}
-
-# gL <git-url> - Git clone and cd instantly to cloned repo.
-function gcd() {
-   git clone "$(pbpaste)" && cd "${1##*/}"
-}
-
-# TODO: ?
-# igit -
-igit() {
-  git rev-parse HEAD > /dev/null 2>&1
 }
 
 # og <git-repo> - Go get the GitHub repo.
@@ -245,50 +152,6 @@ function tc() {
     touch Cartfile
     chmod +x Cartfile
     nvim Cartfile
-}
-
-# gll - Git clone link in clipboard.
-function gll(){
-    git clone "$(pbpaste)"
-    # TODO: cd into cloned project (need to extract name with regex)
-}
-
-# ggs - Git add all files and commit them with generic `Update` message.
-function ggs() {
-    git add .
-    git commit . -m 'Update'
-    git push
-}
-
-# gwi <msg> - Git add all files and commit changes with `Improve <msg>`.
-function gwi() {
-    git add .
-    git commit -m "Improve $*"
-    git push
-}
-
-# gd <msg> - Git add files and commit changes with `Update <msg>`.
-function gd() {
-    git add .
-    git commit -m "Update ${(j: :)@}"
-    git push
-}
-
-# gw <msg> - Git add all files and commit changes with <msg>.
-function gw() {
-    git add .
-    git commit -m "${(j: :)@}"
-    git push
-}
-
-# ogg - go get currently active Safari URL.
-function ogg() {
-  # Get url
-  url=$(osascript -e 'tell application "Safari" to return URL of front document')
-  # Remove https://
-  url="${url#https://}"
-  # Get the package/tool
-  go get -u $url
 }
 
 # fl <text> - Find where <text> is contained within current dir.
@@ -354,11 +217,6 @@ server() {
 	# set the default content-type to `text/plain` instead of `application/octet-stream`
 	# and serve everything as utf-8 (although not technically correct, this doesn’t break anything for binary files)
 	python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
-}
-
-# te - See current dir and its contents recusively as a tree.
-te() {
-	tree -aC -I '.git' --dirsfirst "$@" | less -FRNX
 }
 
 # compress <file/dir> - Compress <file/dir>.

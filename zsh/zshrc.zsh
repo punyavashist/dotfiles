@@ -14,9 +14,9 @@ export DOTFILES="$HOME/.dotfiles"
 
 # _Source things
 # TODO: Do some smart for loop iteration
-#source ~/.dotfiles/zsh/env.zsh
 source ~/.dotfiles/zsh/aliases/alias.zsh
 source ~/.dotfiles/zsh/functions/fzf.zsh
+source ~/.dotfiles/zsh/functions/git-functions.zsh
 source ~/.dotfiles/zsh/bindings.zsh
 source ~/.dotfiles/zsh/aliases/git.zsh
 source ~/.dotfiles/zsh/functions/functions.zsh

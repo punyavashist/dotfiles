@@ -1,7 +1,8 @@
 # Aliases.
 
 # _General
-alias g='hub'
+alias g='hub' # Wrapper over Git
+alias crypto='curl rate.sx' # Get crypto prices
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias lc='tokei'
 alias sf='screenfetch -E'
@@ -242,12 +243,10 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-# _cli tools
-alias kn='/Applications/Karabiner.app/Contents/Library/bin/karabiner'
+alias kn='/Applications/Karabiner.app/Contents/Library/bin/karabiner' # Karabiner CLI
 
-# _top
-alias cpu='top -o cpu'   # cpu
-alias mem='top -o rsize' # memory
+# alias cpu='top -o cpu'   # CPU
+alias mem='top -o rsize' # Memory
 
 # _macos
 alias bb='pbcopy'

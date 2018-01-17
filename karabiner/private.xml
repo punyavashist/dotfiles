@@ -900,7 +900,7 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: rerun command in iterm"
+do script "g: Rerun command in iterm"
 end tell
 '
 </url>
@@ -1020,7 +1020,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "mind: karabiner"
+do script "mind: Karabiner"
 end tell
 '
 </url>
@@ -1030,7 +1030,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: goto km group of the app from picklist"
+do script "g: Goto km group of the app from picklist"
 end tell
 '
 </url>
@@ -1050,7 +1050,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: focus for 90 min"
+do script "g: Focus for 90 min"
 end tell
 '
 </url>
@@ -1060,7 +1060,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: new tweet with current URL"
+do script "g: New tweet with current URL"
 end tell
 '
 </url>
@@ -1070,7 +1070,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: make 2do quick task"
+do script "g: Make 2do quick task"
 end tell
 '
 </url>
@@ -1080,7 +1080,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "mind: thinking"
+do script "mind: Thinking"
 end tell
 '
 </url>
@@ -1090,7 +1090,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: create snippetslab snippet from selection"
+do script "g: Create snippetslab snippet from selection"
 end tell
 '
 </url>
@@ -1100,7 +1100,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: list last n macros executed"
+do script "g: List last n macros executed"
 end tell
 '
 </url>
@@ -1110,7 +1110,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: insert `` and clipboard"
+do script "g: Insert `` and clipboard"
 end tell
 '
 </url>
@@ -1120,7 +1120,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: open iTerm 1st tab"
+do script "g: Open iTerm 1st tab"
 end tell
 '
 </url>
@@ -1202,7 +1202,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: duckduckgo clipboard"
+do script "g: Duckduckgo clipboard"
 end tell
 '
 </url>
@@ -1212,7 +1212,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: google clipboard"
+do script "g: Google clipboard"
 end tell
 '
 </url>
@@ -1222,7 +1222,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: get current url from chrome"
+do script "g: Get current url from chrome"
 end tell
 '
 </url>
@@ -1751,7 +1751,7 @@ end tell
 </url>
 </vkopenurldef>
 
-<!-- _km go maps-->
+<!-- _KM go -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_GO_FMT_PRINTLN</name>
 <url type="shell">
@@ -1884,6 +1884,28 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "Prefill comment of function"
+end tell
+'
+</url>
+</vkopenurldef>
+
+<!-- _KM Karabiner profiles -->
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_KARABINER_PROFILE_PYTHON</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "kar: Python profile"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_KARABINER_PROFILE_GO</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "kar: Go profile"
 end tell
 '
 </url>
@@ -5481,7 +5503,6 @@ KeyCode::F1, ModifierFlag::COMMAND_L
 
 <modifierdef>MY_LAUNCHER_MODE</modifierdef>
 
-
 <!-- sticky o  -->
 <replacementdef>
 <replacementname>LAUNCHER_MODE_V2_EXTRA</replacementname>
@@ -5492,6 +5513,11 @@ KeyCode::F1, ModifierFlag::COMMAND_L
 __KeyToKey__
 KeyCode::K,
 KeyCode::VK_OPEN_URL_KM_TEST
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::H,
+KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE_WATCH
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6656,6 +6682,16 @@ __BlockUntilKeyUp__ KeyCode::DOT,
 
 <autogen>
 __KeyToKey__
+KeyCode::1,
+KeyCode::VK_OPEN_URL_KM_KARABINER_PROFILE_GO
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::2,
+KeyCode::VK_OPEN_URL_KM_KARABINER_PROFILE_PYTHON
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::A,
 KeyCode::P,
 KeyCode::R,
@@ -6728,10 +6764,15 @@ __KeyToKey__
 KeyCode::O,
 KeyCode::VK_OPEN_URL_KM_GO_WORKFLOW:
 </autogen>
+<autogen>
+__KeyToKey__
+KeyCode::2,
+KeyCode::VK_OPEN_URL_KM_KARABINER_PROFILE_PYTHON
+</autogen>
 </item>
 
 <item>
-<name>py: code</name>
+<name>python: code</name>
 <identifier>private.launcher_mode_open_apps_v77</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -6758,16 +6799,10 @@ KeyCode::DOT,
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v77</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::DOT,
 </autogen>
 
-<autogen>
-__KeyToKey__
-KeyCode::1,
-KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
-</autogen>
 <autogen>
 __KeyToKey__
 KeyCode::R,
@@ -6791,8 +6826,12 @@ KeyCode::9, ModifierFlag::SHIFT_L,
 KeyCode::0, ModifierFlag::SHIFT_L, 
 KeyCode::CURSOR_LEFT
 </autogen>
+<autogen>
+__KeyToKey__
+KeyCode::1,
+KeyCode::VK_OPEN_URL_KM_KARABINER_PROFILE_GO
+</autogen>
 </item>
-
 
 <item>
 <name>general: sticky comma - one off scripts</name>
