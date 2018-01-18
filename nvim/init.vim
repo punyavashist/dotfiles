@@ -1,5 +1,6 @@
-" _Testing
+" _Testing 
 set mouse=a
+" TODO: Make it so in visual select the char being hovered over is filled block
 set guicursor=n-v-c:hor20,i-ci:ver20
 "autocmd VimLeave * set guicursor=n-v-c:hor20
 
@@ -80,12 +81,11 @@ Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'carlitux/deoplete-ternjs'                    " JS autocomplete
 call plug#end()
 
-
 " _Basic vim config
 "  TODO: Check if some of these settings come as default with neovim
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1                                          " Nice looking editor
 set clipboard^=unnamed                                " Copy text to system clipboard
-set gdefault " always do global substitutions
+set gdefault " Always do global substitutions
 set clipboard^=unnamedplus
 set title                                         " Set terminal title
 set whichwrap+=<,>,[,]

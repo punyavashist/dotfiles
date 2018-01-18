@@ -9434,7 +9434,7 @@ KeyCode::VK_OPEN_URL_KM_EDIT_KEYBOARD_SHORTCUTS
 <autogen>
 __KeyToKey__
 KeyCode::DOT,
-KeyCode::VK_OPEN_URL_KM_OPEN_SONIC_PI
+KeyCode::VK_OPEN_URL_KM_OPEN_OBS
 </autogen>
 <autogen>
 __KeyToKey__

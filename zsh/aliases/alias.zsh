@@ -245,7 +245,7 @@ alias .....="cd ../../../.."
 
 alias kn='/Applications/Karabiner.app/Contents/Library/bin/karabiner' # Karabiner CLI
 
-# alias cpu='top -o cpu'   # CPU
+alias cpu='top -o cpu'   # CPU
 alias mem='top -o rsize' # Memory
 
 # _macos

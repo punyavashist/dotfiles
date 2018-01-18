@@ -2,7 +2,9 @@
 
 # T - Tester function (I change it often).
 function T(){
-  echo $PATH
+  git add contributing.md
+  git commit -m "Improve contributing"
+  git push
 }
 
 # C <cmd-name> - Get cheat sheet of command from cheat.sh.

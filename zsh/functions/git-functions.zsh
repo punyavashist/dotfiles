@@ -7,9 +7,51 @@ function gz(){
   git push
 }
 
+# gwa <commit-msg> - Commit everything with `Add <commit-msg>` message.
+function gwa(){
+  git add .
+  git commit -m "Add $*"
+  git push
+}
+
+# gwr <commit-msg> - Commit everything with `Remove <commit-msg>` message.
+function gwr(){
+  git add .
+  git commit -m "Remove $*"
+  git push
+}
+
+# gwi <msg> - Git add all files and commit changes with `Improve <msg>`.
+function gwi() {
+    git add .
+    git commit -m "Improve $*"
+    git push
+}
+
+# gd <msg> - Git add files and commit changes with `Update <msg>`.
+function gd() {
+    git add .
+    git commit -m "Update ${(j: :)@}"
+    git push
+}
+
+# ggs - Git add all files and commit them with generic `Update` message.
+function ggs() {
+    git add .
+    git commit . -m 'Update'
+    git push
+}
+
 # gc <commit-msg> - Write quick commit message.
 function gc() {
     git commit -m "$@"
+}
+
+# ggr - Commit readme changes with `Improve readme` message.
+function ggr(){
+  git add readme.md
+  git commit -m "Improve readme"
+  git push
 }
 
 # g. - cd to root of .git project.
@@ -39,13 +81,6 @@ function mitla () {
 # gp <link> - Pull changes made from PR to head
 function gp() {
     git pull origin pull/"$1"/head
-}
-
-# ggr - Commit readme changes with `Improve readme` message.
-function ggr(){
-  git add readme.md
-  git commit -m "Improve readme"
-  git push
 }
 
 # mg <dir-name> - Create dir, go to it and initialise it with Git.
@@ -91,27 +126,6 @@ function gcd() {
 function gll(){
     git clone "$(pbpaste)"
     # TODO: cd into cloned project (need to extract name with regex)
-}
-
-# ggs - Git add all files and commit them with generic `Update` message.
-function ggs() {
-    git add .
-    git commit . -m 'Update'
-    git push
-}
-
-# gwi <msg> - Git add all files and commit changes with `Improve <msg>`.
-function gwi() {
-    git add .
-    git commit -m "Improve $*"
-    git push
-}
-
-# gd <msg> - Git add files and commit changes with `Update <msg>`.
-function gd() {
-    git add .
-    git commit -m "Update ${(j: :)@}"
-    git push
 }
 
 # gw <msg> - Git add all files and commit changes with <msg>.
