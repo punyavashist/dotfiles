@@ -1,4 +1,4 @@
-# Zsh git functions
+# Zsh git functions.
 
 # gz - Improve readme commit.
 function gz(){
@@ -45,13 +45,6 @@ function ggs() {
 # gc <commit-msg> - Write quick commit message.
 function gc() {
     git commit -m "$@"
-}
-
-# ggr - Commit readme changes with `Improve readme` message.
-function ggr(){
-  git add readme.md
-  git commit -m "Improve readme"
-  git push
 }
 
 # g. - cd to root of .git project.
