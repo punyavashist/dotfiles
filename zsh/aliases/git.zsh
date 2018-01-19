@@ -1,8 +1,7 @@
-# Git aliases.
-
-# _General
-# alias gr='goreleaser'
-alias gb4='git rebase -i HEAD~4'
+# Git aliases
+# _general
+alias gj='open `git config remote.origin.url`'
+alias gre='git rebase -i HEAD~4'
 alias gsh='git stash'
 # alias gt='git tag'
 alias g:='git push -u origin master'
@@ -31,12 +30,12 @@ alias grao='git remote add origin'
 alias greset='git reset --soft HEAD^'
 
 
-# _Diff
+# _diff
 alias gdi='git diff'
 alias gds='git diff --staged'
 alias gdn='git diff --name-only'
 
-# _Status
+# _status
 alias gs='git status --short'
 alias gss='git show --word-diff=color'
 

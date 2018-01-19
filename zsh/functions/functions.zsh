@@ -1,10 +1,16 @@
-# Zsh functions.
+# Zsh functions
 
 # T - Tester function (I change it often).
 function T(){
   git add contributing.md
   git commit -m "Improve contributing"
   git push
+}
+
+# md <folder-name> - Create folder and cd to it.
+function md(){
+  mkdir "$1"
+  cd "$1"
 }
 
 # C <cmd-name> - Get cheat sheet of command from cheat.sh.
@@ -24,12 +30,12 @@ function  wr() {
   package-workflow .
 }
 
-# re <files> - Move files to Trash.
+# re <files> - Move files to trash.
 function re(){
   mv "$@" ~/.Trash
 }
 
-# zs - Search for most visited directores from z index and open them in Finder.
+# zs - Search for most visited directores from z index and open them in finder.
 function zs() {
   z $1 && open .
 }

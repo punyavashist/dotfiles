@@ -1,7 +1,8 @@
-# Aliases.
+# Aliases
 
 # _General
-alias g='hub' # Wrapper over Git
+alias g='hub' # Wrapper over git
+alias aet='subl contributing.md'
 alias crypto='curl rate.sx' # Get crypto prices
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias lc='tokei'
@@ -30,7 +31,6 @@ alias gos='go-search'
 alias sd='sudo'
 # TODO: fk alias to run last cmd as sudo instantly
 alias lg='ls | grep'
-alias gj='open `git config remote.origin.url`'
 alias so='source'
 alias top="vtop"
 alias ka='echo'
@@ -62,7 +62,7 @@ alias q='exit'
 alias e='nvim'
 alias screen='screenfetch'
 alias ad='open .'
-alias mx='chmod +x' 
+alias mx='chmod +x'
 alias rr='rm -rf'
 # alias a='ls -FG'
 alias a='exa'
@@ -75,21 +75,18 @@ alias aa='exa -l'
 # alias aa='exa -lahF'
 alias tp='type'
 #alias cl='/usr/local/bin/m'
+# alias gr='goreleaser'
 
-# _dev
-# _general
+# _Dev
 alias co='coala'
 alias ll='ln -s'
 alias jd='jid'
 alias tm='task'
 alias rf='reflex'
 alias kb='kubectl'
-
 alias ser='serve'
 alias h='python3 -m http.server'
-
 alias cra='npx create-react-app'
-
 alias lic='legit'
 
 # _flask
@@ -98,7 +95,7 @@ alias fr='flask run'
 # _python
 alias p='python3'
 alias p2='python'
-alias pi='pip install' 
+alias pi='pip install'
 alias rv='virtualenv -p /usr/local/bin/python3'
 
 # _alfred
@@ -279,28 +276,28 @@ alias egi='nvim .gitignore'
 alias ej='nvim package.json'
 
 # _config
-alias ea='nvim ~/.dotfiles/zsh/aliases/alias.zsh'                # alias
-alias eh='nvim ~/.ssh/config'                                 # ssh config
-alias ejj='nvim ~/.dotfiles/intellij/ideavimrc'               # idea
-alias ez='nvim ~/.dotfiles/zsh/zshrc.zsh'                         # zshrc
-alias eze='nvim ~/.dotfiles/zsh/aliases/vim.zsh'                 # goto vim
-alias ezk='nvim ~/.dotfiles/zsh/aliases/cd.zsh'                  # goto cd
+alias ea='nvim ~/.dotfiles/zsh/aliases/alias.zsh' # alias
+alias eh='nvim ~/.ssh/config' # ssh config
+alias ejj='nvim ~/.dotfiles/intellij/ideavimrc' # idea
+alias ez='nvim ~/.dotfiles/zsh/zshrc.zsh' # zshrc
+alias eze='nvim ~/.dotfiles/zsh/aliases/vim.zsh' # goto vim
+alias ezk='nvim ~/.dotfiles/zsh/aliases/cd.zsh' # goto cd
 alias ek='nvim ~/Library/Application\ Support/Karabiner/private.xml' # karabiner
-alias ew='nvim ~/.dotfiles/nvim/init.vim'                  		 # nvimrc
-alias ef='nvim ~/.dotfiles/zsh/functions/functions.zsh'          # shell functions
-alias ehs='nvim ~/.dotfiles/hammerspoon/init.lua'             # hammerspoon
-alias ezd='nvim ~/.dotfiles/zsh/aliases/dev.zsh'                 # development alias
-alias ezg='nvim ~/.dotfiles/zsh/aliases/git.zsh'                 # git alias
-alias eza='nvim ~/.dotfiles/zsh/aliases/app.zsh'                 # app alias
-alias ezv='nvim ~/.dotfiles/zsh/dev/env.zsh'                     # enviroment variables
-alias ezo='nvim ~/.dotfiles/zsh/aliases/docker.zsh'              # docker alias
-alias et='nvim ~/.dotfiles/tmux/tmux.conf.local'              # tmux config
-alias ezb='nvim ~/.dotfiles/zsh/zsh/bindings.zsh'                # shell keyboard bindings
+alias ew='nvim ~/.dotfiles/nvim/init.vim' # nvimrc
+alias ef='nvim ~/.dotfiles/zsh/functions/functions.zsh' # shell functions
+alias ehs='nvim ~/.dotfiles/hammerspoon/init.lua' # hammerspoon
+alias ezd='nvim ~/.dotfiles/zsh/aliases/dev.zsh' # development alias
+alias ezg='nvim ~/.dotfiles/zsh/aliases/git.zsh' # git alias
+alias eza='nvim ~/.dotfiles/zsh/aliases/app.zsh' # app alias
+alias ezv='nvim ~/.dotfiles/zsh/dev/env.zsh' # enviroment variables
+alias ezo='nvim ~/.dotfiles/zsh/aliases/docker.zsh' # docker alias
+alias et='nvim ~/.dotfiles/tmux/tmux.conf.local' # tmux config
+alias ezb='nvim ~/.dotfiles/zsh/zsh/bindings.zsh' # shell keyboard bindings
 
 # _cd places
 # _projects
 alias daq='cd ~/code/xcode/projects/macos/quoter'
-alias dla='cd ~/oss/learn-anything/learn-anything'
+alias dla='cd ~/src/github/learn-anything'
 alias dz='cd ~/oss/nikivi/personal/knowledge'
 
 # _documents

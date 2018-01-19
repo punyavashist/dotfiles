@@ -894,7 +894,7 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 </url>
 </vkopenurldef>
 
-<!-- _KM def-->
+<!-- _km def-->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_RERUN_CMD_ITERM</name>
 <url type="shell">
@@ -910,7 +910,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: Kill All Macros"
+do script "g: stop all macros"
 end tell
 '
 </url>
@@ -940,7 +940,17 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "edit: Git alias"
+do script "edit: git alias"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_GIT_FUNCTIONS</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "edit: git functions"
 end tell
 '
 </url>
@@ -1913,7 +1923,7 @@ end tell
 
 <!-- _KM Paths def -->
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_HOME_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_HOME</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -1923,7 +1933,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_APPLICATIONS_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_APPLICATIONS</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -1933,7 +1943,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_ROOT_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_ROOT</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -1943,7 +1953,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_TESTING_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_TESTING</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -1953,7 +1963,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_XCODE_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_XCODE</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -1963,7 +1973,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_GO_SRC_GITHUB</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_GO_SRC_GITHUB</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -1973,7 +1983,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_APP_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_APP</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -1983,7 +1993,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_UNI_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_UNI</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -1993,7 +2003,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_PDFS_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_PDFS</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -2003,7 +2013,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_PAPERS_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_PAPERS</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -2013,7 +2023,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_IDEAS_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_IDEAS</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -2023,7 +2033,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_LEARNING_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_LEARNING</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -2033,37 +2043,37 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_OSS_LA_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_SRC_LA</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "path: oss - la"
+do script "path: src - learn anything"
 end tell
 '
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_OSS_NIKIVI_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_NIKIVI</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "path: oss - nikivi"
+do script "path: src - nikitavoloboev"
 end tell
 '
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_OSS_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_SRC</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "path: oss"
+do script "path: src"
 end tell
 '
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_DROPBOX_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_DROPBOX</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -2073,7 +2083,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_GOPATH_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_GOPATH</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -2083,7 +2093,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_DOTFILES_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_DOTFILES</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -2093,7 +2103,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_APPLICATION_SUPPORT_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_APPLICATION_SUPPORT</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -2103,7 +2113,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_BOOKS_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_BOOKS</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -2123,7 +2133,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_DOCUMENTS_PATH</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_PATH_DOCUMENTS</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -8769,112 +8779,112 @@ KeyCode::Y, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTR
 <autogen>
 __KeyToKey__
 KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_OPEN_OSS_LA_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_LEARNING
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::L,
-KeyCode::VK_OPEN_URL_KM_OPEN_TESTING_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_TESTING
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::COMMA,
-KeyCode::VK_OPEN_URL_KM_OPEN_APPLICATIONS_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_APPLICATIONS
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::QUOTE,
-KeyCode::VK_OPEN_URL_KM_OPEN_APP_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_APP
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::DOT,
-KeyCode::VK_OPEN_URL_KM_OPEN_ROOT_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_ROOT
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::H,
-KeyCode::VK_OPEN_URL_KM_OPEN_GO_SRC_GITHUB
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_GO_SRC_GITHUB
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::F,
-KeyCode::VK_OPEN_URL_KM_OPEN_PDFS_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_PDFS
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::U,
-KeyCode::VK_OPEN_URL_KM_OPEN_UNI_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_UNI
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::T,
-KeyCode::VK_OPEN_URL_KM_OPEN_OSS_LA_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_SRC_LA
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::I,
-KeyCode::VK_OPEN_URL_KM_OPEN_IDEAS_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_IDEAS
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::P,
-KeyCode::VK_OPEN_URL_KM_OPEN_PAPERS_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_PAPERS
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::J,
-KeyCode::VK_OPEN_URL_KM_OPEN_LEARNING_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_LEARNING
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::SEMICOLON,
-KeyCode::VK_OPEN_URL_KM_OPEN_DROPBOX_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_DROPBOX
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::Y,
-KeyCode::VK_OPEN_URL_KM_OPEN_APP_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_APP
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::N,
-KeyCode::VK_OPEN_URL_KM_OPEN_OSS_NIKIVI_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_NIKIVI
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::S,
-KeyCode::VK_OPEN_URL_KM_OPEN_OSS_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_SRC
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::G,
-KeyCode::VK_OPEN_URL_KM_OPEN_GOPATH_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_GOPATH
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::A,
-KeyCode::VK_OPEN_URL_KM_OPEN_DOTFILES_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_DOTFILES
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::Q,
-KeyCode::VK_OPEN_URL_KM_OPEN_APPLICATION_SUPPORT_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_APPLICATION_SUPPORT
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::B,
-KeyCode::VK_OPEN_URL_KM_OPEN_BOOKS_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_BOOKS
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::K,
-KeyCode::VK_OPEN_URL_KM_OPEN_HOME_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_HOME
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::O,
-KeyCode::VK_OPEN_URL_KM_OPEN_DOCUMENTS_PATH
+KeyCode::VK_OPEN_URL_KM_OPEN_PATH_DOCUMENTS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8925,6 +8935,11 @@ KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_DAYONE
 __KeyToKey__
 KeyCode::J,
 KeyCode::VK_OPEN_URL_KM_EDIT_RESEARCHING
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::F,
+KeyCode::VK_OPEN_URL_KM_EDIT_GIT_FUNCTIONS
 </autogen>
 <autogen>
 __KeyToKey__
