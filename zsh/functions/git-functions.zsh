@@ -1,13 +1,13 @@
 # Zsh git functions.
 
-# gz - improve readme commit
+# gz - Improve readme commit
 function gz(){
   git add readme.md
-  git commit -m "Update readme"
+  git commit -m "Improve readme"
   git push
 }
 
-# gw <msg> - commit all changes with <msg>
+# gw <msg> - Commit all changes with <msg>
 function gw() {
     git add .
     git commit -m "${(j: :)@}"
@@ -21,11 +21,25 @@ function gwa(){
   git push
 }
 
+# gwf <commit-msg> - commit all changes with `<Fix commit-msg>`
+function gwr(){
+  git add .
+  git commit -m "Remove $*"
+  git push
+}
+
 # gwr <commit-msg> - commit all changes with `<Remove commit-msg>`
 function gwr(){
   git add .
   git commit -m "Remove $*"
   git push
+}
+
+# gwi <msg> - commit all changes with `Improve <msg>`
+function gwi() {
+    git add .
+    git commit -m "Improve $*"
+    git push
 }
 
 # gwe <msg> - commit all changes with `Update <msg>`

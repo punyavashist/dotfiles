@@ -7,19 +7,19 @@ function T(){
   git push
 }
 
-# md <folder-name> - Create folder and cd to it.
+# md <folder-name> - Create folder and cd to it
 function md(){
   mkdir "$1"
   cd "$1"
 }
 
-# C <cmd-name> - Get cheat sheet of command from cheat.sh.
+# C <cmd-name> - Get cheat sheet of command from cheat.sh
 function C(){
   curl cheat.sh/${@:-cheat}
   # curl cheat.sh/$@
 }
 
-# cfile <file> - Copy content of file to clipboard.
+# cfile <file> - Copy content of file to clipboard
 function cfile(){
   cat $1 | pbcopy
 }

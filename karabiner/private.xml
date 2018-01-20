@@ -1824,6 +1824,40 @@ end tell
 </url>
 </vkopenurldef>
 
+<!-- _KM lists open -->
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_LIST_COMMAND_LINE_TOOLS</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "list: command line tools"
+end tell
+'
+</url>
+</vkopenurldef>
+
+<!-- _KM wiki open -->
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_WIKI_RULES</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "wiki: rules"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_WIKI_MY_GITHUB</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "wiki: my github"
+end tell
+'
+</url>
+</vkopenurldef>
+
 <!-- _KM edit files -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_EDIT_INTERESTING_THINGS</name>
@@ -3178,22 +3212,30 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_3000</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_LOCALHOST</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "c: 3000"
+do script "c: localhost"
 end tell
 '
 </url>
 </vkopenurldef>
 
-<!-- _Alfred def -->
+<!-- _Alf def -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GISTS</name>
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "gists" in workflow "nikivi.search-the-web" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_VOLUME_ADJUST</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "volume" in workflow "com.victorquinn.volumeadjust" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -5738,9 +5780,8 @@ KeyCode::VK_OPEN_URL_ALFRED_PROCESS_CONTROL
 </replacementvalue>
 </replacementdef>
 
-
 <item>
-<name>general: sticky slash - websites</name>
+<name>general: sticky slash</name>
 <identifier>private.launcher_mode_open_apps_v19</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -5772,16 +5813,6 @@ KeyCode::SLASH
 __BlockUntilKeyUp__ KeyCode::SLASH,
 </autogen>
 
-<autogen>
-__KeyToKey__
-KeyCode::R,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_REPL
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::A,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_NPM
-</autogen>
 <autogen>
 __KeyToKey__
 KeyCode::H,
@@ -6085,6 +6116,11 @@ __BlockUntilKeyUp__ KeyCode::0,
 
 <autogen>
 __KeyToKey__
+KeyCode::Y,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LIBRARY
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::B,
 KeyCode::VK_OPEN_URL_ALFRED_PINBOARD
 </autogen>
@@ -6220,7 +6256,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_FACEBOOK
 <autogen>
 __KeyToKey__
 KeyCode::E,
-KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_3000
+KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_LOCALHOST
 </autogen>
 </item>
 
@@ -7712,6 +7748,11 @@ KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTI
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::I,
+KeyCode::VK_OPEN_URL_KM_OPEN_CHROME
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::U,
 KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX_DEV
 </autogen>
@@ -7759,11 +7800,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_ACTIVITY_MONITOR
 __KeyToKey__
 KeyCode::Y,
 KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::I,
-KeyCode::VK_OPEN_URL_KM_OPEN_CHROME
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8474,7 +8510,7 @@ KeyCode::G, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
 </item>
 
 <item>
-<name>general: sticky 5 - things</name>
+<name>general: sticky 6 - things</name>
 <identifier>private.launcher_mode_open_apps_v22</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8490,19 +8526,19 @@ ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
 __KeyOverlaidModifier__
-KeyCode::5,
+KeyCode::6,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v22, ModifierFlag::MY_LAUNCHER_MODE,
 @end
 @begin
-KeyCode::5,
+KeyCode::6,
 @end
 </autogen>
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v22</identifier>
 <autogen>
-__BlockUntilKeyUp__ KeyCode::5,
+__BlockUntilKeyUp__ KeyCode::6,
 </autogen>
 
 <autogen>
@@ -8654,7 +8690,7 @@ KeyCode::COMMA, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CO
 </item>
 
 <item>
-<name>general: sticky tab - file searches</name>
+<name>general: sticky tab - alfred</name>
 <identifier>private.launcher_mode_open_apps_v55</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8687,8 +8723,23 @@ __BlockUntilKeyUp__ KeyCode::TAB,
 
 <autogen>
 __KeyToKey__
-KeyCode::L,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LIBRARY
+KeyCode::M,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_APPLE_MAPS
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::C,
+KeyCode::VK_OPEN_URL_ALFRED_CONVERT
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::H,
+KeyCode::VK_OPEN_URL_ALFRED_HACKER_NEWS
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::P,
+KeyCode::VK_OPEN_URL_ALFRED_CRYPTO_TRACK
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8698,7 +8749,7 @@ KeyCode::G, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
 </item>
 
 <item>
-<name>general: sticky 5 - something</name>
+<name>general: sticky 5 - wiki</name>
 <identifier>private.launcher_mode_open_apps_v54</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8730,6 +8781,16 @@ KeyCode::5,
 __BlockUntilKeyUp__ KeyCode::5,
 </autogen>
 
+<autogen>
+__KeyToKey__
+KeyCode::L,
+KeyCode::VK_OPEN_URL_KM_WIKI_RULES
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::U,
+KeyCode::VK_OPEN_URL_KM_WIKI_MY_GITHUB
+</autogen>
 <autogen>
 __KeyToKey__
 KeyCode::SPACE,
@@ -9217,8 +9278,8 @@ KeyCode::6, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTI
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::O,
-KeyCode::M, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, 
+KeyCode::I,
+KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_LOCALHOST
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9581,6 +9642,16 @@ __BlockUntilKeyUp__ KeyCode::U,
 
 <autogen>
 __KeyToKey__
+KeyCode::E,
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_REPL
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::N,
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_NPM
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::1,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_KAGGLE
 </autogen>
@@ -9641,7 +9712,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_MOZILLA_DEV
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::N,
+KeyCode::Y,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_NETLIFY
 </autogen>
 <autogen>
@@ -9952,7 +10023,7 @@ KeyCode::SPACE
 </item>
 
 <item>
-<name>general: sticky y - alfred</name>
+<name>general: sticky y - lists</name>
 <identifier>private.launcher_mode_open_apps_v83</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -9979,30 +10050,14 @@ KeyCode::Y,
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v83</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::Y,
 </autogen>
 
 <autogen>
 __KeyToKey__
-KeyCode::M,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_APPLE_MAPS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::C,
-KeyCode::VK_OPEN_URL_ALFRED_CONVERT
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::H,
-KeyCode::VK_OPEN_URL_ALFRED_HACKER_NEWS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::P,
-KeyCode::VK_OPEN_URL_ALFRED_CRYPTO_TRACK
+KeyCode::I,
+KeyCode::VK_OPEN_URL_KM_LIST_COMMAND_LINE_TOOLS
 </autogen>
 </item>
 
@@ -10327,11 +10382,6 @@ KeyCode::M, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::4,
-KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_3000
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::3,
 KeyCode::VK_OPEN_URL_KM_MANIPULATE_CLIPBOARD
 </autogen>
@@ -10445,7 +10495,7 @@ KeyCode::RETURN, ModifierFlag::SHIFT_L
 <autogen>
 __KeyToKey__
 KeyCode::COMMA,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOCALHOST
+KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_LOCALHOST
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11836,8 +11886,13 @@ KeyCode::VK_OPEN_URL_ALFRED_UNITS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
+KeyCode::O,
 KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::I,
+KeyCode::VK_OPEN_URL_ALFRED_VOLUME_ADJUST
 </autogen>
 <autogen>
 __KeyToKey__

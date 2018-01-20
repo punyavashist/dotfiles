@@ -1,6 +1,6 @@
 # Only run once (exec zsh won't run what's inside)
 if (( ! $+ETC_ZSH_ZSHRC )); then
-    # Load enviroment
+    # load environment
     source ~/.dotfiles/zsh/env.zsh
 fi
 export ETC_ZSH_ZSHRC=1
@@ -57,6 +57,9 @@ setopt    incappendhistory # Immediately append to the history file, not just wh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 unset IFS
+
+# _Brew
+export HOMEBREW_AUTO_UPDATE_SECS=3600 
 
 # TODO: ?
 eval "$(hub alias -s)"
