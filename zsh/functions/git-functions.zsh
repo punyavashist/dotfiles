@@ -22,9 +22,9 @@ function gwa(){
 }
 
 # gwf <commit-msg> - commit all changes with `<Fix commit-msg>`
-function gwr(){
+function gwf(){
   git add .
-  git commit -m "Remove $*"
+  git commit -m "Fix $*"
   git push
 }
 

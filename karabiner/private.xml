@@ -1882,11 +1882,11 @@ end tell
 
 <!-- _KM edit files -->
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_EDIT_INTERESTING_THINGS</name>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_ZSH_BINDINGS</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "edit: interesting things"
+do script "edit: zsh bindings"
 end tell
 '
 </url>
@@ -1902,11 +1902,11 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_EDIT_WEBSITES</name>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_ZSHRC</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "edit: websites"
+do script "edit: zshrc"
 end tell
 '
 </url>
@@ -8969,7 +8969,6 @@ KeyCode::3,
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v51</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::3,
 </autogen>
@@ -8986,8 +8985,13 @@ KeyCode::VK_OPEN_URL_KM_EDIT_GIT_FUNCTIONS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_EDIT_WEBSITES
+KeyCode::B,
+KeyCode::VK_OPEN_URL_KM_EDIT_ZSH_BINDINGS
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::H,
+KeyCode::VK_OPEN_URL_KM_EDIT_ZSHRC
 </autogen>
 <autogen>
 __KeyToKey__

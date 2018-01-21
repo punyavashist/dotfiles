@@ -3,20 +3,22 @@
 # Vi movement in iTerm
 set -o vi
 
-bindkey -e # TODO: not sure
-
-bindkey '⌃T' edit-command-line
+bindkey -e # Switch to emacs keymap
+bindkey -v # Switch to vim keymap
 
 # _Bindings
-bindkey -M viins "^f" beginning-of-line
-bindkey -M viins "^e" end-of-line
+bindkey "^f" beginning-of-line
+bindkey "^g" end-of-line
+
+# bindkey -M viins "^o" beginning-of-line
 bindkey -M vicmd "^[" vi-insert
 bindkey -sM viins "^v" ./
 bindkey '^N' forward-word
 bindkey '^B' backward-word
+# bindkey '⌃T' edit-command-line
 # bindkey "^F" history-incremental-search-backward
 
-# _FZF
+# _FZF TODO: ?
 # bind '"\er": redraw-current-line'
 # bind '"\C-g\C-f": "$(gf)\e\C-e\er"'
 # bind '"\C-g\C-b": "$(gb)\e\C-e\er"'
