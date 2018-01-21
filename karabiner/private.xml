@@ -956,16 +956,6 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_MINDNODE_MACOS</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "mind: macOS"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_EDIT_ASK_CREATE_SHARE</name>
 <url type="shell">
 osascript -e '
@@ -1026,16 +1016,6 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_KARABINER_MIND_MAP</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "mind: karabiner"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_GOTO_KM_GROUP_OF_APP</name>
 <url type="shell">
 osascript -e '
@@ -1081,16 +1061,6 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "g: make 2do quick task"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_THINKING_MAP</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "mind: thinking"
 end tell
 '
 </url>
@@ -1875,6 +1845,48 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "code: bash testing"
+end tell
+'
+</url>
+</vkopenurldef>
+
+<!-- _KM mindnode -->
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_MIND_THINKING</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "mind: thinking"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_MIND_RESEARCH</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "mind: research"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_MIND_KARABINER</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "mind: karabiner"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_MIND_MACOS</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "mind: macOS"
 end tell
 '
 </url>
@@ -10467,7 +10479,7 @@ KeyCode::RETURN, ModifierFlag::SHIFT_L
 <autogen>
 __KeyToKey__
 KeyCode::SEMICOLON,
-KeyCode::VK_OPEN_URL_KM_OPEN_THINKING_MAP
+KeyCode::VK_OPEN_URL_KM_MIND_THINKING
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11854,7 +11866,7 @@ __BlockUntilKeyUp__ KeyCode::B,
 <autogen>
 __KeyToKey__
 KeyCode::M,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
+KeyCode::VK_OPEN_URL_KM_MIND_RESEARCH
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11884,12 +11896,12 @@ KeyCode::VK_OPEN_URL_ALFRED_VOLUME_ADJUST
 <autogen>
 __KeyToKey__
 KeyCode::SEMICOLON,
-KeyCode::VK_OPEN_URL_KM_OPEN_KARABINER_MIND_MAP
+KeyCode::VK_OPEN_URL_KM_MIND_KARABINER
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::L,
-KeyCode::VK_OPEN_URL_KM_MINDNODE_MACOS
+KeyCode::VK_OPEN_URL_KM_MIND_MACOS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12336,7 +12348,7 @@ KeyCode::VK_OPEN_URL_ALFRED_OPEN_DOCUMENTATION
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
+KeyCode::VK_OPEN_URL_ALFRED_SAFARI_FOLDERS
 </autogen>
 </item>
 

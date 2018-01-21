@@ -25,7 +25,7 @@ The most exciting thing in here is probably how I utilise [Karabiner](https://pq
 I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macOS/apps/karabiner/Karabiner.html) and I document all the keybindings I have made and changed as an interactive mind map [here](https://my.mindnode.com/c7EmmKvaxCyCEuTzcpkGB4MGeLpWdR8nsJK4rjDh#2086.8,-2205.5,2). Scroll around and explore, perhaps you find something interesting.
 
 ## Neovim
-I am [still learning vim](https://my.mindnode.com/24sx5yV3S7FLayi5Msvhysx5HZ8aAPzUqJ6rStKi) but the this journey has been very rewarding. Modal editing is pretty amazing.
+I am [still learning vim](https://wiki.nikitavoloboev.xyz/text-editors/vim/Vim.html) but the this journey has been very rewarding. Modal editing is pretty amazing.
 
 I use [ayu theme](https://github.com/ayu-theme/ayu-vim) across all my editors, including neovim:
 
@@ -47,12 +47,10 @@ I am also using [ayu theme](https://github.com/mbadolato/iTerm2-Color-Schemes/bl
 <img src="https://i.imgur.com/JfAUnKm.png" width="500" alt="img">
 
 ## Zsh aliases
-I use many aliases to get around my system as fast as possible.
-
-Similar to my Karabiner config, I keep a list of all aliases that I have with their descriptions in an interactive mind map you can view [here](https://my.mindnode.com/upnFQeGrQCPwgCf3pfS4FgywQUj5sXNLxb1awm1D).
+I use many aliases to get around my system as fast as possible. You can view them all [here](https://github.com/nikitavoloboev/dotfiles/blob/master/zsh/aliases/alias.zsh).
 
 ## Interesting aliases and zsh functions
-There is quite a lot of awesome programs I use from my command line (you can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps-) for some of them).
+There is quite a lot of awesome programs I use from my command line (you can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps) for some of them).
 
 However I also really love customising my shell experience with various aliases and zsh functions. Here are some that I like and use very often:
 
