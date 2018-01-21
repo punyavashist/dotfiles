@@ -1,6 +1,6 @@
 # Only run once (exec zsh won't run what's inside)
 if (( ! $+ETC_ZSH_ZSHRC )); then
-    # load environment
+    # Load environment
     source ~/.dotfiles/zsh/env.zsh
 fi
 export ETC_ZSH_ZSHRC=1

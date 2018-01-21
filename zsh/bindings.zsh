@@ -3,19 +3,18 @@
 # Vi movement in iTerm
 set -o vi
 
-bindkey -e # TODO: not sure 
+bindkey -e # TODO: not sure
 
 bindkey '⌃T' edit-command-line
 
-
 # _Bindings
-bindkey -M viins "^w" beginning-of-line
+bindkey -M viins "^f" beginning-of-line
 bindkey -M viins "^e" end-of-line
 bindkey -M vicmd "^[" vi-insert
 bindkey -sM viins "^v" ./
 bindkey '^N' forward-word
 bindkey '^B' backward-word
-bindkey "^F" history-incremental-search-backward
+# bindkey "^F" history-incremental-search-backward
 
 # _FZF
 # bind '"\er": redraw-current-line'
