@@ -836,7 +836,7 @@ end tell
 </url>
 </vkopenurldef>
 
-<!-- _timer def-->
+<!-- _Timer def-->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_TIMER_10</name>
 <url type="shell">
@@ -1756,6 +1756,16 @@ end tell
 
 <!-- _KM lists open -->
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_LIST_WEBSITES</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "list: websites"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_LIST_COMMAND_LINE_TOOLS</name>
 <url type="shell">
 osascript -e '
@@ -1786,13 +1796,23 @@ end tell
 </url>
 </vkopenurldef>
 
-<!-- _KM wiki edit-->
+<!-- _KM wiki -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_WIKI_RULES</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "wiki: rules"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_WIKI_PROCESSES</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "wiki: processes"
 end tell
 '
 </url>
@@ -3236,6 +3256,14 @@ tell application "Alfred 3" to run trigger "gists" in workflow "nikivi.search-th
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LOBSTERS</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "lobsters" in workflow "nikivi.search-the-web" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_VOLUME_ADJUST</name>
 <url type="shell">
 osascript -e '
@@ -3543,7 +3571,7 @@ tell application "Alfred 3" to run trigger "wiki" in workflow "nikivi.a.search.f
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MY_GITBOOKS_WIKI</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "my wiki" in workflow "nikivi.search-the-web" with argument ""
+tell application "Alfred 3" to run trigger "gitbook wiki" in workflow "nikivi.search-the-web" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -5823,6 +5851,11 @@ KeyCode::VK_OPEN_URL_KM_WIKI_RULES
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::C,
+KeyCode::VK_OPEN_URL_KM_WIKI_PROCESSES
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::G,
 KeyCode::VK_OPEN_URL_KM_WIKI_MY_GITHUB
 </autogen>
@@ -6131,6 +6164,11 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LIBRARY
 __KeyToKey__
 KeyCode::B,
 KeyCode::VK_OPEN_URL_ALFRED_PINBOARD
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::F19,
+KeyCode::VK_OPEN_URL_ALFRED_COMMIT_FOLDERS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6998,7 +7036,6 @@ KeyCode::N,
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v35</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::N,
 </autogen>
@@ -7010,13 +7047,8 @@ KeyCode::1, ModifierFlag::OPTION_L,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::E,
-KeyCode::VK_OPEN_URL_ALFRED_LEARN_ANYTHING
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::O,
-KeyCode::VK_OPEN_URL_ALFRED_AWESOME_LISTS
+KeyCode::X,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LOBSTERS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7051,12 +7083,7 @@ KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
 <autogen>
 __KeyToKey__
 KeyCode::F19,
-KeyCode::VK_OPEN_URL_ALFRED_COMMIT_FOLDERS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::F19,
-KeyCode::8, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+KeyCode::VK_OPEN_URL_ALFRED_LEARN_ANYTHING
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7120,7 +7147,7 @@ KeyCode::VK_OPEN_URL_ALFRED_STACK_OVERFLOW_SEARCH_SUGGESTIONS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
+KeyCode::E,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SUBREDDITS
 </autogen>
 <autogen>
@@ -7147,11 +7174,6 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_INDEXED_GITHUB
 __KeyToKey__
 KeyCode::P,
 KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_MAPS_SEARCH
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::COMMAND_L,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7407,6 +7429,11 @@ KeyCode::V,
 __BlockUntilKeyUp__ KeyCode::V,
 </autogen>
 
+<autogen>
+__KeyToKey__
+KeyCode::DOT,
+KeyCode::VK_OPEN_URL_ALFRED_VOLUME_ADJUST
+</autogen>
 <autogen>
 __KeyToKey__
 KeyCode::SPACE,
@@ -7951,6 +7978,11 @@ __BlockUntilKeyUp__ KeyCode::QUOTE,
 __KeyToKey__
 KeyCode::T,
 KeyCode::VK_OPEN_URL_KM_LIST_COMMAND_LINE_TOOLS
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::W,
+KeyCode::VK_OPEN_URL_KM_LIST_WEBSITES
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9350,7 +9382,7 @@ KeyCode::SLASH
 <autogen>
 __KeyToKey__
 KeyCode::O,
-KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+KeyCode::VK_OPEN_URL_KM_MANIPULATE_CLIPBOARD
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10359,12 +10391,6 @@ __BlockUntilKeyUp__ KeyCode::F,
 
 <autogen>
 __SimultaneousKeyPresses__
-KeyCode::K, KeyCode::L,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
-</autogen>
-<autogen>
-__SimultaneousKeyPresses__
 KeyCode::J, KeyCode::K,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
 KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
@@ -10378,11 +10404,6 @@ KeyCode::VK_OPEN_URL_ALFRED_SYMBOLS_SEARCH
 __KeyToKey__
 KeyCode::SPACE,
 KeyCode::M, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::3,
-KeyCode::VK_OPEN_URL_KM_MANIPULATE_CLIPBOARD
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11097,22 +11118,15 @@ KeyCode::A,
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::A,
 </autogen>
 
 <autogen>
 __SimultaneousKeyPresses__
-KeyCode::K, KeyCode::L,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__SimultaneousKeyPresses__
 KeyCode::J, KeyCode::K,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
+KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11885,13 +11899,8 @@ KeyCode::VK_OPEN_URL_ALFRED_UNITS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::O,
-KeyCode::VK_OPEN_URL_ALFRED_NPM_SEARCH
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::I,
-KeyCode::VK_OPEN_URL_ALFRED_VOLUME_ADJUST
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11932,13 +11941,12 @@ KeyCode::BACKQUOTE,
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v40, ModifierFlag::MY_LAUNCHER_MODE,
 @end
 @begin
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE
+KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
 @end
 </autogen>
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v40</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::BACKQUOTE,
 </autogen>
@@ -12194,7 +12202,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::O,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_INSIDE_MINDMAPS
 </autogen>
 </item>
 
@@ -12205,7 +12213,7 @@ KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTI
 __SimultaneousKeyPresses__
 KeyCode::J, KeyCode::O,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_INSIDE_MINDMAPS
+KeyCode::VK_OPEN_URL_ALFRED_AWESOME_LISTS
 </autogen>
 </item>
 
@@ -12282,7 +12290,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::M,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_CHROME_HISTORY
+KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 </autogen>
 </item>
 
@@ -12348,7 +12356,7 @@ KeyCode::VK_OPEN_URL_ALFRED_OPEN_DOCUMENTATION
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SAFARI_FOLDERS
+KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
 </autogen>
 </item>
 
@@ -12392,7 +12400,7 @@ KeyCode::VK_OPEN_URL_ALFRED_AMAZON_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::H, KeyCode::O,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_XCODE
+KeyCode::VK_OPEN_URL_ALFRED_LEARN_ANYTHING
 </autogen>
 </item>
 

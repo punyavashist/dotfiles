@@ -89,17 +89,18 @@ alias h='python3 -m http.server'
 alias cra='npx create-react-app'
 alias lic='legit'
 
-# _flask
+# _Flask
 alias fr='flask run'
 
-# _python
+# _Python
 alias p='python3'
 alias p2='python'
 alias pi='pip install'
 alias rv='virtualenv -p /usr/local/bin/python3'
 
-# _alfred
+# _Alfred
 alias wf='alfred build'
+alias wfs='workflow-install -s source' # Symlink source dir to Alfred
 alias wfl='alfred link'
 alias wfa='alfred pack -o ~/Desktop'
 
