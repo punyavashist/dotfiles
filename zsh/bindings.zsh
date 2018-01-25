@@ -1,20 +1,30 @@
 # Zsh keyboard bindings.
 
-# Vi movement in iTerm
-set -o vi
+# _Option
+# bindkey -s '\ei' '^Ua^M' # alt+i - Run 'a' command
+# bindkey -s '\es' '^Asudo ^E' # alt+s - Prepend 'sudo ' to current command and move to EOL
+# bindkey -s '\el' '^Ucd ..; a^M' # alt+u - Move to parent directory and list it
+# bindkey -s '\eU' '^Ucd ..^M' # alt+U - Move to parent directory
+bindkey '\e.' insert-last-word # alt+. - Insert last argument of previous command
 
+set -o vi # Vi movement in iTerm
+
+# _Keymaps
 bindkey -e # Switch to emacs keymap
 bindkey -v # Switch to vim keymap
 
-# _Bindings
+# _Control
 bindkey "^f" beginning-of-line
 bindkey "^g" end-of-line
-
+bindkey "^e" kill-whole-line
+bindkey "\eo" describe-key-briefly
+# bindkey '^:' forward-word # Move back a word
+# bindkey '^o' backward-word # Move forward a word
 # bindkey -M viins "^o" beginning-of-line
 bindkey -M vicmd "^[" vi-insert
-bindkey -sM viins "^v" ./
-bindkey '^N' forward-word
-bindkey '^B' backward-word
+# bindkey -sM viins "^v" ./
+# bindkey '^N' forward-word
+# bindkey '^B' backward-word
 # bindkey '⌃T' edit-command-line
 # bindkey "^F" history-incremental-search-backward
 

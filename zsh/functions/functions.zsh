@@ -1,6 +1,6 @@
 # Zsh functions
 
-# T - Tester function (I change it often).
+# T - Tester function (I change it often)
 function T(){
   git add contributing.md
   git commit -m "Improve contributing"
@@ -203,16 +203,17 @@ curl -O "$1"
 # cw - Copy working dir.
 cw() { printf %s "$PWD" | pbcopy; }
 
-# md <dir-name> - Craete directory and cd into it.
+# md <dir-name> - Create directory and cd into it.
 function md {
   [[ -n "$1" ]] && mkdir -p "$1" && builtin cd "$1"
 }
 
-# da - cd to ~/.dotfiles
-# da <dir> - Change to a directory and list its contents.
+# da - cd a dir back and exa (ls in rust)
+# da <dir> - Change to a directory and list its contents
 function da {
   if [ $# -eq 0 ]; then
-    cd ~/.dotfiles
+    cd ..
+    exa
   else
     builtin cd "$argv[-1]" && exa "${(@)argv[1,-2]}"
   fi

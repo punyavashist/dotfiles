@@ -92,6 +92,9 @@ alias lic='legit'
 # _Flask
 alias fr='flask run'
 
+# _App
+alias to='gittower .' # Open current dir in Tower
+
 # _Python
 alias p='python3'
 alias p2='python'
@@ -249,7 +252,7 @@ alias mem='top -o rsize' # Memory
 # _macos
 alias bb='pbcopy'
 
-# _text editors
+# _Text editors
 alias cr='open -a CodeRunner'
 alias xx='open -a Xcode'
 alias x.='open -a Xcode .'

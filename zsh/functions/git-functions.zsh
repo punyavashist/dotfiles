@@ -7,7 +7,12 @@ function gz(){
   git push
 }
 
-# gw <msg> - Commit all changes with <msg>
+# geb <branch-name> - create new branch
+function geb(){
+  git checkout -b $1
+}
+
+# gw <msg> - commit all changes with <msg>
 function gw() {
     git add .
     git commit -m "${(j: :)@}"
@@ -58,7 +63,7 @@ function ggs() {
 
 # gc <commit-msg> - write quick commit message
 function gc() {
-    git commit -m "$@"
+    git commit -m "$*"
 }
 
 # g. - cd to root of .git project

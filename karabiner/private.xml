@@ -1766,6 +1766,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_LIST_BOOKS</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "list: books"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_LIST_COMMAND_LINE_TOOLS</name>
 <url type="shell">
 osascript -e '
@@ -5505,6 +5515,11 @@ KeyCode::F2, ModifierFlag::COMMAND_L
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::SEMICOLON,
+KeyCode::VK_OPEN_URL_KM_MANIPULATE_CLIPBOARD
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::C,
 KeyCode::3, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
 </autogen>
@@ -7976,7 +7991,7 @@ __BlockUntilKeyUp__ KeyCode::QUOTE,
 
 <autogen>
 __KeyToKey__
-KeyCode::T,
+KeyCode::C,
 KeyCode::VK_OPEN_URL_KM_LIST_COMMAND_LINE_TOOLS
 </autogen>
 <autogen>
@@ -7987,6 +8002,11 @@ KeyCode::VK_OPEN_URL_KM_LIST_WEBSITES
 <autogen>
 __KeyToKey__
 KeyCode::B,
+KeyCode::VK_OPEN_URL_KM_LIST_BOOKS
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::G,
 KeyCode::VK_OPEN_URL_KM_LIST_BLOGS
 </autogen>
 <autogen>
@@ -8449,7 +8469,7 @@ KeyCode::Z, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
 </item>
 
 <item>
-<name>general: sticky 2 - moving more</name>
+<name>general: sticky 2 - moving</name>
 <identifier>private.launcher_mode_open_apps_v93</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -9024,7 +9044,7 @@ KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_DAYONE
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::F,
+KeyCode::J,
 KeyCode::VK_OPEN_URL_KM_EDIT_GIT_FUNCTIONS
 </autogen>
 <autogen>
@@ -9039,7 +9059,7 @@ KeyCode::VK_OPEN_URL_KM_EDIT_ZSHRC
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::L,
+KeyCode::K,
 KeyCode::VK_OPEN_URL_KM_EDIT_ASK_CREATE_SHARE
 </autogen>
 <autogen>
@@ -9378,11 +9398,6 @@ __KeyToKey__
 KeyCode::P,
 KeyCode::DOT,
 KeyCode::SLASH
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::O,
-KeyCode::VK_OPEN_URL_KM_MANIPULATE_CLIPBOARD
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10120,19 +10135,18 @@ KeyCode::T,
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v14</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::T,
 </autogen>
 
 <autogen>
 __KeyToKey__
-KeyCode::2,
+KeyCode::3,
 KeyCode::E, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::3,
+KeyCode::4,
 KeyCode::N, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, 
 </autogen>
 <autogen>
@@ -10674,7 +10688,7 @@ KeyCode::2,
 KeyCode::2, ModifierFlag::COMMAND_L
 </autogen>
 <autogen>
-__KeyDownUpToKey__
+__KeyToKey__
 KeyCode::3,
 KeyCode::3, ModifierFlag::COMMAND_L
 </autogen>
@@ -11879,7 +11893,7 @@ __BlockUntilKeyUp__ KeyCode::B,
 
 <autogen>
 __KeyToKey__
-KeyCode::M,
+KeyCode::I,
 KeyCode::VK_OPEN_URL_KM_MIND_RESEARCH
 </autogen>
 <autogen>
@@ -11899,17 +11913,12 @@ KeyCode::VK_OPEN_URL_ALFRED_UNITS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::SEMICOLON,
 KeyCode::VK_OPEN_URL_KM_MIND_KARABINER
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::L,
+KeyCode::M,
 KeyCode::VK_OPEN_URL_KM_MIND_MACOS
 </autogen>
 <autogen>
@@ -11941,7 +11950,7 @@ KeyCode::BACKQUOTE,
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v40, ModifierFlag::MY_LAUNCHER_MODE,
 @end
 @begin
-KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE
 @end
 </autogen>
 </item>
@@ -12367,7 +12376,7 @@ KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
 __SimultaneousKeyPresses__
 KeyCode::N, KeyCode::O,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
+KeyCode::VK_OPEN_URL_ALFRED_SAFARI_FOLDERS
 </autogen>
 </item>
 
@@ -12378,7 +12387,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
 __SimultaneousKeyPresses__
 KeyCode::M, KeyCode::O,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_EXPLAIN_SHELL
+KeyCode::VK_OPEN_URL_ALFRED_CHROME_HISTORY
 </autogen>
 </item>
 
