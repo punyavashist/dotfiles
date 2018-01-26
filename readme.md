@@ -27,7 +27,7 @@ I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/m
 ## Neovim
 I am [still learning vim](https://wiki.nikitavoloboev.xyz/text-editors/vim/Vim.html) but the this journey has been very rewarding. Modal editing is pretty amazing.
 
-I use [ayu theme](https://github.com/ayu-theme/ayu-vim) across all my editors, including neovim:
+My Neovim config can be seen [here](nvim/init.vim). I use [ayu theme](https://github.com/ayu-theme/ayu-vim) across all my editors, including neovim:
 
 <img src="https://i.imgur.com/nL5NGpJ.png" width="500" alt="img">
 

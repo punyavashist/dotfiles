@@ -487,6 +487,12 @@ nmap <localleader>ll <plug>(vimtex-compile-ss)
 
 nmap <Leader>m :Neomake<CR>
 
+" _Easymotion
+nmap J <Plug>(easymotion-j)
+nmap K <Plug>(easymotion-k)
+vmap J <Plug>(easymotion-j)
+vmap K <Plug>(easymotion-k)
+
 "let g:sneak#s_next = 1
 "let g:sneak#use_ic_scs = 1
 "let g:sneak#label = 1
@@ -495,17 +501,11 @@ nmap <Leader>m :Neomake<CR>
 "autocmd ColorScheme * hi SneakScope guifg=red guibg=yellow ctermfg=red ctermbg=yellow
 
 
-" ~~~ Autocmd ~~~
-
-" Filetype-specific keybinds(TODO:migrate to /ft)
+" Filetype-specific keybinds TODO: migrate to /ft
 au FileType sh         inoremap <buffer> ## <Esc>79i#<Esc>yypO#<Space>
 au FileType conf       inoremap <buffer> ## <Esc>79i#<Esc>yypO#<Space>
 
 au FileType dirvish call fugitive#detect(@%)
-
-" Layout
-"au vimenter * if argc() == 0 | NERDTree | wincmd l | endif
-"au bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Func
 au FocusLost * :wa
@@ -525,12 +525,6 @@ nnoremap gb :ls<CR>:buffer<Space>
 set guicursor=n-v-c:hor20,i-ci:ver20 " Make cursor block in insert mode and underline in normal mode
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T'] " Trigger a highlight in the appropriate direction when pressing these keys
 let g:qs_highlight_on_keys = ['f', 'F'] " Trigger a highlight only when pressing f and F.
-
-" _Easymotion
-nmap J <Plug>(easymotion-j)
-nmap K <Plug>(easymotion-k)
-vmap J <Plug>(easymotion-j)
-vmap K <Plug>(easymotion-k)
 
 noremap Q @q
 vnoremap <D-c> y
