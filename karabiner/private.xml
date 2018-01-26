@@ -1912,6 +1912,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_MIND_VIMRC</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "mind: vimrc"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_MIND_RESEARCH</name>
 <url type="shell">
 osascript -e '
@@ -11926,8 +11936,13 @@ __BlockUntilKeyUp__ KeyCode::B,
 
 <autogen>
 __KeyToKey__
-KeyCode::I,
+KeyCode::L,
 KeyCode::VK_OPEN_URL_KM_MIND_RESEARCH
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::I,
+KeyCode::VK_OPEN_URL_KM_MIND_VIMRC
 </autogen>
 <autogen>
 __KeyToKey__
