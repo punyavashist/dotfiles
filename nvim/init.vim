@@ -1,25 +1,115 @@
-" _Testing 
+" Sanity check
+if !has('nvim')
+    Plug 'tpope/vim-sensible'
+endif
+
+" Autocomplete engine
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+
+" _Install plugins
+call plug#begin()
+" Visual
+"Plug 'bling/vim-bufferline' " TODO: doesn't show anything
+"Plug 'ryanoasis/vim-devicons' TODO: doesn't work
+
+" Code
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') } " Autocomplete
+Plug 'zchee/deoplete-go', { 'do': 'make'} " Go autocomplete
+Plug 'zchee/deoplete-jedi' " Autocompletion and static analysis
+"Plug 'Shougo/neoinclude.vim' " Snippets
+"Plug 'Shougo/neosnippet.vim' " Community snippets
+"Plug 'Shougo/neosnippet-snippets'
+Plug 'benekastah/neomake' " Asynchronous linting and make framework TODO: use it
+Plug 'honza/vim-snippets' " Community snippets
+Plug 'scrooloose/nerdcommenter' " Quick comments TODO: use it
+Plug 'Chiel92/vim-autoformat' " Easy code formatting TODO: use it
+
+" Syntax
+Plug 'isobit/vim-caddyfile' " Caddyfile syntax support
+
+" Moving
+Plug 'easymotion/vim-easymotion' " Vim motions on speed
+Plug 'haya14busa/incsearch.vim' " Improved incremental searching
+Plug 'haya14busa/incsearch-easymotion.vim'
+
+" Utility
+Plug 'tpope/vim-repeat' " Enable repeating supported plugin maps
+Plug 'tpope/vim-surround' " Quoting/parenthesizing made simple
+Plug 'godlygeek/tabular' " Text filtering and alignment
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim' " fzf fuzzy search
+"Plug 'scrooloose/nerdtree' " Sidebar view
+"Plug 'Xuyuanp/nerdtree-git-plugin'
+"Plug 'tpope/vim-vinegar'
+Plug 'justinmk/vim-dirvish' " Directory viewer TODO: use it
+Plug 'justinmk/vim-sneak'
+"Plug 'jiangmiao/auto-pairs' " TODO: make it not work in vimrc only
+"Plug 'tpope/vim-unimpaired' " TODO: doesn't work
+Plug 'terryma/vim-multiple-cursors'
+
+" Git
+Plug 'tpope/vim-fugitive' " Git wrapper
+Plug 'mhinz/vim-signify' " 
+Plug 'airblade/vim-gitgutter' " Show git diff in the gutter (sign column)
+Plug 'gregsexton/gitv' 
+
+Plug 'christoomey/vim-titlecase' 
+Plug 'unblevable/quick-scope'
+Plug 'ayu-theme/ayu-vim' " Theme
+"Plug 'mbbill/undotree'
+Plug 'wakatime/vim-wakatime'
+Plug 'junegunn/heytmux'
+Plug 'sbdchd/neoformat'
+Plug 'danro/rename.vim' " Allow to :Rename files
+Plug 'rking/ag.vim' " Lightining fast :Ag searcher
+Plug 'sheerun/vim-polyglot'
+Plug 'chriskempson/base16-vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'szw/vim-g' " Search selected text in google
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'rizzatti/dash.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
+Plug 'vim-airline/vim-airline' " Nice looking status bar on the bottom
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'fatih/vim-go'
+Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+call plug#end()
+
+" _Testing
+let g:sneak#s_next = 1
+map z/ <Plug>(incsearch-easymotion-/)
+map z? <Plug>(incsearch-easymotion-?)
+map zg/ <Plug>(incsearch-easymotion-stay)
+
+" See open buffers
+nnoremap gb :ls<CR>:buffer<Space> 
 set mouse=a
-" TODO: Make it so in visual select the char being hovered over is filled block
-set guicursor=n-v-c:hor20,i-ci:ver20
-"autocmd VimLeave * set guicursor=n-v-c:hor20
+set guicursor=n-v-c:hor20,i-ci:ver20 " Make cursor block in insert mode and underline in normal mode
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T'] " Trigger a highlight in the appropriate direction when pressing these keys
+let g:qs_highlight_on_keys = ['f', 'F'] " Trigger a highlight only when pressing f and F.
 
-" Trigger a highlight in the appropriate direction when pressing these keys:
-let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
-
-" Trigger a highlight only when pressing f and F.
-let g:qs_highlight_on_keys = ['f', 'F']
+" _Easymotion
 nmap J <Plug>(easymotion-j)
 nmap K <Plug>(easymotion-k)
 vmap J <Plug>(easymotion-j)
 vmap K <Plug>(easymotion-k)
+
 noremap Q @q
 vnoremap <D-c> y
-set timeout timeoutlen=1000 ttimeoutlen=10        " NOTE: Faster esc - maybe
-set showcmd                                       " Show me what I'm typing
-set autowrite                                     " Automatically save before :next, :make etc
-set ignorecase                                    " Search case insensitive:
-set smartcase                                     " .. but not when search pattern contains upper case characters
+set timeout timeoutlen=1000 ttimeoutlen=10 " TODO: ?
+set showcmd " Show me what I'm typing
+set autowrite " Automatically save before :next, :make etc
+set ignorecase " Search case insensitive:
+set smartcase " .. but not when search pattern contains upper case characters
 set nocursorcolumn
 set nocursorline
 set wrap
@@ -28,82 +118,32 @@ set formatoptions=qrn1
 set notimeout
 set ttimeout
 set ttimeoutlen=10
-set nobackup                                      " Don't create annoying backup files
-set path=+**                                      " Search down into subfolders
-
-"  _Install
-call plug#begin() " plugins to use
-
-" Autocomplete engine
-function! DoRemote(arg)
-  UpdateRemotePlugins
-endfunction
-
-" _Plugs
-Plug 'easymotion/vim-easymotion'
-Plug 'isobit/vim-caddyfile'
-Plug 'christoomey/vim-titlecase' 
-Plug 'unblevable/quick-scope'
-Plug 'ayu-theme/ayu-vim'          " theme
-"Plug 'jiangmiao/auto-pairs' 
-"Plug 'mbbill/undotree'
-Plug 'wakatime/vim-wakatime'
-Plug 'junegunn/heytmux'
-Plug 'sbdchd/neoformat'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-Plug 'danro/rename.vim'                             " Allow to :Rename files
-Plug 'rking/ag.vim'                                 " Lightining fast :Ag searcher
-Plug 'sheerun/vim-polyglot'
-Plug 'chriskempson/base16-vim'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'junegunn/vim-easy-align'
-Plug 'junegunn/limelight.vim'
-Plug 'junegunn/goyo.vim'
-Plug 'pangloss/vim-javascript'
-Plug 'zchee/deoplete-jedi'
-Plug 'tpope/vim-surround' 
-Plug 'szw/vim-g'                                    " Search selected text in google
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'rizzatti/dash.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-repeat'
-Plug 'vim-airline/vim-airline'                      " Nice looking status bar on the bottom
-Plug 'vim-airline/vim-airline-themes'
-Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'fatih/vim-go'
-Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-Plug 'zchee/deoplete-go', { 'do': 'make'}
-Plug 'carlitux/deoplete-ternjs'                    " JS autocomplete
-call plug#end()
+set nobackup " Don't create annoying backup files
+set path=+** " Search down into subfolders
 
 " _Basic vim config
-"  TODO: Check if some of these settings come as default with neovim
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1                                          " Nice looking editor
-set clipboard^=unnamed                                " Copy text to system clipboard
+" TODO: Check if some of these settings come as default with neovim
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " Nice looking editor
+set clipboard^=unnamed  " Copy text to system clipboard
 set gdefault " Always do global substitutions
 set clipboard^=unnamedplus
-set title                                         " Set terminal title
+set title " Set terminal title
 set whichwrap+=<,>,[,]
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-set completeopt-=preview                          " No annoying scratch preview above
-set expandtab                                     " Spaces on tabs
+set completeopt-=preview " No annoying scratch preview above
+set expandtab " Spaces on tabs
 set shiftwidth=4
 set softtabstop=2
-set backspace=indent,eol,start                    " Makes backspace key more powerful
+set backspace=indent,eol,start " Makes backspace key more powerful
 set undolevels=1000
-set smartindent                                   " Indentation
-set shortmess=Ia                                  " Disable startup message
+set smartindent " Indentation
+set shortmess=Ia " Disable startup message
 
 " Open help vertically
 command! -nargs=* -complete=help Help vertical belowright help <args>
 autocmd FileType help wincmd L
 
-:autocmd InsertEnter,InsertLeave * set cul!       " Notify on mode change visually
+:autocmd InsertEnter,InsertLeave * set cul! " Notify on mode change visually
 
 "  _Comma mapping
 
@@ -134,68 +174,69 @@ nnoremap <leader>vimrc :tabe ~/.dotfiles/vim/nvim/nvimrc<cr>
 
 " _Single letter 
 " Save
-nmap <Leader>w    :w<CR>   
+nmap <Leader>w :w<CR> 
 " Search lines with fzf
-nnoremap <silent> <Leader>l        :Lines<CR>
+nnoremap <silent> <Leader>n :Lines<CR>
 " Quit
-nnoremap <Leader>q    :q<CR>  
+nnoremap <Leader>q :q<CR>  
 " Yank whole file
-nnoremap <Leader>y    :%y<CR> 
+nnoremap <Leader>y :%y<CR> 
 " Source vimrc
-nnoremap <Leader>f   :source ~/.dotfiles/nvim/init.vim<CR> 
+nnoremap <Leader>f :source ~/.dotfiles/nvim/init.vim<CR> 
 " Search files inside current dir
-nnoremap <Leader>e    :Files<CR> 
+nnoremap <Leader>e :Files<CR> 
 " Switch dir for fzf searching to current dir
 map <Leader>cd :lcd %:p:h<CR>
 " Yank xml block to next line
-nnoremap <Leader>aw    vat:t'><CR>'[<Esc><CR> 
+nnoremap <Leader>aw  vat:t'><CR>'[<Esc><CR> 
 " Yank function block
-nnoremap <Leader>yf    :exe search('^function','cb')';/}/y'<CR> 
+nnoremap <Leader>yf :exe search('^function','cb')';/}/y'<CR> 
 " Dash doc lookup
-nnoremap <Leader>at   :Dash<CR>
-nnoremap <Leader>aa   :wa<CR>
-nnoremap <Leader>vq   :wqall<CR>
-nnoremap <Leader>vQ   :qa<CR>
+nnoremap <Leader>at :Dash<CR>
+" Write all changed buffers
+nnoremap <Leader>aa :wa<CR>
+" Write all changed buffers and exit vim
+nnoremap <Leader>vq :wqall<CR>
+nnoremap <Leader>vQ :qa<CR>
 " Install plugins
-nnoremap <Leader>ii   :PlugInstall<CR>
+nnoremap <Leader>ii :PlugInstall<CR>
 " Check vim health
-nnoremap <Leader>ih   :CheckHealth<CR>
+nnoremap <Leader>ih :CheckHealth<CR>
 " Move 10 lines down (for karabiner sticky keys)
-nnoremap <Leader>o   29jzz
+nnoremap <Leader>o 29jzz
 " Update plugins
-nnoremap <Leader>ia   :PlugUpdate<CR>
-nnoremap <Leader>vm   :make<CR>
+nnoremap <Leader>ia :PlugUpdate<CR>
+nnoremap <Leader>vm :make<CR>
 " Run commands in new splits
 nnoremap <Leader>tt :tabedit <Bar> term.
 nnoremap <Leader>ts :split <Bar> term.
 nnoremap <Leader>tv :vsplit <Bar> term.
-nnoremap <silent><expr> <C-L> winnr()==g:NERDTree.GetWinNum() ? ":NERDTreeClose\<CR>" : ":NERDTreeFocus\<CR>"
+"nnoremap <silent><expr> <C-L> winnr()==g:NERDTree.GetWinNum() ? ":NERDTreeClose\<CR>" : ":NERDTreeFocus\<CR>"
 nnoremap <C-s> :w<cr>
 nnoremap <Leader>pi :PlugInstall<CR>
 nnoremap <Leader>pu :PlugUpdate<CR>
-" --------------------------------------
-"  _Command + shift mapping
+
+" _Command + shift mapping
 nnoremap <D-S-F> :Ack<space>
 
-" -------------------------------------
 "  _Basic UI config
-" -------------------------------------
-set relativenumber                    " Relative to current posion line numbers
-set number                            " Show line numbers
-set cursorline                        " Highlight current line
+set relativenumber " Relative to current posion line numbers
+set number " Show line numbers
+set cursorline  " Highlight current line
 let python_highlight_all = 1
 set showmatch
-set tabstop=4                         " Default indentation is 4 spaces long and uses tabs, not spaces
+set tabstop=4 " Default indentation is 4 spaces long and uses tabs, not spaces
 set matchtime=2
-set background=dark                   " Set night mode
+set background=dark " Set night mode
 
 "  _Settings
-let g:deoplete#enable_at_startup = 1               " Activate deoplete
+let g:deoplete#enable_at_startup = 1 " Activate deoplete
 
 " _Theme
-set termguicolors     " Enable true colors support
+set termguicolors " Enable true colors support
 let ayucolor="dark" " For mirage version of theme
 colorscheme ayu
+let g:airline_theme='minimalist' " Status bar theme
 
 " Autocomplete with tab
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"

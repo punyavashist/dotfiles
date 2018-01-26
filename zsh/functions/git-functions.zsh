@@ -7,6 +7,13 @@ function gz(){
   git push
 }
 
+# gzc - Improve contributing commit
+function gzc(){
+  git add contributing.md
+  git commit -m "Improve contributing"
+  git push
+}
+
 # geb <branch-name> - create new branch
 function geb(){
   git checkout -b $1

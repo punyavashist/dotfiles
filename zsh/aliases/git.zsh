@@ -1,5 +1,5 @@
 # Git aliases
-# _general
+# _General
 alias gj='open `git config remote.origin.url`'
 alias gre='git rebase -i HEAD~4'
 alias gsh='git stash'
@@ -37,7 +37,7 @@ alias gdn='git diff --name-only'
 
 # _status
 alias gs='git status --short'
-alias gss='git show --word-diff=color'
+alias gss='git show --word-diff=color' # See changes made
 
 
 alias ggn='git_add_origin_and_origin_push'

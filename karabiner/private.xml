@@ -906,6 +906,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_PROJ_DOTFILES</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "proj: dotfiles"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_STOP_ALL_MACROS</name>
 <url type="shell">
 osascript -e '
@@ -1813,6 +1823,16 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "wiki: rules"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_WIKI_MONTHLY</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "wiki: monthly"
 end tell
 '
 </url>
@@ -3262,6 +3282,14 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "gists" in workflow "nikivi.search-the-web" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SIMPLE_WIKI</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "simple" in workflow "net.deanishe.alfred-searchio.old" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -5871,6 +5899,11 @@ KeyCode::VK_OPEN_URL_KM_WIKI_PROCESSES
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::M,
+KeyCode::VK_OPEN_URL_KM_WIKI_MONTHLY
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::G,
 KeyCode::VK_OPEN_URL_KM_WIKI_MY_GITHUB
 </autogen>
@@ -7058,37 +7091,32 @@ __BlockUntilKeyUp__ KeyCode::N,
 <autogen>
 __KeyToKey__
 KeyCode::1,
-KeyCode::1, ModifierFlag::OPTION_L, 
+KeyCode::VK_OPEN_URL_TIMER_10
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::2,
+KeyCode::VK_OPEN_URL_TIMER_20
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::3,
+KeyCode::VK_OPEN_URL_TIMER_30
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::4,
+KeyCode::VK_OPEN_URL_TIMER_40
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::5,
+KeyCode::VK_OPEN_URL_TIMER_50
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::X,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LOBSTERS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::2,
-KeyCode::2, ModifierFlag::OPTION_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::3,
-KeyCode::3, ModifierFlag::OPTION_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::4,
-KeyCode::4, ModifierFlag::OPTION_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::5,
-KeyCode::5, ModifierFlag::OPTION_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::6,
-KeyCode::6, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7241,6 +7269,36 @@ __BlockUntilKeyUp__ KeyCode::M,
 
 <autogen>
 __KeyToKey__
+KeyCode::1,
+KeyCode::1, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::2,
+KeyCode::2, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::3,
+KeyCode::3, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::4,
+KeyCode::4, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::5,
+KeyCode::5, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::6,
+KeyCode::6, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::F19,
 KeyCode::8, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
 </autogen>
@@ -7253,31 +7311,6 @@ KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW
 __KeyToKey__
 KeyCode::W,
 KeyCode::VK_OPEN_URL_ALFRED_TIMER_START
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::1,
-KeyCode::VK_OPEN_URL_TIMER_10
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::2,
-KeyCode::VK_OPEN_URL_TIMER_20
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::3,
-KeyCode::VK_OPEN_URL_TIMER_30
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::4,
-KeyCode::VK_OPEN_URL_TIMER_40
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::5,
-KeyCode::VK_OPEN_URL_TIMER_50
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11972,6 +12005,11 @@ KeyCode::VK_OPEN_URL_KM_EDIT_TEST_GO_MAIN
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::J,
+KeyCode::VK_OPEN_URL_KM_PROJ_DOTFILES
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::I,
 KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY
 </autogen>
@@ -12376,7 +12414,7 @@ KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
 __SimultaneousKeyPresses__
 KeyCode::N, KeyCode::O,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SAFARI_FOLDERS
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SIMPLE_WIKI
 </autogen>
 </item>
 

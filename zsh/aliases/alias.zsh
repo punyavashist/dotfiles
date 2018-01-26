@@ -1,5 +1,12 @@
 # Aliases
 
+# _Testing
+
+# _Nix
+alias ni='nix-env -i'
+alias ne='nix-env -e'
+alias nu='nix-env -u'
+
 # _General
 alias g='hub' # Wrapper over git
 alias aet='subl contributing.md'
@@ -139,17 +146,18 @@ alias he='heroku'
 
 # _npm - depracated
 alias np='npm'
-alias ni='npm install'
+# alias ni='npm install'
 alias ns='npm start'
 alias nls='npm ls'
-alias nu='npm update'
+# alias nu='npm update'
 alias nt='npm init'
 alias nig='npm install -g'
 alias nb='npm run build'
 alias nr='npm run'
 
-# _go
+# _Go
 alias o='go'
+alias org='richgo'
 alias ot='playgo'
 alias or='go run'
 alias oo='go install'
@@ -279,7 +287,7 @@ alias ei='nvim index.js'
 alias egi='nvim .gitignore'
 alias ej='nvim package.json'
 
-# _config
+# _Edit config
 alias ea='nvim ~/.dotfiles/zsh/aliases/alias.zsh' # alias
 alias eh='nvim ~/.ssh/config' # ssh config
 alias ejj='nvim ~/.dotfiles/intellij/ideavimrc' # idea
@@ -299,19 +307,7 @@ alias et='nvim ~/.dotfiles/tmux/tmux.conf.local' # tmux config
 alias ezb='nvim ~/.dotfiles/zsh/zsh/bindings.zsh' # shell keyboard bindings
 
 # _cd places
-# _projects
-alias daq='cd ~/code/xcode/projects/macos/quoter'
-alias dla='cd ~/src/github/learn-anything'
-alias dz='cd ~/oss/nikivi/personal/knowledge'
-
-# _documents
-alias dap='cd ~/Documents/d.\ app'
-alias dte='cd ~/Documents/d.\ app/tester'
 alias doc='cd ~/Documents'
-alias dbit='cd ~/Documents/d. \app/bitbar'
-alias dF='cd ~/Documents/app/unclutter/Unclutter\ Files'
-alias ddes='cd ~/Documents/design'
-alias dn='cd ~/oss/nikivi/'
 
 # _Code
 alias dsh='cd ~/.ssh'
@@ -324,7 +320,7 @@ alias ds='cd ~/src/'
 alias dsn='cd ~/src/oss/nikitavoloboev'
 alias dm='cd ~/src/oss/learn-anything'
 alias dt='cd ~/src/testing'
-
+alias d.='cd ~/.dotfiles'
 
 # _Xcode
 alias dx='cd ~/src/xcode'
