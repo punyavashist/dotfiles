@@ -29,7 +29,7 @@
 </url>
 </vkopenurldef>
 
-<!-- _app def  -->
+<!-- _App def  -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_APP_IntelliJ</name>
 <url type="file">/Applications/IntelliJ IDEA.app</url>
@@ -901,6 +901,16 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "g: rerun command in iterm"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_LOWERCASE_AND_DASH_SEPARATE_TEXT</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "g: lowercase and dash separate text"
 end tell
 '
 </url>
@@ -1907,6 +1917,16 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "mind: thinking"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_MIND_VS_CODE</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "mind: vs code"
 end tell
 '
 </url>
@@ -5897,26 +5917,6 @@ KeyCode::SLASH
 __BlockUntilKeyUp__ KeyCode::SLASH,
 </autogen>
 
-<autogen>
-__KeyToKey__
-KeyCode::R,
-KeyCode::VK_OPEN_URL_KM_WIKI_RULES
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::C,
-KeyCode::VK_OPEN_URL_KM_WIKI_PROCESSES
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_WIKI_MONTHLY
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::G,
-KeyCode::VK_OPEN_URL_KM_WIKI_MY_GITHUB
-</autogen>
 </item>
 
 <item>
@@ -6176,8 +6176,23 @@ __BlockUntilKeyUp__ KeyCode::MINUS,
 
 <autogen>
 __KeyToKey__
-KeyCode::S,
-KeyCode::VK_OPEN_URL_ALFRED_SYNONYMS_SEARCH
+KeyCode::M,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_APPLE_MAPS
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::C,
+KeyCode::VK_OPEN_URL_ALFRED_CONVERT
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::H,
+KeyCode::VK_OPEN_URL_ALFRED_HACKER_NEWS
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::P,
+KeyCode::VK_OPEN_URL_ALFRED_CRYPTO_TRACK
 </autogen>
 </item>
 
@@ -6362,6 +6377,40 @@ __KeyToKey__
 KeyCode::E,
 KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_LOCALHOST
 </autogen>
+</item>
+
+<item>
+<name>general: sticky right bracket - wiki</name>
+<identifier>private.launcher_mode_open_apps_v79</identifier>
+<pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+<modifier_not>
+ModifierFlag::COMMAND_L,
+ModifierFlag::COMMAND_R,
+ModifierFlag::CONTROL_L,
+ModifierFlag::CONTROL_R,
+ModifierFlag::FN,
+ModifierFlag::OPTION_L,
+ModifierFlag::OPTION_R,
+ModifierFlag::SHIFT_L,
+ModifierFlag::SHIFT_R,
+</modifier_not>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::BRACKET_RIGHT,
+@begin
+KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v79, ModifierFlag::MY_LAUNCHER_MODE,
+@end
+@begin
+KeyCode::0, ModifierFlag::SHIFT_L, 
+@end
+</autogen>
+</item>
+<item hidden="true">
+<identifier vk_config="true">notsave.private_launcher_mode_v79</identifier>
+<autogen>
+__BlockUntilKeyUp__ KeyCode::BRACKET_RIGHT,
+</autogen>
+
 </item>
 
 <item>
@@ -6916,7 +6965,7 @@ KeyCode::VK_OPEN_URL_KM_KARABINER_PROFILE_PYTHON
 </item>
 
 <item>
-<name>python: code</name>
+<name>py: code</name>
 <identifier>private.launcher_mode_open_apps_v77</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -7009,6 +7058,11 @@ KeyCode::COMMA,
 __BlockUntilKeyUp__ KeyCode::COMMA,
 </autogen>
 
+<autogen>
+__KeyToKey__
+KeyCode::T,
+KeyCode::VK_OPEN_URL_KM_LOWERCASE_AND_DASH_SEPARATE_TEXT
+</autogen>
 <autogen>
 __KeyToKey__
 KeyCode::X,
@@ -7996,7 +8050,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH
 </item>
 
 <item>
-<name>general: sticky quote - lists</name>
+<name>general: sticky quote - wiki</name>
 <identifier>private.launcher_mode_open_apps_v32</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8029,28 +8083,23 @@ __BlockUntilKeyUp__ KeyCode::QUOTE,
 
 <autogen>
 __KeyToKey__
+KeyCode::R,
+KeyCode::VK_OPEN_URL_KM_WIKI_RULES
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::C,
-KeyCode::VK_OPEN_URL_KM_LIST_COMMAND_LINE_TOOLS
+KeyCode::VK_OPEN_URL_KM_WIKI_PROCESSES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::W,
-KeyCode::VK_OPEN_URL_KM_LIST_WEBSITES
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::B,
-KeyCode::VK_OPEN_URL_KM_LIST_BOOKS
+KeyCode::T,
+KeyCode::VK_OPEN_URL_KM_WIKI_MONTHLY
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::G,
-KeyCode::VK_OPEN_URL_KM_LIST_BLOGS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::R,
-KeyCode::VK_OPEN_URL_KM_LIST_REDDIT
+KeyCode::VK_OPEN_URL_KM_WIKI_MY_GITHUB
 </autogen>
 </item>
 
@@ -8248,7 +8297,7 @@ KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
 </item>
 
 <item>
-<name>general: sticky 1 - option</name>
+<name>general: sticky 1 - lists</name>
 <identifier>private.launcher_mode_open_apps_v80</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8281,228 +8330,33 @@ __BlockUntilKeyUp__ KeyCode::1,
 
 <autogen>
 __KeyToKey__
-KeyCode::EQUAL,
-KeyCode::EQUAL, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::O,
-KeyCode::O, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::I,
-KeyCode::I, ModifierFlag::OPTION_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::5,
-KeyCode::5, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::4,
-KeyCode::4, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::Q,
-KeyCode::Q, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::W,
-KeyCode::W, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::E,
-KeyCode::E, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::R,
-KeyCode::R, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::T,
-KeyCode::T, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::Y,
-KeyCode::Y, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::U,
-KeyCode::U, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::I,
-KeyCode::I, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::O,
-KeyCode::O, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::P,
-KeyCode::P, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::BRACKET_LEFT,
-KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::BRACKET_RIGHT,
-KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::A,
-KeyCode::A, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::S,
-KeyCode::S, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::D,
-KeyCode::D, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::F,
-KeyCode::F, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::9,
-KeyCode::9, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::3,
-KeyCode::3, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::2,
-KeyCode::2, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::G,
-KeyCode::G, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::H,
-KeyCode::H, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::J,
-KeyCode::J, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::BACKSLASH,
-KeyCode::BACKSLASH, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::MINUS,
-KeyCode::MINUS, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::0,
-KeyCode::0, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::K,
-KeyCode::K, ModifierFlag::OPTION_L
+KeyCode::F19,
+KeyCode::Z, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, 
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::L,
-KeyCode::L, ModifierFlag::OPTION_L
+KeyCode::VK_OPEN_URL_KM_LIST_COMMAND_LINE_TOOLS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::K,
-KeyCode::SEMICOLON, ModifierFlag::OPTION_L
+KeyCode::T,
+KeyCode::VK_OPEN_URL_KM_LIST_WEBSITES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::QUOTE,
-KeyCode::QUOTE, ModifierFlag::OPTION_L
+KeyCode::O,
+KeyCode::VK_OPEN_URL_KM_LIST_BOOKS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::Z,
-KeyCode::Z, ModifierFlag::OPTION_L
+KeyCode::G,
+KeyCode::VK_OPEN_URL_KM_LIST_BLOGS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::X,
-KeyCode::X, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::C,
-KeyCode::C, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::V,
-KeyCode::V, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::B,
-KeyCode::B, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::N,
-KeyCode::N, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::M,
-KeyCode::M, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::COMMA,
-KeyCode::COMMA, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::DOT,
-KeyCode::DOT, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SLASH,
-KeyCode::SLASH, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::F19,
-KeyCode::Z, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, 
+KeyCode::R,
+KeyCode::VK_OPEN_URL_KM_LIST_REDDIT
 </autogen>
 </item>
 
@@ -8791,7 +8645,7 @@ KeyCode::COMMA, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CO
 </item>
 
 <item>
-<name>general: sticky tab - alfred</name>
+<name>general: sticky tab - option</name>
 <identifier>private.launcher_mode_open_apps_v55</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8824,28 +8678,228 @@ __BlockUntilKeyUp__ KeyCode::TAB,
 
 <autogen>
 __KeyToKey__
-KeyCode::M,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_APPLE_MAPS
+KeyCode::SPACE,
+KeyCode::G, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, 
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::C,
-KeyCode::VK_OPEN_URL_ALFRED_CONVERT
+KeyCode::EQUAL,
+KeyCode::EQUAL, ModifierFlag::OPTION_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::H,
-KeyCode::VK_OPEN_URL_ALFRED_HACKER_NEWS
+KeyCode::O,
+KeyCode::O, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::I,
+KeyCode::I, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::5,
+KeyCode::5, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::4,
+KeyCode::4, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::Q,
+KeyCode::Q, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::W,
+KeyCode::W, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::E,
+KeyCode::E, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::R,
+KeyCode::R, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::T,
+KeyCode::T, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::Y,
+KeyCode::Y, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::U,
+KeyCode::U, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::I,
+KeyCode::I, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::O,
+KeyCode::O, ModifierFlag::OPTION_L
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::P,
-KeyCode::VK_OPEN_URL_ALFRED_CRYPTO_TRACK
+KeyCode::P, ModifierFlag::OPTION_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::SPACE,
-KeyCode::G, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, 
+KeyCode::BRACKET_LEFT,
+KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::BRACKET_RIGHT,
+KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::A,
+KeyCode::A, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::S,
+KeyCode::S, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::D,
+KeyCode::D, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::F,
+KeyCode::F, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::9,
+KeyCode::9, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::3,
+KeyCode::3, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::2,
+KeyCode::2, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::G,
+KeyCode::G, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::H,
+KeyCode::H, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::J,
+KeyCode::J, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::BACKSLASH,
+KeyCode::BACKSLASH, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::MINUS,
+KeyCode::MINUS, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::0,
+KeyCode::0, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::K,
+KeyCode::K, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::L,
+KeyCode::L, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::K,
+KeyCode::SEMICOLON, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::QUOTE,
+KeyCode::QUOTE, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::Z,
+KeyCode::Z, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::X,
+KeyCode::X, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::C,
+KeyCode::C, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::V,
+KeyCode::V, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::B,
+KeyCode::B, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::N,
+KeyCode::N, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::M,
+KeyCode::M, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::COMMA,
+KeyCode::COMMA, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::DOT,
+KeyCode::DOT, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::SLASH,
+KeyCode::SLASH, ModifierFlag::OPTION_L
 </autogen>
 </item>
 
@@ -11942,6 +11996,11 @@ KeyCode::VK_OPEN_URL_KM_MIND_RESEARCH
 <autogen>
 __KeyToKey__
 KeyCode::I,
+KeyCode::VK_OPEN_URL_KM_MIND_VS_CODE
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::O,
 KeyCode::VK_OPEN_URL_KM_MIND_VIMRC
 </autogen>
 <autogen>

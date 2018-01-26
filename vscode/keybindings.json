@@ -22,7 +22,7 @@
     "when": "editorFocus && !inDebugRepl && vim.mode == 'Normal Mode'"
   },
   {
-    "key": "cmd+i",
+    "key": "ctrl+m",
     "command": "code-runner.run"
   },
   {
