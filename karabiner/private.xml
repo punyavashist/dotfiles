@@ -6561,11 +6561,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::E,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOCALHOST
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::I,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_REGEX101
 </autogen>
@@ -6661,7 +6656,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::Z,
+KeyCode::E,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEETCODE
 </autogen>
 <autogen>
@@ -9334,6 +9329,11 @@ KeyCode::O, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L,
 __KeyToKey__
 KeyCode::R,
 KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::O,
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOCALHOST
 </autogen>
 <autogen>
 __KeyToKey__
