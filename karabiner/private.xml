@@ -5381,20 +5381,31 @@ __BlockUntilKeyUp__ KeyCode::S,
 
 <autogen>
 __KeyToKey__
-KeyCode::G,
-KeyCode::TAB, ModifierFlag::COMMAND_L,
-<!-- release command key to commit command-tab -->
-KeyCode::COMMAND_L,
+KeyCode::I,
+KeyCode::F11, ModifierFlag::OPTION_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::SLASH,
+KeyCode::P,
 KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::COMMA,
+KeyCode::U,
 KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::O,
+KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L,
+KeyCode::RETURN,
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::G,
+KeyCode::TAB, ModifierFlag::COMMAND_L,
+<!-- Release command key to commit command-tab -->
+KeyCode::COMMAND_L,
 </autogen>
 <autogen>
 __KeyToKey__
@@ -5452,8 +5463,8 @@ KeyCode::CURSOR_DOWN, ModifierFlag::COMMAND_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::P,
-KeyCode::F12, ModifierFlag::COMMAND_L
+KeyCode::U,
+KeyCode::DELETE, ModifierFlag::COMMAND_L
 </autogen>
 <autogen>
 __KeyToKey__
@@ -5493,9 +5504,8 @@ KeyCode::SHIFT_L,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::O,
-KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L,
-KeyCode::RETURN,
+KeyCode::P,
+KeyCode::DELETE, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -5506,11 +5516,6 @@ KeyCode::DELETE
 __KeyToKey__
 KeyCode::SHIFT_L,
 KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::I,
-KeyCode::SPACE, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -5551,11 +5556,6 @@ KeyCode::CURSOR_UP
 __KeyToKey__
 KeyCode::J,
 KeyCode::CURSOR_DOWN
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::BACKQUOTE,
-KeyCode::CURSOR_DOWN, ModifierFlag::COMMAND_L
 </autogen>
 </item>
 
@@ -8394,6 +8394,16 @@ __BlockUntilKeyUp__ KeyCode::2,
 
 <autogen>
 __KeyToKey__
+KeyCode::I,
+KeyCode::DELETE, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::O,
+KeyCode::DELETE, ModifierFlag::OPTION_L, ModifierFlag::FN,
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::F,
 KeyCode::SHIFT_L,
 </autogen>
@@ -8424,12 +8434,12 @@ KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
+KeyCode::COMMA,
 KeyCode::CURSOR_DOWN, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::O,
+KeyCode::SLASH,
 KeyCode::CURSOR_UP, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
@@ -10508,6 +10518,16 @@ KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::D,
+KeyCode::F12, ModifierFlag::COMMAND_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::I,
+KeyCode::SPACE, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::SPACE,
 KeyCode::VK_OPEN_URL_KM_PASTE_SELECTED_TEXT
 </autogen>
@@ -10640,18 +10660,8 @@ KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_1
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
-KeyCode::F11, ModifierFlag::OPTION_L
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::BACKQUOTE,
 KeyCode::T, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::D,
-KeyCode::F12, ModifierFlag::COMMAND_L
 </autogen>
 <autogen>
 __KeyToKey__

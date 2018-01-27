@@ -1,16 +1,22 @@
 # Zsh keyboard bindings.
 
+set -o vi # Vi movement in iTerm
+
+# _Keymaps
+bindkey -e # Switch to emacs keymap
+bindkey -v # Switch to vim keymap
+
 # _Control
 bindkey "^f" beginning-of-line
 bindkey "^g" end-of-line
 bindkey "^k" forward-word
 bindkey "^j" backward-word
-bindkey "^v" kill-word
+bindkey "^o" kill-word
 bindkey "^e" kill-whole-line
+bindkey -M vicmd "^[" vi-insert
 # bindkey '^:' forward-word # Move back a word
 # bindkey '^o' backward-word # Move forward a word
 # bindkey -M viins "^o" beginning-of-line
-bindkey -M vicmd "^[" vi-insert
 # bindkey -sM viins "^v" ./
 # bindkey '^N' forward-word
 # bindkey '^B' backward-word
@@ -25,11 +31,6 @@ bindkey -M vicmd "^[" vi-insert
 bindkey '\e.' insert-last-word # Insert last argument of previous command
 bindkey "\eo" describe-key-briefly
 
-set -o vi # Vi movement in iTerm
-
-# _Keymaps
-bindkey -e # Switch to emacs keymap
-bindkey -v # Switch to vim keymap
 
 # _FZF TODO: ?
 # bind '"\er": redraw-current-line'
