@@ -1,23 +1,12 @@
 # Zsh keyboard bindings.
 
-# _Option
-# bindkey -s '\ei' '^Ua^M' # alt+i - Run 'a' command
-# bindkey -s '\es' '^Asudo ^E' # alt+s - Prepend 'sudo ' to current command and move to EOL
-# bindkey -s '\el' '^Ucd ..; a^M' # alt+u - Move to parent directory and list it
-# bindkey -s '\eU' '^Ucd ..^M' # alt+U - Move to parent directory
-bindkey '\e.' insert-last-word # alt+. - Insert last argument of previous command
-
-set -o vi # Vi movement in iTerm
-
-# _Keymaps
-bindkey -e # Switch to emacs keymap
-bindkey -v # Switch to vim keymap
-
 # _Control
 bindkey "^f" beginning-of-line
 bindkey "^g" end-of-line
+bindkey "^k" forward-word
+bindkey "^j" backward-word
+bindkey "^v" kill-word
 bindkey "^e" kill-whole-line
-bindkey "\eo" describe-key-briefly
 # bindkey '^:' forward-word # Move back a word
 # bindkey '^o' backward-word # Move forward a word
 # bindkey -M viins "^o" beginning-of-line
@@ -28,6 +17,20 @@ bindkey -M vicmd "^[" vi-insert
 # bindkey '⌃T' edit-command-line
 # bindkey "^F" history-incremental-search-backward
 
+# _Option
+# bindkey -s '\ei' '^Ua^M' # Run 'a' command
+# bindkey -s '\es' '^Asudo ^E' # Prepend 'sudo ' to current command and move to EOL
+# bindkey -s '\el' '^Ucd ..; a^M' # Move to parent directory and list it
+# bindkey -s '\eU' '^Ucd ..^M' # Move to parent directory
+bindkey '\e.' insert-last-word # Insert last argument of previous command
+bindkey "\eo" describe-key-briefly
+
+set -o vi # Vi movement in iTerm
+
+# _Keymaps
+bindkey -e # Switch to emacs keymap
+bindkey -v # Switch to vim keymap
+
 # _FZF TODO: ?
 # bind '"\er": redraw-current-line'
 # bind '"\C-g\C-f": "$(gf)\e\C-e\er"'
@@ -36,11 +39,5 @@ bindkey -M vicmd "^[" vi-insert
 # bind '"\C-g\C-h": "$(gh)\e\C-e\er"'
 # bind '"\C-g\C-r": "$(gr)\e\C-e\er"'
 
-my-backward-delete-word() {
-    local WORDCHARS=${WORDCHARS/\//}
-    zle backward-delete-word
-}
-zle -N my-backward-delete-word
-bindkey '^R' my-backward-delete-word
-
-bindkey -M viins ' ' magic-space # TODO: not sure if needed
+bindkey -M viins ' ' magic-space
+# bindkey -M viins ' ' self-insert

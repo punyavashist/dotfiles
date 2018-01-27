@@ -1,42 +1,42 @@
 # Zsh functions
 
-# T - Tester function (I change it often)
-function T(){
+# T - Tester (I change it often)
+T(){
   git add contributing.md
   git commit -m "Improve contributing"
   git push
 }
 
 # md <folder-name> - Create folder and cd to it
-function md(){
+md(){
   mkdir "$1"
   cd "$1"
 }
 
 # C <cmd-name> - Get cheat sheet of command from cheat.sh
-function C(){
+C(){
   curl cheat.sh/${@:-cheat}
   # curl cheat.sh/$@
 }
 
 # cfile <file> - Copy content of file to clipboard
-function cfile(){
+cfile(){
   cat $1 | pbcopy
 }
 
 # wr - Release alfred workflow.
-function  wr() {
+wr() {
   # TODO: Check if current dir has go in it (if yes, cd to workflow and then run script)
   package-workflow .
 }
 
 # re <files> - Move files to trash.
-function re(){
+re(){
   mv "$@" ~/.Trash
 }
 
 # zs - Search for most visited directores from z index and open them in finder.
-function zs() {
+zs() {
   z $1 && open .
 }
 
@@ -85,43 +85,43 @@ aw() {
 }
 
 # mdg <dir-name> - Create dir and .go file of <dir-name> name.
-function mdg() {
+mdg() {
     md $1
     touch $1.go
 }
 
 # wl - Alfred link and build workflow.
-function wl() {
+wl() {
     alfred link
     alfred build
 }
 
 # iz <png-file> - Create geometric primitive of png-file.
-function iz () {
+iz () {
     primitive -i in.png -o output.png -n "$1"
 }
 
 # NOTE: Not sure if needed.
 # fix - Fixes antigen problems.
-function fix() {
+fix() {
     rm -rf ~/.antigen/.zcompdump
     rm -rf ~/.antigen/.zcompdump.zwc
     exec zsh
 }
 
 # wa <dir> - Go to do <dir> directory and open it with VS Code.
-function wa() {
+wa() {
     cd "$1"
     code .
 }
 
 # TODO: Find for anybar.
-# function anybar() {
+# anybar() {
 #     echo -n "red" | nc -4u -w0 localhost 1738
 # }
 
 # dirfiles <dir> - Give number of files found inside given directory.
-function dirfiles() {
+dirfiles() {
     find "$1" -type f | wc -l
 }
 
@@ -131,44 +131,44 @@ og() {
 }
 
 # rfg <file.go> - go run <file.go> on any Go file changes inside current dir.
-function rfg() {
+rfg() {
   reflex -g '*.go' go run $1
 }
 
 # rft <file.py> - Rerun <file.py> on any Python file changes inside current dir.
-function rft() {
+rft() {
   reflex -g '*.py' python3 "$@"
 }
 
 # rfm <cmd-params> - Rerun main.go with <cmd-params> passed in on any Go files changes inside current dir.
-function rfm() {
+rfm() {
     reflex -g '*.go' go run main.go $1
 }
 
 # wfj <file.js> - Rerun <file.js> on any JS file changes inside current dir.
-function wfj() {
+wfj() {
     reflex -g '*.js' node $1
 }
 
 # af <cmd> - View definition of <cmd>.
-function af() {
+af() {
   whence -f "$1"
 }
 
 # tc - Create and edit Cartfile.
-function tc() {
+tc() {
     touch Cartfile
     chmod +x Cartfile
     nvim Cartfile
 }
 
 # fl <text> - Find where <text> is contained within current dir.
-function fl() {
+fl() {
     grep -rnw . -e "$*"
 }
 
-# finder - Print current active Finder dir.
-function finder {
+# Print current active Finder dir.
+finder() {
   osascript 2>/dev/null <<EOF
     tell application "Finder"
       return POSIX path of (target of window 1 as alias)
@@ -196,7 +196,7 @@ xo(){
 }
 
 # down <url> - Download <url> and save to current dir.
-function down(){
+down(){
 curl -O "$1"
 }
 
@@ -204,13 +204,13 @@ curl -O "$1"
 cw() { printf %s "$PWD" | pbcopy; }
 
 # md <dir-name> - Create directory and cd into it.
-function md {
+md() {
   [[ -n "$1" ]] && mkdir -p "$1" && builtin cd "$1"
 }
 
 # da - cd a dir back and exa (ls in rust)
 # da <dir> - Change to a directory and list its contents
-function da {
+da() {
   if [ $# -eq 0 ]; then
     cd ..
     exa
@@ -229,7 +229,7 @@ server() {
 }
 
 # compress <file/dir> - Compress <file/dir>.
-function compress()
+compress()
   {
     dirPriorToExe=`pwd`
     dirName=`dirname $1`
@@ -298,7 +298,7 @@ function compress()
 
 # TODO: Write a Go CLI that wraps extract and compress functions + more.
 # extract <file.tar> - Extract <file.tar>.
-function extract() {
+extract() {
   local remove_archive
   local success
   local file_name
@@ -367,7 +367,7 @@ shift
 }
 
 # ram <process-name> - Find how much RAM a process is taking.
-function ram() {
+ram() {
   local sum
   local items
   local app="$1"
