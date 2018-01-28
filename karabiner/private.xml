@@ -1838,6 +1838,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_WIKI_MY_WORKFLOW</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "wiki: my workflow"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_WIKI_MONTHLY</name>
 <url type="shell">
 osascript -e '
@@ -8093,7 +8103,12 @@ KeyCode::VK_OPEN_URL_KM_WIKI_PROCESSES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::T,
+KeyCode::W,
+KeyCode::VK_OPEN_URL_KM_WIKI_MY_WORKFLOW
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::A,
 KeyCode::VK_OPEN_URL_KM_WIKI_MONTHLY
 </autogen>
 <autogen>

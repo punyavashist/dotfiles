@@ -14,10 +14,10 @@ call plug#begin()
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') } " Autocomplete
 Plug 'zchee/deoplete-go', { 'do': 'make'} " Go autocomplete
 Plug 'zchee/deoplete-jedi' " Autocompletion and static analysis
+Plug 'w0rp/ale' " Asynchronous Lint Engine
 "Plug 'Shougo/neoinclude.vim' " Snippets
 "Plug 'Shougo/neosnippet.vim' " Community snippets
 "Plug 'Shougo/neosnippet-snippets'
-Plug 'benekastah/neomake' " Asynchronous linting and make framework TODO: use it
 Plug 'honza/vim-snippets' " Community snippets
 Plug 'scrooloose/nerdcommenter' " Quick comments TODO: use it
 Plug 'Chiel92/vim-autoformat' " Easy code formatting TODO: use it
@@ -43,6 +43,7 @@ Plug 'haya14busa/incsearch-easymotion.vim'
 
 " Utility
 Plug 'unblevable/quick-scope' " Highlight f, F jumps
+Plug 'tweekmonster/startuptime.vim' " Profile startup time
 Plug 'tpope/vim-commentary' " Comment out things
 Plug 'Shougo/vimproc.vim', {'do' : 'make'} " Interactive command execution
 Plug 'junegunn/goyo.vim' " Distraction free writing
@@ -260,9 +261,6 @@ let g:tern_request_timeout = 1
 let g:session_autosave="no"
 let g:session_autoload="no"
 
-" Neomake
-let g:neomake_open_list=1
-
 " Autocomplete with tab
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " Activate leader for easymotion
@@ -299,9 +297,6 @@ vmap <C-c> :w !pbcopy<CR><CR>
 vmap <C-d> :Dash<CR>
 vmap <C-e> :Files<CR>
 
-let g:ctrlp_map = '<c-k>'
-let g:ctrlp_cmd = 'CtrlP'
-
 "  _Space mapping
 nnoremap <SPACE> <Nop>
 let mapleader="\<Space>"
@@ -324,7 +319,7 @@ nmap <Leader>to   :e %:p:h<CR>
 " Buffer control
 nmap <Leader>s    :bprevious<CR>
 nmap <Leader>n    :bnext<CR>
-nmap <Leader>qb   :bp<BAR> bd #<CR>
+"nmap <Leader>qb   :bp<BAR> bd #<CR>
 
 " Formatting
 nmap <Leader>af   :Autoformat<CR>
@@ -484,8 +479,6 @@ let g:tex_conceal="ag"
 let g:vimtex_view_method='zathura'
 
 nmap <localleader>ll <plug>(vimtex-compile-ss)
-
-nmap <Leader>m :Neomake<CR>
 
 " _Easymotion
 nmap J <Plug>(easymotion-j)
