@@ -1,5 +1,3 @@
-zmodload zsh/zprof
-
 # Only run once (exec zsh won't run what's inside)
 if (( ! $+ETC_ZSH_ZSHRC )); then
     # Load environment

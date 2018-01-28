@@ -5382,7 +5382,7 @@ __BlockUntilKeyUp__ KeyCode::S,
 <autogen>
 __KeyToKey__
 KeyCode::I,
-KeyCode::F11, ModifierFlag::OPTION_L
+KeyCode::SPACE, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8399,6 +8399,26 @@ KeyCode::DELETE, ModifierFlag::OPTION_L,
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::SEMICOLON,
+KeyCode::CURSOR_UP, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::U,
+KeyCode::DELETE, ModifierFlag::COMMAND_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::P,
+KeyCode::DELETE, ModifierFlag::COMMAND_L, ModifierFlag::FN,
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::QUOTE,
+KeyCode::CURSOR_DOWN, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::O,
 KeyCode::DELETE, ModifierFlag::OPTION_L, ModifierFlag::FN,
 </autogen>
@@ -10518,13 +10538,13 @@ KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::D,
-KeyCode::F12, ModifierFlag::COMMAND_L
+KeyCode::I,
+KeyCode::F11, ModifierFlag::OPTION_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
-KeyCode::SPACE, ModifierFlag::OPTION_L, 
+KeyCode::D,
+KeyCode::F12, ModifierFlag::COMMAND_L
 </autogen>
 <autogen>
 __KeyToKey__
