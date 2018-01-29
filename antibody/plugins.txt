@@ -9,7 +9,7 @@ spwhitt/nix-zsh-completions
 rupa/z # Jump around
 Tarrasch/zsh-bd # Jump back to a specific directory
 zsh-users/zsh-completions # Additional completion definitions for Zsh
-zsh-users/zsh-autosuggestions # Fish-like autosuggestions for zsh
+zsh-users/zsh-autosuggestions branch:develop # Fish-like autosuggestions for zsh
 junegunn/fzf # Command-line fuzzy finder
 sindresorhus/pure # Pretty, minimal and fast zsh prompt
 zsh-users/zsh-history-substring-search # Zsh port of the fish shell's history search
