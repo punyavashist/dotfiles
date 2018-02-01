@@ -926,16 +926,6 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_PROJ_DOTFILES</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "proj: dotfiles"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_STOP_ALL_MACROS</name>
 <url type="shell">
 osascript -e '
@@ -1545,16 +1535,6 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "g: create new contact"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_RESET_BITBAR_TODO</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "g: reset todo in bitbar"
 end tell
 '
 </url>
@@ -5413,6 +5393,11 @@ __BlockUntilKeyUp__ KeyCode::S,
 
 <autogen>
 __KeyToKey__
+KeyCode::SLASH,
+KeyCode::T, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L,
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::I,
 KeyCode::SPACE, ModifierFlag::OPTION_L, 
 </autogen>
@@ -7486,7 +7471,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_CURRENT_SONG
 <autogen>
 __KeyToKey__
 KeyCode::R,
-KeyCode::VK_OPEN_URL_KM_FOCUS_90_MIN
+KeyCode::VK_OPEN_URL_KM_FOCUS_120_MIN
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7497,7 +7482,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_OPEN_LYRICS
 __KeyToKey__
 KeyCode::Y,
 KeyCode::VK_OPEN_URL_ALFRED_CREATE_ARTIST_RADIO
-</autoge>
+</autogen>
 <autogen>
 __KeyToKey__
 KeyCode::Q,
@@ -7932,11 +7917,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_CHROME
 <autogen>
 __KeyToKey__
 KeyCode::U,
-KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX_DEV
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::0,
 KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX_DEV
 </autogen>
 <autogen>
@@ -8723,7 +8703,6 @@ __KeyToKey__
 KeyCode::COMMA,
 KeyCode::COMMA, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, 
 </autogen>
-
 </item>
 
 <item>
@@ -9488,11 +9467,6 @@ KeyCode::T, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::COMMA,
-KeyCode::T, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L,
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::1,
 KeyCode::6, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
 </autogen>
@@ -9539,13 +9513,17 @@ KeyCode::6, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
 <autogen>
 __KeyToKey__
 KeyCode::DOT,
-KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME
+KeyCode::I, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::DOT,
-KeyCode::DOT,
-KeyCode::SLASH
+KeyCode::COMMA,
+KeyCode::O, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::SLASH,
+KeyCode::U, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9744,7 +9722,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_ITUNES
 <autogen>
 __KeyToKey__
 KeyCode::L,
-KeyCode::VK_OPEN_URL_KM_OPEN_TEXPAD
+KeyCode::VK_OPEN_URL_KM_OPEN_ANKI
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11693,7 +11671,7 @@ KeyCode::CONTROL_L, ModifierFlag::COMMAND_L,
 
 
 <item>
-<name>general: caps lock as control + option and escape when alone not in iTerm</name>
+<name>general: caps lock as control + option and escape when alone</name>
 <identifier>private.left_alt_caps_tab_search_snippets</identifier>
 <autogen>
 __KeyToKey__
@@ -11722,7 +11700,6 @@ KeyCode::OPTION_L, ModifierFlag::CONTROL_L | ModifierFlag::MY_CAPSLOCK,
 KeyCode::ESCAPE,
 </autogen>
 </item>
-
 
 <item>
 <name>general: right option on single press as app switcher</name>
@@ -12156,11 +12133,6 @@ KeyCode::VK_OPEN_URL_KM_EDIT_TEST_GO_MAIN
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::J,
-KeyCode::VK_OPEN_URL_KM_PROJ_DOTFILES
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::I,
 KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY
 </autogen>
@@ -12198,6 +12170,11 @@ KeyCode::VK_OPEN_URL_KM_EDIT_MAIN_HASKELL
 __KeyToKey__
 KeyCode::S,
 KeyCode::S, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::J,
+KeyCode::J, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, 
 </autogen>
 <autogen>
 __KeyToKey__

@@ -11,6 +11,7 @@
       }
     ]
   },
+  { "keys": ["alt+i"], "command": "copy_path" },
   { "keys": ["ctrl+d"], "command": "dash_doc" },
   {"keys": ["super+b"], "command": "toggle_side_bar"},
   // TODO: doesn't work
