@@ -70,7 +70,7 @@
   "sync.quietSync": false,
   "sync.askGistName": false,
   // _Fonts
-  "editor.fontFamily": "Monospace",
+  "editor.fontFamily": "Fira Code",
   "editor.fontSize": 30,
   "workbench.fontAliasing": "antialised",
   "terminal.integrated.fontSize": 25,
