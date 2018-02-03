@@ -12,6 +12,7 @@ bindkey "^g" end-of-line
 bindkey "^k" forward-word
 bindkey "^j" backward-word
 bindkey "^o" kill-word
+# bindkey -s '\ei' '^Ua^M' # Run 'a' command
 bindkey "^e" kill-whole-line
 bindkey -M vicmd "^[" vi-insert
 # bindkey '^:' forward-word # Move back a word

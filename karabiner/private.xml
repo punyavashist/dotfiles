@@ -3336,6 +3336,14 @@ tell application "Alfred 3" to run trigger "gists" in workflow "nikivi.search-th
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_OPEN_LOCALHOST</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "localhost" in workflow "nikivi.local.host" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SIMPLE_WIKI</name>
 <url type="shell">
 osascript -e '
@@ -6257,6 +6265,11 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LIBRARY
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::E,
+KeyCode::VK_OPEN_URL_ALFRED_OPEN_LOCALHOST
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::B,
 KeyCode::VK_OPEN_URL_ALFRED_PINBOARD
 </autogen>
@@ -6274,6 +6287,11 @@ KeyCode::VK_OPEN_URL_ALFRED_COLOUR_PICKER
 __KeyToKey__
 KeyCode::R,
 KeyCode::VK_OPEN_URL_ALFRED_GO_TO_SUB
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::1,
+KeyCode::VK_OPEN_URL_ALFRED_MONTHS_NUMBERS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6502,16 +6520,6 @@ KeyCode::0, ModifierFlag::SHIFT_L,
 __KeyToKey__
 KeyCode::F,
 KeyCode::5, ModifierFlag::SHIFT_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::D,
-KeyCode::T, ModifierFlag::SHIFT_L, 
-KeyCode::O, ModifierFlag::SHIFT_L, 
-KeyCode::D, ModifierFlag::SHIFT_L, 
-KeyCode::O, ModifierFlag::SHIFT_L, 
-KeyCode::SEMICOLON, ModifierFlag::SHIFT_L, 
-KeyCode::SPACE,
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9513,7 +9521,7 @@ KeyCode::6, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
 <autogen>
 __KeyToKey__
 KeyCode::DOT,
-KeyCode::I, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, 
+KeyCode::E, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12138,6 +12146,11 @@ KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::E,
+KeyCode::VK_OPEN_URL_ALFRED_OPEN_LOCALHOST
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::B,
 KeyCode::VK_OPEN_URL_KM_EDIT_BASH_FILE
 </autogen>
@@ -12210,11 +12223,6 @@ KeyCode::K, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
 __KeyToKey__
 KeyCode::L,
 KeyCode::L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::0,
-KeyCode::VK_OPEN_URL_ALFRED_MONTHS_NUMBERS
 </autogen>
 <autogen>
 __KeyToKey__
