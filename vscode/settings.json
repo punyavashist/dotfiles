@@ -5,6 +5,7 @@
   // _Todo
   "todohighlight.isEnable": true,
   "editor.cursorBlinking": "solid",
+  "files.trimTrailingWhitespace": true,
   "todohighlight.isCaseSensitive": true,
   "todohighlight.keywords": [
     {
@@ -34,7 +35,7 @@
   "editor.lineNumbers": "relative",
   "editor.cursorStyle": "line",
   "explorer.confirmDragAndDrop": false,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
   "workbench.welcome.enabled": false,
   // _Python
   "python.linting.pylintArgs": [

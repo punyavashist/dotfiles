@@ -7,6 +7,7 @@
 mafredri/zsh-async # Perform tasks asynchronously
 spwhitt/nix-zsh-completions
 rupa/z # Jump around
+sobolevn/wakatime-zsh-plugin # Wakatime tracking
 Tarrasch/zsh-bd # Jump back to a specific directory
 zsh-users/zsh-completions # Additional completion definitions for Zsh
 zsh-users/zsh-autosuggestions branch:develop # Fish-like autosuggestions for zsh

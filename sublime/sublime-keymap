@@ -13,7 +13,7 @@
   },
   { "keys": ["alt+i"], "command": "copy_path" },
   { "keys": ["ctrl+d"], "command": "dash_doc" },
-  {"keys": ["super+b"], "command": "toggle_side_bar"},
+  { "keys": ["super+b"], "command": "toggle_side_bar" },
   // TODO: doesn't work
   { "keys": ["ctrl+f"], "command": "gs_doc", "mode": "goto" },
 
@@ -32,12 +32,14 @@
     "command": "noop",
     "context": [{ "key": "six_is_in_command_mode" }]
   },
-
-  // _leader
-  // `leader w` to save
   {
     "keys": [" ", "w"],
     "command": "save",
+    "context": [{ "key": "six_is_in_command_mode" }]
+  },
+  {
+    "keys": [" ", "q"],
+    "command": "close",
     "context": [{ "key": "six_is_in_command_mode" }]
   }
 ]
