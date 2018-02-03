@@ -1,10 +1,33 @@
-# Zsh functions
-
 # T - Tester (I change it often)
 T(){
   git add contributing.md
   git commit -m "Improve contributing"
   git push
+}
+
+# Fetch pull request
+fpr() {
+    if ! git rev-parse --git-dir > /dev/null 2>&1; then
+        echo "error: fpr must be executed from within a git repository"
+        return 1
+    fi
+    (
+        cdgr
+        if [ "$#" -eq 2 ]; then
+            local repo="${PWD##*/}"
+            local user="${1}"
+            local branch="${2}"
+        elif [ "$#" -eq 3 ]; then
+            local repo="${1}"
+            local user="${2}"
+            local branch="${3}"
+        else
+            echo "Usage: fpr [repo] username branch"
+            return 1
+        fi
+
+        git fetch "git@github.com:${user}/${repo}" "${branch}:${user}/${branch}"
+    )
 }
 
 # md <folder-name> - Create folder and cd to it
@@ -24,7 +47,7 @@ cfile(){
   cat $1 | pbcopy
 }
 
-# wr - Release alfred workflow.
+# wr - Release alfred workflow
 wr() {
   # TODO: Check if current dir has go in it (if yes, cd to workflow and then run script)
   package-workflow .

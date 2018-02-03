@@ -15,8 +15,8 @@
   { "keys": ["ctrl+d"], "command": "dash_doc" },
   { "keys": ["super+b"], "command": "toggle_side_bar" },
   // TODO: doesn't work
-  { "keys": ["ctrl+f"], "command": "gs_doc", "mode": "goto" },
-
+  // { "keys": ["ctrl+f"], "command": "gs_doc", "mode": "goto" },
+  { "keys": ["ctrl+f"], "command": "goto_definition" },
   // TODO: fix cmd + j = console
   // {
   //   "keys": ["super+j"],

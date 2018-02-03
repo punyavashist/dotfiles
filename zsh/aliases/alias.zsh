@@ -1,5 +1,3 @@
-# Aliases
-
 # _Testing
 
 # _Nix
@@ -9,6 +7,7 @@ alias nu='nix-env -u'
 
 # _General
 alias g='hub' # Wrapper over git
+alias peek='tee >(cat 1>&2)' # Mirror stdout to stderr, useful for seeing data going through a pipe
 alias aet='subl contributing.md'
 alias crypto='curl rate.sx' # Get crypto prices
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
@@ -74,11 +73,11 @@ alias mx='chmod +x'
 alias rr='rm -rf'
 # alias a='ls -FG'
 alias a='exa'
+alias aa='exa -la' # See hidden files
 alias wg='wget -r --no-parent'
 alias v='mv'
 alias os='osascript'
 alias lt='ls -lart'
-alias aa='exa -l'
 # alias aa='ls -lahFG'
 # alias aa='exa -lahF'
 alias tp='type'

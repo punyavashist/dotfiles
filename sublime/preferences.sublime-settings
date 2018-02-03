@@ -21,6 +21,7 @@
 		"*.jar",
 		"*.zip"
 	],
+	"caret_style": "solid",
 	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"font_face": "Fira Code",
 	"font_size": 12,

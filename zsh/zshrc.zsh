@@ -24,7 +24,7 @@ source ~/.dotfiles/zsh/bindings.zsh
 # Can just write down the file name
 setopt autocd
 
-# _Secret configs
+# Secret configs
 source ~/.secrets
 
 # 'thefuck' command correction
@@ -59,7 +59,7 @@ setopt    incappendhistory # Immediately append to the history file, not just wh
 unset IFS
 
 # _Brew
-export HOMEBREW_AUTO_UPDATE_SECS=3600 
+export HOMEBREW_AUTO_UPDATE_SECS=3600
 
 # TODO: ?
 eval "$(hub alias -s)"
@@ -77,7 +77,7 @@ prompt_pure_update_vim_prompt() {
     zle .reset-prompt
 }
 
-function zle-line-init zle-keymap-select { 
+function zle-line-init zle-keymap-select {
     prompt_pure_update_vim_prompt
 }
 zle -N zle-line-init

@@ -22,7 +22,7 @@ You can also see my top used applications, safari exensions and alfred workflows
 
 The most exciting thing in here is probably how I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now.
 
-I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macOS/apps/karabiner/karabiner.html) and I document all the keybindings I have made and changed as an interactive mind map [here](https://my.mindnode.com/c7EmmKvaxCyCEuTzcpkGB4MGeLpWdR8nsJK4rjDh#2086.8,-2205.5,2). Scroll around and explore, perhaps you find something interesting.
+I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macOS/apps/karabiner/karabiner.html) and I document all the keybindings I have made and changed as an interactive mind map [here](https://my.mindnode.com/mR7ds52Ls21umnbD27SfCD4SmwwrvxxGwvSyy7yW#603.1,-2191.4,3). Scroll around and explore, perhaps you find something interesting.
 
 ## Neovim
 I am [still learning vim](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim.html) but the this journey has been very rewarding. Modal editing is pretty amazing.

@@ -9215,7 +9215,7 @@ KeyCode::VK_OPEN_URL_KM_EDIT_ZSH_BINDINGS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::H,
+KeyCode::L,
 KeyCode::VK_OPEN_URL_KM_EDIT_ZSHRC
 </autogen>
 <autogen>
@@ -9297,11 +9297,6 @@ KeyCode::F, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION
 __KeyToKey__
 KeyCode::G,
 KeyCode::VK_OPEN_URL_KM_EDIT_GIT_ALIAS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::H,
-KeyCode::H, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
