@@ -30,3 +30,5 @@
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
     # Tmux
     ~/.tmux.conf: tmux/tmux.conf
+
+# TODO: Add shell command to cd to antibody and download zsh plugins. Maybe install Antibody too.

@@ -389,6 +389,12 @@ shift
   done
 }
 
+# List commit hashes
+function commits() {
+  git log $1 --oneline --reverse | cut -d' ' -f 1 | tr '/n' ' '
+}
+
+
 # ram <process-name> - Find how much RAM a process is taking.
 ram() {
   local sum

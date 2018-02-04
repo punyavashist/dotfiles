@@ -168,7 +168,7 @@ alias oa='go build -o main'
 
 alias ugo='Go-Package-Store'
 
-# _meteor
+# _Meteor
 alias mt='meteor'
 
 # _compile code
@@ -344,6 +344,58 @@ alias dsk='cd ~/Library/Application\ Support/Karabiner'
 alias db='cd ~/.dotfiles/bin'
 alias dh='cd ~/.hammerspoon'
 
+# Git aliases
+# _General
+alias gj='open `git config remote.origin.url`'
+alias gre='git rebase -i HEAD~4'
+alias gsh='git stash'
+# alias gt='git tag'
+alias g:='git push -u origin master'
+alias gn='git open'
+alias ge='git checkout'
+#alias gu='git commit --amend'
+alias ggf='git push -f'
+alias g::='git_remote_add_origin_from_active_link'
+# alias g="git"
+alias gi='git init'
+alias gl='git pull'
+alias gcl='git clone'
+alias g.='git add .'
+alias ga='git add'
+# alias gb='git branch'
+alias gbd='git branch -d'
+alias gg='git push'
+#alias gr='git rm'
+# alias gf='git fetch'
+alias glp='git pull && git push'
+alias grao='git remote add origin'
+#alias gz='git discard'
+#alias gr='git rm --cached -r'
 
-# _move file locations
-# TODO: add move files to hazel alias / function
+# undo your last commit, but don't throw away your changes
+alias greset='git reset --soft HEAD^'
+
+# Diff
+alias gd='git diff'
+alias gds='git diff --staged'
+alias gdn='git diff --name-only'
+
+# _status
+alias gs='git status --short'
+alias gss='git show --word-diff=color' # See changes made
+
+
+alias ggn='git_add_origin_and_origin_push'
+
+# _Commit
+alias gdf='git commit . -m ':tada: initial commit''
+alias gpm="git push origin master"
+alias gpd="git push origin develop"
+
+# _git all add commits
+alias ggm='git_commit_update'
+
+# Utilities
+alias ungit="find . -name '.git' -exec rm -rf {} \;" # Remove git from a project
+
+alias gto='gittower'

@@ -1,5 +1,3 @@
-# Zsh git functions.
-
 # gz - Improve readme commit
 gz(){
   git add readme.md
