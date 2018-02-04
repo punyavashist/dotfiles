@@ -14,6 +14,8 @@ You can also see my top used applications, safari exensions and alfred workflows
 - [VS Code](#vs-code)
 - [Hammerspoon](#hammerspoon)
 - [Zsh](#zsh)
+  - [Interesting aliases and functions](#interesting-aliases-and-functions)
+- [Fzf](#fzf)
 - [Inspiring dotfiles](#inspiring-dotfiles)
 - [Contributing](#contributing)
 
@@ -25,7 +27,7 @@ This will automatically setup all the configuration files. I describe my custom 
 
 ## Karabiner
 
-<img src="https://explainxkcd.com/wiki/images/b/bf/borrow_your_laptop.png" width="500" alt="img">
+<img src="https://explainxkcd.com/wiki/images/b/bf/borrow_your_laptop.png" alt="img">
 
 The most exciting thing in here is probably how I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now.
 
@@ -56,12 +58,12 @@ I am also using [ayu theme](https://github.com/mbadolato/iTerm2-Color-Schemes/bl
 ## Zsh aliases
 I use many aliases to get around my system as fast as possible. You can view them all [here](https://github.com/nikitavoloboev/dotfiles/blob/master/zsh/aliases/alias.zsh).
 
-## Interesting aliases and zsh functions
+### Interesting aliases and functions
 There is quite a lot of awesome programs I use from my command line (you can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps) for some of them).
 
 However I also really love customising my shell experience with various aliases and zsh functions. Here are some that I like and use very often:
 
-### Commit and push repository to GitHub in one command
+#### Commit and push repository to GitHub in one command
 
 ```Bash
 function ggi() {
@@ -90,8 +92,7 @@ Which using [this CLI tool](https://github.com/nikitavoloboev/license-up), will 
 
 And thus in one command I initialised and pushed the repo. To create a new repo quickly I use [this Alfred workflow](https://github.com/nikitavoloboev/alfred-ask-create-share).
 
-
-### Commit all with generic `Update` message
+#### Commit all with generic `Update` message
 I use this command really often.
 
 ```Bash
@@ -105,7 +106,7 @@ function ggs() {
 It will simply add all files and commit them. I don't use this when working with code but for making some changes or for updating this dotfiles repo for example, I just use this. Saves a lot of time.
 
 
-### Clone current url in clipboard
+#### Clone current url in clipboard
 
 ```Bash
 function gll(){
@@ -115,7 +116,7 @@ function gll(){
 
 I use this very often to quickly clone the URL that I copied from GitHub.
 
-### Trash files / folders
+#### Trash files / folders
 A lot more safer than `rm -rf` files as you can always check out `~/.Trash` in cases of emergency or mistakes.
 
 ```Bash
@@ -124,13 +125,12 @@ function re(){
 }
 ```
 
-### Fzf bindings
+### Fzf
 [fzf](https://github.com/junegunn/fzf) is a command line tool that lets you fuzzy search on text. I use it very often now for fuzzy searching for files to open with neovim, or fuzzy searching through my commit messages and more.
 
-Here are some of my favourite commands I use with it :
+Here are some of my favourite commands I use with it:
 
-
-### Search for files to edit in current dir
+#### Search for files to edit in current dir
 
 ```Bash
 fe() {
@@ -155,7 +155,7 @@ fw() {
 Which does the same thing but opens the files in VS Code instead of neovim.
 
 
-### Search for files to edit in my ~/.dotfiles
+#### Search for files to edit in my ~/.dotfiles
 
 ```Bash
 fea() {
