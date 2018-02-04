@@ -1,0 +1,31 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
+- link:
+    # Zsh
+    ~/.zshrc: zsh/zshrc.zsh
+    # Git
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore_global: git/gitignore_global
+    # Hammerspoon
+    ~/.hammerspoon:
+    # IDEA
+    ~/.ideavimrc: idea/ideavimrc
+    # Karabiner
+    ~/Library/Application\ Support/Karabiner: karabiner
+    # Sublime text
+    "~/Library/Application Support/Sublime Text 3/Packages/User":
+        path: sublime
+    # Neovim
+    ~/.config/nvim: nvim
+    # VS Code
+    ~/Library/Application\ Support/Code/User: vscode
+    # Tmux
+    ~/.tmux.conf: tmux/tmux.conf
