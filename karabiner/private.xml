@@ -906,6 +906,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_NEW_SHIP_ISSUE</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "g: new Ship issue"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_SEARCH_ALL_FILES_ALFRED</name>
 <url type="shell">
 osascript -e '
@@ -7904,7 +7914,6 @@ KeyCode::W,
 __BlockUntilKeyUp__ KeyCode::W,
 </autogen>
 
-
 <autogen>
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::L,
@@ -7980,7 +7989,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_BETTERTOUCHTOOL
 <autogen>
 __KeyToKey__
 KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_OPEN_PAW
+KeyCode::VK_OPEN_URL_KM_OPEN_SNIPPETSLAB
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8015,7 +8024,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_TRELLO
 <autogen>
 __KeyToKey__
 KeyCode::G,
-KeyCode::VK_OPEN_URL_KM_OPEN_SNIPPETSLAB
+KeyCode::VK_OPEN_URL_KM_OPEN_SHIP
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8070,7 +8079,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_KEYBOARD_MAESTRO
 <autogen>
 __KeyToKey__
 KeyCode::N,
-KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH
+KeyCode::VK_OPEN_URL_KM_OPEN_PAW
 </autogen>
 </item>
 
@@ -9451,7 +9460,7 @@ KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME
 <autogen>
 __KeyToKey__
 KeyCode::O,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_LOCALHOST
+KeyCode::VK_OPEN_URL_KM_NEW_SHIP_ISSUE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9476,7 +9485,7 @@ KeyCode::6, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTI
 <autogen>
 __KeyToKey__
 KeyCode::I,
-KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_LOCALHOST
+KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10306,6 +10315,11 @@ KeyCode::E, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L,
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::I,
+KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_LOCALHOST
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::4,
 KeyCode::N, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, 
 </autogen>
@@ -10351,13 +10365,8 @@ KeyCode::R, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
-KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::K,
-KeyCode::VK_OPEN_URL_HAMMERSPOON_RELOAD_CONFIG
+KeyCode::VK_OPEN_URL_KM_NEW_SHIP_ISSUE
 </autogen>
 <autogen>
 __KeyToKey__

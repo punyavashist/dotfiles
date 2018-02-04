@@ -110,8 +110,7 @@ function showTime()
 end
 hs.urlevent.bind("showTime", showTime)
 
-
--- _wm = Window management
+-- _Window management
 hs.window.animationDuration = 0
 hs.hotkey.alertDuration=0
 
@@ -139,7 +138,6 @@ end
 hs.urlevent.bind("showActiveWindows", showWindowHints)
 
 -- _Testing
-
 -- Google search
 local anycomplete = require "anycomplete/anycomplete"
 anycomplete.registerDefaultBindings(cmd_alt_ctrl, "R")
