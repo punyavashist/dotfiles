@@ -2,8 +2,36 @@
 	name = Nikita Voloboev
 	email = nikita.voloboev@icloud.com
 	signingkey = 43EDACFC00099A17
+[alias]
+    update = add -u .
+	unstage = reset HEAD
+	untracked = status -u .
+	untracked-at = status -u
+	assume-unchanged = update-index --assume-unchanged
+	ls = ls-files
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(dim white)(%an)%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	lg2 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	a = apply --index
+	unstage = reset HEAD
+	p = format-patch --stdout
+	co = checkout
+	ci = commit
+	cp = cherry-pick
+	me = merge
+	re = rebase
+	br = branch
+	su = submodule
+	rr = reset
+  	fm = fetch-merge # fetch and merge
+    tree = log --graph --pretty=format:'%C(auto)%h - %s [%an] (%C(blue)%ar)%C(auto)%d'
+ bigtree = log --graph --decorate --pretty=format:'%C(auto)%d%n%h %s%+b%n(%G?) %an <%ae> (%C(blue)%ad%C(auto))%n'
+    hist = log --date=short --pretty=format:'%C(auto)%ad %h (%G?) %s [%an] %d'
+    count = shortlog -sn  # give list of who commited to this repo
+    open = !open `git config remote.origin.url` # open repo in browser
+    url =! bash -c 'git config --get remote.origin.url | sed -E "s/.+:\\(.+\\)\\.git$/https:\\\\/\\\\/github\\\\.com\\\\/\\\\1/g"' # show ul of remote
 [mergetool]
 	path = /usr/bin/nvim
+	prompt = false
     keepBackup = false
 [diff]
 	renames = copy
@@ -28,24 +56,6 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [github]
     user = nikitavoloboev
-[alias]
-	a = apply --index
-	p = format-patch --stdout
-	co = checkout
-	ci = commit
-	cp = cherry-pick
-	me = merge
-	re = rebase
-	br = branch
-	su = submodule
-	rr = reset
-  	fm = fetch-merge # fetch and merge
-    tree = log --graph --pretty=format:'%C(auto)%h - %s [%an] (%C(blue)%ar)%C(auto)%d'
- bigtree = log --graph --decorate --pretty=format:'%C(auto)%d%n%h %s%+b%n(%G?) %an <%ae> (%C(blue)%ad%C(auto))%n'
-    hist = log --date=short --pretty=format:'%C(auto)%ad %h (%G?) %s [%an] %d'
-    count = shortlog -sn  # give list of who commited to this repo
-    open = !open `git config remote.origin.url` # open repo in browser
-    url =! bash -c 'git config --get remote.origin.url | sed -E "s/.+:\\(.+\\)\\.git$/https:\\\\/\\\\/github\\\\.com\\\\/\\\\1/g"' # show ul of remote
 [commit]
 	gpgsign = true
 [gpg]
