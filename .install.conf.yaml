@@ -21,8 +21,7 @@
     # Karabiner
     ~/Library/Application\ Support/Karabiner: karabiner
     # Sublime text
-    "~/Library/Application Support/Sublime Text 3/Packages/User":
-        path: sublime
+    ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User: sublime
     # Neovim
     ~/.config/nvim: nvim
     # VS Code
