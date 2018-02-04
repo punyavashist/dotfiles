@@ -2,6 +2,7 @@
     link:
       create: true
       relink: true
+      # force: true # Swap the original file
 
 - clean: ['~', '~/.config']
 
@@ -19,9 +20,9 @@
     # IDEA
     ~/.ideavimrc: idea/ideavimrc
     # Karabiner
-    ~/Library/Application\ Support/Karabiner: karabiner
+    "~/Library/Application Support/Karabiner": karabiner
     # Sublime text
-    ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User: sublime
+    "~/Library/Application Support/Sublime Text 3/Packages/User": sublime
     # Neovim
     ~/.config/nvim: nvim
     # VS Code

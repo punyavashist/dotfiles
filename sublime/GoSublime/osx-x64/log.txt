@@ -1,0 +1,12 @@
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/Cellar/go/1.9.1/libexec/pkg/darwin_amd64:/Users/nikivi/go/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/Cellar/go/1.9.1/libexec", GOPATH:"/Users/nikivi/go", InstallSuffix:""}
+Gocode pkg: "github.com/deanishe/awgo/util"
+Gocode pkg: "."
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/Cellar/go/1.9.1/libexec/pkg/darwin_amd64:/Users/nikivi/go/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/Cellar/go/1.9.1/libexec", GOPATH:"/Users/nikivi/go", InstallSuffix:""}
+Gocode pkg: "github.com/deanishe/awgo/util"
+Gocode pkg: "."
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/Cellar/go/1.9.1/libexec/pkg/darwin_amd64:/Users/nikivi/go/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/Cellar/go/1.9.1/libexec", GOPATH:"/Users/nikivi/go", InstallSuffix:""}
+Gocode pkg: "github.com/nikitavoloboev/alfred-awesome-lists"
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/Cellar/go/1.9.1/libexec/pkg/darwin_amd64:/Users/nikivi/go/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/Cellar/go/1.9.1/libexec", GOPATH:"/Users/nikivi/go", InstallSuffix:""}
