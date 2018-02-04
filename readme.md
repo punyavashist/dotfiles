@@ -20,10 +20,11 @@ You can also see my top used applications, safari exensions and alfred workflows
 - [Contributing](#contributing)
 
 ## Install
-To install my configration, clone the repository and run:
-`$./install`
+To install my configration, clone the repository and run: `./install`.
 
-This will automatically setup all the configuration files. I describe my custom configuration I use below. It is heavily tailored to my own workflow so it is best you take ideas from it rather than just copying the entire config.
+This will automatically setup all the configuration files using [dotbot](https://github.com/anishathalye/dotbot).
+
+I describe my custom configuration I use below. It is heavily tailored to my own workflow so it is best you take ideas from it rather than just copying the entire config.
 
 ## Karabiner
 

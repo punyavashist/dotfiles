@@ -7989,7 +7989,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_BETTERTOUCHTOOL
 <autogen>
 __KeyToKey__
 KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_OPEN_SNIPPETSLAB
+KeyCode::VK_OPEN_URL_KM_OPEN_SHIP
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8024,7 +8024,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_TRELLO
 <autogen>
 __KeyToKey__
 KeyCode::G,
-KeyCode::VK_OPEN_URL_KM_OPEN_SHIP
+KeyCode::VK_OPEN_URL_KM_OPEN_SNIPPETSLAB
 </autogen>
 <autogen>
 __KeyToKey__

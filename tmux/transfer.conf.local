@@ -1,9 +1,4 @@
-# ------------------------------------------------------
-# _personal config
-# ------------------------------------------------------
-
 # TODO: go through the tmux framework and remove the bits I overwrite or don't need
-
 set-option -g default-shell /bin/zsh
 
 # use vi mode

@@ -6,9 +6,19 @@
 	path = /usr/bin/nvim
     keepBackup = false
 [diff]
+	renames = copy
 	tool = nvimdiff
+[status] # TODO: not sure if need
+	short = true
+	    branch = true
+	submoduleSummary = true
+	    showUntrackedFiles = all
+[color]
+    ui = true
+[branch]
+	autosetuprebase = always
 [push]
-	default = matching
+	default = tracking
 [merge]
 	tool = nvimdiff
     conflictstyle = diff3
@@ -19,18 +29,30 @@
 [github]
     user = nikitavoloboev
 [alias]
-	s = status
-	d = diff
+	a = apply --index
+	p = format-patch --stdout
+	co = checkout
+	ci = commit
+	cp = cherry-pick
+	me = merge
+	re = rebase
+	br = branch
+	su = submodule
+	rr = reset
+  	fm = fetch-merge # fetch and merge
+    tree = log --graph --pretty=format:'%C(auto)%h - %s [%an] (%C(blue)%ar)%C(auto)%d'
+ bigtree = log --graph --decorate --pretty=format:'%C(auto)%d%n%h %s%+b%n(%G?) %an <%ae> (%C(blue)%ad%C(auto))%n'
+    hist = log --date=short --pretty=format:'%C(auto)%ad %h (%G?) %s [%an] %d'
     count = shortlog -sn  # give list of who commited to this repo
     open = !open `git config remote.origin.url` # open repo in browser
     url =! bash -c 'git config --get remote.origin.url | sed -E "s/.+:\\(.+\\)\\.git$/https:\\\\/\\\\/github\\\\.com\\\\/\\\\1/g"' # show ul of remote
-	fm = fetch-merge # fetch and merge
-	tree = log --graph --pretty=format:'%C(auto)%h - %s [%an] (%C(blue)%ar)%C(auto)%d'
- 	bigtree = log --graph --decorate --pretty=format:'%C(auto)%d%n%h %s%+b%n(%G?) %an <%ae> (%C(blue)%ad%C(auto))%n'
-    hist = log --date=short --pretty=format:'%C(auto)%ad %h (%G?) %s [%an] %d'
 [commit]
 	gpgsign = true
 [gpg]
 	program = /usr/local/bin/gpg
+[http "https://gopkg.in"]
+	followRedirects = true
+[format]
+	pretty = %C(auto)%h - %s%d%n%+b%+N(%G?) %an <%ae> (%C(blue)%ad%C(auto))%n
 [hub]
 	protocol = https
