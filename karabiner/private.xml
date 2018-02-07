@@ -8044,13 +8044,8 @@ KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::T,
-KeyCode::VK_OPEN_URL_KM_OPEN_FANTASTICAL
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::R,
-KeyCode::VK_OPEN_URL_KM_OPEN_DICTIONARY
+KeyCode::VK_OPEN_URL_KM_OPEN_FANTASTICAL
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9810,7 +9805,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_REEDER
 <autogen>
 __KeyToKey__
 KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_OPEN_MARKED
+KeyCode::VK_OPEN_URL_KM_OPEN_DICTIONARY
 </autogen>
 <autogen>
 __KeyToKey__
