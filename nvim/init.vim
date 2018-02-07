@@ -12,6 +12,7 @@ endfunction
 call plug#begin()
 " Code
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') } " Autocomplete
+Plug 'romainl/vim-cool' " Stop matching after search is done
 Plug 'zchee/deoplete-go', { 'do': 'make'} " Go autocomplete
 Plug 'zchee/deoplete-jedi' " Autocompletion and static analysis
 Plug 'w0rp/ale' " Asynchronous Lint Engine
@@ -278,26 +279,23 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nnoremap ga <Plug>(EasyAlign)
 
-" _Controls
-"  _Comma mapping
+" _Comma mapping
 
-"  _Insert  mapping
+" _Insert  mapping
 inoremap      jk  <Esc>
 inoremap      kj  <Esc>
 inoremap (<Space>  ();<Esc>hi
 inoremap      (;   ();<Esc>o
 inoremap      ()   ()
 
-"  _Command mapping
+"_Command mapping
 cabbrev rp Rp
 
-"  _Control mapping
-vmap <C-x> :!pbcopy<CR>
-vmap <C-c> :w !pbcopy<CR><CR>
-vmap <C-d> :Dash<CR>
-vmap <C-e> :Files<CR>
+" _Control mapping
+nnoremap <C-M> /sticky 
+nnoremap <C-L> /\c__\_sKeyCode::/e<Left><Left>
 
-"  _Space mapping
+" _Space mapping
 nnoremap <SPACE> <Nop>
 let mapleader="\<Space>"
 let maplocalleader = "\<Space>"
@@ -306,8 +304,6 @@ nnoremap <leader>= yypVr=
 
 " Fix yank
 noremap Y y$ 
-
-nmap <Leader>ve   :e ~/.dotfiles/nvim/init.vim<CR>
 
 nmap <Leader>ze   :enew <CR>
 nmap <Leader>zt   :tabnew<CR>
@@ -377,7 +373,7 @@ nnoremap <Leader>q :q<CR>
 " Yank whole file
 nnoremap <Leader>y :%y<CR> 
 " Source vimrc
-nnoremap <Leader>ss :source ~/.dotfiles/nvim/init.vim<CR> 
+nnoremap <Leader>ff :source ~/.dotfiles/nvim/init.vim<CR> 
 " Search files inside current dir
 nnoremap <Leader>e :Files<CR> 
 " Switch dir for fzf searching to current dir

@@ -5,6 +5,16 @@ T(){
   git push
 }
 
+# cd to Finder
+cdf() {
+    target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
+    if [ "$target" != "" ]; then
+        cd "$target"
+    else
+        echo 'No Finder window found' >&2
+    fi
+}
+
 # Fetch pull request
 fpr() {
     if ! git rev-parse --git-dir > /dev/null 2>&1; then

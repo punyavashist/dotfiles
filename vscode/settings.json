@@ -2,6 +2,9 @@
   // _Testing
   "newFile.defaultFileExtension": ".go",
   "newFile.showPathRelativeTo": "project",
+  // _General
+  "editor.snippetSuggestions": "top",
+  "editor.minimap.enabled": false,
   // _Todo
   "todohighlight.isEnable": true,
   "editor.cursorBlinking": "solid",
@@ -24,9 +27,6 @@
       "backgroundColor": "rgba(0,0,0,.2)"
     }
   ],
-  // _General
-  "editor.snippetSuggestions": "top",
-  "editor.minimap.enabled": false,
   // _Dash
   "dash.docset.go": [
     "go",
@@ -35,7 +35,7 @@
   "editor.lineNumbers": "relative",
   "editor.cursorStyle": "line",
   "explorer.confirmDragAndDrop": false,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
   "workbench.welcome.enabled": false,
   // _Python
   "python.linting.pylintArgs": [
@@ -98,6 +98,19 @@
       "commands": [
         {
           "command": "workbench.action.files.save",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.closeActiveEditor",
           "args": []
         }
       ]

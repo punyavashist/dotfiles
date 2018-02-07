@@ -906,6 +906,26 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_2ND_ITERM_TAB</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "g: open 2nd iTerm tab"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_IN_CLIPBOARD_IN_SAFARI</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "g: open URL in clipboard in Safari"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_NEW_SHIP_ISSUE</name>
 <url type="shell">
 osascript -e '
@@ -1120,7 +1140,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: open iTerm 1st tab"
+do script "g: open 1st iTerm tab"
 end tell
 '
 </url>
@@ -1252,16 +1272,6 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "g: mouse pointer top middle"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_EDIT_TEST_JS</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "code: js testing"
 end tell
 '
 </url>
@@ -1460,7 +1470,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_MINDNODE_SCREENSHOT_TABBED</name>
+<name>KeyCode::VK_OPEN_URL_KM_SCREENSHOT_MINDNODE_TABBED</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -1700,71 +1710,7 @@ end tell
 </url>
 </vkopenurldef>
 
-<!-- _KM go -->
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_GO_FMT_PRINTLN</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "go: fmt.println"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_go_log_fatal</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "go: log.Fatal()"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_GO_LOG_PRINTF</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "go: log.printf"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_GO_WORKFLOW:</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "go: workflow:"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_GO_LOG_PRINTLN</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "go: log.println"
-end tell
-'
-</url>
-</vkopenurldef>
-
-<!-- _km js maps-->
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_JS_CONSOLE_LOG</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "js: console.log"
-end tell
-'
-</url>
-</vkopenurldef>
-
-<!-- _KM lists open -->
+<!-- _km lists open -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_LIST_WEBSITES</name>
 <url type="shell">
@@ -1888,43 +1834,53 @@ end tell
 </url>
 </vkopenurldef>
 
-<!-- _KM code files -->
+<!-- _KM test files -->
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_EDIT_MAIN_HASKELL</name>
+<name>KeyCode::VK_OPEN_URL_KM_TEST_JS</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "code: haskell testing"
+do script "test: js"
 end tell
 '
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_EDIT_PY_FILE</name>
+<name>KeyCode::VK_OPEN_URL_KM_TEST_HASKELL</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "code: python testing"
+do script "test: haskell"
 end tell
 '
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_EDIT_TEST_GO_MAIN</name>
+<name>KeyCode::VK_OPEN_URL_KM_TEST_PYTHON</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "code: go testing"
+do script "test: python"
 end tell
 '
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_EDIT_BASH_FILE</name>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_TEST_GO</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "code: bash testing"
+do script "test: go"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_TEST_BASH</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "test: bash"
 end tell
 '
 </url>
@@ -2004,6 +1960,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_ZSH_ENV</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "edit: env.zsh"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_EDIT_GITCONFIG</name>
 <url type="shell">
 osascript -e '
@@ -2034,13 +2000,13 @@ end tell
 </url>
 </vkopenurldef>
 
-<!-- _KM Go def-->
+<!-- _km go def-->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_GO_PREFILL_COMMENT_OF_FUNCTION</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "Prefill comment of function"
+do script "prefill comment of function"
 end tell
 '
 </url>
@@ -2052,7 +2018,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "kar: Python profile"
+do script "kar: python profile"
 end tell
 '
 </url>
@@ -2062,7 +2028,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "kar: Go profile"
+do script "kar: go profile"
 end tell
 '
 </url>
@@ -3342,6 +3308,14 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "gists" in workflow "nikivi.search-the-web" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DRIBBLE</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "dribble" in workflow "nikivi.search-the-web" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -5608,8 +5582,13 @@ KeyCode::F2, ModifierFlag::COMMAND_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::SEMICOLON,
+KeyCode::M,
 KeyCode::VK_OPEN_URL_KM_MANIPULATE_CLIPBOARD
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::SEMICOLON,
+KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6270,6 +6249,11 @@ __BlockUntilKeyUp__ KeyCode::0,
 
 <autogen>
 __KeyToKey__
+KeyCode::TAB,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TLDR
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::Y,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LIBRARY
 </autogen>
@@ -6635,6 +6619,11 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_MAIL
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::Z,
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_DRIBBLE
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::SHIFT_L,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_TWITTER
 </autogen>
@@ -6656,7 +6645,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_REGEX101
 <autogen>
 __KeyToKey__
 KeyCode::K,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_KAGGLE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6745,6 +6734,11 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::Q,
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::E,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEETCODE
 </autogen>
@@ -6782,11 +6776,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA_ANSWER
 __KeyToKey__
 KeyCode::SPACE,
 KeyCode::X, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::F19,
-KeyCode::VK_OPEN_URL_KM_MINDNODE_SCREENSHOT_TABBED
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6835,19 +6824,13 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::Q,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_DRIBBLE
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::M,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_ALL_NOTIFICATIONS
 </autogen>
 </item>
 
-
 <item>
-<name>js: code</name>
+<name>js code</name>
 <identifier>private.launcher_mode_open_apps_v76</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -6863,28 +6846,56 @@ ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
 __KeyOverlaidModifier__
-KeyCode::P,@begin
+KeyCode::DOT,@begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v76, ModifierFlag::MY_LAUNCHER_MODE,
 @end@begin
-KeyCode::P,
+KeyCode::DOT,
 @end
 </autogen>
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v76</identifier>
 <autogen>
-__BlockUntilKeyUp__ KeyCode::P,
+__BlockUntilKeyUp__ KeyCode::DOT,
 </autogen>
 
 <autogen>
 __KeyToKey__
 KeyCode::A,
-KeyCode::VK_OPEN_URL_KM_JS_CONSOLE_LOG
+KeyCode::C,
+KeyCode::O,
+KeyCode::N,
+KeyCode::S,
+KeyCode::O,
+KeyCode::L,
+KeyCode::E,
+KeyCode::DOT,
+KeyCode::L,
+KeyCode::O,
+KeyCode::G,
+KeyCode::9, ModifierFlag::SHIFT_L, 
+KeyCode::0, ModifierFlag::SHIFT_L, 
+KeyCode::CURSOR_LEFT,
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::Z,
+KeyCode::J,
+KeyCode::A,
+KeyCode::V,
+KeyCode::A,
+KeyCode::S,
+KeyCode::C,
+KeyCode::R,
+KeyCode::I,
+KeyCode::P,
+KeyCode::T,
+KeyCode::SPACE
 </autogen>
 </item>
 
 <item>
-<name>go: code</name>
+<name>go code</name>
 <identifier>private.launcher_mode_open_apps_v72</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -6915,16 +6926,6 @@ __BlockUntilKeyUp__ KeyCode::DOT,
 
 <autogen>
 __KeyToKey__
-KeyCode::1,
-KeyCode::VK_OPEN_URL_KM_KARABINER_PROFILE_GO
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::2,
-KeyCode::VK_OPEN_URL_KM_KARABINER_PROFILE_PYTHON
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::A,
 KeyCode::P,
 KeyCode::R,
@@ -6936,6 +6937,17 @@ KeyCode::N,
 KeyCode::9, ModifierFlag::SHIFT_L,  
 KeyCode::0, ModifierFlag::SHIFT_L,  
 KeyCode::CURSOR_LEFT
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::Z,
+KeyCode::G,
+KeyCode::O,
+KeyCode::L,
+KeyCode::A,
+KeyCode::N,
+KeyCode::G,
+KeyCode::SPACE,
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6980,7 +6992,19 @@ KeyCode::SPACE
 <autogen>
 __KeyToKey__
 KeyCode::G,
-KeyCode::VK_OPEN_URL_KM_GO_LOG_PRINTF
+KeyCode::L,
+KeyCode::O,
+KeyCode::G,
+KeyCode::DOT,
+KeyCode::P,
+KeyCode::R,
+KeyCode::I,
+KeyCode::N,
+KeyCode::T,
+KeyCode::F,
+KeyCode::9, ModifierFlag::SHIFT_L, 
+KeyCode::0, ModifierFlag::SHIFT_L, 
+KeyCode::CURSOR_LEFT,
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6990,22 +7014,38 @@ KeyCode::VK_OPEN_URL_KM_GO_PREFILL_COMMENT_OF_FUNCTION
 <autogen>
 __KeyToKey__
 KeyCode::T,
-KeyCode::VK_OPEN_URL_KM_go_log_fatal
+KeyCode::L,
+KeyCode::O,
+KeyCode::G,
+KeyCode::DOT,
+KeyCode::F, ModifierFlag::SHIFT_L, 
+KeyCode::A,
+KeyCode::T,
+KeyCode::A,
+KeyCode::L,
+KeyCode::9, ModifierFlag::SHIFT_L, 
+KeyCode::E,
+KeyCode::R,
+KeyCode::R,
+KeyCode::0, ModifierFlag::SHIFT_L, 
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::O,
-KeyCode::VK_OPEN_URL_KM_GO_WORKFLOW:
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::2,
-KeyCode::VK_OPEN_URL_KM_KARABINER_PROFILE_PYTHON
+KeyCode::W,
+KeyCode::O,
+KeyCode::R,
+KeyCode::K,
+KeyCode::F,
+KeyCode::L,
+KeyCode::O,
+KeyCode::W,
+KeyCode::SEMICOLON,
 </autogen>
 </item>
 
 <item>
-<name>py: code</name>
+<name>py code</name>
 <identifier>private.launcher_mode_open_apps_v77</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -7049,6 +7089,17 @@ KeyCode::SPACE,
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::Z,
+KeyCode::P,
+KeyCode::Y,
+KeyCode::T,
+KeyCode::H,
+KeyCode::O,
+KeyCode::N,
+KeyCode::SPACE,
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::A,
 KeyCode::P,
 KeyCode::R,
@@ -7058,11 +7109,6 @@ KeyCode::T,
 KeyCode::9, ModifierFlag::SHIFT_L, 
 KeyCode::0, ModifierFlag::SHIFT_L, 
 KeyCode::CURSOR_LEFT
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::1,
-KeyCode::VK_OPEN_URL_KM_KARABINER_PROFILE_GO
 </autogen>
 </item>
 
@@ -7107,6 +7153,11 @@ KeyCode::VK_OPEN_URL_KM_LOWERCASE_AND_DASH_SEPARATE_TEXT
 __KeyToKey__
 KeyCode::X,
 KeyCode::VK_OPEN_URL_ALFRED_CURL_URL
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::Z,
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_IN_CLIPBOARD_IN_SAFARI
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7270,12 +7321,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MEDIUM
 <autogen>
 __KeyToKey__
 KeyCode::TAB,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TLDR
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::Y,
-KeyCode::VK_OPEN_URL_ALFRED_YANDEX_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DRIBBLE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7423,7 +7469,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_ARTISTS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
+KeyCode::SEMICOLON,
 KeyCode::VK_OPEN_URL_ALFRED_CREATE_ARTIST_RADIO
 </autogen>
 <autogen>
@@ -7460,11 +7506,6 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_BROWSE
 __KeyToKey__
 KeyCode::COMMAND_L,
 KeyCode::3, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,  
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SEMICOLON,
-KeyCode::VK_OPEN_URL_TIMER_60
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7644,7 +7685,7 @@ ConsumerKeyCode::MUSIC_NEXT
 <autogen>
 __KeyToKey__
 KeyCode::F19,
-KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_MINDNODE
+KeyCode::VK_OPEN_URL_KM_SCREENSHOT_MINDNODE_TABBED
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7949,7 +7990,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_SCRIPT_EDITOR
 <autogen>
 __KeyToKey__
 KeyCode::V,
-KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE
+KeyCode::VK_OPEN_URL_KM_OPEN_PAW
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7975,11 +8016,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_ACTIVITY_MONITOR
 __KeyToKey__
 KeyCode::Y,
 KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::D,
-KeyCode::VK_OPEN_URL_KM_OPEN_SHIP
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8044,7 +8080,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_PAW
 <autogen>
 __KeyToKey__
 KeyCode::DOT,
-KeyCode::7, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+KeyCode::7, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L <!-- Focus on Desktop 1 -->
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8079,7 +8115,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_KEYBOARD_MAESTRO
 <autogen>
 __KeyToKey__
 KeyCode::N,
-KeyCode::VK_OPEN_URL_KM_OPEN_PAW
+KeyCode::VK_OPEN_URL_KM_OPEN_TOWER
 </autogen>
 </item>
 
@@ -9224,6 +9260,11 @@ KeyCode::VK_OPEN_URL_KM_EDIT_GITCONFIG
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::N,
+KeyCode::VK_OPEN_URL_KM_EDIT_ZSH_ENV
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::B,
 KeyCode::VK_OPEN_URL_KM_EDIT_ZSH_BINDINGS
 </autogen>
@@ -9341,11 +9382,6 @@ KeyCode::V, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION
 __KeyToKey__
 KeyCode::B,
 KeyCode::B, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::N,
-KeyCode::N, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9484,11 +9520,6 @@ KeyCode::6, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTI
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
-KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::Q,
 KeyCode::4, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
 </autogen>
@@ -9515,7 +9546,7 @@ KeyCode::5, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTI
 <autogen>
 __KeyToKey__
 KeyCode::J,
-KeyCode::S, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, 
+KeyCode::S, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L,  <!-- Move window to another screen -->
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10666,9 +10697,7 @@ KeyCode::RETURN, ModifierFlag::SHIFT_L
 <autogen>
 __KeyToKey__
 KeyCode::DOT,
-KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
-KeyCode::X, ModifierFlag::COMMAND_L,
-Option::NOREPEAT,
+KeyCode::VK_OPEN_URL_KM_OPEN_2ND_ITERM_TAB
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12146,7 +12175,7 @@ KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_PLAY_AND_OPEN_WITH_SUBLIME
 <autogen>
 __KeyToKey__
 KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_EDIT_TEST_GO_MAIN
+KeyCode::VK_OPEN_URL_KM_EDIT_TEST_GO
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12161,17 +12190,17 @@ KeyCode::VK_OPEN_URL_ALFRED_OPEN_LOCALHOST
 <autogen>
 __KeyToKey__
 KeyCode::B,
-KeyCode::VK_OPEN_URL_KM_EDIT_BASH_FILE
+KeyCode::VK_OPEN_URL_KM_TEST_BASH
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::N,
-KeyCode::VK_OPEN_URL_KM_EDIT_PY_FILE
+KeyCode::VK_OPEN_URL_KM_TEST_PYTHON
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::COMMA,
-KeyCode::VK_OPEN_URL_KM_EDIT_TEST_JS
+KeyCode::VK_OPEN_URL_KM_TEST_JS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12181,7 +12210,7 @@ KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
 <autogen>
 __KeyToKey__
 KeyCode::DOT,
-KeyCode::VK_OPEN_URL_KM_EDIT_MAIN_HASKELL
+KeyCode::VK_OPEN_URL_KM_TEST_HASKELL
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12272,7 +12301,7 @@ KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::C
 </item>
 
 <item>
-<name>general: sim m, = some</name>
+<name>general: sim m,</name>
 <identifier>private.sim_mcomma_some</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12283,7 +12312,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
 </item>
 
 <item>
-<name>general: sim jk = google</name>
+<name>general: sim jk</name>
 <identifier>private.sim_jk_google</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12526,7 +12555,7 @@ KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
 </item>
 
 <item>
-<name>general: sim :lcmd = dash</name>
+<name>general: sim :lcmd</name>
 <identifier>private.sim_lcmd_downloads</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12537,13 +12566,13 @@ KeyCode::VK_OPEN_URL_ALFRED_OPEN_DOCUMENTATION
 </item>
 
 <item>
-<name>general: sim :n = lab</name>
+<name>general: sim :n</name>
 <identifier>private.sim_:n_dic</identifier>
 <autogen>
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_KEYWORDS
 </autogen>
 </item>
 
@@ -12658,13 +12687,13 @@ KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
 </item>
 
 <item>
-<name>general: sim kn = lab</name>
+<name>general: sim kn</name>
 <identifier>private.sim_kn_normal</identifier>
 <autogen>
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_KEYWORDS
+KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
 </autogen>
 </item>
 
