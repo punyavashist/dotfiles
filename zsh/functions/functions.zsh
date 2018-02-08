@@ -1,8 +1,21 @@
 # T - Tester (I change it often)
 T(){
+  alfred unlink
+  alfred link
+  cd ..
+}
+
+# Improve contributing commit
+gwt(){
   git add contributing.md
   git commit -m "Improve contributing"
   git push
+}
+
+# Install all dependencies and run project
+it(){
+  yarn
+  yarn start
 }
 
 # cd to Finder
@@ -241,9 +254,9 @@ md() {
   [[ -n "$1" ]] && mkdir -p "$1" && builtin cd "$1"
 }
 
-# da - cd a dir back and exa (ls in rust)
+# da - cd a dir back and exa
 # da <dir> - Change to a directory and list its contents
-da() {
+dw() {
   if [ $# -eq 0 ]; then
     cd ..
     exa

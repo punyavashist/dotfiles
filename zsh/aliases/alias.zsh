@@ -56,7 +56,7 @@ alias ma='man'
 alias c='ccat'
 alias rec='asciinema rec'
 alias b='bd'
-alias ws='workflow-install -s source'
+alias ws='workflow-install -s source' # Symlink `source` directory
 alias fk='fuck'
 alias dus='du -s'
 alias t='touch'
@@ -272,17 +272,16 @@ alias ww='code .'
 # alias ar="open -a Marked\ 2"
 alias zr='open -a Preview'
 
-# _web
+# _Web
 alias l="open -a Google\ Chrome"
 alias qq="open -a Safari"
 
-# _other
+# _Other
 alias pdf='open -a PDF\ Expert'
 alias love="/Applications/love.app/Contents/MacOS/love"
 
-# _vim jumps
-# _main
-alias ee='nvim .'                 # current dir
+# _Vim jumps
+alias ee='nvim .' # Current dir
 alias ei='nvim index.js'
 alias egi='nvim .gitignore'
 alias ej='nvim package.json'
@@ -308,6 +307,7 @@ alias ezb='nvim ~/.dotfiles/zsh/zsh/bindings.zsh' # shell keyboard bindings
 
 # _cd places
 alias doc='cd ~/Documents'
+alias da='cd ~/src/github/nikitavoloboev'
 
 # _Code
 alias dsh='cd ~/.ssh'

@@ -209,7 +209,7 @@ fgs() {
 FZF-EOF"
 }
 
-# cdf - cd into the directory of the selected file
+# df <file> - cd into the directory of the selected file
 df() {
    local file
    local dir

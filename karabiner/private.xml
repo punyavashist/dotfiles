@@ -6740,7 +6740,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA
 <autogen>
 __KeyToKey__
 KeyCode::E,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEETCODE
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_DRIBBLE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6980,6 +6980,19 @@ KeyCode::CURSOR_LEFT
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::B,
+KeyCode::SLASH,
+KeyCode::SLASH,
+KeyCode::SPACE,
+KeyCode::T, ModifierFlag::SHIFT_L, 
+KeyCode::O, ModifierFlag::SHIFT_L, 
+KeyCode::D, ModifierFlag::SHIFT_L, 
+KeyCode::O, ModifierFlag::SHIFT_L, 
+KeyCode::SEMICOLON, ModifierFlag::SHIFT_L, 
+KeyCode::SPACE,
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::R,
 KeyCode::R,
 KeyCode::E,
@@ -6996,7 +7009,7 @@ KeyCode::L,
 KeyCode::O,
 KeyCode::G,
 KeyCode::DOT,
-KeyCode::P,
+KeyCode::P, ModifierFlag::SHIFT_L, 
 KeyCode::R,
 KeyCode::I,
 KeyCode::N,
@@ -7031,7 +7044,7 @@ KeyCode::0, ModifierFlag::SHIFT_L,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::O,
+KeyCode::W,
 KeyCode::W,
 KeyCode::O,
 KeyCode::R,
@@ -7040,7 +7053,7 @@ KeyCode::F,
 KeyCode::L,
 KeyCode::O,
 KeyCode::W,
-KeyCode::SEMICOLON,
+KeyCode::SEMICOLON, ModifierFlag::SHIFT_L, 
 </autogen>
 </item>
 
@@ -7974,6 +7987,11 @@ KeyCode::VK_OPEN_URL_KM_OPEN_CHROME
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::H,
+KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::U,
 KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX_DEV
 </autogen>
@@ -7999,7 +8017,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_DR_RACKET
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::3,
+KeyCode::T,
 KeyCode::VK_OPEN_URL_KM_OPEN_MINDNODE
 </autogen>
 <autogen>
@@ -8081,11 +8099,6 @@ KeyCode::7, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L <!-- Focus on Deskto
 __KeyToKey__
 KeyCode::J,
 KeyCode::VK_OPEN_URL_KM_OPEN_ITERM
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::H,
-KeyCode::VK_OPEN_URL_KM_OPEN_TOWER
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10043,7 +10056,7 @@ KeyCode::DOT, ModifierFlag::SHIFT_L,
 <autogen>
 __KeyToKey__
 KeyCode::M,
-KeyCode::EQUAL,
+KeyCode::MINUS,
 KeyCode::DOT, ModifierFlag::SHIFT_L,
 KeyCode::SPACE
 </autogen>
@@ -12080,7 +12093,7 @@ __BlockUntilKeyUp__ KeyCode::B,
 
 <autogen>
 __KeyToKey__
-KeyCode::L,
+KeyCode::O,
 KeyCode::VK_OPEN_URL_KM_MIND_RESEARCH
 </autogen>
 <autogen>
@@ -12090,12 +12103,7 @@ KeyCode::VK_OPEN_URL_KM_MIND_VS_CODE
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::O,
-KeyCode::VK_OPEN_URL_KM_MIND_VIMRC
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::O,
+KeyCode::A,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MDN
 </autogen>
 <autogen>

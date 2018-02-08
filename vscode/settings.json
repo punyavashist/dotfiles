@@ -2,6 +2,8 @@
   // _Testing
   "newFile.defaultFileExtension": ".go",
   "newFile.showPathRelativeTo": "project",
+  "workbench.panel.defaultLocaton": "right",
+  "terminal.integrated.copyOnSelection": true,
   // _General
   "editor.snippetSuggestions": "top",
   "editor.minimap.enabled": false,
@@ -35,7 +37,7 @@
   "editor.lineNumbers": "relative",
   "editor.cursorStyle": "line",
   "explorer.confirmDragAndDrop": false,
-  "window.zoomLevel": -2,
+  "window.zoomLevel": -3,
   "workbench.welcome.enabled": false,
   // _Python
   "python.linting.pylintArgs": [
@@ -74,7 +76,7 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontSize": 30,
   "workbench.fontAliasing": "antialised",
-  "terminal.integrated.fontSize": 25,
+  "terminal.integrated.fontSize": 20,
   "editor.fontSize": 20,
   "editor.fontLigatures": true,
   // _Vim
