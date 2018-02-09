@@ -6,6 +6,7 @@ alias ne='nix-env -e'
 alias nu='nix-env -u'
 
 # _General
+alias -g G='| grep' # Grep search
 alias g='hub' # Wrapper over git
 alias peek='tee >(cat 1>&2)' # Mirror stdout to stderr, useful for seeing data going through a pipe
 alias aet='subl contributing.md'
@@ -49,7 +50,6 @@ alias sudo='sudo '
 alias m='mkdir'
 alias w='code'
 alias jj='killall tmux'
-alias loc='count_number_of_lines'
 alias mm='tldr'
 alias ma='man'
 # alias aw='k -h' TODO: ?

@@ -5,11 +5,6 @@
 readonly workflow_dir="${1}"
 readonly info_plist="${workflow_dir}/info.plist"
 
-if [[ "$#" -ne 1 ]] || [[ ! -f "${info_plist}" ]]; then
-  echo 'You need to give this script a single argument: the path to a valid workflow directory.'
-  exit 1
-fi
-
 readonly workflow_name="$(/usr/libexec/PlistBuddy -c 'print name' "${info_plist}")"
 readonly workflow_file="${HOME}/Desktop/${workflow_name}.alfredworkflow"
 

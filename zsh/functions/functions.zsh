@@ -5,6 +5,11 @@ T(){
   cd ..
 }
 
+# Lowercase every file in current dir
+lowercaseCurrentDir(){
+  for i in *; do mv $i ${(L)i}; done
+}
+
 # Improve contributing commit
 gwt(){
   git add contributing.md

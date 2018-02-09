@@ -1,8 +1,8 @@
 #!/bin/sh
 
-# with tool
-# usage: with <program>
-# opens an interactive shell instance that automatically prefixes all subsequent commands with program name
+# Usage: with <program>
+# Opens an interactive shell instance that automatically prefixes all subsequent commands with program name.
+# TODO: Make it so that it accepts any prefix. Doesn't have to be a command. And make it more interactive.
 
 drop_with()
 {
