@@ -17,6 +17,11 @@ gwt(){
   git push
 }
 
+# Show my $PATH
+path(){
+  echo -e ${PATH//:/\\n}
+}
+
 # Install all dependencies and run project
 it(){
   yarn

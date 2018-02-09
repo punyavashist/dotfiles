@@ -21,7 +21,6 @@ alias kar="/Applications/Karabiner.app/Contents/Library/bin/karabiner"
 alias le='less -r'
 alias wifi='wifi-password -q'
 # alias du='du -sh * | sort'
-alias path='echo $PATH'
 alias eo='echo'
 alias es='elasticsearch'
 alias mc='md-to-alfred'
