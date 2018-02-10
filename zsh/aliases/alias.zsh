@@ -280,10 +280,10 @@ alias qq="open -a Safari"
 alias pdf='open -a PDF\ Expert'
 alias love="/Applications/love.app/Contents/MacOS/love"
 
-# _Vim jumps
+# _Vim
 alias ee='nvim .' # Current dir
 alias ei='nvim index.js'
-alias egi='nvim .gitignore'
+alias egi='nvim .gitignore' # TODO: make it zsh func, go to root and then run it
 alias ej='nvim package.json'
 
 # _Edit config
