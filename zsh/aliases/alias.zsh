@@ -7,6 +7,7 @@ alias nu='nix-env -u'
 
 # _General
 alias -g G='| grep' # Grep search
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete" # Recursively delete `.DS_Store` files
 alias g='hub' # Wrapper over git
 alias peek='tee >(cat 1>&2)' # Mirror stdout to stderr, useful for seeing data going through a pipe
 alias aet='subl contributing.md'
