@@ -344,11 +344,11 @@ alias dsk='cd ~/Library/Application\ Support/Karabiner'
 alias db='cd ~/.dotfiles/bin'
 alias dh='cd ~/.hammerspoon'
 
-# Git aliases
-# _General
+# _Git aliases
 alias gj='open `git config remote.origin.url`'
 alias gre='git rebase -i HEAD~4'
 alias gsh='git stash'
+alias grc='git rm --cached'
 # alias gt='git tag'
 alias g:='git push -u origin master'
 alias gn='git open'
@@ -384,16 +384,12 @@ alias gdn='git diff --name-only'
 alias gs='git status --short'
 alias gss='git show --word-diff=color' # See changes made
 
-
 alias ggn='git_add_origin_and_origin_push'
 
 # _Commit
 alias gdf='git commit . -m ':tada: initial commit''
 alias gpm="git push origin master"
 alias gpd="git push origin develop"
-
-# _git all add commits
-alias ggm='git_commit_update'
 
 # Utilities
 alias ungit="find . -name '.git' -exec rm -rf {} \;" # Remove git from a project
