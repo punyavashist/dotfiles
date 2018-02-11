@@ -1,8 +1,14 @@
 # T - Tester (I change it often)
 T(){
-  alfred unlink
-  alfred link
-  cd ..
+  mv readme.md readme.md1
+  mv license license1
+  git add .
+  git commit -m "Rename"
+  mv readme.md1 README.md
+  mv license1 LICENSE
+  git add .
+  git commit -m "Rename"
+  git push
 }
 
 # Lowercase every file in current dir
@@ -12,7 +18,7 @@ lowercaseCurrentDir(){
 
 # Improve contributing commit
 gwt(){
-  git add contributing.md
+  git add CONTRIBUTING.md
   git commit -m "Improve contributing"
   git push
 }

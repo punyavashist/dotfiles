@@ -11,7 +11,7 @@ shell.nix
 *.o
 *.so
 
-# Packages 
+# Packages
 # it's better to unpack these files and commit the raw source
 # git has its own built in compression methods
 *.7z
@@ -23,7 +23,7 @@ shell.nix
 *.tar
 *.zip
 
-# Logs and databases 
+# Logs and databases
 *.log
 *.sql
 *.sqlite
@@ -335,4 +335,3 @@ token
 
 .envrc
 .direnv*
-.vscode

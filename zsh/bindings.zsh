@@ -4,7 +4,7 @@ set -o vi # Vi movement in iTerm
 
 # _Keymaps
 bindkey -e # Emacs keymap
-bindkey -v # Vim keymap
+# bindkey -v # Vim keymap
 
 # _Control
 bindkey "^f" beginning-of-line
