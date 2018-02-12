@@ -2,7 +2,8 @@
   // _Testing
   "newFile.defaultFileExtension": ".go",
   "newFile.showPathRelativeTo": "project",
-  "workbench.panel.defaultLocaton": "right",
+  "search.smartCase": true,
+  "workbench.panel.defaultLocation": "right",
   "terminal.integrated.copyOnSelection": true,
   // _General
   "editor.snippetSuggestions": "top",
@@ -38,7 +39,7 @@
   "editor.cursorStyle": "line",
   "explorer.confirmDragAndDrop": false,
   "window.zoomLevel": -2,
-  "workbench.welcome.enabled": false,
+  "workbench.startupEditor": "newUntitledFile",
   // _Python
   "python.linting.pylintArgs": [
     "--errors-only"
@@ -53,9 +54,7 @@
   "zenMode.restore": true,
   "workbench.iconTheme": "vs-seti",
   // _Prettier
-  "prettier.singleQuote": true,
   "editor.formatOnSave": true,
-  "prettier.jsonEnable": [],
   "extensions.autoUpdate": true,
   // _Commands
   // _Plugins
@@ -74,19 +73,16 @@
   "sync.askGistName": false,
   // _Fonts
   "editor.fontFamily": "Fira Code",
-  "editor.fontSize": 30,
-  "workbench.fontAliasing": "antialised",
+  "workbench.fontAliasing": "antialiased",
   "terminal.integrated.fontSize": 20,
-  "editor.fontSize": 20,
   "editor.fontLigatures": true,
+  "editor.fontSize": 20,
   // _Vim
   "vim.leader": " ",
   "vim.cursorStylePerMode": {
     "normal": "underline"
   },
-  "vim.disableAnnoyingNeovimMessage": true,
   "vim.useSystemClipboard": true,
-  "vim.relativenumbers": true,
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "red",
   // _Space map
@@ -192,21 +188,15 @@
   },
   "go.useLanguageServer": true,
   "go.lintTool": "golint",
-  "go.lintOnSave": false,
-  "go.buildOnSave": true,
-  "go.formatOnSave": true,
+  "go.lintOnSave": "package",
+  "go.buildOnSave": "package",
   "go.gopath": "/Users/nikivi/go",
-  // _Java
-  "java.errors.incompleteClasspath.severity": "ignore",
-  // _Typescript
-  "typescript.check.tscVersion": false,
   "typescript.check.npmIsInstalled": false,
   // _Files
   "files.associations": {
     "*.toml": "toml"
   },
   "git.enableSmartCommit": true,
-  "todohighlight.isEnable": true,
   "todohighlight.include": [
     "**/*.js",
     "**/*.jsx",

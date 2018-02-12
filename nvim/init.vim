@@ -511,7 +511,10 @@ map zg/ <Plug>(incsearch-easymotion-stay)
 
 " See open buffers
 nnoremap gb :ls<CR>:buffer<Space> 
+
 set guicursor=n-v-c:hor20,i-ci:ver20 " Make cursor block in insert mode and underline in normal mode
+autocmd VimLeave * set guicursor=a:ver25-blinkon25
+
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T'] " Trigger a highlight in the appropriate direction when pressing these keys
 let g:qs_highlight_on_keys = ['f', 'F'] " Trigger a highlight only when pressing f and F.
 

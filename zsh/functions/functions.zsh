@@ -1,14 +1,5 @@
 # T - Tester (I change it often)
 T(){
-  mv readme.md readme.md1
-  mv license license1
-  git add .
-  git commit -m "Rename"
-  mv readme.md1 README.md
-  mv license1 LICENSE
-  git add .
-  git commit -m "Rename"
-  git push
 }
 
 # Lowercase every file in current dir

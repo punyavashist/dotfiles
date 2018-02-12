@@ -4,7 +4,7 @@ set -o vi # Vi movement in iTerm
 
 # _Keymaps
 bindkey -e # Emacs keymap
-# bindkey -v # Vim keymap
+bindkey -v # Vim keymap
 
 # _Control
 bindkey "^f" beginning-of-line
@@ -43,3 +43,31 @@ bindkey "\eo" describe-key-briefly
 
 bindkey -M viins ' ' magic-space
 # bindkey -M viins ' ' self-insert
+
+# ci"
+autoload -U select-quoted
+zle -N select-quoted
+for m in visual viopp; do
+  for c in {a,i}{\',\",\`}; do
+    bindkey -M $m $c select-quoted
+  done
+done
+
+# ci{, ci(
+autoload -U select-bracketed
+zle -N select-bracketed
+for m in visual viopp; do
+  for c in {a,i}${(s..)^:-'()[]{}<>bB'}; do
+    bindkey -M $m $c select-bracketed
+  done
+done
+
+# Surround
+autoload -Uz surround
+zle -N delete-surround surround
+zle -N add-surround surround
+zle -N change-surround surround
+bindkey -a cs change-surround
+bindkey -a ds delete-surround
+bindkey -a ys add-surround
+bindkey -M visual S add-surround
