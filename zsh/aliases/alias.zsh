@@ -1,3 +1,5 @@
+# Aliases.
+
 # _Testing
 
 # _Nix
@@ -86,7 +88,7 @@ alias tp='type'
 # alias gr='goreleaser'
 
 # _Dev
-alias co='coala'
+# alias co='coala'
 alias ll='ln -s'
 alias jd='jid'
 alias tm='task'
@@ -273,7 +275,7 @@ alias ww='code .'
 alias zr='open -a Preview'
 
 # _Web
-alias l="open -a Google\ Chrome"
+alias co="open -a Google\ Chrome"
 alias qq="open -a Safari"
 
 # _Other
@@ -307,17 +309,14 @@ alias ezb='nvim ~/.dotfiles/zsh/zsh/bindings.zsh' # shell keyboard bindings
 
 # _cd places
 alias doc='cd ~/Documents'
-alias da='cd ~/src/github/nikitavoloboev'
-
-# _Code
+alias dw='cd ~/src/web'
 alias dsh='cd ~/.ssh'
-alias dl='cd ~/src/play'
+alias dl='cd ~/src/clones'
 alias di='cd ~/src/ideas'
 alias dg='cd ~/go/src/github.com/nikitavoloboev'
 alias dj='cd ~/src/learning'
 alias dk='cd ~/src/testing'
-alias ds='cd ~/src/'
-alias dsn='cd ~/src/oss/nikitavoloboev'
+alias da='cd ~/src/'
 alias dm='cd ~/src/oss/learn-anything'
 alias dt='cd ~/src/testing'
 alias dz='cd ~/.dotfiles'

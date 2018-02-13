@@ -1,13 +1,15 @@
+# Git functions.
+
 # gz - Improve readme commit
 gz(){
-  git add readme.md
+  git add README.md
   git commit -m "Improve readme"
   git push
 }
 
 # gzc - Improve contributing commit
 gzc(){
-  git add contributing.md
+  git add CONTRIBUTING.md
   git commit -m "Improve contributing"
   git push
 }

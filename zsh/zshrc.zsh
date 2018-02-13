@@ -1,3 +1,6 @@
+# Zsh config.
+
+# _Source things
 # Only run once (exec zsh won't run what's inside)
 if (( ! $+ETC_ZSH_ZSHRC )); then
     # Load environment
@@ -5,43 +8,21 @@ if (( ! $+ETC_ZSH_ZSHRC )); then
 fi
 export ETC_ZSH_ZSHRC=1
 
-# Load zsh plugins
-source ~/.zsh_plugins.sh
+source ~/.zsh_plugins.sh # Load zsh plugins
 
-# _Exports
-export EDITOR='nvim'
-export DOTFILES="$HOME/.dotfiles"
-
-# _Source things
-# TODO: Do some smart for loop iteration
-source ~/.dotfiles/zsh/functions/fzf.zsh
-source ~/.dotfiles/zsh/functions/git-functions.zsh
+# TODO: Do some smart for loop iteration (source all .zsh files)
 source ~/.dotfiles/zsh/functions/functions.zsh
+source ~/.dotfiles/zsh/functions/fzf-functions.zsh
+source ~/.dotfiles/zsh/functions/git-functions.zsh
 source ~/.dotfiles/zsh/bindings.zsh
 source ~/.dotfiles/zsh/aliases/alias.zsh
 
-# Can just write down the file name
-setopt autocd
+source ~/.secrets # Private configs
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # FZF
 
-# Secret configs
-source ~/.secrets
-
-# 'thefuck' command correction
-eval "$(thefuck --alias)"
-
-# Neat colour schemes to use
-BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
-
-# Yarn autocomplete
-[[ -f /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh ]] && . /Users/nikivi/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh
-
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit # TODO: ?
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 # zstyle ':completion:*' matcher-list +'l:|=* r:|=*'
-
-PROMPT_TITLE='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
-export PROMPT_COMMAND="${PROMPT_TITLE}; ${PROMPT_COMMAND}"
 
 HISTFILESIZE=8000
 HISTSIZE=80000 # How many lines of history to keep in memory
@@ -52,28 +33,11 @@ setopt    appendhistory # Append history to the history file (no overwriting)
 setopt    sharehistory # Share history across terminals
 setopt    incappendhistory # Immediately append to the history file, not just when a term is killed
 
-# Source FZF
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+setopt autocd # Can just write down the name
 
-unset IFS
+eval "$(hub alias -s)" # alias git -> hub
+eval "$(thefuck --alias)" # alias fuck -> thefuck
 
-# _Brew
-export HOMEBREW_AUTO_UPDATE_SECS=3600
-
-# TODO: ?
-eval "$(hub alias -s)"
-
-function zle-keymap-select {
-  if [ $KEYMAP = vicmd ]; then
-    printf "\033[4 q"
-  else
-    printf "\033[6 q"
-  fi
-}
-
-function zle-line-finish { printf "\033[6 q" }
-zle -N zle-line-finish
-zle -N zle-keymap-select
-
+[[ -f ~/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh ]] && . ~/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh # Yarn autocomplete
 
 typeset -U PATH # Remove duplicates in $PATH

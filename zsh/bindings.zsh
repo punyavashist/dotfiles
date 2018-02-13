@@ -2,9 +2,22 @@
 
 set -o vi # Vi movement in iTerm
 
-# _Keymaps
 bindkey -e # Emacs keymap
 bindkey -v # Vim keymap
+
+# Change cursor based on vim mode. Normal mode (underline). Insert mode (block).
+function zle-keymap-select {
+  if [ $KEYMAP = vicmd ]; then
+    printf "\033[4 q" # Underline
+  else
+    printf "\033[6 q" # Block
+  fi
+}
+
+function zle-line-finish { printf "\033[6 q" }
+zle -N zle-line-finish
+zle -N zle-keymap-select
+export KEYTIMEOUT=1
 
 # _Control
 bindkey "^f" beginning-of-line
@@ -31,7 +44,6 @@ bindkey -M vicmd "^[" vi-insert
 # bindkey -s '\eU' '^Ucd ..^M' # Move to parent directory
 bindkey '\e.' insert-last-word # Insert last argument of previous command
 bindkey "\eo" describe-key-briefly
-
 
 # _FZF TODO: ?
 # bind '"\er": redraw-current-line'

@@ -5,6 +5,7 @@
   "search.smartCase": true,
   "workbench.panel.defaultLocation": "right",
   "terminal.integrated.copyOnSelection": true,
+  "eslint.packageManager": "yarn",
   // _General
   "editor.snippetSuggestions": "top",
   "editor.minimap.enabled": false,
@@ -73,7 +74,7 @@
   "sync.askGistName": false,
   // _Fonts
   "editor.fontFamily": "Fira Code",
-  "workbench.fontAliasing": "antialiased",
+  "workbench.fontAliasing": "auto",
   "terminal.integrated.fontSize": 20,
   "editor.fontLigatures": true,
   "editor.fontSize": 20,

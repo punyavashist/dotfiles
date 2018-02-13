@@ -7,7 +7,6 @@ These are the various configuration files I use on macOS. I wrote about how I cu
 
 You can also see my top used applications, safari exensions and alfred workflows I use [here](https://github.com/nikitavoloboev/my-mac-os).
 
-## Contents
 - [Install](#install)
 - [Karabiner](#karabiner)
 - [Neovim](#neovim)

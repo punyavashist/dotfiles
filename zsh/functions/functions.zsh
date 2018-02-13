@@ -1,5 +1,13 @@
+# Zsh functions.
+
 # T - Tester (I change it often)
 T(){
+  gwi contributing
+}
+
+# Search aliases you have defined
+l() {
+  alias | grep $1 |awk -F= '{printf "%s\t%s\n", $1, $2}'
 }
 
 # Lowercase every file in current dir
@@ -263,14 +271,14 @@ md() {
 
 # da - cd a dir back and exa
 # da <dir> - Change to a directory and list its contents
-dw() {
-  if [ $# -eq 0 ]; then
-    cd ..
-    exa
-  else
-    builtin cd "$argv[-1]" && exa "${(@)argv[1,-2]}"
-  fi
-}
+# dw() {
+#   if [ $# -eq 0 ]; then
+#     cd ..
+#     exa
+#   else
+#     builtin cd "$argv[-1]" && exa "${(@)argv[1,-2]}"
+#   fi
+# }
 
 # server - Create server of current dir on port 8000 and open it in browser.
 server() {

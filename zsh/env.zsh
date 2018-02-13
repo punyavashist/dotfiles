@@ -1,5 +1,7 @@
 # Setting and editing of different enviroment variables.
 
+export EDITOR='nvim'
+export DOTFILES="$HOME/.dotfiles"
 export PATH=$(brew --prefix ruby)/bin:$PATH
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/usr/local/opt/python/libexec/bin:$PATH" # Python 2
@@ -8,6 +10,7 @@ export PATH=./node_modules/.bin/:$PATH # NPM
 # export PATH=/Users/nikivi/anaconda3/bin:$PATH # Anaconda NOTE: note sure if need
 export PATH=$PATH:/usr/local/go/bin:/Users/nikivi/go/bin # Go
 export PATH=$PATH:~/.cargo/bin # Rust
+export HOMEBREW_AUTO_UPDATE_SECS=3600
 
 # FZF TODO: not sure if it works
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
