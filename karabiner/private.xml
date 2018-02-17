@@ -4727,7 +4727,7 @@ tell application "Alfred 3" to run trigger "uninstall" in workflow "fradser.unin
 <name>KeyCode::VK_OPEN_URL_ALFRED_RELOAD_KARABINER_XML</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "reload" in workflow "com.nikivi.karabiner" with argument ""
+tell application "Alfred 3" to run trigger "reload" in workflow "nikivi.karabiner" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -10420,6 +10420,11 @@ KeyCode::R, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND
 <autogen>
 __KeyToKey__
 KeyCode::K,
+KeyCode::VK_OPEN_URL_HAMMERSPOON_RELOAD_CONFIG
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::U,
 KeyCode::VK_OPEN_URL_KM_NEW_SHIP_ISSUE
 </autogen>
 <autogen>
@@ -10449,7 +10454,7 @@ KeyCode::G, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::U,
+KeyCode::Y,
 KeyCode::VK_OPEN_URL_ALFRED_GIT_REPOS_UPDATE
 </autogen>
 <autogen>

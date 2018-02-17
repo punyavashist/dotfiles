@@ -23,7 +23,7 @@ local mouseCircle = nil
 local mouseCircleTimer = nil
 
 -- _Variables
--- _Colors
+-- Colors
 white = hs.drawing.color.white
 black = hs.drawing.color.black
 blue = hs.drawing.color.blue
@@ -42,13 +42,24 @@ black50 = {red=0,blue=0,green=0,alpha=0.5}
 darkblue = {red=24/255,blue=195/255,green=145/255,alpha=1}
 red = {red=229/255,blue=66/255,green=77/255,alpha=1}
 
--- _Paths
-
--- _Utils
--- Show my todo task in a neat window briefly
-function showTodoTask ()
-hs.alert.show( ( hs.execute("~/app/hammerspoon/todo") ) )
+-- Show TODO task briefly in middle of screen
+function showTodoTask()
+    if not todo_draw then
+        local mainScreen = hs.screen.mainScreen()
+        local mainRes = mainScreen:fullFrame()
+        local todo_str = hs.execute("~/app/hammerspoon/todo")
+        local todo = hs.styledtext.new(todo_str,{font={name="Impact",size=120},color=red, paragraphStyle={alignment="center"}})
+        local timeframe = hs.geometry.rect((mainRes.w-300)/2,(mainRes.h-200)/2,300,150)
+        todo_draw = hs.drawing.text(timeframe,todo)
+        todo_draw:setLevel(hs.drawing.windowLevels.overlay)
+        todo_draw:show()
+        timer = hs.timer.doAfter(4, function() todo_draw:delete() todo_draw=nil end)
+    else
+        todo_draw:delete()
+        todo_draw=nil
+    end
 end
+
 hs.urlevent.bind("showTodoTask", showTodoTask)
 
 -- _Display clipboard contents
@@ -102,7 +113,7 @@ function showTime()
         time_draw = hs.drawing.text(timeframe,time_str)
         time_draw:setLevel(hs.drawing.windowLevels.overlay)
         time_draw:show()
-        ttimer = hs.timer.doAfter(4, function() time_draw:delete() time_draw=nil end)
+        timer = hs.timer.doAfter(4, function() time_draw:delete() time_draw=nil end)
     else
         time_draw:delete()
         time_draw=nil
