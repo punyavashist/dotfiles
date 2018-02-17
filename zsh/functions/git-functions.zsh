@@ -7,8 +7,8 @@ gz(){
   git push
 }
 
-# gzc - Improve contributing commit
-gzc(){
+# Improve contributing commit
+gwt(){
   git add CONTRIBUTING.md
   git commit -m "Improve contributing"
   git push
@@ -55,7 +55,7 @@ gwi() {
 }
 
 # gwe <msg> - commit all changes with `Update <msg>`
-gwe() {
+gwu() {
     git add .
     git commit -m "Update $*"
     git push

@@ -1,6 +1,7 @@
 # Setting and editing of different enviroment variables.
 
 export EDITOR='nvim'
+export SUDO_EDITOR='nvim'
 export DOTFILES="$HOME/.dotfiles"
 export PATH=$(brew --prefix ruby)/bin:$PATH
 export PATH="$HOME/.yarn/bin:$PATH"

@@ -13,11 +13,11 @@ function zle-keymap-select {
     printf "\033[6 q" # Block
   fi
 }
-
 function zle-line-finish { printf "\033[6 q" }
 zle -N zle-line-finish
 zle -N zle-keymap-select
-export KEYTIMEOUT=1
+
+export KEYTIMEOUT=1 # Short ESC delay
 
 # _Control
 bindkey "^f" beginning-of-line

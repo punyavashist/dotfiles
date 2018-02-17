@@ -289,42 +289,29 @@ alias egi='nvim .gitignore' # TODO: make it zsh func, go to root and then run it
 alias ej='nvim package.json'
 
 # _Edit config
-alias ea='nvim ~/.dotfiles/zsh/aliases/alias.zsh' # alias
-alias eh='nvim ~/.ssh/config' # ssh config
-alias ejj='nvim ~/.dotfiles/intellij/ideavimrc' # idea
-alias ez='nvim ~/.dotfiles/zsh/zshrc.zsh' # zshrc
-alias eze='nvim ~/.dotfiles/zsh/aliases/vim.zsh' # goto vim
-alias ezk='nvim ~/.dotfiles/zsh/aliases/cd.zsh' # goto cd
 alias ek='nvim ~/Library/Application\ Support/Karabiner/private.xml' # karabiner
 alias ew='nvim ~/.dotfiles/nvim/init.vim' # nvimrc
-alias ef='nvim ~/.dotfiles/zsh/functions/functions.zsh' # shell functions
-alias ehs='nvim ~/.dotfiles/hammerspoon/init.lua' # hammerspoon
-alias ezd='nvim ~/.dotfiles/zsh/aliases/dev.zsh' # development alias
-alias ezg='nvim ~/.dotfiles/zsh/aliases/git.zsh' # git alias
-alias eza='nvim ~/.dotfiles/zsh/aliases/app.zsh' # app alias
-alias ezv='nvim ~/.dotfiles/zsh/dev/env.zsh' # enviroment variables
-alias ezo='nvim ~/.dotfiles/zsh/aliases/docker.zsh' # docker alias
+alias essh='nvim ~/.ssh/config' # ssh config
 alias et='nvim ~/.dotfiles/tmux/tmux.conf.local' # tmux config
-alias ezb='nvim ~/.dotfiles/zsh/zsh/bindings.zsh' # shell keyboard bindings
 
 # _cd places
 alias doc='cd ~/Documents'
-alias dw='cd ~/src/web'
+alias dw='cd ~/dev/web'
 alias dsh='cd ~/.ssh'
-alias dl='cd ~/src/clones'
-alias di='cd ~/src/ideas'
+alias dl='cd ~/dev/clones'
+alias di='cd ~/dev/ideas'
 alias dg='cd ~/go/src/github.com/nikitavoloboev'
-alias dj='cd ~/src/learning'
-alias dk='cd ~/src/testing'
-alias da='cd ~/src/'
-alias dm='cd ~/src/oss/learn-anything'
-alias dt='cd ~/src/testing'
+alias dj='cd ~/dev/learning'
+alias dt='cd ~/dev/testing'
+alias da='cd ~/dev/'
+alias dk='cd ~/dev/forks/'
+alias dm='cd ~/dev/github/learn-anything'
 alias dz='cd ~/.dotfiles'
 
 # _Xcode
-alias dx='cd ~/src/xcode'
-alias dxi='cd ~/src/xcode/iOS'
-alias dxm='cd ~/src/xcode/macOS'
+alias dx='cd ~/dev/Xcode'
+alias dxi='cd ~/dev/Xcode/iOS'
+alias dxm='cd ~/dev/xcode/macOS'
 
 # _macOS
 alias de='cd ~/Desktop'
@@ -338,7 +325,6 @@ alias drp='cd ~/Dropbox'
 # _config
 alias d..='cd ~/.config'
 alias dv='cd ~/.dotfiles/nvim'
-# alias da='cd ~/.dotfiles'
 alias dsk='cd ~/Library/Application\ Support/Karabiner'
 alias db='cd ~/.dotfiles/bin'
 alias dh='cd ~/.hammerspoon'

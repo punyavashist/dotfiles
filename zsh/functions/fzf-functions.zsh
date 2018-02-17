@@ -18,7 +18,7 @@ fkill() {
   fi
 }
 
-# cd to selected directory - TODO: ignore node_modules + other things
+# fa <dir> - Search dirs and cd to them - TODO: ignore node_modules + other things
 fa() {
   local dir
   dir=$(find ${1:-.} -path '*/\.*' -prune \
@@ -26,6 +26,11 @@ fa() {
   cd "$dir"
 }
 
+# fah <dir> - Search dirs and cd to them (included hidden dirs)
+fah() {
+  local dir
+  dir=$(find ${1:-.} -type d 2> /dev/null | fzf +m) && cd "$dir"
+}
 
 # fbr - checkout git branch (including remote branches), sorted by most recent commit, limit 30 last branches
 fb() {
@@ -200,7 +205,33 @@ fda() {
   dir=$(find ${1:-.} -type d 2> /dev/null | fzf +m) && cd "$dir"
 }
 
-# fshow - git commit browser
+# df <file> - cd into the directory of the selected file
+df() {
+   local file
+   local dir
+   file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"
+}
+
+# fh - Repeat history, assumes zsh
+fh() {
+  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
+}
+
+# Search env variables
+fenv() {
+  local out
+  out=$(env | fzf)
+  echo $(echo $out | cut -d= -f2)
+}
+
+# Repeat history and run the cmd
+rh() {
+ eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
+}
+# TODO: add binding
+
+# _Git
+# Git commit browser
 fgs() {
   git log --graph --color=always \
       --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |
@@ -212,14 +243,26 @@ fgs() {
 FZF-EOF"
 }
 
-# df <file> - cd into the directory of the selected file
-df() {
-   local file
-   local dir
-   file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"
+fstash() {
+    local out q k sha
+    while out=$(
+            git stash list --pretty="%C(yellow)%h %>(14)%Cgreen%cr %C(blue)%gs" |
+                fzf --ansi --no-sort --query="$q" --print-query \
+                    --expect=ctrl-d,ctrl-b);
+    do
+        mapfile -t out <<< "$out"
+        q="${out[0]}"
+        k="${out[1]}"
+        sha="${out[-1]}"
+        sha="${sha%% *}"
+        [[ -z "$sha" ]] && continue
+        if [[ "$k" == 'ctrl-d' ]]; then
+            git diff $sha
+        elif [[ "$k" == 'ctrl-b' ]]; then
+            git stash branch "stash-$sha" $sha
+            break;
+        else
+            git stash show -p $sha
+        fi
+    done
 }
-
-# Repeat history
-#j() {
-#  eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
-#}

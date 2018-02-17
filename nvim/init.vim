@@ -13,6 +13,7 @@ call plug#begin()
 " Code
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') } " Autocomplete
 Plug 'romainl/vim-cool' " Stop matching after search is done
+Plug 'jiangmiao/auto-pairs' " Autocomplete brackets
 Plug 'zchee/deoplete-go', { 'do': 'make'} " Go autocomplete
 Plug 'zchee/deoplete-jedi' " Autocompletion and static analysis
 Plug 'w0rp/ale' " Asynchronous Lint Engine
@@ -246,11 +247,13 @@ function! Multiple_cursors_after()
     endif
 endfunction
 
+" _Plugin settings
 let g:multi_cursor_exit_from_visual_mode = 0
 let g:multi_cursor_exit_from_insert_mode = 0
 
 let g:AutoPairsFlyMode = 0
 let g:AutoPairsShortcutToggle = '<C-P>'
+au filetype vim let b:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'", '`':'`'} " Don't autocomplete in vim
 
 " JSX
 let g:jsx_ext_required = 0

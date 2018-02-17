@@ -1291,7 +1291,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: clone repo to ~/src/clones and open with VS Code"
+do script "g: clone repo to ~/dev/clones and open with VS Code"
 end tell
 '
 </url>
@@ -1301,7 +1301,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: clone repo to ~/src/clones and open with Sublime"
+do script "g: clone repo to ~/dev/clones and open with Sublime"
 end tell
 '
 </url>
@@ -1371,7 +1371,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: clone repo to ~/src/clones"
+do script "g: clone repo to ~/dev/clones"
 end tell
 '
 </url>
@@ -9603,12 +9603,12 @@ KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_CLIPBOARD_CONTENT
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::J,
+KeyCode::N,
 KeyCode::F12, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::N,
+KeyCode::J,
 KeyCode::S, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L,  <!-- Move window to another screen -->
 </autogen>
 <autogen>

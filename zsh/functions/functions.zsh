@@ -2,7 +2,6 @@
 
 # T - Tester (I change it often)
 T(){
-  gwi contributing
 }
 
 # Search aliases you have defined
@@ -13,13 +12,6 @@ l() {
 # Lowercase every file in current dir
 lowercaseCurrentDir(){
   for i in *; do mv $i ${(L)i}; done
-}
-
-# Improve contributing commit
-gwt(){
-  git add CONTRIBUTING.md
-  git commit -m "Improve contributing"
-  git push
 }
 
 # Show my $PATH
