@@ -1,5 +1,5 @@
 # My configuration files for macOS [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
-> Includes zsh, neovim, karabiner, hammerspoon, vs code
+> Includes Zsh, Neovim, Karabiner, Hammerspoon, VS Code
 
 <img src="https://i.imgur.com/1X3soFt.jpg" width="600" alt="img">
 

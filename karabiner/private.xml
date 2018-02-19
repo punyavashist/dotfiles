@@ -906,7 +906,7 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_2ND_ITERM_TAB</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_2</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
@@ -2266,6 +2266,28 @@ end tell
 </url>
 </vkopenurldef>
 
+<!-- _km personal def-->
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_ADD_CLIPBOARD_AS_ACTIVE_TODO</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "per: add clipboard as active todo"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_ADD_SELECTED_TEXT_AS_ACTIVE_TODO</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "per: add selected text as active todo"
+end tell
+'
+</url>
+</vkopenurldef>
+
 <!-- _km app def -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_ITUNES</name>
@@ -2273,6 +2295,26 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "open: Itunes"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_NHEKO</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "open: Nheko"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_HAMMERSPOON</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "open: hammerspoon"
 end tell
 '
 </url>
@@ -3203,7 +3245,7 @@ end tell
 <!-- _HS def -->
 <vkopenurldef>
 <background/>
-<name>KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TODO_TASK</name>
+<name>KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TODO</name>
 <url>hammerspoon://showTodoTask</url>
 </vkopenurldef>
 <vkopenurldef>
@@ -4880,7 +4922,7 @@ tell application "Alfred 3" to run trigger "start" in workflow "com.jason0x43.al
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_NEW_TODO_TASK</name>
+<name>KeyCode::VK_OPEN_URL_ALFRED_NEW_TODO</name>
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "new" in workflow "nikivi.create.task" with argument ""
@@ -5592,12 +5634,12 @@ KeyCode::F2, ModifierFlag::COMMAND_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::M,
+KeyCode::SEMICOLON,
 KeyCode::VK_OPEN_URL_KM_MANIPULATE_CLIPBOARD
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::SEMICOLON,
+KeyCode::M,
 KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
 </autogen>
 <autogen>
@@ -7507,7 +7549,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_ONLINE
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::B,
+KeyCode::A,
 KeyCode::VK_OPEN_URL_ALFRED_CREATE_SONG_RADIO
 </autogen>
 <autogen>
@@ -7592,13 +7634,8 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::A,
-KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TODO_TASK
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::F,
-KeyCode::VK_OPEN_URL_ALFRED_NEW_TODO_TASK
+KeyCode::VK_OPEN_URL_ALFRED_NEW_TODO
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7998,7 +8035,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_CHROME
 <autogen>
 __KeyToKey__
 KeyCode::H,
-KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE
+KeyCode::VK_OPEN_URL_KM_OPEN_PAW
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9498,6 +9535,11 @@ KeyCode::P, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::I,
+KeyCode::VK_OPEN_URL_KM_ADD_SELECTED_TEXT_AS_ACTIVE_TODO
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::2,
 KeyCode::U, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, 
 </autogen>
@@ -9519,7 +9561,7 @@ KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TIME
 <autogen>
 __KeyToKey__
 KeyCode::O,
-KeyCode::VK_OPEN_URL_KM_NEW_SHIP_ISSUE
+KeyCode::VK_OPEN_URL_KM_ADD_CLIPBOARD_AS_ACTIVE_TODO
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9609,6 +9651,11 @@ KeyCode::F12, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
 <autogen>
 __KeyToKey__
 KeyCode::J,
+KeyCode::VK_OPEN_URL_HAMMERSPOON_SHOW_TODO
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::B,
 KeyCode::S, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L,  <!-- Move window to another screen -->
 </autogen>
 <autogen>
@@ -9748,7 +9795,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMISSION
 <autogen>
 __KeyToKey__
 KeyCode::H,
-KeyCode::VK_OPEN_URL_KM_OPEN_PAPRIKA_RECIPE_MANAGER
+KeyCode::VK_OPEN_URL_KM_OPEN_HAMMERSPOON
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10520,7 +10567,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_DISCORD
 <autogen>
 __KeyToKey__
 KeyCode::N,
-KeyCode::VK_OPEN_URL_KM_OPEN_CAPRINE
+KeyCode::VK_OPEN_URL_KM_OPEN_NHEKO
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10565,7 +10612,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITTER
 <autogen>
 __KeyToKey__
 KeyCode::M,
-KeyCode::VK_OPEN_URL_ALFRED_MAILTO
+KeyCode::D, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10644,12 +10691,12 @@ KeyCode::F11, ModifierFlag::OPTION_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::D,
+KeyCode::W,
 KeyCode::VK_OPEN_URL_KM_LOWERCASE_SELECTED_TEXT
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::W,
+KeyCode::D,
 KeyCode::F12, ModifierFlag::COMMAND_L
 </autogen>
 <autogen>
@@ -10724,11 +10771,6 @@ KeyCode::RETURN, ModifierFlag::SHIFT_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::DOT,
-KeyCode::VK_OPEN_URL_KM_OPEN_2ND_ITERM_TAB
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::Q,
 KeyCode::VK_OPEN_URL_KM_TITLE_CASE_TEXT
 </autogen>
@@ -10741,11 +10783,6 @@ KeyCode::RETURN, ModifierFlag::COMMAND_L
 __KeyToKey__
 KeyCode::COMMAND_R,
 KeyCode::RETURN, ModifierFlag::SHIFT_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SEMICOLON,
-KeyCode::VK_OPEN_URL_KM_MIND_THINKING
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10774,8 +10811,18 @@ KeyCode::3, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::SEMICOLON,
+KeyCode::VK_OPEN_URL_KM_MIND_THINKING
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::J,
 KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_1
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::DOT,
+KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_2
 </autogen>
 <autogen>
 __KeyToKey__

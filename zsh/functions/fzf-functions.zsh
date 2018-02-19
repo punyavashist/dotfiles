@@ -70,7 +70,7 @@ fgc() {
   cut -c4- | sed 's/.* -> //'
 }
 
-gb() {
+gbf() {
   is_in_git_repo || return
   git branch -a --color=always | grep -v '/HEAD\s' | sort |
   fzf-down --ansi --multi --tac --preview-window right:70% \

@@ -18,6 +18,7 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pa
 alias lc='tokei'
 alias sf='screenfetch -E'
 alias am='open -a "Marked 2" README.md'
+alias rmd='open -a "Marked 2"'
 alias _='sudo'
 alias ae='subl README.md' # Edit readme file
 alias yi="python3 -i"
