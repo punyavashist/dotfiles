@@ -10,7 +10,7 @@ _asm.hs_default_require = require
 require = rawrequire
 
 -- Link Spoons dir
-- TODO: doesnt work
+-- TODO: doesnt work
 -- package.path = hs.configdir .. "/Spoons/?.spoon/init.lua;"
 
 -- Override print so that it can render styled text objects directly in the console

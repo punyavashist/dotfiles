@@ -31,7 +31,7 @@ I describe my custom configuration I use below. It is heavily tailored to my own
 
 The most exciting thing in here is probably how I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now.
 
-I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macOS/apps/karabiner/karabiner.html) and I document all the keybindings I have made and changed as an interactive mind map [here](https://my.mindnode.com/mR7ds52Ls21umnbD27SfCD4SmwwrvxxGwvSyy7yW#603.1,-2191.4,3). Scroll around and explore, perhaps you find something interesting.
+I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macOS/apps/karabiner/karabiner.html).
 
 ## Neovim
 I am [still learning vim](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim.html) but the this journey has been very rewarding. Modal editing is pretty amazing.
@@ -41,7 +41,7 @@ My Neovim config can be seen [here](nvim/init.vim). I use [ayu theme](https://gi
 <img src="https://i.imgur.com/nL5NGpJ.png" width="500" alt="img">
 
 ## VS Code
-My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has very well built [vim mode](https://github.com/VSCodeVim/Vim). And I really love its [Go Plugin](https://github.com/Microsoft/vscode-go) + the amazing zen mode.
+My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has very well built [vim mode](https://github.com/VSCodeVim/Vim). And I love its [Go Plugin](https://github.com/Microsoft/vscode-go) + the amazing zen mode.
 
 Configs I use for it can be seen [here](https://github.com/nikitavoloboev/dotfiles/tree/master/vscode).
 
@@ -61,7 +61,7 @@ I use many aliases to get around my system as fast as possible. You can view the
 ### Interesting aliases and functions
 There is quite a lot of awesome programs I use from my command line (you can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps) for some of them).
 
-However I also really love customising my shell experience with various aliases and zsh functions. Here are some that I like and use very often:
+However I also love customising my shell experience with various aliases and zsh functions. Here are some that I like and use very often:
 
 #### Commit and push repository to GitHub in one command
 
@@ -93,7 +93,7 @@ Which using [this CLI tool](https://github.com/nikitavoloboev/license-up), will 
 And thus in one command I initialised and pushed the repo. To create a new repo quickly I use [this Alfred workflow](https://github.com/nikitavoloboev/alfred-ask-create-share).
 
 #### Commit all with generic `Update` message
-I use this command really often.
+I use this command often.
 
 ```Bash
 function ggs() {
@@ -169,7 +169,7 @@ fea() {
 A slight variation of the above command that first `cd`'s to `~/.dotfiles` and then lets me search through contents of it to quickly edit and modify my config with neovim.
 
 ## Inspiring dotfiles
-These are dotfiles I got many ideas from and really liked.
+These are dotfiles I got many ideas from and liked.
 - [caarlos0](https://github.com/caarlos0/dotfiles)
 - [wangsongiam](https://github.com/wangsongiam/dotfiles)
 

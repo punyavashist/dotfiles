@@ -17,8 +17,8 @@ alias crypto='curl rate.sx' # Get crypto prices
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias lc='tokei'
 alias sf='screenfetch -E'
-alias am='open -a "Marked 2" README.md'
-alias rmd='open -a "Marked 2"'
+alias mre='open -a "Marked 2" README.md'
+alias mr='open -a "Marked 2"'
 alias _='sudo'
 alias ae='subl README.md' # Edit readme file
 alias yi="python3 -i"
@@ -296,7 +296,6 @@ alias essh='nvim ~/.ssh/config' # ssh config
 alias et='nvim ~/.dotfiles/tmux/tmux.conf.local' # tmux config
 
 # _cd places
-alias doc='cd ~/Documents'
 alias dw='cd ~/dev/web'
 alias dsh='cd ~/.ssh'
 alias dl='cd ~/dev/clones'
@@ -306,8 +305,9 @@ alias dj='cd ~/dev/learning'
 alias dt='cd ~/dev/testing'
 alias da='cd ~/dev/'
 alias dk='cd ~/dev/forks/'
-alias dm='cd ~/dev/github/learn-anything'
+alias dn='cd ~/dev/github/learn-anything'
 alias dz='cd ~/.dotfiles'
+alias ds='cd ~/Documents'
 
 # _Xcode
 alias dx='cd ~/dev/Xcode'

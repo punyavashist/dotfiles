@@ -30,26 +30,18 @@
 </vkopenurldef>
 
 <!-- _App def  -->
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_APP_IntelliJ</name>
-<url type="file">/Applications/IntelliJ IDEA.app</url>
-</vkopenurldef>
-
 <appdef>
 <appname>MINDNODE</appname>
 <equal>com.ideasoncanvas.MindNodeMac</equal>
 </appdef>
-
 <appdef>
 <appname>DICTIONARY</appname>
 <equal>com.apple.Dictionary</equal>
 </appdef>
-
 <appdef>
 <appname>XCODE</appname>
 <equal>com.apple.dt.Xcode</equal>
 </appdef>
-
 <appdef>
 <appname>ITERM</appname>
 <equal>com.googlecode.iterm2</equal>
@@ -901,6 +893,16 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "g: rerun command in iterm"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_ADD_SAFARI_LINK_TO_SELECTED_TEXT_MARKDOWN</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "g: add safari link to selected text (markdown)"
 end tell
 '
 </url>
@@ -3360,6 +3362,14 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "gists" in workflow "nikivi.search-the-web" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_LEARN_ANYTHING_LISTS</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "lists" in workflow "nikivi.learn-anything" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -7073,7 +7083,7 @@ KeyCode::CURSOR_LEFT,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::C,
+KeyCode::W,
 KeyCode::VK_OPEN_URL_KM_GO_PREFILL_COMMENT_OF_FUNCTION
 </autogen>
 <autogen>
@@ -7096,7 +7106,7 @@ KeyCode::0, ModifierFlag::SHIFT_L,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::W,
+KeyCode::C,
 KeyCode::W,
 KeyCode::O,
 KeyCode::R,
@@ -7226,6 +7236,11 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_IN_CLIPBOARD_IN_SAFARI
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::S,
+KeyCode::VK_OPEN_URL_KM_ADD_SAFARI_LINK_TO_SELECTED_TEXT_MARKDOWN
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::BACKQUOTE,
 KeyCode::VK_OPEN_URL_KM_DUCKDUCKGO_CLIPBOARD
 </autogen>
@@ -7306,27 +7321,32 @@ __BlockUntilKeyUp__ KeyCode::N,
 <autogen>
 __KeyToKey__
 KeyCode::1,
-KeyCode::VK_OPEN_URL_TIMER_10
+KeyCode::1, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::2,
-KeyCode::VK_OPEN_URL_TIMER_20
+KeyCode::2, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::3,
-KeyCode::VK_OPEN_URL_TIMER_30
+KeyCode::3, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::4,
-KeyCode::VK_OPEN_URL_TIMER_40
+KeyCode::4, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::5,
-KeyCode::VK_OPEN_URL_TIMER_50
+KeyCode::5, ModifierFlag::OPTION_L, 
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::6,
+KeyCode::6, ModifierFlag::OPTION_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7480,32 +7500,27 @@ __BlockUntilKeyUp__ KeyCode::M,
 <autogen>
 __KeyToKey__
 KeyCode::1,
-KeyCode::1, ModifierFlag::OPTION_L, 
+KeyCode::VK_OPEN_URL_TIMER_10
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::2,
-KeyCode::2, ModifierFlag::OPTION_L, 
+KeyCode::VK_OPEN_URL_TIMER_20
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::3,
-KeyCode::3, ModifierFlag::OPTION_L, 
+KeyCode::VK_OPEN_URL_TIMER_30
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::4,
-KeyCode::4, ModifierFlag::OPTION_L, 
+KeyCode::VK_OPEN_URL_TIMER_40
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::5,
-KeyCode::5, ModifierFlag::OPTION_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::6,
-KeyCode::6, ModifierFlag::OPTION_L, 
+KeyCode::VK_OPEN_URL_TIMER_50
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7672,7 +7687,6 @@ KeyCode::V,
 </item>
 <item hidden="true">
 <identifier vk_config="true">notsave.private_launcher_mode_v16</identifier>
-
 <autogen>
 __BlockUntilKeyUp__ KeyCode::V,
 </autogen>
@@ -7704,7 +7718,7 @@ KeyCode::VK_OPEN_URL_KM_EDIT_ALIASES_FILE
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::A,
+KeyCode::S,
 KeyCode::VK_OPEN_URL_KM_EDIT_VIMRC_CONFIG
 </autogen>
 <autogen>
@@ -7804,8 +7818,8 @@ ConsumerKeyCode::KEYBOARDLIGHT_LOW,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::S,
-ConsumerKeyCode::KEYBOARDLIGHT_HIGH
+KeyCode::A,
+KeyCode::M, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
 </autogen>
 </item>
 
@@ -9819,22 +9833,17 @@ KeyCode::VK_OPEN_URL_KM_OPEN_OBS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::G,
-KeyCode::VK_OPEN_URL_KM_OPEN_SPOTIFY
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::COMMAND_R,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_SCREENFLOW
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::COMMA,
-KeyCode::VK_OPEN_URL_KM_OPEN_ITUNES
+KeyCode::L,
+KeyCode::VK_OPEN_URL_KM_OPEN_MARKED
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::L,
+KeyCode::COMMA,
 KeyCode::VK_OPEN_URL_KM_OPEN_ANKI
 </autogen>
 <autogen>
@@ -12482,13 +12491,13 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
 </item>
 
 <item>
-<name>general: sim ok = mindnode content search</name>
+<name>general: sim ok</name>
 <identifier>private.sim_ok_mindnode_content_search</identifier>
 <autogen>
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::O,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_INSIDE_MINDMAPS
+KeyCode::VK_OPEN_URL_ALFRED_LEARN_ANYTHING_LISTS
 </autogen>
 </item>
 
