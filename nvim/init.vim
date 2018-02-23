@@ -115,6 +115,9 @@ filetype plugin indent on
 set mouse=a
 set undofile
 
+set wildmenu
+set wildmode=longest:list,full
+
 " Easier navig
 set number
 set relativenumber
@@ -207,7 +210,7 @@ set tabstop=4 " Default indentation is 4 spaces long and uses tabs, not spaces
 set matchtime=2
 set termguicolors " Enable true colors support
 
-"  _Plugin config
+"  _Plugin modifications
 let g:deoplete#enable_at_startup = 1 " Activate deoplete
 
 " _Theme
@@ -511,6 +514,8 @@ let g:sneak#s_next = 1
 map z/ <Plug>(incsearch-easymotion-/)
 map z? <Plug>(incsearch-easymotion-?)
 map zg/ <Plug>(incsearch-easymotion-stay)
+" Search and replace
+xnoremap gs y:%s/<C-r>"//g<Left><Left> 
 
 " See open buffers
 nnoremap gb :ls<CR>:buffer<Space> 

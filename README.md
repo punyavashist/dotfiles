@@ -66,7 +66,7 @@ However I also love customising my shell experience with various aliases and zsh
 #### Commit and push repository to GitHub in one command
 
 ```Bash
-function ggi() {
+ggi() {
     git init
     mit
     git add .
@@ -81,14 +81,13 @@ Say I created some project and wrote some code in it or added a simple README wi
 It will initialise my current directory with git if it wasn't already. It will then call this function :
 
 ```Bash
-function mit() {
-  license-up Nikita Voloboev nikitavoloboev.xyz
-  git add LICENSE
-  git commit -m 'MIT license'
+mit() {
+  license-up mit Nikita Voloboev nikitavoloboev.xyz
+  git add license
 }
 ```
 
-Which using [this CLI tool](https://github.com/nikitavoloboev/license-up), will create a license file and git commit it. After that it will add all the remaining files with a commit message you like, take the URL of my current browser window which will be at the newly created repository, point the local git repo to push there and push it.
+Which using [this CLI tool](https://github.com/nikitavoloboev/license-up), will create a license file and git add it. It will then take the URL of my current browser window which will be at the newly created repository, point the local git repo to push there and push it.
 
 And thus in one command I initialised and pushed the repo. To create a new repo quickly I use [this Alfred workflow](https://github.com/nikitavoloboev/alfred-ask-create-share).
 
@@ -96,7 +95,7 @@ And thus in one command I initialised and pushed the repo. To create a new repo 
 I use this command often.
 
 ```Bash
-function ggs() {
+ggs() {
     git add .
     git commit . -m 'Update'
     git push
@@ -109,7 +108,7 @@ It will simply add all files and commit them. I don't use this when working with
 #### Clone current url in clipboard
 
 ```Bash
-function gll(){
+gll(){
     git clone "$(pbpaste)"
 }
 ```
@@ -120,7 +119,7 @@ I use this very often to quickly clone the URL that I copied from GitHub.
 A lot more safer than `rm -rf` files as you can always check out `~/.Trash` in cases of emergency or mistakes.
 
 ```Bash
-function re(){
+re(){
   mv "$1" ~/.Trash
 }
 ```

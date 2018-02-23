@@ -8,7 +8,6 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/usr/local/opt/python/libexec/bin:$PATH" # Python 2
 export PATH=$PATH:~/.dotfiles/bin
 export PATH=./node_modules/.bin/:$PATH # NPM
-export PATH=/Users/nikivi/anaconda3/bin:$PATH # Anaconda
 export PATH=$PATH:/usr/local/go/bin:/Users/nikivi/go/bin # Go
 export PATH=$PATH:~/.cargo/bin # Rust
 export HOMEBREW_AUTO_UPDATE_SECS=3600
