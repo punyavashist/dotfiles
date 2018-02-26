@@ -20,7 +20,8 @@
 		"*.pdf",
 		"*.swf",
 		"*.jar",
-		"*.zip"
+		"*.zip",
+		"*.Ulysses-Group.plist"
 	],
 	"caret_style": "solid",
 	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",

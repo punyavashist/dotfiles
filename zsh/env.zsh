@@ -2,10 +2,11 @@
 
 export EDITOR='nvim'
 export SUDO_EDITOR='nvim'
+
 export DOTFILES="$HOME/.dotfiles"
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$(brew --prefix ruby)/bin:$PATH
 export PATH="$HOME/.yarn/bin:$PATH"
-export PATH="/usr/local/opt/python/libexec/bin:$PATH" # Python 2
 export PATH=$PATH:~/.dotfiles/bin
 export PATH=./node_modules/.bin/:$PATH # NPM
 export PATH=$PATH:/usr/local/go/bin:/Users/nikivi/go/bin # Go

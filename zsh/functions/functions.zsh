@@ -5,8 +5,30 @@ T(){
 }
 
 # Search aliases you have defined
-l() {
+l(){
   alias | grep $1 |awk -F= '{printf "%s\t%s\n", $1, $2}'
+}
+
+# Run main.go if it exists, if not, run test.go.
+oa(){
+  if [ -f main.go ]; then
+    go run main.go
+  else
+    go run test.go
+  fi
+}
+
+fuck (){
+    TF_PYTHONIOENCODING=$PYTHONIOENCODING;
+    export TF_ALIAS=fuck;
+    export TF_HISTORY="$(fc -ln -10)";
+    export PYTHONIOENCODING=utf-8;
+    TF_CMD=$(
+        thefuck THEFUCK_ARGUMENT_PLACEHOLDER $@
+    ) && eval $TF_CMD;
+    unset TF_HISTORY;
+    export PYTHONIOENCODING=$TF_PYTHONIOENCODING;
+    test -n "$TF_CMD" && print -s $TF_CMD
 }
 
 # Lowercase every file in current dir

@@ -13,7 +13,7 @@ call plug#begin()
 " Code
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') } " Autocomplete
 Plug 'romainl/vim-cool' " Stop matching after search is done
-Plug 'jiangmiao/auto-pairs' " Autocomplete brackets
+"Plug 'jiangmiao/auto-pairs' " Autocomplete brackets
 Plug 'zchee/deoplete-go', { 'do': 'make'} " Go autocomplete
 Plug 'zchee/deoplete-jedi' " Autocompletion and static analysis
 Plug 'w0rp/ale' " Asynchronous Lint Engine
@@ -21,7 +21,6 @@ Plug 'w0rp/ale' " Asynchronous Lint Engine
 "Plug 'Shougo/neosnippet.vim' " Community snippets
 "Plug 'Shougo/neosnippet-snippets'
 Plug 'honza/vim-snippets' " Community snippets
-Plug 'scrooloose/nerdcommenter' " Quick comments TODO: use it
 Plug 'Chiel92/vim-autoformat' " Easy code formatting TODO: use it
 Plug 'sbdchd/neoformat' " Format code
 "Plug 'rizzatti/dash.vim' " Search Dash app
@@ -31,12 +30,11 @@ Plug 'sheerun/vim-polyglot' " Language pack
 Plug 'bling/vim-bufferline' " TODO: doesn't show anything
 "Plug 'ryanoasis/vim-devicons' TODO: doesn't work
 Plug 'ayu-theme/ayu-vim' " Theme
-"Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline' " Nice looking status bar on the bottom
 Plug 'vim-airline/vim-airline-themes' " TODO: not sure if need
 
 " Syntax
-Plug 'isobit/vim-caddyfile' " Caddyfile syntax support
+"Plug 'isobit/vim-caddyfile' " Caddyfile syntax support
 
 " Moving
 Plug 'easymotion/vim-easymotion' " Vim motions on speed
@@ -44,33 +42,33 @@ Plug 'haya14busa/incsearch.vim' " Improved incremental searching
 Plug 'haya14busa/incsearch-easymotion.vim'
 
 " Utility
+Plug 'scrooloose/nerdcommenter' " Quick comments TODO: use it
 Plug 'unblevable/quick-scope' " Highlight f, F jumps
-Plug 'tweekmonster/startuptime.vim' " Profile startup time
-Plug 'tpope/vim-commentary' " Comment out things
+"Plug 'tweekmonster/startuptime.vim' " Profile startup time
 Plug 'Shougo/vimproc.vim', {'do' : 'make'} " Interactive command execution
-Plug 'junegunn/goyo.vim' " Distraction free writing
+"Plug 'junegunn/goyo.vim' " Distraction free writing
 "Plug 'rking/ag.vim' " Lightining fast :Ag searcher
 "Plug 'mbbill/undotree' " History visualiser
 Plug 'tpope/vim-repeat' " Enable repeating supported plugin maps
 Plug 'christoomey/vim-titlecase' " Titlecase text
 Plug 'tpope/vim-surround' " Quoting/parenthesizing made simple
 Plug 'junegunn/vim-easy-align'
-Plug 'godlygeek/tabular' " Text filtering and alignment
+"Plug 'godlygeek/tabular' " Text filtering and alignment
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim' " fzf fuzzy search
-Plug 'danro/rename.vim' " Allow to :Rename files
+"Plug 'danro/rename.vim' " Allow to :Rename files
 "Plug 'scrooloose/nerdtree' " Sidebar view
 "Plug 'Xuyuanp/nerdtree-git-plugin'
 "Plug 'tpope/vim-vinegar'
-Plug 'justinmk/vim-dirvish' " Directory viewer TODO: use it
-Plug 'justinmk/vim-sneak'
-Plug 'junegunn/limelight.vim' " Highlight only active paragraphs
-"Plug 'jiangmiao/auto-pairs' " TODO: make it not work in vimrc only
+"Plug 'justinmk/vim-dirvish' " Directory viewer
+"Plug 'justinmk/vim-sneak'
+"Plug 'junegunn/limelight.vim' " Highlight only active paragraphs
+"Plug 'jiangmiao/auto-pairs' " TODO: make it not work in vimrc
 "Plug 'tpope/vim-unimpaired' " TODO: doesn't work
-Plug 'terryma/vim-multiple-cursors'
-Plug 'dhruvasagar/vim-table-mode' " Insant table creation
-Plug 'tpope/vim-abolish' " TODO: not sure if need
-Plug 'ludovicchabant/vim-gutentags' " TODO: use it
+"Plug 'terryma/vim-multiple-cursors'
+"Plug 'dhruvasagar/vim-table-mode' " Insant table creation
+"Plug 'tpope/vim-abolish' " TODO: not sure if need
+"Plug 'ludovicchabant/vim-gutentags' " TODO: use it
 Plug 'wakatime/vim-wakatime' " Track code time
 
 " C 
@@ -80,8 +78,8 @@ Plug 'zchee/deoplete-clang', { 'for': 'c,cpp,objc' }
 "Plug 'lervag/vimtex', { 'for': 'tex' }
 
 " Javascript
-Plug 'ternjs/tern_for_vim', { 'for': 'javascript', 'do': 'npm install' }
-Plug 'carlitux/deoplete-ternjs', {'for': 'javascript', 'do': 'npm install -g tern'}
+"Plug 'ternjs/tern_for_vim', { 'for': 'javascript', 'do': 'npm install' }
+"Plug 'carlitux/deoplete-ternjs', {'for': 'javascript', 'do': 'npm install -g tern'}
 
 " Typescript
 "Plug 'Quramy/tsuquyomi', {'for': 'typescript'}
@@ -104,7 +102,7 @@ Plug 'Shougo/neco-vim', { 'for': 'vim' }
 Plug 'tpope/vim-fugitive' " Git wrapper
 Plug 'mhinz/vim-signify' " 
 Plug 'airblade/vim-gitgutter' " Show git diff in the gutter (sign column)
-Plug 'gregsexton/gitv' 
+"Plug 'gregsexton/gitv' 
 call plug#end()
 
 let g:polyglot_disabled = ['go' , 'latex']
@@ -397,12 +395,13 @@ nnoremap <Leader>vq :wqall<CR>
 nnoremap <Leader>vQ :qa<CR>
 " Install plugins
 nnoremap <Leader>ii :PlugInstall<CR>
+" Update plugins
+nnoremap <Leader>iu :PlugUpdate<CR>
 " Check vim health
 nnoremap <Leader>ih :CheckHealth<CR>
 " Move 10 lines down (for karabiner sticky keys)
 nnoremap <Leader>o 29jzz
 " Update plugins
-nnoremap <Leader>ia :PlugUpdate<CR>
 nnoremap <Leader>vm :make<CR>
 " Run commands in new splits
 nnoremap <Leader>tt :tabedit <Bar> term.

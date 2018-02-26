@@ -918,6 +918,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_4</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "g: open 4th iTerm tab"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_IN_CLIPBOARD_IN_SAFARI</name>
 <url type="shell">
 osascript -e '
@@ -5766,6 +5776,11 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
 <autogen>
 __KeyToKey__
 KeyCode::X,
+KeyCode::VK_OPEN_URL_SEARCH_TEX_FILES
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::BACKQUOTE,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_WORKFLOWS
 </autogen>
 <autogen>
@@ -5892,11 +5907,6 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARH_MARKDOWN_WIKI
 __KeyToKey__
 KeyCode::TAB,
 KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE_RESEARCH
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::BACKQUOTE,
-KeyCode::VK_OPEN_URL_SEARCH_TEX_FILES
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7637,7 +7647,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_ADD_SONG_TO_PLAYLIST
 </item>
 
 <item>
-<name>general: sticky v - media + files</name>
+<name>general: sticky v</name>
 <identifier>private.launcher_mode_open_apps_v16</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -7675,8 +7685,13 @@ KeyCode::VK_OPEN_URL_ALFRED_VOLUME_ADJUST
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::R,
+KeyCode::D,
 KeyCode::VK_OPEN_URL_KM_WIKI_SUMMARY
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::R,
+KeyCode::VK_OPEN_URL_KM_WIKI_LESSONS_LEARNED
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7792,11 +7807,6 @@ ConsumerKeyCode::VOLUME_UP
 __KeyToKey__
 KeyCode::N,
 ConsumerKeyCode::VOLUME_DOWN
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::D,
-ConsumerKeyCode::KEYBOARDLIGHT_OFF
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9749,6 +9759,11 @@ KeyCode::VK_OPEN_URL_KM_OPEN_HAZEL
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::SLASH,
+KeyCode::VK_OPEN_URL_KM_OPEN_LITTLE_SNITCH_CONFIGURATION
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::D,
 KeyCode::VK_OPEN_URL_KM_OPEN_NOTES
 </autogen>
@@ -10677,6 +10692,11 @@ KeyCode::VK_OPEN_URL_KM_ADD_SAFARI_LINK_TO_SELECTED_TEXT_MARKDOWN
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::SLASH,
+KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_4
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::I,
 KeyCode::F11, ModifierFlag::OPTION_L
 </autogen>
@@ -10767,7 +10787,7 @@ KeyCode::VK_OPEN_URL_KM_TITLE_CASE_TEXT
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::N,
+KeyCode::L,
 KeyCode::RETURN, ModifierFlag::COMMAND_L
 </autogen>
 <autogen>
@@ -10777,7 +10797,7 @@ KeyCode::RETURN, ModifierFlag::SHIFT_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::L,
+KeyCode::N,
 KeyCode::RETURN, ModifierFlag::CONTROL_L
 </autogen>
 <autogen>
@@ -12379,7 +12399,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE
 </item>
 
 <item>
-<name>general: sim o: = chrome history</name>
+<name>general: sim o:</name>
 <identifier>private.sim_o:_google</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12390,7 +12410,7 @@ KeyCode::VK_OPEN_URL_ALFRED_CHROME_HISTORY
 </item>
 
 <item>
-<name>general: sim :, = chrome history</name>
+<name>general: sim :,</name>
 <identifier>private.sim_o,_google</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12479,7 +12499,7 @@ KeyCode::VK_OPEN_URL_ALFRED_LEARN_ANYTHING_LISTS
 </item>
 
 <item>
-<name>general: sim oj = mindnode</name>
+<name>general: sim oj</name>
 <identifier>private.sim_oj_mindnode</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12490,7 +12510,7 @@ KeyCode::VK_OPEN_URL_ALFRED_AWESOME_LISTS
 </item>
 
 <item>
-<name>general: sim km = youtube</name>
+<name>general: sim km</name>
 <identifier>private.sim_km_lab</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12501,7 +12521,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
 </item>
 
 <item>
-<name>general: sim ln = dash</name>
+<name>general: sim ln</name>
 <identifier>private.sim_ln_dash</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12512,7 +12532,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_CHROME_BOOKMARKS
 </item>
 
 <item>
-<name>general: sim jn = yandex</name>
+<name>general: sim jn</name>
 <identifier>private.sim_jn_yandex</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12523,7 +12543,7 @@ KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 </item>
 
 <item>
-<name>general: sim ij = equal</name>
+<name>general: sim ij</name>
 <identifier>private.sim_ij_equal_sign</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12534,7 +12554,7 @@ KeyCode::EQUAL
 </item>
 
 <item>
-<name>general: sim oi = iterm sessions</name>
+<name>general: sim oi</name>
 <identifier>private.sim_oi_iterm_profiles</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12567,7 +12587,7 @@ KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 </item>
 
 <item>
-<name>general: sim :j = wiki</name>
+<name>general: sim :j</name>
 <identifier>private.sim_:j_wiki</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12578,7 +12598,7 @@ KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS
 </item>
 
 <item>
-<name>general: sim nlcmd = github</name>
+<name>general: sim nlcmd</name>
 <identifier>private.sim_nlcmd_down</identifier>
 <autogen>
 __SimultaneousKeyPresses__

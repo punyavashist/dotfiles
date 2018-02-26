@@ -11,6 +11,7 @@ alias nu='nix-env -u'
 alias -g G='| grep' # Grep search
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete" # Recursively delete `.DS_Store` files
 alias g='hub' # Wrapper over git
+alias pip='pip3'
 alias peek='tee >(cat 1>&2)' # Mirror stdout to stderr, useful for seeing data going through a pipe
 alias aet='subl CONTRIBUTING.md'
 alias crypto='curl rate.sx' # Get crypto prices
@@ -21,7 +22,7 @@ alias mre='open -a "Marked 2" README.md'
 alias mr='open -a "Marked 2"'
 alias _='sudo'
 alias ae='subl README.md' # Edit readme file
-alias yi="python3 -i"
+alias yi="python -i"
 alias kar="/Applications/Karabiner.app/Contents/Library/bin/karabiner"
 alias le='less -r'
 alias wifi='wifi-password -q'
@@ -89,14 +90,13 @@ alias tp='type'
 # alias gr='goreleaser'
 
 # _Dev
-# alias co='coala'
 alias ll='ln -s'
 alias jd='jid'
 alias tm='task'
 alias rf='reflex'
 alias kb='kubectl'
 alias ser='serve'
-alias h='python3 -m http.server'
+alias h='python -m http.server'
 alias cra='npx create-react-app'
 alias lic='legit'
 
@@ -107,10 +107,9 @@ alias fr='flask run'
 alias to='gittower .' # Open current dir in Tower
 
 # _Python
-alias p='python3'
-alias p2='python'
+alias p='python'
+alias p2='python2'
 alias pi='pip install'
-alias rv='virtualenv -p /usr/local/bin/python3'
 
 # _Alfred
 alias wf='alfred build'
@@ -168,7 +167,7 @@ alias oo='go install'
 alias ov='go vet'
 alias ob='go build'
 alias ora='go-pry'
-alias oa='go build -o main'
+alias oe='go build -o main'
 
 alias ugo='Go-Package-Store'
 

@@ -7,6 +7,13 @@ gz(){
   git push
 }
 
+# gwh <msg> - Change <msg> commit
+gwh(){
+  git add .
+  git commit -m "Change $*"
+  git push
+}
+
 # Improve contributing commit
 gwt(){
   git add CONTRIBUTING.md
@@ -117,8 +124,11 @@ ggu() {
 
 # ggo - git add origin from currently open Safari tab and push to master there
 ggo() {
+    git add .
+    git commit -m "Init"
     git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
     git push $(osascript -e 'tell application "Safari" to return URL of front document') master
+    git push --set-upstream origin master
 }
 
 # ggg - git add origin from currently open Safari tab and push to master there
