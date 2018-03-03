@@ -15,7 +15,7 @@ You can also see my top used applications, safari exensions and alfred workflows
 - [Zsh](#zsh)
   - [Interesting aliases and functions](#interesting-aliases-and-functions)
 - [Fzf](#fzf)
-- [Inspiring dotfiles](#inspiring-dotfiles)
+- [Interesting dotfiles](#interesting-dotfiles)
 - [Contributing](#contributing)
 
 ## Install
@@ -167,13 +167,11 @@ fea() {
 
 A slight variation of the above command that first `cd`'s to `~/.dotfiles` and then lets me search through contents of it to quickly edit and modify my config with neovim.
 
-## Inspiring dotfiles
+## Interesting dotfiles
 These are dotfiles I got many ideas from and liked.
+- [bluz71](https://github.com/bluz71/dotfiles) - Has interesting vim setup.
 - [caarlos0](https://github.com/caarlos0/dotfiles) - Made antibody.
 - [wangsongiam](https://github.com/wangsongiam/dotfiles) - Interesting hammerspoon and zsh config.
-
-## Interesting dotfiles
-- [bluz71](https://github.com/bluz71/dotfiles) - Has interesting vim setup.
 
 ## Contributing
 [Suggestions](../../issues/) on how I can improve the structure of these dotfiles as well as suggesting new and awesome tools one can use are welcome.
