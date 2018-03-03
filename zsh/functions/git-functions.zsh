@@ -7,6 +7,12 @@ gz(){
   git push
 }
 
+# Ignore files and remove them if they were tracked
+gri(){
+  git rm "$*"
+  git rm --cached "$*"
+}
+
 # gwh <msg> - Change <msg> commit
 gwh(){
   git add .

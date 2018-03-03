@@ -918,6 +918,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_3</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "g: open 3rd iTerm tab"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_4</name>
 <url type="shell">
 osascript -e '
@@ -1724,6 +1734,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_LIST_RESEARCH_PAPERS</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "list: research papers"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_LIST_COURSES</name>
 <url type="shell">
 osascript -e '
@@ -1967,6 +1987,26 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "edit: zsh bindings"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_MY_MACOS</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "edit: my macOS"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_TEMP_NOTES</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "edit: temp notes"
 end tell
 '
 </url>
@@ -7695,6 +7735,11 @@ KeyCode::VK_OPEN_URL_KM_WIKI_LESSONS_LEARNED
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::Q,
+KeyCode::VK_OPEN_URL_KM_EDIT_MY_MACOS
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::SPACE,
 KeyCode::V, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, 
 </autogen>
@@ -7710,13 +7755,13 @@ KeyCode::VK_OPEN_URL_KM_WIKI_RULES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::W,
-KeyCode::VK_OPEN_URL_KM_WIKI_MONTHLY
+KeyCode::Z,
+KeyCode::VK_OPEN_URL_KM_EDIT_TEMP_NOTES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::Z,
-KeyCode::VK_OPEN_URL_KM_EDIT_ALIASES_FILE
+KeyCode::W,
+KeyCode::VK_OPEN_URL_KM_WIKI_MONTHLY
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8234,11 +8279,6 @@ KeyCode::VK_OPEN_URL_KM_WIKI_LESSONS_LEARNED
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::W,
-KeyCode::VK_OPEN_URL_KM_WIKI_MY_WORKFLOW
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::G,
 KeyCode::VK_OPEN_URL_KM_WIKI_MY_GITHUB
 </autogen>
@@ -8478,6 +8518,11 @@ KeyCode::Z, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
 __KeyToKey__
 KeyCode::L,
 KeyCode::VK_OPEN_URL_KM_LIST_COMMAND_LINE_TOOLS
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::H,
+KeyCode::VK_OPEN_URL_KM_LIST_RESEARCH_PAPERS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9805,7 +9850,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_HAMMERSPOON
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::3,
+KeyCode::P,
 KeyCode::VK_OPEN_URL_KM_OPEN_PAPRIKA_RECIPE_MANAGER
 </autogen>
 <autogen>
@@ -9840,11 +9885,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_ANKI
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::P,
-KeyCode::VK_OPEN_URL_KM_OPEN_PAGES
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::F19,
 KeyCode::VK_OPEN_URL_KM_OPEN_MAGIC_NUMBER
 </autogen>
@@ -9866,7 +9906,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_ALFRED_PREFERENCES
 <autogen>
 __KeyToKey__
 KeyCode::U,
-KeyCode::VK_OPEN_URL_KM_OPEN_PIXELMATOR
+KeyCode::VK_OPEN_URL_KM_OPEN_PAPRIKA_RECIPE_MANAGER
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10562,11 +10602,6 @@ __BlockUntilKeyUp__ KeyCode::Z,
 
 <autogen>
 __KeyToKey__
-KeyCode::D,
-KeyCode::VK_OPEN_URL_KM_OPEN_DISCORD
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::N,
 KeyCode::VK_OPEN_URL_KM_OPEN_NHEKO
 </autogen>
@@ -10614,11 +10649,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITTER
 __KeyToKey__
 KeyCode::M,
 KeyCode::D, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::V,
-KeyCode::VK_OPEN_URL_KM_OPEN_DISCORD
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10693,6 +10723,11 @@ KeyCode::VK_OPEN_URL_KM_ADD_SAFARI_LINK_TO_SELECTED_TEXT_MARKDOWN
 <autogen>
 __KeyToKey__
 KeyCode::SLASH,
+KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_3
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::QUOTE,
 KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_4
 </autogen>
 <autogen>
@@ -12164,11 +12199,6 @@ KeyCode::B,
 __BlockUntilKeyUp__ KeyCode::B,
 </autogen>
 
-<autogen>
-__KeyToKey__
-KeyCode::O,
-KeyCode::VK_OPEN_URL_KM_MIND_RESEARCH
-</autogen>
 <autogen>
 __KeyToKey__
 KeyCode::I,

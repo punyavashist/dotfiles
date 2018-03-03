@@ -198,7 +198,7 @@ set grepformat^=%f:%l:%c:%m
 
 set viewoptions=cursor,slash,unix
 
-"  _Basic UI config
+" _Basic UI config
 set relativenumber " Relative to current posion line numbers
 set number " Show line numbers
 set cursorline  " Highlight current line
@@ -208,7 +208,7 @@ set tabstop=4 " Default indentation is 4 spaces long and uses tabs, not spaces
 set matchtime=2
 set termguicolors " Enable true colors support
 
-"  _Plugin modifications
+" _Plugin modifications
 let g:deoplete#enable_at_startup = 1 " Activate deoplete
 
 " _Theme
@@ -509,6 +509,14 @@ au FocusLost * :wa
 au FileType typescript setlocal noexpandtab
 
 " _Testing
+" Persistent undo
+let s:undoDir = "/tmp/.undodir_" . $USER
+if !isdirectory(s:undoDir)
+    call mkdir(s:undoDir, "", 0700)
+endif
+let &undodir=s:undoDir
+set undofile
+
 let g:sneak#s_next = 1
 map z/ <Plug>(incsearch-easymotion-/)
 map z? <Plug>(incsearch-easymotion-?)

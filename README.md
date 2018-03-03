@@ -31,7 +31,7 @@ I describe my custom configuration I use below. It is heavily tailored to my own
 
 The most exciting thing in here is probably how I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now.
 
-I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macOS/apps/karabiner/karabiner.html).
+I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macOS/apps/karabiner/karabiner.html). And my config for it can be seen [here](https://github.com/nikitavoloboev/dotfiles/blob/master/karabiner/private.xml).
 
 ## Neovim
 I am [still learning vim](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim.html) but the this journey has been very rewarding. Modal editing is pretty amazing.
@@ -169,8 +169,11 @@ A slight variation of the above command that first `cd`'s to `~/.dotfiles` and t
 
 ## Inspiring dotfiles
 These are dotfiles I got many ideas from and liked.
-- [caarlos0](https://github.com/caarlos0/dotfiles)
-- [wangsongiam](https://github.com/wangsongiam/dotfiles)
+- [caarlos0](https://github.com/caarlos0/dotfiles) - Made antibody.
+- [wangsongiam](https://github.com/wangsongiam/dotfiles) - Interesting hammerspoon and zsh config.
+
+## Interesting dotfiles
+- [bluz71](https://github.com/bluz71/dotfiles) - Has interesting vim setup.
 
 ## Contributing
 [Suggestions](../../issues/) on how I can improve the structure of these dotfiles as well as suggesting new and awesome tools one can use are welcome.
