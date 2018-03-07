@@ -6,10 +6,19 @@
   "workbench.panel.defaultLocation": "right",
   "terminal.integrated.copyOnSelection": true,
   "eslint.packageManager": "yarn",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "vendor": true,
+    "package-lock.json": true
+  },
+  "typescript.check.npmIsInstalled": false,
   // _General
   "editor.snippetSuggestions": "top",
   "editor.minimap.enabled": false,
-  // _Todo
   "todohighlight.isEnable": true,
   "editor.cursorBlinking": "solid",
   "files.trimTrailingWhitespace": true,
@@ -39,7 +48,7 @@
   "editor.lineNumbers": "relative",
   "editor.cursorStyle": "line",
   "explorer.confirmDragAndDrop": false,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "workbench.startupEditor": "newUntitledFile",
   // _Python
   "python.linting.pylintArgs": [
@@ -187,12 +196,10 @@
     "enabled": true,
     "delay": 500
   },
-  "go.useLanguageServer": true,
   "go.lintTool": "golint",
   "go.lintOnSave": "package",
-  "go.buildOnSave": "package",
-  "go.gopath": "/Users/nikivi/go",
-  "typescript.check.npmIsInstalled": false,
+  "go.useLanguageServer": true,
+  "go.gocodePackageLookupMode": "gb",
   // _Files
   "files.associations": {
     "*.toml": "toml"

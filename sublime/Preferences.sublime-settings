@@ -21,12 +21,13 @@
 		"*.swf",
 		"*.jar",
 		"*.zip",
+		"vendor/*",
 		"*.Ulysses-Group.plist"
 	],
 	"caret_style": "solid",
 	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"font_face": "Fira Code",
-	"font_size": 14,
+	"font_size": 12,
 	"highlight_line": true,
 	"ignored_packages":
 	[

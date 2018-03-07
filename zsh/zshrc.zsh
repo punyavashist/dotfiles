@@ -15,7 +15,7 @@ source ~/.dotfiles/zsh/functions/functions.zsh
 source ~/.dotfiles/zsh/functions/fzf-functions.zsh
 source ~/.dotfiles/zsh/functions/git-functions.zsh
 source ~/.dotfiles/zsh/bindings.zsh
-source ~/.dotfiles/zsh/aliases/alias.zsh
+source ~/.dotfiles/zsh/alias.zsh
 
 source ~/.secrets # Private configs
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # FZF setup

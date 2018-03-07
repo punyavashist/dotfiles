@@ -47,13 +47,23 @@
 <equal>com.googlecode.iterm2</equal>
 </appdef>
 
-<!-- _KM urls-->
+<!-- _KM safari url -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "w: GitHub"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_RIOT</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "w: riot.im"
 end tell
 '
 </url>
@@ -1078,11 +1088,11 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE_RESEARCH</name>
+<name>KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE_LEARN</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: 2Do with current url as note - research"
+do script "g: 2Do with current url as note - learn"
 end tell
 '
 </url>
@@ -1878,6 +1888,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_TEST_WEB</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "test: web"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_TEST_HASKELL</name>
 <url type="shell">
 osascript -e '
@@ -2337,16 +2357,6 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "open: Itunes"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_NHEKO</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: Nheko"
 end tell
 '
 </url>
@@ -3406,6 +3416,14 @@ tell application "Alfred 3" to run trigger "gists" in workflow "nikivi.search-th
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_GOODREADS</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "search" in workflow "com.wesbaker.alfred.goodreads" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_LEARN_ANYTHING_LISTS</name>
 <url type="shell">
 osascript -e '
@@ -3521,7 +3539,7 @@ tell application "Alfred 3" to run trigger "tldr" in workflow "com.chedanji.tldr
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB_REPOS</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "github" in workflow "com.a.alfred-github" with argument ""
+tell application "Alfred 3" to run trigger "search" in workflow "com.a.alfred-github" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -5751,11 +5769,6 @@ KeyCode::F11, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CON
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::U,
-KeyCode::VK_OPEN_URL_HAMMERSPOON_VISUALLY_CIRCLE_MOUSE
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::DOT,
 KeyCode::F1, ModifierFlag::COMMAND_L
 </autogen>
@@ -5946,7 +5959,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARH_MARKDOWN_WIKI
 <autogen>
 __KeyToKey__
 KeyCode::TAB,
-KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE_RESEARCH
+KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE_LEARN
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6355,6 +6368,11 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_LIBRARY
 __KeyToKey__
 KeyCode::E,
 KeyCode::VK_OPEN_URL_ALFRED_OPEN_LOCALHOST
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::W,
+KeyCode::VK_OPEN_URL_ALFRED_FONT_AWESOME
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7397,6 +7415,11 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB_REPOS
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::Y,
+KeyCode::VK_OPEN_URL_ALFRED_GOODREADS
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::C,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_STACK
 </autogen>
@@ -7725,13 +7748,8 @@ KeyCode::VK_OPEN_URL_ALFRED_VOLUME_ADJUST
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::D,
+KeyCode::S,
 KeyCode::VK_OPEN_URL_KM_WIKI_SUMMARY
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::R,
-KeyCode::VK_OPEN_URL_KM_WIKI_LESSONS_LEARNED
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7755,6 +7773,11 @@ KeyCode::VK_OPEN_URL_KM_WIKI_RULES
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::R,
+KeyCode::VK_OPEN_URL_KM_WIKI_PROCESSES
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::Z,
 KeyCode::VK_OPEN_URL_KM_EDIT_TEMP_NOTES
 </autogen>
@@ -7765,7 +7788,7 @@ KeyCode::VK_OPEN_URL_KM_WIKI_MONTHLY
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::S,
+KeyCode::D,
 KeyCode::VK_OPEN_URL_KM_EDIT_VIMRC_CONFIG
 </autogen>
 <autogen>
@@ -7777,11 +7800,6 @@ KeyCode::VK_OPEN_URL_KM_EDIT_KARABINER_CONFIG
 __KeyToKey__
 KeyCode::DOT,
 KeyCode::X, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::COMMA,
-KeyCode::VK_OPEN_URL_KM_EDIT_NOIZIO
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8271,11 +8289,6 @@ KeyCode::VK_OPEN_URL_KM_WIKI_RULES
 __KeyToKey__
 KeyCode::C,
 KeyCode::VK_OPEN_URL_KM_WIKI_PROCESSES
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::E,
-KeyCode::VK_OPEN_URL_KM_WIKI_LESSONS_LEARNED
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9875,7 +9888,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_SCREENFLOW
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::L,
+KeyCode::M,
 KeyCode::VK_OPEN_URL_KM_OPEN_MARKED
 </autogen>
 <autogen>
@@ -9920,7 +9933,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_REEDER
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::M,
+KeyCode::L,
 KeyCode::VK_OPEN_URL_KM_OPEN_DICTIONARY
 </autogen>
 <autogen>
@@ -10603,7 +10616,7 @@ __BlockUntilKeyUp__ KeyCode::Z,
 <autogen>
 __KeyToKey__
 KeyCode::N,
-KeyCode::VK_OPEN_URL_KM_OPEN_NHEKO
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_RIOT
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12201,6 +12214,11 @@ __BlockUntilKeyUp__ KeyCode::B,
 
 <autogen>
 __KeyToKey__
+KeyCode::L,
+KeyCode::VK_OPEN_URL_ALFRED_OPEN_LOCALHOST
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::I,
 KeyCode::VK_OPEN_URL_KM_MIND_VS_CODE
 </autogen>
@@ -12275,6 +12293,11 @@ KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_CLONES_AND_OPEN_WITH_VS_CODE
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::W,
+KeyCode::VK_OPEN_URL_KM_TEST_WEB
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::SEMICOLON,
 KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_CLONES_AND_OPEN_WITH_SUBLIME
 </autogen>
@@ -12287,11 +12310,6 @@ KeyCode::VK_OPEN_URL_KM_EDIT_TEST_GO
 __KeyToKey__
 KeyCode::I,
 KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_CLONES
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::E,
-KeyCode::VK_OPEN_URL_ALFRED_OPEN_LOCALHOST
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12362,11 +12380,6 @@ KeyCode::K, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
 __KeyToKey__
 KeyCode::L,
 KeyCode::L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::W,
-KeyCode::VK_OPEN_URL_ALFRED_FONT_AWESOME
 </autogen>
 <autogen>
 __KeyToKey__

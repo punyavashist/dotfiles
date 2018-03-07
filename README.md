@@ -170,7 +170,7 @@ A slight variation of the above command that first `cd`'s to `~/.dotfiles` and t
 
 ## Interesting dotfiles
 These are dotfiles I got many ideas from and liked.
-- [bluz71](https://github.com/bluz71/dotfiles) - Has interesting vim setup.
+- [bluz71](https://github.com/bluz71/dotfiles) - Interesting vim setup.
 - [caarlos0](https://github.com/caarlos0/dotfiles) - Made antibody.
 - [wangsongiam](https://github.com/wangsongiam/dotfiles) - Interesting hammerspoon and zsh config.
 

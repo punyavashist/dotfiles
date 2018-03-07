@@ -303,10 +303,10 @@ alias dg='cd ~/go/src/github.com/nikitavoloboev'
 alias dj='cd ~/dev/learning'
 alias dt='cd ~/dev/testing'
 alias da='cd ~/dev/'
-alias dk='cd ~/dev/forks/'
+alias ds='cd ~/dev/forks/'
 alias dn='cd ~/dev/github/learn-anything'
 alias dz='cd ~/.dotfiles'
-alias ds='cd ~/Documents'
+alias dm='cd ~/Documents'
 
 # _Xcode
 alias dx='cd ~/dev/Xcode'

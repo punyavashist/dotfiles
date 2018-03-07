@@ -7,6 +7,15 @@ gz(){
   git push
 }
 
+grus(){
+  # TODO: if it is a fork, get the link of the fork and fill it here instead of manually adding it
+  git remote add upstream "$1"
+  git fetch upstream
+  git checkout master
+  git reset --hard upstream/master
+  git push origin master --force
+}
+
 # Ignore files and remove them if they were tracked
 gri(){
   git rm "$*"
@@ -29,7 +38,7 @@ gwt(){
 
 # geb <branch-name> - create new branch
 geb(){
-  git checkout -b $1
+  git checkout -b "$1"
 }
 
 # gw <msg> - commit all changes with <msg>
