@@ -16,6 +16,12 @@ grus(){
   git push origin master --force
 }
 
+# Pull changes from upstream (fork) to master
+gfu(){
+  git fetch upstream
+  git pull upstream master
+}
+
 # Ignore files and remove them if they were tracked
 gri(){
   git rm "$*"

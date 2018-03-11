@@ -31,4 +31,5 @@
     # Tmux
     ~/.tmux.conf: tmux/tmux.conf
 
-# TODO: Add shell command to cd to antibody and download zsh plugins. Maybe install Antibody too.
+# TODO: add shell command to cd to antibody and download zsh plugins. Maybe install Antibody too.
+# TODO: add brew installs (similar to https://github.com/kennethreitz/dotfiles/blob/master/install.sh)

@@ -9,6 +9,7 @@ alias nu='nix-env -u'
 
 # _General
 alias -g G='| grep' # Grep search
+alias dnd='do-not-disturb toggle'
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete" # Recursively delete `.DS_Store` files
 alias g='hub' # Wrapper over git
 alias pip='pip3'
@@ -62,7 +63,6 @@ alias c='ccat'
 alias rec='asciinema rec'
 alias b='bd'
 alias ws='workflow-install -s source' # Symlink `source` directory
-alias fk='fuck'
 alias dus='du -s'
 alias t='touch'
 alias zo='open'
@@ -372,7 +372,6 @@ alias gss='git show --word-diff=color' # See changes made
 alias ggn='git_add_origin_and_origin_push'
 
 # _Commit
-alias gdf='git commit . -m ':tada: initial commit''
 alias gpm="git push origin master"
 alias gpd="git push origin develop"
 

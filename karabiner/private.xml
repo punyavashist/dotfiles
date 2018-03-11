@@ -856,6 +856,14 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_TIMER_120</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 120 Reminder"
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_TIMER_60</name>
 <url type="shell">
 osascript -e '
@@ -998,16 +1006,6 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_EDIT_NOIZIO</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "g: edit noizio"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_2DO_CURRENT_URL_AS_NOTE_WATCH</name>
 <url type="shell">
 osascript -e '
@@ -1103,6 +1101,16 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "g: focus for 90 min"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_FOCUS_30_MIN</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "g: focus for 30 min"
 end tell
 '
 </url>
@@ -1816,6 +1824,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_WIKI_ROUTINE</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "wiki: routine"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_WIKI_SUMMARY</name>
 <url type="shell">
 osascript -e '
@@ -1938,63 +1956,23 @@ end tell
 </url>
 </vkopenurldef>
 
-<!-- _KM mindnode -->
+<!-- _KM MindNode maps -->
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_MIND_THINKING</name>
+<name>KeyCode::VK_OPEN_URL_KM_MAP_THINKING</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "mind: thinking"
+do script "map: thinking"
 end tell
 '
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_MIND_VS_CODE</name>
+<name>KeyCode::VK_OPEN_URL_KM_MAP_RESEARCH</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "mind: vs code"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_MIND_VIMRC</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "mind: vimrc"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_MIND_RESEARCH</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "mind: research"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_MIND_KARABINER</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "mind: karabiner"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_MIND_MACOS</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "mind: macOS"
+do script "map: research"
 end tell
 '
 </url>
@@ -3523,7 +3501,7 @@ tell application "Alfred 3" to run trigger "stack" in workflow "net.deanishe.alf
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MDN</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "mdn" in workflow "com.klaascuvelier.mdn" with argument ""
+tell application "Alfred 3" to run trigger "search" in workflow "com.klaascuvelier.mdn" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -6401,11 +6379,6 @@ KeyCode::VK_OPEN_URL_ALFRED_MONTHS_NUMBERS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::G,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::F,
 KeyCode::VK_OPEN_URL_ALFRED_ACTIVATE_FOCUS
 </autogen>
@@ -7599,7 +7572,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_ARTISTS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::SEMICOLON,
+KeyCode::T,
 KeyCode::VK_OPEN_URL_ALFRED_CREATE_ARTIST_RADIO
 </autogen>
 <autogen>
@@ -7659,8 +7632,8 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_CURRENT_SONG
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::R,
-KeyCode::VK_OPEN_URL_KM_FOCUS_120_MIN
+KeyCode::Y,
+KeyCode::VK_OPEN_URL_KM_FOCUS_30_MIN
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7704,7 +7677,7 @@ KeyCode::VK_OPEN_URL_ALFRED_NEW_TODO
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::T,
+KeyCode::R,
 KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_ADD_SONG_TO_PLAYLIST
 </autogen>
 </item>
@@ -7748,12 +7721,17 @@ KeyCode::VK_OPEN_URL_ALFRED_VOLUME_ADJUST
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::S,
+KeyCode::D,
 KeyCode::VK_OPEN_URL_KM_WIKI_SUMMARY
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::Q,
+KeyCode::VK_OPEN_URL_KM_WIKI_ROUTINE
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::T,
 KeyCode::VK_OPEN_URL_KM_EDIT_MY_MACOS
 </autogen>
 <autogen>
@@ -7788,7 +7766,7 @@ KeyCode::VK_OPEN_URL_KM_WIKI_MONTHLY
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::D,
+KeyCode::S,
 KeyCode::VK_OPEN_URL_KM_EDIT_VIMRC_CONFIG
 </autogen>
 <autogen>
@@ -9858,12 +9836,12 @@ KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMISSION
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::H,
+KeyCode::T,
 KeyCode::VK_OPEN_URL_KM_OPEN_HAMMERSPOON
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::P,
+KeyCode::H,
 KeyCode::VK_OPEN_URL_KM_OPEN_PAPRIKA_RECIPE_MANAGER
 </autogen>
 <autogen>
@@ -10866,7 +10844,7 @@ KeyCode::3, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT
 <autogen>
 __KeyToKey__
 KeyCode::SEMICOLON,
-KeyCode::VK_OPEN_URL_KM_MIND_THINKING
+KeyCode::VK_OPEN_URL_KM_MAP_THINKING
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12177,7 +12155,7 @@ KeyCode::EQUAL, ModifierFlag::COMMAND_L
 </item>
 
 <item>
-<name>general: sticky b - alfred + maps</name>
+<name>general: sticky b - alfred</name>
 <identifier>private.launcher_mode_open_apps_v13</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -12219,12 +12197,12 @@ KeyCode::VK_OPEN_URL_ALFRED_OPEN_LOCALHOST
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
-KeyCode::VK_OPEN_URL_KM_MIND_VS_CODE
+KeyCode::D,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::A,
+KeyCode::M,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MDN
 </autogen>
 <autogen>
@@ -12236,16 +12214,6 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TIMEZONES
 __KeyToKey__
 KeyCode::U,
 KeyCode::VK_OPEN_URL_ALFRED_UNITS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SEMICOLON,
-KeyCode::VK_OPEN_URL_KM_MIND_KARABINER
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_MIND_MACOS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12475,9 +12443,8 @@ KeyCode::VK_OPEN_URL_ALFRED_SAFARI_FOLDERS
 </item>
 
 <item>
-<name>general: sim kl = typinator</name>
+<name>general: sim kl</name>
 <identifier>private.sim_kl_typinator</identifier>
-
 <autogen>
 __SimultaneousKeyPresses__
 KeyCode::K, KeyCode::L,
@@ -12487,18 +12454,18 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
 </item>
 
 <item>
-<name>general: sim kh = yandex</name>
+<name>general: sim kh</name>
 <identifier>private.sim_hk_duck_search</identifier>
 <autogen>
 __SimultaneousKeyPresses__
 KeyCode::H, KeyCode::K,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_YANDEX_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 </autogen>
 </item>
 
 <item>
-<name>general: sim lm = safari bookmarks</name>
+<name>general: sim lm</name>
 <identifier>private.sim_lm_bookmarks</identifier>
 <autogen>
 __SimultaneousKeyPresses__

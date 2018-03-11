@@ -175,7 +175,7 @@ These are dotfiles I got many ideas from and liked.
 - [wangsongiam](https://github.com/wangsongiam/dotfiles) - Interesting hammerspoon and zsh config.
 
 ## Contributing
-[Suggestions](../../issues/) on how I can improve the structure of these dotfiles as well as suggesting new and awesome tools one can use are welcome.
+[Suggestions](../../issues/) on how I can improve the structure of these dotfiles as well as suggesting new and awesome tools are welcome.
 
 ## Thank you 💜
 You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look into [other projects](https://nikitavoloboev.xyz/projects) I shared.
