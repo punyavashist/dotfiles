@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Usage: with <program>
 # Opens an interactive shell instance that automatically prefixes all subsequent commands with program name.

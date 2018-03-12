@@ -342,7 +342,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "w: Localhost"
+do script "w: localhost"
 end tell
 '
 </url>
@@ -713,16 +713,6 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "w: Wakatime"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_ALL_NOTIFICATIONS</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "w: Github - all notifications"
 end tell
 '
 </url>
@@ -1752,6 +1742,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_LIST_QUOTES</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "list: quotes"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_LIST_RESEARCH_PAPERS</name>
 <url type="shell">
 osascript -e '
@@ -1819,16 +1819,6 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "wiki: rules"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_WIKI_ROUTINE</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "wiki: routine"
 end tell
 '
 </url>
@@ -5677,11 +5667,6 @@ KeyCode::VK_OPEN_URL_KM_MANIPULATE_CLIPBOARD
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::C,
 KeyCode::3, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
 </autogen>
@@ -6910,7 +6895,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB
 <autogen>
 __KeyToKey__
 KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_ALL_NOTIFICATIONS
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_NOTIFICATIONS
 </autogen>
 </item>
 
@@ -7572,7 +7557,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_SEARCH_ARTISTS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::T,
+KeyCode::R,
 KeyCode::VK_OPEN_URL_ALFRED_CREATE_ARTIST_RADIO
 </autogen>
 <autogen>
@@ -7677,7 +7662,7 @@ KeyCode::VK_OPEN_URL_ALFRED_NEW_TODO
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::R,
+KeyCode::T,
 KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_ADD_SONG_TO_PLAYLIST
 </autogen>
 </item>
@@ -7721,17 +7706,12 @@ KeyCode::VK_OPEN_URL_ALFRED_VOLUME_ADJUST
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::D,
+KeyCode::S,
 KeyCode::VK_OPEN_URL_KM_WIKI_SUMMARY
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::Q,
-KeyCode::VK_OPEN_URL_KM_WIKI_ROUTINE
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::T,
 KeyCode::VK_OPEN_URL_KM_EDIT_MY_MACOS
 </autogen>
 <autogen>
@@ -7766,7 +7746,7 @@ KeyCode::VK_OPEN_URL_KM_WIKI_MONTHLY
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::S,
+KeyCode::A,
 KeyCode::VK_OPEN_URL_KM_EDIT_VIMRC_CONFIG
 </autogen>
 <autogen>
@@ -7856,7 +7836,7 @@ ConsumerKeyCode::KEYBOARDLIGHT_LOW,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::A,
+KeyCode::D,
 KeyCode::M, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
 </autogen>
 </item>
@@ -8519,6 +8499,11 @@ KeyCode::VK_OPEN_URL_KM_LIST_RESEARCH_PAPERS
 __KeyToKey__
 KeyCode::U,
 KeyCode::VK_OPEN_URL_KM_LIST_COURSES
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::E,
+KeyCode::VK_OPEN_URL_KM_LIST_QUOTES
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10448,13 +10433,13 @@ KeyCode::E, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L,
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
-KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_LOCALHOST
+KeyCode::4,
+KeyCode::N, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, 
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::4,
-KeyCode::N, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, 
+KeyCode::I,
+KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10514,7 +10499,7 @@ KeyCode::VK_OPEN_URL_KM_STOP_ALL_MACROS
 <autogen>
 __KeyToKey__
 KeyCode::O,
-KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE_FILE
+KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_LOCALHOST
 </autogen>
 <autogen>
 __KeyToKey__

@@ -42,6 +42,7 @@ Plug 'haya14busa/incsearch.vim' " Improved incremental searching
 Plug 'haya14busa/incsearch-easymotion.vim'
 
 " Utility
+Plug 'jremmen/vim-ripgrep' " Use RipGrep in Vim and display results in a quickfix list
 Plug 'scrooloose/nerdcommenter' " Quick comments TODO: use it
 Plug 'unblevable/quick-scope' " Highlight f, F jumps
 "Plug 'tweekmonster/startuptime.vim' " Profile startup time
@@ -306,29 +307,41 @@ let maplocalleader = "\<Space>"
 
 nnoremap <leader>= yypVr=
 
-" Fix yank
+" Better yank
 noremap Y y$ 
 
+" _lead z
 nmap <Leader>ze   :enew <CR>
 nmap <Leader>zt   :tabnew<CR>
+
+" _lead d
 nmap <Leader>d   :bd<CR>
 
+" _lead e
 nmap <Leader>e.   :e .<CR>
+
+" _lead t
 nmap <Leader>to   :e %:p:h<CR>
 
+" _lead s
 " Buffer control
 nmap <Leader>s    :bprevious<CR>
+
+" _lead n
 nmap <Leader>n    :bnext<CR>
+
+" _lead q
 "nmap <Leader>qb   :bp<BAR> bd #<CR>
 
+" _lead a
 " Formatting
-nmap <Leader>af   :Autoformat<CR>
+nmap <Leader>af   :Autoformat<CR> 
 
 " FZF
 "command! -nargs= 1 Locate call fzf#run({'source': 'locate <q-args>', 'sink': 'e', 'options': '-m'})
+" _lead f
+nmap <Leader>ff :FZF <CR>
 nmap <Leader>fb   :Buffers <CR>
-nmap <Leader>o    :Files %:p:h<CR>
-nmap <Leader>O    :GFiles <CR>
 nmap <Leader>fl   :BLines <CR>
 nmap <Leader>fL   :Lines <CR>
 nmap <Leader>fh   :History<CR>
@@ -341,6 +354,10 @@ nmap <Leader>fw   :Windows<CR>
 nmap <Leader>fs   :Snippets<CR>
 nmap <Leader>fg   :BCommits<CR>
 nmap <Leader>fG   :Commits<CR>
+
+" _lead o
+nmap <Leader>o    :Files %:p:h<CR>
+nmap <Leader>O    :GFiles <CR>
 
 " Mapping selecting mappings
 nnoremap <leader><tab> <plug>(fzf-maps-n)
@@ -377,7 +394,7 @@ nnoremap <Leader>q :q<CR>
 " Yank whole file
 nnoremap <Leader>y :%y<CR> 
 " Source vimrc
-nnoremap <Leader>ff :source ~/.dotfiles/nvim/init.vim<CR> 
+nnoremap <Leader>ss :source ~/.dotfiles/nvim/init.vim<CR> 
 " Search files inside current dir
 nnoremap <Leader>e :Files<CR> 
 " Switch dir for fzf searching to current dir

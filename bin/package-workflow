@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Packages Alfred workflows.
 # In my case it packages workflows to ~/Desktop
 
