@@ -47,13 +47,23 @@
 <equal>com.googlecode.iterm2</equal>
 </appdef>
 
-<!-- _KM safari url -->
+<!-- _KM safari urls -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "w: GitHub"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GOOGLE_DOCS</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "w: google docs"
 end tell
 '
 </url>
@@ -5787,7 +5797,7 @@ KeyCode::VK_OPEN_URL_ALFRED_WATCH_DROPBOX_SHARES
 <autogen>
 __KeyToKey__
 KeyCode::V,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -5975,7 +5985,7 @@ KeyCode::VK_OPEN_URL_ALFRED_PROCESS_CONTROL
 </replacementdef>
 
 <item>
-<name>general: sticky slash - </name>
+<name>general: sticky slash</name>
 <identifier>private.launcher_mode_open_apps_v19</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -6006,6 +6016,23 @@ KeyCode::SLASH
 __BlockUntilKeyUp__ KeyCode::SLASH,
 </autogen>
 
+<autogen>
+__KeyToKey__
+KeyCode::L,
+KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_front_window_center
+</autogen>
+<!-- scroll -->
+<autogen>__KeyToKey__ KeyCode::K, KeyCode::VK_MOUSEKEY_HIGHSPEED, ModifierFlag::MOUSE_KEYS_MODE_2</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::N,
+KeyCode::VK_MOUSEKEY_SCROLL_DOWN, ModifierFlag::MOUSE_KEYS_MODE_2,
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::M,
+KeyCode::VK_MOUSEKEY_SCROLL_UP, ModifierFlag::MOUSE_KEYS_MODE_2,
+</autogen>
 </item>
 
 <item>
@@ -6620,34 +6647,6 @@ __KeyToKey__
 KeyCode::7,
 KeyCode::VK_OPEN_URL_KM_F7
 </autogen>
-<autogen>
-__KeyToKey__
-KeyCode::I,
-KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_front_window_center
-</autogen>
-<autogen>__KeyToKey__ KeyCode::O, KeyCode::VK_MOUSEKEY_HIGHSPEED, ModifierFlag::MOUSE_KEYS_MODE_2</autogen>
-
-<!-- scroll -->
-<autogen>
-__KeyToKey__
-{{ VI_H }},
-KeyCode::VK_MOUSEKEY_SCROLL_LEFT, ModifierFlag::MOUSE_KEYS_MODE_2,
-</autogen>
-<autogen>
-__KeyToKey__
-{{ VI_J }},
-KeyCode::VK_MOUSEKEY_SCROLL_DOWN, ModifierFlag::MOUSE_KEYS_MODE_2,
-</autogen>
-<autogen>
-__KeyToKey__
-{{ VI_K }},
-KeyCode::VK_MOUSEKEY_SCROLL_UP, ModifierFlag::MOUSE_KEYS_MODE_2,
-</autogen>
-<autogen>
-__KeyToKey__
-{{ VI_L }},
-KeyCode::VK_MOUSEKEY_SCROLL_RIGHT, ModifierFlag::MOUSE_KEYS_MODE_2,
-</autogen>
 </item>
 
 <item>
@@ -6715,12 +6714,12 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_REGEX101
 <autogen>
 __KeyToKey__
 KeyCode::K,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_KAGGLE
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_ARXIV
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::D,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_MEDIUM
+KeyCode::S,
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_GOOGLE_DOCS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6810,11 +6809,11 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA
 <autogen>
 __KeyToKey__
 KeyCode::E,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_DRIBBLE
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_MEDIUM
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::S,
+KeyCode::D,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODEPEN
 </autogen>
 <autogen>
@@ -6825,7 +6824,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_PRODUCT_HUNT
 <autogen>
 __KeyToKey__
 KeyCode::R,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_ARXIV
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_DRIBBLE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8207,7 +8206,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_SHIP
 </item>
 
 <item>
-<name>general: sticky quote - wiki</name>
+<name>general: sticky quote</name>
 <identifier>private.launcher_mode_open_apps_v32</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8240,19 +8239,10 @@ __BlockUntilKeyUp__ KeyCode::QUOTE,
 
 <autogen>
 __KeyToKey__
-KeyCode::R,
-KeyCode::VK_OPEN_URL_KM_WIKI_RULES
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::C,
-KeyCode::VK_OPEN_URL_KM_WIKI_PROCESSES
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::G,
 KeyCode::VK_OPEN_URL_KM_WIKI_MY_GITHUB
 </autogen>
+
 </item>
 
 <item>
@@ -12182,13 +12172,13 @@ KeyCode::VK_OPEN_URL_ALFRED_OPEN_LOCALHOST
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::D,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
+KeyCode::M,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MDN
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::M,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MDN
+KeyCode::A,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
 </autogen>
 <autogen>
 __KeyToKey__
