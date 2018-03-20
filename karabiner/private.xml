@@ -916,6 +916,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_NEWS</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "g: open news"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_ADD_SAFARI_LINK_TO_SELECTED_TEXT_MARKDOWN</name>
 <url type="shell">
 osascript -e '
@@ -3137,16 +3147,6 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "open: 2Do"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_SLACK</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: Slack"
 end tell
 '
 </url>
@@ -5746,7 +5746,6 @@ KeyCode::DOT,
 KeyCode::F1, ModifierFlag::COMMAND_L
 </autogen>
 
-
 ]]>
 </replacementvalue>
 </replacementdef>
@@ -6703,8 +6702,13 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_YOUTUBE_AUTOPLAY
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::DOT,
+KeyCode::SLASH,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::DOT,
+KeyCode::VK_OPEN_URL_KM_OPEN_NEWS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7736,7 +7740,7 @@ KeyCode::VK_OPEN_URL_KM_WIKI_PROCESSES
 <autogen>
 __KeyToKey__
 KeyCode::Z,
-KeyCode::VK_OPEN_URL_KM_EDIT_TEMP_NOTES
+KeyCode::M, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8065,7 +8069,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX_DEV
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::H,
+KeyCode::DOT,
 KeyCode::VK_OPEN_URL_KM_OPEN_PAW
 </autogen>
 <autogen>
@@ -8170,7 +8174,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_PAW
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::DOT,
+KeyCode::H,
 KeyCode::7, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L <!-- Focus on Desktop 1 -->
 </autogen>
 <autogen>
@@ -11420,7 +11424,7 @@ KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 <autogen>
 __KeyToKey__
 KeyCode::SPACE,
-KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, 
+KeyCode::8, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12446,7 +12450,7 @@ KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::L, KeyCode::M,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_BOOKMARKS
+KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 </autogen>
 </item>
 
@@ -12512,7 +12516,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::L, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_CHROME_BOOKMARKS
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_KEYWORDS
 </autogen>
 </item>
 
@@ -12567,7 +12571,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::M,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_BOOKMARKS
 </autogen>
 </item>
 
@@ -12633,7 +12637,7 @@ KeyCode::VK_OPEN_URL_ALFRED_OPEN_DOCUMENTATION
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_KEYWORDS
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_CHROME_BOOKMARKS
 </autogen>
 </item>
 
