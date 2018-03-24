@@ -3,12 +3,13 @@
 # _Testing
 
 # _Nix
-alias ni='nix-env -i'
+alias ni='nix-env -i' # Install packages
 alias ne='nix-env -e'
 alias nu='nix-env -u'
 
 # _General
 alias -g G='| grep' # Grep search
+alias n='open'
 alias dnd='do-not-disturb toggle'
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete" # Recursively delete `.DS_Store` files
 alias g='hub' # Wrapper over git
@@ -306,7 +307,7 @@ alias da='cd ~/dev/'
 alias ds='cd ~/dev/forks/'
 alias dn='cd ~/dev/github/learn-anything'
 alias dz='cd ~/.dotfiles'
-alias dm='cd ~/Documents'
+alias dk='cd ~/Documents'
 
 # _Xcode
 alias dx='cd ~/dev/Xcode'

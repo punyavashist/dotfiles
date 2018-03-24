@@ -2,7 +2,6 @@
 
 # T - Tester (I change it often)
 T(){
-  gwi contributing
 }
 
 # Search aliases you have defined

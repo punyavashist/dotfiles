@@ -214,12 +214,12 @@ let g:deoplete#enable_at_startup = 1 " Activate deoplete
 
 " _Theme
 set background=dark " Set night mode
-let ayucolor="dark" " For mirage version of theme
+let ayucolor="mirage" " For mirage version of theme
 colorscheme ayu
 
 " _Airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme='minimalist' " Status bar theme
+let g:airline_theme='tomorrow' " Status bar theme
 let g:airline#extensions#bufferline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#syntastic#enabled = 1
