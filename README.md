@@ -39,7 +39,7 @@ I am [still learning vim](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim.h
 
 My Neovim config can be seen [here](nvim/init.vim). I use [ayu theme](https://github.com/ayu-theme/ayu-vim) across all my editors, including neovim:
 
-<img src="https://i.imgur.com/3cRnCm3.png" width="500" alt="img">
+![](https://i.imgur.com/3cRnCm3.png)
 
 ## VS Code
 My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has very well built [vim mode](https://github.com/VSCodeVim/Vim). And I love its [Go Plugin](https://github.com/Microsoft/vscode-go) + the amazing zen mode.
@@ -54,7 +54,7 @@ I am using [zsh](http://www.zsh.org) as my shell with [antibody](https://github.
 
 I am also using [ayu theme](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/ayu.itermcolors) in zsh. Here is how my prompt looks like:
 
-<img src="https://i.imgur.com/1GomRAC.png" width="500" alt="img">
+![](https://i.imgur.com/1GomRAC.png)
 
 ## Zsh aliases
 I use many aliases to get around my system as fast as possible. You can view them all [here](https://github.com/nikitavoloboev/dotfiles/blob/master/zsh/aliases/alias.zsh).
