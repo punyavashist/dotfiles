@@ -9846,7 +9846,7 @@ KeyCode::VK_OPEN_URL_KM_EDIT_KEYBOARD_SHORTCUTS
 <autogen>
 __KeyToKey__
 KeyCode::DOT,
-KeyCode::VK_OPEN_URL_KM_OPEN_OBS
+KeyCode::VK_OPEN_URL_KM_OPEN_DAY_ONE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9926,7 +9926,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_ULYSSES
 <autogen>
 __KeyToKey__
 KeyCode::SEMICOLON,
-KeyCode::VK_OPEN_URL_KM_OPEN_DAY_ONE
+KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH
 </autogen>
 <autogen>
 __KeyToKey__

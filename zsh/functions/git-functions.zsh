@@ -1,9 +1,9 @@
 # Git functions.
 
-# gz - Improve readme commit
+# gz - Update readme commit
 gz(){
   git add README.md
-  git commit -m "Improve readme"
+  git commit -m "Update readme"
   git push
 }
 
@@ -35,10 +35,10 @@ gwh(){
   git push
 }
 
-# Improve contributing commit
+# Update contributing commit
 gwt(){
   git add CONTRIBUTING.md
-  git commit -m "Improve contributing"
+  git commit -m "Update contributing"
   git push
 }
 
