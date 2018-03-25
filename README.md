@@ -1,7 +1,7 @@
 # My configuration files for macOS [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
 > Includes Zsh, Neovim, Karabiner, Hammerspoon, VS Code
 
-<img src="https://i.imgur.com/DqMMpjd.jpg" width="600" alt="img">
+![](https://i.imgur.com/zAKij1K.jpg)
 
 These are the various configuration files I use on macOS. I wrote about how I customise and use my shell in article [here](https://medium.com/@NikitaVoloboev/pretty-and-fast-shell-97ea870f2805).
 
