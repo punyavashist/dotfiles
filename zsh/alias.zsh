@@ -20,7 +20,7 @@ alias crypto='curl rate.sx' # Get crypto prices
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias lc='tokei'
 alias sf='screenfetch -E'
-alias mre='open -a "Marked 2" README.md'
+alias me='open -a "Marked 2" README.md'
 alias mr='open -a "Marked 2"'
 alias _='sudo'
 alias ae='subl README.md' # Edit readme file
@@ -276,8 +276,8 @@ alias ww='code .'
 alias zr='open -a Preview'
 
 # _Web
-alias co="open -a Google\ Chrome"
-alias qq="open -a Safari"
+alias sc="open -a Google\ Chrome"
+alias sf="open -a Safari"
 
 # _Other
 alias pdf='open -a PDF\ Expert'

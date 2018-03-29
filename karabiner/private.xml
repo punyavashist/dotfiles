@@ -768,11 +768,11 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_HCKR_NEWS</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_HACKER_NEWS</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "w: Hckr news"
+do script "w: hacker news"
 end tell
 '
 </url>
@@ -6893,7 +6893,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_FRONT
 <autogen>
 __KeyToKey__
 KeyCode::H,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_HCKR_NEWS
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_HACKER_NEWS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7749,6 +7749,11 @@ KeyCode::VK_OPEN_URL_KM_WIKI_PROCESSES
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::R,
+KeyCode::VK_OPEN_URL_KM_EDIT_TEMP_NOTES
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::Z,
 KeyCode::M, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, 
 </autogen>
@@ -8496,7 +8501,7 @@ KeyCode::VK_OPEN_URL_KM_LIST_COMMAND_LINE_TOOLS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::H,
+KeyCode::P,
 KeyCode::VK_OPEN_URL_KM_LIST_RESEARCH_PAPERS
 </autogen>
 <autogen>
@@ -9845,7 +9850,7 @@ KeyCode::VK_OPEN_URL_KM_EDIT_KEYBOARD_SHORTCUTS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::DOT,
+KeyCode::COMMA,
 KeyCode::VK_OPEN_URL_KM_OPEN_DAY_ONE
 </autogen>
 <autogen>
@@ -9860,7 +9865,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_MARKED
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::COMMA,
+KeyCode::DOT,
 KeyCode::VK_OPEN_URL_KM_OPEN_SPOTIFY
 </autogen>
 <autogen>
@@ -9900,8 +9905,13 @@ KeyCode::VK_OPEN_URL_KM_OPEN_REEDER
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::L,
+KeyCode::J,
 KeyCode::VK_OPEN_URL_KM_OPEN_DICTIONARY
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::L,
+KeyCode::VK_OPEN_URL_KM_OPEN_ULYSSES
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9917,11 +9927,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_PDF_EXPERT
 __KeyToKey__
 KeyCode::W,
 KeyCode::VK_OPEN_URL_KM_OPEN_1PASSWORD
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::J,
-KeyCode::VK_OPEN_URL_KM_OPEN_ULYSSES
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11434,7 +11439,7 @@ KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 <autogen>
 __KeyToKey__
 KeyCode::SPACE,
-KeyCode::8, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, 
+KeyCode::X, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, 
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12460,7 +12465,7 @@ KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::L, KeyCode::M,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_BOOKMARKS
 </autogen>
 </item>
 
@@ -12526,7 +12531,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::L, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_KEYWORDS
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_CHROME_BOOKMARKS
 </autogen>
 </item>
 
@@ -12581,7 +12586,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::M,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_BOOKMARKS
+KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 </autogen>
 </item>
 
@@ -12647,7 +12652,7 @@ KeyCode::VK_OPEN_URL_ALFRED_OPEN_DOCUMENTATION
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_CHROME_BOOKMARKS
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_KEYWORDS
 </autogen>
 </item>
 
