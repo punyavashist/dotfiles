@@ -2,11 +2,23 @@
 
 # T - Tester (I change it often)
 T(){
+  gwu contributing
 }
 
 # Search aliases you have defined
 l(){
   alias | grep $1 |awk -F= '{printf "%s\t%s\n", $1, $2}'
+}
+
+# Open Xcode projects from the command line
+function co {
+  proj=$(ls -d *.xcodeproj/ 2>/dev/null)
+
+  if [ -n "$proj" ]; then
+    open -a Xcode "$proj"
+  else
+    echo "No Xcode project detected."
+  fi
 }
 
 # Run main.go if it exists, if not, run test.go.

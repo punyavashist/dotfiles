@@ -76,7 +76,6 @@
   "sync.autoUpload": false,
   "sync.lastDownload": "",
   "sync.forceDownload": false,
-  "sync.anonymousGist": false,
   "sync.host": "",
   "sync.pathPrefix": "",
   "sync.quietSync": false,
@@ -86,7 +85,7 @@
   "workbench.fontAliasing": "auto",
   "terminal.integrated.fontSize": 20,
   "editor.fontLigatures": true,
-  "editor.fontSize": 20,
+  "editor.fontSize": 18,
   // _Vim
   "vim.leader": " ",
   "vim.cursorStylePerMode": {
@@ -224,6 +223,8 @@
     "suppressGitVersionWarning": false,
     "suppressLineUncommittedWarning": false,
     "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true,
     "suppressUpdateNotice": true,
     "suppressWelcomeNotice": false
   },
@@ -234,5 +235,5 @@
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
-  "gitlens.keymap": "alternate"
+  "gitlens.keymap": "chorded"
 }
