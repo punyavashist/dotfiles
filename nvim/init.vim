@@ -19,7 +19,6 @@ Plug 'unblevable/quick-scope' " Highlight f, F jumps.
 Plug 'tweekmonster/startuptime.vim' " Profile startup time.
 Plug 'Shougo/vimproc.vim', {'do' : 'make'} " Interactive command execution.
 Plug 'junegunn/goyo.vim' " Distraction free writing.
-
 "Plug 'rking/ag.vim' " Lightining fast :Ag searcher
 "Plug 'mbbill/undotree' " History visualiser
 Plug 'tpope/vim-repeat' " Enable repeating supported plugin maps
@@ -516,7 +515,7 @@ au FocusLost * :wa
 au FileType typescript setlocal noexpandtab
 
 " _Testing
-Goyo
+autocmd VimEnter * Goyo"
 
 " Persistent undo
 let s:undoDir = "/tmp/.undodir_" . $USER
