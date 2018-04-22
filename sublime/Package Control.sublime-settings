@@ -10,7 +10,6 @@
 		"ayu",
 		"DashDoc",
 		"Dockerfile Syntax Highlighting",
-		"Git",
 		"GitGutter",
 		"JsPrettier",
 		"Marked App Menu",
@@ -18,7 +17,6 @@
 		"SendCode",
 		"Six",
 		"SublimeLinter",
-		"Visual Studio Dark",
 		"WakaTime"
 	]
 }

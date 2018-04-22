@@ -66,7 +66,6 @@
   // _Prettier
   "editor.formatOnSave": true,
   "extensions.autoUpdate": true,
-  // _Commands
   // _Plugins
   "code-runner.runInTerminal": false,
   // _Sync settings

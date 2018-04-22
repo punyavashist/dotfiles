@@ -1,47 +1,19 @@
-" Sanity check
-if !has('nvim')
-    Plug 'tpope/vim-sensible'
-endif
-
-" Autocomplete engine
+" Autocomplete engine TODO: ?
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 
 " _Install plugins
 call plug#begin()
-" Code
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') } " Autocomplete
-Plug 'romainl/vim-cool' " Stop matching after search is done
-"Plug 'jiangmiao/auto-pairs' " Autocomplete brackets
-Plug 'zchee/deoplete-go', { 'do': 'make'} " Go autocomplete
-Plug 'zchee/deoplete-jedi' " Autocompletion and static analysis
-Plug 'w0rp/ale' " Asynchronous Lint Engine
-"Plug 'Shougo/neoinclude.vim' " Snippets
-"Plug 'Shougo/neosnippet.vim' " Community snippets
-"Plug 'Shougo/neosnippet-snippets'
-Plug 'honza/vim-snippets' " Community snippets
-Plug 'Chiel92/vim-autoformat' " Easy code formatting TODO: use it
-Plug 'sbdchd/neoformat' " Format code
-"Plug 'rizzatti/dash.vim' " Search Dash app
-Plug 'sheerun/vim-polyglot' " Language pack
-
-" Looks
-Plug 'bling/vim-bufferline' " TODO: doesn't show anything
-"Plug 'ryanoasis/vim-devicons' TODO: doesn't work
-Plug 'ayu-theme/ayu-vim' " Theme
-Plug 'vim-airline/vim-airline' " Nice looking status bar on the bottom
-Plug 'vim-airline/vim-airline-themes' " TODO: not sure if need
-
-" Syntax
-"Plug 'isobit/vim-caddyfile' " Caddyfile syntax support
-
-" Moving
-Plug 'easymotion/vim-easymotion' " Vim motions on speed
-Plug 'haya14busa/incsearch.vim' " Improved incremental searching
-Plug 'haya14busa/incsearch-easymotion.vim'
-
 " Utility
+Plug 'romainl/vim-cool' " Stop matching after search is done.
+Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
+Plug 'w0rp/ale' " Asynchronous Lint Engine.
+Plug 'honza/vim-snippets' " Snippet files for various programming languages.
+Plug 'Chiel92/vim-autoformat' " Easy code formatting.
+Plug 'sbdchd/neoformat' " Format code.
+Plug 'rizzatti/dash.vim' " Search Dash app.
+Plug 'sheerun/vim-polyglot' " Language pack
 Plug 'jremmen/vim-ripgrep' " Use RipGrep in Vim and display results in a quickfix list
 Plug 'scrooloose/nerdcommenter' " Quick comments TODO: use it
 Plug 'unblevable/quick-scope' " Highlight f, F jumps
@@ -71,6 +43,26 @@ Plug 'junegunn/fzf.vim' " fzf fuzzy search
 "Plug 'tpope/vim-abolish' " TODO: not sure if need
 "Plug 'ludovicchabant/vim-gutentags' " TODO: use it
 Plug 'wakatime/vim-wakatime' " Track code time
+
+" Deoplete
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') } " Asynchronous completion framework.
+Plug 'zchee/deoplete-go', { 'do': 'make'} " Asynchronous Go completion.
+Plug 'zchee/deoplete-jedi' " Deoplete source for jedi.
+
+" Looks
+Plug 'bling/vim-bufferline' " TODO: doesn't show anything
+"Plug 'ryanoasis/vim-devicons' TODO: doesn't work
+Plug 'ayu-theme/ayu-vim' " Theme
+Plug 'vim-airline/vim-airline' " Nice looking status bar on the bottom
+Plug 'vim-airline/vim-airline-themes' " TODO: not sure if need
+
+" Syntax
+"Plug 'isobit/vim-caddyfile' " Caddyfile syntax support
+
+" Moving
+Plug 'easymotion/vim-easymotion' " Vim motions on speed
+Plug 'haya14busa/incsearch.vim' " Improved incremental searching
+Plug 'haya14busa/incsearch-easymotion.vim'
 
 " C 
 Plug 'zchee/deoplete-clang', { 'for': 'c,cpp,objc' }

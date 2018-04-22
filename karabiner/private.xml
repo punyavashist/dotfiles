@@ -6405,7 +6405,7 @@ KeyCode::VK_OPEN_URL_ALFRED_FONT_AWESOME
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::M,
+KeyCode::A,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_APPLE_MAPS
 </autogen>
 <autogen>
@@ -9603,11 +9603,6 @@ KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE_FILE
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::U,
-KeyCode::VK_OPEN_URL_KM_CREATE_NEW_CONTACT
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::A,
 KeyCode::H, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
 </autogen>
@@ -10495,6 +10490,11 @@ __BlockUntilKeyUp__ KeyCode::T,
 <autogen>
 __KeyToKey__
 KeyCode::N,
+KeyCode::VK_OPEN_URL_KM_CREATE_NEW_CONTACT
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::U,
 KeyCode::VK_OPEN_URL_KM_ADD_CLIPBOARD_AS_ACTIVE_TODO
 </autogen>
 <autogen>

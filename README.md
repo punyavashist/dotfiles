@@ -178,7 +178,7 @@ These are dotfiles I got many ideas from and liked.
 [Suggestions](../../issues/) on how I can improve the structure of these dotfiles as well as suggesting new and awesome tools are welcome.
 
 ## Thank you 💜
-You can support what I do on [Patreon](https://www.patreon.com/nikitavoloboev) or look into [other projects](https://nikitavoloboev.xyz/projects) I shared.
+You can support me on [Patreon](https://www.patreon.com/nikitavoloboev) or look into [other projects](https://nikitavoloboev.xyz/projects) I shared.
 
 ## License
 MIT © [Nikita Voloboev](https://www.nikitavoloboev.xyz)
