@@ -13,13 +13,13 @@ Plug 'honza/vim-snippets' " Snippet files for various programming languages.
 Plug 'Chiel92/vim-autoformat' " Easy code formatting.
 Plug 'sbdchd/neoformat' " Format code.
 Plug 'rizzatti/dash.vim' " Search Dash app.
-Plug 'sheerun/vim-polyglot' " Language pack
-Plug 'jremmen/vim-ripgrep' " Use RipGrep in Vim and display results in a quickfix list
-Plug 'scrooloose/nerdcommenter' " Quick comments TODO: use it
-Plug 'unblevable/quick-scope' " Highlight f, F jumps
-"Plug 'tweekmonster/startuptime.vim' " Profile startup time
-Plug 'Shougo/vimproc.vim', {'do' : 'make'} " Interactive command execution
-"Plug 'junegunn/goyo.vim' " Distraction free writing
+Plug 'jremmen/vim-ripgrep' " Use RipGrep in Vim and display results in a quickfix list.
+Plug 'scrooloose/nerdcommenter' " Quick comments.
+Plug 'unblevable/quick-scope' " Highlight f, F jumps.
+Plug 'tweekmonster/startuptime.vim' " Profile startup time.
+Plug 'Shougo/vimproc.vim', {'do' : 'make'} " Interactive command execution.
+Plug 'junegunn/goyo.vim' " Distraction free writing.
+
 "Plug 'rking/ag.vim' " Lightining fast :Ag searcher
 "Plug 'mbbill/undotree' " History visualiser
 Plug 'tpope/vim-repeat' " Enable repeating supported plugin maps
@@ -97,8 +97,6 @@ Plug 'mhinz/vim-signify' "
 Plug 'airblade/vim-gitgutter' " Show git diff in the gutter (sign column)
 "Plug 'gregsexton/gitv' 
 call plug#end()
-
-let g:polyglot_disabled = ['go' , 'latex']
 
 " _Basic config
 filetype plugin indent on
@@ -327,7 +325,7 @@ nmap <Leader>n    :bnext<CR>
 
 " _lead a
 " Formatting
-nmap <Leader>af   :Autoformat<CR> 
+nmap <Leader>wf   :Autoformat<CR> 
 
 " FZF
 "command! -nargs= 1 Locate call fzf#run({'source': 'locate <q-args>', 'sink': 'e', 'options': '-m'})
@@ -386,19 +384,19 @@ nnoremap <Leader>q :q<CR>
 " Yank whole file
 nnoremap <Leader>y :%y<CR> 
 " Source vimrc
-nnoremap <Leader>ss :source ~/.dotfiles/nvim/init.vim<CR> 
+nnoremap <Leader>a :source ~/.dotfiles/nvim/init.vim<CR> 
 " Search files inside current dir
 nnoremap <Leader>e :Files<CR> 
 " Switch dir for fzf searching to current dir
 map <Leader>cd :lcd %:p:h<CR>
 " Yank xml block to next line
-nnoremap <Leader>aw  vat:t'><CR>'[<Esc><CR> 
+nnoremap <Leader>ww  vat:t'><CR>'[<Esc><CR> 
 " Yank function block
 nnoremap <Leader>yf :exe search('^function','cb')';/}/y'<CR> 
 " Dash doc lookup
-nnoremap <Leader>at :Dash<CR>
+nnoremap <Leader>wt :Dash<CR>
 " Write all changed buffers
-nnoremap <Leader>aa :wa<CR>
+nnoremap <Leader>ww :wa<CR>
 " Write all changed buffers and exit vim
 nnoremap <Leader>vq :wqall<CR>
 nnoremap <Leader>vQ :qa<CR>
@@ -518,6 +516,8 @@ au FocusLost * :wa
 au FileType typescript setlocal noexpandtab
 
 " _Testing
+Goyo
+
 " Persistent undo
 let s:undoDir = "/tmp/.undodir_" . $USER
 if !isdirectory(s:undoDir)
