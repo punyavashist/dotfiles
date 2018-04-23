@@ -173,6 +173,7 @@ These are dotfiles I got many ideas from and liked.
 - [bluz71](https://github.com/bluz71/dotfiles) - Interesting vim setup.
 - [caarlos0](https://github.com/caarlos0/dotfiles) - Made antibody.
 - [wangsongiam](https://github.com/wangsongiam/dotfiles) - Interesting hammerspoon and zsh config.
+- [rvolosatovs](https://github.com/rvolosatovs/dotfiles) - Good vim setup for Go.
 
 ## Contributing
 [Suggestions](../../issues/) on how I can improve the structure of these dotfiles as well as suggesting new and awesome tools are welcome.

@@ -1,10 +1,11 @@
-" Autocomplete engine TODO: ?
+" Autocomplete engine
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 
 " _Install plugins
 call plug#begin()
+Plug 'tweekmonster/startuptime.vim' " Profile startup time. TODO: remove after
 " Utility
 Plug 'romainl/vim-cool' " Stop matching after search is done.
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
@@ -16,94 +17,54 @@ Plug 'rizzatti/dash.vim' " Search Dash app.
 Plug 'jremmen/vim-ripgrep' " Use RipGrep in Vim and display results in a quickfix list.
 Plug 'scrooloose/nerdcommenter' " Quick comments.
 Plug 'unblevable/quick-scope' " Highlight f, F jumps.
-Plug 'tweekmonster/startuptime.vim' " Profile startup time.
 Plug 'Shougo/vimproc.vim', {'do' : 'make'} " Interactive command execution.
 Plug 'junegunn/goyo.vim' " Distraction free writing.
-"Plug 'rking/ag.vim' " Lightining fast :Ag searcher
-"Plug 'mbbill/undotree' " History visualiser
-Plug 'tpope/vim-repeat' " Enable repeating supported plugin maps
-Plug 'christoomey/vim-titlecase' " Titlecase text
-Plug 'tpope/vim-surround' " Quoting/parenthesizing made simple
-Plug 'junegunn/vim-easy-align'
-"Plug 'godlygeek/tabular' " Text filtering and alignment
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim' " fzf fuzzy search
-"Plug 'danro/rename.vim' " Allow to :Rename files
-"Plug 'scrooloose/nerdtree' " Sidebar view
-"Plug 'Xuyuanp/nerdtree-git-plugin'
-"Plug 'tpope/vim-vinegar'
-"Plug 'justinmk/vim-dirvish' " Directory viewer
-"Plug 'justinmk/vim-sneak'
-"Plug 'junegunn/limelight.vim' " Highlight only active paragraphs
-"Plug 'jiangmiao/auto-pairs' " TODO: make it not work in vimrc
-"Plug 'tpope/vim-unimpaired' " TODO: doesn't work
-"Plug 'terryma/vim-multiple-cursors'
-"Plug 'dhruvasagar/vim-table-mode' " Insant table creation
-"Plug 'tpope/vim-abolish' " TODO: not sure if need
-"Plug 'ludovicchabant/vim-gutentags' " TODO: use it
-Plug 'wakatime/vim-wakatime' " Track code time
+Plug 'tpope/vim-repeat' " Enable repeating supported plugin maps.
+"Plug 'christoomey/vim-titlecase' " Titlecase text.
+Plug 'tpope/vim-surround' " Quoting/parenthesizing made simple.
+Plug 'junegunn/vim-easy-align' " Simple, easy-to-use alignment.
+Plug '/usr/local/opt/fzf' " Fzf search.
+Plug 'junegunn/fzf.vim' " Fzf search.
+Plug 'wakatime/vim-wakatime' " Automatic time tracking.
+
+" Moving
+Plug 'easymotion/vim-easymotion' " Vim motions on speed.
+Plug 'haya14busa/incsearch.vim' " Improved incremental searching.
+Plug 'haya14busa/incsearch-easymotion.vim' " Incsearch & easymotion integration.
+
+" Git
+Plug 'tpope/vim-fugitive' " Git wrapper.
+Plug 'mhinz/vim-signify' " Show a diff using Vim its sign column.
 
 " Deoplete
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') } " Asynchronous completion framework.
-Plug 'zchee/deoplete-go', { 'do': 'make'} " Asynchronous Go completion.
 Plug 'zchee/deoplete-jedi' " Deoplete source for jedi.
 
+" C
+Plug 'zchee/deoplete-clang', { 'for': 'c,cpp,objc' } 
+
 " Looks
-Plug 'bling/vim-bufferline' " TODO: doesn't show anything
-"Plug 'ryanoasis/vim-devicons' TODO: doesn't work
 Plug 'ayu-theme/ayu-vim' " Theme
-Plug 'vim-airline/vim-airline' " Nice looking status bar on the bottom
-Plug 'vim-airline/vim-airline-themes' " TODO: not sure if need
-
-" Syntax
-"Plug 'isobit/vim-caddyfile' " Caddyfile syntax support
-
-" Moving
-Plug 'easymotion/vim-easymotion' " Vim motions on speed
-Plug 'haya14busa/incsearch.vim' " Improved incremental searching
-Plug 'haya14busa/incsearch-easymotion.vim'
-
-" C 
-Plug 'zchee/deoplete-clang', { 'for': 'c,cpp,objc' }
-
-" Latex
-"Plug 'lervag/vimtex', { 'for': 'tex' }
-
-" Javascript
-"Plug 'ternjs/tern_for_vim', { 'for': 'javascript', 'do': 'npm install' }
-"Plug 'carlitux/deoplete-ternjs', {'for': 'javascript', 'do': 'npm install -g tern'}
-
-" Typescript
-"Plug 'Quramy/tsuquyomi', {'for': 'typescript'}
-"Plug 'Shougo/vimproc.vim', { 'for': 'typescript', 'build' : 'make'} " tsuquyomi dep
-
-" Rust
-"Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'vim-airline/vim-airline' " Lean & mean status/tabline.
+Plug 'vim-airline/vim-airline-themes' " Collection of themes for Airline.
 
 " Go
-Plug 'fatih/vim-go', { 'for': 'go' }
-Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
+Plug 'fatih/vim-go', { 'for': 'go' } " Go development.
+Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'} " Asynchronous Go completion.
 
 " Vim
-Plug 'Shougo/neco-vim', { 'for': 'vim' }
+Plug 'Shougo/neco-vim', { 'for': 'vim' } " Vim source for neocomplete/deoplete.
 
 " Nix
-"Plug 'LnL7/vim-nix', { 'for': 'nix' }
-
-" Git
-Plug 'tpope/vim-fugitive' " Git wrapper
-Plug 'mhinz/vim-signify' " 
-Plug 'airblade/vim-gitgutter' " Show git diff in the gutter (sign column)
-"Plug 'gregsexton/gitv' 
+Plug 'LnL7/vim-nix', { 'for': 'nix' } " Vim configuration files for Nix.
 call plug#end()
 
-" _Basic config
-filetype plugin indent on
+" _Testing
+" TODO: see what is applied by neovim already
 
-set mouse=a
+set mouse=a " Copy selected text with mouse to system clipboard
 set undofile
 
-set wildmenu
 set wildmode=longest:list,full
 
 " Easier navig
@@ -131,7 +92,6 @@ set completeopt-=preview " No annoying scratch preview above
 set expandtab " Spaces on tabs
 set shiftwidth=4
 set softtabstop=2
-set backspace=indent,eol,start " Makes backspace key more powerful
 set undolevels=1000
 set smartindent " Indentation
 set shortmess=Ia " Disable startup message
@@ -155,20 +115,15 @@ set nofoldenable
 
 " Searching
 set wrapscan
-set incsearch
 set ignorecase
 set smartcase
 set gdefault
-
-set hlsearch " Highlighting
 
 " Usable 'Tab'
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
 set expandtab
-
-set autoindent
 
 set fileencoding=utf-8 " Encoding when written to file
 
@@ -324,7 +279,7 @@ nmap <Leader>n    :bnext<CR>
 
 " _lead a
 " Formatting
-nmap <Leader>wf   :Autoformat<CR> 
+nmap <Leader>fw   :Autoformat<CR> 
 
 " FZF
 "command! -nargs= 1 Locate call fzf#run({'source': 'locate <q-args>', 'sink': 'e', 'options': '-m'})
@@ -389,13 +344,13 @@ nnoremap <Leader>e :Files<CR>
 " Switch dir for fzf searching to current dir
 map <Leader>cd :lcd %:p:h<CR>
 " Yank xml block to next line
-nnoremap <Leader>ww  vat:t'><CR>'[<Esc><CR> 
+nnoremap <Leader>tgt  vat:t'><CR>'[<Esc><CR> 
 " Yank function block
-nnoremap <Leader>yf :exe search('^function','cb')';/}/y'<CR> 
+nnoremap <Leader>tgt :exe search('^function','cb')';/}/y'<CR> 
 " Dash doc lookup
-nnoremap <Leader>wt :Dash<CR>
+nnoremap <Leader>ttt :Dash<CR>
 " Write all changed buffers
-nnoremap <Leader>ww :wa<CR>
+nnoremap <Leader>tttt :wa<CR>
 " Write all changed buffers and exit vim
 nnoremap <Leader>vq :wqall<CR>
 nnoremap <Leader>vQ :qa<CR>
@@ -433,8 +388,6 @@ let g:EasyMotion_smartcase = 1
 "map            T  <Plug>(easymotion-T)
 "map            s  <Plug>(easymotion-s2)
 "map            S  <Plug>(easymotion-overwin-f2)
-""map    <Leader>w  <Plug>(easymotion-w)
-"map    <Leader>W  <Plug>(easymotion-W)
 "map    <Leader>b  <Plug>(easymotion-b)
 "map    <Leader>B  <Plug>(easymotion-B)
 "map    <Leader>e  <Plug>(easymotion-e)
@@ -514,17 +467,6 @@ au FocusLost * :wa
 "au FileType html setlocal foldmethod=indent
 au FileType typescript setlocal noexpandtab
 
-" _Testing
-autocmd VimEnter * Goyo"
-
-" Persistent undo
-let s:undoDir = "/tmp/.undodir_" . $USER
-if !isdirectory(s:undoDir)
-    call mkdir(s:undoDir, "", 0700)
-endif
-let &undodir=s:undoDir
-set undofile
-
 let g:sneak#s_next = 1
 map z/ <Plug>(incsearch-easymotion-/)
 map z? <Plug>(incsearch-easymotion-?)
@@ -544,7 +486,6 @@ let g:qs_highlight_on_keys = ['f', 'F'] " Trigger a highlight only when pressing
 noremap Q @q
 vnoremap <D-c> y
 set timeout timeoutlen=1000 ttimeoutlen=10 " TODO: ?
-set showcmd " Show me what I'm typing
 set autowrite " Automatically save before :next, :make etc
 set ignorecase " Search case insensitive:
 set smartcase " .. but not when search pattern contains upper case characters
