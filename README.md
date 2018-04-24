@@ -56,10 +56,10 @@ I am also using [Ayu theme](https://github.com/mbadolato/iTerm2-Color-Schemes/bl
 
 ![](https://i.imgur.com/1GomRAC.png)
 
-> a is [alias](zsh/aliases/alias.zsh) for [exa](https://github.com/ogham/exa)
+> a is [alias](zsh/alias.zsh) for [exa](https://github.com/ogham/exa)
 
 ## Zsh aliases
-I use many aliases to get around my system as fast as possible. You can view them all [here](zsh/aliases/alias.zsh).
+I use many aliases to get around my system as fast as possible. You can view them all [here](zsh/alias.zsh).
 
 ### Interesting aliases and functions
 There is quite a lot of awesome programs I use from my command line. You can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps) for some of them.
@@ -155,20 +155,6 @@ fw() {
 ```
 
 Which does the same thing but opens the files in VS Code instead of neovim.
-
-
-#### Search for files to edit in my ~/.dotfiles
-
-```Bash
-fea() {
-  cd ~/.dotfiles
-  local files
-  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
-  [[ -n "$files" ]] && nvim "${files[@]}"
-}
-```
-
-A slight variation of the above command that first `cd`'s to `~/.dotfiles` and then lets me search through contents of it to quickly edit and modify my config with neovim.
 
 ## Interesting dotfiles
 These are dotfiles I got many ideas from and liked.
