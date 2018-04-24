@@ -44,7 +44,7 @@ Plug 'zchee/deoplete-jedi' " Deoplete source for jedi.
 Plug 'zchee/deoplete-clang', { 'for': 'c,cpp,objc' } 
 
 " Looks
-Plug 'ayu-theme/ayu-vim' " Theme
+Plug 'ayu-theme/ayu-vim' " Theme.
 Plug 'vim-airline/vim-airline' " Lean & mean status/tabline.
 Plug 'vim-airline/vim-airline-themes' " Collection of themes for Airline.
 
@@ -59,32 +59,22 @@ Plug 'Shougo/neco-vim', { 'for': 'vim' } " Vim source for neocomplete/deoplete.
 Plug 'LnL7/vim-nix', { 'for': 'nix' } " Vim configuration files for Nix.
 call plug#end()
 
-" _Testing
-" TODO: see what is applied by neovim already
-
+" _Options
 set mouse=a " Copy selected text with mouse to system clipboard
-set undofile
+set undofile " Save undos after file closes
 
-set wildmode=longest:list,full
+set wildmode=longest:list,full " Complete longest common string, then each full match
 
-" Easier navig
-set number
-set relativenumber
+set number " Display line numbers
+set relativenumber " Relative numbers
 
-set updatetime=250 " NOTE: maybe needs increase
+set updatetime=250 " If this many milliseconds nothing is typed the swap file will be written to disk
 
-set visualbell
+set visualbell " Turn off the audio bell
 
-" TODO: not sure
-set rtp^=/usr/share/vim/vimfiles
-set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
-set rtp+=$GOPATH/src/github.com/junegunn/fzf
-
-" TODO: Check if some of these settings come as default with neovim
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " Nice looking editor
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " True color
 set clipboard^=unnamed  " Copy text to system clipboard
 set gdefault " Always do global substitutions
-set clipboard^=unnamedplus
 set title " Set terminal title
 set whichwrap+=<,>,[,]
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -338,13 +328,13 @@ nnoremap <Leader>q :q<CR>
 " Yank whole file
 nnoremap <Leader>y :%y<CR> 
 " Source vimrc
-nnoremap <Leader>a :source ~/.dotfiles/nvim/init.vim<CR> 
+nnoremap <Leader>ss :source ~/.dotfiles/nvim/init.vim<CR> 
 " Search files inside current dir
 nnoremap <Leader>e :Files<CR> 
 " Switch dir for fzf searching to current dir
 map <Leader>cd :lcd %:p:h<CR>
 " Yank xml block to next line
-nnoremap <Leader>tgt  vat:t'><CR>'[<Esc><CR> 
+nnoremap <Leader>aw  vat:t'><CR>'[<Esc><CR> 
 " Yank function block
 nnoremap <Leader>tgt :exe search('^function','cb')';/}/y'<CR> 
 " Dash doc lookup

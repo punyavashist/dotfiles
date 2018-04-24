@@ -10499,11 +10499,6 @@ __BlockUntilKeyUp__ KeyCode::T,
 
 <autogen>
 __KeyToKey__
-KeyCode::N,
-KeyCode::VK_OPEN_URL_KM_CREATE_NEW_CONTACT
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::U,
 KeyCode::VK_OPEN_URL_KM_ADD_CLIPBOARD_AS_ACTIVE_TODO
 </autogen>
@@ -10640,6 +10635,11 @@ __BlockUntilKeyUp__ KeyCode::Z,
 <autogen>
 __KeyToKey__
 KeyCode::N,
+KeyCode::VK_OPEN_URL_KM_CREATE_NEW_CONTACT
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::O,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_RIOT
 </autogen>
 <autogen>
