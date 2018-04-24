@@ -1,3 +1,7 @@
+" 1. _Install plugins
+" 2. _Options
+" 3. _Plugins
+
 " Autocomplete engine
 function! DoRemote(arg)
   UpdateRemotePlugins
@@ -62,22 +66,13 @@ call plug#end()
 " _Options
 set mouse=a " Copy selected text with mouse to system clipboard
 set undofile " Save undos after file closes
-
 set wildmode=longest:list,full " Complete longest common string, then each full match
-
-set number " Display line numbers
-set relativenumber " Relative numbers
-
 set updatetime=250 " If this many milliseconds nothing is typed the swap file will be written to disk
-
 set visualbell " Turn off the audio bell
-
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " True color
 set clipboard^=unnamed  " Copy text to system clipboard
 set gdefault " Always do global substitutions
 set title " Set terminal title
 set whichwrap+=<,>,[,]
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set completeopt-=preview " No annoying scratch preview above
 set expandtab " Spaces on tabs
 set shiftwidth=4
@@ -85,15 +80,8 @@ set softtabstop=2
 set undolevels=1000
 set smartindent " Indentation
 set shortmess=Ia " Disable startup message
-
-" Open help vertically
-command! -nargs=* -complete=help Help vertical belowright help <args>
-autocmd FileType help wincmd L
-
-:autocmd InsertEnter,InsertLeave * set cul! " Notify on mode change visually
-
-" Buffers
-set hidden
+set fileencoding=utf-8 " Encoding when written to file
+set fileformat=unix " Line endings
 
 " Folding
 set foldcolumn=1
@@ -102,6 +90,9 @@ set foldlevelstart=7
 set foldmethod=syntax
 set foldignore=""
 set nofoldenable
+
+" Buffers
+set hidden
 
 " Searching
 set wrapscan
@@ -115,43 +106,41 @@ set tabstop=4
 set softtabstop=4
 set expandtab
 
-set fileencoding=utf-8 " Encoding when written to file
+" UI
+set number " Display line numbers
+set relativenumber " Relative numbers
+set cursorline  " Highlight current line
+set showmatch
+set tabstop=4 " Default indentation is 4 spaces long and uses tabs, not spaces
+set matchtime=2
+set termguicolors " Enable true colors support
+let python_highlight_all = 1
 
-" Line endings
-set fileformat=unix
+set completeopt+=menu,menuone " Completion
 
-" Completion
-if has('nvim')
-    set completeopt+=menu,menuone
-endif
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " True color
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-" Set terminal title
-set title
+" Open help vertically
+command! -nargs=* -complete=help Help vertical belowright help <args>
+autocmd FileType help wincmd L
+
+:autocmd InsertEnter,InsertLeave * set cul! " Notify on mode change visually
 
 set grepprg=rg\ --vimgrep
 set grepformat^=%f:%l:%c:%m
 
 set viewoptions=cursor,slash,unix
 
-" _Basic UI config
-set relativenumber " Relative to current posion line numbers
-set number " Show line numbers
-set cursorline  " Highlight current line
-let python_highlight_all = 1
-set showmatch
-set tabstop=4 " Default indentation is 4 spaces long and uses tabs, not spaces
-set matchtime=2
-set termguicolors " Enable true colors support
-
-" _Plugin modifications
+" _Plugins
 let g:deoplete#enable_at_startup = 1 " Activate deoplete
 
-" _Theme
+" Theme
 set background=dark " Set night mode
-let ayucolor="mirage" " For mirage version of theme
+let ayucolor="mirage" " Mirage version of theme
 colorscheme ayu
 
-" _Airline
+" Airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme='tomorrow' " Status bar theme
 let g:airline#extensions#bufferline#enabled = 1
@@ -183,7 +172,6 @@ function! Multiple_cursors_after()
     endif
 endfunction
 
-" _Plugin settings
 let g:multi_cursor_exit_from_visual_mode = 0
 let g:multi_cursor_exit_from_insert_mode = 0
 
@@ -191,13 +179,7 @@ let g:AutoPairsFlyMode = 0
 let g:AutoPairsShortcutToggle = '<C-P>'
 au filetype vim let b:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'", '`':'`'} " Don't autocomplete in vim
 
-" JSX
-let g:jsx_ext_required = 0
-
-" Tern
-let g:tern_request_timeout = 1
-
-" Vim-session
+" Vim session
 let g:session_autosave="no"
 let g:session_autoload="no"
 
@@ -205,9 +187,6 @@ let g:session_autoload="no"
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " Activate leader for easymotion
 map <Leader> <Plug>(easymotion-prefix)
-
-" Run goimports on save
-let g:go_fmt_command = "goimports"
 
 " Advanced customization using autoload functions
 inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
