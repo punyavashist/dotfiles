@@ -1,5 +1,5 @@
 {
-  // _Testing
+  // _General
   "newFile.defaultFileExtension": ".go",
   "newFile.showPathRelativeTo": "project",
   "search.smartCase": true,
@@ -16,7 +16,6 @@
     "package-lock.json": true
   },
   "typescript.check.npmIsInstalled": false,
-  // _General
   "editor.snippetSuggestions": "top",
   "editor.minimap.enabled": false,
   "todohighlight.isEnable": true,
@@ -170,19 +169,6 @@
       "commands": [
         {
           "command": "editor.action.commentLine",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "r"
-      ],
-      "after": [],
-      "commands": [
-        {
-          "command": "code-runner.run",
           "args": []
         }
       ]

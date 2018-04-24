@@ -24,11 +24,7 @@ Plug 'junegunn/vim-easy-align' " Simple, easy-to-use alignment.
 Plug '/usr/local/opt/fzf' " Fzf search.
 Plug 'junegunn/fzf.vim' " Fzf search.
 Plug 'wakatime/vim-wakatime' " Automatic time tracking.
-
-" Moving
-Plug 'easymotion/vim-easymotion' " Vim motions on speed.
 Plug 'haya14busa/incsearch.vim' " Improved incremental searching.
-Plug 'haya14busa/incsearch-easymotion.vim' " Incsearch & easymotion integration.
 
 " Git
 Plug 'tpope/vim-fugitive' " Git wrapper.
@@ -145,6 +141,8 @@ noremap Y y$
 
 " _Plugins
 let g:deoplete#enable_at_startup = 1 " Activate deoplete
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T'] " Trigger a highlight in the appropriate direction when pressing these keys
+let g:incsearch#auto_nohlsearch = 1 " TODO:
 
 " Theme
 set background=dark " Set night mode
@@ -211,7 +209,6 @@ nnoremap ga <Plug>(EasyAlign)
 " _Insert mappings
 inoremap      jk  <Esc>
 inoremap      kj  <Esc>
-inoremap (<Space>  ();<Esc>hi
 inoremap      (;   ();<Esc>o
 inoremap      ()   ()
 
@@ -232,6 +229,10 @@ nnoremap <leader>= yypVr=
 nmap <Leader>ze   :enew <CR>
 nmap <Leader>zt   :tabnew<CR>
 
+" _Space p
+nnoremap <Leader>pi :PlugInstall<CR>
+nnoremap <Leader>pu :PlugUpdate<CR>
+
 " _Space w
 " Save
 nmap <Leader>w :w<CR> 
@@ -239,27 +240,69 @@ nmap <Leader>w :w<CR>
 " _Space d
 nmap <Leader>d   :bd<CR>
 
+" _Space a
+" Yank xml block to next line
+nnoremap <Leader>aw  vat:t'><CR>'[<Esc><CR> 
+
+" _Space v
+" Write all changed buffers and exit vim
+nnoremap <Leader>vq :wqall<CR>
+nnoremap <Leader>vQ :qa<CR>
+nnoremap <Leader>vm :make<CR>
+
+" _Space o
+" Move 10 lines down (for karabiner sticky keys)
+nnoremap <Leader>o 29jzz
+
+" _Space i
+nnoremap <Leader>ii :PlugInstall<CR>
+" Update plugins
+nnoremap <Leader>iu :PlugUpdate<CR>
+" Check vim health
+nnoremap <Leader>ih :CheckHealth<CR>
+
+" _Space c
+" Switch dir for fzf searching to current dir
+map <Leader>cd :lcd %:p:h<CR>
+
 " _Space e
 nmap <Leader>e.   :e .<CR>
+" Search files inside current dir
+nnoremap <Leader>e :Files<CR> 
 
 " _Space t
 nmap <Leader>to   :e %:p:h<CR>
+" Yank function block
+nnoremap <Leader>tgt :exe search('^function','cb')';/}/y'<CR> 
+" Dash doc lookup
+nnoremap <Leader>ttt :Dash<CR>
+" Write all changed buffers
+nnoremap <Leader>tttt :wa<CR>
+" Run commands in new splits
+nnoremap <Leader>tt :tabedit <Bar> term.
+nnoremap <Leader>ts :split <Bar> term.
+nnoremap <Leader>tv :vsplit <Bar> term.
 
 " _Space s
 " Buffer control
 nmap <Leader>s    :bprevious<CR>
+" Source vimrc
+nnoremap <Leader>ss :source ~/.dotfiles/nvim/init.vim<CR> 
 
 " _Space n
 nmap <Leader>n    :bnext<CR>
+" Search lines with fzf
+nnoremap <silent> <Leader>n :Lines<CR>
 
 " _Space q
 nmap <Leader>q    :q<CR>
 
-" _Space a
-" Formatting
-nmap <Leader>fw   :Autoformat<CR> 
+" _Space y
+" Yank whole file
+nnoremap <Leader>y :%y<CR> 
 
 " _Space f
+nmap <Leader>fw   :Autoformat<CR> 
 nmap <Leader>ff :FZF <CR>
 nmap <Leader>fb   :Buffers <CR>
 nmap <Leader>fl   :BLines <CR>
@@ -290,170 +333,19 @@ imap <c-x><c-f> <plug>(fzf-complete-path)
 imap <c-x><c-j> <plug>(fzf-complete-file-ag)
 imap <c-x><c-l> <plug>(fzf-complete-line)
 
-" Incsearch
-let g:incsearch#auto_nohlsearch = 1
-" map           /   <Plug>(incsearch-easymotion-/)
-" map           ?   <Plug>(incsearch-easymotion-?)
-map           g/  <Plug>(incsearch-easymotion-stay)
-"map           /   <Plug>(incsearch-forward)
-"map           ?   <Plug>(incsearch-backward)
-"map           g/  <Plug>(incsearch-stay)
-map           *   <Plug>(incsearch-nohl-*)
-map           n   <Plug>(incsearch-nohl-n)
-map           N   <Plug>(incsearch-nohl-N)
-map           #   <Plug>(incsearch-nohl-#)
-map           g*  <Plug>(incsearch-nohl-g*)
-map           g#  <Plug>(incsearch-nohl-g#)
-
-" Search lines with fzf
-nnoremap <silent> <Leader>n :Lines<CR>
-" Yank whole file
-nnoremap <Leader>y :%y<CR> 
-" Source vimrc
-nnoremap <Leader>ss :source ~/.dotfiles/nvim/init.vim<CR> 
-" Search files inside current dir
-nnoremap <Leader>e :Files<CR> 
-" Switch dir for fzf searching to current dir
-map <Leader>cd :lcd %:p:h<CR>
-" Yank xml block to next line
-nnoremap <Leader>aw  vat:t'><CR>'[<Esc><CR> 
-" Yank function block
-nnoremap <Leader>tgt :exe search('^function','cb')';/}/y'<CR> 
-" Dash doc lookup
-nnoremap <Leader>ttt :Dash<CR>
-" Write all changed buffers
-nnoremap <Leader>tttt :wa<CR>
-" Write all changed buffers and exit vim
-nnoremap <Leader>vq :wqall<CR>
-nnoremap <Leader>vQ :qa<CR>
-" Install plugins
-nnoremap <Leader>ii :PlugInstall<CR>
-" Update plugins
-nnoremap <Leader>iu :PlugUpdate<CR>
-" Check vim health
-nnoremap <Leader>ih :CheckHealth<CR>
-" Move 10 lines down (for karabiner sticky keys)
-nnoremap <Leader>o 29jzz
-" Update plugins
-nnoremap <Leader>vm :make<CR>
-" Run commands in new splits
-nnoremap <Leader>tt :tabedit <Bar> term.
-nnoremap <Leader>ts :split <Bar> term.
-nnoremap <Leader>tv :vsplit <Bar> term.
-"nnoremap <silent><expr> <C-L> winnr()==g:NERDTree.GetWinNum() ? ":NERDTreeClose\<CR>" : ":NERDTreeFocus\<CR>"
-nnoremap <C-s> :w<cr>
-nnoremap <Leader>pi :PlugInstall<CR>
-nnoremap <Leader>pu :PlugUpdate<CR>
-
-" _Command + shift mapping
-nnoremap <D-S-F> :Ack<space>
-
-" EasyMotion
-let g:EasyMotion_keys='hjkluiobnmxcvwersdfg'
-let g:EasyMotion_startofline = 0
-let g:EasyMotion_do_mapping = 0
-let g:EasyMotion_smartcase = 1
-
-"map            f  <Plug>(easymotion-f)
-"map            F  <Plug>(easymotion-F)
-"map            t  <Plug>(easymotion-t)
-"map            T  <Plug>(easymotion-T)
-"map            s  <Plug>(easymotion-s2)
-"map            S  <Plug>(easymotion-overwin-f2)
-"map    <Leader>b  <Plug>(easymotion-b)
-"map    <Leader>B  <Plug>(easymotion-B)
-"map    <Leader>e  <Plug>(easymotion-e)
-"map    <Leader>E  <Plug>(easymotion-E)
-"map    <Leader>ge <Plug>(easymotion-ge)
-"map    <Leader>gE <Plug>(easymotion-gE)
-"
-"map    <Leader>gl <Plug>(easymotion-overwin-line)
-"
-"map    <Leader>gn <Plug>(easymotion-next)
-"map    <Leader>gN <Plug>(easymotion-prev)
-" map    <Leader>n  <Plug>(easymotion-vim-n)
-" map    <Leader>N  <Plug>(easymotion-vim-N)
-"
-""map    <Leader>h  <Plug>(easymotion-linebackward)
-""map    <Leader>l  <Plug>(easymotion-lineforward)
-
-" UltiSnips
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsListSnippets="<leader><tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
-" Neosnippet
-let g:neosnippet#disable_runtime_snippets = { "_": 1, }
-let g:neosnippet#snippets_directory='~/.local/share/nvim/plugins/vim-snippets/snippets'
-
-" NOTE: It must be "imap" and "smap".  It uses <Plug> mappings.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
-
-" SuperTab like snippets behavior.
-" NOTE: It must be "imap" and "smap".  It uses <Plug> mappings.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-"imap <expr><TAB>
-" \ pumvisible() ? "\<C-n>" :
-" \ neosnippet#expandable_or_jumpable() ?
-" \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-            \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-
-" For conceal markers.
+" For conceal markers
 if has('conceal')
     set conceallevel=2 concealcursor=nc
 endif
 
-let g:tex_conceal="ag"
-let g:vimtex_view_method='zathura'
-
-nmap <localleader>ll <plug>(vimtex-compile-ss)
-
-" _Easymotion
-nmap J <Plug>(easymotion-j)
-nmap K <Plug>(easymotion-k)
-vmap J <Plug>(easymotion-j)
-vmap K <Plug>(easymotion-k)
-
-"let g:sneak#s_next = 1
-"let g:sneak#use_ic_scs = 1
-"let g:sneak#label = 1
-"let g:sneak#target_labels = 'hjkluiobnmxcvwersdfg'
-"autocmd ColorScheme * hi Sneak guifg=black guibg=red ctermfg=black ctermbg=red
-"autocmd ColorScheme * hi SneakScope guifg=red guibg=yellow ctermfg=red ctermbg=yellow
-
-
-" Filetype-specific keybinds TODO: migrate to /ft
-au FileType sh         inoremap <buffer> ## <Esc>79i#<Esc>yypO#<Space>
-au FileType conf       inoremap <buffer> ## <Esc>79i#<Esc>yypO#<Space>
-
+" _Auto commands
 au FileType dirvish call fugitive#detect(@%)
+au FocusLost * :wa " Auto save everything
 
-" Func
-au FocusLost * :wa
-
-" Filetype-specific settings
-"au FileType html setlocal foldmethod=indent
-au FileType typescript setlocal noexpandtab
-
-let g:sneak#s_next = 1
-map z/ <Plug>(incsearch-easymotion-/)
-map z? <Plug>(incsearch-easymotion-?)
-map zg/ <Plug>(incsearch-easymotion-stay)
+" _Remaps
 " Search and replace
 xnoremap gs y:%s/<C-r>"//g<Left><Left> 
 
-" See open buffers
-nnoremap gb :ls<CR>:buffer<Space> 
-
+" _Other
 set guicursor=n-v-c:hor20,i-ci:ver20 " Make cursor block in insert mode and underline in normal mode
-autocmd VimLeave * set guicursor=a:ver25-blinkon25
-
-let g:qs_highlight_on_keys = ['f', 'F', 't', 'T'] " Trigger a highlight in the appropriate direction when pressing these keys
-let g:qs_highlight_on_keys = ['f', 'F'] " Trigger a highlight only when pressing f and F.
-
-noremap Q @q
-vnoremap <D-c> y
+autocmd VimLeave * set guicursor=a:ver25-blinkon25 " Make cursor block when leaving to shell
