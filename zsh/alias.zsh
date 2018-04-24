@@ -1,5 +1,3 @@
-# Aliases.
-
 # _Testing
 
 # _Nix

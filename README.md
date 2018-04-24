@@ -12,6 +12,7 @@ You can also see my top used applications, safari exensions and alfred workflows
 - [Karabiner](#karabiner)
 - [Neovim](#neovim)
 - [VS Code](#vs-code)
+- [Sublime Text](#sublime-text)
 - [Hammerspoon](#hammerspoon)
 - [Zsh](#zsh)
   - [Interesting aliases and functions](#interesting-aliases-and-functions)
@@ -44,7 +45,12 @@ My Neovim config can be seen [here](nvim/init.vim). I use [Ayu theme](https://gi
 ## VS Code
 My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has very well built [vim mode](https://github.com/VSCodeVim/Vim).
 
-Configs I use for it can be seen [here](https://github.com/nikitavoloboev/dotfiles/tree/master/vscode). And [here](https://gist.github.com/nikitavoloboev/6a477ff089612434d28258901d9d9e04) is a list of extensions I use.
+Configs I use for it can be seen [here](https://github.com/nikitavoloboev/dotfiles/tree/master/vscode). And [here](https://wiki.nikitavoloboev.xyz/text-editors/vs-code/vs-code-extensions.html) is a list of extensions I use.
+
+## Sublime Text
+I use it primarily to edit markdown files like [my wiki](https://wiki.nikitavoloboev.xyz/other/wiki-workflow.html). I also edit config files and open large and small files for quick edits.
+
+I use [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/sublime-text/sublime-text-plugins.html) together with [Ayu theme](https://github.com/dempfi/ayu).
 
 ## Hammerspoon
 I don't use [Hammerspoon](http://www.hammerspoon.org/) as extensively however I am looking into implementing more of its features into my workflow.
