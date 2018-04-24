@@ -1,7 +1,3 @@
-" 1. _Install plugins
-" 2. _Options
-" 3. _Plugins
-
 " Autocomplete engine
 function! DoRemote(arg)
   UpdateRemotePlugins
@@ -9,7 +5,6 @@ endfunction
 
 " _Install plugins
 call plug#begin()
-Plug 'tweekmonster/startuptime.vim' " Profile startup time. TODO: remove after
 " Utility
 Plug 'romainl/vim-cool' " Stop matching after search is done.
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
@@ -22,7 +17,6 @@ Plug 'jremmen/vim-ripgrep' " Use RipGrep in Vim and display results in a quickfi
 Plug 'scrooloose/nerdcommenter' " Quick comments.
 Plug 'unblevable/quick-scope' " Highlight f, F jumps.
 Plug 'Shougo/vimproc.vim', {'do' : 'make'} " Interactive command execution.
-Plug 'junegunn/goyo.vim' " Distraction free writing.
 Plug 'tpope/vim-repeat' " Enable repeating supported plugin maps.
 "Plug 'christoomey/vim-titlecase' " Titlecase text.
 Plug 'tpope/vim-surround' " Quoting/parenthesizing made simple.
@@ -82,6 +76,20 @@ set smartindent " Indentation
 set shortmess=Ia " Disable startup message
 set fileencoding=utf-8 " Encoding when written to file
 set fileformat=unix " Line endings
+set timeout timeoutlen=1000 ttimeoutlen=10 " TODO: ?
+set autowrite " Automatically save before :next, :make etc
+set ignorecase " Search case insensitive:
+set smartcase " .. but not when search pattern contains upper case characters
+set nocursorcolumn
+set nocursorline
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+set notimeout
+set ttimeout
+set ttimeoutlen=10
+set nobackup " Don't create annoying backup files
+set path=+** " Search down into subfolders
 
 " Folding
 set foldcolumn=1
@@ -131,6 +139,9 @@ set grepprg=rg\ --vimgrep
 set grepformat^=%f:%l:%c:%m
 
 set viewoptions=cursor,slash,unix
+
+" Better yank
+noremap Y y$ 
 
 " _Plugins
 let g:deoplete#enable_at_startup = 1 " Activate deoplete
@@ -197,62 +208,58 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nnoremap ga <Plug>(EasyAlign)
 
-" _Comma mapping
-
-" _Insert  mapping
+" _Insert mappings
 inoremap      jk  <Esc>
 inoremap      kj  <Esc>
 inoremap (<Space>  ();<Esc>hi
 inoremap      (;   ();<Esc>o
 inoremap      ()   ()
 
-"_Command mapping
+"_Command mappings
 cabbrev rp Rp
 
-" _Control mapping
+" _Control mappings
 nnoremap <C-M> /sticky 
 nnoremap <C-L> /\c__\_sKeyCode::/e<Left><Left>
 
-" _Space mapping
+" _Space mappings
 nnoremap <SPACE> <Nop>
 let mapleader="\<Space>"
 let maplocalleader = "\<Space>"
-
 nnoremap <leader>= yypVr=
 
-" Better yank
-noremap Y y$ 
-
-" _lead z
+" _Space z
 nmap <Leader>ze   :enew <CR>
 nmap <Leader>zt   :tabnew<CR>
 
-" _lead d
+" _Space w
+" Save
+nmap <Leader>w :w<CR> 
+
+" _Space d
 nmap <Leader>d   :bd<CR>
 
-" _lead e
+" _Space e
 nmap <Leader>e.   :e .<CR>
 
-" _lead t
+" _Space t
 nmap <Leader>to   :e %:p:h<CR>
 
-" _lead s
+" _Space s
 " Buffer control
 nmap <Leader>s    :bprevious<CR>
 
-" _lead n
+" _Space n
 nmap <Leader>n    :bnext<CR>
 
-" _lead q
-"nmap <Leader>qb   :bp<BAR> bd #<CR>
+" _Space q
+nmap <Leader>q    :q<CR>
 
-" _lead a
+" _Space a
 " Formatting
 nmap <Leader>fw   :Autoformat<CR> 
 
-" FZF
-"command! -nargs= 1 Locate call fzf#run({'source': 'locate <q-args>', 'sink': 'e', 'options': '-m'})
-" _lead f
+" _Space f
 nmap <Leader>ff :FZF <CR>
 nmap <Leader>fb   :Buffers <CR>
 nmap <Leader>fl   :BLines <CR>
@@ -268,7 +275,7 @@ nmap <Leader>fs   :Snippets<CR>
 nmap <Leader>fg   :BCommits<CR>
 nmap <Leader>fG   :Commits<CR>
 
-" _lead o
+" _Space o
 nmap <Leader>o    :Files %:p:h<CR>
 nmap <Leader>O    :GFiles <CR>
 
@@ -298,12 +305,8 @@ map           #   <Plug>(incsearch-nohl-#)
 map           g*  <Plug>(incsearch-nohl-g*)
 map           g#  <Plug>(incsearch-nohl-g#)
 
-" Save
-nmap <Leader>w :w<CR> 
 " Search lines with fzf
 nnoremap <silent> <Leader>n :Lines<CR>
-" Quit
-nnoremap <Leader>q :q<CR>  
 " Yank whole file
 nnoremap <Leader>y :%y<CR> 
 " Source vimrc
@@ -454,17 +457,3 @@ let g:qs_highlight_on_keys = ['f', 'F'] " Trigger a highlight only when pressing
 
 noremap Q @q
 vnoremap <D-c> y
-set timeout timeoutlen=1000 ttimeoutlen=10 " TODO: ?
-set autowrite " Automatically save before :next, :make etc
-set ignorecase " Search case insensitive:
-set smartcase " .. but not when search pattern contains upper case characters
-set nocursorcolumn
-set nocursorline
-set wrap
-set textwidth=79
-set formatoptions=qrn1
-set notimeout
-set ttimeout
-set ttimeoutlen=10
-set nobackup " Don't create annoying backup files
-set path=+** " Search down into subfolders

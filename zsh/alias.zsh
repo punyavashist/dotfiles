@@ -298,14 +298,14 @@ alias et='nvim ~/.dotfiles/tmux/tmux.conf.local' # tmux config
 # _cd places
 alias dw='cd ~/dev/web'
 alias dsh='cd ~/.ssh'
-alias dl='cd ~/dev/clones'
+alias ds='cd ~/dev/clones'
 alias di='cd ~/dev/ideas'
 alias dg='cd ~/go/src/github.com/nikitavoloboev'
-alias dj='cd ~/dev/learn'
+alias dl='cd ~/dev/learn'
 alias dt='cd ~/dev/test'
 alias da='cd ~/dev/'
-alias ds='cd ~/dev/forks/'
-alias dn='cd ~/dev/github/learn-anything'
+alias df='cd ~/dev/forks/'
+alias dla='cd ~/dev/github/learn-anything'
 alias dz='cd ~/.dotfiles'
 alias dk='cd ~/Documents'
 

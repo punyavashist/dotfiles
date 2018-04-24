@@ -35,14 +35,14 @@ The most exciting thing in here is probably how I utilise [Karabiner](https://pq
 I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macOS/apps/karabiner/karabiner.html). And my config for it can be seen [here](https://github.com/nikitavoloboev/dotfiles/blob/master/karabiner/private.xml).
 
 ## Neovim
-I am [still learning vim](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim.html) but the this journey has been very rewarding. Modal editing is pretty amazing.
+I am still [learning vim](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim.html) but the this journey has been very rewarding. Modal editing is amazing.
 
-My Neovim config can be seen [here](nvim/init.vim). I use [ayu theme](https://github.com/ayu-theme/ayu-vim) across all my editors, including neovim:
+My Neovim config can be seen [here](nvim/init.vim). I use [Ayu theme](https://github.com/ayu-theme/ayu-vim) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins.html). Here is how it looks:
 
 ![](https://i.imgur.com/3cRnCm3.png)
 
 ## VS Code
-My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has very well built [vim mode](https://github.com/VSCodeVim/Vim). And I love its [Go Plugin](https://github.com/Microsoft/vscode-go) + the amazing zen mode.
+My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has very well built [vim mode](https://github.com/VSCodeVim/Vim).
 
 Configs I use for it can be seen [here](https://github.com/nikitavoloboev/dotfiles/tree/master/vscode). And [here](https://gist.github.com/nikitavoloboev/6a477ff089612434d28258901d9d9e04) is a list of extensions I use.
 
@@ -50,19 +50,21 @@ Configs I use for it can be seen [here](https://github.com/nikitavoloboev/dotfil
 I don't use [Hammerspoon](http://www.hammerspoon.org/) as extensively however I am looking into implementing more of its features into my workflow.
 
 ## Zsh
-I am using [zsh](http://www.zsh.org) as my shell with [antibody](https://github.com/getantibody/antibody) plugin manager.
+I am using [Zsh](http://www.zsh.org) as my shell with [Antibody](https://github.com/getantibody/antibody) plugin manager.
 
-I am also using [ayu theme](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/ayu.itermcolors) in zsh. Here is how my prompt looks like:
+I am also using [Ayu theme](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/ayu.itermcolors) in Zsh. Here is how my prompt looks like:
 
 ![](https://i.imgur.com/1GomRAC.png)
 
+> a is [alias](zsh/aliases/alias.zsh) for [exa](https://github.com/ogham/exa)
+
 ## Zsh aliases
-I use many aliases to get around my system as fast as possible. You can view them all [here](https://github.com/nikitavoloboev/dotfiles/blob/master/zsh/aliases/alias.zsh).
+I use many aliases to get around my system as fast as possible. You can view them all [here](zsh/aliases/alias.zsh).
 
 ### Interesting aliases and functions
-There is quite a lot of awesome programs I use from my command line (you can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps) for some of them).
+There is quite a lot of awesome programs I use from my command line. You can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps) for some of them.
 
-However I also love customising my shell experience with various aliases and zsh functions. Here are some that I like and use very often:
+I also love customising my shell experience with various aliases and zsh functions. Here are some that I like and use very often:
 
 #### Commit and push repository to GitHub in one command
 
