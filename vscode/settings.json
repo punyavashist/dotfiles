@@ -47,7 +47,7 @@
   "editor.lineNumbers": "relative",
   "editor.cursorStyle": "line",
   "explorer.confirmDragAndDrop": false,
-  "window.zoomLevel": -2,
+  "window.zoomLevel": -3,
   "workbench.startupEditor": "newUntitledFile",
   // _Python
   "python.linting.pylintArgs": [
