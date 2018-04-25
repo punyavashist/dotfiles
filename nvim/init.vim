@@ -10,7 +10,6 @@ Plug 'romainl/vim-cool' " Stop matching after search is done.
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
 Plug 'w0rp/ale' " Asynchronous Lint Engine.
 Plug 'honza/vim-snippets' " Snippet files for various programming languages.
-Plug 'Chiel92/vim-autoformat' " Easy code formatting.
 Plug 'sbdchd/neoformat' " Format code.
 Plug 'rizzatti/dash.vim' " Search Dash app.
 Plug 'jremmen/vim-ripgrep' " Use RipGrep in Vim and display results in a quickfix list.
@@ -25,10 +24,13 @@ Plug '/usr/local/opt/fzf' " Fzf search.
 Plug 'junegunn/fzf.vim' " Fzf search.
 Plug 'wakatime/vim-wakatime' " Automatic time tracking.
 Plug 'haya14busa/incsearch.vim' " Improved incremental searching.
+Plug 'easymotion/vim-easymotion' " Vim motions on speed.
+Plug 'thinca/vim-quickrun' " Run commands quickly.
 
 " Git
 Plug 'tpope/vim-fugitive' " Git wrapper.
 Plug 'mhinz/vim-signify' " Show a diff using Vim its sign column.
+Plug 'airblade/vim-gitgutter' " Shows git diff in the gutter (sign column) and stages/undoes hunks.
 
 " Deoplete
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') } " Asynchronous completion framework.
@@ -39,8 +41,7 @@ Plug 'zchee/deoplete-clang', { 'for': 'c,cpp,objc' }
 
 " Looks
 Plug 'ayu-theme/ayu-vim' " Theme.
-Plug 'vim-airline/vim-airline' " Lean & mean status/tabline.
-Plug 'vim-airline/vim-airline-themes' " Collection of themes for Airline.
+Plug 'itchyny/lightline.vim' " Light and configurable statusline/tabline plugin.
 
 " Go
 Plug 'fatih/vim-go', { 'for': 'go' } " Go development.
@@ -136,9 +137,6 @@ set grepformat^=%f:%l:%c:%m
 
 set viewoptions=cursor,slash,unix
 
-" Better yank
-noremap Y y$ 
-
 " _Plugins
 let g:deoplete#enable_at_startup = 1 " Activate deoplete
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T'] " Trigger a highlight in the appropriate direction when pressing these keys
@@ -148,21 +146,6 @@ let g:incsearch#auto_nohlsearch = 1 " TODO:
 set background=dark " Set night mode
 let ayucolor="mirage" " Mirage version of theme
 colorscheme ayu
-
-" Airline
-let g:airline_powerline_fonts = 1
-let g:airline_theme='tomorrow' " Status bar theme
-let g:airline#extensions#bufferline#enabled = 1
-let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#syntastic#enabled = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tagbar#enabled = 1
-
-let g:airline#extensions#tabline#tab_min_count = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline#extensions#tabline#show_splits = 1
-let g:airline#extensions#tabline#show_buffers = 0
-let g:airline#extensions#tabline#tab_nr_type = 2
 
 " Bufferline
 let g:bufferline_echo = 0
@@ -345,6 +328,11 @@ au FocusLost * :wa " Auto save everything
 " _Remaps
 " Search and replace
 xnoremap gs y:%s/<C-r>"//g<Left><Left> 
+
+" Yank a line with Y.
+nnoremap Y y$
+
+" _Functions
 
 " _Other
 set guicursor=n-v-c:hor20,i-ci:ver20 " Make cursor block in insert mode and underline in normal mode
