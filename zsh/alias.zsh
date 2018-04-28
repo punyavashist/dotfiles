@@ -170,16 +170,10 @@ alias oe='go build -o main'
 
 alias ugo='Go-Package-Store'
 
-# _Meteor
-alias mt='meteor'
-
-# _compile code
-alias sw='swift'
-
-# _ruby
+# _Ruby
 alias rb='ruby'
 
-# _piping
+# _Piping
 alias h2='head -n 2'
 alias h10='head -n 10'
 alias t10='tail -n 10'
@@ -188,10 +182,10 @@ alias hs='ghci'
 
 alias cwd='pwd | pbcopy'
 
-# _delete things
+# _Delete things
 alias rrpdf='rm -rf *.pdf'
 
-# _source things
+# _Source things
 alias sz='exec zsh'
 
 # _ls
@@ -200,33 +194,33 @@ alias ld="ls -ld"
 alias lso='ls -At1 && echo "------Oldest--"'
 alias lsn='ls -Art1 && echo "------Newest--"'
 alias a.='ls -d .*'
+alias l.='ls -d .*'
 
-# _hugo
+# _Hugo
 alias us='hugo server -D'
 alias ut='hugo server -w' # testing
 alias u='hugo'
 
-# _jekyll
+# _Jekyll
 alias js='bundle exec jekyll serve'
 alias jb='jekyll build'
 
-# _ruby
+# _Ruby
 alias bx='bundle exec'
 
-# _nginx
+# _Nginx
 alias ngup='sudo nginx'
 alias ngdown='sudo nginx -s stop'
 alias ngre='sudo nginx -s stop && sudo nginx'
 alias nglog='tail -f /usr/local/var/log/nginx/access.log' # TODO: maybe wrong location
 alias ngerr='tail -f /usr/local/var/log/nginx/error.log'
 
-
-# _utility
+# _Utility
 alias net="ping ya.ru | grep -E --only-match --color=never '[0-9\.]+ ms'"                # check connection
 alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r | head"
 alias ba="bash"
 
-# _brew
+# _Brew
 alias b='brew'
 alias bf='brew info'
 alias bci='brew cask install'
@@ -240,13 +234,10 @@ alias bcl='brew cask list'
 alias bui='brew uninstall'
 alias bw='brew update  && brew upgrade && brew cleanup'
 
-# _brew service
+# _Brew service
 alias bss='brew services start'
 alias bsl='brew services list'
 alias bst='brew services stop'
-
-# _directory listings
-alias l.='ls -d .*'
 
 # _easier navigation
 alias ..="cd .."
