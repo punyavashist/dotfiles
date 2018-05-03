@@ -6786,18 +6786,23 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_YOUTUBE_AUTOPLAY
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::SLASH,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES
+KeyCode::N,
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_ASSIGNED_ISSUES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::QUOTE,
+KeyCode::BRACKET_RIGHT,
 KeyCode::VK_OPEN_URL_KM_OPEN_NEWS_MORNING
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::DOT,
 KeyCode::VK_OPEN_URL_KM_OPEN_NEWS_BREAK
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::SLASH,
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6881,7 +6886,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_MIT_COURSES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::N,
+KeyCode::SLASH,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK
 </autogen>
 <autogen>
@@ -12852,28 +12857,6 @@ __SimultaneousKeyPresses__
 KeyCode::R, KeyCode::COMMAND_R,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PODS
-</autogen>
-</item>
-
-<item>
-<name>general: sim prcmd = intellij</name>
-<identifier>private.sim_prcmd_spoti</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::P, KeyCode::COMMAND_R,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_JAVA_PROJECTS_SEARCH
-</autogen>
-</item>
-
-<item>
-<name>general: sim ercmd = intellij</name>
-<identifier>private.sim_rcmd_spoti</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::E, KeyCode::COMMAND_R,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_JAVA_PROJECTS_SEARCH
 </autogen>
 </item>
 

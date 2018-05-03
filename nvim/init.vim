@@ -26,7 +26,6 @@ Plug 'wakatime/vim-wakatime' " Automatic time tracking.
 Plug 'haya14busa/incsearch.vim' " Improved incremental searching.
 Plug 'easymotion/vim-easymotion' " Vim motions on speed.
 Plug 'thinca/vim-quickrun' " Run commands quickly.
-Plug 'junegunn/goyo.vim' " Distraction-free writing.
 
 " Git
 Plug 'tpope/vim-fugitive' " Git wrapper.
@@ -222,11 +221,11 @@ nnoremap <Leader>pu :PlugUpdate<CR>
 nmap <Leader>w :w<CR> 
 
 " _Space d
-nmap <Leader>d   :bd<CR>
+nmap <Leader>d :bd<CR>
 
 " _Space a
 " Yank xml block to next line
-nnoremap <Leader>aw  vat:t'><CR>'[<Esc><CR> 
+nnoremap <Leader>aw vat:t'><CR>'[<Esc><CR> 
 
 " _Space v
 " Write all changed buffers and exit vim
@@ -338,9 +337,6 @@ nnoremap Y y$
 " _Other
 set guicursor=n-v-c:hor20,i-ci:ver20 " Make cursor block in insert mode and underline in normal mode
 autocmd VimLeave * set guicursor=a:ver25-blinkon25 " Make cursor block when leaving to shell
-
-" Run ':Goyo' on startup
-autocmd VimEnter * Goyo"
 
 " _Testing
 nnoremap <C-q> :q<cr>:q<cr>
