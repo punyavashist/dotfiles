@@ -1,14 +1,14 @@
 # Git functions.
 
-# gz - Update readme commit
+# gz - update readme commit
 gz(){
   git add README.md
-  git commit -m "Update readme"
+  git commit -m "update readme"
   git push
 }
 
 grus(){
-  # TODO: if it is a fork, get the link of the fork and fill it here instead of manually adding it
+  # TODO if it is a fork, get the link of the fork and fill it here instead of manually adding it
   git remote add upstream "$1"
   git fetch upstream
   git checkout master
@@ -28,17 +28,17 @@ gri(){
   git rm --cached "$*"
 }
 
-# gwh <msg> - Change <msg> commit
+# gwh <msg> - change <msg> commit
 gwh(){
   git add .
-  git commit -m "Change $*"
+  git commit -m "change $*"
   git push
 }
 
 # Update contributing commit
 gwt(){
   git add CONTRIBUTING.md
-  git commit -m "Update contributing"
+  git commit -m "update contributing"
   git push
 }
 
@@ -54,45 +54,45 @@ gw() {
     git push
 }
 
-# gwa <commit-msg> - commit all changes `Add <commit-msg>`
+# gwa <commit-msg> - commit all changes `add <commit-msg>`
 gwa(){
   git add .
-  git commit -m "Add $*"
+  git commit -m "add $*"
   git push
 }
 
-# gwf <commit-msg> - commit all changes with `<Fix commit-msg>`
+# gwf <commit-msg> - commit all changes with `<fix commit-msg>`
 gwf(){
   git add .
-  git commit -m "Fix $*"
+  git commit -m "fix $*"
   git push
 }
 
-# gwr <commit-msg> - commit all changes with `<Remove commit-msg>`
+# gwr <commit-msg> - commit all changes with `<remove commit-msg>`
 gwr(){
   git add .
-  git commit -m "Remove $*"
+  git commit -m "remove $*"
   git push
 }
 
-# gwi <msg> - commit all changes with `Improve <msg>`
+# gwi <msg> - commit all changes with `improve <msg>`
 gwi() {
     git add .
-    git commit -m "Improve $*"
+    git commit -m "improve $*"
     git push
 }
 
-# gwe <msg> - commit all changes with `Update <msg>`
+# gwe <msg> - commit all changes with `update <msg>`
 gwu() {
     git add .
-    git commit -m "Update $*"
+    git commit -m "update $*"
     git push
 }
 
 # ggs - commit all changes with generic `update`
 ggs() {
     git add .
-    git commit . -m 'Update'
+    git commit . -m 'update'
     git push
 }
 
