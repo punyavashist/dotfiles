@@ -10180,7 +10180,6 @@ KeyCode::T, ModifierFlag::SHIFT_L,
 KeyCode::O, ModifierFlag::SHIFT_L, 
 KeyCode::D, ModifierFlag::SHIFT_L, 
 KeyCode::O, ModifierFlag::SHIFT_L, 
-KeyCode::SEMICOLON, ModifierFlag::SHIFT_L, 
 KeyCode::SPACE,
 </autogen>
 <autogen>
