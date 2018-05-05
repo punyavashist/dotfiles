@@ -100,13 +100,13 @@ Which using [this CLI tool](https://github.com/nikitavoloboev/license-up), will 
 
 And thus in one command I initialised and pushed the repo. To create a new repo quickly I use [this Alfred workflow](https://github.com/nikitavoloboev/alfred-ask-create-share).
 
-#### Commit all with generic `Update` message
+#### Commit all with generic `update` message
 I use this command often.
 
 ```Bash
 ggs() {
     git add .
-    git commit . -m 'Update'
+    git commit . -m 'update'
     git push
 }
 ```

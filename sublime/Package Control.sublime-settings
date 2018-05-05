@@ -9,14 +9,13 @@
 		"AdvancedNewFile",
 		"ayu",
 		"DashDoc",
-		"Dockerfile Syntax Highlighting",
 		"GitGutter",
 		"JsPrettier",
 		"Marked App Menu",
 		"Package Control",
-		"SendCode",
 		"Six",
 		"SublimeLinter",
+		"TodoReview",
 		"WakaTime"
 	]
 }

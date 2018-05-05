@@ -24,17 +24,17 @@
   "todohighlight.isCaseSensitive": true,
   "todohighlight.keywords": [
     {
-      "text": "NOTE:",
+      "text": "NOTE",
       "color": "yellow",
       "backgroundColor": "rgba(0,0,0,.2)"
     },
     {
-      "text": "TODO:",
+      "text": "TODO",
       "color": "red",
       "backgroundColor": "rgba(0,0,0,.2)"
     },
     {
-      "text": "FIXME:",
+      "text": "FIXME",
       "color": "orange",
       "backgroundColor": "rgba(0,0,0,.2)"
     }
@@ -47,7 +47,7 @@
   "editor.lineNumbers": "relative",
   "editor.cursorStyle": "line",
   "explorer.confirmDragAndDrop": false,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
   "workbench.startupEditor": "newUntitledFile",
   // _Python
   "python.linting.pylintArgs": [
