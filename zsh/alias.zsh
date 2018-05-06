@@ -43,7 +43,7 @@ alias d='cd'
 alias alert="tput bel" # Bell when the program is finished. i.e. npm install && alert
 alias gos='go-search'
 alias sd='sudo'
-# TODO: fk alias to run last cmd as sudo instantly
+# TODO fk alias to run last cmd as sudo instantly
 alias lg='ls | grep'
 alias so='source'
 alias top="vtop"
@@ -57,7 +57,7 @@ alias w='code'
 alias jj='killall tmux'
 alias mm='tldr'
 alias ma='man'
-# alias aw='k -h' TODO: ?
+# alias aw='k -h' TODO ?
 alias c='ccat'
 alias rec='asciinema rec'
 alias b='bd'
@@ -144,7 +144,7 @@ alias is='yarn start'
 alias he='heroku'
 
 # _pip
-# TODO:
+# TODO
 
 # _npm - depracated
 alias np='npm'
@@ -212,7 +212,7 @@ alias bx='bundle exec'
 alias ngup='sudo nginx'
 alias ngdown='sudo nginx -s stop'
 alias ngre='sudo nginx -s stop && sudo nginx'
-alias nglog='tail -f /usr/local/var/log/nginx/access.log' # TODO: maybe wrong location
+alias nglog='tail -f /usr/local/var/log/nginx/access.log' # TODO maybe wrong location
 alias ngerr='tail -f /usr/local/var/log/nginx/error.log'
 
 # _Utility
@@ -275,7 +275,7 @@ alias love="/Applications/love.app/Contents/MacOS/love"
 # _Vim
 alias ee='nvim .' # Current dir
 alias ei='nvim index.js'
-alias egi='nvim .gitignore' # TODO: make it zsh func, go to root and then run it
+alias egi='nvim .gitignore' # TODO make it zsh func, go to root and then run it
 alias ej='nvim package.json'
 
 # _Edit config

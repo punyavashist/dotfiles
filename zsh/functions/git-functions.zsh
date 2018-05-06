@@ -190,7 +190,7 @@ gcd() {
 # gll - git clone link in clipboard
 gll(){
     git clone "$(pbpaste)"
-    # TODO: cd into cloned project (need to extract name with regex)
+    # TODO cd into cloned project (need to extract name with regex)
 }
 
 # ogg - go get currently active Safari URL
@@ -203,7 +203,7 @@ ogg() {
   go get -u $url
 }
 
-# TODO: ?
+# TODO ?
 # igit -
 igit() {
   git rev-parse HEAD > /dev/null 2>&1

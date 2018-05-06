@@ -31,7 +31,7 @@ function showTodoTask()
             {font = {name = "Impact", size = 100}, color = red, paragraphStyle = {alignment = "center"}}
         )
         local timeframe = hs.geometry.rect(mainRes.x, mainRes.y + (mainRes.h - 200) / 2, mainRes.w, 150)
-        -- TODO: add black background
+        -- TODO add black background
         todo_draw = hs.drawing.text(timeframe, todo)
         todo_draw:setLevel(hs.drawing.windowLevels.overlay)
         todo_draw:show()

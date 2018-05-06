@@ -37,7 +37,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') } " Asynchronous compl
 Plug 'zchee/deoplete-jedi' " Deoplete source for jedi.
 
 " C
-Plug 'zchee/deoplete-clang', { 'for': 'c,cpp,objc' } 
+Plug 'zchee/deoplete-clang', { 'for': 'c,cpp,objc' }
 
 " Looks
 Plug 'ayu-theme/ayu-vim' " Theme.
@@ -73,7 +73,7 @@ set smartindent " Indentation
 set shortmess=Ia " Disable startup message
 set fileencoding=utf-8 " Encoding when written to file
 set fileformat=unix " Line endings
-set timeout timeoutlen=1000 ttimeoutlen=10 " TODO: ?
+set timeout timeoutlen=1000 ttimeoutlen=10 " TODO ?
 set autowrite " Automatically save before :next, :make etc
 set ignorecase " Search case insensitive:
 set smartcase " .. but not when search pattern contains upper case characters
@@ -140,7 +140,7 @@ set viewoptions=cursor,slash,unix
 " _Plugins
 let g:deoplete#enable_at_startup = 1 " Activate deoplete
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T'] " Trigger a highlight in the appropriate direction when pressing these keys
-let g:incsearch#auto_nohlsearch = 1 " TODO:
+let g:incsearch#auto_nohlsearch = 1 " TODO
 
 " Theme
 set background=dark " Set night mode
@@ -199,7 +199,7 @@ inoremap      ()   ()
 cabbrev rp Rp
 
 " _Control mappings
-nnoremap <C-M> /sticky 
+nnoremap <C-M> /sticky
 nnoremap <C-L> /\c__\_sKeyCode::/e<Left><Left>
 
 " _Space mappings
@@ -218,14 +218,14 @@ nnoremap <Leader>pu :PlugUpdate<CR>
 
 " _Space w
 " Save
-nmap <Leader>w :w<CR> 
+nmap <Leader>w :w<CR>
 
 " _Space d
 nmap <Leader>d :bd<CR>
 
 " _Space a
 " Yank xml block to next line
-nnoremap <Leader>aw vat:t'><CR>'[<Esc><CR> 
+nnoremap <Leader>aw vat:t'><CR>'[<Esc><CR>
 
 " _Space v
 " Write all changed buffers and exit vim
@@ -251,12 +251,12 @@ map <Leader>cd :lcd %:p:h<CR>
 " _Space e
 nmap <Leader>e.   :e .<CR>
 " Search files inside current dir
-nnoremap <Leader>e :Files<CR> 
+nnoremap <Leader>e :Files<CR>
 
 " _Space t
 nmap <Leader>to   :e %:p:h<CR>
 " Yank function block
-nnoremap <Leader>tgt :exe search('^function','cb')';/}/y'<CR> 
+nnoremap <Leader>tgt :exe search('^function','cb')';/}/y'<CR>
 " Dash doc lookup
 nnoremap <Leader>ttt :Dash<CR>
 " Write all changed buffers
@@ -270,7 +270,7 @@ nnoremap <Leader>tv :vsplit <Bar> term.
 " Buffer control
 nmap <Leader>s    :bprevious<CR>
 " Source vimrc
-nnoremap <Leader>ss :source ~/.dotfiles/nvim/init.vim<CR> 
+nnoremap <Leader>ss :source ~/.dotfiles/nvim/init.vim<CR>
 
 " _Space n
 nmap <Leader>n    :bnext<CR>
@@ -282,10 +282,10 @@ nmap <Leader>q    :q<CR>
 
 " _Space y
 " Yank whole file
-nnoremap <Leader>y :%y<CR> 
+nnoremap <Leader>y :%y<CR>
 
 " _Space f
-nmap <Leader>fw   :Autoformat<CR> 
+nmap <Leader>fw   :Autoformat<CR>
 nmap <Leader>ff :FZF <CR>
 nmap <Leader>fb   :Buffers <CR>
 nmap <Leader>fl   :BLines <CR>
@@ -327,7 +327,7 @@ au FocusLost * :wa " Auto save everything
 
 " _Remaps
 " Search and replace
-xnoremap gs y:%s/<C-r>"//g<Left><Left> 
+xnoremap gs y:%s/<C-r>"//g<Left><Left>
 
 " Yank a line with Y.
 nnoremap Y y$

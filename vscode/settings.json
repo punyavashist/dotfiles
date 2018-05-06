@@ -21,23 +21,34 @@
   "todohighlight.isEnable": true,
   "editor.cursorBlinking": "solid",
   "files.trimTrailingWhitespace": true,
+  // _TODO highlight
   "todohighlight.isCaseSensitive": true,
   "todohighlight.keywords": [
     {
-      "text": "NOTE",
-      "color": "yellow",
-      "backgroundColor": "rgba(0,0,0,.2)"
-    },
-    {
       "text": "TODO",
       "color": "red",
-      "backgroundColor": "rgba(0,0,0,.2)"
+      "backgroundColor": "#212733"
     },
     {
-      "text": "FIXME",
+      "text": "NOTE",
+      "color": "yellow",
+      "backgroundColor": "#212733"
+    },
+    {
+      "text": "FIX",
       "color": "orange",
-      "backgroundColor": "rgba(0,0,0,.2)"
+      "backgroundColor": "#212733"
     }
+  ],
+  "todohighlight.include": [
+    "**/*.go",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",
+    "**/*.css",
+    "**/*.lua"
   ],
   // _Dash
   "dash.docset.go": [
@@ -189,17 +200,6 @@
     "*.toml": "toml"
   },
   "git.enableSmartCommit": true,
-  "todohighlight.include": [
-    "**/*.js",
-    "**/*.jsx",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.html",
-    "**/*.php",
-    "**/*.css",
-    "**/*.scss",
-    "**/*.go"
-  ],
   "workbench.colorTheme": "Ayu Mirage",
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
