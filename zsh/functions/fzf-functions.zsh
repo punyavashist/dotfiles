@@ -209,8 +209,8 @@ fda() {
   dir=$(find ${1:-.} -type d 2> /dev/null | fzf +m) && cd "$dir"
 }
 
-# fd <file> - cd into the directory of the selected file
-fd() {
+# fdd <file> - cd into the directory of the selected file
+fdd() {
    local file
    local dir
    file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"

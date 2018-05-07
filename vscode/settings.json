@@ -16,6 +16,7 @@
     "package-lock.json": true
   },
   "typescript.check.npmIsInstalled": false,
+  "workbench.activityBar.visible": false,
   "editor.snippetSuggestions": "top",
   "editor.minimap.enabled": false,
   "todohighlight.isEnable": true,
@@ -27,17 +28,17 @@
     {
       "text": "TODO",
       "color": "red",
-      "backgroundColor": "#212733"
+      "backgroundColor": "#0F1419"
     },
     {
       "text": "NOTE",
       "color": "yellow",
-      "backgroundColor": "#212733"
+      "backgroundColor": "#0F1419"
     },
     {
       "text": "FIX",
       "color": "orange",
-      "backgroundColor": "#212733"
+      "backgroundColor": "#0F1419"
     }
   ],
   "todohighlight.include": [
@@ -200,7 +201,7 @@
     "*.toml": "toml"
   },
   "git.enableSmartCommit": true,
-  "workbench.colorTheme": "Ayu Mirage",
+  "workbench.colorTheme": "Ayu Dark",
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,

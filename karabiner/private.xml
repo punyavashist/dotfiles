@@ -950,7 +950,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "edit: hammerspoon test"
+do script "edit: hammerspoon"
 end tell
 '
 </url>
@@ -2095,16 +2095,6 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "edit: projects"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_EDIT_CV</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "edit: cv"
 end tell
 '
 </url>
@@ -3484,6 +3474,14 @@ tell application "Alfred 3" to run trigger "gists" in workflow "nikivi.search-th
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_FORKS_DIR_WATCH</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "forks" in workflow "com.vitorgalvao.alfred.directories" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_TRANSLATE</name>
 <url type="shell">
 osascript -e '
@@ -3568,14 +3566,6 @@ tell application "Alfred 3" to run trigger "awesome" in workflow "nikivi.awesome
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "learn" in workflow "nikivi.learn-anything" with argument ""
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GO_DIR</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "go" in workflow "com.vitorgalvao.alfred.directories" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -5883,7 +5873,7 @@ KeyCode::VK_OPEN_URL_ALFRED_CLONES_DIR_WATCH
 <autogen>
 __KeyToKey__
 KeyCode::B,
-KeyCode::VK_OPEN_URL_ALFRED_WATCH_DROPBOX_SHARES
+KeyCode::VK_OPEN_URL_ALFRED_FORKS_DIR_WATCH
 </autogen>
 <autogen>
 __KeyToKey__
@@ -5893,7 +5883,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
 <autogen>
 __KeyToKey__
 KeyCode::X,
-KeyCode::VK_OPEN_URL_SEARCH_TEX_FILES
+KeyCode::VK_OPEN_URL_ALFRED_WATCH_DROPBOX_SHARES
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7813,11 +7803,6 @@ KeyCode::VK_OPEN_URL_KM_EDIT_LIKES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::C,
-KeyCode::VK_OPEN_URL_KM_EDIT_CV
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::F,
 KeyCode::VK_OPEN_URL_KM_EDIT_PROJECTS
 </autogen>
@@ -7900,11 +7885,6 @@ KeyCode::VK_OPEN_URL_ALFRED_PLAY_MY_LIKES_PLAYLIST
 __KeyToKey__
 KeyCode::L,
 ConsumerKeyCode::MUSIC_NEXT
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::BACKQUOTE,
-KeyCode::VK_OPEN_URL_KM_EDIT_CV
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10408,7 +10388,6 @@ KeyCode::N, ModifierFlag::SHIFT_L,
 KeyCode::O, ModifierFlag::SHIFT_L, 
 KeyCode::T, ModifierFlag::SHIFT_L, 
 KeyCode::E, ModifierFlag::SHIFT_L, 
-KeyCode::SEMICOLON, ModifierFlag::SHIFT_L, 
 KeyCode::SPACE, ModifierFlag::SHIFT_L, 
 </autogen>
 <autogen> 
@@ -10910,6 +10889,11 @@ KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_1
 __KeyToKey__
 KeyCode::DOT,
 KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_2
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::QUOTE,
+KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_4
 </autogen>
 <autogen>
 __KeyToKey__

@@ -9,6 +9,13 @@ local ipc = require("hs.ipc")
 local alert = require("hs.alert")
 local logger = require("hs.logger")
 
+require("meta")
+require("mouse")
+require("show")
+require("watchers")
+require("wm")
+require("testing")
+
 -- _Config
 _asm = {} -- TODO ?
 _asm.hs_default_require = require
@@ -52,7 +59,20 @@ end
 
 hs.urlevent.bind("openConsole", openConsole)
 
-hs.urlevent.bind("reloadConfig", hs.reload)
+function reloadConfig(files)
+    local doReload = false
+    for _, file in pairs(files) do
+        if file:sub(-4) == ".lua" then
+            doReload = true
+        end
+    end
+    if doReload then
+        hs.reload()
+        hs.alert.show("Config Reloaded")
+    end
+end
 
--- Notify that config is reloaded
-hs.alert.show("config loaded")
+hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
+
+-- Reload config
+hs.urlevent.bind("reloadConfig", hs.reload)
