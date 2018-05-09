@@ -268,16 +268,6 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_MAIL</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "w: Tutanota"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB</name>
 <url type="shell">
 osascript -e '
@@ -2382,7 +2372,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "per: add clipboard as active todo"
+do script "per: add clipboard as todo"
 end tell
 '
 </url>
@@ -2392,7 +2382,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "per: add selected text as active todo"
+do script "per: add selected text as todo"
 end tell
 '
 </url>
@@ -6756,11 +6746,6 @@ __BlockUntilKeyUp__ KeyCode::C,
 
 <autogen>
 __KeyToKey__
-KeyCode::1,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_MAIL
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::Z,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_MEDIUM
 </autogen>
@@ -7629,7 +7614,7 @@ KeyCode::8, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::S,
+KeyCode::F,
 KeyCode::VK_OPEN_URL_KM_NEW_TWEET_WITH_SAFARI_URL
 </autogen>
 <autogen>
@@ -7719,7 +7704,7 @@ KeyCode::VK_OPEN_URL_ALFRED_CREATE_ARTIST_RADIO
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::C,
+KeyCode::R,
 KeyCode::VK_OPEN_URL_ALFRED_WATCH_SPOTIFY_LIKES
 </autogen>
 <autogen>
@@ -7734,22 +7719,22 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_PLAYLISTS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::Q,
+KeyCode::D,
 KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::D,
+KeyCode::S,
 KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::F,
-KeyCode::VK_OPEN_URL_ALFRED_NEW_TODO
+KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::R,
+KeyCode::C,
 KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_ADD_SONG_TO_PLAYLIST
 </autogen>
 </item>
@@ -8158,6 +8143,16 @@ KeyCode::VK_OPEN_URL_KM_OPEN_CHROME
 __KeyToKey__
 KeyCode::V,
 KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::DOT,
+KeyCode::VK_OPEN_URL_KM_OPEN_PAW
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::COMMA,
+KeyCode::VK_OPEN_URL_KM_OPEN_SPOTIFY
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9594,7 +9589,12 @@ KeyCode::J, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
 <autogen>
 __KeyToKey__
 KeyCode::O,
-KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE_FILE
+KeyCode::VK_OPEN_URL_KM_ADD_CLIPBOARD_AS_ACTIVE_TODO
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::I,
+KeyCode::VK_OPEN_URL_KM_ADD_SELECTED_TEXT_AS_ACTIVE_TODO
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9605,11 +9605,6 @@ KeyCode::H, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
 __KeyToKey__
 KeyCode::X,
 KeyCode::P, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::I,
-KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9826,6 +9821,11 @@ KeyCode::VK_OPEN_URL_KM_OPEN_HAZEL
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::DOT,
+KeyCode::VK_OPEN_URL_KM_OPEN_SPOTIFY
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::U,
 KeyCode::VK_OPEN_URL_KM_OPEN_ACTUAL
 </autogen>
@@ -9912,11 +9912,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_MARKED
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::DOT,
-KeyCode::VK_OPEN_URL_KM_OPEN_SPOTIFY
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::F19,
 KeyCode::VK_OPEN_URL_KM_OPEN_MAGIC_NUMBER
 </autogen>
@@ -9949,11 +9944,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_REEDER
 __KeyToKey__
 KeyCode::J,
 KeyCode::VK_OPEN_URL_KM_OPEN_DICTIONARY
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::T,
-KeyCode::VK_OPEN_URL_KM_OPEN_SKETCH
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10482,13 +10472,13 @@ __BlockUntilKeyUp__ KeyCode::T,
 
 <autogen>
 __KeyToKey__
-KeyCode::U,
-KeyCode::VK_OPEN_URL_KM_ADD_CLIPBOARD_AS_ACTIVE_TODO
+KeyCode::I,
+KeyCode::VK_OPEN_URL_KM_NEW_SNIPPETSLAB_SNIPPET
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
-KeyCode::VK_OPEN_URL_KM_ADD_SELECTED_TEXT_AS_ACTIVE_TODO
+KeyCode::O,
+KeyCode::VK_OPEN_URL_KM_NEW_MINDNODE_FILE
 </autogen>
 <autogen>
 __KeyToKey__

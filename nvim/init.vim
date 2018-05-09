@@ -13,6 +13,7 @@ Plug 'honza/vim-snippets' " Snippet files for various programming languages.
 Plug 'sbdchd/neoformat' " Format code.
 Plug 'rizzatti/dash.vim' " Search Dash app.
 Plug 'jremmen/vim-ripgrep' " Use RipGrep in Vim and display results in a quickfix list.
+
 Plug 'scrooloose/nerdcommenter' " Quick comments.
 Plug 'unblevable/quick-scope' " Highlight f, F jumps.
 Plug 'Shougo/vimproc.vim', {'do' : 'make'} " Interactive command execution.
@@ -199,7 +200,7 @@ inoremap      ()   ()
 cabbrev rp Rp
 
 " _Control mappings
-nnoremap <C-M> /sticky
+nnoremap <C-M> /sticky 
 nnoremap <C-L> /\c__\_sKeyCode::/e<Left><Left>
 
 " _Space mappings
@@ -340,3 +341,4 @@ autocmd VimLeave * set guicursor=a:ver25-blinkon25 " Make cursor block when leav
 
 " _Testing
 nnoremap <C-q> :q<cr>:q<cr>
+set foldcolumn=0 " Remove sidebar column
