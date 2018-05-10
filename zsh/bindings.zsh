@@ -25,7 +25,7 @@ bindkey "^g" end-of-line
 bindkey "^k" forward-word
 bindkey "^j" backward-word
 # bindkey "^o" kill-word
-# bindkey "^o" '^Ua^M' # Run 'a' command TODO doesnt work
+# bindkey "^o" '^Ua^M' # Run 'a' command TODO: doesnt work
 bindkey "^e" kill-whole-line
 bindkey -M vicmd "^[" vi-insert
 # bindkey '^:' forward-word # Move back a word
@@ -45,7 +45,7 @@ bindkey -M vicmd "^[" vi-insert
 bindkey '\e.' insert-last-word # Insert last argument of previous command
 bindkey "\eo" describe-key-briefly
 
-# _FZF TODO ?
+# _FZF TODO: ?
 # bind '"\er": redraw-current-line'
 # bind '"\C-g\C-f": "$(gf)\e\C-e\er"'
 # bind '"\C-g\C-b": "$(gb)\e\C-e\er"'

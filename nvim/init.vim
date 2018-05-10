@@ -74,7 +74,7 @@ set smartindent " Indentation
 set shortmess=Ia " Disable startup message
 set fileencoding=utf-8 " Encoding when written to file
 set fileformat=unix " Line endings
-set timeout timeoutlen=1000 ttimeoutlen=10 " TODO ?
+set timeout timeoutlen=1000 ttimeoutlen=10 " TODO: ?
 set autowrite " Automatically save before :next, :make etc
 set ignorecase " Search case insensitive:
 set smartcase " .. but not when search pattern contains upper case characters
@@ -200,7 +200,7 @@ inoremap      ()   ()
 cabbrev rp Rp
 
 " _Control mappings
-nnoremap <C-M> /sticky 
+nnoremap <C-M> /sticky
 nnoremap <C-L> /\c__\_sKeyCode::/e<Left><Left>
 
 " _Space mappings

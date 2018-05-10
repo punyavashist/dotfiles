@@ -8,7 +8,7 @@ gz(){
 }
 
 grus(){
-  # TODO if it is a fork, get the link of the fork and fill it here instead of manually adding it
+  # TODO: if it is a fork, get the link of the fork and fill it here instead of manually adding it
   git remote add upstream "$1"
   git fetch upstream
   git checkout master
@@ -190,7 +190,7 @@ gcd() {
 # gll - git clone link in clipboard
 gll(){
     git clone "$(pbpaste)"
-    # TODO cd into cloned project (need to extract name with regex)
+    # TODO: cd into cloned project (need to extract name with regex)
 }
 
 # ogg - go get currently active Safari URL
@@ -203,7 +203,7 @@ ogg() {
   go get -u $url
 }
 
-# TODO ?
+# TODO: ?
 # igit -
 igit() {
   git rev-parse HEAD > /dev/null 2>&1

@@ -22,7 +22,7 @@ fkil() {
   fi
 }
 
-# fa <dir> - Search dirs and cd to them - TODO ignore node_modules + other things
+# fa <dir> - Search dirs and cd to them - TODO: ignore node_modules + other things
 fa() {
   local dir
   dir=$(find ${1:-.} -path '*/\.*' -prune \
@@ -232,7 +232,7 @@ fenv() {
 rh() {
  eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
 }
-# TODO add binding
+# TODO: add binding
 
 # _Git
 # Git commit browser

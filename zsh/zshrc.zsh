@@ -10,7 +10,7 @@ export ETC_ZSH_ZSHRC=1
 
 source ~/.zsh_plugins.sh # Load zsh plugins
 
-# TODO Do some smart for loop iteration (source all .zsh files)
+# TODO: Do some smart for loop iteration (source all .zsh files)
 source ~/.dotfiles/zsh/functions/functions.zsh
 source ~/.dotfiles/zsh/functions/fzf-functions.zsh
 source ~/.dotfiles/zsh/functions/git-functions.zsh
@@ -21,7 +21,7 @@ source ~/.secrets # Private configs
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # FZF setup
 
 # _Completions
-autoload -Uz compinit && compinit # TODO ?
+autoload -Uz compinit && compinit # TODO: ?
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 # zstyle ':completion:*' matcher-list +'l:|=* r:|=*'
 

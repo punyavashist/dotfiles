@@ -17,14 +17,14 @@ require("wm")
 require("testing")
 
 -- _Config
-_asm = {} -- TODO ?
+_asm = {} -- TODO: ?
 _asm.hs_default_require = require
 require = rawrequire
 
--- TODO Source other .lua files. Make sure they are not broken
+-- TODO: Source other .lua files. Make sure they are not broken
 
 -- Link Spoons dir
--- TODO doesn't work
+-- TODO: doesn't work
 -- package.path = hs.configdir .. "/Spoons/?.spoon/init.lua;"
 
 -- Override print so that it can render styled text objects directly in the console

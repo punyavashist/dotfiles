@@ -22,7 +22,7 @@
   "todohighlight.isEnable": true,
   "editor.cursorBlinking": "solid",
   "files.trimTrailingWhitespace": true,
-  // _TODO highlight
+  // _TODO: highlight
   "todohighlight.isCaseSensitive": true,
   "todohighlight.keywords": [
     {

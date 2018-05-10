@@ -100,7 +100,7 @@ cfile(){
 
 # wr - Release alfred workflow
 wr() {
-  # TODO Check if current dir has go in it (if yes, cd to workflow and then run script)
+  # TODO: Check if current dir has go in it (if yes, cd to workflow and then run script)
   package-workflow .
 }
 
@@ -189,7 +189,7 @@ wa() {
     code .
 }
 
-# TODO Find for anybar.
+# TODO: Find for anybar.
 # anybar() {
 #     echo -n "red" | nc -4u -w0 localhost 1738
 # }
@@ -370,7 +370,7 @@ compress()
     echo "###########################################"
   }
 
-# TODO Write a Go CLI that wraps extract and compress functions + more.
+# TODO: Write a Go CLI that wraps extract and compress functions + more.
 # extract <file.tar> - Extract <file.tar>.
 extract() {
   local remove_archive

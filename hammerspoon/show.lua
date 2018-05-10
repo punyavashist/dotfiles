@@ -19,19 +19,19 @@ sandybrown = hs.drawing.color.x11.sandybrown
 black50 = {red = 0, blue = 0, green = 0, alpha = 0.5}
 darkblue = {red = 24 / 255, blue = 195 / 255, green = 145 / 255, alpha = 1}
 
--- Show TODO task briefly in middle of screen
+-- Show TODO: task briefly in middle of screen
 function showTodoTask()
     if not todo_draw then
         local mainScreen = hs.screen.mainScreen()
         local mainRes = mainScreen:fullFrame()
         local todo_str = hs.execute("~/app/hammerspoon/todo"):match("^(.*)[\r\n]?$")
-        local todo =
+        local TODO: =
             hs.styledtext.new(
             todo_str,
             {font = {name = "Impact", size = 100}, color = red, paragraphStyle = {alignment = "center"}}
         )
         local timeframe = hs.geometry.rect(mainRes.x, mainRes.y + (mainRes.h - 200) / 2, mainRes.w, 150)
-        -- TODO add black background
+        -- TODO: add black background
         todo_draw = hs.drawing.text(timeframe, todo)
         todo_draw:setLevel(hs.drawing.windowLevels.overlay)
         todo_draw:show()
