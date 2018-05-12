@@ -40,7 +40,7 @@ I am still [learning vim](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim.h
 
 My Neovim config can be seen [here](nvim/init.vim). I use [Ayu theme](https://github.com/ayu-theme/ayu-vim) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins.html). Here is how it looks:
 
-![](https://i.imgur.com/3cRnCm3.png)
+![](https://i.imgur.com/yGO1mEw.png)
 
 ## VS Code
 My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has very well built [vim mode](https://github.com/VSCodeVim/Vim).
@@ -58,9 +58,9 @@ I don't use [Hammerspoon](http://www.hammerspoon.org/) as extensively however I 
 ## Zsh
 I am using [Zsh](http://www.zsh.org) as my shell with [Antibody](https://github.com/getantibody/antibody) plugin manager.
 
-I am also using [Ayu theme](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/ayu.itermcolors) in Zsh. Here is how my prompt looks like:
+I am also using [Ayu theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made in Zsh. Here is how my prompt looks like:
 
-![](https://i.imgur.com/1GomRAC.png)
+![](https://i.imgur.com/wUrhEDa.png)
 
 > a is [alias](zsh/alias.zsh) for [exa](https://github.com/ogham/exa)
 

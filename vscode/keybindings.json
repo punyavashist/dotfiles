@@ -118,7 +118,7 @@
     "command": "-workbench.action.quickOpen"
   },
   {
-    "key": "shift+cmd+b",
+    "key": "shift+cmd+e",
     "command": "workbench.view.explorer"
   },
   {

@@ -25,7 +25,7 @@ function showTodoTask()
         local mainScreen = hs.screen.mainScreen()
         local mainRes = mainScreen:fullFrame()
         local todo_str = hs.execute("~/app/hammerspoon/todo"):match("^(.*)[\r\n]?$")
-        local TODO: =
+        local todo =
             hs.styledtext.new(
             todo_str,
             {font = {name = "Impact", size = 100}, color = red, paragraphStyle = {alignment = "center"}}

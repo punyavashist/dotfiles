@@ -1,4 +1,15 @@
 {
+  // _Testing
+  "editor.folding": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.lineHeight": 26,
+  "editor.matchBrackets": false,
+  "editor.occurrencesHighlight": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderIndentGuides": false,
+  "editor.renderLineHighlight": "none",
+  "explorer.openEditors.visible": 0,
+  "workbench.editor.showIcons": false,
   // _General
   "newFile.defaultFileExtension": ".go",
   "newFile.showPathRelativeTo": "project",
@@ -28,17 +39,17 @@
     {
       "text": "TODO",
       "color": "red",
-      "backgroundColor": "#0F1419"
+      "backgroundColor": "#1E1E1E"
     },
     {
       "text": "NOTE",
       "color": "yellow",
-      "backgroundColor": "#0F1419"
+      "backgroundColor": "#1E1E1E"
     },
     {
-      "text": "FIX",
+      "text": "FIXME",
       "color": "orange",
-      "backgroundColor": "#0F1419"
+      "backgroundColor": "#1E1E1E"
     }
   ],
   "todohighlight.include": [
@@ -56,7 +67,7 @@
     "go",
     "godoc"
   ],
-  "editor.lineNumbers": "relative",
+  "editor.lineNumbers": "off",
   "editor.cursorStyle": "line",
   "explorer.confirmDragAndDrop": false,
   "window.zoomLevel": -1,
@@ -201,7 +212,6 @@
     "*.toml": "toml"
   },
   "git.enableSmartCommit": true,
-  "workbench.colorTheme": "Ayu Dark",
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
