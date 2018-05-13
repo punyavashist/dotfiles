@@ -28,4 +28,3 @@ function mouseHighlight()
     )
 end
 hs.urlevent.bind("visuallyCircleMouse", mouseHighlight)
-

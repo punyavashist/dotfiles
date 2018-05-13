@@ -12298,7 +12298,7 @@ __BlockUntilKeyUp__ KeyCode::BACKQUOTE,
 
 <autogen>
 __KeyToKey__
-KeyCode::O,
+KeyCode::SEMICOLON,
 KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_CLONES_AND_OPEN_WITH_VS_CODE
 </autogen>
 <autogen>
@@ -12308,7 +12308,7 @@ KeyCode::VK_OPEN_URL_KM_TEST_WEB
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::SEMICOLON,
+KeyCode::L,
 KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_CLONES_AND_OPEN_WITH_SUBLIME
 </autogen>
 <autogen>
@@ -12318,7 +12318,7 @@ KeyCode::VK_OPEN_URL_KM_EDIT_TEST_GO
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
+KeyCode::J,
 KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_CLONES
 </autogen>
 <autogen>

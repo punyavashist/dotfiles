@@ -145,7 +145,7 @@ let g:incsearch#auto_nohlsearch = 1 " TODO
 
 " Theme
 set background=dark " Set night mode
-let ayucolor="dark" " Mirage version of theme
+let ayucolor="mirage" " Mirage version of theme
 colorscheme ayu
 
 " Bufferline
@@ -200,7 +200,7 @@ inoremap      ()   ()
 cabbrev rp Rp
 
 " _Control mappings
-nnoremap <C-M> /sticky
+nnoremap <C-M> /sticky 
 nnoremap <C-L> /\c__\_sKeyCode::/e<Left><Left>
 
 " _Space mappings

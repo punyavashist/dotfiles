@@ -39,17 +39,17 @@
     {
       "text": "TODO",
       "color": "red",
-      "backgroundColor": "#1E1E1E"
+      "backgroundColor": "#212733"
     },
     {
       "text": "NOTE",
       "color": "yellow",
-      "backgroundColor": "#1E1E1E"
+      "backgroundColor": "#212733"
     },
     {
       "text": "FIXME",
       "color": "orange",
-      "backgroundColor": "#1E1E1E"
+      "backgroundColor": "#212733"
     }
   ],
   "todohighlight.include": [
@@ -232,5 +232,6 @@
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
   "gitlens.keymap": "chorded",
-  "latex-workshop.message.update.show": false
+  "latex-workshop.message.update.show": false,
+  "workbench.colorTheme": "Ayu Mirage"
 }
