@@ -36,11 +36,11 @@ The most exciting thing in here is probably how I utilise [Karabiner](https://pq
 I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macOS/apps/karabiner/karabiner.html). And my config for it can be seen [here](https://github.com/nikitavoloboev/dotfiles/blob/master/karabiner/private.xml).
 
 ## Neovim
-I am still [learning vim](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim.html) but the this journey has been very rewarding. Modal editing is amazing.
+The best text editing experience you will ever get. It is worth learning it as you will start thinking about text editing differently.
 
 My Neovim config can be seen [here](nvim/init.vim). I use [Ayu theme](https://github.com/ayu-theme/ayu-vim) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins.html). Here is how it looks:
 
-![](https://i.imgur.com/yGO1mEw.png)
+![](https://i.imgur.com/m6CK29L.png)
 
 ## VS Code
 My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has very well built [vim mode](https://github.com/VSCodeVim/Vim).
@@ -60,7 +60,7 @@ I am using [Zsh](http://www.zsh.org) as my shell with [Antibody](https://github.
 
 I am also using [Ayu theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made in Zsh. Here is how my prompt looks like:
 
-![](https://i.imgur.com/wUrhEDa.png)
+![](https://i.imgur.com/zHUb7nT.png)
 
 > a is [alias](zsh/alias.zsh) for [exa](https://github.com/ogham/exa)
 
@@ -168,6 +168,7 @@ These are dotfiles I got many ideas from and liked.
 - [caarlos0](https://github.com/caarlos0/dotfiles) - Made antibody.
 - [wangsongiam](https://github.com/wangsongiam/dotfiles) - Interesting hammerspoon and zsh config.
 - [rvolosatovs](https://github.com/rvolosatovs/dotfiles) - Good vim setup for Go.
+- [Keith](https://github.com/keith/dotfiles) - Vim, zsh, tmux, and OS X .
 
 ## Contributing
 [Suggestions](../../issues/) on how I can improve the structure of these dotfiles as well as suggesting new and awesome tools are welcome.

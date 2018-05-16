@@ -99,9 +99,6 @@ alias h='python -m http.server'
 alias cra='npx create-react-app'
 alias lic='legit'
 
-# _Flask
-alias fr='flask run'
-
 # _App
 alias to='gittower .' # Open current dir in Tower
 
@@ -116,7 +113,7 @@ alias wfs='workflow-install -s source' # Symlink source dir to Alfred
 alias wfl='alfred link'
 alias wfa='alfred pack -o ~/Desktop'
 
-# _docker
+# _Docker
 alias k='docker'
 alias kc='docker compose'
 alias kl='docker logs'
@@ -132,11 +129,12 @@ alias n.='node .'
 
 # _yarn
 alias i='yarn'
+alias iw='yarn && yarn start'
 alias il='yarn list'
 alias ii='yarn init'
 alias ia='yarn add'
 alias ir='yarn run'
-alias iw='yarn remove'
+alias im='yarn remove'
 alias ig='yarn global add'
 alias is='yarn start'
 
@@ -313,17 +311,19 @@ alias dbb='cd /usr/local/bin'
 alias dcl='cd /usr/local/Cellar'
 alias drp='cd ~/Dropbox'
 
-# _config
+# _Config
 alias d..='cd ~/.config'
 alias dv='cd ~/.dotfiles/nvim'
 alias dsk='cd ~/Library/Application\ Support/Karabiner'
 alias db='cd ~/.dotfiles/bin'
 alias dh='cd ~/.hammerspoon'
 
-# _Git aliases
+# _Git
 alias gj='open `git config remote.origin.url`'
+alias ggh='push -u origin HEAD'
 alias gre='git rebase -i HEAD~4'
 alias gsh='git stash'
+alias gr='git checkout -b'
 alias grh='git reset --hard HEAD'
 alias grc='git rm --cached'
 # alias gt='git tag'

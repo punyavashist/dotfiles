@@ -7,6 +7,29 @@ gz(){
   git push
 }
 
+# make PRs TODO: test it
+pr() {
+  git push -u origin "$1"
+  hub pull-request -h "$1" -F -
+}
+
+# Fork cloned repo
+gf(){
+  hub fork
+  git branch --set-upstream-to nikitavoloboev/master master
+  git remote rename origin upstream; git remote rename nikitavoloboev origin
+}
+
+# Fork cloned repo and move it to ~/dev/forks
+gfandmove(){
+  hub fork
+  git branch --set-upstream-to nikitavoloboev/master master
+  git remote rename origin upstream; git remote rename nikitavoloboev origin
+  CLONE_DIR_NAME=$(basename "$PWD")
+  cd .. && mv $CLONE_DIR_NAME ~/dev/forks
+  cd ~/dev/forks/$CLONE_DIR_NAME
+}
+
 grus(){
   # TODO: if it is a fork, get the link of the fork and fill it here instead of manually adding it
   git remote add upstream "$1"

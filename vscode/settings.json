@@ -39,17 +39,17 @@
     {
       "text": "TODO",
       "color": "red",
-      "backgroundColor": "#212733"
+      "backgroundColor": "#0F1419"
     },
     {
       "text": "NOTE",
       "color": "yellow",
-      "backgroundColor": "#212733"
+      "backgroundColor": "#0F1419"
     },
     {
       "text": "FIXME",
       "color": "orange",
-      "backgroundColor": "#212733"
+      "backgroundColor": "#0F1419"
     }
   ],
   "todohighlight.include": [
