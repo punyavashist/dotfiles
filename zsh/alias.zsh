@@ -1,13 +1,16 @@
 # _Testing
 
+# TODO: clean it & use only what I need
+
 # _Nix
-alias ni='nix-env -i' # Install packages
-alias ne='nix-env -e'
-alias nu='nix-env -u'
+alias n='nix-env'
+alias ne='nix-env -e' # TODO: ?
+alias nu='nix-env -u' # TODO: ?
+alias np='nix-env -q' # See installed packages
 
 # _General
 alias -g G='| grep' # Grep search
-alias n='open'
+alias op='open'
 alias dnd='do-not-disturb toggle'
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete" # Recursively delete `.DS_Store` files
 alias g='hub' # Wrapper over git
@@ -138,15 +141,7 @@ alias im='yarn remove'
 alias ig='yarn global add'
 alias is='yarn start'
 
-# _heroku
-alias he='heroku'
-
-# _pip
-# TODO
-
-# _npm - depracated
-alias np='npm'
-# alias ni='npm install'
+# _npm - TODO: remove
 alias ns='npm start'
 alias nls='npm ls'
 # alias nu='npm update'
@@ -219,18 +214,9 @@ alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r 
 alias ba="bash"
 
 # _Brew
-alias b='brew'
-alias bf='brew info'
-alias bci='brew cask install'
-alias bt='brew audit --strict'
 alias bl='brew list'
-alias bs='brew search'
-alias bi='brew install'
-alias bu='brew update'
-alias bdoc='brew doctor'
-alias bcl='brew cask list'
 alias bui='brew uninstall'
-alias bw='brew update  && brew upgrade && brew cleanup'
+alias bu='brew uninstall --force'
 
 # _Brew service
 alias bss='brew services start'

@@ -9609,6 +9609,11 @@ KeyCode::J, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::U,
+KeyCode::VK_OPEN_URL_ALFRED_NEW_TODO
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::O,
 KeyCode::VK_OPEN_URL_KM_ADD_CLIPBOARD_AS_ACTIVE_TODO
 </autogen>

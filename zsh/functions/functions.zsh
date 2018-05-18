@@ -5,6 +5,12 @@ T(){
   gwu contributing
 }
 
+unalias ni
+# Install packages
+ni(){
+  nix-env -iA nixpkgs."$1"
+}
+
 # Search aliases you have defined
 l(){
   alias | grep $1 |awk -F= '{printf "%s\t%s\n", $1, $2}'

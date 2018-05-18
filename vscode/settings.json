@@ -70,7 +70,6 @@
   "editor.lineNumbers": "off",
   "editor.cursorStyle": "line",
   "explorer.confirmDragAndDrop": false,
-  "window.zoomLevel": -2,
   "workbench.startupEditor": "newUntitledFile",
   // _Python
   "python.linting.pylintArgs": [
@@ -107,7 +106,7 @@
   "workbench.fontAliasing": "auto",
   "terminal.integrated.fontSize": 16,
   "editor.fontLigatures": true,
-  "editor.fontSize": 18,
+  "editor.fontSize": 15,
   // _Vim
   "vim.leader": " ",
   "vim.cursorStylePerMode": {
