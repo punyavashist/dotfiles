@@ -39,17 +39,17 @@
     {
       "text": "TODO",
       "color": "red",
-      "backgroundColor": "#0F1419"
+      "backgroundColor": "#212733"
     },
     {
       "text": "NOTE",
       "color": "yellow",
-      "backgroundColor": "#0F1419"
+      "backgroundColor": "#212733"
     },
     {
       "text": "FIXME",
       "color": "orange",
-      "backgroundColor": "#0F1419"
+      "backgroundColor": "#212733"
     }
   ],
   "todohighlight.include": [
@@ -70,7 +70,7 @@
   "editor.lineNumbers": "off",
   "editor.cursorStyle": "line",
   "explorer.confirmDragAndDrop": false,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
   "workbench.startupEditor": "newUntitledFile",
   // _Python
   "python.linting.pylintArgs": [
@@ -79,7 +79,8 @@
   // _Code runner
   "code-runner.clearPreviousOutput": true,
   "code-runner.executorMap": {
-    "python": "python3"
+    "python": "python3",
+    "go": "cd ~/dev/test/go-test/ && go run"
   },
   // _Zen
   "zenMode.fullScreen": false,
@@ -137,6 +138,23 @@
       ],
       "after": [],
       "commands": [
+        {
+          "command": "workbench.action.closeActiveEditor",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.files.save",
+          "args": []
+        },
         {
           "command": "workbench.action.closeActiveEditor",
           "args": []
@@ -233,5 +251,6 @@
   "python.linting.enabled": true,
   "gitlens.keymap": "chorded",
   "latex-workshop.message.update.show": false,
-  "workbench.colorTheme": "Ayu Mirage"
+  "workbench.colorTheme": "Ayu Mirage",
+  "gitlens.historyExplorer.enabled": true
 }

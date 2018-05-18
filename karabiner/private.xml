@@ -35,14 +35,6 @@
 <equal>com.ideasoncanvas.MindNodeMac</equal>
 </appdef>
 <appdef>
-<appname>DICTIONARY</appname>
-<equal>com.apple.Dictionary</equal>
-</appdef>
-<appdef>
-<appname>XCODE</appname>
-<equal>com.apple.dt.Xcode</equal>
-</appdef>
-<appdef>
 <appname>ITERM</appname>
 <equal>com.googlecode.iterm2</equal>
 </appdef>
@@ -948,11 +940,11 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 
 <!-- _KM def-->
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_RERUN_CMD_ITERM</name>
+<name>KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_INBOX</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: rerun command in iterm"
+do script "g: screenshot to Pixave Inbox"
 end tell
 '
 </url>
@@ -1998,6 +1990,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_TEST_TYPESCRIPT</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "test: typescript"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_TEST_WEB</name>
 <url type="shell">
 osascript -e '
@@ -2404,7 +2406,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "per: add clipboard as todo"
+do script "g: add clipboard as todo"
 end tell
 '
 </url>
@@ -2414,7 +2416,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "per: add selected text as todo"
+do script "g: add selected text as todo"
 end tell
 '
 </url>
@@ -3492,6 +3494,14 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "gists" in workflow "nikivi.search-the-web" with argument ""
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_IMGUR_SCREENSHOT_AND_SAVE_INBOX</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "screen and save" in workflow "com.vitorgalvao.alfred.webscreenshot" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -5788,7 +5798,7 @@ KeyCode::1, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L,
 <autogen>
 __KeyToKey__
 KeyCode::F19,
-KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_ANKI
+KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_INBOX
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6570,11 +6580,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_SOURCEGRAPH
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::V,
-KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_CANVAS
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::G,
 KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_GITHUB
 </autogen>
@@ -6839,7 +6844,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_REGEX101
 <autogen>
 __KeyToKey__
 KeyCode::U,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_REGEX101
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_CANVAS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7081,7 +7086,11 @@ __BlockUntilKeyUp__ KeyCode::DOT,
 <autogen>
 __KeyToKey__
 KeyCode::A,
-KeyCode::P,
+KeyCode::F,
+KeyCode::M,
+KeyCode::T,
+KeyCode::DOT,
+KeyCode::P, ModifierFlag::SHIFT_L, 
 KeyCode::R,
 KeyCode::I,
 KeyCode::N,
@@ -9687,6 +9696,7 @@ KeyCode::5, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTI
 __KeyToKey__
 KeyCode::F19,
 KeyCode::6, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, 
+KeyCode::VK_OPEN_URL_ALFRED_SCREENSHOT_TO_GOOGLE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9925,7 +9935,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_MARKED
 <autogen>
 __KeyToKey__
 KeyCode::F19,
-KeyCode::VK_OPEN_URL_KM_OPEN_MAGIC_NUMBER
+KeyCode::VK_OPEN_URL_ALFRED_IMGUR_SCREENSHOT_AND_SAVE_INBOX
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10572,7 +10582,7 @@ KeyCode::VK_OPEN_URL_ALFRED_RELOAD_KARABINER_XML
 <autogen>
 __KeyToKey__
 KeyCode::F19,
-KeyCode::VK_OPEN_URL_ALFRED_SCREENSHOT_TO_GOOGLE
+KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_INBOX
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11233,7 +11243,7 @@ __BlockUntilKeyUp__ KeyCode::Q,
 <autogen>
 __KeyToKey__
 KeyCode::F19,
-KeyCode::E, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, 
+KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_ANKI
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12245,7 +12255,12 @@ KeyCode::VK_OPEN_URL_ALFRED_OPEN_LOCALHOST
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::SEMICOLON,
+KeyCode::SLASH,
+KeyCode::VK_OPEN_URL_KM_TEST_HASKELL
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::K,
 KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_CLONES_AND_OPEN_WITH_VS_CODE
 </autogen>
 <autogen>
@@ -12255,7 +12270,7 @@ KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_CLONES_AND_OPEN_WITH_SUBLIME
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::K,
+KeyCode::SEMICOLON,
 KeyCode::VK_OPEN_URL_KM_FORK_REPO_TO_FORKS_AND_OPEN_WITH_VS_CODE
 </autogen>
 <autogen>
@@ -12265,8 +12280,13 @@ KeyCode::VK_OPEN_URL_KM_CLONE_REPO_TO_CLONES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::M,
+KeyCode::D,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MDN
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::M,
+KeyCode::VK_OPEN_URL_KM_EDIT_TEST_GO
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12275,12 +12295,22 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PAW_FILES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::S,
-KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_TRANSLATE
+KeyCode::DOT,
+KeyCode::VK_OPEN_URL_KM_TEST_JS
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::COMMA,
+KeyCode::VK_OPEN_URL_KM_TEST_TYPESCRIPT
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::N,
+KeyCode::VK_OPEN_URL_KM_TEST_PYTHON
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::T,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TIMEZONES
 </autogen>
 <autogen>
@@ -12339,33 +12369,13 @@ KeyCode::VK_OPEN_URL_KM_PROJECT_KNOWLEDGE
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::M,
-KeyCode::VK_OPEN_URL_KM_EDIT_TEST_GO
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::B,
 KeyCode::VK_OPEN_URL_KM_TEST_BASH
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::N,
-KeyCode::VK_OPEN_URL_KM_TEST_PYTHON
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::COMMA,
-KeyCode::VK_OPEN_URL_KM_TEST_JS
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::A,
 KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, 
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::DOT,
-KeyCode::VK_OPEN_URL_KM_TEST_HASKELL
 </autogen>
 <autogen>
 __KeyToKey__
