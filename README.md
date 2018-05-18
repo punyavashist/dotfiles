@@ -29,7 +29,7 @@ I describe my custom configuration I use below. It is heavily tailored to my own
 
 ## Karabiner
 
-<img src="https://explainxkcd.com/wiki/images/b/bf/borrow_your_laptop.png" alt="img">
+<img src="https://imgs.xkcd.com/comics/borrow_your_laptop_2x.png" alt="img">
 
 The most exciting thing in here is probably how I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now.
 

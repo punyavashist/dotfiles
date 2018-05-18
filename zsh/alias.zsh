@@ -4,9 +4,9 @@
 
 # _Nix
 alias n='nix-env'
-alias ne='nix-env -e' # TODO: ?
-alias nu='nix-env -u' # TODO: ?
-alias np='nix-env -q' # See installed packages
+alias nu='nix-env -q | fzf | xargs -I{} nix-env -e {}' # Search installed packages to uninstall
+alias nq='nix-env -q' # See installed packages
+alias nuu='nix-env -u' # Upgrade packages
 
 # _General
 alias -g G='| grep' # Grep search
@@ -214,14 +214,10 @@ alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r 
 alias ba="bash"
 
 # _Brew
+alias bf='brew info'
 alias bl='brew list'
 alias bui='brew uninstall'
 alias bu='brew uninstall --force'
-
-# _Brew service
-alias bss='brew services start'
-alias bsl='brew services list'
-alias bst='brew services stop'
 
 # _easier navigation
 alias ..="cd .."
