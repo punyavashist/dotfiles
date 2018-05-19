@@ -1948,16 +1948,6 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_WIKI_MONTHLY</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "wiki: monthly"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_WIKI_PROCESSES</name>
 <url type="shell">
 osascript -e '

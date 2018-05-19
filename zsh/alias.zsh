@@ -4,8 +4,8 @@
 
 # _Nix
 alias n='nix-env'
-alias nu='nix-env -q | fzf | xargs -I{} nix-env -e {}' # Search installed packages to uninstall
-alias nq='nix-env -q' # See installed packages
+alias nq='nix-env -q | fzf | xargs -I{} nix-env -e {}' # Search installed packages to uninstall
+alias nQ='nix-env -q' # See installed packages
 alias nuu='nix-env -u' # Upgrade packages
 
 # _General

@@ -1,7 +1,7 @@
 [user]
 	name = Nikita Voloboev
 	email = nikita.voloboev@icloud.com
-	signingkey = 43EDACFC00099A17
+	signingkey = 07C8D272698231EC
 [alias]
     update = add -u .
 	unstage = reset HEAD

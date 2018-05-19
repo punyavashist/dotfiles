@@ -11,13 +11,8 @@ export PATH=./node_modules/.bin/:$PATH # NPM
 export PATH=$PATH:/usr/local/go/bin:/Users/nikivi/go/bin # Go
 export PATH=$PATH:~/.cargo/bin # Rust
 
-# FZF TODO: not sure if it works
+# FZF TODO: not sure if I need
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-# SQL NOTE: empty dirs
-# export PATH=/usr/local/mysql/bin:$PATH
-# export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
-
 export NODE_PATH='/usr/local/lib/node_modules'
-# export FLASK_APP=app.py # Flask
