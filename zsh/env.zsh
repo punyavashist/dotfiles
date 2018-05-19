@@ -5,13 +5,11 @@ export SUDO_EDITOR='nvim'
 
 export DOTFILES="$HOME/.dotfiles"
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=$(brew --prefix ruby)/bin:$PATH
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH=$PATH:~/.dotfiles/bin
 export PATH=./node_modules/.bin/:$PATH # NPM
 export PATH=$PATH:/usr/local/go/bin:/Users/nikivi/go/bin # Go
 export PATH=$PATH:~/.cargo/bin # Rust
-export HOMEBREW_AUTO_UPDATE_SECS=3600
 
 # FZF TODO: not sure if it works
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'

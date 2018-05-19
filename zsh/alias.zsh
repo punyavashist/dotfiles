@@ -213,12 +213,6 @@ alias net="ping ya.ru | grep -E --only-match --color=never '[0-9\.]+ ms'"       
 alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r | head"
 alias ba="bash"
 
-# _Brew
-alias bf='brew info'
-alias bl='brew list'
-alias bui='brew uninstall'
-alias bu='brew uninstall --force'
-
 # _easier navigation
 alias ..="cd .."
 alias ...="cd ../.."
