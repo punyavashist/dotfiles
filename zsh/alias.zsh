@@ -7,9 +7,9 @@ alias n='nix-env'
 alias nq='nix-env -q | fzf | xargs -I{} nix-env -e {}' # Search installed packages to uninstall
 alias nQ='nix-env -q' # See installed packages
 alias nuu='nix-env -u' # Upgrade packages
+alias ns='nix-shell --command zsh -p'
 
 # _General
-alias -g G='| grep' # Grep search
 alias op='open'
 alias dnd='do-not-disturb toggle'
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete" # Recursively delete `.DS_Store` files
@@ -108,7 +108,6 @@ alias to='gittower .' # Open current dir in Tower
 # _Python
 alias p='python'
 alias p2='python2'
-alias pi='pip install'
 
 # _Alfred
 alias wf='alfred build'
@@ -138,15 +137,12 @@ alias ii='yarn init'
 alias ia='yarn add'
 alias ir='yarn run'
 alias im='yarn remove'
-alias ig='yarn global add'
 alias is='yarn start'
 
 # _npm - TODO: remove
-alias ns='npm start'
 alias nls='npm ls'
 # alias nu='npm update'
 alias nt='npm init'
-alias nig='npm install -g'
 alias nb='npm run build'
 alias nr='npm run'
 
@@ -268,7 +264,8 @@ alias dl='cd ~/dev/learn'
 alias dt='cd ~/dev/test'
 alias dm='cd ~/dev/games'
 alias da='cd ~/dev/'
-alias ds='cd ~/dev/forks/'
+# alias ds='cd ~/dev/forks/'
+alias ds='cd ~/dev/curated/'
 alias dla='cd ~/dev/github/learn-anything'
 alias dz='cd ~/.dotfiles'
 alias dk='cd ~/Documents'
@@ -277,6 +274,10 @@ alias dk='cd ~/Documents'
 alias dx='cd ~/dev/Xcode'
 alias dxi='cd ~/dev/Xcode/iOS'
 alias dxm='cd ~/dev/xcode/macOS'
+
+# _Utilities
+alias ungit="find . -name '.git' -exec rm -rf {} \;" # Remove git from a project
+alias gto='gittower'
 
 # _macOS
 alias de='cd ~/Desktop'
@@ -296,12 +297,15 @@ alias dh='cd ~/.hammerspoon'
 
 # _Git
 alias gj='open `git config remote.origin.url`'
+alias gpm="git push origin master"
+alias gpd="git push origin develop"
 alias ggh='push -u origin HEAD'
 alias gre='git rebase -i HEAD~4'
 alias gsh='git stash'
 alias gr='git checkout -b'
 alias grh='git reset --hard HEAD'
 alias grc='git rm --cached'
+alias ggn='git_add_origin_and_origin_push'
 # alias gt='git tag'
 alias g:='git push -u origin master'
 alias gn='git open'
@@ -325,7 +329,7 @@ alias grao='git remote add origin'
 #alias gz='git discard'
 #alias gr='git rm --cached -r'
 
-# undo your last commit, but don't throw away your changes
+# Undo your last commit, but don't throw away your changes
 alias greset='git reset --soft HEAD^'
 
 # Diff
@@ -333,17 +337,6 @@ alias gd='git diff'
 alias gds='git diff --staged'
 alias gdn='git diff --name-only'
 
-# _status
+# Status
 alias gs='git status --short'
 alias gss='git show --word-diff=color' # See changes made
-
-alias ggn='git_add_origin_and_origin_push'
-
-# _Commit
-alias gpm="git push origin master"
-alias gpd="git push origin develop"
-
-# Utilities
-alias ungit="find . -name '.git' -exec rm -rf {} \;" # Remove git from a project
-
-alias gto='gittower'
