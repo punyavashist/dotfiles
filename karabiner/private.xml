@@ -73,6 +73,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_WHATSAPP</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "w: whatsapp"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_LISTENONREPEAT</name>
 <url type="shell">
 osascript -e '
@@ -939,6 +949,16 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 </vkopenurldef>
 
 <!-- _KM def-->
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_INBOX</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "g: screenshot to Pixave Inbox"
+end tell
+'
+</url>
+</vkopenurldef>
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_INBOX</name>
 <url type="shell">
@@ -8157,6 +8177,11 @@ KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX_DEV
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::H,
+KeyCode::VK_OPEN_URL_KM_OPEN_INTELLIJ
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::I,
 KeyCode::VK_OPEN_URL_KM_OPEN_CHROME
 </autogen>
@@ -10641,8 +10666,13 @@ KeyCode::VK_OPEN_URL_KM_CREATE_NEW_CONTACT
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::O,
+KeyCode::U,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_RIOT
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::O,
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_WHATSAPP
 </autogen>
 <autogen>
 __KeyToKey__
