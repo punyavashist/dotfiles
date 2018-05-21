@@ -5283,8 +5283,8 @@ ModifierFlag::OPTION_L,
 ModifierFlag::OPTION_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
-<!-- __KeyOverlaidModifier__ take 3 parameters -->
+__KeyOverlaidModifier__
+<!-- _KeyOverlaidModifier__ take 3 parameters -->
 <!-- 1st parameter define which key to trigger -->
 KeyCode::SEMICOLON,
 <!--
@@ -5573,7 +5573,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::S,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v23, ModifierFlag::MY_LAUNCHER_MODE,
@@ -6119,7 +6119,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::SLASH,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v19, ModifierFlag::MY_LAUNCHER_MODE,
@@ -6171,7 +6171,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::SPACE,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v34, ModifierFlag::MY_LAUNCHER_MODE,
@@ -6350,7 +6350,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::9,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v84, ModifierFlag::MY_LAUNCHER_MODE,
@@ -6394,7 +6394,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::MINUS,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v78, ModifierFlag::MY_LAUNCHER_MODE,
@@ -6428,7 +6428,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::0,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v82, ModifierFlag::MY_LAUNCHER_MODE,
@@ -6572,7 +6572,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::BRACKET_LEFT,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v75, ModifierFlag::MY_LAUNCHER_MODE,
@@ -6631,7 +6631,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::BRACKET_RIGHT,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v79, ModifierFlag::MY_LAUNCHER_MODE,
@@ -6665,7 +6665,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::P,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v12, ModifierFlag::MY_LAUNCHER_MODE,
@@ -6770,7 +6770,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::C,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v41, ModifierFlag::MY_LAUNCHER_MODE,
@@ -7024,7 +7024,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::DOT,@begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v76, ModifierFlag::MY_LAUNCHER_MODE,
 @end@begin
@@ -7089,7 +7089,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::DOT,@begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v72, ModifierFlag::MY_LAUNCHER_MODE,
 @end@begin
@@ -7256,7 +7256,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::DOT,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v77, ModifierFlag::MY_LAUNCHER_MODE,
@@ -7324,7 +7324,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::COMMA,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v20, ModifierFlag::MY_LAUNCHER_MODE,
@@ -7418,7 +7418,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::N,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v35, ModifierFlag::MY_LAUNCHER_MODE,
@@ -7602,7 +7602,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::M,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v17, ModifierFlag::MY_LAUNCHER_MODE,
@@ -7801,7 +7801,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::V,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v16, ModifierFlag::MY_LAUNCHER_MODE,
@@ -7984,7 +7984,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::BRACKET_LEFT,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v73, ModifierFlag::MY_LAUNCHER_MODE,
@@ -8154,7 +8154,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::W,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v3, ModifierFlag::MY_LAUNCHER_MODE,
@@ -8333,7 +8333,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::QUOTE,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v32, ModifierFlag::MY_LAUNCHER_MODE,
@@ -8373,7 +8373,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::X,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v43, ModifierFlag::MY_LAUNCHER_MODE,
@@ -8566,7 +8566,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::1,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v80, ModifierFlag::MY_LAUNCHER_MODE,
@@ -8650,7 +8650,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::2,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v93, ModifierFlag::MY_LAUNCHER_MODE,
@@ -8784,7 +8784,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::6,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v22, ModifierFlag::MY_LAUNCHER_MODE,
@@ -8963,7 +8963,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::TAB,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v55, ModifierFlag::MY_LAUNCHER_MODE,
@@ -9222,7 +9222,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::5,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v54, ModifierFlag::MY_LAUNCHER_MODE,
@@ -9261,7 +9261,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::4,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v53, ModifierFlag::MY_LAUNCHER_MODE,
@@ -9396,7 +9396,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::3,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v51, ModifierFlag::MY_LAUNCHER_MODE,
@@ -9574,7 +9574,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::COMMAND_L,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v4, ModifierFlag::MY_LAUNCHER_MODE,
@@ -9613,7 +9613,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::G,@begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v11, ModifierFlag::MY_LAUNCHER_MODE,
 @end@begin
@@ -9811,7 +9811,7 @@ ModifierFlag::OPTION_R,
 ModifierFlag::SHIFT_L,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::SHIFT_R,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v36, ModifierFlag::MY_LAUNCHER_MODE,
@@ -9845,7 +9845,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::R,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v8, ModifierFlag::MY_LAUNCHER_MODE,
@@ -10040,7 +10040,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::U,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v33, ModifierFlag::MY_LAUNCHER_MODE,
@@ -10179,7 +10179,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::I,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v15, ModifierFlag::MY_LAUNCHER_MODE,
@@ -10459,7 +10459,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::Y,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v83, ModifierFlag::MY_LAUNCHER_MODE,
@@ -10508,7 +10508,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::T,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v14, ModifierFlag::MY_LAUNCHER_MODE,
@@ -10642,7 +10642,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::Z,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v9, ModifierFlag::MY_LAUNCHER_MODE,
@@ -10762,7 +10762,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::F,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v2, ModifierFlag::MY_LAUNCHER_MODE,
@@ -10972,7 +10972,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::E,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v91, ModifierFlag::MY_LAUNCHER_MODE,
@@ -11258,7 +11258,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::Q,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v6, ModifierFlag::MY_LAUNCHER_MODE,
@@ -11503,7 +11503,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::A,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode, ModifierFlag::MY_LAUNCHER_MODE,
@@ -11828,7 +11828,7 @@ Option::NOREPEAT,
 <name>test: left option plus left shift to search documentation for selected text</name>
 <identifier>private.left_option_plus_left_shift_to_hotkey</identifier>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
 KeyCode::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
 KeyCode::8, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
@@ -11839,7 +11839,7 @@ KeyCode::8, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 <name>test: control plus left shift to search wiki with selection</name>
 <identifier>private.control_shift_for_wiki_selection</identifier>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
 KeyCode::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
 KeyCode::7, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
@@ -11850,7 +11850,7 @@ KeyCode::7, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 <name>test: command plus left shift to google selected text</name>
 <identifier>private.command_plus_left_shift_to_hotkey</identifier>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::SHIFT_L, ModifierFlag::COMMAND_L,
 KeyCode::SHIFT_L, ModifierFlag::COMMAND_L,
 KeyCode::9, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
@@ -11925,7 +11925,7 @@ KeyCode::OPTION_L,
 KeyCode::OPTION_L, ModifierFlag::MY_OPTION_L,
 </autogen>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::F19,
 KeyCode::OPTION_L, ModifierFlag::CONTROL_L | ModifierFlag::MY_CAPSLOCK,
 KeyCode::ESCAPE,
@@ -11936,7 +11936,7 @@ KeyCode::ESCAPE,
 <name>general: right option on single press as app switcher</name>
 <identifier>private.right_opt_as_app_switch</identifier>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::OPTION_R,
 KeyCode::OPTION_R,
 KeyCode::TAB, ModifierFlag::COMMAND_L
@@ -12131,7 +12131,7 @@ KeyCode::DELETE, ModifierFlag::COMMAND_L
 <name>test: left shift - switch app</name>
 <identifier>private.left_shift_to_wm_mode</identifier>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::SHIFT_L,
 KeyCode::SHIFT_L,
 KeyCode::TAB, ModifierFlag::COMMAND_L,
@@ -12143,7 +12143,7 @@ KeyCode::COMMAND_L
 <name>test: right shift - play / stop music</name>
 <identifier>private.right_shift_play_music</identifier>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::SHIFT_R,
 KeyCode::SHIFT_R,
 ConsumerKeyCode::MUSIC_PLAY
@@ -12154,7 +12154,7 @@ ConsumerKeyCode::MUSIC_PLAY
 <name>test: left shift - switch to general mode</name>
 <identifier>private.left_shift_to_general_mode</identifier>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::SHIFT_L,
 KeyCode::SHIFT_L,
 KeyCode::F8, ModifierFlag::COMMAND_L,
@@ -12166,13 +12166,13 @@ KeyCode::VK_OPEN_URL_SHELL_switchprofile_general
 <name>test: fn shift to combination plus fn superkey</name>
 <identifier>private.fn_shift_to_combination</identifier>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
 KeyCode::SHIFT_L, ModifierFlag::FN,
 KeyCode::1, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
 </autogen>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
 KeyCode::F19, ModifierFlag::FN,
 KeyCode::Z, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
@@ -12199,7 +12199,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::COMMAND_R,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v81, ModifierFlag::MY_LAUNCHER_MODE,
@@ -12257,7 +12257,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::B,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v13, ModifierFlag::MY_LAUNCHER_MODE,
@@ -12376,7 +12376,7 @@ ModifierFlag::SHIFT_L,
 ModifierFlag::SHIFT_R,
 </modifier_not>
 <autogen>
-___KeyOverlaidModifier__
+__KeyOverlaidModifier__
 KeyCode::BACKQUOTE,
 @begin
 KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v40, ModifierFlag::MY_LAUNCHER_MODE,
