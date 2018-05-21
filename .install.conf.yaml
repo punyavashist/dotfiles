@@ -19,12 +19,12 @@
     ~/.hammerspoon: hammerspoon
     # Karabiner
     "~/Library/Application Support/Karabiner": karabiner
-    # Sublime text
+    # Sublime Text
     "~/Library/Application Support/Sublime Text 3/Packages/User": sublime
     # Neovim
     ~/.config/nvim: nvim
     # Bash
-    ~/.bashrc: bashrc
+    ~/.bashrc: bash/bashrc
     # VS Code
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json

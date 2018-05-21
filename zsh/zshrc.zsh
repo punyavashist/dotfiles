@@ -8,7 +8,7 @@ export ETC_ZSH_ZSHRC=1
 
 # Check if inside nix-shell
 if test -n "$IN_NIX_SHELL"; then
-    echo "In nix-shell"
+   # TODO: change prompt
 fi
 
 source ~/.zsh_plugins.sh # Load zsh plugins
