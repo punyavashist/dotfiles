@@ -1,5 +1,5 @@
 {
-  // _Testing
+  // Testing
   "editor.folding": false,
   "editor.hideCursorInOverviewRuler": true,
   "editor.lineHeight": 26,
@@ -10,7 +10,7 @@
   "editor.renderLineHighlight": "none",
   "explorer.openEditors.visible": 0,
   "workbench.editor.showIcons": false,
-  // _General
+  // General
   "newFile.defaultFileExtension": ".go",
   "newFile.showPathRelativeTo": "project",
   "search.smartCase": true,
@@ -33,7 +33,7 @@
   "todohighlight.isEnable": true,
   "editor.cursorBlinking": "solid",
   "files.trimTrailingWhitespace": true,
-  // _TODO: highlight
+  // TODO: highlight
   "todohighlight.isCaseSensitive": true,
   "todohighlight.keywords": [
     {
@@ -62,7 +62,7 @@
     "**/*.css",
     "**/*.lua"
   ],
-  // _Dash
+  // Dash
   "dash.docset.go": [
     "go",
     "godoc"
@@ -71,25 +71,25 @@
   "editor.cursorStyle": "line",
   "explorer.confirmDragAndDrop": false,
   "workbench.startupEditor": "newUntitledFile",
-  // _Python
+  // Python
   "python.linting.pylintArgs": [
     "--errors-only"
   ],
-  // _Code runner
+  // Code runner
   "code-runner.clearPreviousOutput": true,
   "code-runner.executorMap": {
     "python": "python3",
   },
-  // _Zen
+  // Zen
   "zenMode.fullScreen": false,
   "zenMode.restore": true,
   "workbench.iconTheme": "vs-seti",
-  // _Prettier
+  // Prettier
   "editor.formatOnSave": true,
   "extensions.autoUpdate": true,
-  // _Plugins
+  // Plugins
   "code-runner.runInTerminal": false,
-  // _Sync settings
+  // Sync settings
   "sync.gist": "0c57cbed63ec19108a8437f4325bdd32",
   "sync.lastUpload": "2017-07-18T07:26:15.238Z",
   "sync.autoDownload": false,
@@ -100,13 +100,13 @@
   "sync.pathPrefix": "",
   "sync.quietSync": false,
   "sync.askGistName": false,
-  // _Fonts
+  // Fonts
   "editor.fontFamily": "Fira Code",
   "workbench.fontAliasing": "auto",
   "terminal.integrated.fontSize": 16,
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
-  // _Vim
+  // Vim
   "vim.leader": " ",
   "vim.cursorStylePerMode": {
     "normal": "underline"
@@ -114,7 +114,7 @@
   "vim.useSystemClipboard": true,
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "red",
-  // _Space map
+  // Space map
   "vim.otherModesKeyBindingsNonRecursive": [
     {
       "before": [
@@ -213,7 +213,7 @@
       ]
     }
   ],
-  // _Go
+  // Go
   "go.autocompleteUnimportedPackages": true,
   "go.liveErrors": {
     "enabled": true,
@@ -223,7 +223,7 @@
   "go.lintOnSave": "package",
   "go.useLanguageServer": true,
   "go.gocodePackageLookupMode": "gb",
-  // _Files
+  // Files
   "files.associations": {
     "*.toml": "toml"
   },

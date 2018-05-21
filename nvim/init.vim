@@ -3,7 +3,7 @@ function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 
-" _Install plugins
+" Install plugins
 call plug#begin()
 " Utility
 Plug 'romainl/vim-cool' " Stop matching after search is done.
@@ -55,7 +55,7 @@ Plug 'Shougo/neco-vim', { 'for': 'vim' } " Vim source for neocomplete/deoplete.
 Plug 'LnL7/vim-nix', { 'for': 'nix' } " Vim configuration files for Nix.
 call plug#end()
 
-" _Options
+" Options
 set mouse=a " Copy selected text with mouse to system clipboard
 set undofile " Save undos after file closes
 set wildmode=longest:list,full " Complete longest common string, then each full match
@@ -138,7 +138,7 @@ set grepformat^=%f:%l:%c:%m
 
 set viewoptions=cursor,slash,unix
 
-" _Plugins
+" Plugins
 let g:deoplete#enable_at_startup = 1 " Activate deoplete
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T'] " Trigger a highlight in the appropriate direction when pressing these keys
 let g:incsearch#auto_nohlsearch = 1 " TODO
@@ -196,65 +196,65 @@ inoremap      kj  <Esc>
 inoremap      (;   ();<Esc>o
 inoremap      ()   ()
 
-"_Command mappings
+"Command mappings
 cabbrev rp Rp
 
-" _Control mappings
+" Control mappings
 nnoremap <C-M> /sticky 
 nnoremap <C-L> /\c__\_sKeyCode::/e<Left><Left>
 
-" _Space mappings
+" Space mappings
 nnoremap <SPACE> <Nop>
 let mapleader="\<Space>"
 let maplocalleader = "\<Space>"
 nnoremap <leader>= yypVr=
 
-" _Space z
+" Space z
 nmap <Leader>ze   :enew <CR>
 nmap <Leader>zt   :tabnew<CR>
 
-" _Space p
+" Space p
 nnoremap <Leader>pi :PlugInstall<CR>
 nnoremap <Leader>pu :PlugUpdate<CR>
 
-" _Space w
+" Space w
 " Save
 nmap <Leader>w :w<CR>
 
-" _Space d
+" Space d
 nmap <Leader>d :bd<CR>
 
-" _Space a
+" Space a
 " Yank xml block to next line
 nnoremap <Leader>aw vat:t'><CR>'[<Esc><CR>
 
-" _Space v
+" Space v
 " Write all changed buffers and exit vim
 nnoremap <Leader>vq :wqall<CR>
 nnoremap <Leader>vQ :qa<CR>
 nnoremap <Leader>vm :make<CR>
 
-" _Space o
+" Space o
 " Move 10 lines down (for karabiner sticky keys)
 nnoremap <Leader>o 29jzz
 
-" _Space i
+" Space i
 nnoremap <Leader>ii :PlugInstall<CR>
 " Update plugins
 nnoremap <Leader>iu :PlugUpdate<CR>
 " Check vim health
 nnoremap <Leader>ih :CheckHealth<CR>
 
-" _Space c
+" Space c
 " Switch dir for fzf searching to current dir
 map <Leader>cd :lcd %:p:h<CR>
 
-" _Space e
+" Space e
 nmap <Leader>e.   :e .<CR>
 " Search files inside current dir
 nnoremap <Leader>e :Files<CR>
 
-" _Space t
+" Space t
 nmap <Leader>to   :e %:p:h<CR>
 " Yank function block
 nnoremap <Leader>tgt :exe search('^function','cb')';/}/y'<CR>
@@ -267,25 +267,25 @@ nnoremap <Leader>tt :tabedit <Bar> term.
 nnoremap <Leader>ts :split <Bar> term.
 nnoremap <Leader>tv :vsplit <Bar> term.
 
-" _Space s
+" Space s
 " Buffer control
 nmap <Leader>s    :bprevious<CR>
 " Source vimrc
 nnoremap <Leader>ss :source ~/.dotfiles/nvim/init.vim<CR>
 
-" _Space n
+" Space n
 nmap <Leader>n    :bnext<CR>
 " Search lines with fzf
 nnoremap <silent> <Leader>n :Lines<CR>
 
-" _Space q
+" Space q
 nmap <Leader>q    :q<CR>
 
-" _Space y
+" Space y
 " Yank whole file
 nnoremap <Leader>y :%y<CR>
 
-" _Space f
+" Space f
 nmap <Leader>fw   :Autoformat<CR>
 nmap <Leader>ff :FZF <CR>
 nmap <Leader>fb   :Buffers <CR>
@@ -302,7 +302,7 @@ nmap <Leader>fs   :Snippets<CR>
 nmap <Leader>fg   :BCommits<CR>
 nmap <Leader>fG   :Commits<CR>
 
-" _Space o
+" Space o
 nmap <Leader>o    :Files %:p:h<CR>
 nmap <Leader>O    :GFiles <CR>
 
@@ -322,23 +322,23 @@ if has('conceal')
     set conceallevel=2 concealcursor=nc
 endif
 
-" _Auto commands
+" Auto commands
 au FileType dirvish call fugitive#detect(@%)
 au FocusLost * :wa " Auto save everything
 
-" _Remaps
+" Remaps
 " Search and replace
 xnoremap gs y:%s/<C-r>"//g<Left><Left>
 
 " Yank a line with Y.
 nnoremap Y y$
 
-" _Functions
+" Functions
 
-" _Other
+" Other
 set guicursor=n-v-c:hor20,i-ci:ver20 " Make cursor block in insert mode and underline in normal mode
 autocmd VimLeave * set guicursor=a:ver25-blinkon25 " Make cursor block when leaving to shell
 
-" _Testing
+" Testing
 nnoremap <C-q> :q<cr>:q<cr>
 set foldcolumn=0 " Remove sidebar column

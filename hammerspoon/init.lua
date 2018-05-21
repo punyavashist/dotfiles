@@ -1,4 +1,4 @@
--- _Imports
+-- Imports
 -- local requirePlus = require("utils.require")
 local crash = require("hs.crash")
 local window = require("hs.window")
@@ -16,7 +16,7 @@ require("watchers")
 require("wm")
 require("testing")
 
--- _Config
+-- Config
 _asm = {} -- TODO: ?
 _asm.hs_default_require = require
 require = rawrequire

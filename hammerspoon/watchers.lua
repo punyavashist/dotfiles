@@ -1,6 +1,6 @@
 -- Watch events and make actions based on events.
 
--- _WiFi watcher
+-- WiFi watcher
 wifiwatcher =
     hs.wifi.watcher.new(
     function()

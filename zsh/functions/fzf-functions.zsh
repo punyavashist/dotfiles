@@ -57,7 +57,7 @@ fg() {
 FZF-EOF"
 }
 
-# _git
+# git
 is_in_git_repo() {
   git rev-parse HEAD > /dev/null 2>&1
 }
@@ -234,7 +234,7 @@ rh() {
 }
 # TODO: add binding
 
-# _Git
+# Git
 # Git commit browser
 fgs() {
   git log --graph --color=always \

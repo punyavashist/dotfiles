@@ -1,6 +1,6 @@
 # Zsh functions.
 
-# T - Tester (I change it often)
+# Tester (I change it often)
 T(){
   gwu contributing
 }

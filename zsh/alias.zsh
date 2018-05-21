@@ -93,7 +93,7 @@ alias tp='type'
 #alias cl='/usr/local/bin/m'
 # alias gr='goreleaser'
 
-# _Dev
+# Dev
 alias ll='ln -s'
 alias jd='jid'
 alias tm='task'
@@ -104,20 +104,20 @@ alias h='python -m http.server'
 alias cra='npx create-react-app'
 alias lic='legit'
 
-# _App
+# App
 alias to='gittower .' # Open current dir in Tower
 
-# _Python
+# Python
 alias p='python'
 alias p2='python2'
 
-# _Alfred
+# Alfred
 alias wf='alfred build'
 alias wfs='workflow-install -s source' # Symlink source dir to Alfred
 alias wfl='alfred link'
 alias wfa='alfred pack -o ~/Desktop'
 
-# _Docker
+# Docker
 alias k='docker'
 alias kc='docker compose'
 alias kl='docker logs'
@@ -126,12 +126,12 @@ alias ks='docker ps'
 alias ksq='docker ps -q'
 alias kk='docker kill'
 
-# _node
+# node
 alias nd='node'
 alias ndi='node install'
 alias n.='node .'
 
-# _yarn
+# yarn
 alias i='yarn'
 alias iw='yarn && yarn start'
 alias il='yarn list'
@@ -141,14 +141,14 @@ alias ir='yarn run'
 alias im='yarn remove'
 alias is='yarn start'
 
-# _npm - TODO: remove
+# npm - TODO: remove
 alias nls='npm ls'
 # alias nu='npm update'
 alias nt='npm init'
 alias nb='npm run build'
 alias nr='npm run'
 
-# _Go
+# Go
 alias o='go'
 alias org='richgo'
 alias ot='playgo'
@@ -161,10 +161,10 @@ alias oe='go build -o main'
 
 alias ugo='Go-Package-Store'
 
-# _Ruby
+# Ruby
 alias rb='ruby'
 
-# _Piping
+# Piping
 alias h2='head -n 2'
 alias h10='head -n 10'
 alias t10='tail -n 10'
@@ -173,13 +173,13 @@ alias hs='ghci'
 
 alias cwd='pwd | pbcopy'
 
-# _Delete things
+# Delete things
 alias rrpdf='rm -rf *.pdf'
 
-# _Source things
+# Source things
 alias sz='exec zsh'
 
-# _ls
+# ls
 alias la="ls -aF"
 alias ld="ls -ld"
 alias lso='ls -At1 && echo "------Oldest--"'
@@ -187,31 +187,31 @@ alias lsn='ls -Art1 && echo "------Newest--"'
 alias a.='ls -d .*'
 alias l.='ls -d .*'
 
-# _Hugo
+# Hugo
 alias us='hugo server -D'
 alias ut='hugo server -w' # testing
 alias u='hugo'
 
-# _Jekyll
+# Jekyll
 alias js='bundle exec jekyll serve'
 alias jb='jekyll build'
 
-# _Ruby
+# Ruby
 alias bx='bundle exec'
 
-# _Nginx
+# Nginx
 alias ngup='sudo nginx'
 alias ngdown='sudo nginx -s stop'
 alias ngre='sudo nginx -s stop && sudo nginx'
 alias nglog='tail -f /usr/local/var/log/nginx/access.log' # TODO: maybe wrong location
 alias ngerr='tail -f /usr/local/var/log/nginx/error.log'
 
-# _Utility
+# Utility
 alias net="ping ya.ru | grep -E --only-match --color=never '[0-9\.]+ ms'"                # check connection
 alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r | head"
 alias ba="bash"
 
-# _easier navigation
+# easier navigation
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -222,10 +222,10 @@ alias kn='/Applications/Karabiner.app/Contents/Library/bin/karabiner' # Karabine
 alias cpu='top -o cpu'   # CPU
 alias mem='top -o rsize' # Memory
 
-# _macos
+# macos
 alias bb='pbcopy'
 
-# _Text editors
+# Text editors
 alias cr='open -a CodeRunner'
 alias xx='open -a Xcode'
 alias x.='open -a Xcode .'
@@ -236,27 +236,27 @@ alias ww='code .'
 # alias ar="open -a Marked\ 2"
 alias zr='open -a Preview'
 
-# _Web
+# Web
 alias sc="open -a Google\ Chrome"
 alias sf="open -a Safari"
 
-# _Other
+# Other
 alias pdf='open -a PDF\ Expert'
 alias love="/Applications/love.app/Contents/MacOS/love"
 
-# _Vim
+# Vim
 alias ee='nvim .' # Current dir
 alias ei='nvim index.js'
 alias egi='nvim .gitignore' # TODO: make it zsh func, go to root and then run it
 alias ej='nvim package.json'
 
-# _Edit config
+# Edit config
 alias ek='nvim ~/Library/Application\ Support/Karabiner/private.xml' # karabiner
 alias ew='nvim ~/.dotfiles/nvim/init.vim' # nvimrc
 alias essh='nvim ~/.ssh/config' # ssh config
 alias et='nvim ~/.dotfiles/tmux/tmux.conf.local' # tmux config
 
-# _cd places
+# cd places
 alias dw='cd ~/dev/web'
 alias dsh='cd ~/.ssh'
 alias dn='cd ~/dev/clones'
@@ -272,16 +272,16 @@ alias dla='cd ~/dev/github/learn-anything'
 alias dz='cd ~/.dotfiles'
 alias dk='cd ~/Documents'
 
-# _Xcode
+# Xcode
 alias dx='cd ~/dev/Xcode'
 alias dxi='cd ~/dev/Xcode/iOS'
 alias dxm='cd ~/dev/xcode/macOS'
 
-# _Utilities
+# Utilities
 alias ungit="find . -name '.git' -exec rm -rf {} \;" # Remove git from a project
 alias gto='gittower'
 
-# _macOS
+# macOS
 alias de='cd ~/Desktop'
 alias dq='cd ~/Downloads'
 alias dls='cd ~/Library/Services'
@@ -290,14 +290,14 @@ alias dbb='cd /usr/local/bin'
 alias dcl='cd /usr/local/Cellar'
 alias drp='cd ~/Dropbox'
 
-# _Config
+# Config
 alias d..='cd ~/.config'
 alias dv='cd ~/.dotfiles/nvim'
 alias dsk='cd ~/Library/Application\ Support/Karabiner'
 alias db='cd ~/.dotfiles/bin'
 alias dh='cd ~/.hammerspoon'
 
-# _Git
+# Git
 alias gj='open `git config remote.origin.url`'
 alias gpm="git push origin master"
 alias gpd="git push origin develop"
