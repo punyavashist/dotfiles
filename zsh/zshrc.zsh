@@ -1,5 +1,3 @@
-# Zsh config.
-
 # _Source things
 # Only run once (exec zsh won't run what's inside)
 if (( ! $+ETC_ZSH_ZSHRC )); then
@@ -7,6 +5,11 @@ if (( ! $+ETC_ZSH_ZSHRC )); then
     source ~/.dotfiles/zsh/env.zsh
 fi
 export ETC_ZSH_ZSHRC=1
+
+# Check if inside nix-shell
+if test -n "$IN_NIX_SHELL"; then
+    echo "In nix-shell"
+fi
 
 source ~/.zsh_plugins.sh # Load zsh plugins
 

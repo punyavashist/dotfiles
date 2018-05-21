@@ -7,7 +7,7 @@ alias n='nix-env'
 alias nq='nix-env -q | fzf | xargs -I{} nix-env -e {}' # Search installed packages to uninstall
 alias nQ='nix-env -q' # See installed packages
 alias nuu='nix-env -u' # Upgrade packages
-alias ns='nix-shell --command zsh -p'
+alias ns='nix-shell -p'
 
 # _General
 alias op='open'

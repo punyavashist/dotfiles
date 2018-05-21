@@ -16,19 +16,17 @@
     ~/.gitconfig: git/gitconfig
     ~/.gitignore_global: git/gitignore_global
     # Hammerspoon
-    ~/.hammerspoon:
-    # IDEA
-    ~/.ideavimrc: idea/ideavimrc
+    ~/.hammerspoon: hammerspoon
     # Karabiner
     "~/Library/Application Support/Karabiner": karabiner
     # Sublime text
     "~/Library/Application Support/Sublime Text 3/Packages/User": sublime
     # Neovim
     ~/.config/nvim: nvim
+    # Bash
+    ~/.bashrc: bashrc
     # VS Code
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
-    # Tmux
-    ~/.tmux.conf: tmux/tmux.conf
 
 # TODO: add shell command to cd to antibody and download zsh plugins. Maybe need to install Antibody too (ask user).
