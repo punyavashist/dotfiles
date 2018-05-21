@@ -1,4 +1,4 @@
-# Check if inside nix-shell
+# Run zsh if inside nix-shell
 if test -n "$IN_NIX_SHELL"; then
     exec zsh
 fi

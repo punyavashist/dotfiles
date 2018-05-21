@@ -6,12 +6,12 @@ if (( ! $+ETC_ZSH_ZSHRC )); then
 fi
 export ETC_ZSH_ZSHRC=1
 
-# Check if inside nix-shell
-if test -n "$IN_NIX_SHELL"; then
-   # TODO: change prompt
-fi
-
 source ~/.zsh_plugins.sh # Load zsh plugins
+
+# Change prompt when inside nix-shell
+if test -n "$IN_NIX_SHELL"; then
+	PROMPT='%(?.%F{magenta}λ '
+fi
 
 # TODO: Do some smart for loop iteration (source all .zsh files)
 source ~/.dotfiles/zsh/functions/functions.zsh
