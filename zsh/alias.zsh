@@ -192,13 +192,6 @@ alias us='hugo server -D'
 alias ut='hugo server -w' # testing
 alias u='hugo'
 
-# Jekyll
-alias js='bundle exec jekyll serve'
-alias jb='jekyll build'
-
-# Ruby
-alias bx='bundle exec'
-
 # Nginx
 alias ngup='sudo nginx'
 alias ngdown='sudo nginx -s stop'
