@@ -105,7 +105,7 @@
   "workbench.fontAliasing": "auto",
   "terminal.integrated.fontSize": 16,
   "editor.fontLigatures": true,
-  "editor.fontSize": 15,
+  "editor.fontSize": 14,
   // Vim
   "vim.leader": " ",
   "vim.cursorStylePerMode": {
@@ -250,5 +250,6 @@
   "gitlens.keymap": "chorded",
   "latex-workshop.message.update.show": false,
   "workbench.colorTheme": "Ayu Mirage",
-  "gitlens.historyExplorer.enabled": true
+  "gitlens.historyExplorer.enabled": true,
+  "window.zoomLevel": 0
 }
