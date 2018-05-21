@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <root>
 
-<!-- _Modif def -->
+<!-- Modif def -->
 <modifierdef>MY_CAPSLOCK</modifierdef>
 <modifierdef>MY_OPTION_L</modifierdef>
 <modifierdef>MY_CONTROL_L</modifierdef>
 
-<!-- _Profile def  -->
+<!-- Profile def  -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_general</name>
 <url type="shell">
@@ -39,7 +39,7 @@
 <equal>com.googlecode.iterm2</equal>
 </appdef>
 
-<!-- _KM projects -->
+<!-- KM projects -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_PROJECT_HAMMERSPOON</name>
 <url type="shell">
@@ -61,7 +61,7 @@ end tell
 </url>
 </vkopenurldef>
 
-<!-- _KM safari urls -->
+<!-- KM safari urls -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB</name>
 <url type="shell">
@@ -948,7 +948,7 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 </url>
 </vkopenurldef>
 
-<!-- _KM def-->
+<!-- KM def-->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_INBOX</name>
 <url type="shell">
@@ -3508,7 +3508,7 @@ end tell
 </url>
 </vkopenurldef>
 
-<!-- _Alf def -->
+<!-- Alf def -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GISTS</name>
 <url type="shell">

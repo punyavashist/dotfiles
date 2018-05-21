@@ -79,7 +79,6 @@
   "code-runner.clearPreviousOutput": true,
   "code-runner.executorMap": {
     "python": "python3",
-    "go": "cd ~/dev/test/go-test/ && go run"
   },
   // _Zen
   "zenMode.fullScreen": false,

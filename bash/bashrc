@@ -1,4 +1,4 @@
-# Run zsh if inside nix-shell
-if test -n "$IN_NIX_SHELL"; then
-    exec zsh
-fi
+source ~/.dotfiles/zsh/functions/functions.zsh
+source ~/.dotfiles/zsh/functions/fzf-functions.zsh
+source ~/.dotfiles/zsh/functions/git-functions.zsh
+source ~/.dotfiles/zsh/alias.zsh

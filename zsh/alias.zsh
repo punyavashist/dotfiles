@@ -1,20 +1,22 @@
-# _Testing
+# Testing
 
 # TODO: clean it & use only what I need
 
-# _Nix
+# Nix env
 alias n='nix-env'
 alias nq='nix-env -q | fzf | xargs -I{} nix-env -e {}' # Search installed packages to uninstall
 alias nQ='nix-env -q' # See installed packages
 alias nuu='nix-env -u' # Upgrade packages
-alias ns='nix-shell -p'
 
-# _General
+# Nix shell
+alias ns="nix-shell --run zsh"
+alias nss="nix-shell --run zsh -p"
+
+# General
 alias op='open'
 alias dnd='do-not-disturb toggle'
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete" # Recursively delete `.DS_Store` files
 alias g='hub' # Wrapper over git
-alias pip='pip3'
 alias peek='tee >(cat 1>&2)' # Mirror stdout to stderr, useful for seeing data going through a pipe
 alias aet='subl CONTRIBUTING.md'
 alias crypto='curl rate.sx' # Get crypto prices
