@@ -42,7 +42,8 @@ setopt inc_append_history # Immediately append to the history file, not just whe
 setopt extended_glob # Use extended globbing syntax
 setopt auto_cd # Auto change to a dir without typing cd
 
-# eval "$(hub alias -s)" # alias git -> hub
+eval "$(hub alias -s)" # git -> hub
+eval "$(direnv hook zsh)" # Direnv
 
 [[ -f ~/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh ]] && . ~/.yarn-cache/.global/node_modules/tabtab/.completions/yarn.zsh # Yarn autocomplete
 

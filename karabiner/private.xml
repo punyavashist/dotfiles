@@ -8187,7 +8187,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_CHROME
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::V,
+KeyCode::T,
 KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE
 </autogen>
 <autogen>
@@ -8212,7 +8212,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_DR_RACKET
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::T,
+KeyCode::V,
 KeyCode::VK_OPEN_URL_KM_OPEN_MINDNODE
 </autogen>
 <autogen>
