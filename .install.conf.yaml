@@ -1,3 +1,4 @@
+# Settings
 - defaults:
     link:
       create: true
@@ -6,9 +7,13 @@
 
 - clean: ['~', '~/.config']
 
+# Run shell commands
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
 
+# TODO: add shell command to cd to antibody and download zsh plugins. Maybe need to install Antibody too (ask user).
+
+# Symlink files
 - link:
     # Zsh
     ~/.zshrc: zsh/zshrc.zsh
@@ -29,10 +34,8 @@
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
 
-# TODO: add shell command to cd to antibody and download zsh plugins. Maybe need to install Antibody too (ask user).
-
 # macOS Time Machine install:
-# 1. Boot into new macOS with harddrive with Time Machine backup connected.
+# 1. Boot into new macOS with hard drive that has Time Machine backup inside.
 # 1. Boot macOS from time machine.
 
 # macOS fresh install:
@@ -42,7 +45,7 @@
 # 2. When logged in, open Time Machine Migration Assistant and chose what you want to transfer from it.
 # 2. You can select specific things like Applications, Documents, etc.
 
-# 2. `~/Library/Application Support/` -> apps store auxiliary files.
-# 2. `~/Library/Preferences/` -> apps store preferences.
+# 2. `~/Library/Application Support/` -> where apps store auxiliary files.
+# 2. `~/Library/Preferences/` -> where apps store preferences.
 
 # 3. Clone dotfiles and run ./install.
