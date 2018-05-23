@@ -3,9 +3,9 @@
 
 ![](https://i.imgur.com/zAKij1K.jpg)
 
-These are the various configuration files I use on macOS. I wrote about how I customise and use my shell in article [here](https://medium.com/@NikitaVoloboev/pretty-and-fast-shell-97ea870f2805).
+These are the various configuration files I use on macOS. I wrote about how you can customise your shell experience in [an article](https://medium.com/@NikitaVoloboev/pretty-and-fast-shell-97ea870f2805).
 
-You can also see my top used applications, safari exensions and alfred workflows I use [here](https://github.com/nikitavoloboev/my-mac-os#readme).
+You can also see my top used applications, Safari exensions and Alfred workflows I use [here](https://github.com/nikitavoloboev/my-mac-os#readme).
 
 ##### Contents
 - [Install](#install)
@@ -23,7 +23,7 @@ You can also see my top used applications, safari exensions and alfred workflows
 ## Install
 To install my configration, clone the repository and run: `./install`.
 
-This will automatically setup all the configuration files using [Dotbot](https://github.com/anishathalye/dotbot).
+This will automatically setup all the configuration files using [Dotbot](https://github.com/anishathalye/dotbot). Look [here](https://github.com/nikitavoloboev/dotfiles/blob/master/.install.conf.yaml#L1) for what exactly it will do.
 
 I describe my custom configuration I use below. It is heavily tailored to my own workflow so it is best you take ideas from it rather than copying the entire config.
 
