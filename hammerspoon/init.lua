@@ -30,8 +30,8 @@ require = rawrequire
 -- Override print so that it can render styled text objects directly in the console
 -- this needs to happen before hs.ipc is loaded since it also overrides print for mirroring
 _asm.hs_default_print = print
-print = console.printStyledtext
-print("-- " .. os.date()) -- Know when config gets sourced again
+-- print = console.printStyledtext
+-- print("-- " .. os.date()) -- Know when config gets sourced again
 
 -- Something steals focus from an application which was focused before HS starts; capture that
 -- window and then we'll switch back to it at the end
