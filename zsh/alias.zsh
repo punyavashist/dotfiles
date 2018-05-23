@@ -1,6 +1,9 @@
-# Testing
+# Temp
 
 # TODO: clean it & use only what I need
+
+# Nix
+alias nr='nix repl'
 
 # Nix env
 alias n='nix-env'
@@ -126,12 +129,12 @@ alias ks='docker ps'
 alias ksq='docker ps -q'
 alias kk='docker kill'
 
-# node
+# Node
 alias nd='node'
 alias ndi='node install'
 alias n.='node .'
 
-# yarn
+# Yarn
 alias i='yarn'
 alias iw='yarn && yarn start'
 alias il='yarn list'
@@ -140,13 +143,6 @@ alias ia='yarn add'
 alias ir='yarn run'
 alias im='yarn remove'
 alias is='yarn start'
-
-# npm - TODO: remove
-alias nls='npm ls'
-# alias nu='npm update'
-alias nt='npm init'
-alias nb='npm run build'
-alias nr='npm run'
 
 # Go
 alias o='go'
@@ -261,7 +257,7 @@ alias dm='cd ~/dev/games'
 alias da='cd ~/dev/'
 # alias ds='cd ~/dev/forks/'
 alias ds='cd ~/dev/curated/'
-alias dla='cd ~/dev/github/learn-anything'
+alias dla='cd ~/dev/orgs/learn-anything'
 alias dz='cd ~/.dotfiles'
 alias dk='cd ~/Documents'
 

@@ -2554,26 +2554,6 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_CAPRINE</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: Caprine"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_EMACS</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: Emacs"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_OBS</name>
 <url type="shell">
 osascript -e '
@@ -2674,16 +2654,6 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_NUMI</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: Numi"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_TRANSMISSION</name>
 <url type="shell">
 osascript -e '
@@ -2694,41 +2664,11 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_FOG</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: Fog"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_DR_RACKET</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: DrRacket"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_SCREENFLOW</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "open: Screenflow"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_AFFINITY_PHOTO</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: Affinity photo"
 end tell
 '
 </url>
@@ -2843,24 +2783,12 @@ end tell
 '
 </url>
 </vkopenurldef>
-
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_HAZEL</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "open: Hazel"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_PYCHARM</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: Pycharm"
 end tell
 '
 </url>
@@ -2966,16 +2894,6 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_AIRTABLE</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: Airtable"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_LITTLE_SNITCH_CONFIGURATION</name>
 <url type="shell">
 osascript -e '
@@ -3006,16 +2924,6 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_POCKET</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: Pocket"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_IBOOKS</name>
 <url type="shell">
 osascript -e '
@@ -3036,16 +2944,6 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_LICECAP</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: Licecap"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_DISCORD</name>
 <url type="shell">
 osascript -e '
@@ -3061,16 +2959,6 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "open: Sketch"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_CODERUNNER</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: Coderunner"
 end tell
 '
 </url>
@@ -3131,16 +3019,6 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "open: Contacts"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_TEXPAD</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: Texpad"
 end tell
 '
 </url>
@@ -3361,26 +3239,6 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "open: Tweetbot"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_INTELLIJ</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: Intellij"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_CHATTY</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "open: Chatty"
 end tell
 '
 </url>
@@ -4571,14 +4429,6 @@ tell application "Alfred 3" to run trigger "feedback" in workflow "tylereich.col
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "focus" in workflow "nikivi.block.websites" with argument ""
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_JAVA_PROJECTS_SEARCH</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "javaProjects" in workflow "com.codebud7.alfred-intellij" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -6924,7 +6774,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA
 <autogen>
 __KeyToKey__
 KeyCode::E,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_LISTENONREPEAT
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEETCODE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7123,7 +6973,7 @@ KeyCode::CURSOR_LEFT
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::Z,
+KeyCode::S,
 KeyCode::G,
 KeyCode::O,
 KeyCode::L,
@@ -7145,18 +6995,6 @@ KeyCode::I,
 KeyCode::N,
 KeyCode::T,
 KeyCode::F,
-KeyCode::9, ModifierFlag::SHIFT_L,
-KeyCode::0, ModifierFlag::SHIFT_L,
-KeyCode::CURSOR_LEFT
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::S,
-KeyCode::P,
-KeyCode::R,
-KeyCode::I,
-KeyCode::N,
-KeyCode::T,
 KeyCode::9, ModifierFlag::SHIFT_L,
 KeyCode::0, ModifierFlag::SHIFT_L,
 KeyCode::CURSOR_LEFT
@@ -8178,7 +8016,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX_DEV
 <autogen>
 __KeyToKey__
 KeyCode::H,
-KeyCode::VK_OPEN_URL_KM_OPEN_INTELLIJ
+KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8204,11 +8042,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_SPOTIFY
 __KeyToKey__
 KeyCode::C,
 KeyCode::VK_OPEN_URL_KM_OPEN_SCRIPT_EDITOR
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::Y,
-KeyCode::VK_OPEN_URL_KM_OPEN_DR_RACKET
 </autogen>
 <autogen>
 __KeyToKey__
