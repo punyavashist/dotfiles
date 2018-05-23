@@ -5,6 +5,7 @@
       relink: true
       # force: true # Swap the original file
 
+# TODO: ?
 - clean: ['~', '~/.config']
 
 # Run shell commands
@@ -12,6 +13,11 @@
   - [git submodule update --init --recursive, Installing submodules]
 
 # TODO: add shell command to cd to antibody and download zsh plugins. Maybe need to install Antibody too (ask user).
+# TODO: install Nix
+# TODO: install all the commands I use with Nix
+
+# TODO: look into https://github.com/LnL7/nix-darwin and maybe add/use it
+# TODO: look into https://github.com/rycee/home-manager and maybe add/use it
 
 # Symlink files
 - link:
