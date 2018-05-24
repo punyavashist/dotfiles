@@ -74,6 +74,8 @@ geb(){
 gw() {
     git add .
     git commit -m "${(j: :)@}"
+    # TODO: check if there is configured push destination. If not, don't push.
+    # TODO: change other functions there to do the same
     git push
 }
 

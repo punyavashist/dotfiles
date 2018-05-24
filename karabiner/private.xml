@@ -1020,16 +1020,6 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_4</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "g: open 4th iTerm tab"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_IN_CLIPBOARD_IN_SAFARI</name>
 <url type="shell">
 osascript -e '
@@ -5822,11 +5812,6 @@ KeyCode::VK_OPEN_URL_KM_NEW_2DO_QUICK_TASK
 __KeyToKey__
 KeyCode::COMMAND_L,
 KeyCode::VK_OPEN_URL_ALFRED_ULYSSES_GROUPS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::M,
-KeyCode::VK_OPEN_URL_ALFRED_TRANSMIT
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10766,11 +10751,6 @@ KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_1
 __KeyToKey__
 KeyCode::DOT,
 KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_2
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::QUOTE,
-KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_4
 </autogen>
 <autogen>
 __KeyToKey__

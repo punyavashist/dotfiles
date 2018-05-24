@@ -14,5 +14,6 @@ export NODE_PATH='/usr/local/lib/node_modules'
 # PATH
 export PATH=$PATH/usr/local/bin
 export PATH=$PATH:~/.dotfiles/bin
-export PATH=$PATH:~/go/bin # Go
 export PATH=$PATH:~/.cargo/bin # Rust
+export GOPATH="$(go env GOPATH)"
+export PATH="$PATH:$GOPATH/bin" # Go
