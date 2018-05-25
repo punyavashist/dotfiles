@@ -214,7 +214,6 @@
     }
   ],
   // Go
-  "go.autocompleteUnimportedPackages": true,
   "go.liveErrors": {
     "enabled": true,
     "delay": 500

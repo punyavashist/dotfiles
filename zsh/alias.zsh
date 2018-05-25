@@ -17,6 +17,7 @@ alias nss="nix-shell --run zsh -p"
 
 # General
 alias op='open'
+alias env='env | fzf'
 alias dnd='do-not-disturb toggle'
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete" # Recursively delete `.DS_Store` files
 alias g='hub' # Wrapper over git
