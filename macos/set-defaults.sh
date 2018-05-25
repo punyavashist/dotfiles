@@ -2,11 +2,11 @@
 
 # Set reasonable macOS defaults.
 # Inspired by: https://github.com/mathiasbynens/dotfiles
-# More can be found here: https://gist.github.com/brandonb927/3195465
+# More commands here: https://gist.github.com/brandonb927/3195465
 
 # TODO: see which of these commands no longer work on High Sierra and change/remove them.
 
-# If not ran on mac, exit
+# If not ran on macOS, exit
 if [ "$(uname -s)" != "Darwin" ]; then
 	exit 0
 fi

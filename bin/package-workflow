@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# Packages Alfred workflows.
-# In my case it packages workflows to ~/Desktop
+# Packages Alfred workflows to ~/Desktop.
 
 readonly workflow_dir="${1}"
 readonly info_plist="${workflow_dir}/info.plist"

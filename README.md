@@ -43,7 +43,7 @@ My Neovim config can be seen [here](nvim/init.vim). I use [Ayu theme](https://gi
 ![](https://i.imgur.com/m6CK29L.png)
 
 ## VS Code
-My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has very well built [vim mode](https://github.com/VSCodeVim/Vim).
+My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has well built [vim mode](https://github.com/VSCodeVim/Vim).
 
 Configs I use for it can be seen [here](https://github.com/nikitavoloboev/dotfiles/tree/master/vscode). And [here](https://wiki.nikitavoloboev.xyz/text-editors/vs-code/vs-code-extensions.html) is a list of extensions I use.
 
@@ -70,7 +70,7 @@ I use many aliases to get around my system as fast as possible. You can view the
 ### Interesting aliases and functions
 There is quite a lot of awesome programs I use from my command line. You can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps) for some of them.
 
-I also love customising my shell experience with various aliases and zsh functions. Here are some that I like and use very often:
+I also love customising my shell experience with various aliases and zsh functions. Here are some that I like and use often:
 
 #### Commit and push repository to GitHub in one command
 
@@ -122,7 +122,7 @@ gll(){
 }
 ```
 
-I use this very often to quickly clone the URL that I copied from GitHub.
+I use this often to quickly clone the URL that I copied from GitHub.
 
 #### Trash files / folders
 A lot more safer than `rm -rf` files as you can always check out `~/.Trash` in cases of emergency or mistakes.
@@ -134,7 +134,7 @@ re(){
 ```
 
 ### Fzf
-[fzf](https://github.com/junegunn/fzf) is a command line tool that lets you fuzzy search on text. I use it very often now for fuzzy searching for files to open with neovim, or fuzzy searching through my commit messages and more.
+[fzf](https://github.com/junegunn/fzf) is a command line tool that lets you fuzzy search on text. I use it often now for fuzzy searching for files to open with neovim, or fuzzy searching through my commit messages and more.
 
 Here are some of my favourite commands I use with it:
 
