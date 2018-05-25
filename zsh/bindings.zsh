@@ -1,32 +1,17 @@
-# Zsh keyboard bindings.
-
-set -o vi # Vi movement in iTerm
-
+# TODO: clean
 bindkey -e # Emacs keymap
-bindkey -v # Vim keymap
 
-# Change cursor based on vim mode. Normal mode (underline). Insert mode (block).
-function zle-keymap-select {
-  if [ $KEYMAP = vicmd ]; then
-    printf "\033[4 q" # Underline
-  else
-    printf "\033[6 q" # Block
-  fi
-}
-function zle-line-finish { printf "\033[6 q" }
-zle -N zle-line-finish
-zle -N zle-keymap-select
-
-export KEYTIMEOUT=1 # Short ESC delay
+export KEYTIMEOUT=1 # Shorter delay typing
 
 # Control
 bindkey "^f" beginning-of-line
-bindkey "^g" end-of-line
+bindkey "^g" end-of-line # TODO: change to ctrl + : instead
 bindkey "^k" forward-word
 bindkey "^j" backward-word
+bindkey "^e" kill-whole-line
+
 # bindkey "^o" kill-word
 # bindkey "^o" '^Ua^M' # Run 'a' command TODO: doesnt work
-bindkey "^e" kill-whole-line
 bindkey -M vicmd "^[" vi-insert
 # bindkey '^:' forward-word # Move back a word
 # bindkey '^o' backward-word # Move forward a word

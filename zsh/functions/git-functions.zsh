@@ -1,5 +1,3 @@
-# Git functions.
-
 # gz - update readme commit
 gz(){
   git add README.md

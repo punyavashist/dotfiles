@@ -1,8 +1,18 @@
-# Zsh functions.
-
 # Tester (I change it often)
-T(){
-  gwu contributing
+# T() {
+
+# }
+
+# Search aliases/functions
+falias() {
+    CMD=$(
+        (
+            (alias)
+            (functions | grep "()" | cut -d ' ' -f1 | grep -v "^_" )
+        ) | fzf | cut -d '=' -f1
+    );
+
+    eval $CMD
 }
 
 unalias ni
@@ -24,15 +34,6 @@ function co {
     open -a Xcode "$proj"
   else
     echo "No Xcode project detected."
-  fi
-}
-
-# Run main.go if it exists, if not, run test.go.
-oa(){
-  if [ -f main.go ]; then
-    go run main.go
-  else
-    go run test.go
   fi
 }
 
@@ -447,10 +448,9 @@ shift
 }
 
 # List commit hashes
-function commits() {
+commits() {
   git log $1 --oneline --reverse | cut -d' ' -f 1 | tr '/n' ' '
 }
-
 
 # ram <process-name> - Find how much RAM a process is taking.
 ram() {
