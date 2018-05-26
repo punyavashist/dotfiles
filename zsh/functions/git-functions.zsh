@@ -1,24 +1,25 @@
-# gz - update readme commit
+# Update readme commit
 gz(){
   git add README.md
-  git commit -m "update readme"
+  git commit -m "readme: update"
   git push
 }
 
-# make PRs TODO: test it
+# Make PR
 pr() {
+  # TODO: test it
   git push -u origin "$1"
   hub pull-request -h "$1" -F -
 }
 
-# Fork cloned repo
+# Fork repo
 gf(){
   hub fork
   git branch --set-upstream-to nikitavoloboev/master master
   git remote rename origin upstream; git remote rename nikitavoloboev origin
 }
 
-# Fork cloned repo and move it to ~/dev/forks
+# Fork repo and move it to ~/dev/forks
 gfandmove(){
   hub fork
   git branch --set-upstream-to nikitavoloboev/master master
@@ -28,6 +29,7 @@ gfandmove(){
   cd ~/dev/forks/$CLONE_DIR_NAME
 }
 
+# TODO: ?
 grus(){
   # TODO: if it is a fork, get the link of the fork and fill it here instead of manually adding it
   git remote add upstream "$1"
@@ -49,26 +51,19 @@ gri(){
   git rm --cached "$*"
 }
 
-# gwh <msg> - change <msg> commit
-gwh(){
-  git add .
-  git commit -m "change $*"
-  git push
-}
-
-# Update contributing commit
+# Update contributing file commit
 gwt(){
   git add CONTRIBUTING.md
-  git commit -m "update contributing"
+  git commit -m "contributing: update"
   git push
 }
 
-# geb <branch-name> - create new branch
+# Create new branch. geb <branch-name>
 geb(){
   git checkout -b "$1"
 }
 
-# gw <msg> - commit all changes with <msg>
+# Commit all changes with <commit-msg>. gw <commit-msg>
 gw() {
     git add .
     git commit -m "${(j: :)@}"
@@ -77,54 +72,54 @@ gw() {
     git push
 }
 
-# gwa <commit-msg> - commit all changes `add <commit-msg>`
+# Commit all changes with `add <commit-msg>`. gwa <commit-msg>
 gwa(){
   git add .
   git commit -m "add $*"
   git push
 }
 
-# gwf <commit-msg> - commit all changes with `<fix commit-msg>`
+# Commit all changes with `<fix commit-msg>`. gwf <commit-msg>
 gwf(){
   git add .
   git commit -m "fix $*"
   git push
 }
 
-# gwr <commit-msg> - commit all changes with `<remove commit-msg>`
+# Commit all changes with `<remove commit-msg>`. gwr <commit-msg>
 gwr(){
   git add .
   git commit -m "remove $*"
   git push
 }
 
-# gwi <msg> - commit all changes with `improve <msg>`
+# Commit all changes with `improve <msg>`. gwi <msg>
 gwi() {
     git add .
     git commit -m "improve $*"
     git push
 }
 
-# gwe <msg> - commit all changes with `update <msg>`
+# Commit all changes with `update <msg>`. gwe <msg>
 gwu() {
     git add .
     git commit -m "update $*"
     git push
 }
 
-# ggs - commit all changes with generic `update`
+# Commit all changes with `update`
 ggs() {
     git add .
     git commit . -m 'update'
     git push
 }
 
-# gc <commit-msg> - write quick commit message
+# Write quick commit message. gc <commit-msg>
 gc() {
     git commit -m "$*"
 }
 
-# g. - cd to root of .git project
+# cd to root of .git project
 g.() {
   export git_dir="$(git rev-parse --show-toplevel 2> /dev/null)"
   if [ -z $git_dir ]
@@ -135,38 +130,38 @@ g.() {
   fi
 }
 
-# mit - create MIT license file for Nikita Voloboev
+# Create MIT license file for Nikita Voloboev
 mit() {
   license-up mit Nikita Voloboev nikitavoloboev.xyz
   git add license
 }
 
-# mitla - create MIT license file for Learn Anything
+# Create MIT license file for Learn Anything
 mitla () {
   license-up mit Learn Anything, learn-anything.xyz
   git add license
 }
 
-# NOTE: not sure
-# gp <link> - pull changes made from PR to head
+# TODO: not sure
+# Pull changes made from PR to head. gp <link>
 gp() {
     git pull origin pull/"$1"/head
 }
 
-# mg <dir-name> - create dir, go to it and initialise it with git
+# Create dir, go to it and initialise it with git. mg <dir-name>
 mg() {
     mkdir "$1"
     cd "$1"
     git init
 }
 
-# ggu - git push to origin master of currently open Safari tab
+# git push to origin master of currently open Safari tab
 ggu() {
     git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
     git push -u origin master
 }
 
-# ggo - git add origin from currently open Safari tab and push to master there
+# git add origin from currently open Safari tab and push to master there
 ggo() {
     git add .
     git commit -m "Init"
@@ -175,7 +170,7 @@ ggo() {
     git push --set-upstream origin master
 }
 
-# ggg - git add origin from currently open Safari tab and push to master there
+# git add origin from currently open Safari tab and push to master there
 ggg() {
     git init
     git add .
@@ -184,7 +179,7 @@ ggg() {
     git push $(osascript -e 'tell application "Safari" to return URL of front document') master
 }
 
-# ggla - git initialise Learn Anything repository and make first commit
+# git initialise Learn Anything repository and make first commit
 ggla() {
     git init
     license-up mit Learn Anything, learn-anything.xyz
@@ -192,7 +187,7 @@ ggla() {
     git commit -m "Init"
 }
 
-# ggi - initialise repository and add MIT license
+# Initialise repository and add MIT license
 ggi() {
     git init
     license-up mit Nikita Voloboev nikitavoloboev.xyz
@@ -200,23 +195,23 @@ ggi() {
     git commit -m "Init"
 }
 
-# gao - git remote add origin of link found in clipboard
+# git remote add origin of link found in clipboard
 gao() {
     git remote add origin "$(pbpaste)"
 }
 
-# gL <git-url> - git clone and cd instantly to cloned repo
+# git clone and cd instantly to cloned repo. gcd <git-url>
 gcd() {
    git clone "$(pbpaste)" && cd "${1##*/}"
 }
 
-# gll - git clone link in clipboard
+# git clone link in clipboard
 gll(){
     git clone "$(pbpaste)"
     # TODO: cd into cloned project (need to extract name with regex)
 }
 
-# ogg - go get currently active Safari URL
+# go get currently active Safari URL
 ogg() {
   # Get url
   url=$(osascript -e 'tell application "Safari" to return URL of front document')
@@ -227,12 +222,11 @@ ogg() {
 }
 
 # TODO: ?
-# igit -
 igit() {
   git rev-parse HEAD > /dev/null 2>&1
 }
 
-# gte - see contents of .git from current dir recusively as a tree
+# See contents of .git from current dir recusively as a tree
 gte() {
 	tree -aC -I '.git' --dirsfirst "$@" | less -FRNX
 }

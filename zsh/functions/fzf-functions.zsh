@@ -1,4 +1,7 @@
-# Fzf functions.
+# Pipe command to fzf. f <cmd>
+f(){
+  "$@" | fzf
+}
 
 unalias z 2> /dev/null # Unbind z
 # z command + fzf
@@ -154,20 +157,13 @@ fm() {
   git checkout $(echo "$commit" | sed "s/ .*//")
 }
 
-fea() {
-  cd ~/.dotfiles
-  local files
-  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
-  [[ -n "$files" ]] && nvim "${files[@]}"
-}
-
 fe() {
   local files
   IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
   [[ -n "$files" ]] && nvim "${files[@]}"
 }
 
-f() {
+fs() {
   local files
   IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
   [[ -n "$files" ]] && subl "${files[@]}"

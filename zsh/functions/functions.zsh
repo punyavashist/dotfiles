@@ -1,7 +1,7 @@
-# Tester (I change it often)
-# T() {
+# Temp
+T() {
 
-# }
+}
 
 # Search aliases/functions
 falias() {
@@ -16,14 +16,9 @@ falias() {
 }
 
 unalias ni
-# Install packages
+# Install Nix packages
 ni(){
   nix-env -iA nixpkgs."$1"
-}
-
-# Search aliases you have defined
-l(){
-  alias | grep $1 |awk -F= '{printf "%s\t%s\n", $1, $2}'
 }
 
 # Open Xcode projects from the command line
@@ -42,7 +37,7 @@ lowercaseCurrentDir(){
   for i in *; do mv $i ${(L)i}; done
 }
 
-# Show my $PATH
+# Show $PATH
 path(){
   echo -e ${PATH//:/\\n}
 }
