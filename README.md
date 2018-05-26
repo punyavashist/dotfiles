@@ -1,5 +1,5 @@
 # My configuration files for macOS [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
-> Includes Zsh, Karabiner, VS Code, Sublime, Neovim, Nix, Hammerspoon
+> Zsh, Karabiner, VS Code, Sublime, Neovim, Nix, Hammerspoon
 
 ![](https://i.imgur.com/3cPVMJQ.jpg)
 

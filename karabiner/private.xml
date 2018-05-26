@@ -2062,11 +2062,11 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_MAP_RESEARCH</name>
+<name>KeyCode::VK_OPEN_URL_KM_MAP_KNOWLEDGE</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "map: research"
+do script "map: knowledge"
 end tell
 '
 </url>
@@ -7649,6 +7649,11 @@ KeyCode::VK_OPEN_URL_KM_EDIT_DOTFILES_README
 __KeyToKey__
 KeyCode::S,
 KeyCode::VK_OPEN_URL_KM_WIKI_SUMMARY
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::P,
+KeyCode::VK_OPEN_URL_KM_MAP_KNOWLEDGE
 </autogen>
 <autogen>
 __KeyToKey__

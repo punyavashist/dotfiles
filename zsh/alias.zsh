@@ -148,6 +148,7 @@ alias is='yarn start'
 # Go
 alias o='go'
 alias org='richgo'
+alias og.='go get ./...' # Go get all packages for current project
 alias ot='playgo'
 alias or='go run'
 alias oo='go install'
