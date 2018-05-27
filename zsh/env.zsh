@@ -18,5 +18,6 @@ export PATH=$PATH:~/.dotfiles/bin
 export PATH=$PATH:~/.cargo/bin # Rust
 export GOPATH="$(go env GOPATH)"
 export PATH="$PATH:$GOPATH/bin" # Go
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH # Mac ports
 
 typeset -U PATH # Remove duplicates in $PATH

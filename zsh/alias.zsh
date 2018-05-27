@@ -69,7 +69,6 @@ alias ma='man'
 # alias aw='k -h' TODO: ?
 alias c='ccat'
 alias rec='asciinema rec'
-alias b='bd'
 alias ws='workflow-install -s source' # Symlink `source` directory
 alias dus='du -s'
 alias t='touch'

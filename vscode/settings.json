@@ -250,5 +250,5 @@
   "latex-workshop.message.update.show": false,
   "workbench.colorTheme": "Ayu Mirage",
   "gitlens.historyExplorer.enabled": true,
-  "window.zoomLevel": 0
+  "window.zoomLevel": -1
 }

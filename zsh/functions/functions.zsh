@@ -2,6 +2,12 @@
 T() {
 }
 
+# Pipe command to clipboard. b <cmd>
+b(){
+  "$@" | pbcopy
+}
+
+
 # Search aliases/functions
 falias() {
     CMD=$(
