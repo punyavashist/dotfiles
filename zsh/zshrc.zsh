@@ -8,5 +8,3 @@ source ~/.dotfiles/zsh/functions/fzf-functions.zsh
 source ~/.dotfiles/zsh/functions/git-functions.zsh
 source ~/.dotfiles/zsh/bindings.zsh
 source ~/.dotfiles/zsh/alias.zsh
-
-# source ~/.dotfiles/nix/zsh-nix-shell/nix-shell.plugin.zsh
