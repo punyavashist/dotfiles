@@ -19,14 +19,14 @@ gf(){
   git remote rename origin upstream; git remote rename nikitavoloboev origin
 }
 
-# Fork repo and move it to ~/dev/forks
+# Fork repo and move it to ~/src/forks
 gfandmove(){
   hub fork
   git branch --set-upstream-to nikitavoloboev/master master
   git remote rename origin upstream; git remote rename nikitavoloboev origin
   CLONE_DIR_NAME=$(basename "$PWD")
-  cd .. && mv $CLONE_DIR_NAME ~/dev/forks
-  cd ~/dev/forks/$CLONE_DIR_NAME
+  cd .. && mv $CLONE_DIR_NAME ~/src/forks
+  cd ~/src/forks/$CLONE_DIR_NAME
 }
 
 # TODO: ?
