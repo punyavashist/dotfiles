@@ -1,6 +1,5 @@
 # Temp
 T() {
-
 }
 
 # Search aliases/functions

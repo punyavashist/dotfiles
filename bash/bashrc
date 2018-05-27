@@ -1,4 +1,1 @@
-source ~/.dotfiles/zsh/functions/functions.zsh
-source ~/.dotfiles/zsh/functions/fzf-functions.zsh
-source ~/.dotfiles/zsh/functions/git-functions.zsh
 source ~/.dotfiles/zsh/alias.zsh

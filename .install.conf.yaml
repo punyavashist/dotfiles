@@ -51,7 +51,7 @@
 # 2. When logged in, open Time Machine Migration Assistant and chose what you want to transfer from it.
 # 2. You can select specific things like Applications, Documents, etc.
 
-# 2. `~/Library/Application Support/` -> where apps store auxiliary files.
-# 2. `~/Library/Preferences/` -> where apps store preferences.
+# `~/Library/Application Support/` -> where apps store auxiliary files.
+# `~/Library/Preferences/` -> where apps store preferences.
 
 # 3. Clone dotfiles and run ./install.

@@ -1395,7 +1395,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: clone repo to ~/dev/clones and open with VS Code"
+do script "g: clone repo to ~/src/clones and open with VS Code"
 end tell
 '
 </url>
@@ -1405,7 +1405,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: fork repo to ~/dev/forks and open with VS Code"
+do script "g: fork repo to ~/src/forks and open with VS Code"
 end tell
 '
 </url>
@@ -1415,7 +1415,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: clone repo to ~/dev/clones and open with Sublime"
+do script "g: clone repo to ~/src/clones and open with Sublime"
 end tell
 '
 </url>
@@ -1485,7 +1485,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: clone repo to ~/dev/clones"
+do script "g: clone repo to ~/src/clones"
 end tell
 '
 </url>
@@ -2079,6 +2079,16 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "edit: likes"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_FZF_FUNCTIONS</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "edit: fzf functions"
 end tell
 '
 </url>
@@ -6759,7 +6769,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_QUORA
 <autogen>
 __KeyToKey__
 KeyCode::E,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_LEETCODE
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_LISTENONREPEAT
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9237,13 +9247,13 @@ __BlockUntilKeyUp__ KeyCode::3,
 
 <autogen>
 __KeyToKey__
-KeyCode::F19,
-KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_DAYONE
+KeyCode::G,
+KeyCode::VK_OPEN_URL_KM_EDIT_GIT_FUNCTIONS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::G,
-KeyCode::VK_OPEN_URL_KM_EDIT_GIT_FUNCTIONS
+KeyCode::F,
+KeyCode::VK_OPEN_URL_KM_EDIT_FZF_FUNCTIONS
 </autogen>
 <autogen>
 __KeyToKey__

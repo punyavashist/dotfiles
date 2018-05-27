@@ -27,7 +27,7 @@ alias crypto='curl rate.sx' # Get crypto prices
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias lc='tokei'
 alias sf='screenfetch -E'
-alias me='open -a "Marked 2" README.md'
+alias rw='open -a "Marked 2" README.md'
 alias mr='open -a "Marked 2"'
 alias _='sudo'
 alias ae='subl README.md' # Edit readme file
@@ -248,25 +248,24 @@ alias essh='nvim ~/.ssh/config' # ssh config
 alias et='nvim ~/.dotfiles/tmux/tmux.conf.local' # tmux config
 
 # cd places
-alias dw='cd ~/dev/web'
+alias dw='cd ~/src/web'
 alias dsh='cd ~/.ssh'
-alias dn='cd ~/dev/clones'
-alias di='cd ~/dev/ideas'
+alias dn='cd ~/src/clones'
+alias di='cd ~/src/ideas'
 alias dg='cd ~/go/src/github.com/nikitavoloboev'
-alias dl='cd ~/dev/learn'
-alias dt='cd ~/dev/test'
-alias dm='cd ~/dev/games'
-alias da='cd ~/dev/'
-# alias ds='cd ~/dev/forks/'
-alias ds='cd ~/dev/curated/'
-alias dla='cd ~/dev/orgs/learn-anything'
+alias dl='cd ~/src/learn'
+alias dt='cd ~/src/test'
+alias dm='cd ~/src/games'
+alias da='cd ~/src/'
+alias ds='cd ~/src/curated/'
+alias dla='cd ~/src/orgs/learn-anything'
 alias dz='cd ~/.dotfiles'
 alias dk='cd ~/Documents'
 
 # Xcode
-alias dx='cd ~/dev/Xcode'
-alias dxi='cd ~/dev/Xcode/iOS'
-alias dxm='cd ~/dev/xcode/macOS'
+alias dx='cd ~/src/Xcode'
+alias dxi='cd ~/src/Xcode/iOS'
+alias dxm='cd ~/src/xcode/macOS'
 
 # Utilities
 alias ungit="find . -name '.git' -exec rm -rf {} \;" # Remove git from a project
