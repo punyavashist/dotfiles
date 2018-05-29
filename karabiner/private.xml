@@ -15,10 +15,10 @@
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_gaming</name>
+<name>KeyCode::VK_OPEN_URL_SHELL_switchprofile_games</name>
 <url type="shell">
-<![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name gaming]]>
-<![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name gaming]]>
+<![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name games]]>
+<![CDATA[    /Applications/Karabiner.app/Contents/Library/bin/karabiner select_by_name games]]>
 </url>
 </vkopenurldef>
 <vkopenurldef>
@@ -2454,6 +2454,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_KEYCHAIN_ACCESS</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "open: keychain access"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_KEYNOTE</name>
 <url type="shell">
 osascript -e '
@@ -3306,16 +3316,6 @@ end tell
 
 <!-- KM chrome-->
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_CANVAS</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "c: Canvas"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_CODESANDBOX</name>
 <url type="shell">
 osascript -e '
@@ -3496,14 +3496,6 @@ tell application "Alfred 3" to run trigger "search" in workflow "com.klaascuveli
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TLDR</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "tldr" in workflow "com.chedanji.tldr2.1" with argument ""
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB_REPOS</name>
 <url type="shell">
 osascript -e '
@@ -3576,26 +3568,10 @@ tell application "Alfred 3" to run trigger "show_browse" in workflow "com.vdesab
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GO_FAST_DIR</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "go fast" in workflow "nikivi.search.files" with argument ""
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_HISTORY</name>
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "show_recent_tracks" in workflow "com.vdesabou.spotify.mini.player" with argument ""
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_CURL_URL</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "curl" in workflow "se.psu.alfred.download-file" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3632,14 +3608,6 @@ tell application "Alfred 3" to run trigger "lucky" in workflow "net.deanishe.alf
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_KARABINER_PROFILES</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "switch" in workflow "com.genkisugimoto.alfredworkflow.karabiner" with argument ""
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_UNITS</name>
 <url type="shell">
 osascript -e '
@@ -3660,14 +3628,6 @@ tell application "Alfred 3" to run trigger "chrome profiles" in workflow "com.md
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "history" in workflow "com.peterschmalfeldt.ChromeHistory" with argument ""
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_CHEATSHEET</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "cheatsheet" in workflow "com.mutdmour.cheatsheet" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3704,14 +3664,6 @@ tell application "Alfred 3" to run trigger "twitter" in workflow "nikivi.search-
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_COMMIT_FOLDERS</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "commit" in workflow "nikivi.commit.folders" with argument ""
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_FILTER_KNOWLEDGE_WIKI_FOLDERS</name>
 <url type="shell">
 osascript -e '
@@ -3731,7 +3683,7 @@ tell application "Alfred 3" to run trigger "wiki" in workflow "nikivi.a.manage.w
 <name>KeyCode::VK_OPEN_URL_ALFRED_WATCH_DROPBOX_SHARES</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "dropbox" in workflow "com.vitorgalvao.alfred.directories" with argument ""
+tell application "Alfred 3" to run trigger "dropbox" in workflow "nikivi.dropbox.upload" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3792,26 +3744,10 @@ tell application "Alfred 3" to run trigger "goto" in workflow "nikivi.go.to.sub"
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_NEW_NOTE</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "note" in workflow "com.surrealroad.alfred-note-icloud" with argument ""
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_APPLE_MAPS</name>
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "searchMaps" in workflow "search.apple.maps" with argument ""
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_CHROME_BOOKMARKS</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "search chrome" in workflow "com.mdreizin.chrome.bookmarks" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -3912,7 +3848,7 @@ tell application "Alfred 3" to run trigger "web searches" in workflow "nikivi.we
 </url>
 </vkopenurldef>
 
-<!-- mind def-->
+<!-- alf mind def-->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_REDDIT_MIND_MULTI</name>
 <url type="shell">
@@ -4473,14 +4409,6 @@ tell application "Alfred 3" to run trigger "godoc" in workflow "nikivi.search-th
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_ACTIVE_WINDOWS</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "windows" in workflow "jnewland.alfred-open-windows" with argument ""
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE_CONTENT</name>
 <url type="shell">
 osascript -e '
@@ -4580,7 +4508,7 @@ tell application "Alfred 3" to run trigger "gists" in workflow "com.danielecook.
 <name>KeyCode::VK_OPEN_URL_ALFRED_EXPLAIN_SHELL</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "explain" in workflow "com.ryanparman.workflow.manpages" with argument ""
+tell application "Alfred 3" to run trigger "explain" in workflow "nikivi.search-the-web" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4653,14 +4581,6 @@ tell application "Alfred 3" to run trigger "display" in workflow "com.fniephaus.
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "show_playlists" in workflow "com.vdesabou.spotify.mini.player" with argument "test"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MAILTO</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "mail" in workflow "net.deanishe.alfred-mailto" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4756,7 +4676,7 @@ tell application "Alfred 3" to run trigger "hastebin" in workflow "co.jmes.haste
 <name>KeyCode::VK_OPEN_URL_ALFRED_SYMBOLS_SEARCH</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "search symbols" in workflow "pw.symbols-search" with argument ""
+tell application "Alfred 3" to run trigger "symbols" in workflow "pw.symbols-search" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4873,7 +4793,7 @@ tell application "Alfred 3" to run trigger "spot_mini" in workflow "com.vdesabou
 <name>KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "km search" in workflow "iansinnott.keyboardmaestro" with argument ""
+tell application "Alfred 3" to run trigger "search" in workflow "iansinnott.keyboardmaestro" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -4890,14 +4810,6 @@ tell application "Alfred 3" to run trigger "npm" in workflow "com.sindresorhus.n
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "ulysses groups" in workflow "nikivi.search.files" with argument ""
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_ITERM_SESSIONS</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "itermSessions" in workflow "com.madvas.iterm-sessions" with argument ""
 '
 </url>
 </vkopenurldef>
@@ -5099,22 +5011,6 @@ KeyCode::0, ModifierFlag::SHIFT_L
 __KeyToKey__
 KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
 KeyCode::SEMICOLON,
-</autogen>
-</item>
-
-<item>
-<name>general: arrows = change songs</name>
-<identifier>private.arrows.songs</identifier>
-<inputsource_not>RU</inputsource_not>
-<autogen>
-__KeyToKey__
-KeyCode::CURSOR_LEFT,
-ConsumerKeyCode::MUSIC_PREV
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::CURSOR_RIGHT,
-ConsumerKeyCode::MUSIC_NEXT
 </autogen>
 </item>
 
@@ -6291,11 +6187,6 @@ __BlockUntilKeyUp__ KeyCode::0,
 
 <autogen>
 __KeyToKey__
-KeyCode::TAB,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TLDR
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::V,
 KeyCode::VK_OPEN_URL_ALFRED_CONVERT
 </autogen>
@@ -6323,11 +6214,6 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_APPLE_MAPS
 __KeyToKey__
 KeyCode::B,
 KeyCode::VK_OPEN_URL_ALFRED_PINBOARD
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::F19,
-KeyCode::VK_OPEN_URL_ALFRED_COMMIT_FOLDERS
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6381,18 +6267,8 @@ KeyCode::VK_OPEN_URL_ALFRED_CHROME_PROFILES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::T,
-KeyCode::VK_OPEN_URL_ALFRED_WEATHER_TODAY
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::H,
 KeyCode::VK_OPEN_URL_ALFRED_HTTP_CODES
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::C,
-KeyCode::VK_OPEN_URL_ALFRED_CHEATSHEET
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7180,11 +7056,6 @@ KeyCode::VK_OPEN_URL_KM_LOWERCASE_AND_DASH_SEPARATE_TEXT
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::X,
-KeyCode::VK_OPEN_URL_ALFRED_CURL_URL
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::Z,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_IN_CLIPBOARD_IN_SAFARI
 </autogen>
@@ -7324,7 +7195,7 @@ KeyCode::VK_OPEN_URL_ALFRED_GOODREADS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::C,
+KeyCode::V,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_STACK
 </autogen>
 <autogen>
@@ -7354,7 +7225,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::V,
+KeyCode::B,
 KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MEDIUM
 </autogen>
 <autogen>
@@ -7369,7 +7240,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_IDOPE
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::B,
+KeyCode::C,
 KeyCode::VK_OPEN_URL_ALFRED_STACK_OVERFLOW_SEARCH_SUGGESTIONS
 </autogen>
 <autogen>
@@ -9852,6 +9723,11 @@ KeyCode::VK_OPEN_URL_KM_OPEN_1PASSWORD
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::V,
+KeyCode::VK_OPEN_URL_KM_OPEN_KEYCHAIN_ACCESS
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::N,
 KeyCode::VK_OPEN_URL_KM_OPEN_TIMING
 </autogen>
@@ -12103,8 +11979,18 @@ __BlockUntilKeyUp__ KeyCode::B,
 
 <autogen>
 __KeyToKey__
+KeyCode::Z,
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TIMEZONES
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::H,
 KeyCode::VK_OPEN_URL_ALFRED_HACKER_NEWS
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::S,
+KeyCode::VK_OPEN_URL_ALFRED_WEATHER_TODAY
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12170,11 +12056,6 @@ KeyCode::VK_OPEN_URL_KM_TEST_TYPESCRIPT
 __KeyToKey__
 KeyCode::N,
 KeyCode::VK_OPEN_URL_KM_TEST_PYTHON
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::T,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_TIMEZONES
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12458,7 +12339,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
 __SimultaneousKeyPresses__
 KeyCode::L, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_CHROME_BOOKMARKS
+KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 </autogen>
 </item>
 
@@ -12513,7 +12394,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::M,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_KEYWORDS
 </autogen>
 </item>
 
@@ -12705,17 +12586,6 @@ KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW
 </item>
 
 <item>
-<name>general: sim rrcmd = pods</name>
-<identifier>private.sim_rrcmd_pods</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::R, KeyCode::COMMAND_R,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PODS
-</autogen>
-</item>
-
-<item>
 <name>general: sim :h = docs</name>
 <identifier>private.sim_semh_docs</identifier>
 <autogen>
@@ -12778,28 +12648,6 @@ __SimultaneousKeyPresses__
 KeyCode::QUOTE, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
 KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
-</autogen>
-</item>
-
-<item>
-<name>general: sim space , = keyclue</name>
-<identifier>private.sim_comma_key</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::COMMA, KeyCode::SPACE,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_KARABINER_PROFILES
-</autogen>
-</item>
-
-<item>
-<name>general: sim space p = karabiner profiles</name>
-<identifier>private.sim_p_key</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::P, KeyCode::SPACE,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_KARABINER_PROFILES
 </autogen>
 </item>
 
@@ -12877,17 +12725,6 @@ __SimultaneousKeyPresses__
 KeyCode::N, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
 KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
-</autogen>
-</item>
-
-<item>
-<name>general: sim space dot = youtube</name>
-<identifier>private.sim_space_dot_youtube</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::DOT, KeyCode::SPACE,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_KARABINER_PROFILES
 </autogen>
 </item>
 

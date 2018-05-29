@@ -169,6 +169,7 @@ These are dotfiles I got many ideas from and liked.
 - [wangsongiam](https://github.com/wangsongiam/dotfiles) - Interesting hammerspoon and zsh config.
 - [rvolosatovs](https://github.com/rvolosatovs/dotfiles) - Good vim setup for Go.
 - [Keith](https://github.com/keith/dotfiles) - Vim, zsh, tmux, and OS X .
+- [bresilla](https://github.com/bresilla/dotfiles) - Neat Linux look.
 
 ## Contributing
 [Suggestions](../../issues/) on how I can improve the structure of these dotfiles as well as suggesting new and awesome tools are welcome.

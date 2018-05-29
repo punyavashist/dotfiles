@@ -2,8 +2,8 @@
 T() {
 }
 
-# Pipe command to clipboard. b <cmd>
-b(){
+# Pipe command to clipboard. c <cmd>
+c(){
   "$@" | pbcopy
 }
 

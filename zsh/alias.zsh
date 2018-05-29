@@ -45,7 +45,6 @@ alias r='rg'
 alias e='nvim'
 alias s='subl'
 alias ss='subl .'
-alias ca='carthage'
 alias alf='alfred'
 alias ta='touch readme.md'
 alias d='cd'
@@ -67,9 +66,8 @@ alias jj='killall tmux'
 alias mm='tldr'
 alias ma='man'
 # alias aw='k -h' TODO: ?
-alias c='ccat'
+alias ca='ccat'
 alias rec='asciinema rec'
-alias ws='workflow-install -s source' # Symlink `source` directory
 alias dus='du -s'
 alias t='touch'
 alias zo='open'
@@ -116,9 +114,9 @@ alias p2='python2'
 
 # Alfred
 alias wf='alfred build'
-alias wfs='workflow-install -s source' # Symlink source dir to Alfred
 alias wfl='alfred link'
 alias wfa='alfred pack -o ~/Desktop'
+alias ws='workflow-install -s workflow' # Symlink `source` directory
 
 # Docker
 alias k='docker'

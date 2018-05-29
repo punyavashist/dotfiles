@@ -10,14 +10,20 @@
 
 # Run shell commands
 - shell:
+    # Install submodules
   - [git submodule update --init --recursive, Installing submodules]
 
-# TODO: add shell command to cd to antibody and download zsh plugins. Maybe need to install Antibody too (ask user).
-# TODO: install Nix
-# TODO: install all the commands I use with Nix
+# TODO: Install Antibody. Check if Antibody is installed first.
 
-# TODO: look into https://github.com/LnL7/nix-darwin and maybe add/use it
-# TODO: look into https://github.com/rycee/home-manager and maybe add/use it
+# TODO: Install zsh plugins by running bash '~/.dotfiles/antibody/install.sh' 
+
+# TODO: Install Nix. Check if Nix is installed first.
+# - [curl https://nixos.org/nix/install | sh]
+
+# TODO: Install all the commands I use with Nix
+
+# TODO: Look into https://github.com/LnL7/nix-darwin and maybe add/use it
+# TODO: Look into https://github.com/rycee/home-manager and maybe add/use it
 
 # Symlink files
 - link:
@@ -51,7 +57,8 @@
 # 2. When logged in, open Time Machine Migration Assistant and chose what you want to transfer from it.
 # 2. You can select specific things like Applications, Documents, etc.
 
-# `~/Library/Application Support/` -> where apps store auxiliary files.
-# `~/Library/Preferences/` -> where apps store preferences.
+# ~/Library/Application Support/ -> app's auxiliary files.
+# ~/Library/Preferences/ -> app preferences.
+# ~/Library/Fonts/ -> custom fonts
 
 # 3. Clone dotfiles and run ./install.
