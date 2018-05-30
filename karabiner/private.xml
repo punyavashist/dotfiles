@@ -4886,7 +4886,7 @@ tell application "Alfred 3" to run trigger "github" in workflow "de.gh01.alfred.
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE</name>
+<name>KeyCode::VK_OPEN_URL_ALFRED_MENUBAR_SEARCH</name>
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "search" in workflow "com.tedwise.menubarsearch" with argument ""
@@ -4978,7 +4978,7 @@ tell application "Alfred 3" to run trigger "google" in workflow "net.deanishe.al
 </inputsourcedef>
 
 <item>
-<name>general: put {} () [] to a better place</name>
+<name>gen: put {} () [] to a better place</name>
 <identifier>private.brackets_around</identifier>
 <inputsource_not>RU</inputsource_not>
 <autogen>
@@ -5004,7 +5004,7 @@ KeyCode::0, ModifierFlag::SHIFT_L
 </item>
 
 <item>
-<name>general: change colon to semicolon</name>
+<name>gen: change colon to semicolon</name>
 <identifier>private.colon_to_semicolon</identifier>
 <inputsource_not>RU</inputsource_not>
 <autogen>
@@ -5015,7 +5015,7 @@ KeyCode::SEMICOLON,
 </item>
 
 <item>
-<name>general: sticky semicolon - shift key</name>
+<name>gen: sticky semicolon - shift key</name>
 <identifier>private.launcher_mode_open_apps_v30</identifier>
 <inputsource_only>US</inputsource_only>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
@@ -5278,7 +5278,7 @@ KeyCode::B
 </item>
 
 <item>
-<name>general: hyper function semicolon key</name>
+<name>gen: hyper function semicolon key</name>
 <identifier>private.hyper.function.SEMICOLON.key</identifier>
 <inputsource_not>RU</inputsource_not>
 
@@ -5304,7 +5304,7 @@ Option::NOREPEAT,
 </item>
 
 <item>
-<name>general: sticky s - essential things</name>
+<name>gen: sticky s - essential things</name>
 <identifier>private.launcher_mode_open_apps_v23</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -5845,7 +5845,7 @@ KeyCode::VK_OPEN_URL_ALFRED_PROCESS_CONTROL
 </replacementdef>
 
 <item>
-<name>general: sticky slash</name>
+<name>gen: sticky slash</name>
 <identifier>private.launcher_mode_open_apps_v19</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -5897,7 +5897,7 @@ KeyCode::VK_MOUSEKEY_SCROLL_UP, ModifierFlag::MOUSE_KEYS_MODE_2,
 </item>
 
 <item>
-<name>general: sticky space - KM palettes - ⇧ + ⌃ + ⌥</name>
+<name>gen: sticky space - KM palettes - ⇧ + ⌃ + ⌥</name>
 <identifier>private.launcher_mode_open_apps_v34</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -6076,7 +6076,7 @@ KeyCode::DOT, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTR
 </item>
 
 <item>
-<name>general: sticky 9 - search files</name>
+<name>gen: sticky 9 - search files</name>
 <identifier>private.launcher_mode_open_apps_v84</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -6120,7 +6120,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SOULVER
 </item>
 
 <item>
-<name>general: sticky dash - alfred</name>
+<name>gen: sticky dash - alfred</name>
 <identifier>private.launcher_mode_open_apps_v78</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -6154,7 +6154,7 @@ __BlockUntilKeyUp__ KeyCode::MINUS,
 </item>
 
 <item>
-<name>general: sticky 0 - alfred</name>
+<name>gen: sticky 0 - alfred</name>
 <identifier>private.launcher_mode_open_apps_v82</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -6278,7 +6278,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SYNONYMS_SEARCH
 </item>
 
 <item>
-<name>general: sticky left bracket - chrome</name>
+<name>gen: sticky left bracket - chrome</name>
 <identifier>private.launcher_mode_open_apps_v75</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -6337,7 +6337,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_CHROME_URL_LOCALHOST
 </item>
 
 <item>
-<name>general: sticky right bracket - wiki</name>
+<name>gen: sticky right bracket - wiki</name>
 <identifier>private.launcher_mode_open_apps_v79</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -6371,7 +6371,7 @@ __BlockUntilKeyUp__ KeyCode::BRACKET_RIGHT,
 </item>
 
 <item>
-<name>general: sticky p - symbols</name>
+<name>gen: sticky p - symbols</name>
 <identifier>private.launcher_mode_open_apps_v12</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -6476,7 +6476,7 @@ KeyCode::VK_OPEN_URL_KM_F7
 </item>
 
 <item>
-<name>general: sticky c - websites</name>
+<name>gen: sticky c - websites</name>
 <identifier>private.launcher_mode_open_apps_v41</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -7018,7 +7018,7 @@ KeyCode::CURSOR_LEFT
 </item>
 
 <item>
-<name>general: sticky comma - one off scripts</name>
+<name>gen: sticky comma - one off scripts</name>
 <identifier>private.launcher_mode_open_apps_v20</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -7107,7 +7107,7 @@ KeyCode::VK_OPEN_URL_ALFRED_RESTART_WIFI
 </item>
 
 <item>
-<name>general: sticky n - web searches</name>
+<name>gen: sticky n - web searches</name>
 <identifier>private.launcher_mode_open_apps_v35</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -7291,7 +7291,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_WOLFRAM_ALPHA
 </item>
 
 <item>
-<name>general: sticky m - productivity + spotify</name>
+<name>gen: sticky m - productivity + spotify</name>
 <identifier>private.launcher_mode_open_apps_v17</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -7490,7 +7490,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_ADD_SONG_TO_PLAYLIST
 </item>
 
 <item>
-<name>general: sticky v</name>
+<name>gen: sticky v</name>
 <identifier>private.launcher_mode_open_apps_v16</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -7674,7 +7674,7 @@ ConsumerKeyCode::VOLUME_DOWN
 </item>
 
 <item>
-<name>general: sticky [ - more maps</name>
+<name>gen: sticky [ - more maps</name>
 <identifier>private.launcher_mode_open_apps_v73</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -7848,7 +7848,7 @@ KeyCode::M, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::CONTR
 </item>
 
 <item>
-<name>general: sticky w - open top apps</name>
+<name>gen: sticky w - open top apps</name>
 <identifier>private.launcher_mode_open_apps_v3</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8022,7 +8022,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_SHIP
 </item>
 
 <item>
-<name>general: sticky quote</name>
+<name>gen: sticky quote</name>
 <identifier>private.launcher_mode_open_apps_v32</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8062,7 +8062,7 @@ KeyCode::VK_OPEN_URL_KM_WIKI_MY_GITHUB
 </item>
 
 <item>
-<name>general: sticky x - alfred my mind</name>
+<name>gen: sticky x - alfred my mind</name>
 <identifier>private.launcher_mode_open_apps_v43</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8255,7 +8255,7 @@ KeyCode::VK_OPEN_URL_ALFRED_CLEAN_FOLDERS
 </item>
 
 <item>
-<name>general: sticky 1 - lists</name>
+<name>gen: sticky 1 - lists</name>
 <identifier>private.launcher_mode_open_apps_v80</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8339,7 +8339,7 @@ KeyCode::VK_OPEN_URL_KM_LIST_REDDIT
 </item>
 
 <item>
-<name>general: sticky 2 - moving</name>
+<name>gen: sticky 2 - moving</name>
 <identifier>private.launcher_mode_open_apps_v93</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8473,7 +8473,7 @@ KeyCode::G, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
 </item>
 
 <item>
-<name>general: sticky 6 - things</name>
+<name>gen: sticky 6 - things</name>
 <identifier>private.launcher_mode_open_apps_v22</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8652,7 +8652,7 @@ KeyCode::COMMA, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CO
 </item>
 
 <item>
-<name>general: sticky tab - option</name>
+<name>gen: sticky tab - option</name>
 <identifier>private.launcher_mode_open_apps_v55</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8911,7 +8911,7 @@ KeyCode::SLASH, ModifierFlag::OPTION_L
 </item>
 
 <item>
-<name>general: sticky 5</name>
+<name>gen: sticky 5</name>
 <identifier>private.launcher_mode_open_apps_v54</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -8950,7 +8950,7 @@ KeyCode::Y, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT
 </item>
 
 <item>
-<name>general: sticky 4 - paths</name>
+<name>gen: sticky 4 - paths</name>
 <identifier>private.launcher_mode_open_apps_v53</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -9085,7 +9085,7 @@ KeyCode::F1, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 </item>
 
 <item>
-<name>general: sticky 3 - files</name>
+<name>gen: sticky 3 - files</name>
 <identifier>private.launcher_mode_open_apps_v51</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -9302,7 +9302,7 @@ KeyCode::COMMA, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L, ModifierFlag::CO
 </item>
 
 <item>
-<name>general: sticky g - wm</name>
+<name>gen: sticky g - wm</name>
 <identifier>private.launcher_mode_open_apps_v11</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -9501,7 +9501,7 @@ KeyCode::VK_OPEN_URL_ALFRED_DISMISS_NOTIFICATIONS
 </item>
 
 <item>
-<name>general: sticky right shift - things</name>
+<name>gen: sticky right shift - things</name>
 <identifier>private.launcher_mode_open_apps_v36</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -9534,7 +9534,7 @@ __BlockUntilKeyUp__ KeyCode::SHIFT_R,
 </item>
 
 <item>
-<name>general: sticky r - open other apps</name>
+<name>gen: sticky r - open other apps</name>
 <identifier>private.launcher_mode_open_apps_v8</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -9734,7 +9734,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_TIMING
 </item>
 
 <item>
-<name>general: sticky u - websites</name>
+<name>gen: sticky u - websites</name>
 <identifier>private.launcher_mode_open_apps_v33</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -9873,7 +9873,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_NPM
 </item>
 
 <item>
-<name>general: sticky i - inserting symbols</name>
+<name>gen: sticky i - inserting symbols</name>
 <identifier>private.launcher_mode_open_apps_v15</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -10153,7 +10153,7 @@ KeyCode::SPACE
 </item>
 
 <item>
-<name>general: sticky y - websites</name>
+<name>gen: sticky y - websites</name>
 <identifier>private.launcher_mode_open_apps_v83</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -10202,7 +10202,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_UNSPLASH
 </item>
 
 <item>
-<name>general: sticky t - handy actions</name>
+<name>gen: sticky t - handy actions</name>
 <identifier>private.launcher_mode_open_apps_v14</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -10336,7 +10336,7 @@ KeyCode::VK_OPEN_URL_KM_PASS
 </item>
 
 <item>
-<name>general: sticky z - open chat apps</name>
+<name>gen: sticky z - open chat apps</name>
 <identifier>private.launcher_mode_open_apps_v9</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -10456,7 +10456,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_TEXTUAL
 </item>
 
 <item>
-<name>general: sticky f - essential keybinds</name>
+<name>gen: sticky f - essential keybinds</name>
 <identifier>private.launcher_mode_open_apps_v2</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -10661,7 +10661,7 @@ KeyCode::U, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
 </item>
 
 <item>
-<name>general: sticky e - command</name>
+<name>gen: sticky e - command</name>
 <identifier>private.launcher_mode_open_apps_v91</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -10947,7 +10947,7 @@ KeyCode::SLASH, ModifierFlag::COMMAND_L
 </item>
 
 <item>
-<name>general: sticky q - command shift</name>
+<name>gen: sticky q - command shift</name>
 <identifier>private.launcher_mode_open_apps_v6</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -11192,7 +11192,7 @@ KeyCode::M, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
 </item>
 
 <item>
-<name>general: sticky a - control modifier</name>
+<name>gen: sticky a - control modifier</name>
 <identifier>private.launcher_mode_example</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -11606,7 +11606,7 @@ KeyCode::CONTROL_L, ModifierFlag::COMMAND_L,
 
 
 <item>
-<name>general: caps lock as control + option and escape when alone</name>
+<name>gen: caps lock as control + option and escape when alone</name>
 <identifier>private.left_alt_caps_tab_search_snippets</identifier>
 <autogen>
 __KeyToKey__
@@ -11637,7 +11637,7 @@ KeyCode::ESCAPE,
 </item>
 
 <item>
-<name>general: right option on single press as app switcher</name>
+<name>gen: right option on single press as app switcher</name>
 <identifier>private.right_opt_as_app_switch</identifier>
 <autogen>
 __KeyOverlaidModifier__
@@ -11752,7 +11752,7 @@ Option::NOREPEAT,
 </item>
 
 <item>
-<name>general: caps + left command + top delete to open Fantastical Calendar Input</name>
+<name>gen: caps + left command + top delete to open Fantastical Calendar Input</name>
 <identifier>private.caps_left_command_delete_open_fantastical_input</identifier>
 <autogen>
 __KeyToKey__
@@ -11889,7 +11889,7 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 </item>
 
 <item>
-<name>general: sticky rcmd - things</name>
+<name>gen: sticky rcmd - things</name>
 <identifier>private.launcher_mode_open_apps_v81</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -11942,7 +11942,7 @@ KeyCode::EQUAL, ModifierFlag::COMMAND_L
 </item>
 
 <item>
-<name>general: sticky b - alfred</name>
+<name>gen: sticky b - alfred</name>
 <identifier>private.launcher_mode_open_apps_v13</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -12070,96 +12070,7 @@ KeyCode::Y, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT
 </item>
 
 <item>
-<name>general: sticky backquote - code files + projects + cloning</name>
-<identifier>private.launcher_mode_open_apps_v40</identifier>
-<pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
-<modifier_not>
-ModifierFlag::COMMAND_L,
-ModifierFlag::COMMAND_R,
-ModifierFlag::CONTROL_L,
-ModifierFlag::CONTROL_R,
-ModifierFlag::FN,
-ModifierFlag::OPTION_L,
-ModifierFlag::OPTION_R,
-ModifierFlag::SHIFT_L,
-ModifierFlag::SHIFT_R,
-</modifier_not>
-<autogen>
-__KeyOverlaidModifier__
-KeyCode::BACKQUOTE,
-@begin
-KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v40, ModifierFlag::MY_LAUNCHER_MODE,
-@end
-@begin
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE
-@end
-</autogen>
-</item>
-<item hidden="true">
-<identifier vk_config="true">notsave.private_launcher_mode_v40</identifier>
-<autogen>
-__BlockUntilKeyUp__ KeyCode::BACKQUOTE,
-</autogen>
-
-<autogen>
-__KeyToKey__
-KeyCode::W,
-KeyCode::VK_OPEN_URL_KM_TEST_WEB
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::K,
-KeyCode::VK_OPEN_URL_KM_PROJECT_KNOWLEDGE
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::B,
-KeyCode::VK_OPEN_URL_KM_TEST_BASH
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::A,
-KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::S,
-KeyCode::S, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::J,
-KeyCode::J, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::D,
-KeyCode::D, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::F,
-KeyCode::F, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::G,
-KeyCode::G, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::H,
-KeyCode::H, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SPACE,
-KeyCode::S, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L,
-</autogen>
-</item>
-
-<item>
-<name>general: opt + return = safari</name>
+<name>gen: opt + return - safari</name>
 <identifier>private.open_safari_opt_return</identifier>
 <autogen>
 __KeyToKey__
@@ -12169,17 +12080,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_SAFARI
 </item>
 
 <item>
-<name>general: sticky right command - control - something</name>
-<identifier>private.right_command_control_and_things</identifier>
-<autogen>
-__KeyToKey__
-KeyCode::A, ModifierFlag::CONTROL_R,
-KeyCode::T, ModifierFlag::COMMAND_R
-</autogen>
-</item>
-
-<item>
-<name>general: sim jl = alfred</name>
+<name>gen: sim jl</name>
 <identifier>private.sim_jl_typinator</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12190,18 +12091,7 @@ KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::C
 </item>
 
 <item>
-<name>general: sim m,</name>
-<identifier>private.sim_mcomma_some</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::COMMA, KeyCode::M,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
-</autogen>
-</item>
-
-<item>
-<name>general: sim jk</name>
+<name>gen: sim jk</name>
 <identifier>private.sim_jk_google</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12212,29 +12102,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE
 </item>
 
 <item>
-<name>general: sim o:</name>
-<identifier>private.sim_o:_google</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::SEMICOLON, KeyCode::O,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_CHROME_HISTORY
-</autogen>
-</item>
-
-<item>
-<name>general: sim :,</name>
-<identifier>private.sim_o,_google</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::SEMICOLON, KeyCode::COMMA,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_CHROME_HISTORY
-</autogen>
-</item>
-
-<item>
-<name>general: sim l, = chrome history</name>
+<name>gen: sim l,</name>
 <identifier>private.sim_l,_google</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12245,7 +12113,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SAFARI_FOLDERS
 </item>
 
 <item>
-<name>general: sim kl</name>
+<name>gen: sim kl</name>
 <identifier>private.sim_kl_typinator</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12256,18 +12124,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_DASH
 </item>
 
 <item>
-<name>general: sim kh</name>
-<identifier>private.sim_hk_duck_search</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::H, KeyCode::K,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
-</autogen>
-</item>
-
-<item>
-<name>general: sim lm</name>
+<name>gen: sim lm</name>
 <identifier>private.sim_lm_bookmarks</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12278,29 +12135,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_BOOKMARKS
 </item>
 
 <item>
-<name>general: sim :l = dictionary</name>
-<identifier>private.sim_:l_dic</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::SEMICOLON, KeyCode::L,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_CHROME_HISTORY
-</autogen>
-</item>
-
-<item>
-<name>general: sim lh = lab</name>
-<identifier>private.sim_hl_lab</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::H, KeyCode::L,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
-</autogen>
-</item>
-
-<item>
-<name>general: sim ok</name>
+<name>gen: sim ok</name>
 <identifier>private.sim_ok_mindnode_content_search</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12311,7 +12146,7 @@ KeyCode::VK_OPEN_URL_ALFRED_LEARN_ANYTHING_LISTS
 </item>
 
 <item>
-<name>general: sim oj</name>
+<name>gen: sim oj</name>
 <identifier>private.sim_oj_mindnode</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12322,7 +12157,7 @@ KeyCode::VK_OPEN_URL_ALFRED_AWESOME_LISTS
 </item>
 
 <item>
-<name>general: sim km</name>
+<name>gen: sim km</name>
 <identifier>private.sim_km_lab</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12333,7 +12168,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SNIPPETSLAB_SEARCH
 </item>
 
 <item>
-<name>general: sim ln</name>
+<name>gen: sim ln</name>
 <identifier>private.sim_ln_dash</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12344,29 +12179,7 @@ KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
 </item>
 
 <item>
-<name>general: sim jn</name>
-<identifier>private.sim_jn_yandex</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::J, KeyCode::N,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
-</autogen>
-</item>
-
-<item>
-<name>general: sim ij</name>
-<identifier>private.sim_ij_equal_sign</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::J, KeyCode::I,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::EQUAL
-</autogen>
-</item>
-
-<item>
-<name>general: sim oi</name>
+<name>gen: sim oi</name>
 <identifier>private.sim_oi_iterm_profiles</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12377,7 +12190,7 @@ KeyCode::VK_OPEN_URL_ALFRED_ITERM_TTY
 </item>
 
 <item>
-<name>general: sim :k</name>
+<name>gen: sim :k</name>
 <identifier>private.sim_:k_amazon</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12388,7 +12201,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
 </item>
 
 <item>
-<name>general: sim :m</name>
+<name>gen: sim :m</name>
 <identifier>private.sim_:m_safari_tabs</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12399,7 +12212,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_KEYWORDS
 </item>
 
 <item>
-<name>general: sim :j</name>
+<name>gen: sim :j</name>
 <identifier>private.sim_:j_wiki</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12410,51 +12223,7 @@ KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS
 </item>
 
 <item>
-<name>general: sim nlcmd</name>
-<identifier>private.sim_nlcmd_down</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::COMMAND_L, KeyCode::N,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GITHUB
-</autogen>
-</item>
-
-<item>
-<name>general: sim wrcmd = downloads</name>
-<identifier>private.sim_wrcmd_down</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::COMMAND_R, KeyCode::W,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_RECENT_DOWNLOADS
-</autogen>
-</item>
-
-<item>
-<name>general: sim :rcmd = dic</name>
-<identifier>private.sim_:rcmd_dic</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::COMMAND_R, KeyCode::SEMICOLON,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
-</autogen>
-</item>
-
-<item>
-<name>general: sim :lcmd</name>
-<identifier>private.sim_lcmd_downloads</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::SEMICOLON, KeyCode::COMMAND_L,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_OPEN_DOCUMENTATION
-</autogen>
-</item>
-
-<item>
-<name>general: sim :n</name>
+<name>gen: sim :n</name>
 <identifier>private.sim_:n_dic</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12465,7 +12234,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_KEYWORDS
 </item>
 
 <item>
-<name>general: sim on = lab</name>
+<name>gen: sim on</name>
 <identifier>private.sim_on_lab</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12476,7 +12245,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SIMPLE_WIKI
 </item>
 
 <item>
-<name>general: sim om = keyclue</name>
+<name>gen: sim om</name>
 <identifier>private.sim_om_wind</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12487,73 +12256,7 @@ KeyCode::VK_OPEN_URL_ALFRED_CHROME_HISTORY
 </item>
 
 <item>
-<name>general: sim hj = amazon</name>
-<identifier>private.sim_hj_amazon</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::H, KeyCode::J,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_AMAZON_SEARCH
-</autogen>
-</item>
-
-<item>
-<name>test: sim oh = research</name>
-<identifier>private.sim_oh_keyclue</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::H, KeyCode::O,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_LEARN_ANYTHING
-</autogen>
-</item>
-
-<item>
-<name>general: sim op = icloud</name>
-<identifier>private.sim_op_spotify</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::P, KeyCode::O,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
-</autogen>
-</item>
-
-<item>
-<name>general: sim ou = icloud</name>
-<identifier>private.sim_ou_spotify</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::U, KeyCode::O,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SSH
-</autogen>
-</item>
-
-<item>
-<name>general: sim klcmd = timer</name>
-<identifier>private.sim_klcmd_timer</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::COMMAND_L, KeyCode::K,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_TIMER_START
-</autogen>
-</item>
-
-<item>
-<name>general: sim orcmd = archive</name>
-<identifier>private.sim_rcmd_spotify</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::COMMAND_R, KeyCode::O,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
-</autogen>
-</item>
-
-<item>
-<name>general: sim kn</name>
+<name>gen: sim kn</name>
 <identifier>private.sim_kn_normal</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12564,29 +12267,7 @@ KeyCode::VK_OPEN_URL_ALFRED_GOOGLE_LUCKY
 </item>
 
 <item>
-<name>general: sim lrcmd = spotify current track</name>
-<identifier>private.sim_rcmd_current_track</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::L, KeyCode::COMMAND_R,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
-</autogen>
-</item>
-
-<item>
-<name>general: sim k + rcmd = timer stop</name>
-<identifier>private.sim_stop_timer</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::K, KeyCode::COMMAND_R,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_TIMER_VIEW
-</autogen>
-</item>
-
-<item>
-<name>general: sim :h = docs</name>
+<name>gen: sim :h</name>
 <identifier>private.sim_semh_docs</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12597,62 +12278,7 @@ KeyCode::VK_OPEN_URL_ALFRED_CHROME_HISTORY
 </item>
 
 <item>
-<name>general: sim pi = docs</name>
-<identifier>private.pi_git'</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::I, KeyCode::P,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_OPEN_DOCUMENTATION
-</autogen>
-</item>
-
-<item>
-<name>general: sim pk = git</name>
-<identifier>private.pk_git'</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::K, KeyCode::P,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_DRIVE
-</autogen>
-</item>
-
-<item>
-<name>general: sim mrcmd = km macros</name>
-<identifier>private.mrcmd_macros</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::M, KeyCode::COMMAND_R,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
-</autogen>
-</item>
-
-<item>
-<name>general: sim pj = docs</name>
-<identifier>private.pj_docs'</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::J, KeyCode::P,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
-</autogen>
-</item>
-
-<item>
-<name>general: sim space quote = keyclue</name>
-<identifier>private.sim_quote_key</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::QUOTE, KeyCode::SPACE,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
-</autogen>
-</item>
-
-<item>
-<name>general: sim space : = dash</name>
+<name>gen: sim space :</name>
 <identifier>private.sim_sem__dash</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12663,7 +12289,7 @@ KeyCode::VK_OPEN_URL_ALFRED_DASH_PROFILE_SWITCH
 </item>
 
 <item>
-<name>general: sim space j = safari</name>
+<name>gen: sim space j</name>
 <identifier>private.sim_space_j_dash</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12674,7 +12300,7 @@ KeyCode::VK_OPEN_URL_KM_GET_CURRENT_URL_FROM_SAFARI
 </item>
 
 <item>
-<name>general: sim space l</name>
+<name>gen: sim space l</name>
 <identifier>private.sim_space_l_curr_tabs</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12685,7 +12311,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_SAFARI_HISTORY
 </item>
 
 <item>
-<name>general: sim space k = safari</name>
+<name>gen: sim space k = safari</name>
 <identifier>private.sim_space_k_saf</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12696,7 +12322,7 @@ KeyCode::VK_OPEN_URL_ALFRED_YOUTUBE_SEARCH
 </item>
 
 <item>
-<name>general: sim space o = xcode</name>
+<name>gen: sim space o = xcode</name>
 <identifier>private.sim_space_o_xcode</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12707,18 +12333,18 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_PDF
 </item>
 
 <item>
-<name>general: sim space m = wiki</name>
+<name>gen: sim space m</name>
 <identifier>private.sim_space_wiki</identifier>
 <autogen>
 __SimultaneousKeyPresses__
 KeyCode::M, KeyCode::SPACE,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_KEYCLUE
+KeyCode::VK_OPEN_URL_ALFRED_MENUBAR_SEARCH
 </autogen>
 </item>
 
 <item>
-<name>general: sim space n = xcode</name>
+<name>gen: sim space n</name>
 <identifier>private.sim_space_n_xcode</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12729,7 +12355,7 @@ KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH
 </item>
 
 <item>
-<name>general: sim space i = youtube</name>
+<name>gen: sim space i</name>
 <identifier>private.sim_space_i_youtube</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12740,7 +12366,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_GOOGLE_IMAGES
 </item>
 
 <item>
-<name>general: sim space h = youtube</name>
+<name>gen: sim space h</name>
 <identifier>private.sim_space_h_youtube</identifier>
 <autogen>
 __SimultaneousKeyPresses__
@@ -12751,19 +12377,8 @@ KeyCode::VK_OPEN_URL_ALFRED_CHROME_HISTORY
 </item>
 
 <item>
-<name>general: sim llcmd = spotify main</name>
-<identifier>private.sim_lcmd_spoti</identifier>
-<autogen>
-__SimultaneousKeyPresses__
-KeyCode::L, KeyCode::COMMAND_L,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
-</autogen>
-</item>
-
-<item>
 <only>MINDNODE</only>
-<name>general: left command to option - ONLY: MindNode</name>
+<name>gen: left command to option - ONLY: MindNode</name>
 <identifier>private.mindnode_left_cmd_to_opt</identifier>
 <autogen>
 __KeyToKey__
