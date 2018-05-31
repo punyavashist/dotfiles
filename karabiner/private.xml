@@ -960,16 +960,6 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_INBOX</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "g: screenshot to Pixave Inbox"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_NEWS_MORNING</name>
 <url type="shell">
 osascript -e '
@@ -7469,17 +7459,12 @@ KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_PLAYLISTS
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::D,
-KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::S,
 KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_MAIN
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::F,
+KeyCode::D,
 KeyCode::VK_OPEN_URL_ALFRED_SPOTIFY_CURRENT_TRACK
 </autogen>
 <autogen>

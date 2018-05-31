@@ -452,6 +452,16 @@ commits() {
   git log $1 --oneline --reverse | cut -d' ' -f 1 | tr '/n' ' '
 }
 
+# go get currently active Safari URL
+ogg() {
+  # Get url
+  url=$(osascript -e 'tell application "Safari" to return URL of front document')
+  # Remove https://
+  url="${url#https://}"
+  # Get the package/tool
+  go get -u $url
+}
+
 # ram <process-name> - Find how much RAM a process is taking.
 ram() {
   local sum

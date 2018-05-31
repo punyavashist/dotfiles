@@ -1,7 +1,7 @@
 # Update readme commit
 gz(){
   git add README.md
-  git commit -m "readme: update"
+  git commit -m "update readme"
   git push
 }
 
@@ -12,31 +12,12 @@ pr() {
   hub pull-request -h "$1" -F -
 }
 
-# Fork repo
-gf(){
-  hub fork
-  git branch --set-upstream-to nikitavoloboev/master master
-  git remote rename origin upstream; git remote rename nikitavoloboev origin
-}
-
 # Fork repo and move it to ~/src/forks
 gfandmove(){
   hub fork
-  git branch --set-upstream-to nikitavoloboev/master master
-  git remote rename origin upstream; git remote rename nikitavoloboev origin
   CLONE_DIR_NAME=$(basename "$PWD")
   cd .. && mv $CLONE_DIR_NAME ~/src/forks
   cd ~/src/forks/$CLONE_DIR_NAME
-}
-
-# TODO: ?
-grus(){
-  # TODO: if it is a fork, get the link of the fork and fill it here instead of manually adding it
-  git remote add upstream "$1"
-  git fetch upstream
-  git checkout master
-  git reset --hard upstream/master
-  git push origin master --force
 }
 
 # Pull changes from upstream (fork) to master
@@ -209,16 +190,6 @@ gcd() {
 gll(){
     git clone "$(pbpaste)"
     # TODO: cd into cloned project (need to extract name with regex)
-}
-
-# go get currently active Safari URL
-ogg() {
-  # Get url
-  url=$(osascript -e 'tell application "Safari" to return URL of front document')
-  # Remove https://
-  url="${url#https://}"
-  # Get the package/tool
-  go get -u $url
 }
 
 # TODO: ?

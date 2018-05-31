@@ -113,8 +113,6 @@ set softtabstop=4
 set expandtab
 
 " UI
-set number " Display line numbers
-set relativenumber " Relative numbers
 set cursorline  " Highlight current line
 set showmatch
 set tabstop=4 " Default indentation is 4 spaces long and uses tabs, not spaces
