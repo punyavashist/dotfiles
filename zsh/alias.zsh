@@ -214,11 +214,9 @@ alias mem='top -o rsize' # Memory
 alias bb='pbcopy'
 
 # Text editors
-alias cr='open -a CodeRunner'
 alias xx='open -a Xcode'
 alias x.='open -a Xcode .'
 #alias ae='open -a MacDown readme.md'
-alias wt='open -a Atom'
 alias we='code'
 alias ww='code .'
 # alias ar="open -a Marked\ 2"
@@ -238,11 +236,10 @@ alias ei='nvim index.js'
 alias egi='nvim .gitignore' # TODO: make it zsh func, go to root and then run it
 alias ej='nvim package.json'
 
-# Edit config
-alias ek='nvim ~/Library/Application\ Support/Karabiner/private.xml' # karabiner
+# Edit configs
+alias ek='nvim ~/karabiner/private.xml' # karabiner
 alias ew='nvim ~/.dotfiles/nvim/init.vim' # nvimrc
 alias essh='nvim ~/.ssh/config' # ssh config
-alias et='nvim ~/.dotfiles/tmux/tmux.conf.local' # tmux config
 
 # cd places
 alias dw='cd ~/src/web'
@@ -258,31 +255,25 @@ alias ds='cd ~/src/curated/'
 alias dla='cd ~/src/orgs/learn-anything'
 alias dz='cd ~/.dotfiles'
 alias dk='cd ~/Documents'
+alias de='cd ~/Desktop'
+alias dq='cd ~/Downloads'
+alias dls='cd ~/Library/Services'
+alias drp='cd ~/Dropbox'
 
 # Xcode
 alias dx='cd ~/src/Xcode'
 alias dxi='cd ~/src/Xcode/iOS'
 alias dxm='cd ~/src/xcode/macOS'
 
-# Utilities
-alias ungit="find . -name '.git' -exec rm -rf {} \;" # Remove git from a project
-alias gto='gittower'
-
-# macOS
-alias de='cd ~/Desktop'
-alias dq='cd ~/Downloads'
-alias dls='cd ~/Library/Services'
-alias dnm='cd /usr/local/lib/node_modules'
-alias dbb='cd /usr/local/bin'
-alias dcl='cd /usr/local/Cellar'
-alias drp='cd ~/Dropbox'
-
 # Config
 alias d..='cd ~/.config'
 alias dv='cd ~/.dotfiles/nvim'
-alias dsk='cd ~/Library/Application\ Support/Karabiner'
 alias db='cd ~/.dotfiles/bin'
 alias dh='cd ~/.hammerspoon'
+
+# Utilities
+alias ungit="find . -name '.git' -exec rm -rf {} \;" # Remove git from a project
+alias gto='gittower'
 
 # Git
 alias gj='open `git config remote.origin.url`'
@@ -321,11 +312,11 @@ alias grao='git remote add origin'
 # Undo your last commit, but don't throw away your changes
 alias greset='git reset --soft HEAD^'
 
-# Diff
+# Git Diff
 alias gd='git diff'
 alias gds='git diff --staged'
 alias gdn='git diff --name-only'
 
-# Status
+# Git Status
 alias gs='git status --short'
 alias gss='git show --word-diff=color' # See changes made

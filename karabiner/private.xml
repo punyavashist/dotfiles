@@ -960,11 +960,11 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_NEWS_MORNING</name>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_NEWS_ALL</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: open news (morning)"
+do script "g: open news (all)"
 end tell
 '
 </url>
@@ -995,16 +995,6 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "g: open 2nd iTerm tab"
-end tell
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_3</name>
-<url type="shell">
-osascript -e '
-tell application "Keyboard Maestro Engine"
-do script "g: open 3rd iTerm tab"
 end tell
 '
 </url>
@@ -2439,6 +2429,16 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "open: itunes"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_BREATHING_ZONE</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "open: breathing zone"
 end tell
 '
 </url>
@@ -6520,12 +6520,12 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_ASSIGNED_ISSUES
 <autogen>
 __KeyToKey__
 KeyCode::BRACKET_RIGHT,
-KeyCode::VK_OPEN_URL_KM_OPEN_NEWS_MORNING
+KeyCode::VK_OPEN_URL_KM_OPEN_NEWS_ALL
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::DOT,
-KeyCode::VK_OPEN_URL_KM_OPEN_NEWS_BREAK
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_REGEX101
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6570,7 +6570,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_TOP_NEW
 <autogen>
 __KeyToKey__
 KeyCode::I,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_REGEX101
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_FIGMA
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7281,7 +7281,7 @@ KeyCode::VK_OPEN_URL_ALFRED_SEARCH_WOLFRAM_ALPHA
 </item>
 
 <item>
-<name>gen: sticky m - productivity + spotify</name>
+<name>gen: sticky m - spotify + twitter</name>
 <identifier>private.launcher_mode_open_apps_v17</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -9563,7 +9563,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_HAZEL
 <autogen>
 __KeyToKey__
 KeyCode::DOT,
-KeyCode::VK_OPEN_URL_KM_OPEN_SPOTIFY
+KeyCode::VK_OPEN_URL_KM_OPEN_BREATHING_ZONE
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10441,7 +10441,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_TEXTUAL
 </item>
 
 <item>
-<name>gen: sticky f - essential keybinds</name>
+<name>gen: sticky f - essential</name>
 <identifier>private.launcher_mode_open_apps_v2</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -10473,12 +10473,6 @@ __BlockUntilKeyUp__ KeyCode::F,
 </autogen>
 
 <autogen>
-__SimultaneousKeyPresses__
-KeyCode::J, KeyCode::K,
-KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_DUCKDUCKGO_SEARCH
-</autogen>
-<autogen>
 __KeyToKey__
 KeyCode::3,
 KeyCode::E, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L,
@@ -10492,11 +10486,6 @@ KeyCode::N, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
 __KeyToKey__
 KeyCode::COMMA,
 KeyCode::VK_OPEN_URL_KM_ADD_SAFARI_LINK_TO_SELECTED_TEXT_MARKDOWN
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SLASH,
-KeyCode::VK_OPEN_URL_KM_OPEN_ITERM_TAB_3
 </autogen>
 <autogen>
 __KeyToKey__
@@ -12051,6 +12040,95 @@ KeyCode::VK_OPEN_URL_ALFRED_UNITS
 __KeyToKey__
 KeyCode::SPACE,
 KeyCode::Y, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L
+</autogen>
+</item>
+
+<item>
+<name>gen: sticky backquote</name>
+<identifier>private.launcher_mode_open_apps_v40</identifier>
+<pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+<modifier_not>
+ModifierFlag::COMMAND_L,
+ModifierFlag::COMMAND_R,
+ModifierFlag::CONTROL_L,
+ModifierFlag::CONTROL_R,
+ModifierFlag::FN,
+ModifierFlag::OPTION_L,
+ModifierFlag::OPTION_R,
+ModifierFlag::SHIFT_L,
+ModifierFlag::SHIFT_R,
+</modifier_not>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::BACKQUOTE,
+@begin
+KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v40, ModifierFlag::MY_LAUNCHER_MODE,
+@end
+@begin
+KeyCode::VK_OPEN_URL_ALFRED_SEARCH_MINDNODE
+@end
+</autogen>
+</item>
+<item hidden="true">
+<identifier vk_config="true">notsave.private_launcher_mode_v40</identifier>
+<autogen>
+__BlockUntilKeyUp__ KeyCode::BACKQUOTE,
+</autogen>
+
+<autogen>
+__KeyToKey__
+KeyCode::W,
+KeyCode::VK_OPEN_URL_KM_TEST_WEB
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::K,
+KeyCode::VK_OPEN_URL_KM_PROJECT_KNOWLEDGE
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::B,
+KeyCode::VK_OPEN_URL_KM_TEST_BASH
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::A,
+KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::S,
+KeyCode::S, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::J,
+KeyCode::J, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::D,
+KeyCode::D, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::F,
+KeyCode::F, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::G,
+KeyCode::G, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::H,
+KeyCode::H, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::SPACE,
+KeyCode::S, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L,
 </autogen>
 </item>
 

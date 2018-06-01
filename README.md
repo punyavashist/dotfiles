@@ -171,6 +171,9 @@ These are dotfiles I got many ideas from and liked.
 - [Keith](https://github.com/keith/dotfiles) - Vim, zsh, tmux, and OS X .
 - [bresilla](https://github.com/bresilla/dotfiles) - Neat Linux look.
 
+## Interesting Nix configs
+- [cmacrae's Darwin config](https://github.com/cmacrae/.nixpkgs/blob/master/darwin-configuration.nix)
+
 ## Contributing
 [Suggestions](../../issues/) on how I can improve the structure of these dotfiles as well as suggesting new and awesome tools are welcome.
 

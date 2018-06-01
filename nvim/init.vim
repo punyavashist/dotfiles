@@ -338,5 +338,6 @@ set guicursor=n-v-c:hor20,i-ci:ver20 " Make cursor block in insert mode and unde
 autocmd VimLeave * set guicursor=a:ver25-blinkon25 " Make cursor block when leaving to shell
 
 " Testing
+set signcolumn=yes
 nnoremap <C-q> :q<cr>:q<cr>
 set foldcolumn=0 " Remove sidebar column
