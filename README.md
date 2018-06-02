@@ -21,7 +21,7 @@ You can also see my top used applications, Safari exensions and Alfred workflows
 - [Contributing](#contributing)
 
 ## Install
-To install my configration, clone the repository and run: `./install`.
+To install my configration, clone the repository and run: `./install`. This install assumes that this repository is placed in `~/.dotfiles` dir.
 
 This will automatically setup all the configuration files using [Dotbot](https://github.com/anishathalye/dotbot). Look [here](https://github.com/nikitavoloboev/dotfiles/blob/master/.install.conf.yaml#L1) for what exactly it will do.
 

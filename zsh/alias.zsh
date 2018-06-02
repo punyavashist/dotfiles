@@ -237,7 +237,7 @@ alias egi='nvim .gitignore' # TODO: make it zsh func, go to root and then run it
 alias ej='nvim package.json'
 
 # Edit configs
-alias ek='nvim ~/src/personal/karabiner/private.xml' # karabiner
+alias ek='nvim ~/.dotfiles/karabiner/private.xml' # karabiner
 alias ew='nvim ~/.dotfiles/nvim/init.vim' # nvimrc
 alias essh='nvim ~/.ssh/config' # ssh config
 
