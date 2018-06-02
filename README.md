@@ -29,7 +29,7 @@ I describe my custom configuration I use below. It is heavily tailored to my own
 
 ## Karabiner
 
-<img src="https://imgs.xkcd.com/comics/borrow_your_laptop_2x.png" width="500" alt="img">
+<img src="https://imgs.xkcd.com/comics/borrow_your_laptop_2x.png" width="300" alt="img">
 
 The most exciting thing in here is probably how I utilise [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now.
 
@@ -40,7 +40,7 @@ The best text editing experience you will ever get. It is worth learning it as y
 
 My Neovim config can be seen [here](nvim/init.vim). I use [Ayu theme](https://github.com/ayu-theme/ayu-vim) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins.html). Here is how it looks:
 
-![](https://i.imgur.com/m6CK29L.png)
+<img src="https://i.imgur.com/m6CK29L.png" width="500" alt="img">
 
 ## VS Code
 My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has well built [vim mode](https://github.com/VSCodeVim/Vim).
@@ -60,7 +60,7 @@ I am using [Zsh](http://www.zsh.org) as my shell with [Antibody](https://github.
 
 I am also using [Ayu theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made in Zsh. Here is how my prompt looks like:
 
-![](https://i.imgur.com/zHUb7nT.png)
+![](https://i.imgur.com/MFmvp4F.png)
 
 > a is [alias](zsh/alias.zsh) for [exa](https://github.com/ogham/exa)
 
