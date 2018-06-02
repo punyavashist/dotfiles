@@ -15,8 +15,8 @@ You can also see my top used applications, Safari exensions and Alfred workflows
 - [Sublime Text](#sublime-text)
 - [Hammerspoon](#hammerspoon)
 - [Zsh](#zsh)
-  - [Interesting aliases and functions](#interesting-aliases-and-functions)
-- [Fzf](#fzf)
+  - [Aliases and functions](#aliases-and-functions)
+- [FZF](#fzf)
 - [Interesting dotfiles](#interesting-dotfiles)
 - [Contributing](#contributing)
 
@@ -64,11 +64,10 @@ I am also using [Ayu theme](https://github.com/nikitavoloboev/my-mac-os/tree/mas
 
 > a is [alias](zsh/alias.zsh) for [exa](https://github.com/ogham/exa)
 
-## Zsh aliases
+### Aliases and functions
 I use many aliases to get around my system as fast as possible. You can view them all [here](zsh/alias.zsh).
 
-### Interesting aliases and functions
-There is a lot of awesome programs I use from my command line. You can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps) for some of them.
+There is a lot of awesome programs I use from my command line. You can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps) for all of them.
 
 I also love customising my shell experience with various aliases and zsh functions. Here are some that I like and use often:
 
@@ -130,7 +129,7 @@ re(){
 }
 ```
 
-### Fzf
+## FZF
 [fzf](https://github.com/junegunn/fzf) is a command line tool that lets you fuzzy search on text. I use it often now for fuzzy searching for files to open with neovim, or fuzzy searching through my commit messages and more. Here are [all the functions I use](https://github.com/nikitavoloboev/dotfiles/blob/master/zsh/functions/fzf-functions.zsh#L1) with it.
 
 ## Interesting dotfiles
