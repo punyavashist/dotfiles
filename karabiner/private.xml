@@ -34,7 +34,7 @@ end tell
 </url>
 </vkopenurldef>
 
-<!-- KM safari urls -->
+<!-- KM Safari urls -->
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB</name>
 <url type="shell">
