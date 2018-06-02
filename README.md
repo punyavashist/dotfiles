@@ -56,7 +56,7 @@ I use [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/sublime-text/s
 I don't use [Hammerspoon](http://www.hammerspoon.org/) as extensively however I am looking into implementing more of its features into my workflow.
 
 ## Zsh
-I am using [Zsh](http://www.zsh.org) as my shell with [Antibody](https://github.com/getantibody/antibody) plugin manager.
+I am using [Zsh](http://www.zsh.org) as my shell and [Antibody](https://github.com/getantibody/antibody) to install all [my zsh plugins](https://wiki.nikitavoloboev.xyz/unix/shell/zsh/zsh-plugins.html).
 
 I am also using [Ayu theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made in Zsh. Here is how my prompt looks like:
 
@@ -68,11 +68,11 @@ I am also using [Ayu theme](https://github.com/nikitavoloboev/my-mac-os/tree/mas
 I use many aliases to get around my system as fast as possible. You can view them all [here](zsh/alias.zsh).
 
 ### Interesting aliases and functions
-There is quite a lot of awesome programs I use from my command line. You can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps) for some of them.
+There is a lot of awesome programs I use from my command line. You can see [here](https://github.com/nikitavoloboev/my-mac-os#command-line-apps) for some of them.
 
 I also love customising my shell experience with various aliases and zsh functions. Here are some that I like and use often:
 
-#### Commit and push repository to GitHub in one command
+#### Commit and push repository to GitHub
 
 ```Bash
 ggi() {
@@ -101,7 +101,7 @@ Which using [this CLI tool](https://github.com/nikitavoloboev/license-up), will 
 And thus in one command I initialised and pushed the repo. To create a new repo quickly I use [this Alfred workflow](https://github.com/nikitavoloboev/alfred-ask-create-share).
 
 #### Commit all with generic `update` message
-I use this command often.
+I use this command often when I find no commit message necessary.
 
 ```Bash
 ggs() {
@@ -110,9 +110,6 @@ ggs() {
     git push
 }
 ```
-
-It will simply add all files and commit them. I don't use this when working with code but for making some changes or for updating this dotfiles repo for example, I just use this. Saves a lot of time.
-
 
 #### Clone current url in clipboard
 
@@ -125,7 +122,7 @@ gll(){
 I use this often to quickly clone the URL that I copied from GitHub.
 
 #### Trash files / folders
-A lot more safer than `rm -rf` files as you can always check out `~/.Trash` in cases of emergency or mistakes.
+A lot safer than to `rm -rf` files as you can always check out `~/.Trash` in cases of emergency or mistakes.
 
 ```Bash
 re(){
@@ -134,33 +131,7 @@ re(){
 ```
 
 ### Fzf
-[fzf](https://github.com/junegunn/fzf) is a command line tool that lets you fuzzy search on text. I use it often now for fuzzy searching for files to open with neovim, or fuzzy searching through my commit messages and more.
-
-Here are some of my favourite commands I use with it:
-
-#### Search for files to edit in current dir
-
-```Bash
-fe() {
-  local files
-  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
-  [[ -n "$files" ]] && nvim "${files[@]}"
-}
-```
-
-This command will let me fuzzy search for a file to open from the directory I am currently in. I use it a lot.
-
-Since I also use VS Code as my primary editor, I use this command too:
-
-```Bash
-fw() {
-  local files
-  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
-  [[ -n "$files" ]] && code "${files[@]}"
-}
-```
-
-Which does the same thing but opens the files in VS Code instead of neovim.
+[fzf](https://github.com/junegunn/fzf) is a command line tool that lets you fuzzy search on text. I use it often now for fuzzy searching for files to open with neovim, or fuzzy searching through my commit messages and more. Here are [all the functions I use](https://github.com/nikitavoloboev/dotfiles/blob/master/zsh/functions/fzf-functions.zsh#L1) with it.
 
 ## Interesting dotfiles
 These are dotfiles I got many ideas from and liked.
