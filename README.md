@@ -58,7 +58,7 @@ I don't use [Hammerspoon](http://www.hammerspoon.org/) as extensively however I 
 ## Zsh
 I am using [Zsh](http://www.zsh.org) as my shell and [Antibody](https://github.com/getantibody/antibody) to install all [my zsh plugins](https://wiki.nikitavoloboev.xyz/unix/shell/zsh/zsh-plugins.html).
 
-I am also using [Ayu theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made in Zsh. Here is how my prompt looks like:
+I am also using [Ayu theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made in Zsh. Here is how my prompt looks:
 
 <img src="https://i.imgur.com/MFmvp4F.png" width="400" alt="img">
 

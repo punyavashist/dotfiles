@@ -16,6 +16,7 @@ alias ns="nix-shell --run zsh"
 alias nss="nix-shell --run zsh -p"
 
 # General
+alias te='tree'
 alias op='open'
 alias env='env | fzf'
 alias dnd='do-not-disturb toggle'
