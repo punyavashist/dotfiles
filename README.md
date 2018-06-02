@@ -87,7 +87,7 @@ ggi() {
 
 Say I created some project and wrote some code in it or added a simple README with some text in it. I then go on to create a [new GitHub repository](https://github.com/new) and give it a name. After that I just run this `ggi` command.
 
-It will initialise my current directory with git if it wasn't already. It will then call this function :
+It will initialise my current directory with git if it wasn't already. It will then call this function:
 
 ```Bash
 mit() {
@@ -150,7 +150,7 @@ fe() {
 
 This command will let me fuzzy search for a file to open from the directory I am currently in. I use it a lot.
 
-Since I also use VS Code as my primary editor, I use this command too :
+Since I also use VS Code as my primary editor, I use this command too:
 
 ```Bash
 fw() {
@@ -172,7 +172,7 @@ These are dotfiles I got many ideas from and liked.
 - [bresilla](https://github.com/bresilla/dotfiles) - Neat Linux look.
 
 ## Interesting Nix configs
-- [cmacrae's Darwin config](https://github.com/cmacrae/.nixpkgs/blob/master/darwin-configuration.nix)
+- [cmacrae (Darwin)](https://github.com/cmacrae/.nixpkgs/blob/master/darwin-configuration.nix)
 
 ## Contributing
 [Suggestions](../../issues/) on how I can improve the structure of these dotfiles as well as suggesting new and awesome tools are welcome.
