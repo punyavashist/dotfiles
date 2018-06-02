@@ -10,12 +10,9 @@ function reloadConfig(files)
         hs.alert.show("Config Reloaded")
     end
 end
-local myWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/Nextcloud/src/dotfiles/output/hammerspoon/.hammerspoon/", reloadConfig):start()
-hs.alert.show("Config loaded")
-
-local myWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/Nextcloud/src/dotfiles/output/hammerspoon/.hammerspoon/", reloadConfig):start()
 
 hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
+hs.alert.show("Config loaded")
 
 -- Reload config
 hs.urlevent.bind("reloadConfig", hs.reload)
