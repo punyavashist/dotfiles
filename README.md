@@ -1,7 +1,7 @@
 # My configuration files for macOS [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
 > Zsh, Karabiner, VS Code, Sublime, Neovim, Nix, Hammerspoon
 
-![](https://i.imgur.com/3cPVMJQ.jpg)
+<img src="https://i.imgur.com/3cPVMJQ.jpg" width="600" alt="img">
 
 These are the various configuration files I use on macOS. I wrote about how you can customise your shell experience in an article [here](https://medium.com/@NikitaVoloboev/pretty-and-fast-shell-97ea870f2805).
 
