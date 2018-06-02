@@ -60,7 +60,7 @@ I am using [Zsh](http://www.zsh.org) as my shell with [Antibody](https://github.
 
 I am also using [Ayu theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made in Zsh. Here is how my prompt looks like:
 
-![](https://i.imgur.com/MFmvp4F.png)
+<img src="https://i.imgur.com/MFmvp4F.png" width="400" alt="img">
 
 > a is [alias](zsh/alias.zsh) for [exa](https://github.com/ogham/exa)
 
