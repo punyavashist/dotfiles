@@ -1,5 +1,11 @@
--- Imports
--- local requirePlus = require("utils.require")
+require("reload")
+require("meta")
+require("mouse")
+require("show")
+require("watchers")
+require("wm")
+require("testing")
+
 local crash = require("hs.crash")
 local window = require("hs.window")
 local application = require("hs.application")
@@ -9,12 +15,7 @@ local ipc = require("hs.ipc")
 local alert = require("hs.alert")
 local logger = require("hs.logger")
 
-require("meta")
-require("mouse")
-require("show")
-require("watchers")
-require("wm")
-require("testing")
+-- local requirePlus = require("utils.require")
 
 -- TODO: modularise it, only contain essential setup stuff here
 
@@ -61,20 +62,3 @@ end
 
 hs.urlevent.bind("openConsole", openConsole)
 
-function reloadConfig(files)
-    local doReload = false
-    for _, file in pairs(files) do
-        if file:sub(-4) == ".lua" then
-            doReload = true
-        end
-    end
-    if doReload then
-        hs.reload()
-        hs.alert.show("Config Reloaded")
-    end
-end
-
-hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
-
--- Reload config
-hs.urlevent.bind("reloadConfig", hs.reload)

@@ -2,6 +2,12 @@
 T() {
 }
 
+# Update zsh plugins
+uz(){
+  antibody bundle <~/.dotfiles/zsh/plugins.txt >~/.zsh_plugins.sh
+  antibody update
+}
+
 # Pipe command to clipboard. c <cmd>
 c(){
   "$@" | pbcopy
@@ -94,8 +100,8 @@ md(){
   cd "$1"
 }
 
-# C <cmd-name> - Get cheat sheet of command from cheat.sh
-C(){
+# Get cheat sheet of command from cheat.sh. h <cmd>
+h(){
   curl cheat.sh/${@:-cheat}
   # curl cheat.sh/$@
 }

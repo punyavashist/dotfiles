@@ -101,7 +101,7 @@ alias tm='task'
 alias rf='reflex'
 alias kb='kubectl'
 alias ser='serve'
-alias h='python -m http.server'
+# alias h='python -m http.server'
 alias cra='npx create-react-app'
 alias lic='legit'
 
@@ -237,7 +237,7 @@ alias egi='nvim .gitignore' # TODO: make it zsh func, go to root and then run it
 alias ej='nvim package.json'
 
 # Edit configs
-alias ek='nvim ~/karabiner/private.xml' # karabiner
+alias ek='nvim ~/src/personal/karabiner/private.xml' # karabiner
 alias ew='nvim ~/.dotfiles/nvim/init.vim' # nvimrc
 alias essh='nvim ~/.ssh/config' # ssh config
 
@@ -267,7 +267,6 @@ alias dxm='cd ~/src/xcode/macOS'
 
 # Config
 alias d..='cd ~/.config'
-alias dv='cd ~/.dotfiles/nvim'
 alias db='cd ~/.dotfiles/bin'
 alias dh='cd ~/.hammerspoon'
 

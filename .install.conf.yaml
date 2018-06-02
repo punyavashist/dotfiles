@@ -11,11 +11,15 @@
 # Run shell commands
 - shell:
     # Install submodules
-  - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive, Installing submodules]
+
+# TODO: Make sure ./install works independent of where dotfiles are stored
 
 # TODO: Install Antibody. Check if Antibody is installed first.
 
-# TODO: Install zsh plugins by running bash '~/.dotfiles/antibody/install.sh' 
+# Install zsh plugins with Antibody
+    - [antibody bundle <~/.dotfiles/zsh/plugins.txt >~/.zsh_plugins.sh]
+    - [antibody update]
 
 # TODO: Install Nix. Check if Nix is installed first.
 # - [curl https://nixos.org/nix/install | sh]
