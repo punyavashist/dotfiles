@@ -1,13 +1,16 @@
-mafredri/zsh-async # Perform tasks asynchronously
-spwhitt/nix-zsh-completions # ZSH Completions for Nix.
-rupa/z # Jump around
-sobolevn/wakatime-zsh-plugin # Wakatime tracking
-Tarrasch/zsh-bd # Jump back to a specific directory
-zsh-users/zsh-completions # Additional completion definitions for Zsh
-zsh-users/zsh-autosuggestions branch:develop # Fish-like autosuggestions for zsh
-junegunn/fzf # Command-line fuzzy finder
-sindresorhus/pure # Pretty, minimal and fast zsh prompt
-zsh-users/zsh-history-substring-search # Zsh port of the fish shell's history search
-zsh-users/zsh-syntax-highlighting # Fish shell like syntax highlighting for zsh
+# My plugins: https://wiki.nikitavoloboev.xyz/unix/shell/zsh/zsh-plugins.html
 
-#chisui/zsh-nix-shell branch:issue-1 # Use zsh as the default nix-shell shell.
+mafredri/zsh-async
+spwhitt/nix-zsh-completions
+rupa/z
+sobolevn/wakatime-zsh-plugin
+Tarrasch/zsh-bd
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions branch:develop
+junegunn/fzf
+sindresorhus/pure
+zsh-users/zsh-history-substring-search
+zsh-users/zsh-syntax-highlighting
+
+# TODO: make it work
+# chisui/zsh-nix-shell branch:issue-1 

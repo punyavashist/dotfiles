@@ -1,7 +1,7 @@
 [
   {
     "keys": ["enter"],
-    "command": "double_click_at_caret",
+    "command": "DoubleClickAtCaret",
     "context": [
       {
         "key": "selector",

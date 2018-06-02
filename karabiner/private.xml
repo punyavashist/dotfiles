@@ -12087,6 +12087,11 @@ KeyCode::VK_OPEN_URL_KM_PROJECT_KNOWLEDGE
 </autogen>
 <autogen>
 __KeyToKey__
+KeyCode::L,
+KeyCode::VK_OPEN_URL_KM_PROJECT_HAMMERSPOON
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::B,
 KeyCode::VK_OPEN_URL_KM_TEST_BASH
 </autogen>
