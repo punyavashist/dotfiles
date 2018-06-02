@@ -130,7 +130,7 @@ re(){
 ```
 
 ## FZF
-[fzf](https://github.com/junegunn/fzf) is a command line tool that lets you fuzzy search on text. I use it often now for fuzzy searching for files to open with neovim, or fuzzy searching through my commit messages and more. Here are [all the functions I use](https://github.com/nikitavoloboev/dotfiles/blob/master/zsh/functions/fzf-functions.zsh#L1) with it.
+[FZF](https://github.com/junegunn/fzf) is a command line tool that lets you fuzzy search on text. I use it often now for fuzzy searching for files to open with neovim, or fuzzy searching through my commit messages and more. Here are [all the functions I use](https://github.com/nikitavoloboev/dotfiles/blob/master/zsh/functions/fzf-functions.zsh#L1) with it.
 
 ## Interesting dotfiles
 These are dotfiles I got many ideas from and liked.

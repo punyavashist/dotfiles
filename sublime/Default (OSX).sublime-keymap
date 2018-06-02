@@ -1,16 +1,4 @@
 [
-  {
-    "keys": ["enter"],
-    "command": "DoubleClickAtCaret",
-    "context": [
-      {
-        "key": "selector",
-        "operator": "equal",
-        "operand": "text.find-in-files",
-        "match_all": true
-      }
-    ]
-  },
   { "keys": ["alt+i"], "command": "copy_path" },
   { "keys": ["ctrl+d"], "command": "dash_doc" },
   { "keys": ["super+b"], "command": "toggle_side_bar" },
