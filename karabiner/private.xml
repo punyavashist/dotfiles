@@ -7337,7 +7337,7 @@ KeyCode::VK_OPEN_URL_ALFRED_TIMER_START
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::L,
+KeyCode::Q,
 KeyCode::VK_OPEN_URL_ALFRED_REMOVE_REMINDER_TIMER
 </autogen>
 <autogen>
@@ -7844,13 +7844,13 @@ KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX_DEV
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::H,
-KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE
+KeyCode::I,
+KeyCode::VK_OPEN_URL_KM_OPEN_CHROME
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
-KeyCode::VK_OPEN_URL_KM_OPEN_CHROME
+KeyCode::H,
+KeyCode::VK_OPEN_URL_KM_OPEN_XCODE
 </autogen>
 <autogen>
 __KeyToKey__

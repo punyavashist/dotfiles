@@ -151,6 +151,7 @@ alias ot='playgo'
 alias or='go run'
 alias oo='go install'
 alias ov='go vet'
+alias ogu='go get -u' # Use the network to update the named packages and their dependencies
 alias ob='go build'
 alias ora='go-pry'
 alias oe='go build -o main'

@@ -16,7 +16,7 @@ export NODE_PATH='/usr/local/lib/node_modules'
 export PATH=$PATH/usr/local/bin
 export PATH=$PATH:~/.dotfiles/bin
 export PATH=$PATH:~/.cargo/bin # Rust
-export GOPATH="$(go env GOPATH)"
+export GOPATH="$(go env GOPATH)" # Go
 export PATH="$PATH:$GOPATH/bin" # Go
 
 typeset -U PATH # Remove duplicates in $PATH
