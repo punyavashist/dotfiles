@@ -59,8 +59,10 @@
 # 2. When logged in, open Time Machine Migration Assistant and chose what you want to transfer from it.
 # 2. You can select specific things like Applications, Documents, etc.
 
-# ~/Library/Application Support/ -> app's auxiliary files.
-# ~/Library/Preferences/ -> app preferences.
-# ~/Library/Fonts/ -> custom fonts
+# ~/Library/Application Support/ -> App auxiliary files
+# ~/Library/Preferences/ -> App preferences
+# ~/Library/Fonts/ -> Custom fonts
+# ~/go/bin -> Go isntalled programmes
+# ~/.cargo/bin -> Rust installed programmes
 
 # 3. Clone dotfiles and run ./install.

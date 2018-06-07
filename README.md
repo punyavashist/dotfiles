@@ -91,7 +91,7 @@ It will initialise my current directory with git if it wasn't already. It will t
 ```Bash
 mit() {
   license-up mit Nikita Voloboev nikitavoloboev.xyz
-  git add license
+  git add LICENSE
 }
 ```
 

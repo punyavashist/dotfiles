@@ -114,13 +114,13 @@ g.() {
 # Create MIT license file for Nikita Voloboev
 mit() {
   license-up mit Nikita Voloboev nikitavoloboev.xyz
-  git add license
+  git add LICENCE
 }
 
 # Create MIT license file for Learn Anything
 mitla () {
   license-up mit Learn Anything, learn-anything.xyz
-  git add license
+  git add LICENCE
 }
 
 # TODO: not sure
