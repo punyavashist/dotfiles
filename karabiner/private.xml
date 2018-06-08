@@ -2005,11 +2005,11 @@ end tell
 
 <!-- KM MindNode maps -->
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_KM_MAP_THINKING</name>
+<name>KeyCode::VK_OPEN_URL_KM_MAP_THINK</name>
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "map: thinking"
+do script "map: think"
 end tell
 '
 </url>
@@ -10545,7 +10545,7 @@ KeyCode::3, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT
 <autogen>
 __KeyToKey__
 KeyCode::SEMICOLON,
-KeyCode::VK_OPEN_URL_KM_MAP_THINKING
+KeyCode::VK_OPEN_URL_KM_MAP_THINK
 </autogen>
 <autogen>
 __KeyToKey__
