@@ -2037,6 +2037,16 @@ end tell
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_EDIT_DOTBOT</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "edit: dotbot"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_KM_EDIT_FZF_FUNCTIONS</name>
 <url type="shell">
 osascript -e '
@@ -7487,7 +7497,7 @@ __BlockUntilKeyUp__ KeyCode::V,
 <autogen>
 __KeyToKey__
 KeyCode::F,
-KeyCode::VK_OPEN_URL_KM_EDIT_DOTFILES_README
+KeyCode::VK_OPEN_URL_KM_EDIT_DOTBOT
 </autogen>
 <autogen>
 __KeyToKey__
@@ -11858,7 +11868,7 @@ KeyCode::VK_OPEN_URL_ALFRED_VIEW_SAFARI_TABS
 __SimultaneousKeyPresses__
 KeyCode::SEMICOLON, KeyCode::N,
 KeyCode::VK_LOCK_ALL_FORCE_OFF,
-KeyCode::VK_OPEN_URL_ALFRED_SEARCH_ALFRED_KEYWORDS
+KeyCode::VK_OPEN_URL_ALFRED_CHROME_HISTORY
 </autogen>
 </item>
 

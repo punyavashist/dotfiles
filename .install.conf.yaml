@@ -64,5 +64,6 @@
 # ~/Library/Fonts/ -> Custom fonts
 # ~/go/bin -> Go isntalled programmes
 # ~/.cargo/bin -> Rust installed programmes
+# ~/.wakatime.cfg -> WakaTime settings (API Key)
 
 # 3. Clone dotfiles and run ./install.

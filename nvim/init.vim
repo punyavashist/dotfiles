@@ -18,7 +18,6 @@ Plug 'scrooloose/nerdcommenter' " Quick comments.
 Plug 'unblevable/quick-scope' " Highlight f, F jumps.
 Plug 'Shougo/vimproc.vim', {'do' : 'make'} " Interactive command execution.
 Plug 'tpope/vim-repeat' " Enable repeating supported plugin maps.
-"Plug 'christoomey/vim-titlecase' " Titlecase text.
 Plug 'tpope/vim-surround' " Quoting/parenthesizing made simple.
 Plug 'junegunn/vim-easy-align' " Simple, easy-to-use alignment.
 Plug '/usr/local/opt/fzf' " Fzf search.
