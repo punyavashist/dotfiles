@@ -3821,52 +3821,12 @@ tell application "Alfred 3" to run trigger "web searches" in workflow "nikivi.we
 </url>
 </vkopenurldef>
 
-<!-- alf mind def-->
+<!-- Alf mind def-->
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_REDDIT_MIND_MULTI</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/reddit-multi.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_REDDIT_MIND_GITHUB</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/github.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_CLI</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/explain-shell.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_RECENT</name>
+<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_QUERIES</name>
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/recent.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_REDDIT_USERS</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/reddit-users.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_QUORA</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/quora.json"
 '
 </url>
 </vkopenurldef>
@@ -3879,42 +3839,10 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_CODEPEN</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/codepen.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_IMAGES</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/images.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_PODCASTS</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/podcasts.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_RESEARCH_PAPERS</name>
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/research-papers.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_GISTS</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/gists.json"
 '
 </url>
 </vkopenurldef>
@@ -3927,66 +3855,10 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_YOUTUBE</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/youtube.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_CLI</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/cli.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_MUSIC_PLAYLISTS</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/music-playlists.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_SLACK</name>
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/slack.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_GITTER</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/gitter.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_TWITTER</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/twitter.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_COURSES</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/courses.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_PINBOARD</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/pinboard.json"
 '
 </url>
 </vkopenurldef>
@@ -4007,14 +3879,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_PERSONAL</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/personal.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_WEB</name>
 <url type="shell">
 osascript -e '
@@ -4022,31 +3886,6 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 '
 </url>
 </vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_GITHUB_USERS</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/github-users.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_PROFILES</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/profiles.json"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_REDDIT</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/reddit.json"
-'
-</url>
-</vkopenurldef>
-
 
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_SAFARI_FOLDERS</name>
@@ -6502,7 +6341,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_YOUTUBE_AUTOPLAY
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::N,
+KeyCode::DOT,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB_ASSIGNED_ISSUES
 </autogen>
 <autogen>
@@ -6512,7 +6351,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_NEWS_ALL
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::DOT,
+KeyCode::N,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_REGEX101
 </autogen>
 <autogen>
@@ -6522,7 +6361,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::K,
+KeyCode::I,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODESANDBOX
 </autogen>
 <autogen>
@@ -6557,7 +6396,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_TOP_NEW
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
+KeyCode::K,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_FIGMA
 </autogen>
 <autogen>
@@ -8064,38 +7903,8 @@ __BlockUntilKeyUp__ KeyCode::X,
 
 <autogen>
 __KeyToKey__
-KeyCode::P,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_GITTER
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::R,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_RECENT
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::QUOTE,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_REDDIT_USERS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::0,
-KeyCode::VK_OPEN_URL_ALFRED_REDDIT_MIND_MULTI
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::E,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_CODEPEN
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::COMMA,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_QUORA
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::G,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_COURSES
+KeyCode::VK_OPEN_URL_ALFRED_MIND_QUERIES
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8104,48 +7913,13 @@ KeyCode::VK_OPEN_URL_ALFRED_MIND_ARTICLES
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::H,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_RESEARCH_PAPERS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::S,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_PODCASTS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::V,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_IMAGES
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::Y,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_YOUTUBE
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::SEMICOLON,
 KeyCode::VK_OPEN_URL_ALFRED_MIND_SLACK
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::9,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_CLI
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::K,
 KeyCode::VK_OPEN_URL_ALFRED_MIND_STACK
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::D,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_MUSIC_PLAYLISTS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::T,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_TWITTER
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8161,26 +7935,6 @@ KeyCode::VK_OPEN_URL_ALFRED_MIND_WIKI
 __KeyToKey__
 KeyCode::O,
 KeyCode::VK_OPEN_URL_ALFRED_MIND_WEB
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::DOT,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_CLI
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::SLASH,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_PERSONAL
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::U,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_GITHUB_USERS
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::J,
-KeyCode::VK_OPEN_URL_ALFRED_MIND_PROFILES
 </autogen>
 <autogen>
 __KeyToKey__
@@ -8204,16 +7958,6 @@ KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
 KeyCode::5, ModifierFlag::SHIFT_L,
 KeyCode::S,
 KeyCode::SLASH
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::O,
-KeyCode::VK_OPEN_URL_ALFRED_DATE_CALCULATOR
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::M,
-KeyCode::VK_OPEN_URL_ALFRED_LOREM_IPSUM
 </autogen>
 </item>
 

@@ -29,6 +29,10 @@
 # TODO: Look into https://github.com/LnL7/nix-darwin and maybe add/use it
 # TODO: Look into https://github.com/rycee/home-manager and maybe add/use it
 
+# TODO: Install go tools (~/go/bin)
+
+# TODO: Install rust tools (~/.cargo/bin)
+
 # Symlink files
 - link:
     # Zsh
@@ -62,8 +66,7 @@
 # ~/Library/Application Support/ -> App auxiliary files
 # ~/Library/Preferences/ -> App preferences
 # ~/Library/Fonts/ -> Custom fonts
-# ~/go/bin -> Go isntalled programmes
-# ~/.cargo/bin -> Rust installed programmes
 # ~/.wakatime.cfg -> WakaTime settings (API Key)
+# ~/.ssh -> SSH config + certs
 
-# 3. Clone dotfiles and run ./install.
+# 3. Clone dotfiles to `~/.dotfiles` and run ./install.

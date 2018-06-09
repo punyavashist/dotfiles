@@ -30,38 +30,8 @@
   "workbench.activityBar.visible": false,
   "editor.snippetSuggestions": "top",
   "editor.minimap.enabled": false,
-  "todohighlight.isEnable": true,
   "editor.cursorBlinking": "solid",
   "files.trimTrailingWhitespace": true,
-  // TODO: highlight
-  "todohighlight.isCaseSensitive": true,
-  "todohighlight.keywords": [
-    {
-      "text": "TODO",
-      "color": "red",
-      "backgroundColor": "#212733"
-    },
-    {
-      "text": "NOTE",
-      "color": "yellow",
-      "backgroundColor": "#212733"
-    },
-    {
-      "text": "FIXME",
-      "color": "orange",
-      "backgroundColor": "#212733"
-    }
-  ],
-  "todohighlight.include": [
-    "**/*.go",
-    "**/*.js",
-    "**/*.jsx",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.html",
-    "**/*.css",
-    "**/*.lua"
-  ],
   // Dash
   "dash.docset.go": [
     "go",

@@ -144,8 +144,6 @@ ggu() {
 
 # git add origin from currently open Safari tab and push to master there
 ggo() {
-    git add .
-    git commit -m "Init"
     git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
     git push $(osascript -e 'tell application "Safari" to return URL of front document') master
     git push --set-upstream origin master
