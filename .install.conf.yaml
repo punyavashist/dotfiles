@@ -57,15 +57,18 @@
 # 1. Boot macOS from time machine.
 
 # macOS fresh install:
-# NOTE: Use Disk Utility in recovery partition to erase the hard drive to replace system files for full reset.
+# Can use this: https://macdaddy.io/create-bootable-usb-macos-installer
+
+# Use Disk Utility in recovery partition to erase the hard drive to replace system files for full reset.
 # 1. Go to recovery partition. Reinstall macOS from scratch, don’t select the option to reinstall from Time Machine.
 # 1. Go through install process, setup a new account, then log in.
 # 2. When logged in, open Time Machine Migration Assistant and chose what you want to transfer from it.
 # 2. You can select specific things like Applications, Documents, etc.
 
-# ~/Library/Application Support/ -> App auxiliary files
-# ~/Library/Preferences/ -> App preferences
-# ~/Library/Fonts/ -> Custom fonts
+# ~/Library/Application Support -> App auxiliary files
+# ~/Library/Preferences -> App preferences
+# ~/Pictures/Photos Library -> Apple Photos
+# ~/Library/Fonts -> Custom fonts
 # ~/.wakatime.cfg -> WakaTime settings (API Key)
 # ~/.ssh -> SSH config + certs
 

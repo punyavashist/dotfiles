@@ -88,6 +88,13 @@ gwu() {
     git push
 }
 
+# Commit all changes with `refactor`
+ggr() {
+    git add .
+    git commit . -m 'refactor'
+    git push
+}
+
 # Commit all changes with `update`
 ggs() {
     git add .

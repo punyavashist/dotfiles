@@ -1378,7 +1378,7 @@ end tell
 <url type="shell">
 osascript -e '
 tell application "Keyboard Maestro Engine"
-do script "g: pass"
+do script "per: pass"
 end tell
 '
 </url>
@@ -2402,6 +2402,16 @@ end tell
 osascript -e '
 tell application "Keyboard Maestro Engine"
 do script "open: itunes"
+end tell
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_KM_OPEN_KARABINER_ELEMENTS</name>
+<url type="shell">
+osascript -e '
+tell application "Keyboard Maestro Engine"
+do script "open: karabiner elements"
 end tell
 '
 </url>
@@ -3831,6 +3841,22 @@ tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with
 </url>
 </vkopenurldef>
 <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_PROFILES</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/profiles.json"
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_ALFRED_MIND_REDDIT</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "open" in workflow "nikivi.mind" with argument "lists/reddit.json"
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_ALFRED_MIND_ARTICLES</name>
 <url type="shell">
 osascript -e '
@@ -5116,7 +5142,7 @@ Option::NOREPEAT,
 </item>
 
 <item>
-<name>gen: sticky s - essential things</name>
+<name>gen: sticky s - essential</name>
 <identifier>private.launcher_mode_open_apps_v23</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -5694,18 +5720,6 @@ KeyCode::I,
 KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_front_window_center
 </autogen>
 
-<!-- Scroll -->
-<autogen>__KeyToKey__ KeyCode::L, KeyCode::VK_MOUSEKEY_HIGHSPEED, ModifierFlag::MOUSE_KEYS_MODE_2</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::J,
-KeyCode::VK_MOUSEKEY_SCROLL_DOWN, ModifierFlag::MOUSE_KEYS_MODE_2,
-</autogen>
-<autogen>
-__KeyToKey__
-KeyCode::K,
-KeyCode::VK_MOUSEKEY_SCROLL_UP, ModifierFlag::MOUSE_KEYS_MODE_2,
-</autogen>
 </item>
 
 <item>
@@ -7709,12 +7723,12 @@ KeyCode::VK_OPEN_URL_KM_OPEN_CONSOLE
 <autogen>
 __KeyToKey__
 KeyCode::DOT,
-KeyCode::VK_OPEN_URL_KM_OPEN_PAW
+KeyCode::VK_OPEN_URL_KM_OPEN_KARABINER_ELEMENTS
 </autogen>
 <autogen>
 __KeyToKey__
 KeyCode::COMMA,
-KeyCode::VK_OPEN_URL_KM_OPEN_POSTICO
+KeyCode::VK_OPEN_URL_KM_OPEN_KARABINER_PREFERENCES
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7829,7 +7843,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_SHIP
 </item>
 
 <item>
-<name>gen: sticky quote</name>
+<name>gen: sticky quote - scroll</name>
 <identifier>private.launcher_mode_open_apps_v32</identifier>
 <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
 <modifier_not>
@@ -7866,6 +7880,21 @@ KeyCode::G,
 KeyCode::VK_OPEN_URL_KM_WIKI_MY_GITHUB
 </autogen>
 
+<!-- Scroll -->
+<autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::VK_MOUSEKEY_HIGHSPEED, ModifierFlag::MOUSE_KEYS_MODE_2</autogen>
+<autogen>__KeyToKey__ KeyCode::O, KeyCode::VK_MOUSEKEY_HIGHSPEED, ModifierFlag::MOUSE_KEYS_MODE_2</autogen>
+<autogen>__KeyToKey__ KeyCode::P, KeyCode::VK_MOUSEKEY_HIGHSPEED, ModifierFlag::MOUSE_KEYS_MODE_2</autogen>
+
+<autogen>
+__KeyToKey__
+KeyCode::J,
+KeyCode::VK_MOUSEKEY_SCROLL_DOWN, ModifierFlag::MOUSE_KEYS_MODE_2,
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::K,
+KeyCode::VK_MOUSEKEY_SCROLL_UP, ModifierFlag::MOUSE_KEYS_MODE_2,
+</autogen>
 </item>
 
 <item>
@@ -7930,6 +7959,11 @@ KeyCode::VK_OPEN_URL_ALFRED_MIND_BLOGS
 __KeyToKey__
 KeyCode::L,
 KeyCode::VK_OPEN_URL_ALFRED_MIND_WIKI
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::J,
+KeyCode::VK_OPEN_URL_ALFRED_MIND_PROFILES
 </autogen>
 <autogen>
 __KeyToKey__

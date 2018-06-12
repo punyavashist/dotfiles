@@ -222,8 +222,7 @@ nmap <Leader>w :w<CR>
 nmap <Leader>d :bd<CR>
 
 " Space a
-" Yank xml block to next line
-nnoremap <Leader>aw vat:t'><CR>'[<Esc><CR>
+nnoremap <Leader>a :wq<CR>
 
 " Space v
 " Write all changed buffers and exit vim
@@ -250,6 +249,10 @@ map <Leader>cd :lcd %:p:h<CR>
 nmap <Leader>e.   :e .<CR>
 " Search files inside current dir
 nnoremap <Leader>e :Files<CR>
+
+" Space r
+" Yank xml block to next line
+nnoremap <Leader>r vat:t'><CR>'[<Esc><CR>
 
 " Space t
 nmap <Leader>to   :e %:p:h<CR>

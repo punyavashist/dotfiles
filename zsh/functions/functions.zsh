@@ -1,5 +1,6 @@
 # Temp
 T() {
+  gw update
 }
 
 # Update zsh plugins
@@ -13,6 +14,15 @@ c(){
   "$@" | pbcopy
 }
 
+# Open files/project with VS Code TODO: w <tab> should auotcomplete files
+w() {
+  if [ $# -eq 0 ]
+  then
+    code .
+  else
+    code "$@"
+  fi
+}
 
 # Search aliases/functions
 falias() {
