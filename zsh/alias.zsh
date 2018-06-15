@@ -143,7 +143,6 @@ alias im='yarn remove'
 alias is='yarn start'
 
 # Go
-alias o='go'
 alias org='richgo'
 alias og.='go get ./...' # Go get all packages for current project
 alias ot='playgo'
@@ -251,8 +250,7 @@ alias dg='cd ~/go/src/github.com/nikitavoloboev'
 alias dl='cd ~/src/learn'
 alias dt='cd ~/src/test'
 alias dm='cd ~/src/games'
-alias da='cd ~/src/'
-alias ds='cd ~/src/curated/'
+alias ds='cd ~/src/'
 alias dla='cd ~/src/orgs/learn-anything'
 alias dz='cd ~/.dotfiles'
 alias dk='cd ~/Documents'

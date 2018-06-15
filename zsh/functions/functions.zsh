@@ -1,6 +1,5 @@
 # Temp
 T() {
-  gw update
 }
 
 # Update zsh plugins

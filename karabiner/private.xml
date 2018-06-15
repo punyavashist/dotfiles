@@ -6376,7 +6376,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_UNDREAD_MESSAGES
 <autogen>
 __KeyToKey__
 KeyCode::I,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODESANDBOX
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_FIGMA
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6410,8 +6410,8 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_REDDIT_TOP_NEW
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::K,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_FIGMA
+KeyCode::L,
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODESANDBOX
 </autogen>
 <autogen>
 __KeyToKey__
@@ -6550,7 +6550,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_STACK_OVERFLOW
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::L,
+KeyCode::K,
 KeyCode::VK_OPEN_URL_KM_OPEN_URL_GITHUB
 </autogen>
 <autogen>
@@ -7702,13 +7702,13 @@ __BlockUntilKeyUp__ KeyCode::W,
 
 <autogen>
 __KeyToKey__
-KeyCode::U,
-KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX_DEV
+KeyCode::I,
+KeyCode::VK_OPEN_URL_KM_OPEN_CHROME
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::I,
-KeyCode::VK_OPEN_URL_KM_OPEN_CHROME
+KeyCode::U,
+KeyCode::VK_OPEN_URL_KM_OPEN_FIREFOX_DEV
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7728,7 +7728,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_KARABINER_ELEMENTS
 <autogen>
 __KeyToKey__
 KeyCode::COMMA,
-KeyCode::VK_OPEN_URL_KM_OPEN_KARABINER_PREFERENCES
+KeyCode::VK_OPEN_URL_KM_OPEN_SPOTIFY
 </autogen>
 <autogen>
 __KeyToKey__

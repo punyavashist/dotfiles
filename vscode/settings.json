@@ -220,5 +220,10 @@
   "latex-workshop.message.update.show": false,
   "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
   "gitlens.historyExplorer.enabled": true,
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  "gitlens.settings.mode": "advanced",
+  "gitlens.codeLens.scopes": [
+    "containers",
+    "document"
+  ]
 }

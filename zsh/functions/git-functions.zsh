@@ -89,7 +89,7 @@ gwu() {
 }
 
 # Commit all changes with `refactor`
-ggr() {
+gwe() {
     git add .
     git commit . -m 'refactor'
     git push

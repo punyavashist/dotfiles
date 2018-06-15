@@ -71,5 +71,6 @@
 # ~/Library/Fonts -> Custom fonts
 # ~/.wakatime.cfg -> WakaTime settings (API Key)
 # ~/.ssh -> SSH config + certs
+# ~/Library/Preferences/com.pilotmoon.popclip.plist & ~/Library/Application Support/PopClip -> Popclip extensions
 
 # 3. Clone dotfiles to `~/.dotfiles` and run ./install.
