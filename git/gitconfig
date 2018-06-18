@@ -1,6 +1,6 @@
 [user]
 	name = Nikita Voloboev
-	email = nikita.voloboev@icloud.com
+	email = nikita.voloboev@gmail.com
 	signingkey = 07C8D272698231EC
 [alias]
     update = add -u .
