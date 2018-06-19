@@ -1,7 +1,7 @@
 [user]
 	name = Nikita Voloboev
 	email = nikita.voloboev@gmail.com
-	signingkey = 07C8D272698231EC
+	signingkey = 29289B98E427FB2F
 [alias]
     update = add -u .
 	unstage = reset HEAD

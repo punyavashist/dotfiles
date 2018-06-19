@@ -4631,7 +4631,7 @@ tell application "Alfred 3" to run trigger "spot_mini" in workflow "com.vdesabou
 <name>KeyCode::VK_OPEN_URL_ALFRED_KM_MACROS_SEARCH</name>
 <url type="shell">
 osascript -e '
-tell application "Alfred 3" to run trigger "search" in workflow "iansinnott.keyboardmaestro" with argument ""
+tell application "Alfred 3" to run trigger "run" in workflow "iansinnott.keyboardmaestro" with argument ""
 '
 </url>
 </vkopenurldef>
