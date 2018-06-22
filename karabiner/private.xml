@@ -873,14 +873,6 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 </url>
 </vkopenurldef>
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_TIMER_120</name>
-<url type="shell">
-osascript -e '
-tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 120 Reminder"
-'
-</url>
-</vkopenurldef>
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_TIMER_60</name>
 <url type="shell">
 osascript -e '
@@ -917,6 +909,14 @@ tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtime
 <url type="shell">
 osascript -e '
 tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 50 Reminder"
+'
+</url>
+</vkopenurldef>
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_TIMER_5</name>
+<url type="shell">
+osascript -e '
+tell application "Alfred 3" to run trigger "timer" in workflow "carlosnz.eggtimer2" with argument "new 5 Reminder"
 '
 </url>
 </vkopenurldef>
@@ -6416,7 +6416,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_URL_CODESANDBOX
 <autogen>
 __KeyToKey__
 KeyCode::U,
-KeyCode::VK_OPEN_URL_KM_OPEN_URL_CANVAS
+KeyCode::VK_OPEN_URL_KM_OPEN_URL_REGEX101
 </autogen>
 <autogen>
 __KeyToKey__
@@ -7176,7 +7176,7 @@ KeyCode::VK_OPEN_URL_TIMER_40
 <autogen>
 __KeyToKey__
 KeyCode::5,
-KeyCode::VK_OPEN_URL_TIMER_50
+KeyCode::VK_OPEN_URL_TIMER_5
 </autogen>
 <autogen>
 __KeyToKey__
@@ -9372,7 +9372,7 @@ KeyCode::VK_OPEN_URL_KM_OPEN_MARKED
 <autogen>
 __KeyToKey__
 KeyCode::F19,
-KeyCode::VK_OPEN_URL_ALFRED_IMGUR_SCREENSHOT_AND_SAVE_INBOX
+KeyCode::VK_OPEN_URL_KM_OPEN_MAGIC_NUMBER
 </autogen>
 <autogen>
 __KeyToKey__
@@ -10023,11 +10023,6 @@ KeyCode::VK_OPEN_URL_ALFRED_RELOAD_KARABINER_XML
 </autogen>
 <autogen>
 __KeyToKey__
-KeyCode::F19,
-KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_INBOX
-</autogen>
-<autogen>
-__KeyToKey__
 KeyCode::Z,
 KeyCode::VK_OPEN_URL_HAMMERSPOON_OPEN_CONSOLE
 </autogen>
@@ -10674,7 +10669,7 @@ __BlockUntilKeyUp__ KeyCode::Q,
 <autogen>
 __KeyToKey__
 KeyCode::F19,
-KeyCode::VK_OPEN_URL_KM_SCREENSHOT_TO_ANKI
+KeyCode::VK_OPEN_URL_ALFRED_IMGUR_SCREENSHOT_AND_SAVE_INBOX
 </autogen>
 <autogen>
 __KeyToKey__
